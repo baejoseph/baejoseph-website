@@ -1,0 +1,44 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Joseph Bae', description = 'Thoughts on faith, culture, and life.' } = Astro.props;
+const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{siteTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@baejoseph" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={description} />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="/" class="site-title">בשם יהושוע ✦ Joseph Bae</a>
+        <nav>
+          <a href="https://x.com/baejoseph" target="_blank" rel="noopener">𝕏</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer>
+      <p>Joseph Bae © {new Date().getFullYear()} · <a href="https://x.com/baejoseph" target="_blank" rel="noopener">@baejoseph</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+---
+title: "🏳️‍🌈 Essay on Pride Month"
+date: "2022-06-24"
+wpSlug: "pride-month"
+lang: "ko"
+featuredImage: "/assets/FoOLmc-X0AIbitV.jpg"
+
+tags: ["leftism", "theology"]
+---
+
+> 너희는 세상의 소금이니 소금이 만일 그 맛을 잃으면 무엇으로 짜게 하리요 후에는 아무 쓸 데 없어 다만 밖에 버려져 사람에게 밟힐 뿐이니라
+> 
+> 마태복음 5:13
+
+미국과 영국과 같은 서양 사회는 매년 6월이 되면 광기에 사로잡힌다. 6월 한달 간을 “프라이드 먼스” 라고 정하고, 성적으로 타락하고 죄악된 모든 것을 기리며 축하(!) 하는 축제의 기간이 된다. 학교, 회사, 시내 거리 할 것 없이 거의 모든 장소와 지면에는 무지개 색깔의 프라이드 깃발이 휘날리기 시작하며, “동성연애자 및 모든 성소수자들(이하 LGBTQ)을 지원합니다” 라는 고백을 모두에게서 받아낸다. 인터넷 상 SNS에도 서로 앞다퉈 자기 프로필 사진에 무지개 색깔을 도배하질 않나, 또 거기에 질세랴 대기업들도 모두들 자기들 로고를 무지개색으로 칠하고 6월 한달 내내 이 ‘프라이드 축제’ 분위기에 일조한다.
+
+빌 클린턴과 오바마 대통령이 공식적으로 지지하면서 시작된 이 축제는, 이제는 매년 6월이 되면 반드시 거쳐야 하는 예식이 되어 버려 그 어떠한 “침묵적 불참”도 허용되지 않는다. 자신들을 “LGBTQ 동맹” 이라고 부르는 행동주의자들부터 모든 회사의 인사팀, 그리고 언론사들과 빅텍(구글 페이스북 아마존)이 하나같이 이 프라이드 축제 예식을 집행하는 사제들(젤롯 당원들)로 변신한다. 그 어떠한 잡음이나 질문도 허용되지 않는다. 탈선하는 자들은 신속히 묻히고, 취소되고, 징계를 받고, 해고를 당한다. 이 6월 한 달 기간동안 찍 소리 못하며 자기 몸을 사리는 직장 동료들을 보고 있노라면, 20세기 나치 독일이나 공산주의 소련, 또 북한의 전체주의와 오버랩 될 정도이다.
+
+상황이 더 그럴수록, 우리 그리스도인들은 이제 이런 공포의 침묵을 깨야 할 시점이 온 것은 아닐까.
+
+먼저 우리 생각을 정리해 보자. 사랑은 무엇인가? 이 세상이 말하는 것처럼 “무조건적인 관용”이 사랑일까? 성경은 “하나님은 사랑이심이라”라고 선포한다. 고로, 하나님께서 하시는 모든 것은 그 자체가 사랑인 것이다. 태초에 하나님께서는 천지를 창조하셨다. 인간을 그의 형상을 따라 만드시고 한 남자와 한 여자 사이의 결혼이라는 제도를 만들어 인류가 번영하게 하셨다. 이러한 한 남자와 한 여자의 결혼이라는 태두리 안에서만 허용되는 하나님의 축복이 바로 성(性)이다. 거기에서 벗어난 모든 성행위(LGBTQ 포함)를 하나님께서는 죄라고 칭하시고, 그것을 행하는 모든 자들에게 회개하라고 촉구하신다.
+
+사실 윗 문단의 내용은 기독교인이라면 당연히 받아드려야 하는 교리이다. 그러나 내가 발견한 슬픈 현실은, 많은 기독교인들이 세상과 오랜 기간 동안 타협한 나머지 어느새 이런 미친 6월달 축제에 그냥 침묵하는 정도가 아니라, 이제는 누구보다 더 활발하게 참여하고, 더 나아가 그렇게 하지 않는 그리스도 안에서의 형제 자매들을 배역하며 자기는 이들과 다르다고 선을 긋고, 위에서 말한 젤롯 당원들에게 한 번 더 칭찬을 받으려고 충성된 개처럼 기다린다는 것이다. 세상의 소금이 되어야할 자들이 어느새 그 맛을 잃은 소금이 되어 버린 것이다.
+
+예수님을 믿는 모든 신자들은 이 시대를 향해 사랑 안에서 진리를 말하라는 사명을 받았다. 죄를 죄라고 말하는 것이야 말로 제일 사랑을 실천하는 것이다. 상대방이 궁극적으로 멸망을 받는다는 사실을 알면서도 그들에게 “무조건 적인 관용”만 관철하는 것은 단순히 비겁한 것이 아니라, 그들의 멸망에 일조하는 것, 즉 사랑의 정 반대가 되는 행동인 것이다. 이제 우리 그리스도인들이 용기를 내어 세상의 소금 역할을 할 때가 왔다. 죄를 죄라고 말하고 복음을 전하자. 하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 회개하고 저를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라.
+
+> You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and be trampled by men.
+> 
+> Matthew 5:13
+
+Every month of June, madness descends upon the Western society. It is the celebration (yes, a celebration!) of all things sexually immoral and deviant. The rainbow flag is unilaterally imposed on pretty much everything everywhere, and everyone is expected to vocally express “their full support for LGBTQ colleagues and friends”. Everyone and their dog are busy virtue-signalling by flying the rainbow flag across the twitter-sphere and on every other social network on the interwebs. Not to be outdone, every large corporation tints their logos in the familiar rainbow colours for the whole duration of June like clockwork. It has become such a rite of passage, that it is no longer acceptable to even stay silent and shut up and do nothing; your conspicuous inaction will be noticed by the Zealots that are the LGBTQIA+ Allies, the HR department, the media, and the Big Tech. Step out of line, and their retaliation will be swift: first by shadow-banning and de-platforming, and then by punishment through disciplining and firing. All of this is reminiscent of 1930s Germany, when the swastika was forced upon the population.
+
+This year, let us make the decision to no longer be silenced by the mob.
+
+First, let’s get our definitions straight. What is love? Love is not unconditional tolerance. The Bible says that God is love; everything God does is by definition loving. In the beginning, God created the universe. God created human beings in his image. God created marriage to be between one man and one woman, and gave it to us for human flourishing. Sex is to be between a man and a woman in the context of marriage. God calls LGBTQ sin, and he calls to repentance all who partake in such activities.
+
+Now, if you are a Christian, none of the points made in the above paragraph should be controversial. Sadly, however, I’m discovering that many Christians have grown so used to compromising with the world, and have become so emasculated by it, that they not only stay silent; they actively defend and promote such madness, and even throw their own brothers and sisters under the proverbial bus in an attempt to distance themselves from their position, in order to maintain their own good-standing with the Zealots. In short, they have (and I do not say this lightly) become salt that has lost its saltiness.
+
+As Christians, we are called to speak the truth in love. We are called to call out sin for what it is, because that is the most loving thing you can do. Unconditional acceptance and affirmation is not only cowardly; it is deeply unloving and callous, when you know that the other person is headed for certain destruction. For God so loved the world, that he gave his one and only Son, that whoever repents and believes in Him shall not perish, but have eternal life.

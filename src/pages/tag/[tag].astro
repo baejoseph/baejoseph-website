@@ -1,0 +1,124 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import TagList from '../../components/TagList.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tagSet = new Set<string>();
+  posts.forEach(p => p.data.tags?.forEach(t => tagSet.add(t)));
+
+  return [...tagSet].map(tag => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts
+        .filter(p => p.data.tags?.includes(tag))
+        .sort((a, b) => (b.data.date ?? '').localeCompare(a.data.date ?? '')),
+    },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+
+function postHref(post: typeof posts[0]) {
+  return '/' + (post.data.wpSlug ?? post.slug) + '/';
+}
+
+function formatDate(d?: string) {
+  if (!d) return '';
+  return new Date(d).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+}
+---
+
+<Layout title={`#${tag} — Joseph Bae`} description={`Posts tagged ${tag}`}>
+  <div class="tag-header">
+    <a href="/" class="back-link">← All posts</a>
+    <h1 class="tag-title">#{tag}</h1>
+    <p class="tag-count">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+  </div>
+
+  <div class="post-list">
+    {posts.map(post => (
+      <a href={postHref(post)} class="post-item" data-lang={post.data.lang ?? 'en'}>
+        <span class="post-date">{formatDate(post.data.date)}</span>
+        <span class="post-title">{post.data.title}</span>
+        <div class="post-right">
+          <TagList tags={(post.data.tags ?? []).filter(t => t !== tag)} />
+          <span class="post-lang-badge">{(post.data.lang ?? 'en').toUpperCase()}</span>
+        </div>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .tag-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .tag-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    margin: 0.75rem 0 0.25rem;
+  }
+  .tag-count {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .post-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+    color: inherit;
+  }
+  .post-item:hover .post-title { color: var(--accent-hover); }
+  .post-date {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    min-width: 90px;
+    font-variant-numeric: tabular-nums;
+  }
+  .post-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    transition: color 0.15s;
+    line-height: 1.4;
+    flex: 1;
+  }
+  .post-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .post-lang-badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    .post-item { flex-wrap: wrap; gap: 0.25rem; }
+    .post-date { min-width: auto; }
+    .post-right { margin-left: 0; }
+  }
+</style>

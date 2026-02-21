@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const allPosts = await getCollection('blog');
+
+// Collect all tags sorted by frequency
+const tagCount = new Map<string, number>();
+allPosts.forEach(p => p.data.tags?.forEach(t => tagCount.set(t, (tagCount.get(t) ?? 0) + 1)));
+const allTags = [...tagCount.entries()].sort((a, b) => b[1] - a[1]).map(([t]) => t);
+
+const posts = allPosts.sort((a, b) => {
+  const da = a.data.date ?? '1970-01-01';
+  const db = b.data.date ?? '1970-01-01';
+  return db.localeCompare(da);
+});
+
+function formatDate(d?: string) {
+  if (!d) return '';
+  return new Date(d).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+}
+
+// Use the WP slug as href — already lowercase percent-encoded, so browser sends exact bytes
+// matching the dist/%ec.../index.html files directly (no case mismatch)
+function postHref(post: typeof posts[0]) {
+  const wpSlug = post.data.wpSlug ?? post.slug;
+  return '/' + wpSlug + '/';
+}
+---
+
+<Layout title="Joseph Bae" description="Faith · Culture · Life — by Joseph Bae.">
+  <div class="home-hero">
+    <h1>Joseph Bae</h1>
+    <p>Faith · Culture · Life · Maranatha 🏴‍☠️</p>
+    <div class="social-links">
+      <a href="https://x.com/baejoseph" target="_blank" rel="noopener">𝕏 @baejoseph</a>
+    </div>
+  </div>
+
+  <div class="lang-filter">
+    <button class="lang-btn active" onclick="filterLang('all',this)">All</button>
+    <button class="lang-btn" onclick="filterLang('en',this)">English</button>
+    <button class="lang-btn" onclick="filterLang('ko',this)">한국어</button>
+  </div>
+
+  {allTags.length > 0 && (
+    <div class="tag-browse">
+      {allTags.map(tag => (
+        <a href={`/tag/${tag}`} class="tag-pill-sm">#{tag}</a>
+      ))}
+    </div>
+  )}
+
+  <div class="post-list" id="post-list">
+    {posts.map(post => (
+      <a href={postHref(post)} class="post-item" data-lang={post.data.lang ?? 'en'}>
+        <span class="post-date">{formatDate(post.data.date)}</span>
+        <span class="post-title">{post.data.title}</span>
+        <span class="post-lang-badge">{(post.data.lang ?? 'en').toUpperCase()}</span>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<script>
+  function filterLang(lang: string, btn: HTMLElement) {
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll<HTMLElement>('.post-item').forEach(el => {
+      el.style.display = lang === 'all' || el.dataset.lang === lang ? 'flex' : 'none';
+    });
+  }
+  (window as any).filterLang = filterLang;
+</script>
+
+<style>
+  .tag-browse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .tag-pill-sm {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    background: rgba(99, 102, 241, 0.06);
+    color: #7b7fc4;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+  }
+  .tag-pill-sm:hover {
+    background: rgba(99, 102, 241, 0.14);
+    color: #c7d2fe;
+  }
+</style>

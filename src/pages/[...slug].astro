@@ -1,0 +1,194 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import TagList from '../components/TagList.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  // Build decoded-slug → post map for pair lookups
+  const slugMap = new Map<string, typeof posts[0]>();
+  for (const post of posts) {
+    slugMap.set(post.slug, post);
+    // Also map by wpSlug (in case they differ, e.g. legacy entries)
+    if (post.data.wpSlug) {
+      try { slugMap.set(decodeURIComponent(post.data.wpSlug), post); } catch {}
+    }
+  }
+
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post, slugMap },
+  }));
+}
+
+const { post, slugMap } = Astro.props;
+const { Content } = await post.render();
+
+const lang = post.data.lang ?? 'en';
+const pairedSlug = post.data.pairedSlug ?? '';
+const paired = pairedSlug ? (slugMap as Map<string, any>).get(pairedSlug) : null;
+
+// Build paired post href using its wpSlug
+function pairedHref(p: any) {
+  const s = p?.data?.wpSlug ?? p?.slug ?? '';
+  return '/' + s + '/';
+}
+
+// Format date
+function fmt(d?: string, l = 'en') {
+  if (!d) return '';
+  return new Date(d).toLocaleDateString(l === 'ko' ? 'ko-KR' : 'en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric',
+  });
+}
+
+// Mixed-language: does this post have embedded second-lang content?
+const hasSecondLang = !!post.data.secondLang;
+
+// Label for the toggle
+const thisLabel = lang === 'ko' ? '🇰🇷 한국어' : '🇬🇧 English';
+const pairedLabel = paired
+  ? (paired.data.lang === 'ko' ? '🇰🇷 한국어' : '🇬🇧 English')
+  : '';
+const secondLabel = post.data.secondLang === 'ko' ? '🇰🇷 한국어' : '🇬🇧 English';
+
+const showToggle = !!paired || hasSecondLang;
+---
+
+<Layout title={post.data.title} description={post.data.title}>
+  <article>
+    <a href="/" class="back-link">← All posts</a>
+
+    {/* EN/KO toggle */}
+    {showToggle && (
+      <div class="lang-toggle">
+        <button class="ltbtn active" id="btn-primary" onclick="showPrimary()">{thisLabel}</button>
+        {paired && (
+          <a href={pairedHref(paired)} class="ltbtn">{pairedLabel}</a>
+        )}
+        {hasSecondLang && !paired && (
+          <button class="ltbtn" id="btn-second" onclick="showSecond()">{secondLabel}</button>
+        )}
+      </div>
+    )}
+
+    {/* Featured image */}
+    {post.data.featuredImage && (
+      <div class="featured-image-wrap">
+        <img src={post.data.featuredImage} alt={post.data.title} class="featured-image" />
+      </div>
+    )}
+
+    <div class="article-header">
+      <h1>{post.data.title}</h1>
+      <div class="article-meta">
+        <span>{fmt(post.data.date, lang)}</span>
+        {post.data.tags?.length && (
+          <TagList tags={post.data.tags} class="inline-tags" />
+        )}
+      </div>
+    </div>
+
+    {/* Primary content */}
+    <div id="content-primary" class={`prose${lang === 'ko' ? ' lang-ko' : ''}`}>
+      <Content />
+    </div>
+
+    {/* Second-language content (for mixed posts) */}
+    {hasSecondLang && (
+      <div id="content-second" class={`prose${post.data.secondLang === 'ko' ? ' lang-ko' : ''}`} style="display:none">
+        <div id="second-content-placeholder"></div>
+      </div>
+    )}
+  </article>
+</Layout>
+
+{hasSecondLang && (
+  <script is:inline>
+    // Extract second-lang content from the primary content div
+    (function() {
+      const primary = document.getElementById('content-primary');
+      const secondWrap = document.getElementById('content-second');
+      const placeholder = document.getElementById('second-content-placeholder');
+      if (!primary || !secondWrap || !placeholder) return;
+
+      // Find the comment marker in the rendered HTML
+      const html = primary.innerHTML;
+      const markerIdx = html.indexOf('SECOND_LANG_START');
+      if (markerIdx === -1) return;
+
+      // Split at the comment
+      const commentStart = html.lastIndexOf('&lt;!--', markerIdx);
+      const commentEnd = html.indexOf('--&gt;', markerIdx) + '--&gt;'.length;
+      const afterComment = html.slice(commentEnd);
+
+      // Primary = everything before the marker comment
+      const beforeComment = html.slice(0, commentStart > -1 ? commentStart : markerIdx);
+      primary.innerHTML = beforeComment;
+      placeholder.innerHTML = afterComment;
+    })();
+
+    function showPrimary() {
+      document.getElementById('content-primary').style.display = '';
+      document.getElementById('content-second').style.display = 'none';
+      document.getElementById('btn-primary')?.classList.add('active');
+      document.getElementById('btn-second')?.classList.remove('active');
+    }
+    function showSecond() {
+      document.getElementById('content-primary').style.display = 'none';
+      document.getElementById('content-second').style.display = '';
+      document.getElementById('btn-primary')?.classList.remove('active');
+      document.getElementById('btn-second')?.classList.add('active');
+    }
+    window.showPrimary = showPrimary;
+    window.showSecond = showSecond;
+  </script>
+)}
+
+<style>
+  .lang-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .ltbtn {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.15s;
+    font-family: inherit;
+  }
+  .ltbtn:hover { border-color: var(--accent); color: var(--text); }
+  .ltbtn.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+  .featured-image-wrap {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+    display: block;
+  }
+</style>
