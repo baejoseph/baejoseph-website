@@ -2,7 +2,11 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 
-const allPosts = await getCollection('blog');
+const allPostsRaw = await getCollection('blog');
+
+// Only show posts whose date is today or in the past (build-time check)
+const today = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
+const allPosts = allPostsRaw.filter(p => (p.data.date ?? '1970-01-01') <= today);
 
 // Collect all tags sorted by frequency
 const tagCount = new Map<string, number>();

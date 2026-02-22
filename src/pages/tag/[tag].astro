@@ -4,7 +4,12 @@ import Layout from '../../layouts/Layout.astro';
 import TagList from '../../components/TagList.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const allPosts = await getCollection('blog');
+
+  // Only show posts whose date is today or in the past (build-time check)
+  const today = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
+  const posts = allPosts.filter(p => (p.data.date ?? '1970-01-01') <= today);
+
   const tagSet = new Set<string>();
   posts.forEach(p => p.data.tags?.forEach(t => tagSet.add(t)));
 

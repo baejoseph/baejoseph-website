@@ -4,7 +4,11 @@ import Layout from '../layouts/Layout.astro';
 import TagList from '../components/TagList.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const allPosts = await getCollection('blog');
+
+  // Only build pages for posts whose date is today or in the past (build-time check)
+  const today = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
+  const posts = allPosts.filter(p => (p.data.date ?? '1970-01-01') <= today);
 
   // Build decoded-slug → post map for pair lookups
   const slugMap = new Map<string, typeof posts[0]>();
