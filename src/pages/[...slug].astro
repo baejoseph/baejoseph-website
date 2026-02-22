@@ -4,11 +4,10 @@ import Layout from '../layouts/Layout.astro';
 import TagList from '../components/TagList.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection('blog');
+  const posts = await getCollection('blog');
 
-  // Only build pages for posts whose date is today or in the past (build-time check)
-  const today = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
-  const posts = allPosts.filter(p => (p.data.date ?? '1970-01-01') <= today);
+  // All posts are built (including future-dated ones).
+  // Future posts are accessible by direct URL but hidden from listings by default.
 
   // Build decoded-slug → post map for pair lookups
   const slugMap = new Map<string, typeof posts[0]>();
@@ -58,10 +57,19 @@ const pairedLabel = paired
 const secondLabel = post.data.secondLang === 'ko' ? '🇰🇷 한국어' : '🇬🇧 English';
 
 const showToggle = !!paired || hasSecondLang;
+
+// Scheduled post: built into the site but hidden from listings by default
+const buildDate = new Date().toISOString().slice(0, 10);
+const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
 ---
 
 <Layout title={post.data.title} description={post.data.title}>
   <article>
+    {isFuture && (
+      <div class="scheduled-notice">
+        🔮 Scheduled post · not yet visible in the public listing
+      </div>
+    )}
     <a href="/" class="back-link">← All posts</a>
 
     {/* EN/KO toggle */}
@@ -151,6 +159,21 @@ const showToggle = !!paired || hasSecondLang;
 )}
 
 <style>
+  .scheduled-notice {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgba(199, 210, 254, 0.75);
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+  }
+
   .lang-toggle {
     display: flex;
     gap: 0.5rem;

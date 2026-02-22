@@ -4,12 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import TagList from '../../components/TagList.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection('blog');
-
-  // Only show posts whose date is today or in the past (build-time check)
-  const today = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
-  const posts = allPosts.filter(p => (p.data.date ?? '1970-01-01') <= today);
-
+  const posts = await getCollection('blog');
+  // Build ALL posts (including future-dated). Visibility is handled client-side.
   const tagSet = new Set<string>();
   posts.forEach(p => p.data.tags?.forEach(t => tagSet.add(t)));
 
@@ -25,6 +21,7 @@ export async function getStaticPaths() {
 }
 
 const { tag, posts } = Astro.props;
+const buildDate = new Date().toISOString().slice(0, 10);
 
 function postHref(post: typeof posts[0]) {
   return '/' + (post.data.wpSlug ?? post.slug) + '/';
@@ -34,28 +31,71 @@ function formatDate(d?: string) {
   if (!d) return '';
   return new Date(d).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 }
+
+// Counts for the tag header — published only by default
+const publishedCount = posts.filter(p => (p.data.date ?? '1970-01-01') <= buildDate).length;
+const scheduledCount = posts.length - publishedCount;
 ---
 
 <Layout title={`#${tag} — Joseph Bae`} description={`Posts tagged ${tag}`}>
   <div class="tag-header">
     <a href="/" class="back-link">← All posts</a>
     <h1 class="tag-title">#{tag}</h1>
-    <p class="tag-count">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+    <p class="tag-count">
+      <span id="visible-count">{publishedCount}</span> {publishedCount === 1 ? 'post' : 'posts'}
+      {scheduledCount > 0 && (
+        <span id="scheduled-hint" style="display:none"> · {scheduledCount} scheduled</span>
+      )}
+    </p>
   </div>
 
   <div class="post-list">
-    {posts.map(post => (
-      <a href={postHref(post)} class="post-item" data-lang={post.data.lang ?? 'en'}>
-        <span class="post-date">{formatDate(post.data.date)}</span>
-        <span class="post-title">{post.data.title}</span>
-        <div class="post-right">
-          <TagList tags={(post.data.tags ?? []).filter(t => t !== tag)} />
-          <span class="post-lang-badge">{(post.data.lang ?? 'en').toUpperCase()}</span>
-        </div>
-      </a>
-    ))}
+    {posts.map(post => {
+      const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
+      return (
+        <a
+          href={postHref(post)}
+          class="post-item"
+          data-lang={post.data.lang ?? 'en'}
+          data-future={isFuture ? 'true' : 'false'}
+          style={isFuture ? 'display:none' : undefined}
+        >
+          <span class="post-date">{formatDate(post.data.date)}</span>
+          <span class="post-title">{post.data.title}</span>
+          <div class="post-right">
+            <TagList tags={(post.data.tags ?? []).filter(t => t !== tag)} />
+            <span class="post-lang-badge">{(post.data.lang ?? 'en').toUpperCase()}</span>
+          </div>
+        </a>
+      );
+    })}
   </div>
 </Layout>
+
+<script>
+  const STORAGE_KEY = 'baejoseph_preview_mode';
+  function isPreview() {
+    try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
+  }
+
+  function syncTagPage() {
+    const preview = isPreview();
+    let visibleCount = 0;
+    document.querySelectorAll<HTMLElement>('.post-item').forEach(el => {
+      const isFuture = el.dataset.future === 'true';
+      const show = !isFuture || preview;
+      el.style.display = show ? 'flex' : 'none';
+      if (show) visibleCount++;
+    });
+    const hint = document.getElementById('scheduled-hint');
+    if (hint) hint.style.display = preview ? 'inline' : 'none';
+    const countEl = document.getElementById('visible-count');
+    if (countEl) countEl.textContent = String(visibleCount);
+  }
+
+  document.addEventListener('previewModeChanged', syncTagPage);
+  document.addEventListener('DOMContentLoaded', syncTagPage);
+</script>
 
 <style>
   .tag-header {

@@ -2,13 +2,12 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 
-const allPostsRaw = await getCollection('blog');
+const allPosts = await getCollection('blog');
 
-// Only show posts whose date is today or in the past (build-time check)
-const today = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
-const allPosts = allPostsRaw.filter(p => (p.data.date ?? '1970-01-01') <= today);
+// Build-time today string for marking future posts
+const buildDate = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD'
 
-// Collect all tags sorted by frequency
+// Collect all tags sorted by frequency (from ALL posts — future posts have tags too)
 const tagCount = new Map<string, number>();
 allPosts.forEach(p => p.data.tags?.forEach(t => tagCount.set(t, (tagCount.get(t) ?? 0) + 1)));
 const allTags = [...tagCount.entries()].sort((a, b) => b[1] - a[1]).map(([t]) => t);
@@ -56,25 +55,55 @@ function postHref(post: typeof posts[0]) {
   )}
 
   <div class="post-list" id="post-list">
-    {posts.map(post => (
-      <a href={postHref(post)} class="post-item" data-lang={post.data.lang ?? 'en'}>
-        <span class="post-date">{formatDate(post.data.date)}</span>
-        <span class="post-title">{post.data.title}</span>
-        <span class="post-lang-badge">{(post.data.lang ?? 'en').toUpperCase()}</span>
-      </a>
-    ))}
+    {posts.map(post => {
+      const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
+      return (
+        <a
+          href={postHref(post)}
+          class="post-item"
+          data-lang={post.data.lang ?? 'en'}
+          data-future={isFuture ? 'true' : 'false'}
+          style={isFuture ? 'display:none' : undefined}
+        >
+          <span class="post-date">{formatDate(post.data.date)}</span>
+          <span class="post-title">{post.data.title}</span>
+          <span class="post-lang-badge">{(post.data.lang ?? 'en').toUpperCase()}</span>
+        </a>
+      );
+    })}
   </div>
 </Layout>
 
 <script>
+  const STORAGE_KEY = 'baejoseph_preview_mode';
+  let activeLang = 'all';
+
+  function isPreview(): boolean {
+    try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
+  }
+
+  function updatePostVisibility() {
+    const preview = isPreview();
+    document.querySelectorAll<HTMLElement>('.post-item').forEach(el => {
+      const langMatch = activeLang === 'all' || el.dataset.lang === activeLang;
+      const isFuture = el.dataset.future === 'true';
+      el.style.display = langMatch && (!isFuture || preview) ? 'flex' : 'none';
+    });
+  }
+
   function filterLang(lang: string, btn: HTMLElement) {
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    document.querySelectorAll<HTMLElement>('.post-item').forEach(el => {
-      el.style.display = lang === 'all' || el.dataset.lang === lang ? 'flex' : 'none';
-    });
+    activeLang = lang;
+    updatePostVisibility();
   }
   (window as any).filterLang = filterLang;
+
+  // Re-run when Layout.astro fires the previewModeChanged event
+  document.addEventListener('previewModeChanged', () => updatePostVisibility());
+
+  // Apply on initial load (in case preview mode is already active from a previous visit)
+  document.addEventListener('DOMContentLoaded', updatePostVisibility);
 </script>
 
 <style>

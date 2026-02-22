@@ -29,7 +29,7 @@ const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
   <body>
     <header>
       <div class="inner">
-        <a href="/" class="site-title">בשם יהושוע ✦ Joseph Bae</a>
+        <a href="/" class="site-title" id="site-title-trigger">בשם יהושוע ✦ Joseph Bae</a>
         <nav>
           <a href="https://x.com/baejoseph" target="_blank" rel="noopener">𝕏</a>
         </nav>
@@ -40,8 +40,147 @@ const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
       <slot />
     </main>
 
+    <!-- Debug mode banner — hidden by default, shown when debug mode is active -->
+    <div id="debug-banner" role="status" aria-live="polite">
+      <span id="debug-banner-text">🔮 Preview mode · showing scheduled posts</span>
+      <button id="debug-banner-close" aria-label="Exit preview mode" title="Triple-click the site title to toggle">✕</button>
+    </div>
+
     <footer>
       <p>Joseph Bae © {new Date().getFullYear()} · <a href="https://x.com/baejoseph" target="_blank" rel="noopener">@baejoseph</a></p>
     </footer>
   </body>
 </html>
+
+<script>
+  // ── Debug / Preview mode ─────────────────────────────────────────────────
+  // Triple-click (or triple-tap) on the site title toggles preview mode.
+  // State is persisted in localStorage so it survives navigation.
+
+  const STORAGE_KEY = 'baejoseph_preview_mode';
+
+  function getDebugMode(): boolean {
+    try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
+  }
+  function setDebugMode(val: boolean) {
+    try { localStorage.setItem(STORAGE_KEY, val ? 'true' : 'false'); } catch {}
+  }
+
+  // Apply debug state to the DOM — called on every page load and on toggle
+  function applyDebugMode(enabled: boolean) {
+    document.body.classList.toggle('preview-mode', enabled);
+
+    const banner = document.getElementById('debug-banner');
+    const bannerText = document.getElementById('debug-banner-text');
+    if (!banner || !bannerText) return;
+
+    if (enabled) {
+      // Count how many scheduled (future) post items exist on this page
+      const count = document.querySelectorAll('[data-future="true"]').length;
+      bannerText.textContent = count > 0
+        ? `🔮 Preview mode · ${count} scheduled post${count !== 1 ? 's' : ''} visible`
+        : '🔮 Preview mode · no scheduled posts on this page';
+      banner.style.display = 'flex';
+    } else {
+      banner.style.display = 'none';
+    }
+  }
+
+  // Triple-click / triple-tap detection
+  let tapCount = 0;
+  let tapTimer: ReturnType<typeof setTimeout> | null = null;
+
+  function handleTitleTap(e: Event) {
+    // Don't follow the link on the 2nd/3rd tap in a triple sequence
+    if (tapCount > 0) e.preventDefault();
+
+    tapCount++;
+    if (tapTimer) clearTimeout(tapTimer);
+
+    if (tapCount >= 3) {
+      tapCount = 0;
+      e.preventDefault();
+      const next = !getDebugMode();
+      setDebugMode(next);
+      applyDebugMode(next);
+      // Trigger a re-render of post visibility (fired on the index / tag pages)
+      document.dispatchEvent(new CustomEvent('previewModeChanged', { detail: { enabled: next } }));
+      return;
+    }
+
+    // Reset count if no third tap within 600 ms
+    tapTimer = setTimeout(() => { tapCount = 0; }, 600);
+  }
+
+  // Close button on banner
+  function initDebugMode() {
+    const trigger = document.getElementById('site-title-trigger');
+    trigger?.addEventListener('click', handleTitleTap);
+    trigger?.addEventListener('touchend', handleTitleTap, { passive: false });
+
+    const closeBtn = document.getElementById('debug-banner-close');
+    closeBtn?.addEventListener('click', () => {
+      setDebugMode(false);
+      applyDebugMode(false);
+      document.dispatchEvent(new CustomEvent('previewModeChanged', { detail: { enabled: false } }));
+    });
+
+    // Apply persisted state on page load
+    applyDebugMode(getDebugMode());
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDebugMode);
+  } else {
+    initDebugMode();
+  }
+</script>
+
+<style>
+  /* ── Debug banner ────────────────────────────────────────────────────── */
+  #debug-banner {
+    display: none; /* shown via JS */
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 9999;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.45rem 0.75rem 0.45rem 0.9rem;
+    background: rgba(15, 12, 30, 0.92);
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(99, 102, 241, 0.1);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgba(199, 210, 254, 0.85);
+    user-select: none;
+    animation: banner-in 0.25s ease;
+  }
+
+  @keyframes banner-in {
+    from { opacity: 0; transform: translateY(8px) scale(0.96); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  #debug-banner-close {
+    background: none;
+    border: none;
+    color: rgba(199, 210, 254, 0.5);
+    font-size: 0.7rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: color 0.15s;
+  }
+  #debug-banner-close:hover { color: rgba(199, 210, 254, 0.9); }
+
+  /* Scheduled post highlight — subtle left border, used on listing pages */
+  :global(body.preview-mode .post-item[data-future="true"]) {
+    border-left: 2px solid rgba(99, 102, 241, 0.4);
+    opacity: 0.7;
+  }
+</style>
