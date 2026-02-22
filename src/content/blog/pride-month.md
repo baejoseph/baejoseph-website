@@ -1,8 +1,9 @@
 ---
-title: "🏳️‍🌈 Essay on Pride Month"
+title: "🏳️‍🌈 프라이드 먼스에 대한 소견"
 date: "2022-06-24"
 wpSlug: "pride-month"
 lang: "ko"
+pairedSlug: "pride-month-en"
 featuredImage: "/assets/FoOLmc-X0AIbitV.jpg"
 
 tags: ["leftism", "theology"]
@@ -23,17 +24,3 @@ tags: ["leftism", "theology"]
 사실 윗 문단의 내용은 기독교인이라면 당연히 받아드려야 하는 교리이다. 그러나 내가 발견한 슬픈 현실은, 많은 기독교인들이 세상과 오랜 기간 동안 타협한 나머지 어느새 이런 미친 6월달 축제에 그냥 침묵하는 정도가 아니라, 이제는 누구보다 더 활발하게 참여하고, 더 나아가 그렇게 하지 않는 그리스도 안에서의 형제 자매들을 배역하며 자기는 이들과 다르다고 선을 긋고, 위에서 말한 젤롯 당원들에게 한 번 더 칭찬을 받으려고 충성된 개처럼 기다린다는 것이다. 세상의 소금이 되어야할 자들이 어느새 그 맛을 잃은 소금이 되어 버린 것이다.
 
 예수님을 믿는 모든 신자들은 이 시대를 향해 사랑 안에서 진리를 말하라는 사명을 받았다. 죄를 죄라고 말하는 것이야 말로 제일 사랑을 실천하는 것이다. 상대방이 궁극적으로 멸망을 받는다는 사실을 알면서도 그들에게 “무조건 적인 관용”만 관철하는 것은 단순히 비겁한 것이 아니라, 그들의 멸망에 일조하는 것, 즉 사랑의 정 반대가 되는 행동인 것이다. 이제 우리 그리스도인들이 용기를 내어 세상의 소금 역할을 할 때가 왔다. 죄를 죄라고 말하고 복음을 전하자. 하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 회개하고 저를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라.
-
-> You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and be trampled by men.
-> 
-> Matthew 5:13
-
-Every month of June, madness descends upon the Western society. It is the celebration (yes, a celebration!) of all things sexually immoral and deviant. The rainbow flag is unilaterally imposed on pretty much everything everywhere, and everyone is expected to vocally express “their full support for LGBTQ colleagues and friends”. Everyone and their dog are busy virtue-signalling by flying the rainbow flag across the twitter-sphere and on every other social network on the interwebs. Not to be outdone, every large corporation tints their logos in the familiar rainbow colours for the whole duration of June like clockwork. It has become such a rite of passage, that it is no longer acceptable to even stay silent and shut up and do nothing; your conspicuous inaction will be noticed by the Zealots that are the LGBTQIA+ Allies, the HR department, the media, and the Big Tech. Step out of line, and their retaliation will be swift: first by shadow-banning and de-platforming, and then by punishment through disciplining and firing. All of this is reminiscent of 1930s Germany, when the swastika was forced upon the population.
-
-This year, let us make the decision to no longer be silenced by the mob.
-
-First, let’s get our definitions straight. What is love? Love is not unconditional tolerance. The Bible says that God is love; everything God does is by definition loving. In the beginning, God created the universe. God created human beings in his image. God created marriage to be between one man and one woman, and gave it to us for human flourishing. Sex is to be between a man and a woman in the context of marriage. God calls LGBTQ sin, and he calls to repentance all who partake in such activities.
-
-Now, if you are a Christian, none of the points made in the above paragraph should be controversial. Sadly, however, I’m discovering that many Christians have grown so used to compromising with the world, and have become so emasculated by it, that they not only stay silent; they actively defend and promote such madness, and even throw their own brothers and sisters under the proverbial bus in an attempt to distance themselves from their position, in order to maintain their own good-standing with the Zealots. In short, they have (and I do not say this lightly) become salt that has lost its saltiness.
-
-As Christians, we are called to speak the truth in love. We are called to call out sin for what it is, because that is the most loving thing you can do. Unconditional acceptance and affirmation is not only cowardly; it is deeply unloving and callous, when you know that the other person is headed for certain destruction. For God so loved the world, that he gave his one and only Son, that whoever repents and believes in Him shall not perish, but have eternal life.
