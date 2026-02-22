@@ -3,6 +3,7 @@ title: "📚 Book Review: Pride and Prejudice"
 date: "2024-06-14"
 wpSlug: "pride-and-prejudice"
 lang: "en"
+pairedSlug: "오만"
 featuredImage: "/assets/unnamed.jpg"
 
 tags: ["review"]
