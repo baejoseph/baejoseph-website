@@ -3,7 +3,7 @@ title: "🎮 Are You Stuck on the Demo?"
 date: "2026-02-03"
 lang: "en"
 pairedSlug: "커비"
-featuredImage: ""
+featuredImage: "/assets/kirby-demo.png"
 tags: ["theology", "family", "korea"]
 ---
 
