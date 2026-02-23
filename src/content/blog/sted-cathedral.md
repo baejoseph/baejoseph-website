@@ -3,6 +3,7 @@ title: "🍻 St Edmundsbury에서 있었던 일"
 date: "2023-09-01"
 wpSlug: "sted-cathedral"
 lang: "ko"
+pairedSlug: "sted-cathedral-en"
 featuredImage: "/assets/IMG_1867-e1694180515211.jpeg"
 
 tags: ["travel", "testimony"]

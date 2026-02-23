@@ -3,6 +3,7 @@ title: "🙏 2017 Prayer Mission in Luton"
 date: "2017-06-09"
 wpSlug: "2017-prayer-mission-eng1"
 lang: "en"
+pairedSlug: "2017기도선교"
 featuredImage: "/assets/%EA%B8%B0%EB%8F%84%EC%84%A0%EA%B5%902017%EB%8C%80%EC%A0%84%EB%93%9C%EB%A6%BC%ED%8C%80.jpeg"
 
 tags: ["prayer", "korea", "testimony"]

@@ -3,6 +3,7 @@ title: "📖 Why Your NT is Missing Some Verses"
 date: "2025-02-14"
 wpSlug: "nkjv"
 lang: "en"
+pairedSlug: "성경번역"
 featuredImage: "/assets/Greek-Manuscript-18-pic-2.jpg"
 
 tags: ["theology"]

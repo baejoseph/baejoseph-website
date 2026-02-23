@@ -3,6 +3,7 @@ title: "📉 Financial Crash and Wokism"
 date: "2024-10-11"
 wpSlug: "financial-crash-and-wokism"
 lang: "en"
+pairedSlug: "금융위기와좌파"
 featuredImage: "/assets/ad1fc75d-b89f-4e7e-a231-cbb8c3230994_2500x1500.jpg"
 
 tags: ["leftism"]

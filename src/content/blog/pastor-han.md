@@ -3,6 +3,7 @@ title: "🎤 대전한사랑교회 한성모 목사님 간증"
 date: "2023-07-14"
 wpSlug: "pastor-han"
 lang: "ko"
+pairedSlug: "pastor-han-en"
 featuredImage: "/assets/SCR-20230905-dox-e1694180411789.jpeg"
 
 tags: ["testimony", "prayer"]

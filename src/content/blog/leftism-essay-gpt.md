@@ -3,6 +3,7 @@ title: "⌨️ An Essay on Leftism &#038; Chat GPT"
 date: "2023-09-22"
 wpSlug: "leftism-essay-gpt"
 lang: "en"
+pairedSlug: "좌파주의에세이"
 featuredImage: "/assets/chat-gpt-logo-scaled-1.jpeg"
 
 tags: ["leftism", "tech"]

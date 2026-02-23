@@ -3,6 +3,7 @@ title: "🧍 Human self-centredness"
 date: "2024-09-13"
 wpSlug: "self"
 lang: "en"
+pairedSlug: "자아"
 featuredImage: "/assets/SCR-20240718-g4e.jpeg"
 
 tags: ["theology", "family"]

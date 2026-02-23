@@ -3,6 +3,7 @@ title: "🌳 My Journey of Faith"
 date: "2025-09-06"
 wpSlug: "journey"
 lang: "en"
+pairedSlug: "여정"
 featuredImage: "/assets/IMG_2458-scaled.jpg"
 
 tags: ["theology", "testimony", "eschatology"]

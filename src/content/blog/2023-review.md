@@ -3,6 +3,7 @@ title: "🗓 2023: A year in review"
 date: "2023-12-01"
 wpSlug: "2023-review"
 lang: "en"
+pairedSlug: "2023회고"
 featuredImage: "/assets/IMG_9591-scaled.jpg"
 
 tags: ["testimony"]

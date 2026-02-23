@@ -3,6 +3,7 @@ title: "📒 Essay on evangelism"
 date: "2024-05-10"
 wpSlug: "evangelism"
 lang: "en"
+pairedSlug: "전도"
 featuredImage: "/assets/SCR-20240512-smss.jpeg"
 
 tags: ["evangelism"]

@@ -3,6 +3,7 @@ title: "🧈 Butter"
 date: "2024-05-31"
 wpSlug: "butter"
 lang: "en"
+pairedSlug: "버터"
 featuredImage: "/assets/SCR-20240627-tdjj.jpeg"
 
 tags: ["health"]

@@ -3,6 +3,7 @@ title: "🌻 Vegetable Oils"
 date: "2024-05-24"
 wpSlug: "oils"
 lang: "en"
+pairedSlug: "기름"
 featuredImage: "/assets/SCR-20240628-ho9.jpeg"
 
 tags: ["health"]

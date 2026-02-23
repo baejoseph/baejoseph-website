@@ -3,6 +3,7 @@ title: "🏰 Retake Glastonbury"
 date: "2024-07-05"
 wpSlug: "tor"
 lang: "en"
+pairedSlug: "토르산"
 featuredImage: "/assets/IMG_3046.jpg"
 
 tags: ["evangelism", "travel"]

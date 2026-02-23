@@ -3,6 +3,7 @@ title: "🎂 40th Birthday Party"
 date: "2023-03-17"
 wpSlug: "40th-birthday-party"
 lang: "en"
+pairedSlug: "마흔번째생일"
 featuredImage: "/assets/IMG_6954.jpeg"
 
 tags: ["family", "testimony"]

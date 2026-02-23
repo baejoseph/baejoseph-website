@@ -3,6 +3,7 @@ title: "🗓 My Weekly Schedule 2025"
 date: "2025-06-13"
 wpSlug: "week"
 lang: "en"
+pairedSlug: "한주간"
 featuredImage: "/assets/SCR-20240610-tjeh.jpeg"
 
 tags: ["testimony"]

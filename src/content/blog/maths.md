@@ -3,6 +3,7 @@ title: "🧮 The Maths behind Bayes’ Theorem and The Resurrection"
 date: "2025-02-22"
 wpSlug: "maths"
 lang: "en"
+pairedSlug: "수학"
 featuredImage: "/assets/SCR-20250222-vpr.jpeg"
 
 tags: ["theology"]

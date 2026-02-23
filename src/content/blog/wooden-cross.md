@@ -3,6 +3,7 @@ title: "✝️ Making a wooden cross"
 date: "2023-07-07"
 wpSlug: "wooden-cross"
 lang: "en"
+pairedSlug: "나무십자가"
 featuredImage: "/assets/IMG_9017.jpeg"
 
 tags: ["evangelism"]

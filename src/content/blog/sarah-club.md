@@ -3,6 +3,7 @@ title: "👫 Sarah Club"
 date: "2023-07-21"
 wpSlug: "sarah-club"
 lang: "ko"
+pairedSlug: "sarah-club-en"
 featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"
 
 tags: ["family", "testimony"]

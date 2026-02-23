@@ -3,6 +3,7 @@ title: "📖 McCheyne Bible Reading Plan"
 date: "2023-03-10"
 wpSlug: "mccheyne"
 lang: "en"
+pairedSlug: "맥체인"
 featuredImage: "/assets/SCR-20231019-l93.png"
 
 tags: ["prayer"]

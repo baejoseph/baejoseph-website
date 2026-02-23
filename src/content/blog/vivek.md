@@ -3,6 +3,7 @@ title: "🇺🇸 비벡 라마스와미"
 date: "2023-08-11"
 wpSlug: "vivek"
 lang: "ko"
+pairedSlug: "vivek-en"
 featuredImage: "/assets/Vivek_Ramaswamy_by_Gage_Skidmore.jpg"
 
 tags: ["leftism"]

@@ -3,6 +3,7 @@ title: "🏰 Spiritual Recon at Glastonbury"
 date: "2024-11-01"
 wpSlug: "recon"
 lang: "en"
+pairedSlug: "정찰"
 featuredImage: "/assets/SCR-20241103-u7b-scaled.jpeg"
 
 tags: ["evangelism", "travel"]

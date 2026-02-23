@@ -3,6 +3,7 @@ title: "🗡️ Three men in a room"
 date: "2023-11-24"
 wpSlug: "3-men-room"
 lang: "ko"
+pairedSlug: "three-men-in-a-room"
 featuredImage: "/assets/SCR-20231214-fjl-scaled.jpeg"
 
 tags: ["leftism", "theology"]

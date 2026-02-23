@@ -3,6 +3,7 @@ title: "💰 Tithes"
 date: "2024-08-23"
 wpSlug: "tithes"
 lang: "en"
+pairedSlug: "십일조"
 featuredImage: "/assets/SCR-20241005-sce.jpeg"
 
 tags: ["theology"]

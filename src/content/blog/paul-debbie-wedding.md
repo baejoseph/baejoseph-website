@@ -3,6 +3,7 @@ title: "👰 Paul &#038; Debbie Wedding"
 date: "2023-01-28"
 wpSlug: "paul-debbie-wedding"
 lang: "en"
+pairedSlug: "폴데비결혼"
 featuredImage: "/assets/IMG_6436-e1698938493182.jpeg"
 
 tags: ["family", "testimony"]

@@ -3,6 +3,7 @@ title: "ن Standing up for the name of Jesus"
 date: "2016-10-14"
 wpSlug: "name-of-jesus"
 lang: "ko"
+pairedSlug: "name-of-jesus-en"
 featuredImage: "/assets/SCR-20231019-m0u.png"
 
 tags: ["courage", "theology"]

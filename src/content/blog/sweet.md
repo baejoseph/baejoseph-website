@@ -3,6 +3,7 @@ title: "🍯 하나님은 왜 단거를 만드셨을까"
 date: "2023-11-03"
 wpSlug: "sweet"
 lang: "ko"
+pairedSlug: "sweet-en"
 featuredImage: "/assets/SCR-20231110-jzx.jpeg"
 
 tags: ["family", "korea"]

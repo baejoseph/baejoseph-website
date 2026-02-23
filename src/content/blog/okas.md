@@ -3,6 +3,7 @@ title: "🎓 Presenting at the OKAS Career Forum"
 date: "2023-05-06"
 wpSlug: "okas"
 lang: "ko"
+pairedSlug: "okas-en"
 featuredImage: "/assets/341060349_242295501639643_4103721412331386996_n.jpg"
 
 tags: ["testimony"]

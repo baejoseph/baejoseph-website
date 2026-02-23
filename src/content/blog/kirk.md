@@ -3,6 +3,7 @@ title: "📯 An End Time Prophet’s Cry"
 date: "2025-10-03"
 wpSlug: "kirk"
 lang: "en"
+pairedSlug: "커크"
 featuredImage: "/assets/IMG_3442.jpg"
 
 tags: ["eschatology", "courage"]

@@ -3,6 +3,7 @@ title: "🛫 2023년 8월5-7일 한국에서 2박 3일"
 date: "2023-08-18"
 wpSlug: "2023-korea-visit"
 lang: "ko"
+pairedSlug: "korea-visit-2023"
 featuredImage: "/assets/IMG_9294.jpeg"
 
 tags: ["korea", "family", "testimony"]
