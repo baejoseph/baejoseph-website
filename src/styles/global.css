@@ -269,8 +269,12 @@ article {
 /* ── Home hero ── */
 .home-hero {
   margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+    url('/assets/restore-britain-hero.jpg') center / cover no-repeat;
+  text-align: center;
 }
 
 .home-hero h1 {
@@ -278,27 +282,15 @@ article {
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 .home-hero p {
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.85);
   font-size: 1rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
-
-.home-hero .social-links {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.home-hero .social-links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.15s;
-}
-
-.home-hero .social-links a:hover { color: var(--accent-hover); }
 
 /* ── Lang filter ── */
 .lang-filter {
