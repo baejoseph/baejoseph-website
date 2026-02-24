@@ -271,9 +271,10 @@ article {
   margin-bottom: 3rem;
   padding: 3rem 2rem;
   border-radius: 8px;
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-    url('/assets/restore-britain-hero.jpg') center / cover no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/assets/restore-britain-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
