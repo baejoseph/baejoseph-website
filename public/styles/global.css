@@ -269,12 +269,20 @@ article {
 /* ── Home hero ── */
 .home-hero {
   margin-bottom: 3rem;
-  padding: 3rem 2rem;
   border-radius: 8px;
-  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/assets/restore-britain-hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.home-hero .hero-img {
+  display: block;
+  width: 100%;
+  /* Mobile: natural height — full image always visible, no cropping */
+  height: auto;
+}
+
+.home-hero .hero-text {
+  padding: 1.5rem 1.5rem 1.75rem;
   text-align: center;
 }
 
@@ -283,14 +291,19 @@ article {
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 0.5rem;
-  color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 .home-hero p {
-  color: rgba(255,255,255,0.85);
+  color: var(--text-muted);
   font-size: 1rem;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Desktop: cap the banner height so it doesn't consume too much space */
+@media (min-width: 640px) {
+  .home-hero .hero-img {
+    height: 200px;
+    object-fit: cover;
+  }
 }
 
 /* ── Lang filter ── */
