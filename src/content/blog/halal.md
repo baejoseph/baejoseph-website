@@ -1,5 +1,5 @@
 ---
-title: "🐑 The Shepherd's Betrayal"
+title: "🐑 The Shepherd’s Betrayal"
 date: "2026-02-17"
 lang: "en"
 pairedSlug: "할랄"
