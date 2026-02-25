@@ -4,7 +4,7 @@ date: "2024-06-07"
 lang: "en"
 pairedSlug: "독"
 tags: ["health", "theology", "courage"]
-featuredImage: ""
+featuredImage: "/assets/poison.png"
 wpSlug: "poison"
 ---
 
