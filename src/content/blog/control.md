@@ -70,4 +70,4 @@ The Normans took the game. The aristocracy kept the venison. The clergy chained 
 
 The answer, in every era, is the same: refuse.
 
-Eat the meat. Read the Word. Keep your weapons. Pray without ceasing. Fast with purpose. Let the strongholds fall.
+Eat the meat. [Read the Word](/bible-app/). Keep your weapons. Pray without ceasing. Fast with purpose. Let the strongholds fall. And [celebrate the heroics](/heroics/).
