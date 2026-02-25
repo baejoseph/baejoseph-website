@@ -1,5 +1,5 @@
 ---
-title: "⚖️ England's Reckoning"
+title: "⚖️ England’s Reckoning"
 date: "2026-02-24"
 lang: "en"
 featuredImage: ""
