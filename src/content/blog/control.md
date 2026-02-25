@@ -4,7 +4,7 @@ date: "2026-02-06"
 lang: "en"
 pairedSlug: "통제"
 tags: ["leftism", "theology", "courage", "health"]
-featuredImage: ""
+featuredImage: "/assets/control.png"
 wpSlug: "control"
 ---
 
