@@ -38,6 +38,8 @@ John Wycliffe translated the New Testament into English in the 1380s and died un
 
 The pattern is identical. Control the food. Chain the Bible. Keep the people dependent, weak, and intermediated. A saint who can read Scripture for himself and eat well is more dangerous to corrupted power than an army.
 
+And yet most saints today — including card-carrying Bible-believers — remain daily consumers of exactly this poison in another form: [the corrupt mainstream media](/sober/). The intermediary has changed; the dependency has not. Rome chained the Bible; the BBC and CNN simply poison the mind that reads it.
+
 ### The Second Amendment and the Porcupine
 
 I grew up in South Korea and came of age in 1990s Britain, saturated in the liberal consensus of the Western academy. Gun ownership was, to my educated mind, simply barbaric—an American pathology, a relic of frontier violence with no place in a civilised society. I held this view with complete confidence. I was completely wrong.
