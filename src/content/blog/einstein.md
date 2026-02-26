@@ -1,5 +1,5 @@
 ---
-title: "🧠 Einstein's Unconventional Selection of Disciples"
+title: "🧠 Einstein’s Unconventional Selection of Disciples"
 date: "2024-11-29"
 wpSlug: "einstein"
 lang: "en"

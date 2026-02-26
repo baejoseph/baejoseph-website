@@ -1,5 +1,5 @@
 ---
-title: "🇰🇷 South Korea's Fertility Crisis: A Solution"
+title: "🇰🇷 South Korea’s Fertility Crisis: A Solution"
 date: "2024-11-22"
 lang: "en"
 pairedSlug: "출산"
