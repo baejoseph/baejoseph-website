@@ -27,10 +27,7 @@ Let’s start with the 3 biggest reasons why:
 
 Cholesterol is the precursor for numerous important hormones like:
 
--   Cortisol
--   Estrogren
--   Testosterone
--   Progesterone
+-   Cortisol—Estrogren—Testosterone—Progesterone
 
 Without cholesterol, these systems don’t function properly.
 
@@ -42,16 +39,14 @@ Cholesterol is also the building block for vitamin D production. You can supplem
 
 Cholesterol is abundant in the brain. It supports the formation of nerve cells. And is essential for regulating the nervous system. It also maintains synapses between brain cells responsible for:
 
--   Memory
--   Learning
--   Overal cognition
+-   Memory—Learning—Overal cognition
 
 Now you know why cholesterol is essential for survival.
 
 But I’m sure you still have questions:
 
 1.  “Is there a difference between good and bad cholesterol?”
-2.  “What's really causing heart attacks and stroke?”
+2.  “What’s really causing heart attacks and stroke?”
 3.  “How can I lower my risk of heart disease?”
 
 Let’s dive into each:
@@ -78,19 +73,13 @@ Excess sugar in the blood is then stored as fat in the form of triglycerides. On
 
 Eat healthy fats like:
 
--   Fish
--   Nuts
--   Eggs
--   Olive oil
--   Avocados
--   Quality Meats
+-   Fish—Nuts—Eggs—Olive oil—Avocados—Quality Meats
 
 Also, incorporating fiber into your diet from fruits and veggies is crucial for HDL production.
 
 Avoid foods that include:
 
--   Sugary sweets and beverages
--   Highly processed foods
+-   Sugary sweets and beverages—Highly processed foods
 -   [Vegetable/Seed oils](/oils)
 -   Fried foods
 
@@ -101,3 +90,7 @@ So what’s the conclusion?
 Cholesterol is not inherently bad. It’s a necessary building block of many functions of the human body. The key is to limit processed foods that damage and break down our cholesterol.
 
 Thanks for reading!
+
+—-
+
+**Update:** the deception around food turned out to be more sinister than I thought — [Disarm and Starve](/control/).

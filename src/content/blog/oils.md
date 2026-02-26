@@ -13,7 +13,7 @@ tags: ["health"]
 
 Every day you are eating oils that were only used in industrial machines just 100 years ago. They’re making you fat & destroying your health. And you don’t even realize it.
 
-In the 1920s, the percentage of calories that were obtained from “vegetable” oils in the American diet amounted to 0%. Today, the percentage of calories has risen to 7-8% of the total calories consumed by the average American.
+In the 1920s, the percentage of calories that were obtained from “vegetable” oils in the American diet amounted to 0%. Today, the percentage of calories has risen to 7–8% of the total calories consumed by the average American.
 
 First, “vegetable” oils were not originally called vegetable oils. They were called “seed oils”, and they were only used in industrial machines before the early 1900’s. I will cover how they became labeled “vegetable oils” later.
 
@@ -21,7 +21,7 @@ To obtain and use vegetable oils, they all must be chemically extracted from gra
 
 But why does the U.S. call them “vegetable oils”?
 
-They were given the name “vegetable oil” because the word “vegetable” appeared to be healthier when marketing the products. “Seed oil", “grain oil”, and “bean oil” just doesn’t sound as healthy in marketing! But ultimately, “vegetable” oils are industrial seed oils.
+They were given the name “vegetable oil” because the word “vegetable” appeared to be healthier when marketing the products. “Seed oil”, “grain oil”, and “bean oil” just doesn’t sound as healthy in marketing! But ultimately, “vegetable” oils are industrial seed oils.
 
 So how did they become food?
 
@@ -51,12 +51,7 @@ The extracted oils have to be refined, bleached & deodorized before they can be 
 
 The seeds have to be gathered from plants. These are the most common:
 
--   Soy
--   Corn
--   Safflower
--   Sunflower
--   Cotton
--   Rapeseed (becomes canola)
+-   Soy—Corn—Safflower—Sunflower—Cotton—Rapeseed (becomes canola)
 
 ##### SECOND: extreme heat
 
@@ -80,7 +75,7 @@ I’m glad you asked 😉
 
 In the late 1940s, a small group of cardiologists were members of a small, new organization called the American Heart Association. They received a $1.5 million donation from Procter & Gamble.
 
-Due to this generous gift of cash from the makers of Crisco, the AHA now had sufficient funding to grow its national profile as a physician’s organization dedicated to heart health. Not surprisingly, the AHA was also quick to endorse industrial seed oils. We now know in the U.S. as “vegetable oils." (as described earlier).
+Due to this generous gift of cash from the makers of Crisco, the AHA now had sufficient funding to grow its national profile as a physician’s organization dedicated to heart health. Not surprisingly, the AHA was also quick to endorse industrial seed oils. We now know in the U.S. as “vegetable oils.” (as described earlier).
 
 The AHA claimed that seed oils were a healthier alternative to traditional animal fats. During the early 1950s, a physiologist & researcher named Ancel Keys introduced his Diet-Heart Hypothesis. He presented data that seemed to suggest a link between saturated fat and [cholesterol](/cholesterol) intake and heart disease.
 
@@ -103,13 +98,7 @@ Luckily, you can do something about it to improve and maintain your health.
 The research is now overwhelming that you should not consume these types of oils. And you should consume traditional foods with saturated fats. Here are the healthy fats you should consume:
 
 -   Animal fats/lard/tallow/[butter](/butter)
--   Fish oil
--   Coconut oil
--   Olive oil
--   Avocado oil
--   Avocados
--   Macadamia oil
--   Tree Nuts
+-   Fish oil—Coconut oil—Olive oil—Avocado oil—Avocados—Macadamia oil—Tree Nuts
 
 These have been consumed for millennia by humans. Also, they do not have to be chemically extracted to be obtained and consumed. And these do not produce inflammation in the body as seed oils do. In fact, the above-listed healthy fats lower and help regulate inflammation in the body.
 
@@ -120,3 +109,7 @@ There’s a transformative habit I would highly encourage you to pick up:
 It will have one of THE largest impacts on your health! Additionally, you will notice a difference in how you feel within 2 weeks. Guaranteed.
 
 Just try it.
+
+—-
+
+**Update:** the deception around food runs deeper than nutrition — [Disarm and Starve](/control/).

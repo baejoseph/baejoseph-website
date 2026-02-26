@@ -13,7 +13,7 @@ While reflecting on my time as a Sunday School teacher, leading the group and te
 
 > “An essay on leftism vs right and scale.
 > 
-> A while back, when I was still teaching the Sunday School (for high school students), I would often hold Bible memorisation competitions. The students would be given a set text (for example, Psalm 23), and told when the competition will be held, giving them 2-3 weeks to memorise and practice the recitation of the text. On the day of the competition, I would set independent judges (multiple!) to evaluate everyone’s performance as objectively as they can. We would time their recitation in seconds, and use penalties such as +5s per mistake, and give an overall score for fluency/delivery. I was quite proud of the way we were able to consistently evaluate everyone’s performance without showing favouritism.
+> A while back, when I was still teaching the Sunday School (for high school students), I would often hold Bible memorisation competitions. The students would be given a set text (for example, Psalm 23), and told when the competition will be held, giving them 2–3 weeks to memorise and practice the recitation of the text. On the day of the competition, I would set independent judges (multiple!) to evaluate everyone’s performance as objectively as they can. We would time their recitation in seconds, and use penalties such as +5s per mistake, and give an overall score for fluency/delivery. I was quite proud of the way we were able to consistently evaluate everyone’s performance without showing favouritism.
 > In addition to the above, in order to motivate everyone to excellence, we would deliberately limit the number of prizes given. This was no “every participant gets an award!” affair. Only the very best would get the prize, and maybe there would be a runner-up prize. Given a fixed budget (which we did), this approach enabled the prize to be something everyone could covet (the very first competition had AirPod Pros as the First Prize!) and so it really became a motivator for excellence for all.
 > 
 > However, after running this competition successfully and giving out the winning prize several times, I quickly realised there was a ‘problem’. The winning student kept winning again and again. The fact was that not everyone had equal ability, and not everyone had equal level of motivation. The hardest part was those students who \*were\* clearly motivated, but they just didn’t have the same ability to be able to compete on a level playing field. And in all that time, the winning student was gaining more experience and confidence and even panache—she was getting so good and reaching a level that was now unassailable by all the others. We were literally beholding the ‘preferential attachment effect’ (also known as the ‘Matthew effect of accumulated advantage’, after what Jesus said in Matthew 25:29: “For to every one who has will more be given, and he will have abundance; but from him who has not, even what he has will be taken away.”).
@@ -26,7 +26,7 @@ While reflecting on my time as a Sunday School teacher, leading the group and te
 > 
 > My answer to this is a firm, resounding no! And here are the reasons why:
 > 
-> First of all, the idea that the state/council can even be seen as a ‘parent’ figure of the population is abhorrent to me. The Bible’s mandate for the state is limited to keeping the public law and order (enforcement of laws, punishing the wicked), as seen in Romans 13 and 1 Timothy 2:1-2. I am deeply skeptical of the idea that the state/government has my best interest at heart. Instead, it should get out of the way when it comes to private enterprise—let each law-abiding citizen figure out how best to participate in the economy/market, make his decisions, and reap the benefits of his decisions without interference from the state.
+> First of all, the idea that the state/council can even be seen as a ‘parent’ figure of the population is abhorrent to me. The Bible’s mandate for the state is limited to keeping the public law and order (enforcement of laws, punishing the wicked), as seen in Romans 13 and 1 Timothy 2:1–2. I am deeply skeptical of the idea that the state/government has my best interest at heart. Instead, it should get out of the way when it comes to private enterprise—let each law-abiding citizen figure out how best to participate in the economy/market, make his decisions, and reap the benefits of his decisions without interference from the state.
 > 
 > The state has no business in forcibly taking away a portion of some people’s property through taxation and re-distributing that to the rest of the populace in the name of ‘social justice’ (fighting inequality), but alas that is the society we live in today.”
 
@@ -44,7 +44,7 @@ And this beauty is what it produced in 0.4s or so:
 > 
 > 1\. Leftism in the Family: Promoting Equality and Welfare
 > 
-> In a family, the application of leftist principles can foster a sense of equality and well-being. Parents often strive to provide equal opportunities and resources to their children, irrespective of their individual capabilities. This creates a nurturing and supportive environment where each family member's needs are met, and collective welfare is prioritized over individual interests.
+> In a family, the application of leftist principles can foster a sense of equality and well-being. Parents often strive to provide equal opportunities and resources to their children, irrespective of their individual capabilities. This creates a nurturing and supportive environment where each family member’s needs are met, and collective welfare is prioritized over individual interests.
 > 
 > 2\. Scaling Leftism: The Challenge of an Anonymous Society
 > 
@@ -67,3 +67,7 @@ And this beauty is what it produced in 0.4s or so:
 > In conclusion, the dichotomy between leftist principles in the family and right-wing governance for a nation reflects the complexities of human nature and societal dynamics. Leftism in a family promotes equality and well-being, as familial bonds foster mutual care. However, as societies grow in scale and anonymity, leftism faces challenges stemming from human greed and self-interest. In these larger, diverse settings, a right-wing approach emphasizing individual freedom, hard work, and minimal state intervention becomes more practical. The key lies in striking a balance that recognizes the value of both principles, preserving individual freedoms while providing a safety net for those in need.”
 
 I wish I could write as succinctly as ChatGPT. And as fast
+
+—-
+
+**Update:** I ended up writing a proper version of that essay — [Why Christians Must Reject Leftism](/leftism-eng/).

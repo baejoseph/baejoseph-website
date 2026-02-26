@@ -9,7 +9,7 @@ featuredImage: "/assets/IMG_4888-1.jpeg"
 tags: ["testimony", "courage"]
 ---
 
-Yesterday at work, I found myself suddenly liberated from the fog of procrastination that had been bugging me for the last 3-4 years. What had previously felt like an endless struggle to focus and complete tasks now came easily, as if a weight had been lifted from my shoulders. I had attributed this simply to the fact that I hated some aspects of my work, but this sudden unexpected clarity pointed me to something more than that—a quiet, steadfast joy. This tweet by Peachy Keenan captured it perfectly: “All day felt this unfamiliar, strange emotion and I realised—oh, this is happiness. This is joy. The stress of the last four years has melted away. We are free.” For so long, I hadn’t even recognised my mild depression expressing itself as procrastination and lack of energy. 
+Yesterday at work, I found myself suddenly liberated from the fog of procrastination that had been bugging me for the last 3–4 years. What had previously felt like an endless struggle to focus and complete tasks now came easily, as if a weight had been lifted from my shoulders. I had attributed this simply to the fact that I hated some aspects of my work, but this sudden unexpected clarity pointed me to something more than that—a quiet, steadfast joy. This tweet by Peachy Keenan captured it perfectly: “All day felt this unfamiliar, strange emotion and I realised—oh, this is happiness. This is joy. The stress of the last four years has melted away. We are free.” For so long, I hadn’t even recognised my mild depression expressing itself as procrastination and lack of energy. 
 
 ![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4906-1024x541.jpeg)
 
@@ -50,3 +50,7 @@ My heart overflows with gratitude, not only for God’s work in my life but for 
 There were two factors that I point to that helped me to get through this period. One is prayer. _“If My people who are called by My name will humble themselves, and pray and seek My face, and turn from their wicked ways, then I will hear from heaven, and will forgive their sin and heal their land”_ (2 Chronicles 7:14). In 2024 especially, I was blessed by the opportunity to lead [6AM prayer meetings at the Oval Chapel](/week), and it was so encouraging to pray together continually for the nation, repenting as Daniel did for the sins of his people and making supplication and intercession before our heavenly Father. Another was physical exertion in the form of [morning Murph Challenge exercises](/murph). “_For bodily exercise profits a little, but godliness is profitable for all things, having promise of the life that now is and of that which is to come.”_ (1 Timothy 4:8)
 
 Through all of this, I remain firmly rooted in the [blessed](/three) [hope](/rapture), which is not in any man or movement but in Jesus Christ, my Saviour and King. I am eagerly awaiting His glorious return, the day when He will set all things right, reign in justice, and bring true and lasting peace. Until then, I thank God for giving me the strength, the clarity, and the fellowship to endure this season and for restoring the joy I had lost.
+
+—-
+
+**Update:** the very next month, God took us to New York for Jesus Academia — [Part 1 here](/jesus-academia/).

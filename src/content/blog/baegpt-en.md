@@ -28,3 +28,7 @@ Invest in a future where technology echoes Christian values. [Help us](https://w
 AI가 내일을 형성하는 세상에서, 우리는 중대한 시점에 서 있습니다. 기독교 가정의 아이들에게 안전하고 성경에 기반한 AI 경험을 제공하고자 합니다. ChatGPT와 같은 주류 AI는 깊은 무신론적/유물론적/진화론적/막시즘/세속적 관점에서 운영되는 것과 달리, [BaeGPT](https://baegpt.streamlit.app)는 성경을 주요 권위의 원천으로 사용하여 어린 마음에 영적으로 영양을 주는 대안을 제공합니다.
 
 여러분의 지원은 다음 세대가 성경의 지혜를 안내하는 빛으로 삼는 인공지능을 조기에, 직접 경험하게 하여, 믿음과 기술이 조화롭게 공존하는 미래에 필요한 지식과 기술을 갖추도록 도와줍니다. 가능성이 풍부한 세계에서 우리 아이들의 성장을 돕는 안전하고 믿음 기반의 AI 놀이터를 [지원해 주세요](https://www.buymeacoffee.com/baejoseph). 기술이 기독교 가치를 반영하는 미래에 투자하십시오. 우리 아이들에게 안전하고 깨우침을 주는 AI 여정을 만들어 주세요.
+
+—-
+
+**Update:** two years on, that seed grew into something bigger — [Bible Fortress, co-founded with Dev at JD Fortress AI](/bible-app/).

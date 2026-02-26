@@ -9,7 +9,7 @@ pairedSlug: "keller-eng"
 tags: ["theology", "leftism"]
 ---
 
-2023년 5월 팀 켈러 목사님의 서거에 깊은 조의를 표하며 가족들과 친지, 뉴욕의 리디머 교회가 이 기간에 하나님의 참 평안과 위로가 있으시길 기도합니다. 최근 복음주의 기독교계에는 팀 켈러 목사님의 삶을 돌아보며 여러가지 찬미와 찬사가 나오는 것을 보게 됩니다. 실로 팀 켈러 목사님은 뉴욕시에서 성공적인 개척과 목회, 또 많은 신앙 서적들과 Redeemer City to City 국제사역을 통해 20-21세기 많은 영향력을 끼친 하나님의 종이셨고 그런 면은 널리 공유 되고 celebrate해야 하는 것이 옳습니다. 저도 개인적으로 20대 때 팀 켈러 목사님의 ‘결혼의 의미’ 등 저서를 통해 많은 신앙의 유익을 누렸고, 또 책을 많은 사람들에게 선물로 주었던 기억이 있습니다. 특히 젊은 층 목회자들 사이에서 팀 켈러 목사님의 영향력은 굉장합니다.
+2023년 5월 팀 켈러 목사님의 서거에 깊은 조의를 표하며 가족들과 친지, 뉴욕의 리디머 교회가 이 기간에 하나님의 참 평안과 위로가 있으시길 기도합니다. 최근 복음주의 기독교계에는 팀 켈러 목사님의 삶을 돌아보며 여러가지 찬미와 찬사가 나오는 것을 보게 됩니다. 실로 팀 켈러 목사님은 뉴욕시에서 성공적인 개척과 목회, 또 많은 신앙 서적들과 Redeemer City to City 국제사역을 통해 20–21세기 많은 영향력을 끼친 하나님의 종이셨고 그런 면은 널리 공유 되고 celebrate해야 하는 것이 옳습니다. 저도 개인적으로 20대 때 팀 켈러 목사님의 ‘결혼의 의미’ 등 저서를 통해 많은 신앙의 유익을 누렸고, 또 책을 많은 사람들에게 선물로 주었던 기억이 있습니다. 특히 젊은 층 목회자들 사이에서 팀 켈러 목사님의 영향력은 굉장합니다.
 
 교회 뿐만 아닙니다. 팀 켈러 목사님처럼 이 세상 대중 언론과 미디어에서 존경과 찬사만 받은 목회자는 아마 없을 것입니다. 뉴욕 타임즈지 사설 뿐만 아니라 The Atlantic가 같은 온라인 극좌파 사이트에서도 팀 켈러 목사님의 글이 게재 될 정도로 팀 켈러 목사님은 이 세상에서도 영향을 끼쳤습니다. \[1\]
 
@@ -39,7 +39,7 @@ tags: ["theology", "leftism"]
 
 > 이러한 지혜는 위로부터 내려온 것이 아니요 땅 위의 것이요 정욕의 것이요 귀신의 것이니 시기와 다툼이 있는 곳에는 혼란과 모든 악한 일이 있음이라 오직 위로부터 난 지혜는 첫째 성결하고 다음에 화평하고 관용하고 양순하며 긍휼과 선한 열매가 가득하고 편견과 거짓이 없나니 화평하게 하는 자들은 화평으로 심어 의의 열매를 거두느니라
 > 
-> (약3:15-18)
+> (약3:15–18)
 > 십자가의 도가 멸망하는 자들에게는 미련한 것이요 구원을 받는 우리에게는 하나님의 능력이라
 > 
 > (고전1:18)
@@ -53,7 +53,11 @@ tags: ["theology", "leftism"]
 3.  Reason for God, introduction, p xi
 4.  Generous Justice, p7
 5.  트위터
-6.  “Jesus’ life, death and resurrection was an infinitely costly rescue operation to restore justice to the oppressed and marginalised”. Reason for God, pp56-57
+6.  “Jesus’ life, death and resurrection was an infinitely costly rescue operation to restore justice to the oppressed and marginalised”. Reason for God, pp56–57
 7.  “The ultimate purpose of Jesus is not only individual salvation and pardon for sin but also the renewal of this world, the end of disease, poverty, injustice.. Christians therefore can talk of saving the soul and of building social systems that deliver safe streets and warm homes in the same sentence.. God hates the suffering and oppression of this material world so much, he was willing to get involved in it and to fight against it.” The Prodigal God
 8.  이는 사실 나머지 제자들도 마찬가지 였습니다. 사도행전 1:6 보면 부활하신 예수님께 “주여 주께서 이스라엘 나라를 회복하심이 이 때니이까” 물었음을 통해 이를 알 수 있습니다.
 9.  미국독립혁명과는 반대로, 무신론/유물론/지성제일주의로 시작한 프랑스 혁명은 그 전 상태보다 더 흉측한 피비린네 나는 전체주의로 전락하고 말았습니다.
+
+—-
+
+**업데이트:** 이후 복음이 실제로 무엇을 요구하는지 더 깊이 다뤘습니다 — [속죄에 대하여](/속죄/).

@@ -22,7 +22,7 @@ tags: ["family", "testimony"]
 
 > For in this way in former times the holy women also, who hoped in God, used to adorn themselves, being submissive to their own husbands; just as Sarah obeyed Abraham, calling him lord, and you have become her children if you do what is right without being frightened by any fear.
 > 
-> 1 Peter 3:5-6
+> 1 Peter 3:5–6
 
 Rules of Sarah Club:
 
@@ -31,3 +31,7 @@ Rules of Sarah Club:
 3.  I will uphold my husband and will pray for him every day.
 
 May this be the beginning of a global movement that will honour God until the day of our Lord Jesus’ Return! Amen!
+
+—-
+
+**업데이트:** 이후 이 주제를 성경적으로 더 깊이 다뤘습니다 — [아내들이여, 남편에게 복종하라](/복종/).

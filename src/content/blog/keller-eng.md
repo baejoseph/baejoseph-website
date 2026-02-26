@@ -39,3 +39,7 @@ More fundamentally, Keller’s evangelism leaned on worldly wisdom—philosopher
 > (1 Corinthians 1:18, NKJV)
 
 I carry a deep burden for the Body of Christ, where Keller draws uncritical acclaim. Let us not fuse **[social justice](/starve)** and **[creation care](/climate)** into the gospel, as with Keller or John Stott, but instead emulate Spurgeon, Tozer, and Lloyd-Jones—prophets defying cultural tides, proclaiming “the gospel alone!” Pastors, awaken: Catechise your flocks to discern lies, grounding them [in biblical worldview](/three). Thus vigilant, we await Christ’s return as a spotless bride, holy and expectant.
+
+—-
+
+**Update:** I later wrote a fuller treatment of what the gospel really requires — [On Propitiation](/propitiation/).

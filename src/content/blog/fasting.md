@@ -38,9 +38,9 @@ The importance of humility is emphasised throughout the Bible:
 
 The repeated teaching throughout the Bible is that to pray effectively, we must first humble ourselves. So, how can we humble ourselves? God has given us the means to humble ourselves: fasting.
 
-Now, let's look through the Bible.
+Now, let’s look through the Bible.
 
-Leviticus 16:29-31 discusses the Day of Atonement, the most important feast, calling it the Sabbath of Sabbaths. A phrase is repeated twice: “afflict your souls”. The Jews understood this phrase to mean fasting, or humbling oneself. In Acts 27:9, this Day of Atonement is referred to as “the Fast”.
+Leviticus 16:29–31 discusses the Day of Atonement, the most important feast, calling it the Sabbath of Sabbaths. A phrase is repeated twice: “afflict your souls”. The Jews understood this phrase to mean fasting, or humbling oneself. In Acts 27:9, this Day of Atonement is referred to as “the Fast”.
 
 Every Israelite understood that the people needed to ”afflict their souls” to enjoy God’s atonement, that is, they needed to abstain from all food and water and humble themselves. The same principle applies to us today. While we can add nothing to Jesus’ finished work on the cross, we must humble ourselves to enjoy its benefits.
 
@@ -117,15 +117,18 @@ Derek Prince, after accepting Jesus in his 20s, fasted every Wednesday until his
 **\[What about Long-Term Fasting?\]**
 
 -   This is not just a physical detox, but a spiritual fast, so it’s important to prepare with prayer.
--   **Supplies Needed:** High-quality water (top brand water glass bottles), electrolytes, coarse salt, apple cider vinegar (ACV), vitamin B6 & B12 supplements (e.g., Berocca), vitamin D
--   When fasting begins, you’ll need to drink a lot of water. Aim for at least 1.5 liters a day, and it’s even better if you add electrolytes to your water.
--   In the morning, drink about 1 litre of water with 1-2 tablespoons of apple cider vinegar, a pinch of salt, and Berocca (or a similar vitamin B supplement).
+-   **Supplies Needed:** High-quality water (top brand water glass bottles), electrolytes, coarse salt, apple cider vinegar (ACV), vitamin B6 & B12 supplements (e.g., Berocca), vitamin D—When fasting begins, you’ll need to drink a lot of water. Aim for at least 1.5 liters a day, and it’s even better if you add electrolytes to your water.
+-   In the morning, drink about 1 litre of water with 1–2 tablespoons of apple cider vinegar, a pinch of salt, and Berocca (or a similar vitamin B supplement).
 -   If you start to feel weakness in your muscles, sucking on a few grains of salt can help restore your energy.
--   It’s good to walk 2-3 km 2-3 times a day, but avoid other intense physical activities (like running or strength training) even if you feel energized.
+-   It’s good to walk 2–3 km 2–3 times a day, but avoid other intense physical activities (like running or strength training) even if you feel energized.
 -   Before bed, take vitamin D to aid restful sleep.
 
 **\[Precautions (Disadvantages)\]**
 
 -   On day 17, you may experience a rash starting from your ankles. This is a common symptom called “keto rash,” and while it can be uncomfortable, it will disappear on its own, so try not to scratch it too much.
--   You must be careful when breaking the fast. During the last 2-3 days of a long fast, it’s crucial to slowly reintroduce foods like bone broth or the broth from fermented kimchi to prepare your digestive system. Especially after a long fast, the refeeding phase must be carefully observed to avoid complications (read up on “refeeding syndrome” and educate yourself. It’s deadly.). Remember, the temptations during the refeeding period are often stronger than those during the fasting period.
+-   You must be careful when breaking the fast. During the last 2–3 days of a long fast, it’s crucial to slowly reintroduce foods like bone broth or the broth from fermented kimchi to prepare your digestive system. Especially after a long fast, the refeeding phase must be carefully observed to avoid complications (read up on “refeeding syndrome” and educate yourself. It’s deadly.). Remember, the temptations during the refeeding period are often stronger than those during the fasting period.
 -   The final day of a long fast can bring intensified spiritual attacks. The enemy may use people around you to provoke or attack, so stay vigilant and pray even more fervently until the end.
+
+—-
+
+**Update:** we have now completed our fourth consecutive 21-day fast — [here’s what God did](/2026-fast/).

@@ -13,9 +13,9 @@ Here I reproduce in full [the tweet by @travismsnow](https://twitter.com/travism
 
 ## 🧵Where is the throne of David?
 
-And did the Apostle Peter really say that the throne of David has now been moved to heaven? (Acts 2:30-36)
+And did the Apostle Peter really say that the throne of David has now been moved to heaven? (Acts 2:30–36)
 
-One of the core teachings of supersessionism (replacement theology), amillennialism, and post-millennialism centers around the idea that God does not have to tangibly fulfill his promise to David to seat his messianic descendant on his throne in Jerusalem (2 Sam. 7:11-16), because after the resurrection of Christ this Davidic promise was fulfilled when Jesus took his seat at the right hand of God the Father in heaven.
+One of the core teachings of supersessionism (replacement theology), amillennialism, and post-millennialism centers around the idea that God does not have to tangibly fulfill his promise to David to seat his messianic descendant on his throne in Jerusalem (2 Sam. 7:11–16), because after the resurrection of Christ this Davidic promise was fulfilled when Jesus took his seat at the right hand of God the Father in heaven.
 
 In his famous work on supersessionist hermeneutics, Hans LaRondelle summarizes this view.
 
@@ -25,7 +25,7 @@ He states:
 > 
 > “As the Davidic kings were sitting ‘on the throne of the LORD’ (1 Chron. 28:5; 29:23), so Christ is now seated with His Father on His throne (Rev. 3:21).”
 > 
-> “The Davidic throne is no longer unoccupied or ineffective, but is transferred from Jerusalem to the throne room in heaven, where Christ is presently the Davidic King (Acts 2:34-36; 1 Cor. 15:25; Eph. 1:20-22).”
+> “The Davidic throne is no longer unoccupied or ineffective, but is transferred from Jerusalem to the throne room in heaven, where Christ is presently the Davidic King (Acts 2:34–36; 1 Cor. 15:25; Eph. 1:20–22).”
 > 
 > (The Israel of God in Prophecy; 149)
 
@@ -61,9 +61,9 @@ But at the same time, he must also correct their limited and incomplete understa
 
 #### 2\. The evangelistic context of Peter’s sermon
 
-Second, Peter’s evangelistic context in the midst of a Jewish audience explains why he focuses on Psalm 16:8-11 and Psalm 110:1-2 at the end of his sermon.
+Second, Peter’s evangelistic context in the midst of a Jewish audience explains why he focuses on Psalm 16:8–11 and Psalm 110:1–2 at the end of his sermon.
 
-Psalm 16, which Peter quotes directly in Acts 2:25-28, implies the death and resurrection of the Messiah when it says:
+Psalm 16, which Peter quotes directly in Acts 2:25–28, implies the death and resurrection of the Messiah when it says:
 
 > “For You will not abandon my soul to Sheol; Nor will You allow Your Holy One to undergo decay. You will make known to me the path of life; In Your presence is fullness of joy; In Your right hand there are pleasures forever.”
 > 
@@ -77,16 +77,16 @@ Thus, Peter follows up on his quotation of Psalm 16 by saying:
 
 > “And so, because he \[David\] was a prophet and knew that God had sworn to him with an oath to seat one of his descendants on his throne, he looked ahead and spoke of the resurrection of the Christ that he was neither abandoned to Hades, nor did his flesh suffer decay. This Jesus God raised up again, to which we are all witnesses.”
 > 
-> Acts 2:30-32
+> Acts 2:30–32
 
 Then, towards the end of his sermon, Peter makes the equally important shift to Psalm 110, which teaches that before the Messiah could reign on the earth, he would first have to ascend to the right hand of God in heaven.
 
-Psalm 110:1-2 reads:
+Psalm 110:1–2 reads:
 
 > “The LORD says to my Lord: ‘Sit at My right hand  
 > Until I make Your enemies a footstool for Your feet.’” 
 > 
-> Psalm 110:1-2
+> Psalm 110:1–2
 
 From Peter’s perspective, this Psalm has so much apologetic value because in it David plainly states that his Lord (i.e. the Messiah) would first sit at God’s right hand, and then, only at a later time, initiate the final judgment and the full establishment of the Messianic Kingdom on earth.
 
@@ -100,7 +100,7 @@ Consequently, Peter says:
 > 
 > ‘The LORD said to my Lord, ‘Sit at my right hand until I make your enemies a footstool for your feet.’’”
 > 
-> Acts. 2:33-35
+> Acts. 2:33–35
 
 Again, at this point, Peter’s goal is entirely evangelistic. He is trying to win his Jewish brothers to the Messiah through a strategic use of biblical prophecy.
 
@@ -132,7 +132,7 @@ Peter says:
 > 
 > “And that He may send Jesus, the Christ appointed for you, whom heaven must receive until the period of restoration of all things about which God spoke by the mouth of His holy prophets from ancient time.”
 > 
-> Acts. 3:18-21
+> Acts. 3:18–21
 
 Notice how Peter follows the same basic outline here as in Acts 2:
 
@@ -144,7 +144,7 @@ Instead, he simply wants to make clear that before this can happen, “heaven mu
 
 This was the pastoral approach that allowed his Jewish brethren to both look forward to the Kingdom and accept the Gospel.
 
-Likewise, in Luke 1:32-33, Luke says of Jesus:
+Likewise, in Luke 1:32–33, Luke says of Jesus:
 
 > “He will be great and will be called the Son of the Most High; and the Lord God will give Him the throne of His father David; and He will reign over the house of Jacob forever, and His kingdom will have no end.”
 
@@ -175,11 +175,11 @@ These examples prove that the New Testament itself validates the literal fulfill
 For example, right after it predicts the ascension of Christ to heaven, Psalm 110 also says:
 
 > “The Lord will stretch forth Your strong scepter from Zion, saying, ‘Rule in the midst of Your enemies.’” (v. 2)
-> “The Lord is at Your right hand; He will shatter kings in the day of His wrath. He will judge among the nations, He will fill them with corpses, He will shatter the chief men over a broad country. He will drink from the brook by the wayside; Therefore He will lift up His head.” (vv. 5-7)
+> “The Lord is at Your right hand; He will shatter kings in the day of His wrath. He will judge among the nations, He will fill them with corpses, He will shatter the chief men over a broad country. He will drink from the brook by the wayside; Therefore He will lift up His head.” (vv. 5–7)
 
 If all can agree that Psalm 110 has a partial and literal fulfillment through the ascension of Christ, it would be illogical and self-defeating to not also accept that everything else in this prophecy will be literally fulfilled as well:
 
-Namely, the Messiah reigning with his “scepter” from “Zion” (i.e. Jerusalem) among his “enemies,” judging the nations, shattering kings, and filling the earth with corpses as he wages a military campaign and drinks form the “brook by the wayside.” (vv. 2-7).
+Namely, the Messiah reigning with his “scepter” from “Zion” (i.e. Jerusalem) among his “enemies,” judging the nations, shattering kings, and filling the earth with corpses as he wages a military campaign and drinks form the “brook by the wayside.” (vv. 2–7).
 
 The entire argument Peter makes in Acts 2 about the messianic credentials of Jesus depends on the literal fulfillment of prophecy, and we cannot, on our own authority, selectively choose which prophecies have a literal fulfillment and which ones do not.
 
@@ -197,7 +197,7 @@ Supersessionists, amillennialists, and post-millennialists assume that the thron
 
 But the biblical text never says anything of the sort.
 
-These assumptions are merely being read into Scripture for polemical and theological ends, without enough attention being paid to Peter’s real purpose in Acts 2-3, which was to recalibrate, but not completely reject, Jewish eschatology for evangelistic ends.
+These assumptions are merely being read into Scripture for polemical and theological ends, without enough attention being paid to Peter’s real purpose in Acts 2–3, which was to recalibrate, but not completely reject, Jewish eschatology for evangelistic ends.
 
 If you want to go deeper in your study of Bible prophecy, check out my three books on the end times, the return of Jesus, and the millennial kingdom.
 
@@ -206,3 +206,7 @@ If you want to go deeper in your study of Bible prophecy, check out my three boo
 -   [The Biblical Feasts and the Return of Jesus](https://amzn.to/3Y8sHQb)  
 
 👑👑👑
+
+—-
+
+**Update:** I later meditated on what love actually looks like in that coming kingdom — [Love in the Millennial Reign](/love/).

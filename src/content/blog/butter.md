@@ -23,10 +23,7 @@ Turns out that saturated fats are not what cause heart disease. It is more compl
 
 Now let’s talk about the benefits of butter and what type to get. Not all butter is created equal. There’s the following:
 
--   Conventional Butter
--   Grass-fed Butter
--   Ghee
--   Clarified Butter
+-   Conventional Butter—Grass-fed Butter—Ghee—Clarified Butter
 
 Let me cover each, and what I’d suggest you purchase. First, if we ask any 5-year-old what cows eat, they will respond, “Grass!” Which is obvious.
 
@@ -38,15 +35,11 @@ Additionally, looking at the color of the butter you can tell a difference. Conv
 
 In addition to an increase in Omega 3’s, grass-fed butter also contains higher amounts of:
 
--   Butyric Acid
--   Vitamin A
--   MCT’s
--   CLA
--   Healthy Cholesterol
+-   Butyric Acid—Vitamin A—MCT’s—CLA—Healthy Cholesterol
 
 But What If I Have A Food Sensitivity or Allergy to Dairy? Or Lactose Intolerant? Most people who have a dairy sensitivity or who are lactose intolerant do well with butter.
 
-Some who are more sensitive or have a full dairy allergy, do well consuming clarified butter or ghee. Both take an extra step by warming up the butter, cooking off the 16-17% water found in butter and the “milk solids”. Milk solids are the protein portion of butter. A protein in milk and butter is casein. Casein is what people react to who have a dairy sensitivity or allergy. So by removing all the dairy protein, water and lactose, you are left with 99-100% butter fat in ghee and clarified butter. The only difference between the two is ghee is cooked just a little longer and has a slightly nutty flavor. But both are packed full of healthy nutrients.
+Some who are more sensitive or have a full dairy allergy, do well consuming clarified butter or ghee. Both take an extra step by warming up the butter, cooking off the 16–17% water found in butter and the “milk solids”. Milk solids are the protein portion of butter. A protein in milk and butter is casein. Casein is what people react to who have a dairy sensitivity or allergy. So by removing all the dairy protein, water and lactose, you are left with 99–100% butter fat in ghee and clarified butter. The only difference between the two is ghee is cooked just a little longer and has a slightly nutty flavor. But both are packed full of healthy nutrients.
 
 So What Butter Do I Suggest?
 
@@ -56,7 +49,7 @@ I’ve told countless patients about my favorite brand. It can be found in most 
 
 ![](/assets/PURE-IRISH-BUTTER.jpg)
 
-Or if you don't want the salt, you can get the unsalted variety. It’s packaging is the same, but in silver. If you can’t find it in your local store, you can order it off of Amazon as well. 
+Or if you don’t want the salt, you can get the unsalted variety. It’s packaging is the same, but in silver. If you can’t find it in your local store, you can order it off of Amazon as well. 
 
 ![](https://baejoseph.com/wp-content/uploads/2024/06/UNSALTED-1024x576.jpg)
 
@@ -64,13 +57,11 @@ Who Should Be Cautious About Eating Too Much Butter?
 
 Butter, as you probably know, has a large amount of saturated fat. Contrary to what has been told to us for decades, saturated fat does not “clog arteries”. However, there is a small subgroup of the population that has a genetic predisposition to not do as well with too much saturated fat.
 
-It is those individuals who have a genetic marker of APOE e4. Particularly if they have 2 pairs (one from each parent), which only about 2-3% of the general population carry 2 pairs. This gene is associated with an increased risk of Alzheimer’s and heart disease. Notice I said increased risk. Not a death sentence. Some people who have this double pair never get Alzheimer’s. But compared with those who have APOE e2 and APOE e3, they have an 8-12X increased risk. They also appear to have an increased risk for heart disease and don’t metabolize saturated fats the same as others.
+It is those individuals who have a genetic marker of APOE e4. Particularly if they have 2 pairs (one from each parent), which only about 2–3% of the general population carry 2 pairs. This gene is associated with an increased risk of Alzheimer’s and heart disease. Notice I said increased risk. Not a death sentence. Some people who have this double pair never get Alzheimer’s. But compared with those who have APOE e2 and APOE e3, they have an 8–12X increased risk. They also appear to have an increased risk for heart disease and don’t metabolize saturated fats the same as others.
 
 This doesn’t mean they can’t have saturated fats.  They just want to moderate them more than the general population. If you have these genetic markers, you’ll want to focus more on consuming these healthy fats:
 
--   olive oil
--   avocado oil
--   nuts like walnuts & almonds
+-   olive oil—avocado oil—nuts like walnuts & almonds
 
 Also, stick with leaner meats.
 
@@ -79,3 +70,7 @@ But for the large majority of the population, grass-fed butter will be a healthy
 Your One Actionable Step This Week
 
 If you have not already done so, begin buying & consuming grass-fed butter. Once you switch from conventional butter, you’ll likely not go back😉 And definitely stop consuming chemical-laden margarine! It does nothing positive for your health.
+
+—-
+
+**Update:** the deception around food runs deeper than nutrition — [Disarm and Starve](/control/).

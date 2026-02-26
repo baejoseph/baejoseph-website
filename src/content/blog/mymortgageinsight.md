@@ -18,3 +18,7 @@ A bit of context for the coding work/project: The UK is in the midst of the “c
 [https://mymortgageinsight.streamlit.app](https://mymortgageinsight.streamlit.app)
 
 I hope it’s a start of greater things to come! TYG!
+
+—-
+
+**업데이트:** 정말로 더 큰 일의 시작이었습니다 — [2년 후, JD Fortress AI를 공동창업하고 바이블 포트리스를 출시했습니다](/성경앱/).

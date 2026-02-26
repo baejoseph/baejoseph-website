@@ -105,7 +105,7 @@ Once broken, the lingering discomfort vanished for many in the intercessory team
 
 As interpreter, I wanted to be a full prayer team member, not just a translator. I hoped my spiritual immaturity wouldn’t hinder them and that they’d see me as an equal intercessor.
 
-God answered this. For two months, as youth leader in Ealing Korean Church, I’d memorised 5-6 spiritual Bible passages with the group.
+God answered this. For two months, as youth leader in Ealing Korean Church, I’d memorised 5–6 spiritual Bible passages with the group.
 
 I was grateful to meditate on and pray through them all week. Turning God’s promises into prayers brought immense power.
 
@@ -142,3 +142,7 @@ After seven years of mission work in Paraguay, God brought my parents back to th
 To that end, He guided them to the very church where I’d spent a week praying in 2017: St Hugh’s in Luton, now led by Pastor Martyn Shea.
 
 God even provided a house for them in Dunstable. They’re now active members of St Hugh’s, joining the congregation’s prayer warriors for daily early morning prayers from 6 to 7 a.m., preaching the gospel in Luton town centre during the day, and then heading to Harpenden to help with our children’s wraparound care—and even babysitting in the evenings!
+
+—-
+
+**Update:** six years later, I went again — this time to Wales — [2023 Wales Prayer Mission](/prayer-mission-2023/).

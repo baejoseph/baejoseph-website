@@ -21,7 +21,7 @@ Inspired by [my recent experience at XCC](/XCC) and also by Jon Tyson’s book �
 
 ![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4625-1024x768.jpeg)
 
-Our second day commenced with the 8:00 Morning Liturgy at the magnificent Wells Cathedral. The New Testament reading was from Ephesians 6:10-18—on the nature of spiritual warfare and the full armour of God. This passage felt like a divine appointment, a call to arms that resonated deeply with our purpose for the trip.
+Our second day commenced with the 8:00 Morning Liturgy at the magnificent Wells Cathedral. The New Testament reading was from Ephesians 6:10–18—on the nature of spiritual warfare and the full armour of God. This passage felt like a divine appointment, a call to arms that resonated deeply with our purpose for the trip.
 
 ![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4636-1024x768.jpeg)
 
@@ -61,3 +61,7 @@ We returned home with a renewed sense of purpose and a deeper bond. The journey 
 > 
 > 1 Corinthians 16:13
 ![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4737-1024x768.jpeg)
+
+—-
+
+**Update:** the fight for Britain took a new form — [I joined Restore Britain](/restore/).
