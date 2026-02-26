@@ -22,3 +22,7 @@ Like [the sons of Issachar](/heroics) who “understood the times and knew what 
 At JD Fortress AI, Dev and I spend our evenings and weekends deploying secure, on-premises LLMs and bulletproof RAG pipelines that keep sensitive business data locked inside a fortress no cloud can breach. Fortress Labs simply asks: how can the same privacy-first, local-first principles also be leveraged to serve the needs of everyday people like you and me?
 
 The app is [live](https://bible.jdfortress.com) now. No tracking. Just Scripture, waiting.
+
+---
+
+**Update:** I have also made an iOS app — [Daily Bread](/daily-bread/).
