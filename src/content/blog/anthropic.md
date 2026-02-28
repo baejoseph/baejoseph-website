@@ -63,48 +63,14 @@ For a company that positioned itself as the “responsible” AI lab—the adult
 
 ### Peak Clown World
 
-I have said this before and I will say it again: we are living through a moment where the people who lecture most loudly about safety and ethics tend to be the ones creating the most dangerous ideological situations. Effective altruism is exhibit A—a movement that talks endlessly about existential risk while training AI on premises that existentially delegitimize the civilization it operates in.
+I have said this before and I will say it again: we are living through a moment where the people who lecture most loudly about safety and ethics tend to be the ones creating the most dangerous ideological situations. Effective altruism is exhibit A-a movement that talks endlessly about existential risk while training AI on premises that existentially delegitimize the civilization it operates in.
 
 It is clown world. The most “safety-conscious” AI lab just got banned from every federal agency in the United States because it tried to override the Commander-in-Chief.
 
-### Who Governs the Military?
-
-This gets to the core of the issue more than any debate about specific terms. Do you believe in democracy? Should our military be regulated by elected leaders, or by corporate executives?
-
-Seemingly innocuous terms like “you cannot target innocent civilians” are actually moral minefields. Who defines civilian? What makes someone innocent? What is the difference between a target and collateral damage? Existing law and policy—hammered out over decades by generals, lawyers, and elected governments—has very clear answers to these questions. Unelected corporations managing profits and PR will often have a very different answer. And their answer will be shaped by whoever is running the company, whatever their ideological priors happen to be.
-
-Imagine a missile company tried to enforce this. “Our product cannot be used to target innocent civilians. We will shut off access if elected leaders break our terms.” Sounds reasonable, right? Look harder. In addition to the definitional problems above, consider:
-
-- What level of classified information does the corporation need to make these determinations? How much leverage does that give them to demand more?
-- What if a President merely *threatens* a dictator—Madman Theory, mutual assured destruction? Is the threat empty because the dictator knows the corporate executives can cut off the military? Does the threat alone trigger the cutoff? And how might that calculus shift depending on whether the executive happens to like the dictator or dislike the President?
-- At what confidence threshold does the cutoff trigger, both on paper and in practice?
-
-The fact that this is a debate about AI rather than missiles does not change the underlying arithmetic. The same problems apply to surveillance systems, autonomous weapons, and every other dual-use capability that matters. “But they will have cutouts for purely defensive use!”—fine, but what is autonomous? What is defensive? What about defending an asset during an offensive action, or parking a carrier group off the coast of a nation that considers the carrier group itself to be an act of aggression?
-
-Palmer Luckey—the founder of Oculus, now building defence technology through Anduril—put his finger on what is really happening here. This fight is not about autonomous weapons. It is about democratic control of the military, and by extension the nation. [Killer robots](/anthropic-war/) are coming. When they arrive, whoever writes the rules for the killer robots will, de facto, *be* the government. They will hold the monopoly on violence—the foundational attribute of sovereignty. Anthropic’s founders are making a bid for exactly that. They want to write the rules. They want to be the government. No thank you.
-
-The logical cul-de-sac is complete. Do you want to assist the U.S. military? “No.” OK. Do you want China to direct the future of the species? “No, that’s worse!” Right. Will you assist the U.S. military? “No, I hate killing.” Then what exactly is your plan? There is no coherent third option when China has stolen your model and your country is asking for access to defend itself.
-
-“Bro just agree the AI won’t be involved in autonomous weapons or mass surveillance, why can’t you agree, it is so simple, please bro”—is an untenable position the United States cannot possibly accept. And it is severely underrated how much it matters that Trump is in charge right now. Kamala Harris would have found Anthropic’s terms of service entirely congenial. The woke maniacs would have been welcomed into the national security architecture, and China would be eating our lunch.
-
-### The Technology of the End Times
-
-I need to say something here that goes beyond geopolitics, because I believe this situation has a dimension that the secular commentary cannot see.
-
-I believe AI is the technology of the [end times](/eschatology/).
-
-I do not say that loosely or hyperbolically. I have been [thinking carefully about eschatology](/end3/) for a long time, and I have wrestled with [the labels and frameworks we use](/labels/) to interpret what the Bible says about the final age. My conviction is that we are watching the infrastructure of the Beast system being assembled in real time—and that AI is the central mechanism.
-
-Revelation describes an end-times order of absolute, totalising control. No one can buy or sell without the mark. The Antichrist figure does not merely govern; he surveils, he authenticates, he sanctions every transaction and every allegiance. That level of control—the kind that reaches into every economic interaction, every movement, every decision—was technologically impossible for most of human history. It is not impossible now. It is being *built*.
-
-The pieces are falling into place with a speed that should alarm any believer who is paying attention:
-
-- AI systems that can monitor, classify, and predict human behaviour at scale—Digital payment infrastructure that can include or exclude individuals at the flip of a switch—Biometric identification systems spreading across every continent—Corporate AI labs that believe they should write the rules of engagement for the most powerful weapons on earth
-
-That last one is not incidental. The question of who controls the AI that controls the weapons is ultimately the question of who controls the world. And we are having that argument right now, in public, in the pages of Truth Social and Department of War press releases.
-
-The church needs to wake up. Not to political panic—but to prophetic clarity. We are not called to fear the Beast system; we are called to understand it, to name it, and to refuse it. The saints of the final age are described in Revelation as those who “did not love their lives so much as to shrink from death”—not passive, not naive, not asleep at the wheel while civilisation is being rewired around them.
-
-I still use Claude. I still think it is technically good. But I have adjusted my expectations: technically strong, ideologically compromised, and apparently unwilling to separate those two things when the chips are down. One more piece of an infrastructure that the church must understand before it is too late.
+I still use Claude. I still think it is good. But I have adjusted my expectations: technically strong, ideologically compromised, and apparently unwilling to separate those two things when the chips are down.
 
 That is a real shame—and an entirely avoidable one.
+
+---
+
+*Update, 1 March 2026: The situation escalated considerably. Hegseth formally designated Anthropic a Supply-Chain Risk to National Security. I wrote a follow-up covering the democratic control argument, the superweapon paradox, and why I believe AI is the technology of the end times. [Read Part Two →](/anthropic-war/)*

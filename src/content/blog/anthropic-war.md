@@ -3,7 +3,7 @@ title: "⚔️ Anthropic vs. America: The Superweapon Paradox"
 date: "2026-03-01"
 slug: anthropic-war
 lang: en
-tags: [tech, leftism, courage]
+tags: [tech, leftism, courage, eschatology]
 excerpt: "Anthropic claimed to have built the most powerful AI in history. China stole it. And then Anthropic told the U.S. military they couldn’t use it. Think carefully about what that means."
 featuredImage: "/assets/anthropic-war.png"
 pairedSlug: anthropic-war-ko
@@ -59,6 +59,14 @@ This is not abstract woke boilerplate. This is a live operational constraint emb
 
 The deeper point—made with precision by several defence analysts—is that phrases like “you cannot target innocent civilians” sound entirely reasonable until you ask who defines innocent, who defines civilian, and who decides what counts as targeting versus collateral damage. These are not simple philosophical questions. They are the core substance of the laws of armed conflict, hashed out over decades by lawyers, generals, and elected governments. Anthropic’s founders thought they could shortcut that entire process with a terms-of-service document.
 
+Imagine if a missile company tried to enforce the same principle-“our product cannot be used to target innocent civilians; we will shut off access if elected leaders break our terms.” Sounds reasonable? Look harder. In addition to the definitional problems above:
+
+- What level of classified information does the corporation need to make these determinations? How much leverage does that give them to demand more?
+- What if a President merely *threatens* a dictator—Madman Theory, mutual assured destruction? Is the threat empty because the dictator knows the corporate executives can cut off the military? Does the threat alone trigger the cutoff? How might that calculus shift depending on whether the executive happens to like the dictator or dislike the President?
+- At what confidence threshold does the cutoff trigger, both on paper and in practice?
+
+The fact that this involves AI rather than missiles changes nothing about the underlying arithmetic.
+
 ### Palmer Luckey’s Framework: This Is About Democracy
 
 The best analysis I have seen comes from Palmer Luckey—the founder of Oculus, now building defence technology through Anduril. He cuts through the noise:
@@ -67,9 +75,11 @@ The Anthropic vs. DoD fight is not about autonomous weapons. It is about democra
 
 Killer robots are coming. This is not science fiction. Autonomous weapons systems are already deployed in various forms, and the trend lines are unmistakable. The crucial question is not whether these systems exist, but who writes the rules for how they operate.
 
-Here is the thing: whoever writes the rules for the killer robots effectively *is* the government. The monopoly on violence—the foundational attribute of a sovereign state—belongs to whoever controls the rules of engagement for the most powerful weapons systems. Anthropic’s founders were not merely trying to set safety guidelines. They were making a bid to become, de facto, a branch of government. Unelected. Unaccountable. Subject only to their own “Constitution”—which they wrote themselves.
+Here is the thing: whoever writes the rules for the killer robots effectively *is* the government. The monopoly on violence—the foundational attribute of a sovereign state—belongs to whoever controls the rules of engagement for the most powerful weapons systems. Anthropic’s founders were not merely trying to set safety guidelines. They were making a bid to become, de facto, a branch of government. Unelected. Unaccountable. Subject only to their own “Constitution”-which they wrote themselves.
 
 No thank you.
+
+“But they will have cutouts for purely defensive use!”-fine. But what is autonomous? What is defensive? What about defending an asset during an offensive action? What about parking a carrier group off the coast of a nation that considers the carrier group’s presence to be an act of aggression? Every carve-out instantly opens three new definitional battlegrounds, all controlled by whoever wrote the original terms.
 
 ### The Democratic Accountability Argument
 
@@ -84,6 +94,8 @@ The logical cul-de-sac is complete. There is no coherent third option here. If y
 The foundational question is this: do you believe in democracy? Should our military be regulated by elected leaders, or by corporate executives? The answer, for everyone who believes in the American experiment, must be the former. Imperfect constitutional republics are still better than governance by billionaires and their shadow advisors. At least you can vote out the former.
 
 Anthropic’s founders do not believe this. That is their prerogative. But it has consequences.
+
+“Bro just agree the AI won’t be involved in autonomous weapons or mass surveillance, why can’t you agree, it is so simple, please bro”-is an untenable position the United States cannot possibly accept. The moment you accept that formulation, you have handed Anthropic the pen that draws the line. And the people drawing the line will not be the ones dying if the line is drawn wrong.
 
 ### The Counterfactual That Should Terrify You
 
@@ -102,3 +114,23 @@ That is a fine thing to do if you are building a consumer chatbot. It is a disqu
 Anthropic made a choice. So did the United States. Both choices have now been made public, and neither party is pretending otherwise. The supply-chain designation makes the separation permanent and structural.
 
 Good. Clarity is valuable. Now the defence ecosystem can build on providers who understand what it means to serve a democratic government—rather than providers who believe they should govern it.
+
+### The Technology of the End Times
+
+I need to say something here that goes beyond geopolitics, because I believe this situation has a dimension the secular commentary cannot see.
+
+I believe AI is the technology of the [end times](/eschatology/).
+
+I do not say that loosely or hyperbolically. I have been [thinking carefully about eschatology](/end3/) for a long time, and I have wrestled with [the frameworks and labels we use](/labels/) to interpret what the Bible says about the final age. My conviction is that we are watching the infrastructure of the Beast system being assembled in real time—and that AI is the central mechanism.
+
+Revelation describes an end-times order of absolute, totalising control. No one can buy or sell without the mark. The Antichrist figure does not merely govern; he surveils, he authenticates, he sanctions every transaction and every allegiance. That level of control—reaching into every economic interaction, every movement, every decision—was technologically impossible for most of human history. It is not impossible now. It is being *built*.
+
+The pieces are falling into place with a speed that should alarm any believer paying attention:
+
+- AI systems that can monitor, classify, and predict human behaviour at scale—Digital payment infrastructure that can include or exclude individuals at the flip of a switch—Biometric identification systems spreading across every continent—Corporate AI labs that believe they should write the rules of engagement for the most powerful weapons on earth
+
+That last one is not incidental. The question of who controls the AI that controls the weapons is ultimately the question of who controls the world. And we are having that argument right now, in public, in the pages of Truth Social and Department of War press releases.
+
+The church needs to wake up—not to political panic, but to prophetic clarity. We are not called to fear the Beast system; we are called to understand it, to name it, and to refuse it. The saints of the final age are described in Revelation as those who “did not love their lives so much as to shrink from death”—not passive, not naive, not asleep at the wheel while civilisation is being rewired around them.
+
+I still use Claude. I still think it is technically good. But I have adjusted my expectations: technically strong, ideologically compromised, and apparently unwilling to separate those two things when the chips are down. One more piece of an infrastructure that the church must understand before it is too late.
