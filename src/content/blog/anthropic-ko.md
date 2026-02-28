@@ -1,6 +1,6 @@
 ---
 title: "🤖 나의 Anthropic 롤러코스터"
-date: 2026-02-28
+date: "2026-02-28"
 slug: anthropic-ko
 lang: ko
 tags: [tech, leftism, courage]

@@ -1,6 +1,6 @@
 ---
 title: "🤖 My Anthropic Rollercoaster"
-date: 2026-02-28
+date: "2026-02-28"
 slug: anthropic
 lang: en
 tags: [tech, leftism, courage]
