@@ -1,6 +1,6 @@
 ---
 title: "🛡️ Make Your Regiment Proud"
-date: "2026-03-02"
+date: "2026-02-28"
 slug: regiment
 lang: en
 tags: [theology, courage, family]

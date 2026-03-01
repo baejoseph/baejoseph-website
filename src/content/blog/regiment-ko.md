@@ -1,6 +1,6 @@
 ---
 title: "🛡️ 당신의 연대를 자랑스럽게 하라"
-date: "2026-03-02"
+date: "2026-02-28"
 slug: regiment-ko
 lang: ko
 tags: [theology, courage, family]

@@ -1,6 +1,6 @@
 ---
 title: "⚔️ Anthropic vs. 미국: 슈퍼무기의 역설"
-date: "2026-03-01"
+date: "2026-02-27"
 slug: anthropic-war-ko
 lang: ko
 tags: [tech, leftism, courage, eschatology]

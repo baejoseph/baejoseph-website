@@ -1,6 +1,6 @@
 ---
 title: "⚔️ Anthropic vs. America: The Superweapon Paradox"
-date: "2026-03-01"
+date: "2026-02-27"
 slug: anthropic-war
 lang: en
 tags: [tech, leftism, courage, eschatology]
