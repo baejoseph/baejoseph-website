@@ -1,6 +1,6 @@
 ---
 title: "↔️ 왜 좌파는 안되는가"
-date: "2023-10-27"
+date: "2023-10-20"
 wpSlug: "leftism"
 lang: "ko"
 featuredImage: "/assets/90-2.jpeg"
