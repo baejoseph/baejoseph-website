@@ -15,7 +15,14 @@ export async function getStaticPaths() {
       tag,
       posts: posts
         .filter(p => p.data.tags?.includes(tag))
-        .sort((a, b) => (b.data.date ?? '').localeCompare(a.data.date ?? '')),
+        .sort((a, b) => {
+        const dateCmp = (b.data.date ?? '').localeCompare(a.data.date ?? '');
+        if (dateCmp !== 0) return dateCmp;
+        const la = a.data.lang ?? 'en';
+        const lb = b.data.lang ?? 'en';
+        if (la === lb) return 0;
+        return la === 'en' ? -1 : 1;
+      }),
     },
   }));
 }

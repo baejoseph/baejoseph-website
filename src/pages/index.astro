@@ -15,7 +15,13 @@ const allTags = [...tagCount.entries()].sort((a, b) => b[1] - a[1]).map(([t]) =>
 const posts = allPosts.sort((a, b) => {
   const da = a.data.date ?? '1970-01-01';
   const db = b.data.date ?? '1970-01-01';
-  return db.localeCompare(da);
+  const dateCmp = db.localeCompare(da);
+  if (dateCmp !== 0) return dateCmp;
+  // Same date: EN before KO
+  const la = a.data.lang ?? 'en';
+  const lb = b.data.lang ?? 'en';
+  if (la === lb) return 0;
+  return la === 'en' ? -1 : 1;
 });
 
 function formatDate(d?: string) {
