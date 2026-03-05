@@ -11,7 +11,7 @@ I write this from Britain—and from Britain, this story looks rather different 
 
 We live in a country whose foreign policy is no longer truly its own. Under Keir Starmer, Britain has become a nation where [the presence of tens of thousands of registered Islamic terror sympathisers](/halal) on our soil shapes diplomatic decisions at the highest level. Every foreign policy statement is calibrated—first and foremost—by what the organised Islamist bloc might demand, or do, on our streets. We are not a free country making free choices abroad. We are a country steered by fear at home. That is the context in which what Lloyd’s of London just did deserves to be examined.
 
-While the world was fixated on bombs and missiles, a quieter economic battle was unfolding on the open sea—and almost nobody in the [mainstream media](/sober/) bothered to cover it.
+[While the world was fixated on bombs and missiles](/epic-fury), a quieter economic battle was unfolding on the open sea—and almost nobody in the [mainstream media](/sober/) bothered to cover it.
 
 British insurers, most notably Lloyd’s of London, pulled their maritime insurance coverage for ships travelling through the Strait of Hormuz. On the surface this looked like cautious, prudent risk management. But look a little closer and it starts to smell like something else entirely.
 
