@@ -12,7 +12,7 @@ featuredImage: "/assets/faith.jpg"
 >
 > 2 Corinthians 4:13 (NKJV)
 
-We were working through Psalm 118 in our small group Bible study last week. We came to verses 10–13, and the images there are vivid and violent:
+We were working through Psalm 118 in our small group Bible study last night. We came to verses 10–13, and the images there are vivid and violent:
 
 > “All nations surrounded me,
 > But in the name of the Lᴏʀᴅ I will destroy them.
@@ -30,7 +30,7 @@ Surrounded. Swarming like bees. Pushed with violence. And yet—the psalmist doe
 
 ### The McCheyne Connection
 
-Around the same time, my daily [McCheyne Bible Reading plan](/bible-app/) brought me to 2 Corinthians 4:7–15. I’ve read that passage many times, but this time, reading it in the same week as Psalm 118, it hit me differently.
+That same evening, my daily [McCheyne Bible Reading plan](/bible-app/) brought me to 2 Corinthians 4:7–15. I’ve read that passage many times, but this time, reading it the same night as Psalm 118, it hit me differently.
 
 > “But we have this treasure in earthen vessels, that the excellence of the power may be of God and not of us. We are hard-pressed on every side, yet not crushed; we are perplexed, but not in despair; persecuted, but not forsaken; struck down, but not destroyed—always carrying about in the body the dying of the Lord Jesus, that the life of Jesus also may be manifested in our body.”
 >
