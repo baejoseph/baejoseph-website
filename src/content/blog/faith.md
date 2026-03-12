@@ -1,5 +1,5 @@
 ---
-title: "📣 "I Believed, Therefore I Spoke": The Faith to Cry Out"
+title: "📣 “I Believed, Therefore I Spoke”: The Faith to Cry Out"
 date: "2026-03-12"
 tags: ["prayer", "theology", "testimony", "courage"]
 slug: "faith"
