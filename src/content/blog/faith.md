@@ -1,17 +1,17 @@
 ---
-title: "📣 \"I Believed, Therefore I Spoke\": The Faith to Cry Out"
+title: "📣 "I Believed, Therefore I Spoke": The Faith to Cry Out"
 date: "2026-03-12"
 tags: ["prayer", "theology", "testimony", "courage"]
-slug: "i-believed-therefore-i-spoke"
+slug: "faith"
 pairedSlug: "믿었으므로-말하였나이다"
-featuredImage: "/assets/i-believed-therefore-i-spoke.png"
+featuredImage: "/assets/faith.jpg"
 ---
 
 > “I believed, therefore I spoke.”
 >
 > 2 Corinthians 4:13 (NKJV)
 
-We were working through Psalm 118 in our [small group Bible study](/bradford-2023/) last week. We came to verses 10–13, and the images there are vivid and violent:
+We were working through Psalm 118 in our small group Bible study last week. We came to verses 10–13, and the images there are vivid and violent:
 
 > “All nations surrounded me,
 > But in the name of the Lᴏʀᴅ I will destroy them.
