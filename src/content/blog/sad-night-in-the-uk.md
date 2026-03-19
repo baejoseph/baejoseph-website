@@ -4,6 +4,7 @@ date: "2026-03-19"
 wpSlug: "sad-night-in-the-uk"
 lang: "en"
 tags: ["leftism", "eschatology", "theology", "courage"]
+featuredImage: "/assets/sad-night-in-the-uk.jpg"
 pairedSlug: "영국의-슬픈-밤"
 ---
 
