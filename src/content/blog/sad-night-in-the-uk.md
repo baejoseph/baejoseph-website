@@ -83,5 +83,3 @@ Britain can be healed. God said so. But the condition falls on *His people*, not
 One prayer at a time. One fast at a time. One life at a time.
 
 —
-
-*Note: The 45-minute Commons debate figure refers to the relevant vote on the decriminalisation clause. Dates may be confirmed against Hansard records.*
