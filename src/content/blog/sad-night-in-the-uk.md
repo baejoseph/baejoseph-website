@@ -79,7 +79,3 @@ God has already told us what to do when a nation reaches this point. The promise
 This is the answer. Not a slogan, not a hashtag. [Fasting](/2026-fast) - real, costly, sacrificial fasting—and [crying out to God](/cry-out) in prayer for this nation. Humbling ourselves. Turning from our own wicked ways first, not just pointing fingers at others’.
 
 Britain can be healed. God said so. But the condition falls on *His people*, not the government. The question is not whether God is willing—it is whether we are.
-
-One prayer at a time. One fast at a time. One life at a time.
-
-—
