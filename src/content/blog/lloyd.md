@@ -2,7 +2,7 @@
 title: "🚢 Lloyd’s of London vs. America: Trump Nationalises the Strait"
 date: "2026-03-04"
 lang: "en"
-tags: ["leftism", "eschatology", "courage", "theology"]
+tags: ["leftism", "eschatology", "courage", "theology", "trump"]
 featuredImage: ""
 pairedSlug: "로이드"
 ---

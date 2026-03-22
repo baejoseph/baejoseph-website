@@ -6,7 +6,7 @@ lang: "en"
 featuredImage: "/assets/SCR-20240714-ubhf.jpeg"
 pairedSlug: "용기"
 
-tags: ["courage", "leftism", "eschatology"]
+tags: ["courage", "leftism", "eschatology", "trump"]
 ---
 
 This morning, the world woke up to the shocking news of an assassination attempt on President Donald Trump. While alarming, it was, in a way, unsurprising—a culmination of years of incessant inflammatory rhetoric from the Left. For nearly a decade, leftist Democrats and mainstream media outlets have relentlessly labeled Trump as a threat to democracy, comparing him to Hitler and suggesting the world would be better off without him. This dangerous narrative has now borne its inevitable fruit.

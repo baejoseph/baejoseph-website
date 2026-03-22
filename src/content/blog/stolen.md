@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "도난"
 featuredImage: "/assets/2020stolen.webp"
 
-tags: ["leftism"]
+tags: ["leftism", "trump"]
 ---
 
 ## Summary of State Specific Fraud Allegations

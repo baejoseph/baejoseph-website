@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "커크"
 featuredImage: "/assets/IMG_3442.jpg"
 
-tags: ["eschatology", "courage"]
+tags: ["eschatology", "courage", "trump"]
 ---
 
 Witnessing Charlie Kirk’s assassination on 10 September shook me to the core—I grieved as if I had lost my own brother, a sorrow that lingers deeply even now. Having followed him closely for nearly a decade, encouraged by his courage [to play my own part in the fray](/courage), I spent days and nights in profound mourning; never before had the death of someone I had never met affected me so. In the weeks that followed, I realised why: we had witnessed _the death of an_ _anointed one_, much like David’s lament over even the wicked King Saul, simply because “the Lord’s anointed” had fallen (2 Samuel 1:14). Compounding this was the **pure evil** from the Left—openly celebrating his murder and spreading lies about it—which affected me deeply.

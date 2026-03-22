@@ -3,7 +3,7 @@ title: "🇬🇧 I Joined Restore Britain"
 date: "2026-02-20"
 lang: "en"
 featuredImage: "/assets/restore-britain-hero.jpg"
-tags: ["leftism", "courage", "testimony"]
+tags: ["leftism", "courage", "testimony", "uk"]
 pairedSlug: "영국-회복"
 ---
 

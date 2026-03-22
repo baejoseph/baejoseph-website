@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "마가모자"
 featuredImage: "/assets/IMG_9111.jpeg"
 
-tags: ["courage", "leftism"]
+tags: ["courage", "leftism", "trump"]
 ---
 
 Short answer: I will not be silenced by the opinions of the politically correct majority and their Overton Window.

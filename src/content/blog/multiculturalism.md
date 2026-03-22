@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "다문화주의"
 featuredImage: "/assets/SCR-20240512-tbvh.png"
 
-tags: ["leftism"]
+tags: ["leftism", "uk"]
 ---
 
 Multiculturalism in the United Kingdom has been a cataclysmic failure, primarily because it abandoned the foundational Protestant Biblical Christian values that once defined British identity. This essay asserts that the multicultural endeavour could have thrived if it had been deeply rooted in the nation’s Christian heritage. Instead, by disregarding these core values, the UK failed to integrate new cultural influences into a strong, existing value system, resulting in severe fragmentation of national identity rather than enrichment. This misstep not only weakened societal cohesion but also diluted the moral and ethical standards that were key to Britain's historical success.

@@ -6,7 +6,7 @@ lang: "en"
 featuredImage: "/assets/defund_BBC.webp"
 pairedSlug: "정신"
 
-tags: ["leftism", "courage"]
+tags: ["leftism", "courage", "uk", "trump"]
 ---
 
 #### Detoxing the Church from the Poison of Mainstream Media

@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "마무리"
 featuredImage: "/assets/IMG_4888-1.jpeg"
 
-tags: ["testimony", "courage"]
+tags: ["testimony", "courage", "uk", "trump"]
 ---
 
 Yesterday at work, I found myself suddenly liberated from the fog of procrastination that had been bugging me for the last 3–4 years. What had previously felt like an endless struggle to focus and complete tasks now came easily, as if a weight had been lifted from my shoulders. I had attributed this simply to the fact that I hated some aspects of my work, but this sudden unexpected clarity pointed me to something more than that—a quiet, steadfast joy. This tweet by Peachy Keenan captured it perfectly: “All day felt this unfamiliar, strange emotion and I realised—oh, this is happiness. This is joy. The stress of the last four years has melted away. We are free.” For so long, I hadn’t even recognised my mild depression expressing itself as procrastination and lack of energy. 

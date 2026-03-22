@@ -3,7 +3,7 @@ title: "🐑 The Shepherd’s Betrayal"
 date: "2026-02-17"
 lang: "en"
 pairedSlug: "할랄"
-tags: ["leftism", "theology", "courage"]
+tags: ["leftism", "theology", "courage", "uk"]
 featuredImage: ""
 ---
 
