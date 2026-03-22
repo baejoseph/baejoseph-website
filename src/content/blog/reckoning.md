@@ -2,7 +2,7 @@
 title: "⚖️ England’s Reckoning"
 date: "2026-02-24"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/reckoning.jpg"
 tags: ["leftism", "courage", "theology", "eschatology", "uk"]
 pairedSlug: "심판의-날"
 ---
