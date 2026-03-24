@@ -21,7 +21,7 @@ Our journey began with a drive to our campsite near Cheddar Gorge. Being late Oc
 
 ![](/assets/recon-campfire-smores.jpg)
 
-Inspired by [my recent experience at XCC](/XCC) and also by Jon Tyson’s book “Intentional Father,” I saw this trip as an opportunity to guide my sons through an adventure that would challenge them and deepen their faith. The journey from the familiar to the unknown, with a mission and the prospect of spiritual battle on the horizon, had all the makings of an epic adventure.
+Inspired by [my recent experience at XCC](/xcc) and also by Jon Tyson’s book “Intentional Father,” I saw this trip as an opportunity to guide my sons through an adventure that would challenge them and deepen their faith. The journey from the familiar to the unknown, with a mission and the prospect of spiritual battle on the horizon, had all the makings of an epic adventure.
 
 ![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4625-1024x768.jpeg)
 
