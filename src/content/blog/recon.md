@@ -35,7 +35,7 @@ After exploring the High Street, we visited the Glastonbury Abbey site and museu
 
 ![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4711-768x1024.jpeg)
 
-The pinnacle of our day was ascending the Glastonbury Tor. We carried our wooden cross—the same one we use during our [weekly street evangelism](/evangelism)—inscribed with “JESUS IS LORD” in English and Hebrew. This act was a deliberate, visual testimony of our faith amidst an environment that seemed to celebrate everything but.
+The pinnacle of our day was ascending the Glastonbury Tor. We carried our [wooden cross](/wooden-cross)—the same one we use during our [weekly street evangelism](/evangelism)—inscribed with “JESUS IS LORD” in English and Hebrew. This act was a deliberate, visual testimony of our faith amidst an environment that seemed to celebrate everything but.
 
 Blessed with glorious weather, we made the climb under clear skies. Reaching the summit, we planted ourselves in prayer, declaring the lordship of Jesus Christ over the area. The panoramic views were not just a feast for the eyes but a canvas upon which we envisioned a spiritual revival.
 
@@ -64,4 +64,4 @@ We returned home with a renewed sense of purpose and a deeper bond. The journey 
 
 —-
 
-**Update:** the fight for Britain took a new form — [I joined Restore Britain](/restore/).
+**Update:** this recon was a seed — the call deepened into something more costly. Read about answering the summons to be one of God’s [mighty men](/heroics/).
