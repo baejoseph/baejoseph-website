@@ -266,32 +266,7 @@ article {
 }
 .back-link:hover { color: var(--text); }
 
-/* ── Home hero ── */
-.home-hero {
-  margin-bottom: 3rem;
-  padding: 3rem 2rem;
-  border-radius: 8px;
-  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/assets/restore-britain-hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.home-hero h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-}
-
-.home-hero p {
-  color: rgba(255,255,255,0.85);
-  font-size: 1rem;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-}
+/* ── Home hero — layout managed in index.astro component style ── */
 
 /* ── Lang filter ── */
 .lang-filter {
@@ -323,7 +298,6 @@ article {
 @media (max-width: 640px) {
   html { font-size: 16px; }
   .article-header h1 { font-size: 1.5rem; }
-  .home-hero h1 { font-size: 1.5rem; }
   .post-item { flex-wrap: wrap; gap: 0.25rem; }
   .post-date { min-width: auto; }
   .post-lang-badge { margin-left: 0; }

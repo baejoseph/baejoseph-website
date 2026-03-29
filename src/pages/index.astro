@@ -35,16 +35,33 @@ function postHref(post: typeof posts[0]) {
   const wpSlug = post.data.wpSlug ?? post.slug;
   return '/' + wpSlug + '/';
 }
+
+// Build the hero pool: EN posts only, non-future, must have a featuredImage
+const heroPool = posts
+  .filter(p =>
+    p.data.featuredImage &&
+    (p.data.lang ?? 'en') === 'en' &&
+    (p.data.date ?? '1970-01-01') <= buildDate
+  )
+  .map(p => ({
+    src:   p.data.featuredImage as string,
+    href:  postHref(p),
+    title: p.data.title,
+  }));
 ---
 
 <Layout title="Joseph Bae" description="Faith · Culture · Life — by Joseph Bae.">
-  <div class="home-hero">
-    <img src="/assets/restore-britain-hero.jpg" alt="Restore Britain" class="hero-img" />
+  <!-- Hero: background + href set by JS on every load -->
+  <a class="home-hero" id="home-hero" href="#" aria-label="Read featured post">
     <div class="hero-text">
       <h1>A Personal Blog</h1>
       <p>Faith · Culture · Life · Maranatha 🕦️</p>
     </div>
-  </div>
+    <div class="hero-featured">
+      <span class="hero-featured-label">Featured</span>
+      <span class="hero-featured-title" id="hero-featured-title"></span>
+    </div>
+  </a>
 
   <div class="lang-filter">
     <button class="lang-btn active" onclick="filterLang('all',this)">All</button>
@@ -80,39 +97,130 @@ function postHref(post: typeof posts[0]) {
   </div>
 </Layout>
 
-<script>
+<script define:vars={{ heroPool }}>
+  // ── Random hero ──────────────────────────────────────────────────────────
+  (function () {
+    if (!heroPool || heroPool.length === 0) return;
+
+    const pick = heroPool[Math.floor(Math.random() * heroPool.length)];
+    const hero = document.getElementById('home-hero');
+    const titleEl = document.getElementById('hero-featured-title');
+
+    if (hero) {
+      // Preload image, then swap in once ready to avoid a flash of wrong image
+      const img = new Image();
+      img.onload = () => {
+        hero.style.backgroundImage =
+          `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.58)), url('${pick.src}')`;
+        hero.setAttribute('href', pick.href);
+      };
+      img.src = pick.src;
+    }
+    if (titleEl) {
+      titleEl.textContent = pick.title;
+    }
+  })();
+
+  // ── Lang / preview filter ─────────────────────────────────────────────────
   const STORAGE_KEY = 'baejoseph_preview_mode';
   let activeLang = 'all';
 
-  function isPreview(): boolean {
+  function isPreview() {
     try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
   }
 
   function updatePostVisibility() {
     const preview = isPreview();
-    document.querySelectorAll<HTMLElement>('.post-item').forEach(el => {
+    document.querySelectorAll('.post-item').forEach(el => {
       const langMatch = activeLang === 'all' || el.dataset.lang === activeLang;
       const isFuture = el.dataset.future === 'true';
       el.style.display = langMatch && (!isFuture || preview) ? 'flex' : 'none';
     });
   }
 
-  function filterLang(lang: string, btn: HTMLElement) {
+  function filterLang(lang, btn) {
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeLang = lang;
     updatePostVisibility();
   }
-  (window as any).filterLang = filterLang;
+  window.filterLang = filterLang;
 
-  // Re-run when Layout.astro fires the previewModeChanged event
   document.addEventListener('previewModeChanged', () => updatePostVisibility());
-
-  // Apply on initial load (in case preview mode is already active from a previous visit)
   document.addEventListener('DOMContentLoaded', updatePostVisibility);
 </script>
 
 <style>
+  /* ── Hero h1 / p ── */
+  .home-hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+  .home-hero p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1rem;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    margin: 0;
+  }
+
+  /* ── Random hero link wrapper ── */
+  a.home-hero {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem 1.5rem;
+    border-radius: 8px;
+    background-color: #1a1a2e; /* fallback while image loads */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    transition: opacity 0.2s;
+  }
+  a.home-hero:hover {
+    opacity: 0.92;
+  }
+
+  /* ── Featured article strip at the bottom of the hero ── */
+  .hero-featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .hero-featured-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent, #6366f1);
+    background: rgba(99,102,241,0.18);
+    border: 1px solid rgba(99,102,241,0.35);
+    border-radius: 4px;
+    padding: 0.15rem 0.45rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .hero-featured-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 520px;
+  }
+
+  /* ── Tag browse ── */
   .tag-browse {
     display: flex;
     flex-wrap: wrap;
@@ -138,5 +246,11 @@ function postHref(post: typeof posts[0]) {
   .tag-pill-sm:hover {
     background: rgba(99, 102, 241, 0.14);
     color: #c7d2fe;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 640px) {
+    .home-hero h1 { font-size: 1.5rem; }
+    .hero-featured-title { max-width: 220px; }
   }
 </style>
