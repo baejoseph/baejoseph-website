@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "수학"
 featuredImage: "/assets/SCR-20250222-vpr.jpeg"
 
-tags: ["theology"]
+tags: ["theology", "apologetics"]
 ---
 
 (This is an addendum to the [main essay found here](/bayes). 다시 원 에세이로 가려면 [여기](/%eb%b2%a0%ec%9d%b4%ec%a6%88).)
