@@ -5,6 +5,7 @@ wpSlug: "century"
 lang: "en"
 featuredImage: "/assets/IMG_1488-scaled.jpeg"
 pairedSlug: "센츄리"
+youtubeId: "qigkUPXqnz0"
 
 tags: ["family", "testimony"]
 ---
