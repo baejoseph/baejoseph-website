@@ -7,7 +7,7 @@ featuredImage: "/assets/IMG_1488-scaled.jpeg"
 pairedSlug: "센츄리"
 youtubeId: "qigkUPXqnz0"
 
-tags: ["family", "testimony"]
+tags: ["family", "testimony", "video"]
 ---
 
 I’m not really a car guy.

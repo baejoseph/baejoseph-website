@@ -6,7 +6,7 @@ lang: "en"
 featuredImage: "/assets/SCR-20250103-mu7.jpeg"
 pairedSlug: "아침설교"
 youtubeId: "WW0IJu8uorU"
-tags: ["theology", "testimony", "apologetics"]
+tags: ["theology", "testimony", "apologetics", "video"]
 ---
 
 (I gave a morning prayer sermon during [Jesus Academia 55th Class](/jesus-academia). It was originally given [in Korean](/%ec%95%84%ec%b9%a8%ec%84%a4%ea%b5%90))

@@ -6,7 +6,7 @@ lang: "en"
 featuredImage: "/assets/SCR-20250221-rcc-scaled.jpeg"
 pairedSlug: "베이즈"
 youtubeId: "lL9s-jZeT9c"
-tags: ["theology", "apologetics"]
+tags: ["theology", "apologetics", "video"]
 ---
 
 What if I told you that a simple mathematical formula could change the way we think about **the most pivotal event in human history?** Imagine you’ve been tested for an incredibly rare disease—so rare that it’s practically unheard of, like 1 in a trillion. You’re skeptical about whether it even exists. But you’ve got a test that’s not perfect, but it’s reliable—let’s say it’s 70% accurate. You take the test once, and it comes back positive. Intuitively, you might not be too worried; after all, the disease is so rare that even a positive result probably just means a false alarm. But now, let’s say you take the test again. And again. And again. Ten times in total. Each time, the result comes back positive. What’s the probability that you actually have this disease now?

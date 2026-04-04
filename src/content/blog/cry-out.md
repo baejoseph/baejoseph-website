@@ -7,7 +7,7 @@ featuredImage: "/assets/SCR-20251129-rndc-scaled.jpeg"
 pairedSlug: "부르짖으라"
 youtubeId: "RhIkjOfLjEw"
 
-tags: ["prayer", "korea"]
+tags: ["prayer", "korea", "video"]
 ---
 
 \[_The following reflection was first sparked by an experience I had seven years ago while joining a Korean church prayer mission—see the original story [here](/2017-prayer-mission-eng1)_\]

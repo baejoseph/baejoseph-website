@@ -7,7 +7,7 @@ pairedSlug: "여정"
 youtubeId: "jU_wvPqJFVg"
 featuredImage: "/assets/IMG_2458-scaled.jpg"
 
-tags: ["theology", "testimony", "eschatology"]
+tags: ["theology", "testimony", "eschatology", "video"]
 ---
 
 ## From Reformed Roots to the Latter Rains and the Fig Tree’s Awakening
