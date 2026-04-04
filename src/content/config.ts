@@ -11,6 +11,7 @@ const blog = defineCollection({
     pairedSlug: z.string().optional(),    // decoded slug of EN/KO counterpart
     secondLang: z.string().optional(),    // if this post has embedded second language
     tags: z.array(z.string()).optional(), // topic tags
+    youtubeId: z.string().optional(),     // YouTube video ID for companion embed
   }),
 });
 

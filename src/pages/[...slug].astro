@@ -102,6 +102,22 @@ const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
       </div>
     </div>
 
+    {/* YouTube companion video */}
+    {post.data.youtubeId && (
+      <div class="yt-embed-wrap">
+        <p class="yt-label">📺 {lang === 'ko' ? '영상으로 보기' : 'Watch the video'}</p>
+        <div class="yt-frame-wrap">
+          <iframe
+            src={`https://www.youtube.com/embed/${post.data.youtubeId}`}
+            title="YouTube video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    )}
+
     {/* Primary content */}
     <div id="content-primary" class={`prose${lang === 'ko' ? ' lang-ko' : ''}`}>
       <Content />
@@ -204,6 +220,33 @@ const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
   }
   .ltbtn:hover { border-color: var(--accent); color: var(--text); }
   .ltbtn.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+  .yt-embed-wrap {
+    margin-bottom: 2.5rem;
+  }
+  .yt-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+  }
+  .yt-frame-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #000;
+  }
+  .yt-frame-wrap iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
 
   .featured-image-wrap {
     margin-bottom: 2rem;

@@ -5,7 +5,7 @@ wpSlug: "bayes"
 lang: "en"
 featuredImage: "/assets/SCR-20250221-rcc-scaled.jpeg"
 pairedSlug: "베이즈"
-
+youtubeId: "lL9s-jZeT9c"
 tags: ["theology", "apologetics"]
 ---
 
