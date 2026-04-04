@@ -5,7 +5,7 @@ wpSlug: "morning-sermon"
 lang: "en"
 featuredImage: "/assets/SCR-20250103-mu7.jpeg"
 pairedSlug: "아침설교"
-
+youtubeId: "WW0IJu8uorU"
 tags: ["theology", "testimony", "apologetics"]
 ---
 
