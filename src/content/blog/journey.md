@@ -4,6 +4,7 @@ date: "2025-09-06"
 wpSlug: "journey"
 lang: "en"
 pairedSlug: "여정"
+youtubeId: "jU_wvPqJFVg"
 featuredImage: "/assets/IMG_2458-scaled.jpg"
 
 tags: ["theology", "testimony", "eschatology"]
