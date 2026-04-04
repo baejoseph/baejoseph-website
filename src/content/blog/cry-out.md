@@ -5,6 +5,7 @@ wpSlug: "cry-out"
 lang: "en"
 featuredImage: "/assets/SCR-20251129-rndc-scaled.jpeg"
 pairedSlug: "부르짖으라"
+youtubeId: "RhIkjOfLjEw"
 
 tags: ["prayer", "korea"]
 ---
