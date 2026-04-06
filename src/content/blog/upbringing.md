@@ -7,7 +7,7 @@ tags: ["family", "theology", "courage", "uk"]
 pairedSlug: "양육과결혼"
 ---
 
-I have previously written on two subjects pertaining to Biblical order in the Christian household: [wives submitting to husbands](/seven-taboos/) ([/submit](/submit/)) and parents disciplining children ([/rod](/rod/)).
+I have previously written on two subjects pertaining to Biblical order in the Christian household: [wives submitting to husbands](/submit/) and [parents disciplining children](/rod/).
 
 In the first, I argued that Scripture is unambiguous and consistent across three passages — [Ephesians 5:22](/sarah-club-en/), Colossians 3:18, and 1 Peter 3:1 — that wives are to submit to their husbands, and husbands are to love their wives. Crucially, this pairing is never reversed. The order in which these commands appear is not accidental, and ignoring it has consequences. The modern church, seduced by feminism and the postwar consensus, has largely abandoned this teaching, pointing every finger at husbands to love more sacrificially while wives receive no corresponding challenge to submit. The result is marginalised, disenfranchised men, and an exodus of men from the church.
 
