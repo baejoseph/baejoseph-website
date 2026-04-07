@@ -6,7 +6,8 @@ lang: "en"
 pairedSlug: "영웅주의"
 featuredImage: "/assets/220125-Aerial-view-of-Ziklag.jpg"
 
-tags: ["theology", "courage"]
+tags: ["theology", "courage", "video"]
+youtubeId: "bhiZNZmeQFI"
 ---
 
 #### A meditation on 1 Chronicles 12
