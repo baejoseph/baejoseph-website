@@ -1,107 +1,98 @@
 ---
-title: "⛪ 순전한 복음과 팀 켈러의 좌익 사상"
+title: "⛪️ On Keller's Leftist Ideology"
 date: "2023-06-16"
-wpSlug: "켈러"
-lang: "ko"
+wpSlug: "keller"
+lang: "en"
 featuredImage: "/assets/1706522788-tim-keller.jpg"
-pairedSlug: "keller"
+pairedSlug: "켈러"
 
 tags: ["theology", "leftism"]
 ---
 
-2023년 5월 팀 켈러 목사님의 서거에 깊은 조의를 표합니다. 가족들과 친지, 뉴욕 리디머 교회에 하나님의 위로와 평안이 함께하시길 기도합니다.
+Timothy Keller died in May 2023. I extend my sincere condolences to his family, friends, and Redeemer Presbyterian Church in New York.
 
-켈러 목사님은 실로 탁월한 분이셨습니다. 뉴욕시에서의 개척 목회, 수많은 신앙 서적들, 그리고 Redeemer City to City 국제사역을 통해 20–21세기 복음주의 기독교계에 지울 수 없는 발자국을 남기셨습니다. 저도 개인적으로 20대 때 *결혼의 의미* 등 켈러 목사님의 저서를 통해 큰 은혜를 받았고, 많은 사람들에게 선물하기도 했습니다. 특히 젊은 층 목회자들 사이에서 그분의 영향력은 지금도 막대합니다.
+Keller was genuinely remarkable. His pioneering ministry in Manhattan, his books, and his Redeemer City to City network shaped a generation of evangelical Christianity. In my twenties, *The Meaning of Marriage* nourished me deeply — I gave copies to friends. His influence among young pastors worldwide is enormous, and much of it well-deserved.
 
-하지만 켈러 목사님은 수백만 신자들의 신학을 형성한 공인 신학자이기도 합니다. 성경을 하나님의 말씀으로 믿고, 이 세상의 칭찬보다 그리스도의 칭찬을 더 중요하게 여기는 이라면, 그 사상을 정직하게 살펴볼 책임이 있습니다.
+But Keller was a public theologian whose ideas have shaped millions of believers. That demands honest scrutiny — especially from those of us who hold Scripture as God's inerrant Word and who prize the approval of Christ more than the world's applause.
 
-### 처음으로 의문을 품게 된 계기
+### What first raised the alarm
 
-제가 켈러 목사님의 사상에 본격적으로 의문을 품게 된 것은 2022년 4월입니다. 그분은 트위터에서 낙태에 대해 — 매년 수백만 명의 생명을 앗아가는 그 죄악에 대해 — "이것은 정치적인 이슈이기 때문에 기독교인들은 낙태 합법화에 대해 섣불리 말해서는 안 된다"고 했습니다.[^1]
+My unease crystallised in April 2022, when Keller tweeted that abortion — the taking of unborn lives, millions upon millions of them — is simply "a political issue" on which Christians should not rush to judgment about its legalisation.
 
-도대체 어떠한 세계관과 가치관을 가진 목회자가 이런 말을 할 수 있는 것일까요?
+What worldview produces that statement from a pastor?
 
-저는 더 깊이 파고들기 시작했습니다. 파면 팔수록 심각한 문제들이 드러났습니다.
+I began to look more carefully. The deeper I looked, the more troubled I became.
 
-### 그의 사상은 어떻게 형성되었는가
+### How his mind was shaped
 
-켈러 목사님은 본인이 중고등부 때 만난 지도교사 — 극좌파 행동주의자 — 에게 깊은 영향을 받았다고 직접 고백합니다.[^2] 대학 진학 후에는 프랑크푸르트 학파의 [비판이론(Critical Theory)](/leftism-eng)에 깊이 공감했습니다 — 불평등을 이 세상의 최고 악으로 보고, 모든 인간 관계를 압제자/피압제자의 프레임으로 읽는 세계관입니다.
+Keller openly credits a middle school guidance counsellor — an ultra-leftist activist — for forming his early convictions (*The Reason for God*, introduction, p. xi). At university, he immersed himself in the Frankfurt School's [Critical Theory](/leftism-eng): the framework that identifies inequality as the world's supreme evil and reads all human relations through the lens of oppressor and oppressed.
 
-또한 그분은 목회 전반에 걸쳐 구스타보 구티에레스(Gustavo Gutiérrez)를 자주 인용했습니다 — 마르크스주의를 카톨릭 신학에 접목시켜 해방신학을 만든 남미 카톨릭 주교로, "가난한 자를 향한 하나님의 우선적 선택(God's preferential option for the poor)"이라는 문구를 만든 인물입니다. 이 개념은 *Generous Justice* 전반에 걸쳐 나타납니다.[^3]
+Throughout his ministry, Keller regularly invoked Gustavo Gutiérrez — the Latin American Catholic bishop who fused Marxism with Catholic theology to create Liberation Theology, coining the phrase "God's preferential option for the poor." This phrase echoes throughout *Generous Justice* (p. 7).
 
-그런데 성경은 정반대로 말씀합니다: *"너희는 재판할 때 불의를 행하지 말며 가난한 자의 편을 들지 말며 세력 있는 자를 두둔하지 말고 공의로 사람을 재판할지며."* (레위기 19:15)
+But Scripture says precisely the opposite: *"You shall do no injustice in judgment. You shall not be partial to the poor, nor honour the person of the mighty. In righteousness you shall judge your neighbour."* (Leviticus 19:15)
 
-비판이론은 성경적 인간관과 근본적으로 상충합니다. 개개인을 하나님의 형상을 지닌 고귀한 존재로 보지 않습니다. 인간을 오직 집단 정체성(인종/성별/성적 성향)의 렌즈로만 해석하고, 구조적 불평등의 피해자로만 바라봅니다. 이 틀 안에는 죄가 없고 억압만 있으며, 구원이 없고 혁명만 있습니다.
+Critical Theory is incompatible with biblical anthropology. It does not see people as individual image-bearers of God with personal dignity and responsibility. It reduces persons to their group identities — race, gender, sexual orientation — and casts them purely as victims of systemic forces. There is no sin in this framework, only oppression. No redemption, only revolution.
 
-### 왜곡된 복음관 — 켈러 자신의 말로
+### The distorted gospel — in Keller's own words
 
-이러한 사상적 뿌리는 결국 켈러 목사님의 복음관을 오염시켰습니다. 그분의 직접적인 말을 들어보십시오:
+These intellectual roots eventually infected Keller's gospel. His own words are the most honest testimony here:
 
-*"예수님의 삶과 죽음과 부활은 압제 당하는 자들과 소외된 자들에게 정의를 회복하기 위한, 무한히 값비싼 구조 작전이었다."*
-— *The Reason for God*, pp. 56–57[^4]
+*"Jesus' life, death and resurrection was an infinitely costly rescue operation to restore justice to the oppressed and marginalised."*
+— *The Reason for God*, pp. 56–57
 
-*"예수님의 궁극적인 목적은 개인의 구원과 죄 사함만이 아니라 이 세상의 갱신, 질병과 빈곤과 불의의 종식이기도 하다… 하나님은 이 물질 세계의 고통과 억압을 너무도 미워하셨기에 그 속에 기꺼이 들어오셔서 그것과 싸우셨다."*
-— *The Prodigal God*[^5]
+*"The ultimate purpose of Jesus is not only individual salvation and pardon for sin but also the renewal of this world, the end of disease, poverty, injustice… God hates the suffering and oppression of this material world so much, he was willing to get involved in it and to fight against it."*
+— *The Prodigal God*
 
-그럴싸하게 들립니다. 그런데 이제 예수님의 탄생 때 천사가 한 말을 들어보십시오:
+These statements sound compelling at first. But now read the angel's announcement at the birth of Christ:
 
-*"아들을 낳으리니 이름을 예수라 하라 이는 그가 자기 백성을 **그들의 죄에서** 구원할 자이심이라."* (마태복음 1:21)
+*"She will give birth to a son, and you are to give him the name Jesus, because **he will save his people from their sins**."* (Matthew 1:21)
 
-빈곤에서가 아닙니다. 구조적 억압에서가 아닙니다. **죄에서**입니다.
+Not from poverty. Not from structural oppression. From **sin**.
 
-예수님은 로마의 가혹한 군사 점령 아래에서 사셨습니다 — 오늘날 우리 사회보다 훨씬 더 불평등하고 억압적인 사회에서. 그럼에도 예수님은 "사회정의"에 대해 단 한마디도 하지 않으셨습니다. 제자 중 시몬은 젤롯당원이었습니다 — 로마 지배를 폭력으로 전복하려던 혁명가. 그러나 십자가와 부활, 오순절 성령 강림을 경험한 후, 그는 혁명 의제를 완전히 버리고 복음 전파에 목숨을 바쳤습니다.[^6]
+Jesus lived and ministered under the brutal military occupation of Rome — a society far more unjust than anything we face today. He never once addressed "social justice." One of his twelve disciples, Simon, had been a Zealot — a member of a violent revolutionary movement dedicated to overthrowing Roman rule by force. Yet after witnessing the crucifixion, the resurrection, and the outpouring of the Spirit at Pentecost, Simon abandoned his political programme entirely and gave his life to preaching the Gospel.
 
-이것이 패턴입니다. 정치적 해방은 그리스도의 사명이 아니었고, 그분의 사도들의 사명도 아니었습니다.
+That is the pattern. Political liberation was not the mission of Christ, and it was not the mission of his apostles.
 
-켈러 목사님이 2020년 BLM 폭동자들을 "목소리 없는 자들의 아우성"이라며 공개적으로 옹호했을 때,[^7] 그것은 그분이 이 이데올로기적 틀로부터 얼마나 멀리 끌려갔는지를 보여주었습니다.
+When Keller publicly defended the 2020 BLM rioters as "cries of the voiceless," he revealed how far the framework had carried him from that apostolic pattern.
 
-### 침묵해야 할 곳에서의 침묵
+### Where silence replaced clarity
 
-켈러 목사님은 동성애가 "하나님의 원래 창조 원리에서 벗어났다"고는 인정했습니다. 그러나 곧바로 비난의 화살을 교회로 돌렸습니다: 동성애를 정죄하는 교회가 더 큰 문제라며, 힌두교인들을 사랑하는 것처럼 동성애자들을 사랑해야 한다는 말만 했습니다 — 정작 본론은 피하면서요.
+Keller acknowledged that homosexuality "deviates from God's original design." But he immediately directed the blame toward the church: the Christians who condemn homosexuality are the greater scandal, he argued, and his counsel was to love gay and lesbian neighbours *"as you love Hindus"* — with warmth, but conspicuously without the word.
 
-그리고 2022년, 복음주의 교회의 가장 큰 위험이 무엇이냐는 질문에, 켈러 목사님은 자유주의 신학이 성경의 권위를 무너뜨리는 것을 말하지 않았습니다. LGBTQ+ 이념이 교회를 안팎에서 공격하는 것도 말하지 않았습니다. 그분이 지목한 최대 위협은 **기독교 민족주의와 "광신주의"** — 사실상 트럼프 재선을 원하는 기독교인들이었습니다.
+Then in 2022, asked about the greatest danger facing evangelicalism, Keller did not point to liberal theology eroding Scripture's authority. He did not point to the aggressive weaponisation of LGBTQ+ ideology against the church. He pointed instead to **Christian nationalism and "fanaticism"** — by which he meant, essentially, Christians who wanted Donald Trump re-elected.
 
-이 답변에서 빠진 것이 무엇인지 생각해 보십시오.
+Think carefully about what is missing from that answer.
 
-### 더 근본적인 문제: 선지자적 진리보다 세상 지혜
+### The deeper problem: worldly wisdom over prophetic truth
 
-가장 깊은 곳에서, 켈러 목사님의 전도 방법론은 선지자들의 권위보다 철학자들의 지혜에 기댔습니다. 그분의 저서들은 세상 사상가들을 폭넓게 인용하고, 성경은 종종 기초가 아닌 보조 자료 역할을 합니다. 이것을 문화적 소통, 즉 바울이 아테네에서 한 것처럼 사람들이 있는 곳에서 만나는 방법이라고 변호할 수도 있습니다.
+At the root of it all, Keller's method leaned on the wisdom of philosophers over the authority of prophets. His books quote secular thinkers extensively; Scripture is often supporting material rather than foundation. The defence offered is contextualisation — meeting people where they are, as Paul did at the Areopagus.
 
-하지만 아테네의 바울은 부활과 다가오는 심판을 선포했습니다. 조롱을 받았지만 그 내용을 편집하지 않았습니다. 켈러 목사님의 방법은 세상이 받아들이기 어려운 부분을 자체 검열한 것에 더 가깝습니다. 성경은 이런 지혜에 대해 분명히 말합니다:
+But Paul at the Areopagus still proclaimed the resurrection and the coming judgment. He was mocked for it, and he did not edit those things out. What Keller practised more closely resembles self-censorship for cultural acceptability. Scripture has a word for that kind of wisdom:
 
-> *"이러한 지혜는 위로부터 내려온 것이 아니요 땅 위의 것이요 정욕의 것이요 귀신의 것이니 시기와 다툼이 있는 곳에는 혼란과 모든 악한 일이 있음이라 오직 위로부터 난 지혜는 첫째 성결하고 다음에 화평하고 관용하고 양순하며 긍휼과 선한 열매가 가득하고 편견과 거짓이 없나니."*
+> *"This wisdom does not descend from above, but is earthly, sensual, demonic. For where envy and self-seeking exist, confusion and every evil thing are there. But the wisdom that is from above is first pure, then peaceable, gentle, willing to yield, full of mercy and good fruits, without partiality and without hypocrisy."*
 >
-> 야고보서 3:15–17
+> James 3:15–18
 
-> *"십자가의 도가 멸망하는 자들에게는 미련한 것이요 구원을 받는 우리에게는 하나님의 능력이라."*
+> *"For the message of the cross is foolishness to those who are perishing, but to us who are being saved it is the power of God."*
 >
-> 고린도전서 1:18
+> 1 Corinthians 1:18
 
-십자가는 이 세상에게 항상 미련하게 보일 것입니다. 그것이 십자가의 결점이 아니라 능력입니다.
+The cross will always be foolish to the world. That is its power, not its defect.
 
-### 결론: 무엇을 해야 하는가
+### The call
 
-이 글을 쓰는 것을 저는 오래 망설였습니다. 켈러 목사님을 사랑하는 분들에게 상처가 될 수 있다는 것을 압니다. 그분의 개인적 믿음이나 목회가 낸 진정한 열매를 부정하는 것도 아닙니다.
+I wrote this reluctantly — I am aware of the pain it may cause to those who love Keller, and I do not question his personal faith or the genuine good his ministry produced.
 
-하지만 그리스도의 몸 된 교회는 이 문제를 정직하게 직면해야 합니다. [사회정의](/starve)와 [환경주의(creation care)](/climate)를 복음에 혼합하는 것은 사소한 추가가 아닙니다 — 그것은 다른 복음입니다. 팀 켈러와 존 스토트는 이 길을 걸었습니다. 스펄전, 토저, 마르틴 로이드 존스는 걷지 않았습니다. 그들은 자기 시대의 문화 흐름을 거스르며 사회적 대가를 치르면서도 "오직 복음!"을 외쳤습니다.
+But the Body of Christ needs honest reckoning here. Fusing [social justice](/starve) and [creation care](/climate) into the gospel is not a minor supplement — it is a different gospel. Keller and John Stott walked this road. Spurgeon, Tozer, and Martyn Lloyd-Jones did not. They defied the cultural currents of their own eras, paid the social cost, and proclaimed the gospel alone — offensive to the world, foolish to the perishing, and the power of God unto salvation.
 
-목회자들이여, 빨리 깨어나야 합니다. 성도들은 지금 이 순간에도 특정한 사상과 언어와 프레임에 의해 조용히 형성되고 있습니다. 그들이 [성경적 세계관으로](/three) 분별할 수 있도록 교리를 가르치고 훈련해야 합니다. 그렇지 않으면 세상이 먼저 가르칠 것입니다.
+Pastors: your congregations are being quietly formed by ideas, language, and frameworks they cannot yet name. Teach them [to think biblically](/three). Catechise them. Equip them to discern the worldview embedded in what they read and watch, before the culture does the catechising for them.
 
-이 글을 마치면서 한 역사적 장면이 떠오릅니다. 이제 막 집사가 된 아타나시우스가 자기보다 40살 연상이고 헬라권 기독교계 전체를 등 뒤에 두고 있던 아리우스를 홀로 대적했을 때 한 말입니다:
+When the young deacon Athanasius stood against Arius — a man forty years his senior, with the entire Greek-speaking Christian world behind him — he said:
 
-*"만약 세상이 진리와 맞선다면, 나는 세상에 맞서겠노라."*
-(*If the world is against the truth, then I am against the world.*)
+> *"If the world is against the truth, then I am against the world."*
 
-지금 교회에 필요한 것은 그 정신입니다. 타협이 아닙니다. 세상이 박수를 보낼 때까지 깎아낸 복음이 아닙니다. 복음 그 자체 — 세상에게 미련하고, 망하는 자들에게 걸림돌이 되며, 구원받는 우리에게는 하나님의 능력인 그 복음입니다.
+That is the spirit the church needs now. Not accommodation. Not a gospel sanded down until the world will praise it. The gospel as it is — the power of God, to the Jew first, and also to the Greek.
 
 ---
 
-**업데이트:** 이후 복음이 실제로 무엇을 요구하는지 더 깊이 다뤘습니다 — [속죄에 대하여](/속죄/).
-
-[^1]: https://youtu.be/wYaRYJ7QXps
-[^2]: *The Reason for God*, introduction, p. xi
-[^3]: *Generous Justice*, p. 7
-[^4]: *The Reason for God*, pp. 56–57
-[^5]: *The Prodigal God*
-[^6]: 나머지 제자들도 마찬가지였습니다. 사도행전 1:6을 보면, 부활하신 예수님께 "주여 이스라엘 나라를 이 때에 회복하심이 이러하니이까"라고 물었음을 알 수 있습니다.
-[^7]: 트위터 (2020)
+**Update:** I later wrote a fuller treatment of what the gospel really requires — [On Propitiation](/propitiation/).
