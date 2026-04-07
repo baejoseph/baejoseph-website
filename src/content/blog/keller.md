@@ -85,7 +85,7 @@ I wrote this reluctantly — I am aware of the pain it may cause to those who lo
 
 But the Body of Christ needs honest reckoning here. Fusing [social justice](/starve) and [creation care](/climate) into the gospel is not a minor supplement — it is a different gospel. Keller and John Stott walked this road. Spurgeon, Tozer, and Martyn Lloyd-Jones did not. They defied the cultural currents of their own eras, paid the social cost, and proclaimed the gospel alone — offensive to the world, foolish to the perishing, and the power of God unto salvation.
 
-Pastors: your congregations are being quietly formed by ideas, language, and frameworks they cannot yet name. Teach them [to think biblically](/three). Catechise them. Equip them to discern the worldview embedded in what they read and watch, before the culture does the catechising for them.
+Pastors: your congregations are being quietly formed by [ideas](/sober), language, and [frameworks](/control) they cannot yet name. Teach them [to think biblically](/three). Catechise them. Equip them to discern the worldview embedded in what they read and watch, before the culture does the catechising for them.
 
 When the young deacon Athanasius stood against Arius — a man forty years his senior, with the entire Greek-speaking Christian world behind him — he said:
 
