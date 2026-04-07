@@ -3,8 +3,9 @@ title: "⚔️ Upbringing and Marriage"
 date: "2026-04-06"
 lang: "en"
 featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"
-tags: ["family", "theology", "courage", "uk"]
+tags: ["family", "theology", "courage", "uk", "video"]
 pairedSlug: "양육과결혼"
+youtubeId: "uzfepk6ZBDU"
 ---
 
 I have previously written on two subjects pertaining to Biblical order in the Christian household: [wives submitting to husbands](/submit/) and [parents disciplining children](/rod/).
