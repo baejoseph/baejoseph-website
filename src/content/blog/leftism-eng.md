@@ -9,84 +9,144 @@ pairedSlug: "leftism"
 tags: ["leftism", "theology"]
 ---
 
+Let me start with two questions.
 
-Left-wing ideology poses a significant threat to Christian beliefs, aligning closely with principles that oppose the knowledge of God. Just as Satan worship is considered evil, left-wing ideology stems from the same root and is even more dangerous because it permeates every dimension of our society.
+Do you believe Satanism is evil and wrong?
 
-> “The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds. We demolish arguments and every pretension that sets itself up against the knowledge of God, and we take captive every thought to make it obedient to Christ.”
-> 
+And do you oppose it?
+
+Of course you answered yes to both — and there's no contradiction there.
+
+Now here is what I want to convince you of in this article: **leftism is evil and wrong in exactly the same way Satanism is.** In fact, it may be more dangerous — precisely because Satanism remains a fringe movement that most people dismiss, while left-wing ideology has already captured our culture, media, politics, and education systems. And when you trace both to their roots, they come from the same place.
+
+> "The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds. We demolish arguments and every pretension that sets itself up against the knowledge of God, and we take captive every thought to make it obedient to Christ."
+>
 > 2 Corinthians 10
 
-Through this article, I hope to expose the left-wing ideology, which opposes the knowledge of God, and make it obedient to Christ.
+Through this article, I want to expose left-wing ideology — which sets itself up against the knowledge of God — and bring it captive to Christ.
 
-### Defining Left-wing ideology
+### What is left-wing ideology?
 
-Left-wing ideology is a worldview that identifies **inequality** as the greatest evil. It perceives all societal problems through the lens of power differentials and structural inequalities. Believing that _humanity is inherently good_, leftists advocate for radical political revolution (as we will see below, the definition of revolution shifted to a more gradual cultural shift, thanks to the likes of Gramsci) to achieve **a utopia free from inequality**. This vision often entails dismantling family structures, religion, and private property to eradicate all forms of discrimination.
+Every worldview answers two questions: what is the world's greatest problem, and what is the solution? The Christian worldview identifies the problem as human sin (original sin) and the solution as the cross and resurrection of Jesus Christ.
 
-### Why Left-Wing Ideology Contradicts Biblical Principles
+Left-wing ideology is a rival worldview — and a profoundly anti-biblical one. It identifies **inequality** as the world's greatest evil. Since it believes humanity is inherently good, all suffering must have an external cause: structural oppression, unjust power imbalances. The solution, therefore, is political revolution — to overturn those structures and build **a utopia free from inequality**.
 
-So, why is left-wing ideology considered non-biblical? There are several reasons:
+Follow this logic to its end and you reach a disturbing conclusion. To eliminate inequality, you must eliminate the things that *produce* inequality: the family (parents inevitably favour their own children), religion (it divides society), and private property (it creates material distinction). Left-wing ideology is not merely a policy preference. It is a comprehensive worldview aimed at dismantling creation itself.
 
-1.  **Affirmation of Personal Property**: The Eighth Commandment, “You shall not steal,” underscores the importance of personal property. Unlike other ancient societies that viewed property communally, the Bible introduces the revolutionary concept of individual ownership.
-2.  **Condemnation of Covetousness**: The Tenth Commandment warns against coveting others’ possessions. Left-wing ideology’s fixation on eliminating inequality often stems from envy and jealousy, violating this commandment.
-3.  **Acceptance of Distinctions**: While all humans bear God’s image and have equal worth, the Bible acknowledges necessary distinctions in wealth, honour, and power. The Parable of the Talents illustrates that even in heaven, differences will not only exist but be magnified to the extreme. Conversely, the only place devoid of distinction is hell.
-4.  **Only Jesus can realise Utopia**: The Bible teaches that only Jesus can bring about the Millennial Kingdom by “making all things new” (Revelation 21:5); left wing activists (both within and without the Church) believe that humans can bring about the Utopia through their own efforts (the technical term is to “immanentise their eschaton”). In this way, [everyone is obsessed with eschatology](/eschatology).
-5.  **Dignity of Personal Responsibility**: God grants us free will and expects us to take **full responsibility** for our choices. Proverbs teaches that laziness leads to poverty, and the New Testament says those unwilling to work should not eat.
-6.  **Impartial Justice**: Leviticus 19 instructs us not to show partiality, even to the poor, establishing the **rule of law**. Left-wing concepts like “social justice”, “environmental justice”, and “reproductive justice” distort this principle by introducing biases contrary to biblical justice.
+### What the Bible actually says
 
-### Common Sense vs. Ideology
+Why is this non-biblical? Not for vague reasons — the Bible addresses this with startling precision.
 
-Conservative values aren’t an ideology but common sense principles valuing hard work, honesty, integrity, and the preservation of family, faith, and property. We recognise our inherent dignity and the responsibility that comes with free choice. Leftists label these principles as “capitalism” to portray them as a harmful or dangerous ideology, but instead they are foundational truths.
+The **Eighth Commandment** — "You shall not steal" — enshrines private property as a God-given right. This was genuinely radical in the ancient world, where communal ownership was simply assumed. God's law cut against tribal collectivism from the very beginning.
 
-### The Danger to Future Generations
+The **Tenth Commandment** cuts even deeper: "You shall not covet your neighbour's house... nor anything that belongs to your neighbour." The entire left-wing project — its obsession with inequality, its demand for redistribution — is, at its root, covetousness systematised into a political programme. What leftists call "inequality" is envy with an ideology.
 
-Left-wing ideology is particularly dangerous for children because it instills a **victim mentality** that hinders personal growth. I teach my sons the following: “You are victims of these three things only: _your own laziness_, _your own ignorance_, and _your own wrong choices_. Do your best with what you have been given now.” Emphasising personal responsibility empowers them to make the most of their circumstances.
+Is material inequality really evil? Every human being bears the image of God and has equal dignity before him — that is non-negotiable. But the Bible also teaches that wealth, honour, and authority will differ between people, and that this is right and proper. The Parable of the Talents makes this stark: in the Kingdom of Heaven, distinctions are not erased but *magnified* — ten cities for the one who doubled his ten talents. Fascinatingly, the only place in all of Scripture where all distinction vanishes is hell and the lake of fire. The left-wing utopia looks more like hell than heaven.
 
-### Roots in Ancient Heresy
+God grants us **free will and personal responsibility**. Proverbs warns that laziness brings poverty like a bandit. The New Testament is blunt: "If anyone is not willing to work, let him not eat" (2 Thessalonians 3:10). Human dignity includes the dignity of consequences.
 
-Modern left-wing ideologies trace back to **ancient Gnosticism**, a heresy warned against by the Apostle John (look up books/works by _Eric Voegelin_). Gnostics denied Jesus came in the flesh, believing the physical world was evil and the God of the Bible was an inferior deity. They promoted androgyny, opposing the biblical distinction between male and female. Today’s radical movements reflect these Gnostic beliefs, challenging God’s created order.
+Leviticus 19 commands that we must not show partiality in judgement — not even to the poor. This is the foundation of the **rule of law**: justice is blind, not tilted in favour of any group. The left-wing concepts of "social justice," "environmental justice," and "reproductive justice" introduce precisely the tribal partiality God's law forbids.
 
-The serpent’s lie in Eden—“You will be like God”—mirrors left-wing ideology’s promise of utopia through human effort. This parallels Satan’s rebellion and underscores the spiritual danger of embracing such beliefs.
+### Not an ideology — common sense
 
-### A Crash Course on Neo-Marxism
+Here is something worth naming clearly: *conservatism is not an ideology*. It is common sense. Hard work, honesty, integrity, the protection of family, faith, and private property — these are not a political programme. They are foundational truths about human nature.
 
-To briefly trace the history of Marxism in 20th century: After the Russian Revolution failed to spread throughout Europe, Marxist intellectuals gathered in Frankfurt, Germany in the 1930s, giving birth to the **Critical Theory of the Frankfurt School** (these later migrated to Harvard and thus begun their 100-year total conquest of the Western academia). While traditional Marxism simply divides humanity into two classes (bourgeoisie and proletariat) along the economic axis, Critical Theory divides humanity along multiple axes, such as gender, sexual orientation, race, etc., and interprets the world through the lens of the oppressed and the oppressor classes. This worldview does not recognise individual uniqueness and dignity as bearers of God’s image but rather interprets humanity solely through the lens of various group identities (gender/race/sexual orientation, etc.) and sees them solely as victims of external and systemic “inequality/injustice.”
+It was the Marxists who coined the word "capitalism" — specifically to make these foundational truths sound like a dangerous ideological project. Don't fall for it.
 
-### Gramsci and the “War of Position”
+### Why leftism destroys the next generation
 
-An influential figure in this shift was **Antonio Gramsci**, an Italian Marxist philosopher and communist politician. Gramsci recognized that the expected proletarian revolution was not occurring in advanced capitalist societies as Marx had predicted. He introduced the concept of cultural hegemony, arguing that the ruling class maintains control not just through economic dominance but by shaping society’s cultural norms and values. Gramsci advocated for a “war of position”, where Marxists would gradually infiltrate and influence key cultural institutions—such as education, media, and religion—to shift societal beliefs and achieve ideological dominance. This strategy aimed **to transform society from within**, making a violent revolution unnecessary. Gramsci’s ideas significantly impacted leftist movements, leading to a gradual cultural shift that has profoundly influenced societies worldwide.
+The most insidious damage left-wing ideology does is to children, because it teaches them to see themselves as victims of society rather than as agents of their own lives.
+
+I tell my sons: *"You are the victim of three things only: your own laziness, your own ignorance, and your own wrong choices. Outside of those three, make no excuses — do your best with what you have been given, now."*
+
+That is the right-wing message. Is it even an ideology? It is simply the truth.
+
+### Why does leftism appeal to so many — including believers?
+
+I have thought about this for a long time. I believe the answer begins in the family.
+
+In a healthy family, parents have absolute authority and provide for all their children's needs equally. The children are loved unconditionally, protected, and given the same food, the same care. This is the only world a child knows for the first decade or more of their life.
+
+Now extrapolate that paradigm to society, and you get [left-wing ideology](/leftism-essay-gpt). Of course you do! If equal provision by an all-providing authority is all you have ever known, any inequality in the wider world feels like a violation — a betrayal of the natural order.
+
+But here is what every child must eventually learn: **the family is not a model for society.** In the family, parental authority is absolute because parents are wholly benevolent guardians. In society, no such guardian exists. The government is not your father. God is.
+
+Some people never learn this. They spend their lives searching for a new parent, and they find one in the state. They fall into **government salvationism** — the belief that the government can and should provide the security, equality, and provision that only God can truly give. This is not just bad politics. It is idolatry.
+
+### What is the government actually for?
+
+Scripture is clear. Romans 13 and 1 Timothy 2:1–2 define the government's role narrowly: punish lawbreakers and maintain public order. Defence, police, courts. That is it.
+
+We live in a world where the state has ballooned far beyond this mandate — redistributing wealth by force, shaping culture, inserting itself into education and family life. Christians must respect the law, but we should be deeply sceptical of government overreach, especially when it seeks to replace God as our provider and protector.
+
+### The Frankfurt School and the long march
+
+Left-wing ideology did not arrive from nowhere. It has a clear lineage.
+
+When the Russian Revolution failed to spark proletarian uprisings across Europe as Marx had predicted, Marxist intellectuals gathered in Frankfurt in the 1930s and produced something more dangerous than Bolshevism: **Critical Theory**. The Frankfurt School — these thinkers later migrated to Harvard and began what became a century-long conquest of Western academia.
+
+Classical Marxism divided humanity along one axis — economic class (bourgeoisie vs. proletariat). Critical Theory multiplied the axes: gender, race, sexual orientation, religion. Now everyone could be sorted into oppressors and oppressed. The result is a worldview that abolishes individual uniqueness and dignity. Every person is reduced to their group identities and seen purely as a victim of systemic forces.
+
+There is no room for the *imago Dei* in this framework. There is no individual, only an identity category. There is no sin, only oppression. There is no redemption, only revolution.
+
+The Italian Marxist **Antonio Gramsci** saw clearly what needed to happen to make this revolution succeed. The proletarian uprising was not coming. So instead, he proposed a "war of position": slow, patient infiltration of every cultural institution — schools, universities, media, churches. The goal was not to seize the state directly but to reshape **what people believe**, until the revolutionary worldview felt like common sense. Control the culture, and you control everything.
 
 > All organisations that are not actually right-wing will over time become left-wing.
-> 
-> O’Sullivan’s First Law
+>
+> O'Sullivan's First Law
 
-### Leftism in the US
+This is why institutions don't need to be explicitly Marxist to drift leftward. The pressure is always in one direction — and it has been, for a hundred years.
 
-In the United States, a form of cultural Marxism known as critical race theory (CRT) has been systematically incorporated into the public consciousness and into the school curriculum, causing a generation of young people to become ensnared in victimhood and a defeatist mindset, leading them to a path of self-destruction (e.g., a drastic increase in homelessness and shoplifting in cities like New York and California). During the nationwide BLM riots of 2020, Democratic politicians and the corrupt mainstream media consistently endorsed these actions, further fuelling their Leftist narrative.
+In the United States, this strategy has produced Critical Race Theory, now embedded in school curricula — teaching a generation to see themselves primarily through the lens of racial identity and historical victimhood. The fruits are visible: explosive growth in homelessness and social disorder in cities like New York and San Francisco. During the nationwide BLM riots of 2020, Democratic politicians and the mainstream media did not merely tolerate the chaos — they endorsed and encouraged it.
 
-### The Appeal of Leftism to the Youth
+### The ancient heresy at the root of it all
 
-So, why do so many people, including many believers, prefer and follow left-wing ideology? I have pondered this question for a long time and found an answer: it all begins in the family. In a family, parents have absolute authority over children and provide for all their needs equally until they grow up. If you simply extrapolate this paradigm to the society, [it might seem like left-wing ideology](/leftism-essay-gpt) is the way forward. Since this “equality” is all we have experienced as children, we come to expect the same in the greater society, and agree with leftist ideology that calls all inequality as inherently evil. Some people, not willing to grow out of the paradigm of absolute parental authority and needs-based equal distribution of wealth, may even end up turning to the government as a substitute for their parents, thus falling hard into left-wing ideology.
+But even the Frankfurt School is not the deepest root.
 
-### The Role of Government
+The philosopher **Eric Voegelin** and others have traced modern left-wing ideologies back to **ancient Gnosticism** — the very heresy the Apostle John warned against in his letters.
 
-Is the government to be viewed as our parent? The Bible teaches that our ultimate provider is God, not the state. Romans 13 and 1 Timothy 2:1–2 outline the government’s role in maintaining **order and justice**, not in acting as a parental figure. In reality, we live in a world where the state overreach has gone way beyond public order law enforcement, with the forced redistribution of wealth through excessive tax policies etc. Christians should respect the law but remain cautious of government overreach, especially when it seeks to replace God in our lives.
+The ancient Gnostics taught that the physical world was evil — that the God of the Bible, the Creator of the material universe, was an inferior and malevolent deity called the Demiurge. A higher divine feminine being — Sophia, or Gaia — appeared in the form of a serpent and gave humanity true enlightenment. Sound familiar?
 
-### Satanic origin of Leftist Ideology
+Gnosticism declared the creation of male and female to be itself evil — one of the worst acts of the wicked Demiurge. In its place, the Gnostics exalted androgyny: the transcendence of the male-female distinction in a single person. This is not a modern idea. The radical transgender movement is ancient Gnosticism, resurrected and rebranded.
 
-As mentioned earlier, various forms of contemporary left-wing ideologies can trace their roots back to ancient Gnosticism. Ancient Gnostics taught that the God of the Bible (the LORD, the creator of the physical universe) is an evil god called the Demiurge, and that a higher divine feminine entity (Sophia or Gaia) exists, who took on the form of a serpent and gave Adam and Eve true knowledge (enlightenment). This cult of Gnosticism even advocated androgyny, the idea that a single individual possesses both male and female characteristics, as they believed that the separation of the sexes (creating Eve out of Adam’s ribs) was the greatest evil act of the Demiurge. Thus, the modern radical transgender movement is simply a modern expression of this ancient Gnostic belief system. It really is as ancient as Genesis chapter 3.
+And then there is the serpent's original lie: *"You will be like God."* This is the precise promise of left-wing utopianism — that we can, through human effort and political will, create paradise on earth. The technical term is "immanentising the eschaton": dragging the Kingdom of Heaven into history by force, without God. In this way, [everyone is obsessed with eschatology](/eschatology).
 
-Moreover, the lie told by the serpent, “You can become like God”, lies at the core of left-wing ideology—the belief that we can achieve utopia through our own power. Thus, left-wing ideology is essentially Satanism. It is no surprise that one of the core tenets of Leftist agenda is the Climate Cult obsession with carbon emissions etc (Here I am not talking about the traditional “Environmentalism 1.0” that seeks to be faithful stewards of our immediate natural ecosystem/environment for human flourishing). See [here](/climate) for more details.
+**Left-wing ideology is, at its core, Satanism** — not the cartoonish, self-aware kind, but the sophisticated, academically respectable kind. The kind that says: God's creation is evil, God's law is oppression, and through the right political programme we can become gods ourselves.
 
-### Misguided Theological Interpretations
+This is also why the Climate Cult fits so naturally within the Leftist framework — not traditional environmentalism (faithful stewardship of creation for human flourishing) but a quasi-religious obsession with carbon, guilt, sacrifice, and apocalyptic prophecy. See [here](/climate) for more.
 
-Claiming, “I’m neither left-wing nor right-wing; I’m a centrist," is just as foolish as saying, “I believe in both God and Satan.” Unfortunately, today, there are [too many moderate/left-leaning theologians](/keller). They distort the gospel to fit their skewed agenda, suggesting that Jesus’ crucifixion and resurrection were primarily about social justice, aimed at restoring justice to the oppressed and marginalised in society. They claim that Jesus’ redemptive work was not only about salvation from sin but also about rectifying this world’s disease, poverty, and injustice. This is a gross misrepresentation of the Bible, as the Bible makes it abundantly clear that Jesus came to save us from our sins (Matthew 1:21).
+### The theologians who got it wrong
 
-So, according to these left-leaning theologians, did Jesus indeed come to this world primarily for the political salvation of oppressed Israelites? It’s impossible to even begin to compare our present society with the society of the Roman rule in Jesus’ time. However, why didn’t Jesus make any statements about “social justice” of Roman-occupied Israel, which was clearly full of oppression and structural social injustice? Instead, he preached, “If a Roman soldier compels you to go one mile, go with him two. If someone takes your outer garment, give them your inner garment as well.” In fact, Simon, one of Jesus’ twelve disciples, who had previously been part of the Zealot party, was seeking to overthrow the Roman rule through political revolution. Initially he wanted to use Jesus as a means for his political end. However, after witnessing Jesus’ crucifixion and resurrection and experiencing the outpouring of the Holy Spirit at Pentecost, he abandoned his quest for a political uprising. Instead, he dedicated his life to preaching the Gospel to the ends of the earth, ultimately sacrificing his life. Therefore, it is bewildering to see some modern-day Christians, living in a vastly improved 21st-century society, falling into the trap of “**salvation by the government**” mentality and turning Jesus into a means for their utopian political revolution, just like Simon the Zealot prior to his awakening.
+"I'm not left-wing or right-wing — I'm a centrist." This is the most common evasion in Christian circles today, and it is precisely as incoherent as saying, "I believe in both God and Satan." There is no neutral ground in a spiritual war.
 
-### True Societal Transformation
+Tragically, there are [too many moderate and left-leaning theologians](/keller) who have distorted the gospel to fit this ideology. They redefine the crucifixion as primarily a political act: Jesus died to liberate the oppressed from structural injustice. They claim his redemptive work was not only about salvation from sin but about healing this world's disease, poverty, and inequality. The ultimate goal becomes not personal salvation but social transformation.
 
-History shows that lasting progress comes from the spread of the gospel and individual transformation through the Holy Spirit, not from political revolutions. The American Revolution of 1776, rooted in biblical principles of human dignity and freedom, is a rare example of a revolution leading to enduring positive change. In a way, the United States is the oldest modern nation, an extraordinary ongoing human experiment. The founding fathers, mostly Protestant Christians from England, established the Constitution upon the unchanging Biblical foundation of human dignity and freedom, setting into motion the greater human experiment (see The Federalist Papers for more detail).
+This is a gross misrepresentation. **"She will give birth to a son, and you are to give him the name Jesus, because he will save his people from their sins."** (Matthew 1:21). Not from poverty. Not from political oppression. From *sin*.
 
-## A Call to Discernment
+Consider the evidence on their own terms. If Jesus came primarily for the political liberation of the oppressed, why — living under brutal Roman military occupation — did he never say a single word about the structural injustice of Roman rule? Instead, he said: *"If a soldier compels you to go one mile, go with him two."* He said: *"Give to Caesar what is Caesar's."*
 
-Aligning with left-wing ideology is akin to embracing beliefs that oppose God. As Christians, we must reject ideologies rooted in envy, rebellion, and human pride. There is a concept in Stalinist Marxism known as “useful idiots”. It refers to individuals who support left-wing ideology without fully understanding its essence, contributing to and promoting left-wing ideologies. Let us not become “useful idiots,” unwittingly supporting principles that undermine our faith. Instead, we should stand firm in biblical truth, promoting values that honour God and uplift society, while recognising that our ultimate hope is [in the glorious appearing of our Lord](/rapture), [who alone will make all things new](/courage).
+One of his twelve disciples, Simon, was a Zealot — a member of a violent revolutionary movement dedicated to overthrowing Roman occupation by force. He came to Jesus as a political revolutionary looking for a political messiah. But after witnessing the crucifixion, the resurrection, and the outpouring of the Spirit at Pentecost, he abandoned his revolutionary agenda entirely and gave his life to preaching the Gospel — unto death.
+
+Why, then, do some Christians today — living in a society incomparably freer and more prosperous than Roman-occupied Judea — fall into the same trap as Simon the Zealot *before his conversion*? Why do they turn Jesus into a means for their political programme?
+
+### Where lasting change actually comes from
+
+Two thousand years of history tell a clear story: lasting social progress does not come from political revolution. It comes from the spread of the Gospel and the transformation of individual lives by the Holy Spirit.
+
+The one revolution in modern history that actually worked — producing durable institutions of justice, liberty, and human dignity — was the American Revolution of 1776. And it succeeded *because* it was not utopian. The Founding Fathers (mostly Protestant Christians from England) built the Constitution on unchanging biblical foundations: the dignity and freedom of every human being made in God's image. They were not trying to create paradise. They were trying to create conditions in which sinful humans could live together in ordered liberty. See *The Federalist Papers*.
+
+America is the oldest living modern nation — the longest-running experiment in biblical political philosophy. That it has been the primary target of the Gramscian cultural revolution for a century is no coincidence.
+
+### Don't be a useful idiot
+
+In Stalinist Marxism there is a term: **useful idiot**. It describes those who advance left-wing ideology without understanding what they are actually serving — who believe they are fighting for compassion and justice, while promoting an agenda they would reject if they saw it clearly.
+
+The church is full of useful idiots. People who repeat the language of "social justice" without knowing its origins. People who call themselves "centrists" to avoid hard conversations. People who embrace left-leaning theology because it sounds compassionate, unaware they are immanentising the eschaton and preaching a different gospel.
+
+Don't be one of them.
+
+Stand firm in biblical truth. Defend the values that honour God: hard work, personal responsibility, the family, the rule of law, private property, impartial justice. Resist government overreach — not from selfishness, but because the government is not your Father and never will be.
+
+And above all, do not lose hope. The Kingdom of God will not be built by any political party or social movement. It will come [in the glorious appearing of our Lord](/rapture), [who alone will make all things new](/courage) (Revelation 21:5).
+
+That day is coming. Until then, take every thought captive to Christ.

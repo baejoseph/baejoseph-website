@@ -11,7 +11,7 @@ tags: ["theology"]
 
 ### 🤷🏻 The Danger of a “Jesus-My-Boyfriend” Theology
 
-In much of today’s Church, the gospel has been reshaped into a [sentimental romance](/keller-eng)—“Jesus my boyfriend,” gentle, validating, affirming, and comforting, but stripped of any weight of divine holiness. Influential voices like **Greg Boyd**, **Rob Bell**, and **W. Paul Young** have championed _Christus Victor_ or the _New Perspective on Paul_, yet many of them downplay—or even deny—**the doctrine of propitiation**, the truth that **_Christ absorbed the Father’s wrath_** on our behalf. Some even mock it as “divine child abuse,” or argue, “How can we as sinners split the Trinity on the Cross?” Yet without this truth, we have no answer for why the Son of God truly had to die.
+In much of today’s Church, the gospel has been reshaped into a [sentimental romance](/keller)—“Jesus my boyfriend,” gentle, validating, affirming, and comforting, but stripped of any weight of divine holiness. Influential voices like **Greg Boyd**, **Rob Bell**, and **W. Paul Young** have championed _Christus Victor_ or the _New Perspective on Paul_, yet many of them downplay—or even deny—**the doctrine of propitiation**, the truth that **_Christ absorbed the Father’s wrath_** on our behalf. Some even mock it as “divine child abuse,” or argue, “How can we as sinners split the Trinity on the Cross?” Yet without this truth, we have no answer for why the Son of God truly had to die.
 
 ### 🖼️ The Rich Tapestry of Atonement
 
