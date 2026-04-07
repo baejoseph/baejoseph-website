@@ -70,7 +70,6 @@ const scheduledCount = posts.length - publishedCount;
           <span class="post-date">{formatDate(post.data.date)}</span>
           <span class="post-title">{post.data.title}</span>
           <div class="post-right">
-            <TagList tags={(post.data.tags ?? []).filter(t => t !== tag)} />
             <span class="post-lang-badge">{(post.data.lang ?? 'en').toUpperCase()}</span>
           </div>
         </a>
@@ -101,7 +100,11 @@ const scheduledCount = posts.length - publishedCount;
   }
 
   document.addEventListener('previewModeChanged', syncTagPage);
-  document.addEventListener('DOMContentLoaded', syncTagPage);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', syncTagPage);
+  } else {
+    syncTagPage();
+  }
 </script>
 
 <style>
