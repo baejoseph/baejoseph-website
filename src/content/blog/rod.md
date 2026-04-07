@@ -9,22 +9,42 @@ featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"
 tags: ["family", "theology"]
 ---
 
-For thousands of years, Christians who have upheld the Bible as the infallible Word of God have relied on its wisdom and instructions for raising children in the home. Proverbs 13:24 declares, _“He who spares his rod hates his son, but he who loves him disciplines him promptly.”_ Because the underlying Hebrew grammar lacks a future tense, the verse can also be rendered as, _“He who spares his rod will come to hate his son.”_ This rendering, fully consistent with the original Hebrew, highlights the causal relationship between a failure to discipline and the eventual anger and hatred that develop in the parent. Discipline, when administered lovingly and consistently, safeguards both the parent and the child from devastating spiritual and emotional consequences.
+> “He who spares his rod hates his son,
+> but he who loves him disciplines him promptly.”
+>
+> Proverbs 13:24 (NKJV)
 
-### On the propitiatory function of physical discipline
+Most people read this and wince. Our culture has decided that physical discipline is barbaric—a relic of an uneducated, violent past. The Church, embarrassed by this verdict, has largely gone along with it. I think this is a catastrophic mistake, and I want to explain why.
 
-In ancient times, the concept of propitiation—the appeasement of anger—was well understood. Paul describes Christ’s sacrifice as the ultimate propitiation (Romans 3:25), satisfying the divine anger that resulted from human sin. Similarly, sin within familial relationships, particularly disobedience from children, provokes anger in parents, whether consciously acknowledged or not. This anger, if left unchecked, accumulates like a poison over months and years, creating bitterness and alienation. Proverbs 13:24 offers a divine antidote: discipline.
+First, the text itself. The underlying Hebrew lacks a future tense, which means the verse can also be read: *“He who spares his rod will come to hate his son.”* That small grammatical note changes everything. Solomon isn’t just commanding discipline—he’s diagnosing what happens in its absence. Parents who refuse to discipline don’t simply produce undisciplined children. They produce something in themselves: resentment.
 
-Biblical discipline, particularly the use of the rod, is not an act of anger but of preemptive love. Parents who discipline their children promptly and appropriately neutralize the buildup of anger. Striking a child in anger is explicitly condemned; instead, godly correction should occur before emotions escalate. Parents who heed this command will find that they are not plagued by the resentment and bitterness that accumulates in those who reject God’s wisdom. In contrast, modern “discipline” methods—timeouts or grounding children while allowing them to indulge in distractions like video games—fail to address the heart of the issue. Meanwhile, the parents’ unresolved anger often manifests as verbal abuse, inflicting deeper emotional wounds.
+### Discipline is an act of love, not anger
 
-### History of Church’s rejection of the Bible and the consequences
+This is the part most people miss. Sin creates anger. God’s righteous wrath against sin is not incidental—it’s the necessary moral response to wrong. The same dynamic plays out in families. A child’s disobedience, day after day and year after year, stirs something in a parent. Whether they acknowledge it or not, unaddressed sin accumulates as bitterness.
 
-The rejection of physical discipline has roots in Enlightenment-era humanism. Thinkers like Rousseau, with their atheistic and anti-Biblical agendas, left their indelible marks on child psychology in the 19th century. Tragically, the Western Church was successfully swayed by this humanist ideology during the 20th century, choosing to heed the worldly wisdom over God’s clear instruction. The feminization of both society and the Church meant that the idea of corporal punishment for our children seemed barbaric and totally unfit for the sophistication of the modern world. Through sheer human pride, the Church collectively declared: “We know better than the Bible.” As a result, parents started raising a generation of children without the rod, with catastrophic consequences.
+Paul describes Christ’s sacrifice as [propitiation](/propitiation/) (Romans 3:25)—the satisfaction of righteous anger through a real, painful act. Biblical discipline functions the same way in the home. Prompt, loving correction clears the account. It resolves the tension before it festers. Parents who discipline consistently don’t carry the slow poison of accumulated resentment, because the sin is dealt with as it comes.
 
-Within two generations, British church attendance plummeted from over 90% to less than 5%. Christian parents, following the advice of humanist academia instead of Scripture, failed to pass on their faith to the next generation. Beyond the spiritual collapse, society is now reaping a harvest of unprecedented psychological and emotional dysfunction. Children raised without proper discipline and exposed to unspoken anger of their parents, grow up to wreak havoc in society and get married only to perpetuate cycles of unresolved emotional brokenness into the next generation.
+The contrast with modern alternatives is stark. What does a timeout accomplish? The child sits in their room on a screen while the parent stews. The anger remains. And what does that unresolved anger become over years? Cutting words. Coldness. The emotional abuse that the same progressive consensus rails against—while banning the very God-ordained tool that would have prevented it.
 
-### How to do disciplining and conclusion
+### How the Church lost its nerve
 
-The Bible is clear regarding the intensity and purpose of discipline. Proverbs 23:13-14 prescribes corporal punishment with **a high enough intensity to cause a fear of death in the child**: _“Do not withhold correction from a child, for if you beat him with a rod, he will not die. You shall beat him with a rod, and deliver his soul from hell.”_ Such correction may seem harsh to our 21st century Western sensibilities, but the Bible clearly states that it is not abusive but redemptive, aimed at saving the child’s soul from certain destruction.
+The rejection of the rod didn’t come from a careful reading of Scripture. It came from the Enlightenment. Thinkers like Rousseau, operating from an explicitly anti-Christian framework, redefined childhood as a state of natural innocence corrupted only by bad environments—not by [original sin](/self/). By the twentieth century, their assumptions had conquered psychology, education, and eventually the Church itself. We absorbed the humanist worldview and called it kindness.
 
-The modern consensus on child-rearing, rooted in rebellion against God’s Word, must be rejected. The Church must boldly return to Scripture, spitting in the face of worldly wisdom and proclaiming the authority of God. Biblical discipline, grounded in love and obedience to God, is vital for the spiritual and emotional well-being of both parent and child. Let us heed His wisdom and honour Him in all things, for His Word is always true.
+The results have been measurable. British church attendance dropped from over 90% to under 5% within two generations. Christian parents, following secular academia instead of Scripture, largely failed to pass faith to their children. Children raised without discipline and soaked in their parents’ unspoken anger grew up emotionally damaged, married without the tools to handle conflict, and passed the dysfunction on. The fruit tells you everything about the root.
+
+### The hard words of Proverbs 23
+
+The Bible doesn’t soften this:
+
+> “Do not withhold correction from a child,
+> for if you beat him with a rod, he will not die.
+> You shall beat him with a rod,
+> and deliver his soul from hell.”
+>
+> Proverbs 23:13–14 (NKJV)
+
+The intensity is deliberate. This is not a gentle tap on the wrist—it is correction that the child feels and will remember, correction aimed at the soul. Our sensibilities rebel. But our sensibilities have been formed by a culture that has rejected God’s Word and is now reaping what it has sown. The question is not whether these verses make us uncomfortable. The question is whether God’s Word is true.
+
+It is.
+
+The modern consensus on raising children—rooted in rebellion against Scripture—must be rejected. The Church must find its nerve again, return to the Bible without embarrassment, and trust that the God who designed children also knows how to instruct parents. His Word does not need our improvement. Discipline your children, and do it while there is hope.
