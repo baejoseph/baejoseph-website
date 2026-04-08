@@ -3,7 +3,8 @@ title: "🔫 Disarm and Starve: The Oldest Play in the Tyrant’s Handbook"
 date: "2026-02-06"
 lang: "en"
 pairedSlug: "통제"
-tags: ["leftism", "theology", "courage", "health"]
+tags: ["leftism", "theology", "courage", "health", "video"]
+youtubeId: "wUz28kah-fw"
 featuredImage: "/assets/control.png"
 wpSlug: "control"
 ---
