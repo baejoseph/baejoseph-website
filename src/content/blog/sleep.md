@@ -4,7 +4,7 @@ date: "2026-04-09"
 lang: "en"
 featuredImage: ""
 tags: ["prayer", "theology", "health"]
-pairedSlug: "하나님이-주시는-잠"
+pairedSlug: "잠"
 ---
 
 Sleep is one of the quiet mercies God gives us each day. We do not drift into rest because our bodies are clever or because our minds know how to shut down. We sleep because God, in His kindness, places rest upon the body and peace upon the mind. Scripture tells us plainly in Psalm 127:2 that God “gives His beloved sleep.” Rest is not a natural accident. It is a gift.
