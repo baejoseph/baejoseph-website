@@ -35,7 +35,7 @@ On the economy and the size of the state:
 
 > "Above all else, we need to brutalise the size of the state. A public sector bonfire that is visible from space - that is what Restore Britain would do. We would deliver a Britain that lives within its means."
 
-> "I think [the state is bad](/leftism-eng/). I think the individual is good. I trust the individual to make the decisions that are best for them and their family. I do not trust the bureaucrat to spend your money in the best possible way."
+> "I think [the state is bad](/leftism/). I think the individual is good. I trust the individual to make the decisions that are best for them and their family. I do not trust the bureaucrat to spend your money in the best possible way."
 
 On the national debt - which is simply debt in our name, debt our children will inherit:
 

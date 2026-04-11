@@ -70,4 +70,4 @@ I wish I could write as succinctly as ChatGPT. And as fast
 
 —-
 
-**Update:** I ended up writing a proper version of that essay — [Why Christians Must Reject Leftism](/leftism-eng/).
+**Update:** I ended up writing a proper version of that essay — [Why Christians Must Reject Leftism](/leftism/).

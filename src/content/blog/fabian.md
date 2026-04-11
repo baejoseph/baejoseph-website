@@ -39,7 +39,7 @@ What has 140 years of Fabian infiltration produced? Look at Britain in 2025 and 
 
 **Families attacked.** The tax system punishes marriage. Welfare rewards fatherlessness. Schools undermine parental authority at every turn. The Fabians understood early: strong families mean weak states. So the family must be weakened.
 
-**Faith and tradition erased.** [Christian heritage](/recon/) is mocked as colonialism. History is rewritten as a litany of shame. People rooted in faith and tradition are harder to manipulate—so they must be cut off from their roots. [This is the core of what I’ve called the Christian critique of the left](/leftism-eng/): leftism is not merely a political programme but a spiritual one, aimed at displacing God with the state.
+**Faith and tradition erased.** [Christian heritage](/recon/) is mocked as colonialism. History is rewritten as a litany of shame. People rooted in faith and tradition are harder to manipulate—so they must be cut off from their roots. [This is the core of what I’ve called the Christian critique of the left](/leftism/): leftism is not merely a political programme but a spiritual one, aimed at displacing God with the state.
 
 **[Free speech](/aaron/) silenced.** Opinions are criminalised. People are jailed for words posted online. The Fabians don’t need a secret police when self-censorship does the work for them.
 
