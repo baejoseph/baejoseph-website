@@ -18,14 +18,10 @@ export async function GET(context: APIContext) {
     description: '신앙, 문화, 정치, 삶의 여정을 탐구하는 개인 블로그. 마라나타! 🕦️',
     site: context.site ?? 'https://baejoseph.com',
     items: sortedPosts.map(post => ({
-      title: `${post.data.title}`,
-      pubDate: new Date(post.data.date).getTime(),
-      description: post.body?.slice(0, 200) || '',
-      link: `/${post.slug}/`,
-      enclosure: post.data.featuredImage ? {
-        url: `https://baejoseph.com${post.data.featuredImage}`,
-        type: 'image/png'
-      } : undefined
+      title: post.data.title,
+      pubDate: new Date(post.data.date),
+      description: post.body?.slice(0, 200) || post.data.title,
+      link: `/${post.slug}/`
     })),
     customData: `<generator>Astro RSS</generator>`
   });
