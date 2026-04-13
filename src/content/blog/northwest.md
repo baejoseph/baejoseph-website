@@ -14,11 +14,11 @@ Refugees from the northwest — landowners stripped bare, families murdered, chu
 
 Eighty to ninety percent were devout Protestants, many tied to Youngnak Church. They carried the Word in their hearts and steel in their hands. They did not negotiate with evil. They crushed it. When communists rose on Jeju, these men were the hammer that fell. Fiercely masculine, militantly Christian, they fought the way men are supposed to fight: without apology, without retreat.
 
-This was Korea's 20th-century Crusaders. This was our own Marine Corps storming the shores against the Barbary pirates — impossible odds, certain victory because God and courage were on their side.
+These were Korea's 20th-century Crusaders. This was our own Marine Corps storming the shores against the Barbary pirates — impossible odds, certain victory because God and courage were on their side.
 
 They understood what too many soft Christians today have forgotten: leftism is not a policy error. It is spiritual warfare. It is the same ancient serpent that devours families, perverts truth, and mocks the Creator. The Northwest Youth saw it clearly because they had already buried their dead under it.
 
-They did not wait for permission. They did not post memes. They stood up, organised, and acted like men who knew their regiment's honour was at stake.
+They did not wait for permission. They did not post memes. They stood up, organized, and acted like men who knew their regiment's honor was at stake.
 
 We are living in their sequel.
 

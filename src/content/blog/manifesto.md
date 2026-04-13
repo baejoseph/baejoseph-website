@@ -15,7 +15,7 @@ Picture twenty men. Not soft. Not recent converts. Not weekend warriors who show
 
 The British Army understood something the modern church has forgotten: loyalty to a small, historic band of brothers turns abstract commitment into concrete warfare. These men fight for the man beside them. They [make their regiment proud](/regiment/). They advance the Kingdom with unyielding masculine glory—rooted in the cloud of witnesses who subdued kingdoms and stopped the mouths of lions. This is no private spirituality. This is formation. This is how Christian men are forged, and how the Kingdom advances.
 
-Here's what makes this real: these twenty men will go through something similar (time of great physical, mental, spiritual hardship) that will help them bond together as a single unit regiment. Like at the [Xtreme Character Challenge](/xcc/), they'll face physical challenges, mental challenges, and spiritual challenges—each one a crucible that strips away pretense and forges them into something harder, something stronger. Just as participants at XCC discovered, sharing in hardship creates bonds that no casual fellowship ever can.
+Here's what makes this real: these twenty men will endure something similar—a time of great physical, mental, and spiritual hardship—that forges them into a single regiment. Like the [Xtreme Character Challenge](/xcc/), each trial strips away pretense and makes them harder, stronger. Just as participants at XCC discovered, sharing in hardship creates bonds that no casual fellowship ever can.
 
 Such men are rare. And the requirements are ironclad—drawn straight from Scripture and the hard-won testimony of faithful brothers.
 
