@@ -60,5 +60,4 @@ Their eyes sparkled as they said, “Thank you so much, Daddy!!” They were com
 
 Lord, thank You! Help me maintain this car safely and without issues, so we can build wonderful family memories for many years to come. Let me ride it every day, remembering Your grace and giving thanks! 🙏🏻💙
 
-I visited Alma Mater (Jesus College Cambridge) in April 2026
-MEDIA:/home/clawd/.hermes/image_cache/img_e6894546970e.jpg
+![I visited Alma Mater (Jesus College Cambridge) in April 2026](/assets/jesus-college-cambridge-april-2026.jpg)
