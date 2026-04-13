@@ -9,7 +9,7 @@ tags: ["prayer", "korea", "testimony"]
 
 *Monday 26 June – Sunday 2 July, Luton, England*
 
-![](https://baejoseph.com/wp-content/uploads/2023/09/기도선교2017대전드림팀-1024x533.jpeg)
+![](/assets/%EA%B8%B0%EB%8F%84%EC%84%A0%EA%B5%902017%EB%8C%80%EC%A0%84%EB%93%9C%EB%A6%BC%ED%8C%80-1024x533.jpeg)
 
 I almost didn’t go.
 

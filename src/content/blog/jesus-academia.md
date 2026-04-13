@@ -46,7 +46,7 @@ When speaking with participants who’ve returned for their third or fourth sess
 
 ## It Takes a Village: The Many Helpers
 
-![](https://baejoseph.com/wp-content/uploads/2025/01/IMG_6587-1024x768.jpg)
+![](/assets/IMG_6587-1024x768.jpg)
 
 The success of each session is made possible by the dedicated volunteer team, many of whom have known Pastor John for up to 40 years. We are especially grateful to **Anthony May** and his wife, **Yang**, who drove all the way from Houston, Texas, to care for the children and provide transportation. We also express our thanks to **Rev. T. Lee** of [Lynchberg Korean Church](https://www.lynchburgkoreanchurch.com) who made the whole programme run smoothly, as well as to the **various volunteers** who led the worship sessions. The **four students** from Handong Global University and Ghent University Global Capus did all the hard-lifting and video recording, as well as myriad other services. **Another gentleman** from the church Pastor John leads took annual leave to drive his van for a day, taking all the children to the Natural History Museum in Manhattan. On the last day, Pastor John’s son **Pastor Christopher Ko** gifted us all beautifully designed “Jesus Academia” T-shirts to take home as souvenirs. For these, we are truly grateful.
 

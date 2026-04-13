@@ -11,7 +11,7 @@ tags: ["travel", "korea", "family"]
 
 What a lovely family trip to Korea! The children relished their first experience of Korea, especially the sea-side city of Mokpo, where they spent some quality time with their cousins.
 
-![](https://baejoseph.com/wp-content/uploads/2023/12/IMG_7345-1024x683.jpg) ![](https://baejoseph.com/wp-content/uploads/2023/12/IMG_7432-1024x683.jpg) ![](https://baejoseph.com/wp-content/uploads/2023/12/SCR-20231212-lhtx-1024x778.jpeg)
+![](/assets/IMG_7345-1024x683.jpg) ![](/assets/IMG_7432-1024x683.jpg) ![](/assets/SCR-20231212-lhtx-1024x778.jpeg)
 
 —-
 

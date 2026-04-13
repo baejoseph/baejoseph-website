@@ -11,23 +11,23 @@ tags: ["evangelism", "travel"]
 
 From October 30th to November 1st, 2024, my two sons, our loyal Jindo dog Bobby, and I embarked on a spiritual reconnaissance trip to Glastonbury—a place rich in Christian heritage but currently overshadowed by pagan practices. While my wife and daughter chose to stay home, this became a boys’ adventure and mission to scope out the historic site with a view to [reclaiming it for Christ](/tor).
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4620-1024x768.jpeg)
+![](/assets/IMG_4620-1024x768.jpeg)
 
 ![](/assets/recon-campsite-boys.jpg)
 
 Our journey began with a drive to our campsite near Cheddar Gorge. Being late October, we found ourselves the sole campers on the site, which granted us the solitude to fully immerse in our mission. The early dusk allowed us to kindle a campfire sooner, around which we shared stories and prepared for the days ahead. My sons experienced the simple joys of roasting marshmallows and making s’mores for the first time. Bobby, ever the faithful companion, added to the warmth of the evening with his playful energy.
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4723-1024x768.jpeg)
+![](/assets/IMG_4723-1024x768.jpeg)
 
 ![](/assets/recon-campfire-smores.jpg)
 
 Inspired by [my recent experience at XCC](/xcc) and also by Jon Tyson’s book “Intentional Father,” I saw this trip as an opportunity to guide my sons through an adventure that would challenge them and deepen their faith. The journey from the familiar to the unknown, with a mission and the prospect of spiritual battle on the horizon, had all the makings of an epic adventure.
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4625-1024x768.jpeg)
+![](/assets/IMG_4625-1024x768.jpeg)
 
 Our second day commenced with the 8:00 Morning Liturgy at the magnificent Wells Cathedral. The New Testament reading was from Ephesians 6:10–18-on the nature of spiritual warfare and the full armour of God. This passage felt like a divine appointment, a call to arms that resonated deeply with our purpose for the trip.
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4636-1024x768.jpeg)
+![](/assets/IMG_4636-1024x768.jpeg)
 
 ![](/assets/recon-wells-cathedral.jpg)
 
@@ -35,13 +35,13 @@ As we approached Glastonbury, a massive sign greeted us: “Glastonbury: Home of
 
 Walking down the High Street, we were struck by the overt presence of paganism. We counted at least 20 shops dedicated to witchcraft and New Age practices, forming a bustling cottage industry that has turned Glastonbury into a pilgrimage site for practitioners nationwide. Men and women openly dressed as wizards and witches filled the streets, proudly displaying their spiritual allegiances. We discreetly referred to the witches/wizards as ‘tees’ to avoid drawing attention while discussing our observations among ourselves. “Dad, another pair of tees behind us!” was a regular exchange. Overall, the three of us agreed that about 70% of the people we encountered in Glastonbury were clearly involved in these practices.
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4643-1024x768.jpeg)
+![](/assets/IMG_4643-1024x768.jpeg)
 
 ![](/assets/recon-high-street.jpg)
 
 After exploring the High Street, we visited the Glastonbury Abbey site and museum to research the area’s profound Christian heritage. Learning about its history as the Isle of Avalon, where Joseph of Arimathea is believed to have arrived with eleven disciples in AD 63, reinforced the significance of our mission. It was a poignant reminder of Glastonbury’s foundational role in bringing Christianity to the British Isles.
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4711-768x1024.jpeg)
+![](/assets/IMG_4711-768x1024.jpeg)
 
 ![](/assets/recon-abbey-cross.jpg)
 
@@ -53,7 +53,7 @@ A few people mentioned our cross in a complimentary way. One gentleman even than
 
 ![](/assets/recon-tor-jesus-is-lord.jpg)
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4716-1024x768.jpeg)
+![](/assets/IMG_4716-1024x768.jpeg)
 
 ![](/assets/recon-tor-cross-raised.jpg)
 
@@ -61,13 +61,13 @@ Embracing the spirit of adventure, we headed to the famous Cheddar Gorge later t
 
 At the summit, we were rewarded with breathtaking views and a profound sense of accomplishment. Sharing snacks atop the gorge, we reflected on the parallels between our physical journey and the spiritual path we are called to walk.
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4734-1-1024x768.jpeg)
+![](/assets/IMG_4734-1-1024x768.jpeg)
 
 ![](/assets/recon-cheddar-gorge.jpg)
 
 We returned to Wells Cathedral morning liturgy on our final morning before breakfasting and breaking camp. Packing up, we felt a mix of fulfilment and resolve. The trip had been a success, not just in terms of the adventure but in solidifying our commitment to the mission ahead. Witnessing the overt paganism in Glastonbury, especially during Halloween, highlighted the pressing need for believers to reclaim such spaces for Christ.
 
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4680-1024x768.jpeg)
+![](/assets/IMG_4680-1024x768.jpeg)
 
 ![](/assets/recon-campsite-sunrise.jpg)
 
@@ -78,7 +78,7 @@ We returned home with a renewed sense of purpose and a deeper bond. The journey 
 > “Watch, stand fast in the faith, act like men, be strong.”
 >
 > 1 Corinthians 16:13
-![](https://baejoseph.com/wp-content/uploads/2024/11/IMG_4737-1024x768.jpeg)
+![](/assets/IMG_4737-1024x768.jpeg)
 
 —
 

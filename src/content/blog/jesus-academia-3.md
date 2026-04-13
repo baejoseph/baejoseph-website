@@ -95,7 +95,7 @@ After attending Jesus Academia, our whole family spent two days sightseeing in N
 
 Reflecting on this, I was deeply convicted in my heart. I reflected on how I had mostly been quick to anger with my sons and had often failed to offer enough praise. I made a firm resolve that from now on, **I would change my language habit and strive to be a good father who continually sparks their Conatus**. That evening, as we sailed past the Statue of Liberty, watching the sunset, I silently made this promise to myself.
 
-![](https://baejoseph.com/wp-content/uploads/2025/01/image-1024x727.png)
+![](/assets/image-1024x727.png)
 
 ## **Meeting My Mentor**
 

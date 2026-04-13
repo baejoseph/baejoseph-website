@@ -11,4 +11,4 @@ tags: ["family", "testimony"]
 
 What a lovely wedding service + reception, set in the idyllic Spanish country manor in perfect October weather.
 
-![](https://baejoseph.com/wp-content/uploads/2023/12/IMG_9664-1024x768.jpg)
+![](/assets/IMG_9664-1024x768.jpg)

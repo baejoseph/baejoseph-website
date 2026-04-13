@@ -23,7 +23,7 @@ And now, with version 1.3 underway, I’m embracing a clearer direction.
 
 The pivot is to “Sunday First Calendar Clock”, or simply, “**Sunday First**.” This name highlights my core belief: restoring Sunday as the starting point of the week. In the app, users get that Sunday-first layout by default, with clean design, swipe navigation through months, burn-in protection for always-on use, and now full localisation so it feels native everywhere.
 
-![](https://baejoseph.com/wp-content/uploads/2026/02/Screenshot-2026-02-10-at-12.46.28-1024x472.png)
+![](/assets/Screenshot-2026-02-10-at-12.46.28-1024x472.png)
 
 For the Body of Christ, emphasising Sunday as the week’s beginning can quietly reinforce expectancy: a weekly reminder that our lives start not with work, but with worship and the risen Lord. In a world that often treats Sunday as the close of the week, this small tool invites us to begin with grace.
 

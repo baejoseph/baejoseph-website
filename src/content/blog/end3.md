@@ -17,7 +17,7 @@ What follows will be a litmus test of that readiness. Many say, “Of course, Je
 
 Some will lazily quote, “No one knows the **day** or the **hour**” (Matthew 24:36) as a way to dismiss any discussion of _timing_. But Jesus never said we couldn’t discern the **month** or the **year**—in fact, He commanded us to **watch** and **be ready** (Matthew 24:42-44). We are expected to recognise the signs and understand the times, just as the sons of Issachar did (1 Chronicles 12:32). Furthermore, Revelation 9:15 explicitly mentions the **hour**, the **day**, the **month**, and the **year**, proving that God does have an exact timeline. Yet so many pastors today still say, “Oh, it could be another thousand years!” This is negligence at best and deception at worst. The truth is, God has given us everything we need in His Word to see that His return is near. My challenge to you is this: **Will you be like the noble Bereans** (Acts 17:11)**?** Will you search the Scriptures for yourself, with a sincere and eager heart? Or will you dismiss this outright, unwilling to even consider that we might be on the very cusp of the greatest event in human history? I urge you—do the hard work. Open your Bible. Examine prophecy carefully. Keep watch. Be ready. Because whether you believe it or not, **Jesus is coming to get us soon**.
 
-![](https://baejoseph.com/wp-content/uploads/2025/02/SCR-20250202-qksn-1024x841.jpeg)
+![](/assets/SCR-20250202-qksn-1024x841.jpeg)
 
 ## The End of the End of the End Times
 
@@ -25,13 +25,13 @@ For the past 2,000 years, we have been living in the **End Times**—the “Chur
 
 [Dr. Christian Widener](https://endtimesberean.com/about-christian-widener/) has laid out compelling evidence that we are now living in the final seven years before Christ’s return. His findings centre around the **Daniel 70-week prophecy**, revealing a _double fulfilment_—a prophetic telescoping [often found in Scripture](/two). The first count, widely recognized, spans 490 years from the **Decree of Artaxerxes I in 458 BC** to rebuild Jerusalem, leading exactly to **the crucifixion of Jesus in AD 33**. However, Dr. Widener has discovered a second fulfilment: **another 490-year count, starting from the 1537 decree of Suleiman the Magnificent to rebuild Jerusalem “with plaza and moat,” leading to the year AD 2027**.
 
-![](https://baejoseph.com/wp-content/uploads/2025/06/IMG_0816-1024x581.jpg)
+![](/assets/IMG_0816-1024x581.jpg)
 
 Location of the Decree on the Temple Mount
 
 \[UPDATE: I actually visited this place “Sabil Bab el Atm” on the Temple Mount and [saw the plaque with my own eyes](https://youtu.be/02E2c1gV9Ps) during our Easter 2025 visit to Israel!\] If this is correct, then we are currently inside the final seven-year Tribulation, which **began in 2020 and will culminate in the Second Coming of Christ in the year 2027**. And because Jesus promised to take us (the Church Saints) home prior to the full outpouring of God’s wrath on earth, **[this means our imminent Rapture is even closer at hand](/rapture)**.  
 
-![](https://baejoseph.com/wp-content/uploads/2025/01/Accounting-for-the-First-Seventy-Sevens-of-Daniel-924-1024x513.png) ![](https://baejoseph.com/wp-content/uploads/2025/01/Decree-of-1024x522.png)
+![](/assets/Accounting-for-the-First-Seventy-Sevens-of-Daniel-924-1024x513.png) ![](/assets/Decree-of-1024x522.png)
 
 ## The Year 2020: The Beginning of the Tribulation
 

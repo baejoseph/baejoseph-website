@@ -51,7 +51,7 @@ I’ve told countless patients about my favorite brand. It can be found in most 
 
 Or if you don’t want the salt, you can get the unsalted variety. It’s packaging is the same, but in silver. If you can’t find it in your local store, you can order it off of Amazon as well. 
 
-![](https://baejoseph.com/wp-content/uploads/2024/06/UNSALTED-1024x576.jpg)
+![](/assets/UNSALTED-1024x576.jpg)
 
 Who Should Be Cautious About Eating Too Much Butter?
 

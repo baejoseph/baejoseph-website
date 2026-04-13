@@ -59,7 +59,7 @@ In answer to that prayer, God led me to meet Derek Prince, and through [this Jes
 
 When we talk about “praying in the Word,” the first thing that comes to mind for me is memorising of Scripture. When I first moved to the UK in 5th grade, my younger brother and I couldn’t speak any English. (I remember memorising the alphabet on the plane.) At that time, I was so frustrated because I couldn’t communicate that I even cried, wishing I could return to Korea alone. My father challenged us to memorise Matthew 5-7 in English, and if we did, he would buy us a Lego set we wanted, the Lego Technic 8880 Supercar (worth about 500 dollars in 2024 money).
 
-![](https://baejoseph.com/wp-content/uploads/2025/03/SCR-20250304-lk5-1024x683.jpeg)
+![](/assets/SCR-20250304-lk5-1024x683.jpeg)
 
 Thus motivated, in five months, without knowing any English grammar, my brother and I brute-force memorised those chapters in NIV. True to his word, my father bought us the toy, and then took us to an English church and had us recite Matthew 5 in front of the congregation. That experience gave us confidence in our English skills.
 

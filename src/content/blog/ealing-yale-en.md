@@ -39,7 +39,7 @@ Our teenagers are pulled in a hundred directions—pressure to get into top univ
 
 To pursue this, we will join the main congregation for the first Sunday of every month, learning to experience the grace of sung worship and the preached Word together. We will also add a focused, crying-out-in-prayer time every week. And we are renaming the youth group: “예일이”—a wordplay on “Yale” and “예수 제일,” meaning “Jesus First.”
 
-![](https://baejoseph.com/wp-content/uploads/2023/09/YaleSupreme-1024x384.png)
+![](/assets/YaleSupreme-1024x384.png)
 
 **Goal Three: Confidence in Scripture**
 

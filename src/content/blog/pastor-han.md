@@ -13,7 +13,7 @@ tags: ["testimony", "prayer"]
 
 2023년 웨일즈 기도선교 때 “부흥의 마중불” 팀에서 같이 기도하신 귀한 목사님의 인생 이야기를 목사님의 허락을 받고 여기 공유합니다.
 
-![](https://baejoseph.com/wp-content/uploads/2023/09/SCR-20230905-dox-762x1024.jpeg)
+![](/assets/SCR-20230905-dox-762x1024.jpeg)
 
 #### 인생을 향한 하나님의 놀라운 계획
 

@@ -11,7 +11,7 @@ tags: ["testimony", "prayer"]
 
 —-
 
-![](https://baejoseph.com/wp-content/uploads/2023/09/SCR-20230905-dox-762x1024.jpeg)
+![](/assets/SCR-20230905-dox-762x1024.jpeg)
 
 #### God’s Astonishing Plan for One Life
 

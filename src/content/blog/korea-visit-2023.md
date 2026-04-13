@@ -13,17 +13,17 @@ She had loved me in that particular way that aunts love the children who give th
 
 We flew from Incheon Airport down to Buan in North Jeolla Province the morning I arrived, joining the family for the full funeral proceedings. On the drive back up to Seoul, I felt it clearly: God had arranged this trip.
 
-![](https://baejoseph.com/wp-content/uploads/2023/09/IMG_9222-1024x768.jpeg)
+![](/assets/IMG_9222-1024x768.jpeg)
 
 The following day was Sunday, and I was grateful to spend it with my parents in worship. In the afternoon, after the services, my father mentioned there was a special gathering in Heyri and asked if I'd like to come. I didn't need much convincing.
 
 Heyri Art Village, in Paju—the publishing city—was a place I'd only ever heard about. Walking through it, I thought: *I have to bring the kids here.* The whole place is an odd, delightful cluster of studios, galleries, museums, and shops, with oversized sculptures tucked around every corner and what was apparently the best *tteokbokki* in northern Gyeonggi Province calling out to me from across the street.
 
-![](https://baejoseph.com/wp-content/uploads/2023/09/IMG_9245-1024x768.jpeg)
+![](/assets/IMG_9245-1024x768.jpeg)
 
 In the back of Heyri, up on the second floor of a building called "The Church Where the Holy Spirit Lives," we gathered for something called "Israel's Restoration and the House of Prayer." The gathering had been organised by Director Lee Tae-hyeong of Gukmin Books—the man who helped publish my father's two books, *The Bible: My Love, My Life* and *Son, Live Like This*—and it bore the marks of something he'd put his heart into. The guest speakers were Rick and Patricia Ridings, missionaries who for 25 years have led a 24-hour house of prayer in Jerusalem. The attendees were invitation-only: Elder Song Man-seop—founder of KIBI (Korea Israel Bible Institute), established 38 years ago—along with a curated gathering of leaders, missionaries, and their children, around 100 people in total. I'd arrived from England yesterday and was leaving for England tomorrow. Being in that room felt like an undeserved gift.
 
-![](https://baejoseph.com/wp-content/uploads/2023/09/IMG_9249-1024x768.jpeg)
+![](/assets/IMG_9249-1024x768.jpeg)
 
 Just watching Rick and Patricia Ridings was its own kind of sermon. I kept thinking: *twenty years from now, I want Shin-ae and me to look like that.* There was a quality of Spirit-filled peace about them that wasn't performed—it was simply who they had become after decades of dwelling in God's presence.
 

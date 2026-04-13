@@ -36,7 +36,7 @@ This isn’t just about beggars. This applies to every broken institution that t
 -   A culture that celebrates victimhood rather than hard work and calls for endless “reparations”.
 -   A criminal justice system that coddles criminals instead of punishing them; and perversely, punishes those who complain online about the crimes.
 
-![](https://baejoseph.com/wp-content/uploads/2025/02/SCR-20250209-jufr-791x1024.jpeg)
+![](/assets/SCR-20250209-jufr-791x1024.jpeg)
 
 Screenshot
 

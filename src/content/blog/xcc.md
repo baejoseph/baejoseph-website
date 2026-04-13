@@ -21,7 +21,7 @@ One of the mottos of this program is **BODY, MIND, SOUL**. Roughly speaking, the
 
 To briefly explain the history of [XCC](https://www.xcc.org.uk) (4M UK): In the Netherlands, a Christian men’s extreme challenge camp known as the “Four Musketeers Ministry” had long been running and is now a household name among Dutch churches. In 2016, this concept was brought to the UK by James Ray. A former high school PE and camping teacher, he is now an ordained Anglican priest who leads the XCC full-time, personally guiding all camps 4–5 times a year. ([Here](https://www.youtube.com/watch?v=iJpP1Zx8_H4) is a link to an interview where James explains how God called him to this ministry.)
 
-![](https://baejoseph.com/wp-content/uploads/2024/10/XCC_WALES24__CE_0702-683x1024.jpg)
+![](/assets/XCC_WALES24__CE_0702-683x1024.jpg)
 
 James is truly a bundle of charisma—humorous and inspiring. He naturally makes men, regardless of age, want to follow him. I later heard that in 2019 they tried to develop leaders like James to run the XCC in his place, but the attempts failed. James’s charisma is a key factor in the success of XCC.
 
@@ -31,11 +31,11 @@ At the crack of dawn on Friday, wake-up signals sounded, and each team of ten se
 
 What was even harder for many men was that the crew didn’t inform us of the entire course in advance but only told us the next 2–3 km section, one at a time. It didn’t bother me much, but I saw that this uncertainty of not knowing when the finish would be was a significant mental stress for some in our team.
 
-![](https://baejoseph.com/wp-content/uploads/2024/10/XCC_WALES24__CE_8766-683x1024.jpg)
+![](/assets/XCC_WALES24__CE_8766-683x1024.jpg)
 
 The Brecon Beacons offered outstanding scenery. The weather during our stay was also good, with hardly any rain. Walking with my team members, we couldn’t help but marvel at the beautiful landscapes more than once. It naturally led to outbursts of praise. In particular, I had memorized Psalm 145 while preparing for this trip. With my team members’ permission, I recited it aloud atop a hill, and we all felt spiritually refreshed. “_All Your works shall praise You, O LORD; and Your saints shall bless You._”
 
-![](https://baejoseph.com/wp-content/uploads/2024/10/XCC_WALES24__CE_8592-683x1024.jpg)
+![](/assets/XCC_WALES24__CE_8592-683x1024.jpg)
 
 #### Saturday: The Mental Challenge
 
@@ -43,7 +43,7 @@ On Saturday, we shifted gears and moved as a single unit. There was a clear swit
 
 Without giving too much away, there was a satisfying ceremony and celebration awaiting us on Saturday night. We were all glad the hard part of the weekend was behind us and could truly savour the moment together.
 
-![](https://baejoseph.com/wp-content/uploads/2024/10/XCC_WALES24__CE_9989-683x1024.jpg)
+![](/assets/XCC_WALES24__CE_9989-683x1024.jpg)
 
 #### Sunday: The Spiritual Challenge
 
@@ -63,5 +63,5 @@ Many participants were returning for the second or third time, often bringing fr
 
 It’s impossible to fully articulate the experiences shared among the 110 participants and 30 volunteer staff during this four-day challenge. One thing is certain: just as my friend promised, our Team 325 of ten has become a close-knit group who will continue to stay in touch. The XCC was not just a physical endeavor but a profound journey of body, mind, and soul that has left a lasting impact on me.
 
-![](https://baejoseph.com/wp-content/uploads/2024/10/XCC_WALES24_IMG_5315-1024x768.jpg)
+![](/assets/XCC_WALES24_IMG_5315-1024x768.jpg)
 

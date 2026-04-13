@@ -22,7 +22,7 @@ What happened afterward was what stayed with me. Several people—including one 
 
 I don't take credit for that. I just told a story. God did the rest.
 
-![](https://baejoseph.com/wp-content/uploads/2023/10/IMG_9470-1024x768.jpeg)
+![](/assets/IMG_9470-1024x768.jpeg)
 
 My wife also presented—on the topic of *"How to Become Someone People Want to Work With Long-Term,"* drawn from her experience at FutureLearn. Honestly? She got the best response in the room. The moment that stood out most: she looked directly at the women in the audience and told them plainly not to make the mistake of delaying marriage or children for the sake of a career—because careers can be rebuilt, but there are biological and circumstantial windows for marriage and motherhood that don't stay open forever.
 

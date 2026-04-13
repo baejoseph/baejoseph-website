@@ -15,7 +15,7 @@ Let me be clear: I'm not questioning the authority of Scripture. Whether based o
 
 ## Manuscript Traditions: The Key to the Differences 
 
-![](https://baejoseph.com/wp-content/uploads/2025/02/SCR-20250223-r2o-1024x576.jpeg)
+![](/assets/SCR-20250223-r2o-1024x576.jpeg)
 
 1.  **Textus Receptus (TR)** – Based on the Byzantine manuscript tradition (the traditional text of the Greek-speaking churches), compiled by Erasmus in 1516 and used in the KJV and NKJV.  
 2.  **Critical Text (CT)** – Based on the Alexandrian or Egyptian tradition, preferred by modern scholars and used in most contemporary translations; if it's not KJV or NKJV, then your Bible is mostly likely based on CT manuscript. It is revised regularly through the Nestle-Aland (NA) line (28th ed. as of 2012).

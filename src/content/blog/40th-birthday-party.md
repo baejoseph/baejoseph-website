@@ -11,4 +11,4 @@ tags: ["family", "testimony"]
 
 I turned 40 this year! What a significant year, and what a blessing to be able to celebrate it with loved ones: family and friends. So thankful to God.
 
-![](https://baejoseph.com/wp-content/uploads/2023/11/IMG_6824-768x1024.jpeg)
+![](/assets/IMG_6824-768x1024.jpeg)

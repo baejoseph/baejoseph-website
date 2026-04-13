@@ -71,7 +71,7 @@ The prize for the winning team? A £50 Amazon voucher.
 
 I’m not complaining. I’m grateful.
 
-![](https://baejoseph.com/wp-content/uploads/2023/11/SCR-20231120-g8z-1024x474.jpg)
+![](/assets/SCR-20231120-g8z-1024x474.jpg)
 
 —-
 
