@@ -3,7 +3,7 @@ title: "The Northwest Youth League: A Battle Cry for Christian Warriors"
 date: "2025-03-19"
 wpSlug: "northwest"
 lang: "en"
-featuredImage: "https://placehold.co/1200x600/1a1a1a/ffffff?text=NW+Youth+League"
+featuredImage: "/assets/northwest-youth.jpg"
 pairedSlug: "서북청년단"
 tags: ["leftism", "theology", "courage", "korea"]
 ---
