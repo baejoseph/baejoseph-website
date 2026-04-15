@@ -65,3 +65,5 @@ It’s impossible to fully articulate the experiences shared among the 110 parti
 
 ![](/assets/XCC_WALES24_IMG_5315-1024x768.jpg)
 
+**2026 Update:** Read our manifesto for the last-hour harvest at [/manifesto](/manifesto/).
+
