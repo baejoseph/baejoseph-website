@@ -3,8 +3,9 @@ title: "🫖 The Milk Jug"
 date: "2026-03-10"
 lang: "en"
 featuredImage: "/assets/milk-jug.jpg"
-tags: ["theology", "testimony", "courage"]
+tags: ["theology", "testimony", "courage", "video"]
 pairedSlug: "우유-주전자"
+youtubeId: "UXfSC6MCJl4"
 ---
 
 I have a small ceramic milk jug sitting on my kitchen counter. Navy blue, hand-thrown pottery, with a little white heart stamped on the side. It holds just enough milk for a splash in a cup of tea — nothing more.
