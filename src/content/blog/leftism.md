@@ -5,8 +5,7 @@ wpSlug: "leftism"
 lang: "en"
 featuredImage: "/assets/90-2.jpeg"
 pairedSlug: "좌파"
-
-tags: ["leftism", "theology"]
+youtubeId: "FvXiomUOC90"
 ---
 
 Let me start with two questions.
