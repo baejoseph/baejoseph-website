@@ -6,6 +6,7 @@ lang: "en"
 featuredImage: "/assets/90-2.jpeg"
 pairedSlug: "좌파"
 youtubeId: "FvXiomUOC90"
+tags: ["leftism", "theology", "video"]
 ---
 
 Let me start with two questions.
@@ -111,8 +112,6 @@ Gnosticism declared the creation of male and female to be itself evil — one of
 And then there is the serpent's original lie: *"You will be like God."* This is the precise promise of left-wing utopianism — that we can, through human effort and political will, create paradise on earth. The technical term is "immanentising the eschaton": dragging the Kingdom of Heaven into history by force, without God. In this way, [everyone is obsessed with eschatology](/eschatology).
 
 **Left-wing ideology is, at its core, Satanism** — not the cartoonish, self-aware kind, but the sophisticated, academically respectable kind. The kind that says: God's creation is evil, God's law is oppression, and through the right political programme we can become gods ourselves.
-
-This is also why the Climate Cult fits so naturally within the Leftist framework — not traditional environmentalism (faithful stewardship of creation for human flourishing) but a quasi-religious obsession with carbon, guilt, sacrifice, and apocalyptic prophecy. See [here](/climate) for more.
 
 ### The theologians who got it wrong
 
