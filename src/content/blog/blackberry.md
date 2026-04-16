@@ -3,7 +3,7 @@ title: "🍇 The Primocane Years: A Christian Reflection on the Blackberry Bush"
 date: "2025-07-05"
 lang: "en"
 pairedSlug: "블랙베리"
-featuredImage: "/assets/blackberry-hedgerow.jpg"
+featuredImage: "/assets/blackberry-hero.jpg"
 tags: ["faith", "spiritual-health", "reflection"]
 ---
 
