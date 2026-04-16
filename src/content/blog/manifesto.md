@@ -2,9 +2,10 @@
 title: "⚔️ Regiment of Christ 2026: A Manifesto for the Last-Hour Harvest"
 date: "2026-04-10"
 lang: "en"
-tags: ["theology", "courage", "eschatology", "fasting", "prayer"]
+tags: ["theology", "courage", "eschatology", "fasting", "prayer", "video"]
 featuredImage: "/assets/regiment-of-christ-2026.png"
 pairedSlug: "선언문"
+youtubeId: "YFvUSkEx8Vs"
 ---
 
 # Regiment of Christ 2026
