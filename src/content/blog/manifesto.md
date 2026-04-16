@@ -11,6 +11,8 @@ pairedSlug: "선언문"
 
 **A Manifesto for the Last-Hour Harvest**
 
+https://youtu.be/YFvUSkEx8Vs
+
 Picture twenty men. Not soft. Not recent converts. Not weekend warriors who show up when it suits them and vanish when it costs something. These are men who fought addiction and won. Men who held marriages together when the culture told them to walk. Men who raised sons in the faith and refused to break when the world pressed hard. Shoulder-to-shoulder in the local church, they form a living *regiment*—the covenant unit God raises in this [end of the end times](/end3/) to supercharge the final harvest.
 
 The British Army understood something the modern church has forgotten: loyalty to a small, historic band of brothers turns abstract commitment into concrete warfare. These men fight for the man beside them. They [make their regiment proud](/regiment/). They advance the Kingdom with unyielding masculine glory—rooted in the cloud of witnesses who subdued kingdoms and stopped the mouths of lions. This is no private spirituality. This is formation. This is how Christian men are forged, and how the Kingdom advances.
@@ -31,7 +33,7 @@ Such men are rare. And the requirements are ironclad—drawn straight from Scrip
 
 These are the [heroics](/heroics/) of David's mighty men: Issachar who understood the times, Gadites swift as gazelles with faces like lions—men who smelled of blood, sweat, and covenant loyalty. They act like men (1 Corinthians 16:13). They go on the offensive. They cast out demons. They reject the castrated, feelings-first religion that has infected the Church and [break the taboos](/seven-taboos/) the soft church will not touch. Young men are *starving* for this tribe, this mission, this King.
 
-**Eyes open to the satanic nature of leftism.** A man in this regiment must **understand the [true nature of leftism](/leftism/)** and how it has overtaken the world. This is not mere politics. Leftism diagnoses the world's problem as inequality—not sin—and prescribes utopian revolution by dismantling family, religion, private property, and created order. That is precisely the agenda of cultural Marxism, critical theory, and the ["woke" ethos](/kirk/) that has captured academia, [mainstream media](/sober/), seminaries, and culture at large. It violates the Eighth Commandment (property) and the Tenth (covetousness).
+**Eyes open to the satanic nature of leftism.** A man in this regiment must **understand the [true nature of leftism](/leftism/)** and how it has overtaken the world. This is not mere politics. Leftism diagnoses the world's problem as inequality—not sin—and prescribes utopian revolution by dismantling family, religion, private property, and created order. That is precisely the agenda of cultural Marxism, critical theory, and the [\"woke\" ethos](/kirk/) that has captured academia, [mainstream media](/sober/), seminaries, and culture at large. It violates the Eighth Commandment (property) and the Tenth (covetousness).
 
 Anti-communism (반공) is not enough. What is required is the 멸공 spirit—total destruction of this worldview, root and branch. Tyrants have always used [the same handbook](/control/): [disarm the people](/starve/) (guns, the Second Amendment as porcupine defense) and starve them ([poison diets](/poison/), [seed oils](/oils/), chained Bibles, captured media). The Church must refuse to be disarmed—spiritually or physically. Leftism and its [soft-Christian cousins](/keller/) are the same poison. We [scorn it](/empathy/), mock it, and raise David's banner instead.
 
