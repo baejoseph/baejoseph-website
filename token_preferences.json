@@ -1,0 +1,32 @@
+{
+  "token_management": {
+    "context_window_threshold": 0.80,
+    "max_token_usage": "optimize_for_compaction",
+    "file_compaction": {
+      "enabled": true,
+      "strategy": "maximize_compactness"
+    },
+    "summarization": {
+      "enabled": true,
+      "preferred_length": "very_compact",
+      "include_details": false
+    }
+  },
+  "context_optimization": {
+    "read_files": {
+      "limit": 100,
+      "compact_format": true,
+      "skip_line_numbers": false
+    },
+    "search_results": {
+      "return_only_paths": true,
+      "include_line_numbers": false
+    },
+    "read_results": {
+      "include_line_numbers": false,
+      "return_content_only": true,
+      "truncate_large_files": true,
+      "max_lines_returned": 100
+    }
+  }
+}
