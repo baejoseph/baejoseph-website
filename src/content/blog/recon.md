@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "정찰"
 featuredImage: "/assets/SCR-20241103-u7b-scaled.jpeg"
 youtubeId: "nYBLz7gWVLI"
-tags: ["evangelism", "travel"]
+tags: ["evangelism", "travel", "video"]
 ---
 
 From October 30th to November 1st, 2024, my two sons, our loyal Jindo dog Bobby, and I embarked on a spiritual reconnaissance trip to Glastonbury—a place rich in Christian heritage but currently overshadowed by pagan practices. While my wife and daughter chose to stay home, this became a boys’ adventure and mission to scope out the historic site with a view to [reclaiming it for Christ](/tor).
