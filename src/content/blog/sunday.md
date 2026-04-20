@@ -1,7 +1,7 @@
 ---
 title: "🗓️ Launching A Calendar Clock App"
 date: "2026-02-10"
-wpSlug: "sunday"
+slug: "sunday"
 lang: "en"
 pairedSlug: "주일"
 featuredImage: "/assets/Screenshot-2026-02-08-at-19.56.20.png"

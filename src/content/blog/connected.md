@@ -1,6 +1,7 @@
 ---
 title: "📚 Prayer Is Spiritual Connection"
 date: "2024-10-25"
+slug: "connected"
 lang: "en"
 pairedSlug: "연결"
 featuredImage: "/assets/AdobeStock_358873178-1024x532-1.jpeg"

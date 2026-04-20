@@ -1,6 +1,7 @@
 ---
 title: "🇬🇧 I Joined Restore Britain"
 date: "2026-02-20"
+slug: "restore"
 lang: "en"
 featuredImage: "/assets/restore-britain-hero.jpg"
 tags: ["leftism", "courage", "testimony", "uk"]

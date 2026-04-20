@@ -1,7 +1,7 @@
 ---
 title: "🔥 My theological progression"
 date: "2024-09-20"
-wpSlug: "theology"
+slug: "theology"
 lang: "en"
 pairedSlug: "신학"
 featuredImage: "/assets/SCR-20241022-k1q.jpeg"

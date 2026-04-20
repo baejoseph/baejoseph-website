@@ -1,7 +1,7 @@
 ---
 title: "↔️ Why Christians must reject Leftism"
 date: "2023-10-20"
-wpSlug: "leftism"
+slug: "leftism"
 lang: "en"
 featuredImage: "/assets/90-2.jpeg"
 pairedSlug: "좌파"

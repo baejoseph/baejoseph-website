@@ -1,7 +1,7 @@
 ---
 title: "🌳 My Journey of Faith"
 date: "2025-09-06"
-wpSlug: "journey"
+slug: "journey"
 lang: "en"
 pairedSlug: "여정"
 youtubeId: "jU_wvPqJFVg"

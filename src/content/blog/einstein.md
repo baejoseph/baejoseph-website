@@ -1,7 +1,7 @@
 ---
 title: "🧠 Einstein’s Unconventional Selection of Disciples"
 date: "2024-11-29"
-wpSlug: "einstein"
+slug: "einstein"
 lang: "en"
 pairedSlug: "아인슈타인"
 featuredImage: "/assets/GdeTq3TXkAElHWl.jpeg"

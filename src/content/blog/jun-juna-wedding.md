@@ -1,7 +1,7 @@
 ---
 title: "👩‍❤️‍👨 Jun &#038; Juna Wedding @ Barcelona"
 date: "2023-10-13"
-wpSlug: "jun-juna-wedding"
+slug: "jun-juna-wedding"
 lang: "en"
 pairedSlug: "준주나결혼"
 featuredImage: "/assets/SCR-20231212-lecy.jpeg"

@@ -1,7 +1,7 @@
 ---
 title: "💯 BaeGPT 출시"
 date: "2023-11-17"
-wpSlug: "baegpt"
+slug: "baegpt"
 lang: "ko"
 pairedSlug: "baegpt-en"
 featuredImage: "/assets/SCR-20231121-kwx.png"

@@ -1,7 +1,7 @@
 ---
 title: "🧍🏻‍♀️ Wives submit to your husbands"
 date: "2024-08-09"
-wpSlug: "submit"
+slug: "submit"
 lang: "en"
 pairedSlug: "복종"
 featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"

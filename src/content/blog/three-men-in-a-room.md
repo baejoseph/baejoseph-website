@@ -1,6 +1,7 @@
 ---
 title: "🗡️ Three Men in a Room"
 date: "2023-11-24"
+slug: "three-men-in-a-room"
 lang: "en"
 pairedSlug: "3-men-room"
 featuredImage: "/assets/SCR-20231214-fjl-scaled.jpeg"

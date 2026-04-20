@@ -1,6 +1,7 @@
 ---
 title: "🌙 God Gives His Beloved Sleep"
 date: "2026-04-09"
+slug: "sleep"
 lang: "en"
 featuredImage: ""
 tags: ["prayer", "theology", "health"]

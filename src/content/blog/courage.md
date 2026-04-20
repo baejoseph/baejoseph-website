@@ -1,7 +1,7 @@
 ---
 title: "🦁 Trump and Courage"
 date: "2024-07-14"
-wpSlug: "courage"
+slug: "courage"
 lang: "en"
 featuredImage: "/assets/SCR-20240714-ubhf.jpeg"
 pairedSlug: "용기"

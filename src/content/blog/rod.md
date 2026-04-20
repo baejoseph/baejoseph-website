@@ -1,7 +1,7 @@
 ---
 title: "👨‍👩‍👦 Biblical Disciplining of Children"
 date: "2024-01-19"
-wpSlug: "rod"
+slug: "rod"
 lang: "en"
 pairedSlug: "자녀훈계"
 featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"

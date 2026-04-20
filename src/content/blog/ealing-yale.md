@@ -1,7 +1,7 @@
 ---
 title: "🧑‍🏫 일링교회 중고등부를 가르치며"
 date: "2023-09-29"
-wpSlug: "ealing-yale"
+slug: "ealing-yale"
 lang: "ko"
 pairedSlug: "ealing-yale-en"
 featuredImage: "/assets/YaleSupreme.png"

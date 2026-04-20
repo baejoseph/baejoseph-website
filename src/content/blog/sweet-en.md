@@ -1,6 +1,7 @@
 ---
 title: "🍯 Why Did God Create Sweetness?"
 date: "2023-11-03"
+slug: "sweet-en"
 lang: "en"
 pairedSlug: "sweet"
 featuredImage: "/assets/SCR-20231110-jzx.jpeg"

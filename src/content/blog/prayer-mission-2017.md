@@ -1,6 +1,7 @@
 ---
 title: "🙏 A Week in Luton: What the 2017 UK Prayer Mission Taught Me"
 date: "2017-05-17"
+slug: "prayer-mission-2017"
 lang: "en"
 pairedSlug: "2017-prayer-mission"
 featuredImage: "/assets/%EA%B8%B0%EB%8F%84%EC%84%A0%EA%B5%902017%EB%8C%80%EC%A0%84%EB%93%9C%EB%A6%BC%ED%8C%80.jpeg"

@@ -1,7 +1,7 @@
 ---
 title: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 London: The City I No Longer Recognize"
 date: "2026-04-18"
-wpSlug: "london"
+slug: "london"
 lang: "en"
 pairedSlug: "런던"
 featuredImage: "/assets/london-st-pauls-view.jpg"

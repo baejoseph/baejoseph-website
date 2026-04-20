@@ -1,6 +1,7 @@
 ---
 title: "💪 The Health of Your Spirit"
 date: "2026-01-20"
+slug: "spiritual-health"
 lang: "en"
 featuredImage: "/assets/spiritual-health.png"
 tags: ["theology", "health", "korea"]

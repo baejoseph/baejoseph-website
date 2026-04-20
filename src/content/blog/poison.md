@@ -1,11 +1,11 @@
 ---
 title: "☠️ They Shall Drink Poison and Not Be Harmed"
 date: "2024-06-07"
+slug: "poison"
 lang: "en"
 pairedSlug: "독"
 tags: ["health", "theology", "courage"]
 featuredImage: "/assets/poison.png"
-wpSlug: "poison"
 ---
 
 > “And these signs will accompany those who believe: in my name they will drive out demons; they will speak in new tongues; they will pick up snakes with their hands; **and when they drink deadly poison, it will not hurt them at all;** they will place their hands on sick people, and they will get well.”

@@ -1,7 +1,7 @@
 ---
 title: "💰 Solomon’s Real Wealth Secret"
 date: "2025-12-09"
-wpSlug: "trade"
+slug: "trade"
 lang: "en"
 featuredImage: "/assets/SCR-20251202-v2i-scaled.jpeg"
 pairedSlug: "솔로몬의-부의-비밀"

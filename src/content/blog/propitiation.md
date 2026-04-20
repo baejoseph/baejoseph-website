@@ -1,7 +1,7 @@
 ---
 title: "🩸 On Propitiation"
 date: "2025-06-27"
-wpSlug: "propitiation"
+slug: "propitiation"
 lang: "en"
 pairedSlug: "속죄"
 featuredImage: "/assets/passionchrist-20170810094959.jpg"

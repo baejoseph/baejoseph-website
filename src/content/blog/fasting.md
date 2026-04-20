@@ -1,7 +1,7 @@
 ---
 title: "🥣 Derek Prince on Fasting"
 date: "2023-03-24"
-wpSlug: "fasting"
+slug: "fasting"
 lang: "en"
 featuredImage: "/assets/SCR-20240524-rive.jpeg"
 pairedSlug: "금식"

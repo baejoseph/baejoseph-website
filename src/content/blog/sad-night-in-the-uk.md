@@ -1,7 +1,7 @@
 ---
 title: "👶🏻 Sad Night in the UK"
 date: "2026-03-19"
-wpSlug: "sad-night-in-the-uk"
+slug: "sad-night-in-the-uk"
 lang: "en"
 tags: ["leftism", "eschatology", "theology", "courage", "uk"]
 featuredImage: "/assets/sad-night-in-the-uk.jpg"

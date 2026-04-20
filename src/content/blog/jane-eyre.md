@@ -1,7 +1,7 @@
 ---
 title: "📚Review: Jane Eyre"
 date: "2024-03-08"
-wpSlug: "jane-eyre"
+slug: "jane-eyre"
 lang: "en"
 pairedSlug: "제인-에어"
 featuredImage: "/assets/SCR-20240312-pkpa.jpeg"

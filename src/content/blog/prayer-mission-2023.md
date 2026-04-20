@@ -1,6 +1,7 @@
 ---
 title: "🙏 Back from the 2023 Wales Prayer Mission"
 date: "2023-07-21"
+slug: "prayer-mission-2023"
 lang: "en"
 pairedSlug: "2023-prayer-mission"
 featuredImage: "/assets/IMG_8925.jpeg"

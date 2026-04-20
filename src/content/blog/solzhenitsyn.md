@@ -1,7 +1,7 @@
 ---
 title: "🎓 Solzhenitsyn in 1978"
 date: "2024-06-28"
-wpSlug: "solzhenitsyn"
+slug: "solzhenitsyn"
 lang: "en"
 pairedSlug: "솔제니친"
 featuredImage: "/assets/1978.jpg"

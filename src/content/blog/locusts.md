@@ -1,7 +1,7 @@
 ---
 title: "🦗 Learn from Locusts"
 date: "2024-01-12"
-wpSlug: "locusts"
+slug: "locusts"
 lang: "en"
 pairedSlug: "메뚜기"
 featuredImage: "/assets/SCR-20240114-pdhi.jpeg"

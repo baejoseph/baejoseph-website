@@ -1,7 +1,7 @@
 ---
 title: "🤲🏻 The Power of Crying Out in Corporate Prayer"
 date: "2025-11-29"
-wpSlug: "cry-out"
+slug: "cry-out"
 lang: "en"
 featuredImage: "/assets/SCR-20251129-rndc-scaled.jpeg"
 pairedSlug: "부르짖으라"

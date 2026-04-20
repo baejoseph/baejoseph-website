@@ -1,7 +1,7 @@
 ---
 title: "✏️ Aaron in Writing"
 date: "2024-07-12"
-wpSlug: "aaron"
+slug: "aaron"
 lang: "en"
 pairedSlug: "아론"
 featuredImage: "/assets/GZyciA3WUAASpZf.jpeg"

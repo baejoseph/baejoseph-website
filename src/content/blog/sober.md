@@ -1,7 +1,7 @@
 ---
 title: "📺 Be Sober-Minded"
 date: "2025-11-17"
-wpSlug: "sober"
+slug: "sober"
 lang: "en"
 featuredImage: "/assets/defund_BBC.webp"
 pairedSlug: "정신"

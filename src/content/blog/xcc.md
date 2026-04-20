@@ -1,7 +1,7 @@
 ---
 title: "🥾 XCC 2024 @ Wales"
 date: "2024-10-18"
-wpSlug: "xcc"
+slug: "xcc"
 lang: "en"
 featuredImage: "/assets/XCC_WALES24__CE_8819.jpg"
 pairedSlug: "극한도전"

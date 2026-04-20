@@ -1,6 +1,7 @@
 ---
 title: "🇰🇷 South Korea’s Fertility Crisis: A Solution"
 date: "2024-11-22"
+slug: "korea-birth-rate"
 lang: "en"
 pairedSlug: "출산"
 featuredImage: "/assets/SCR-20241202-dr8.png"

@@ -1,7 +1,7 @@
 ---
 title: "📖 Launching A Bible App"
 date: "2026-02-12"
-wpSlug: "daily-bread"
+slug: "daily-bread"
 lang: "en"
 pairedSlug: "일용할양식"
 featuredImage: "/assets/ip1307.png"

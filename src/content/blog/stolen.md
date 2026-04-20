@@ -1,7 +1,7 @@
 ---
 title: "🗳 2020 US Election Fraud Summary"
 date: "2024-08-02"
-wpSlug: "stolen"
+slug: "stolen"
 lang: "en"
 pairedSlug: "도난"
 featuredImage: "/assets/2020stolen.webp"

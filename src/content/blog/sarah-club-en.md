@@ -1,6 +1,7 @@
 ---
 title: "👫 Sarah Club"
 date: "2023-07-21"
+slug: "sarah-club-en"
 lang: "en"
 pairedSlug: "sarah-club"
 featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"

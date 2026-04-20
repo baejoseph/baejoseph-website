@@ -1,7 +1,7 @@
 ---
 title: "🐟 At the Water’s Edge"
 date: "2025-04-26"
-wpSlug: "galilee"
+slug: "galilee"
 lang: "en"
 featuredImage: "/assets/SCR-20250426-g5k.jpeg"
 pairedSlug: "갈릴리"

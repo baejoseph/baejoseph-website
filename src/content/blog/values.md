@@ -1,7 +1,7 @@
 ---
 title: "🏠 At the Bae Household, We…"
 date: "2025-12-02"
-wpSlug: "values"
+slug: "values"
 lang: "en"
 featuredImage: "/assets/SCR-20251202-fq4-scaled.jpeg"
 pairedSlug: "가치"

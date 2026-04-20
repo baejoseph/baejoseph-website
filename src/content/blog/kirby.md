@@ -1,6 +1,7 @@
 ---
 title: "🎮 Are You Stuck on the Demo?"
 date: "2026-02-03"
+slug: "kirby"
 lang: "en"
 pairedSlug: "커비"
 featuredImage: "/assets/kirby-demo.png"

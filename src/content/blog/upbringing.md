@@ -1,6 +1,7 @@
 ---
 title: "⚔️ Upbringing and Marriage"
 date: "2026-04-06"
+slug: "upbringing"
 lang: "en"
 featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"
 tags: ["family", "theology", "courage", "uk", "video"]

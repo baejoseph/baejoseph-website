@@ -1,7 +1,7 @@
 ---
 title: "🧢 Why I wear a MAGA hat"
 date: "2023-09-08"
-wpSlug: "maga-hat"
+slug: "maga-hat"
 lang: "en"
 pairedSlug: "마가모자"
 featuredImage: "/assets/IMG_9111.jpeg"

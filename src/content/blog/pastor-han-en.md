@@ -1,6 +1,7 @@
 ---
 title: "🎤 From Shamanism to the Cross: Pastor Han’s Testimony"
 date: "2023-07-14"
+slug: "pastor-han-en"
 lang: "en"
 pairedSlug: "pastor-han"
 featuredImage: "/assets/SCR-20230905-dox-e1694180411789.jpeg"

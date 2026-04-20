@@ -1,6 +1,7 @@
 ---
 title: "💪 Murph Challenge: First Full Completion"
 date: "2023-10-21"
+slug: "murph-update-en"
 lang: "en"
 pairedSlug: "murph-update"
 featuredImage: "/assets/IMG_9814.jpeg"

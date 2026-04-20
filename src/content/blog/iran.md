@@ -1,7 +1,7 @@
 ---
 title: "🦁 Why I believe Iran Regime Change is Soon"
 date: "2025-06-17"
-wpSlug: "iran"
+slug: "iran"
 lang: "en"
 featuredImage: "/assets/SCR-20250617-jzj.jpeg"
 pairedSlug: "이란"

@@ -1,6 +1,7 @@
 ---
 title: "🍻 What Happened at St Edmundsbury Cathedral"
 date: "2023-09-01"
+slug: "sted-cathedral-en"
 lang: "en"
 pairedSlug: "sted-cathedral"
 featuredImage: "/assets/IMG_1867-e1694180515211.jpeg"

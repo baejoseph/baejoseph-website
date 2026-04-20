@@ -1,7 +1,7 @@
 ---
 title: "👑 Where is the throne of David?"
 date: "2024-01-26"
-wpSlug: "throne-of-david"
+slug: "throne-of-david"
 lang: "en"
 pairedSlug: "다윗의왕좌"
 featuredImage: "/assets/SCR-20240718-g4e.jpeg"

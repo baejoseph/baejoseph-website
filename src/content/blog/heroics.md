@@ -1,7 +1,7 @@
 ---
 title: "🏋🏻‍♂️ Mighty Men"
 date: "2025-07-25"
-wpSlug: "heroics"
+slug: "heroics"
 lang: "en"
 pairedSlug: "영웅주의"
 featuredImage: "/assets/220125-Aerial-view-of-Ziklag.jpg"

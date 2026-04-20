@@ -1,6 +1,7 @@
 ---
 title: "⚖️ England’s Reckoning"
 date: "2026-02-24"
+slug: "reckoning"
 lang: "en"
 featuredImage: "/assets/reckoning.jpg"
 tags: ["leftism", "courage", "theology", "eschatology", "uk"]

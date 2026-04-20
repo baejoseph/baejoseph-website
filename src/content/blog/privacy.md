@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy."
 date: "2006-01-30"
-wpSlug: "privacy"
+slug: "privacy"
 lang: "en"
 
 tags: ["tech"]

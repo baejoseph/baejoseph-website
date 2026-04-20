@@ -1,7 +1,7 @@
 ---
 title: "🧎🏻 A Trappist Monk’s Prayer"
 date: "2024-01-05"
-wpSlug: "trappist"
+slug: "trappist"
 lang: "ko"
 pairedSlug: "trappist-en"
 featuredImage: "/assets/SCR-20240116-hnkd.jpeg"

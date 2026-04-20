@@ -1,7 +1,7 @@
 ---
 title: "🧸 No Favourites"
 date: "2025-11-23"
-wpSlug: "favourites"
+slug: "favourites"
 lang: "en"
 featuredImage: "/assets/IMG_4581-scaled.jpg"
 pairedSlug: "믿음"

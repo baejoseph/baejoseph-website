@@ -1,7 +1,7 @@
 ---
 title: "📒 Essay on Multiculturalism"
 date: "2024-04-19"
-wpSlug: "multiculturalism"
+slug: "multiculturalism"
 lang: "en"
 pairedSlug: "다문화주의"
 featuredImage: "/assets/SCR-20240512-tbvh.png"

@@ -1,7 +1,7 @@
 ---
 title: "👁 Rothschilds"
 date: "2024-08-16"
-wpSlug: "rothschilds"
+slug: "rothschilds"
 lang: "en"
 featuredImage: "/assets/SCR-20240818-jtmr.jpeg"
 

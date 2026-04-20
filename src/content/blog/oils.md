@@ -1,7 +1,7 @@
 ---
 title: "🌻 Vegetable Oils"
 date: "2024-05-24"
-wpSlug: "oils"
+slug: "oils"
 lang: "en"
 pairedSlug: "기름"
 featuredImage: "/assets/SCR-20240628-ho9.jpeg"

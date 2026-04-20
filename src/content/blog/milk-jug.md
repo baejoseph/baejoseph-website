@@ -1,6 +1,7 @@
 ---
 title: "🫖 The Milk Jug"
 date: "2026-03-10"
+slug: "milk-jug"
 lang: "en"
 featuredImage: "/assets/milk-jug.jpg"
 tags: ["theology", "testimony", "courage", "video"]

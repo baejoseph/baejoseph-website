@@ -1,7 +1,7 @@
 ---
 title: "🙏 2017년 기도선교 참석 후기"
 date: "2017-05-17"
-wpSlug: "2017-prayer-mission"
+slug: "2017-prayer-mission"
 lang: "ko"
 pairedSlug: "prayer-mission-2017"
 featuredImage: "/assets/%EA%B8%B0%EB%8F%84%EC%84%A0%EA%B5%902017%EB%8C%80%EC%A0%84%EB%93%9C%EB%A6%BC%ED%8C%80.jpeg"

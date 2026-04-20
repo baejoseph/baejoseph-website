@@ -1,7 +1,7 @@
 ---
 title: "⛪️ On Keller's Leftist Ideology"
 date: "2023-06-16"
-wpSlug: "keller"
+slug: "keller"
 lang: "en"
 featuredImage: "/assets/1706522788-tim-keller.jpg"
 pairedSlug: "켈러"

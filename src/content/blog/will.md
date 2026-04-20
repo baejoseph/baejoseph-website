@@ -1,7 +1,7 @@
 ---
 title: "📜 Rapture Will"
 date: "2024-09-27"
-wpSlug: "will"
+slug: "will"
 lang: "en"
 pairedSlug: "의지"
 featuredImage: "/assets/MTkxMjc4OTQ4OTk3NDczODkw.webp"

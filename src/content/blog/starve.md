@@ -1,7 +1,7 @@
 ---
 title: "🌭 Let Them Starve"
 date: "2025-02-07"
-wpSlug: "starve"
+slug: "starve"
 lang: "en"
 featuredImage: "/assets/5c7ea092250000d902c8b478.jpeg"
 pairedSlug: "먹지마"

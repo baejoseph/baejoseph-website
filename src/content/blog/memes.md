@@ -1,7 +1,7 @@
 ---
 title: "🖼️ All the memes"
 date: "2024-09-06"
-wpSlug: "memes"
+slug: "memes"
 lang: "en"
 featuredImage: "/assets/IMG_4404.jpeg"
 

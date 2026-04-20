@@ -1,6 +1,7 @@
 ---
 title: "📖 A Biblical Vision for Politics"
 date: "2024-02-23"
+slug: "biblical-political-vision"
 lang: "en"
 pairedSlug: "성경적-정치관"
 featuredImage: ""

@@ -1,7 +1,7 @@
 ---
 title: "🛫 Family visit to Korea 2023"
 date: "2023-04-07"
-wpSlug: "family-korea-2023"
+slug: "family-korea-2023"
 lang: "en"
 pairedSlug: "가족한국방문"
 featuredImage: "/assets/IMG_7307-scaled.jpg"

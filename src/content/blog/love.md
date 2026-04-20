@@ -1,7 +1,7 @@
 ---
 title: "💗 Love in the Millennial Reign"
 date: "2025-02-28"
-wpSlug: "love"
+slug: "love"
 lang: "en"
 featuredImage: "/assets/1corinthians-13.jpg"
 pairedSlug: "사랑"

@@ -1,7 +1,7 @@
 ---
 title: "🌎 Environmentalism and Revelation"
 date: "2022-10-07"
-wpSlug: "climate"
+slug: "climate"
 lang: "en"
 featuredImage: "/assets/SCR-20231010-loc.jpeg"
 pairedSlug: "환경"

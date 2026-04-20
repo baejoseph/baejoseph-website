@@ -1,7 +1,7 @@
 ---
 title: "💪 머프 챌린지"
 date: "2023-08-25"
-wpSlug: "murph"
+slug: "murph"
 lang: "ko"
 pairedSlug: "murph-challenge"
 featuredImage: "/assets/IMG_8468.jpeg"

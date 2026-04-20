@@ -1,7 +1,7 @@
 ---
 title: "👑 No King but Christ"
 date: "2025-05-25"
-wpSlug: "allegiance"
+slug: "allegiance"
 lang: "en"
 featuredImage: "/assets/Gemini_Generated_Image_bz7hqybz7hqybz7h.png"
 pairedSlug: "충성"

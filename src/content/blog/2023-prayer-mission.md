@@ -1,7 +1,7 @@
 ---
 title: "🙏 2023 웨일즈 기도 선교를 다녀와서"
 date: "2023-07-21"
-wpSlug: "2023-prayer-mission"
+slug: "2023-prayer-mission"
 lang: "ko"
 pairedSlug: "prayer-mission-2023"
 featuredImage: "/assets/IMG_8925.jpeg"

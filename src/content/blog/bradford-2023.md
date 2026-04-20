@@ -1,7 +1,7 @@
 ---
 title: "⛪ Visiting Bradford"
 date: "2023-05-12"
-wpSlug: "bradford-2023"
+slug: "bradford-2023"
 lang: "en"
 pairedSlug: "브래드포드"
 featuredImage: "/assets/SCR-20231212-lvyw.jpeg"

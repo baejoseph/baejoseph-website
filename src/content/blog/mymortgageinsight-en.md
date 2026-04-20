@@ -1,6 +1,7 @@
 ---
 title: "💰 Getting Paid for My Coding Work"
 date: "2023-07-28"
+slug: "mymortgageinsight-en"
 lang: "en"
 pairedSlug: "mymortgageinsight"
 featuredImage: "/assets/SCR-20231019-lhv.png"

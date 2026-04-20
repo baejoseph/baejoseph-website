@@ -1,7 +1,7 @@
 ---
 title: "🧮 Bayes’ Theorem and the Resurrection"
 date: "2025-02-21"
-wpSlug: "bayes"
+slug: "bayes"
 lang: "en"
 featuredImage: "/assets/SCR-20250221-rcc-scaled.jpeg"
 pairedSlug: "베이즈"

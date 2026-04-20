@@ -1,6 +1,7 @@
 ---
 title: "🚀 DSEC 2023: Grief, Grit, and God’s Win"
 date: "2023-11-10"
+slug: "dsec-2023-en"
 lang: "en"
 pairedSlug: "dsec-2023"
 featuredImage: "/assets/SCR-20231110-lkrl.png"

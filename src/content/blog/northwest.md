@@ -1,7 +1,7 @@
 ---
 title: "🇰🇷 The Northwest Youth League: A Battle Cry for Christian Warriors"
 date: "2025-03-19"
-wpSlug: "northwest"
+slug: "northwest"
 lang: "en"
 featuredImage: "/assets/northwest-youth.jpg"
 pairedSlug: "서북청년단"

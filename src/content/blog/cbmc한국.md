@@ -1,6 +1,7 @@
 ---
 title: "🇫🇷 CBMC 파리 콘퍼런스 2023"
 date: "2023-05-05"
+slug: "cbmc한국"
 lang: "ko"
 pairedSlug: "cbmc-2023"
 featuredImage: "/assets/SCR-20231212-llia.jpeg"

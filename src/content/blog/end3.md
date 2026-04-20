@@ -1,7 +1,7 @@
 ---
 title: "🕚 The End of the End of the End Times"
 date: "2025-01-31"
-wpSlug: "end3"
+slug: "end3"
 lang: "en"
 featuredImage: "/assets/Pasted-Graphic-1.png"
 pairedSlug: "마지막"

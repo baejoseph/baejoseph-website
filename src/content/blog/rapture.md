@@ -1,7 +1,7 @@
 ---
 title: "🚹 Biblical Basis for Pre-Millennial Pre-Wrath Rapture"
 date: "2024-04-12"
-wpSlug: "rapture"
+slug: "rapture"
 lang: "en"
 featuredImage: "/assets/IMG_2146.jpg"
 pairedSlug: "휴거"

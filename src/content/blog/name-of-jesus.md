@@ -1,7 +1,7 @@
 ---
 title: "ن Standing Up for the Name of Jesus"
 date: "2016-10-14"
-wpSlug: "name-of-jesus"
+slug: "name-of-jesus"
 lang: "en"
 pairedSlug: "예수님의-이름"
 featuredImage: "/assets/SCR-20231019-m0u.png"

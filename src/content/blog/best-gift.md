@@ -1,7 +1,7 @@
 ---
 title: "🎁 The Best Gift in the World"
 date: "2024-10-04"
-wpSlug: "best-gift"
+slug: "best-gift"
 lang: "en"
 pairedSlug: "최고의선물"
 featuredImage: "/assets/SCR-20240512-smss.jpeg"

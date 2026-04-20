@@ -1,7 +1,7 @@
 ---
 title: "3️⃣ Three Realms"
 date: "2024-08-30"
-wpSlug: "three"
+slug: "three"
 lang: "en"
 featuredImage: "/assets/SCR-20240718-g4e.jpeg"
 pairedSlug: "세가지"

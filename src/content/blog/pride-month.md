@@ -1,6 +1,7 @@
 ---
 title: "🏳️‍🌈 Essay on Pride Month"
 date: "2022-06-24"
+slug: "pride-month"
 lang: "en"
 pairedSlug: "프라이드"
 featuredImage: "/assets/FoOLmc-X0AIbitV.jpg"

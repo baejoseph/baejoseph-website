@@ -1,6 +1,7 @@
 ---
 title: "💪 The Murph Challenge"
 date: "2023-08-25"
+slug: "murph-challenge"
 lang: "en"
 pairedSlug: "murph"
 featuredImage: "/assets/IMG_8468.jpeg"

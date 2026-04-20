@@ -1,7 +1,7 @@
 ---
 title: "☄️ My Eschatology in 2024"
 date: "2024-03-01"
-wpSlug: "eschatology"
+slug: "eschatology"
 lang: "en"
 pairedSlug: "종말론"
 featuredImage: "/assets/IMG_2146.jpg"

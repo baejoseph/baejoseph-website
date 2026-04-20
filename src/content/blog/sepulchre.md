@@ -1,7 +1,7 @@
 ---
 title: "🪦 In the Stone Shadows"
 date: "2025-04-25"
-wpSlug: "sepulchre"
+slug: "sepulchre"
 lang: "en"
 featuredImage: "/assets/SCR-20250425-dq6.jpeg"
 pairedSlug: "성묘교회"

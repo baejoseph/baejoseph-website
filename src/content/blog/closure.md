@@ -1,7 +1,7 @@
 ---
 title: "💝 Closure"
 date: "2024-11-07"
-wpSlug: "closure"
+slug: "closure"
 lang: "en"
 pairedSlug: "마무리"
 featuredImage: "/assets/IMG_4888-1.jpeg"

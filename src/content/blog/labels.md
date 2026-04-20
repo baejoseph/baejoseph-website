@@ -1,7 +1,7 @@
 ---
 title: "🕚 The Quiet Problem with Our Millennial Labels"
 date: "2025-05-09"
-wpSlug: "labels"
+slug: "labels"
 lang: "en"
 featuredImage: "/assets/SCR-20250509-o62.jpeg"
 pairedSlug: "천년설"

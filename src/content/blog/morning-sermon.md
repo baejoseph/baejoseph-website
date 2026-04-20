@@ -1,7 +1,7 @@
 ---
 title: "🌎 Morning Sermon at Jesus Academia"
 date: "2024-12-26"
-wpSlug: "morning-sermon"
+slug: "morning-sermon"
 lang: "en"
 featuredImage: "/assets/SCR-20250103-mu7.jpeg"
 pairedSlug: "아침설교"

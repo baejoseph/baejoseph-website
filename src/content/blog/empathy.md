@@ -1,7 +1,7 @@
 ---
 title: "🖤 Empathy: A Biblical Perspective"
 date: "2025-03-07"
-wpSlug: "empathy"
+slug: "empathy"
 lang: "en"
 featuredImage: "/assets/image.webp"
 pairedSlug: "공감"

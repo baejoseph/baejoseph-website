@@ -1,6 +1,7 @@
 ---
 title: "🧑‍🏫 Teaching the Youth at Ealing Church"
 date: "2023-09-29"
+slug: "ealing-yale-en"
 lang: "en"
 pairedSlug: "ealing-yale"
 featuredImage: "/assets/YaleSupreme.png"

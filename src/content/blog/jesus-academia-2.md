@@ -1,7 +1,7 @@
 ---
 title: "🏛️ Jesus Academia Part 2"
 date: "2025-01-10"
-wpSlug: "jesus-academia-2"
+slug: "jesus-academia-2"
 lang: "en"
 featuredImage: "/assets/SCR-20250104-uo9.jpeg"
 pairedSlug: "예수서원2"

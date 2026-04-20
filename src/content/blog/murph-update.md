@@ -1,7 +1,7 @@
 ---
 title: "💪 머프 챌린지 업데이트"
 date: "2023-10-21"
-wpSlug: "murph-update"
+slug: "murph-update"
 lang: "ko"
 pairedSlug: "murph-update-en"
 featuredImage: "/assets/IMG_9814.jpeg"

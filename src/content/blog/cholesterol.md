@@ -1,7 +1,7 @@
 ---
 title: "🫀 Cholesterol"
 date: "2024-05-17"
-wpSlug: "cholesterol"
+slug: "cholesterol"
 lang: "en"
 pairedSlug: "콜레스테롤"
 featuredImage: "/assets/GRE9YOGXYAAnTKk.jpg"

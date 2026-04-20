@@ -1,6 +1,7 @@
 ---
 title: "🇺🇸 Vivek Ramaswamy"
 date: "2023-08-11"
+slug: "vivek-en"
 lang: "en"
 pairedSlug: "vivek"
 featuredImage: "/assets/Vivek_Ramaswamy_by_Gage_Skidmore.jpg"

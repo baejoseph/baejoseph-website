@@ -1,7 +1,7 @@
 ---
 title: "Evidence"
 date: "2023-10-20"
-wpSlug: "evidence"
+slug: "evidence"
 lang: "en"
 
 tags: ["leftism"]

@@ -1,7 +1,7 @@
 ---
 title: "2️⃣ Two, not one"
 date: "2024-04-26"
-wpSlug: "two"
+slug: "two"
 lang: "en"
 featuredImage: "/assets/SCR-20240524-qdps.jpeg"
 pairedSlug: "두가지"
