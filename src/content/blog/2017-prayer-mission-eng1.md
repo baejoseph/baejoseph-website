@@ -145,4 +145,4 @@ God even provided a house for them in Dunstable. They’re now active members of
 
 —-
 
-**Update:** six years later, I went again — this time to Wales — [2023 Wales Prayer Mission](/prayer-mission-2023/).
+**Update:** six years later, I went again — this time to Wales — [2023 Wales Prayer Mission](/2023-prayer-mission/).

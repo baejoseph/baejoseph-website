@@ -1,114 +1,161 @@
 ---
-title: "🙏 2023 웨일즈 기도 선교를 다녀와서"
+title: "🙏 Back from the 2023 Wales Prayer Mission"
 date: "2023-07-21"
 slug: "2023-prayer-mission"
-lang: "ko"
-pairedSlug: "prayer-mission-2023"
+lang: "en"
+pairedSlug: "2023-기도선교"
 featuredImage: "/assets/IMG_8925.jpeg"
-
 tags: ["prayer", "korea", "testimony"]
 ---
 
-기도선교 기간: 7월3일 부터 12일 @웨일즈 전역.
+*Prayer mission dates: July 3–12, across Wales.*
+*My participation: July 3–8 (Mon–Sat), five nights and six days in Newbridge, Wales.*
 
-참석한 기간: 7월 3일 부터 8일까지 월-토요일 5박6일 @Newbridge, Wales.
+![](/assets/IMG_8925.jpeg)
 
-![](/assets/IMG_8925-1024x768.jpeg)
+## How We Got Here
 
-\[들어가기: 2023년 기도선교를 참석하게 된 과정\]
+The week I spent in Luton on the 2017 prayer mission was one of the most important weeks of my life [[2017-prayer-mission]](/2017-prayer-mission). Praying over England alongside Korean intercessors who have made intercession their entire way of life—learning what it means to cry out, not just pray quietly—was something I still think about with deep gratitude to God.
 
-2017년 루턴 기도선교 일주일은 나의 인생에 아주 중요한 기간이었다 [\[2017-prayer-mision\]](/2017-prayer-mission). 한국에서 중보기도를 삶으로 실천하시는 기도 원정대 분들과 함께 영국을 품고 기도하며, 부르짖는 기도를 배우고 훈련하는 중요한 체험은 지금도 생각하면 하나님께 감사가 절로 나온다.
+So when Pastor Kim Nam-jin reached out early this year with the message, “We’re planning another prayer mission for Wales—please keep it in prayer,” our family took it seriously. Every morning at dawn prayer, we lifted up that July mission and pressed in. Maybe because we kept at it so consistently, one morning after dawn prayer my mother-in-law quietly made a suggestion: “I’ll watch Junsu and Juno for the week. What if you and your wife go together and bring the baby?” The moment she said it, a strange peace settled over me. There were plenty of unresolved details—how would we both get time off work? Would any team even have space for us? Wouldn’t a two-year-old be a burden to the prayer team?—but instead of anxiety, what I felt was confidence that God would work each thing out one by one.
 
-그래서 올해 초 김남진 목사님께서 연락 오셔서 “올해에도 웨일즈를 품은 기도 선교를 계획합니다, 위해서 기도해 주세요” 부탁을 받았을 때, 우리 가족은 새벽기도 때마다 7월에 있을 기도 선교를 품고 간절히 기도를 드렸다. 계속 기도를 해서 그럴까? 6월에 하루는 새벽기도 끝나고 엄마가 조용히 제안을 하셨다: “준수, 준오를 일주일 봐줄테니, 막내를 데리고 부부가 같이 이번 기도선교 참석을 하는 것은 어떨지?” 그 제안을 듣는데 마음 속에 평안한 마음이 들었다. 아직 풀려야 될 일이 많았지만 (부부 둘이 어떻게 직장에서 휴가를 낼 수 있을지? 기도선교 팀들 중에 우리를 받아줄 팀이 과연 있을지? 2살짜리 아이를 데리고 가면 기도팀에 오히려 민폐가 되지 않을까?) 이런 것들이 염려가 되는 것이 아니라 하나님께서 하나 하나 다 풀어 주실 것이라는 확신이 생겼다.
-
-감사하게도 김남진 목사님께 연락을 드리니 마침 “부흥의 마중불”\* 팀에 우리 가족을 편입해 주시겠다는 흔쾌한 답변을 주셨다. 그 팀을 인도하시는 한상규 목사님 부부는 2017년 루턴 기도선교 팀에 함께했던 귀한 분들이셨다. 올해가 영국 기도선교 7번 째로 오실 만큼 영국에 대한 사랑이 많으시고, 전에 함께 기도하던 분들과 다시 함께 기도선교를 할 수 있다는게 감사했다. 그리고 회사에서도 둘 다 문제없이 휴가를 받을 수 있었다. 이 모든 것 가운데 우리를 기도선교로 이끌어 주시는 하나님의 손길이 느껴졌다.
-
-\*“하나님의 부활의 불을 시작하는 마중물과 같은 불쏘시개”의 뜻
-
-\[뉴브리지 도착\]
-
-마침내 기도 선교 당일이 되어 막내와 함께 차를 타고 우리가 일주일 동안 묵을 웨일즈의 뉴브리지 동네에 있는 Tabernacle Baptist Church 타버나클 침례교회에 도착했다. 이 곳에서 13년 차 목회를 하시는 조영태 목사님과 사모님께서 환영해 주시며 그동안 하나님께서 어떻게 선하게 인도해 주셨는지 간증을 해 주셨다. 그날 저녁 한국에서 도착하신 “부흥의 마중불” 팀원들 6분과 합류하며 하루를 마쳤다.
-
-\[기도선교 일정\]
-
-화요일부터 토요일까지 조영태 목사님께서 준비하신 매일 일정은 다음과 같았다:
-
--   오전 9–12시: 주위 교회들 심방, 현지인들과 함께 기도 모임 인도—오후 1–4시: 심방하는 교회 주위 지역을 땅 밟으며 기도—저녁 7–10시: 타버나클 침례교회 교인들과 함께 집회 및 기도 모임—밤 10 – 12시: 강단 기도
-
-이 기간동안 있었던 일들을 에피소드 식으로 글로 남겨 본다.
-
-\[화요일 오전: Newbridge Primary School\]
-
-조영태 목사님이 시무하시는 교회에서 팀이 조성되어 숙련된 모습으로 학교 아이들에게 복음을 전했다. 이런 복음 제시 발표는 정기적으로 되어 왔었고, 학교 측에서도 교회 팀을 반갑게 다시 환영하는 모습이 참 인상적이었다. 삭개오 이야기를 중심으로 전교생 아이들 눈높이에 맞춰 예수님 복음 메시지를 제시하고, 거기에 반응하는 찬양 율동 시간도 있었다. “예수 사랑하심은 거룩하신 말일세” 등 찬송을 모든 아이들이 큰소리로 따라 부르며 힘차게 율동하는 모습에서 이 웨일즈 땅의 다음 세대 복음화의 희망을 보는 것 같았다.
-
-![](/assets/IMG_8811-1024x768.jpeg)
-
-조 목사님 온 가족이 이 지역 사회에 끼치는 선한 영향은 실로 대단했다. 뉴브리지 동네 거리를 걸어 다니면서 만나는 사람들 중 조 목사님 (Peter Cho)을 모르는 사람이 없었다. 어른/아이들을 막론하고, 모든 시민들과 반갑게 대화를 나누시는 조 목사님의 모습에서 이 지역을 향한 사랑이 느껴졌다.
-
-\[수요일 오전: Clyde Street Pentecostal Church\]
-
-![](/assets/IMG_8823-1024x769.jpeg)
-
-우리를 맞아 주는 교회는 리스카 라는 동네에 있는 클라이드 스트리트 오순절 교회였다. 목회자가 2년 정도 없어서 집사님들이 돌아가며 말씀을 나누는 교회 이었다. 대표 집사님이 우리에게 현재 교회 사정을 설명해 주셨는데, 정말 영국 사람이 맞는가 할 정도로 “we are desperate” (우리는 정말 간절합니다) 말을 10 번 넘게 하시며 현재 교회의 절박한 상황을 설명해 주셨다. 계속 장례식을 치르며 교인들은 나이 차례로 천국에 가지만, 그에 비해 채워지는 젊은 다음 세대는 없다는 것이다. 가족들 중 (자녀/손주들) 믿음에서 떠난 자들이 대부분이라 그들을 위해 기도를 부탁하는 모습이 정말 슬퍼 보였다. 이제는 더이상 인간의 노력이 아닌 하나님의 역사하심 밖에는 없다는 그들의 간절한 모습에, 이들을 위해 간절하게 기도하고 싶은 마음이 절로 생겼다.
-
-대표 집사님이 자리에 돌아가신 후 한 목사님께서 나와 짧게 말씀을 한 절 나누시고, 기도 선교팀이 한국에서 이곳 웨일즈로 온 이유를 설명하셨다. 이 때 겸손하게 “여러분들의 조상들이 백여년 전에 우리에게 찾아 오셔서 복음을 전해 주셨기에 우리 한국 교회가 있을 수 있었습니다, 그 은혜에 대한 빚을 조금이나마 갚고 싶어 우리가 한국에서 왔습니다. 같이 여러분들과 함께 기도하길 원합니다” 라고 말씀하셨다. 우리가 찾아간 모든 교회에 이렇게 설명하면 대부분 영국 신자들은 마음을 열며 같이 기도를 하는 것을 보게 된다.
-
-하지만 영국 신자들과 함께 기도를 할 때 문화 차이의 문제가 있다. 한국에서부터 기도에 숙련된 기도 선교팀원들에게는 너무 당연한 “통성기도”는 아무리 오순절 교회라고 해도 영국 신자들에게는 너무 낯설고 이질감이 느껴지기가 쉽다. 그래서 여기서도 통성기도를 설명할 때 이들을 가르치려는 것이 아니라, 통성기도가 성경적이며, 우리의 간절함의 자연스러운 표현이라는 사실을 설명하며, 다니엘 9:19 근거하여 “주여” 삼창을 설명하고, 같이 참여할 것을 초청한다. 그렇게 간절함이 가득한 영국 신자들과 함께 통성 기도를 했다.
-
-한 30분 정도 이들을 위해 간절히 기도했을까? 기도를 마치고 교회 리더들이 “정말 오랜만에 이렇게 뜨거운 기도를 한 것 같다, 고맙다” 말씀을 전하셨다. 그리고 교회 리더들이 잠깐 사무실로 들어가 짧은 회의를 하더니 조목사님에게 조용히 헌금을 2,000파운드를 하셨다. “이 귀한 기도선교에 쓰이길 바라니 꼭 받아 주세요.” 나중에 김남진 목사님께서 기도 선교에서 이런 일은 처음 있는 일이라고 설명해 주셨다. 그들의 안타까운 상황으로 인해 하나님께 부르짖는 중보 기도팀의 간절한 마음이 그들에게 전해졌던 것 같다. 하나님께 모든 영광을 돌린다.
-
-나중에 김남진 목사님 팀에게 들은 바로는, 지금 웨일즈 전역에 교회들이 대부분 이 오순절 교회와 같은 상황이다 라는 것이다. 대부분 목회자 없이 집사들이 돌아가면서 설교하는가 하면, 앞으로 5–10년 안에 이들 교회의 존망이 결정된다는 것이 절대 과장이 아니라고 하였다.
-
-\[목요일 오전: Cross Keys Pentecostal Church\]
-
-![](/assets/IMG_0822-1024x768.jpeg)
-
-이 날에 방문한 교회도 수년 전 담임 목사님이 갑자기 떠나시는 바람에 몇년간 목사님 없는 시간을 보냈다. 교인 숫자도 많이 줄어들어 교회 본당은 아예 쓰지도 않고 옆에 있는 교육회관을 예배 본당으로 쓰고 있었다. 약 1년반 전에는 Matthew 목사님이 오셔서 파트 타임으로 목회를 해오셨지만, 무슨 이유로 약 18개월 전부터 이름 모를 병으로 항상 몸이 피곤하고 에너지가 없다고 우리에게 기도부탁을 하셨다. 간절히 기도하고, 성도들이 정성스레 준비한 점심을 먹기 전에 그 지역을 걸으며 기도하는 시간을 가졌다. 동네를 걷다가 어떤 음산한 분위기의 빌딩 (창문이 하나도 없는 작은 빌딩)이 보였고, 거기에는 우리가 듣지 못했던 교회 이름(Spiritualist Church)이 있었다. 나중에 목사님이 말씀해 주시는데 이 이단은 교회라는 이름을 쓰기도 힘든 강신술/죽은 영혼들을 다시 불러준다는 정말 말도 안되는 집단 이었던 것이다. 그런데 더 이상한건, 거기서 조금만 더 가자 옆에 Morbitorium (죽음에 대한 전시관)이 있었다. 우체국 하나도 있을 까 말까 하는 동네에서 이런 말도 안되는 박물 전시관이라니! 그리고 그 때 또 보이기 시작한 몇 몇 집은 해골같은 각종 해괴한 장식을 하고 있는 것이었다. Matthew 목사님 왈, 이 지역은 전국적으로 무신론이 아주 강한 지역이라고 하셨다. 정말 이러한 영적으로 어두운 동네를 직접 보며, 또 담임 목사님도 혹시 이 교회에 담임 오시면서 어떠한 영적인 공격/저주를 받은 것은 아닌지 의심이 가며 더 간절한 기도가 나왔다.
-
-\[멸공의 횃불\]
-
-“부흥의 마중불” 팀의 한상규목사님, 류주현 목사님, 한성모 목사님과 같이 대화를 나누며, 현재 우리 한국 교회에 끼치고 있는 좌파/자유주의 신학에 대한 우려하는 마음이 우리 모두의 공통분모인 것을 발견했다. 내가 예전에 썼던 글 “순전한 복음과 팀 켈러의 좌익 사상”[\[2023-keller\]](/켈러)을 같이 나누는 대화 끝에, 한성모 목사님은 자신도 예전에는 “좌파 목사”이었고, 오직 예수님의 은혜가 그런 자신을 진정한 회개와 회복의 길로 인도해 주셨음을 고백하셨다. 기도 선교가 끝나고 한 목사님 께서는 감사하게 그 인생의 간증 이야기를 글로 써서 보내 주시기도 하셨다. [\[2023-pastor-han\]](/pastor-han) 
-
-\[금요일 오전: 카디프 국회 의사당 앞에서 웨일즈를 위해 기도\]
-
-![](/assets/IMG_8891-1024x769.jpeg)
-
-카디프가 100년 전에는 전세계 석탄 수출의 수도였다고 한다. 당시에는 뉴욕시보다 더 바쁜 무역이 오고가며 엄청난 부를 누릴 수 있었다고 한다. 하지만 점점 세계 경쟁에서 밀리면서, 광산들이 줄줄이 닫고 70–80년대가 되서는 광산업이 아닌 관광이 주 사업이 되어야 하는 어려운 침체기에서 아직도 벗어나지 못하고 있다고 한다. 앞으로 부흥의 불길이 웨일즈 전역에 퍼지면, 영적으로 뿐만 아니라 경제적으로도 다시 부흥할 웨일즈를 기대해 본다.
-
-\[목요일 저녁: 폰티프리드 연합 집회 참석\]
-
-![](/assets/IMG_0808-1024x768.jpeg)
-
-폰티프리드Pontypridd 지역에서 섬기시는 3개의 기도 선교팀들과 그들이 섬기는 성도들이 한 자리에 모여 드리는 저녁 집회에 참석했다. 뜨겁게 찬양하며 말씀이 선포되며 같이 기도하는 그 자리에서 또 다시 웨일즈 부흥의 조짐을 보게 되었다. 그리고 우리는 안타깝게 참석을 못했지만, 12일 수요일에는 카디프에서 9차기도선교에 참여한 모든 9개팀 110명의 기도원정대와 그들을 호스팅 한 현지 교회 성도들이 한자리에 모여 정말 은혜스러운 찬양 기도 예배를 드렸다는 소식을 여러분에게 접하면서, 이 땅에 다시 한 번 은혜의 소낙비를 내려 주실 손바닥만한 구름이 떠오른 것을 보았고, 하나님께서 이 말세에 웨일즈를 통해 하실 일을 기대하게 되었다.
-
-\[금식에서 금식하다\]
-
-한 5년 전에 데릭 프린스 선생님을 통해 금식 기도의 능력을 배우고 나서는 매주 수요일은 금식하며 많은 영적인 유익을 누리고 있다. 상황이 안 될 때는 화요일 금식 하기도 한다. 매주 하루 금식은 이제 나에게 주일 성수와 같은 좋은 습관이 되었다. 그리고 특히 올해 초에는 우리 부부가 21일 금식을 하며 하나님께서 자기를 경외하는 자를 위하여 쌓아두신 은혜, 곧 그에게 피하는 자를 위하여 인생 앞에서 베푸시는 큰 은혜를 누리는 귀한 체험도 있었다. 이번 기도선교를 막바지에 극적으로 참석하게 된것도 올해 초에 금식 기도를 하며 영적인 것이 풀리면서 일어났다고 생각한다. 그때 생각들을 글로 써서 남겼다. [\[2023-fasting\]](/금식))
-
-그래서 처음에 ‘부흥의 마중불’ 팀과 연결 되었을 때 나는 우리 기도 선교팀이 한 마음으로 금식을 같이 할 것을 제안하고 싶은 마음만 가득해 단톡방에 위의 글을 나눴다. 그러나 이런 제안은 아무리 좋은 아이디어라고 할지라도 그 팀의 리더이신 한 목사님께 미리 걸치고 해야 하는데 그렇게 하지 못한 것이다. 감사하게 한 목사님은 너그럽게 봐주셨고 나는 더이상 이 일에 대해 언급하지 않겠다고 말씀 드렸다. 그래서 이번 기도 선교 기간은 나에게는 5년만에 처음으로 금식을 하루 안하는 기간이 되었다.
-
-그런데 지금 생각해 보니 단체 금식이라는 게 생각보다 고려할 것이 참 많다는 것이다. 그냥 간절한 마음과 열정으로 강행하다가 주위에 상처를 받는 연약한 지체들이 있을 수 있겠다는 생각이 들었다. 예를 들어 거의 매일 현지인 교회에 방문하는데 거기서 항상 음식을 준비한다. 크로스 키즈 오순절 교회에서는 어떤 교인이 인터넷으로 미역국 만드는 법을 배워 최고급 쇠고기를 넣어 내놓은 것이다! 그런데 만약 이런 상황에서 우리 팀이 이날은 금식이라 못 먹겠다고 하면 어떻게 되겠는가?
-
-이 때 깨달은 것이 하나 있다. 아무리 좋은 것이라도, 그것이 최선에 적이 된다면, 절제할 수 있어야 한다는 것이다. 아무튼 이번 기도선교 때는 못했지만 다음에는 사전에 모든 사람들의 양해를 충분히 구하는 단체 금식 기도 운동이 되면 참 좋겠다는 소망을 가져본다.
-
-\[믿음의 의형제: 김목사님, 조목사님, 이목사님\]
-
-이번에 알게 되었는데, 기도선교의 김남진 목사님과 또 런던에서 목회하시는 이상보 목사님, 그리고 우리 팀을 호스팅 해주신 조영태 목사님이 몇년 전에 하나님의 인도하심으로 처음 만나게 되었지만, 빠른 속도로 서로 의형제(?)를 맺을 정도로 (세 분은 서로 동갑이시다) 친한 사이가 되셨다는 것이다. 그래서 시간이 될 때마다 같이 시간을 보내며 서로 속있는 이야기도 하며 아픔을 털어 놓으며 너무나도 편하고 힘이 되는 복음의 동역자로 하나님께서 맺어 주셨다는 이야기가 참 좋았다. 그리고 이것도 사실 조 목사님 사모님께서 남편을 위해 오랫동안 기도하신 응답의 열매라는 것을 알게 되었다 (“남편이 이 시골에서 혼자 목회사역 하면서 제대로 된 친구 한 명이 없습니다, 하나님께서 친구를 주세요!”). 정말 우리 하나님께서는 세심하게 우리의 모든 필요를 아시고 멋지게 응답하시는 아버지이시다!
-
-\[VBS 여름성경학교\]
-
-여름성경학교는 VBS (Vacation Bible Study)인데 미국한인교회에서 1.5세, 2세가 팀을 이루어 웨일즈로 건너와 성경학교를 직접 인도하면서 복음전하는 사역이다. 감사하게 우리 기도 선교 기간 내내 이 성경 학교를 위해 중보하였고, 기도 선교 기간이 끝나고 바로 이런 여름 성경학교 사역으로 연결되어 웨일즈의 다음 세대에게 복음을 전할 수 있는게 너무 감사했다. 앞으로도 이런 사역을 통해 많은 열매와 부흥을 기대해 본다.
-
-\[마치면서: Guitar Aid 이야기\]
-
-타버나클 침례교회 성도들과 저녁마다 같이 기도하고 교제하면서 몇몇 성도들을 알게 된것이 참 큰 축복이었다. 우리를 미니버스 운전으로 섬겨주신 가라스 집사님과 그 손자도 참 귀한 영혼들이었고.. 또 이 교회를 신실하게 섬겨오신 존 & 마지 부부를 짧게나마 소개한다. 존 파머 집사님은 올해 자기가 10대 때 예수님 영접하고 지난 75년동안 예수님과 함께 동행했으며, 자기 어머니가 기도의 어머니로 자기 모든 가족을 전도 했다고 하면서 정말 귀한 간증이 많으신 분이었다. 또 이 교회에서 쓰이는 기타를 보더니 여기에 대한 간증이 있다고 하셨다. 1960년대 자기 월급이 50파운드 이었던 시절, 그 때 시무하던 목사님의 아들이 자기에게 “나도 찬양 사역을 하고 싶은데 기타를 살 돈이 없다, 기타를 중고로 하나 살 돈 10파운드를 주세요” 부탁을 하더란다. 그래서 지금 당장은 그런 돈이 없지만, 존 집사님은 곧바로 3개월 동안 돈을 모아 10파운드로 기타를 사주었다. 그렇게 좋아 하면서 찬양 사역을 열심히 한 목사님 아들은 수십년이 흘러 Guitar Aid라는 자선사업을 시작하게 되고, 근처 기타 공장들과 협력을 해 질 좋은 기타를 전세계 선교지에 기부하는 사역을 하게 되었다고 한다. 그 사업을 통해 지금까지 전세계에 기증된 기타들이 약 4,000개가 된다. 존 집사님 왈 “내 인생에서 수없이 경험한 진리는, 그 때 내가 하나님의 나라를 위해 기증한 조그만한 희생이, 하나님께서는 그것을 통해 수년 수십년 후에 100배가 넘게 열매를 맺어 주시는 것을 보게 되었다”
-
-![](/assets/IMG_8935-768x1024.jpeg)
-
-주여! 우리 부흥의 마중불의 눈물의 기도와 희생을 주님께 올려 드립니다~! 주여! 주님의 때에 이 웨일즈 땅에 은총과 간구하는 심령을 부어 주사 이 땅 백성들이 예수님을 다시 한 번 바라보게 하소서! 주여! 예수님의 복음이 이 땅의 다음 세대에 전해질 때에 그들에게 진정한 회개와 애통하는 영을 부어 주사 이 곳 교회들이 부흥하게 하소서!
-
-\[끝\]
+He did. Pastor Kim responded immediately and placed us with the team called *“부흥의 마중불”*—which roughly translates as “The Kindling Spark of Revival,” the fire that lights the fire. The couple leading that team, Pastor Han Sang-gyu and his wife, were people we had prayed alongside in Luton in 2017. This would be their seventh year on a UK prayer mission. To be reunited with those same prayer companions, on the same ground, was itself a gift. And both my wife and I got our time off work without any trouble. Every door opened. You could feel God’s hand threading it all together.
 
 —-
 
-**업데이트:** 2년 후, 그 기도실에서 우리가 실제로 무엇을 하고 있었는지에 대해 더 깊이 성찰했습니다 — [통성기도의 능력](/부르짖으라/).
+## Arriving in Newbridge
+
+The day came, and we loaded the baby into the car and drove to Newbridge—a small town in the Welsh valleys where we would spend the week at Tabernacle Baptist Church. Pastor Cho Young-tae, who has pastored that church for thirteen years, and his wife welcomed us warmly and shared how God had been faithfully guiding them through everything. That evening, the six members of the “Kindling Spark” team arrived from Korea, and the day ended with all of us together.
+
+—-
+
+## The Daily Schedule
+
+Pastor Cho had laid out a full itinerary for Tuesday through Saturday:
+
+- **9 am–12 pm:** Visiting surrounding churches, leading joint prayer meetings with local believers
+- **1–4 pm:** Prayer-walking the neighborhoods around each visited church
+- **7–10 pm:** Evening services and prayer meetings with Tabernacle congregation
+- **10 pm–12 am:** Pulpit prayer
+
+What follows are the episodes that stood out to me.
+
+—-
+
+## Tuesday Morning — Newbridge Primary School
+
+The team from Tabernacle moved into that school like a well-practiced unit, presenting the gospel to the children with real skill and confidence. This was not a one-time thing—the school had welcomed the church team back repeatedly, and that familiarity showed. The presentation centered on the story of Zacchaeus, pitched perfectly to every age group in the room. Then came singing and movement, with all the children—every single one of them—belting out *“Jesus Loves Me”* at the top of their lungs and throwing themselves into the actions.
+
+Standing there watching those Welsh children sing with everything they had, I caught a glimpse of what the next generation of Wales could look like.
+
+![](/assets/IMG_8811.jpeg)
+
+The influence Pastor Cho and his whole family have built in Newbridge is extraordinary. Walking through those streets, I could not find a single person—child or adult—who did not know Pastor Cho, who goes by Peter among the locals. He greeted everyone we passed, and the warmth was unmistakably mutual. That is what years of loving a place looks like.
+
+—-
+
+## Wednesday Morning — Clyde Street Pentecostal Church, Risca
+
+![](/assets/IMG_8823.jpeg)
+
+This church in Risca had gone without a pastor for about two years. The deacons were taking turns preaching. The lead deacon explained their situation to us, and what struck me was how openly desperate he was—remarkably un-British, in the best sense. He must have said “we are desperate” more than ten times. He was not exaggerating. The congregation kept holding funerals as older members went home to heaven one by one, but no younger generation was filling in behind them. Most of their own children and grandchildren had walked away from the faith. The sadness in his face as he described that was real—and it was the kind of sadness that produces intercession rather than despair. There was nothing left to try except God.
+
+After the deacon sat down, one of our pastors came forward, shared a brief word from Scripture, and explained why a prayer team had come all the way from Korea to Wales. He said it simply and humbly: “Your ancestors came to Korea over a hundred years ago and brought us the gospel. The Korean church exists because of that sacrifice. We are here to repay a debt of grace—even a little. We want to pray with you.” Every church we said that to opened up. Every time.
+
+Of course, praying *with* British believers brings its own cultural friction. Simultaneous voiced prayer—what Koreans call *tongsung gido*—is second nature to our team, but even to Pentecostals in England it can feel alien and overwhelming. So rather than just launching into it, we always explained: this is biblical, this is the natural expression of urgency, this is the spirit behind Daniel 9:19—crying “Lord!” three times before everything else. We invites them into it rather than performing it *at* them. And these desperately earnest British believers prayed with us.
+
+After about thirty minutes of that kind of intercession, the church leaders said something that clearly surprised even themselves: “We haven’t prayed like that in a very long time. Thank you.” Then the leaders slipped into a side office for a brief meeting—and came back to quietly hand Pastor Cho an envelope containing £2,000. “Please use it for this precious prayer mission.” Pastor Kim Nam-jin later told us he had never seen anything like that happen in all his years of leading prayer missions. The groaning of that congregation had reached our team’s hearts, and our team’s groaning had reached theirs. All glory to God.
+
+What I heard afterward from Pastor Kim’s team has stayed with me: that church is not an exception in Wales. It is the rule. Across Wales, most churches are in exactly that situation—deacons rotating through the pulpit, no pastor, and a five-to-ten year window in which many of these congregations will either see God move or simply cease to exist. That is not hyperbole. That is the reality on the ground.
+
+—-
+
+## Thursday Morning — Cross Keys Pentecostal Church
+
+![](/assets/IMG_0822.jpeg)
+
+This church had also gone through a prolonged stretch without a pastor after their previous one left suddenly. Attendance had fallen so far that they had stopped using the main sanctuary entirely and were holding services in the adjoining education hall. About a year and a half earlier, Pastor Matthew had come on board as a part-time minister—but for the past eighteen months he had been battling an unnamed illness that left him perpetually exhausted, with no energy. He asked us to pray.
+
+We prayed earnestly, then went out for a prayer walk through the neighborhood before the congregation’s lovingly prepared lunch. Walking through those streets, we came across a small windowless building with a name on it we had never heard: *Spiritualist Church.* Pastor Matthew explained it later—a group that claims to summon the spirits of the dead. Barely worth calling a church. And directly next door to it: a *Morbitorium*, an exhibit dedicated to the theme of death. In a village that might not even have a post office. A few doors down the street, some of the houses were decorated with skulls and all kinds of genuinely dark imagery. Pastor Matthew told us this area ranks among the most militantly atheistic in all of Wales.
+
+Seeing that with my own eyes—and thinking about the pastor who had moved into this community to serve and then fallen into this mysterious, exhausting illness—I found myself wondering whether there was something spiritually intentional about it. The prayer that rose up from inside me after that walk was a different kind of desperate.
+
+—-
+
+## A Shared Burden: The Left in the Korean Church
+
+In the conversations I had with Pastor Han Sang-gyu, Pastor Ryu Ju-hyun, and Pastor Han Sung-mo of the “Kindling Spark” team, I found a shared concern that runs deep in all of us: the infiltration of left-wing and liberal theology into the Korean church. I shared a post I had written earlier, *“The Pure Gospel and Tim Keller’s Left-Wing Ideology”* [[2023-keller]](/keller).
+
+That conversation opened something. Pastor Han Sung-mo confessed that he had once been a left-wing pastor himself—and that only the grace of Jesus brought him through genuine repentance and restoration. After the mission ended, he was kind enough to write out that story and send it to me. [[2023-pastor-han]](/pastor-han)
+
+—-
+
+## Friday Morning — Cardiff, in Front of the Senedd
+
+![](/assets/IMG_8891.jpeg)
+
+Cardiff was once the coal export capital of the world. At its peak, more trade passed through Cardiff Bay than through New York City, and the wealth was staggering. But as global competition mounted, the mines closed one by one—by the 1970s and ‘80s, the mining industry had collapsed and tourism became the primary economy. The city never quite recovered. Standing in front of the Senedd—the Welsh Parliament—praying over it, I felt something like anticipation. When revival fire sweeps across Wales again, I believe it will bring not only spiritual renewal but economic restoration. That kind of hope is not naive. It is scriptural.
+
+—-
+
+## Thursday Evening — The Joint Service in Pontypridd
+
+![](/assets/IMG_0808.jpeg)
+
+Three prayer mission teams serving the Pontypridd region gathered with the local believers they had been ministering alongside for a joint evening service. The worship was hot, the preaching was direct, and the prayer was thick with expectation. I caught another glimpse of what Welsh revival looks like in seed form.
+
+We couldn’t attend the final gathering on Wednesday the 12th, but I heard about it afterward: all nine prayer mission teams—110 Korean intercessors in total—gathered with the local Welsh congregations they had been hosting them, and the worship and prayer that evening was described as something extraordinary. Hearing that, I thought of Elijah’s servant seeing a cloud the size of a man’s hand rising from the sea. It is small. But it is there. God is going to do something in Wales in these last days.
+
+—-
+
+## Fasting—and Stopping
+
+About five years ago, through Derek Prince’s teaching on the power of prayer and fasting, I adopted a weekly Wednesday fast that I have kept consistently ever since—and I have received enormous spiritual benefit from it. When circumstances don’t permit Wednesday, I fast Tuesday instead. Weekly fasting has become for me what Sunday worship is: not an obligation but a discipline I love. Earlier this year, my wife and I undertook a twenty-one-day fast together, and the grace we encountered during those weeks—the goodness God stores up for those who fear Him and take refuge in Him (Psalm 31:19)—was one of the richest spiritual experiences of our marriage. I believe the breakthrough that made this prayer mission possible came partly during that fast. I wrote about it here: [[2023-fasting]](/fasting).
+
+So when I first connected with the “Kindling Spark” team, I was burning to suggest that we all fast together as a team. The idea felt so obviously right to me that I shared the fasting post in the group chat before thinking it through. The problem: that kind of suggestion—however good it might be in principle—belongs to the team leader first. Pastor Han was gracious about it, and I told him I would drop the subject entirely and not bring it up again. And so this prayer mission became the first stretch in five years where I did not fast on any of the weekdays.
+
+Reflecting on it now, I realize group fasting is genuinely more complicated than I had appreciated. Throughout the week, every church we visited prepared food for us. At Cross Keys Pentecostal Church, one of the congregation members had gone online, watched a tutorial on how to make Korean miyeok-guk (seaweed soup), sourced premium beef, and made it from scratch for us. If we had declared a fast that day, what would refusing that have communicated? What would it have done to her?
+
+Here is what I learned: even a genuinely good thing must be disciplined when it becomes the enemy of the best. I still hope that someday this prayer mission movement will include a coordinated group fast—but next time, with everyone’s understanding and consent secured well in advance.
+
+—-
+
+## Brothers in Faith: Pastors Kim, Cho, and Lee
+
+One of the unexpected blessings of this trip was learning the story of how three men became something like sworn brothers in the faith. Pastor Kim Nam-jin, who leads the prayer missions; Pastor Lee Sang-bo, who pastors in London; and Pastor Cho Young-tae, our host in Newbridge—all three are the same age, and God brought them together a few years ago. What started as a providential meeting deepened so rapidly that they formed the kind of friendship where you can say the hard things, where you lay down the real burdens, where you find genuine rest. God gave them to each other as gospel partners.
+
+And this, I found out, is partly the fruit of a prayer. Pastor Cho’s wife had been praying for years: “My husband is out here in this rural community, doing this ministry alone, with no real friends. God, give him a friend.” God answered that prayer—with two.
+
+Our God is a Father who attends to every detail.
+
+—-
+
+## VBS — Vacation Bible School
+
+Running concurrently with our prayer mission, an American Korean-church team of 1.5- and second-generation young adults had come to Wales to lead Vacation Bible School at several local churches—bringing the gospel directly to Welsh children. Throughout our week of intercession, we were praying over that VBS effort as well. It was a beautiful thing: the prayer mission and the evangelism mission running side by side, each covering the other. I am praying for much fruit and revival through that kind of sustained, layered kingdom work.
+
+—-
+
+## Guitar Aid
+
+The greatest story of the week, for me, came from John Palmer—a deacon at Tabernacle Baptist Church who has walked with Jesus for seventy-five years, since he received Christ as a teenager. His mother, he told us, was a woman of prayer who personally led every member of her family to the Lord.
+
+One evening John spotted the guitar used in the church’s worship and said there was a testimony attached to it. Back in the 1960s, when John’s monthly salary was fifty pounds, the son of the pastor at his church came to him with a request: “I want to serve in worship ministry, but I have no money for a guitar. Could you spare ten pounds for a second-hand one?” John didn’t have ten pounds to spare at that moment. But he started saving, and three months later he handed the young man the money. The guitar was bought. The young man threw himself into worship ministry.
+
+Decades passed. That same young man eventually founded a charity called Guitar Aid—partnering with guitar manufacturers in Wales to source quality instruments and donate them to mission fields around the world. To date, roughly four thousand guitars have been given away through Guitar Aid.
+
+John looked at us and said: “The truth I have experienced more times than I can count in my life is this—when you make a small sacrifice for the kingdom of God, He takes it and multiplies the fruit a hundredfold, not just years later but decades later.”
+
+I have been thinking about that ever since.
+
+—-
+
+![](/assets/IMG_8935.jpeg)
+
+Lord—we lift up the tears and the sacrifice of this “Kindling Spark of Revival” team before You. Lord, in Your time, pour out a spirit of grace and supplication upon this land of Wales, so that its people would look again to Jesus. Lord, as the gospel of Christ is proclaimed to the next generation of this land, pour out upon them a spirit of genuine repentance and mourning—so that these churches would be revived.
+
+*— End*
+
+—-
+
+**Update:** two years on, I wrote a deeper reflection on what we were actually doing in those prayer rooms — [The Power of Crying Out in Corporate Prayer](/cry-out/).

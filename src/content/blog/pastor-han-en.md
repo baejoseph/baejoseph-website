@@ -106,4 +106,4 @@ To Him alone be the glory. *Praise the Lord!*
 
 —-
 
-**Update:** this testimony was shared during the 2023 Wales Prayer Mission — [full report here](/prayer-mission-2023/).
+**Update:** this testimony was shared during the 2023 Wales Prayer Mission — [full report here](/2023-prayer-mission/).

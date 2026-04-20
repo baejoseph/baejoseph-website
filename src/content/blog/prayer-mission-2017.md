@@ -186,4 +186,4 @@ To God alone be the glory—*Sola Deo Gloria.*
 
 —-
 
-**Update:** six years later, back on mission — this time Wales — [2023 Wales Prayer Mission](/prayer-mission-2023/).
+**Update:** six years later, back on mission — this time Wales — [2023 Wales Prayer Mission](/2023-prayer-mission/).
