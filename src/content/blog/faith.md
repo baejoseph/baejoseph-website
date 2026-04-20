@@ -2,7 +2,7 @@
 title: "📣 “I Believed, Therefore I Spoke”: The Faith to Cry Out"
 date: "2026-03-12"
 lang: "en"
-tags: ["prayer", "theology", "testimony", "courage"]
+tags: ["prayer", "theology", "testimony", "courage", "video"]
 slug: "faith"
 pairedSlug: "믿음-말"
 featuredImage: "/assets/faith.jpg"
