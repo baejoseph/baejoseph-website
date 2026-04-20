@@ -1,7 +1,7 @@
 ---
 title: "🕊️ Derek Prince: A Life Poured Out"
 date: "2019-03-15"
-slug: "the-prince"
+slug: "prince"
 lang: "en"
 pairedSlug: "프린스"
 featuredImage: "/assets/OIP.ymIpXpon3veAYEAJTTAiCgHaKU.jpeg"
