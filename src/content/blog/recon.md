@@ -5,7 +5,7 @@ slug: "recon"
 lang: "en"
 pairedSlug: "정찰"
 featuredImage: "/assets/SCR-20241103-u7b-scaled.jpeg"
-
+youtubeId: "nYBLz7gWVLI"
 tags: ["evangelism", "travel"]
 ---
 
