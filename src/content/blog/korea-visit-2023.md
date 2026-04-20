@@ -29,7 +29,7 @@ Just watching Rick and Patricia Ridings was its own kind of sermon. I kept think
 
 Missionary Ridings preached from Amos 9:11–15 and 1 Chronicles 15–16, and what he said hit me with the force of something I can only call prophetic weight. The core of the message was simple: in a world full of chaos and complexity, what we need most—what we have always needed most—is the *presence of God.*
 
-He shared how, forty years ago, on his first visit to Korea, he received a vision at a prayer mountain: go to Jerusalem and build a house of prayer. That became Succat Hallel—”Tent of Praise”—where today, around the clock, worship teams cycle through unceasing prayer and song. (What undid me was this detail: among those teams are two groups made up entirely of children aged 5–12, each capable of leading a full hour of worship on their own. And multiple youth teams able to sustain three hours. Children, in Jerusalem, singing to God without stopping.)
+He shared how, forty years ago, on his first visit to Korea, he received a vision at a prayer mountain: go to Jerusalem and build a house of prayer. That became Succat Hallel—“Tent of Praise”—where today, around the clock, worship teams cycle through unceasing prayer and song. (What undid me was this detail: among those teams are two groups made up entirely of children aged 5–12, each capable of leading a full hour of worship on their own. And multiple youth teams able to sustain three hours. Children, in Jerusalem, singing to God without stopping.)
 
 > “On that day I will raise up the tabernacle of David, which has fallen down, and repair its damages; I will raise up its ruins, and rebuild it as in the days of old.”
 >
