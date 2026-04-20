@@ -3,7 +3,7 @@ title: "📜 Rapture Will"
 date: "2024-09-27"
 slug: "will"
 lang: "en"
-pairedSlug: "의지"
+pairedSlug: "유언장"
 featuredImage: "/assets/MTkxMjc4OTQ4OTk3NDczODkw.webp"
 
 tags: ["eschatology"]
