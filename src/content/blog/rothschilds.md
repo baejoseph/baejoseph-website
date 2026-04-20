@@ -60,7 +60,7 @@ Mayer Amschel Rothschild moves his family home to a five storey house in Frankfu
 
 1790: Mayer Amschel Rothschild states,
 
-"Let me issue and control a nation's money and I care not who writes the laws"
+“Let me issue and control a nation’s money and I care not who writes the laws”
 
 1791: The Rothschilds get, “control of a nation’s money,” through Alexander Hamilton (their agent in George Washington’s cabinet) when they set up a central bank in the USA called the First Bank of the United States.
 
@@ -343,7 +343,7 @@ Herzl is subsequently elected President of the Zionist Organisation which adopts
 
 In 1893, a massive bank panic (bank runs) coincided with the worst depression the United States had ever seen, and by the early months of 1895, things were getting desperate for US President Grover Cleveland.  
   
-The country's economy was collapsing because of falling prices and rising unemployment that began with the Panic of 1893. Eighteen months later, millions were unemployed and the treasury’s reserves were dropping too.  
+The country’s economy was collapsing because of falling prices and rising unemployment that began with the Panic of 1893. Eighteen months later, millions were unemployed and the treasury’s reserves were dropping too.  
   
 January 24, 1895, the Treasury has only $68 million. Scarcely a week later it was down $45 million. President Cleveland tried to avert the disaster. With Treasury Secretary John Carlisle, the President had proposed a plan to sell government bonds to the public to raise $60 million.  
   
@@ -361,7 +361,7 @@ The only people capable of stopping them and publicly opposed the Federal Reserv
   
 To honor him, Salmon P. Chase is on the $10,000 dollar bill—paper “money” that is now called Federal Reserve Notes still used as currency known as the “dollar” today.  
   
-SEE THE LONG GAME ???????"
+SEE THE LONG GAME ???????”
 
 1901: The Jews from the colonies set up in Palestine by Edmond James de Rothschild, send a delegation to him which tell him,  
   
@@ -445,7 +445,7 @@ On December 12, Germany and her allies offer peace terms to end the war.
   
 1917: As a result of Germany’s offer of peace the Rothschild war machine goes into overdrive in America, spreading propaganda which leads to President Wilson under the instructions of American Zionist leader and Supreme Court Justice, Louis Dembitz Brandeis, reneging on his promise to the electorate and taking America into the first world war on April 6.  
   
-As per the Rothschild Zionist promise to the British, to take America into the war, they decide they want something in writing from the British to prove that they will uphold their side of the bargain. The British Foreign Secretary, Arthur James Balfour therefore drafts a letter which is commonly known as the, “Balfour Declaration".  
+As per the Rothschild Zionist promise to the British, to take America into the war, they decide they want something in writing from the British to prove that they will uphold their side of the bargain. The British Foreign Secretary, Arthur James Balfour therefore drafts a letter which is commonly known as the, “Balfour Declaration”.  
   
 The Rothschilds order the execution by the Bolsheviks they control, of Tsar Nicholas II and his entire family in Russia, even though the Tsar had already abdicated on March 2.  
   
@@ -656,7 +656,7 @@ This attitude reveals the true aim of the Rothschilds, to eliminate all competit
 
 1963: On June 4th President John F. Kennedy (the 35th President of the United States 1961 – 1963) signs Executive Order 11110 which returned to the U.S. government the power to issue currency, without going through the Rosthchilds owned Federal Reserve.  
   
-Less than 6 months later on November 22nd , president Kennedy is assassinated by the Rothschilds for the same reason as they assassinated President Abraham Lincoln in 1865, he wanted to print American money for the American people, as oppose to for the benefit of a money grabbing war mongering foreign elite. Also, for inspecting Dimona Nuclear Plant against Israel's wishes.  
+Less than 6 months later on November 22nd , president Kennedy is assassinated by the Rothschilds for the same reason as they assassinated President Abraham Lincoln in 1865, he wanted to print American money for the American people, as oppose to for the benefit of a money grabbing war mongering foreign elite. Also, for inspecting Dimona Nuclear Plant against Israel’s wishes.  
   
 This Executive Order 11110, is rescinded by President Lyndon Baines Johnson (the 36th President of the United States 1963 to 1969) on Air Force One from Dallas to Washington, the same day as President Kennedy was assassinated.  
   

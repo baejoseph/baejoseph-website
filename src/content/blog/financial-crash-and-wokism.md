@@ -19,52 +19,52 @@ If unaddressed, this corruption threatens to trigger a domino effect of institut
 
 1/
 
-There's a huge story behind @realchrisrufo's plagiarism investigations people have missed:
+There’s a huge story behind @realchrisrufo’s plagiarism investigations people have missed:
 
-The integrity of America's elite institutions has been destroyed by fraud, lying, low standards, and political corruption.
+The integrity of America’s elite institutions has been destroyed by fraud, lying, low standards, and political corruption.
 
-It's just like the 2007 housing market.
+It’s just like the 2007 housing market.
 
-I'll explain🧵
+I’ll explain🧵
 
 [](https://pbs.twimg.com/media/GZ3_jULWIAAfdS1.jpg)
 
 2/  
-To understand what's happening today we need to understand how the 2007 housing crisis happened.  
-Once we do that I'll show you how what's going on in America's elite institutions today perfectly mirrors what happened in the housing market during 2007  
+To understand what’s happening today we need to understand how the 2007 housing crisis happened.  
+Once we do that I’ll show you how what’s going on in America’s elite institutions today perfectly mirrors what happened in the housing market during 2007  
   
-Let's begin
+Let’s begin
 
 3/  
 To begin, we need to know what a Mortgage-Backed Security (MBS) is.  
   
 The bank take mortgages from different markets, packages them together, and then sell them. The buyer makes money collecting the mortgage payments the bank makes a profit selling mortgages.  
   
-That's the idea
+That’s the idea
 
 4/
 
 The idea here is to spread out the risk of lending.
 
-If you lend a billion dollars to one person and they don't pay you back, you lose a billion dollars. If you lend a mortage to 10,000 people and one doesn't pay you back, you still make money on the rest of the mortgages.
+If you lend a billion dollars to one person and they don’t pay you back, you lose a billion dollars. If you lend a mortage to 10,000 people and one doesn’t pay you back, you still make money on the rest of the mortgages.
 
 [](https://pbs.twimg.com/media/GZ4PN2fW8AAYcYR.jpg)
 
 5/  
 In this way you end up with lots of mortgages that almost everyone is paying on, and as long as that happens the package is very valuable, and whoever buys the loans gets to make money collecting the mortgage payments.  
   
-But there's a catch…people have to make their payments
+But there’s a catch…people have to make their payments
 
 6/  
 If loans are made by reputable lenders with high standards to people with good credit who can afford them, almost all the mortgages get paid off.  
   
-If the banks lower their standards, make bad loans, engage in fraud, then mortgages don't get paid…and the bank loses it's money
+If the banks lower their standards, make bad loans, engage in fraud, then mortgages don’t get paid…and the bank loses it’s money
 
 7/  
   
 In 2007 banks began to lower their standards, make risky loans, give high risk mortgages to people who could not afford them.  
   
-OK, now here is the key thing that explains what's going on in out institutions. Pay close attention…..
+OK, now here is the key thing that explains what’s going on in out institutions. Pay close attention…..
 
 8/  
 Then banks took all those bad, risky, fraudulent, low standard mortgages and packaged them together into Mortgage backed securities….and then sold them like they were just as good as the good, safe, legitimate, high standard mortgages.  
@@ -75,7 +75,7 @@ See what the problem is here???
 
 They packaged thousands of corrupt loans that were never going to be paid off into Mortgage backed securities, and sold them like they just as good as the Mortgage backed securities that were filled with good loans.
 
-And then people bought these MBS's full of terrible loans…
+And then people bought these MBS’s full of terrible loans…
 
 [](https://pbs.twimg.com/media/GZ4UOgcWAAI7IrT.jpg)
 
@@ -84,17 +84,17 @@ Not only that, but using various other financial instruments, the Mortgage-Backe
 
 11/
 
-When lots of bad mortgages are packeded and sold as though they were just as legitimate as good mortgages, you get an entire economy that's built on a foundation of bad mortgages, low standards, fraud, and corruption
+When lots of bad mortgages are packeded and sold as though they were just as legitimate as good mortgages, you get an entire economy that’s built on a foundation of bad mortgages, low standards, fraud, and corruption
 
-This is basically what's happened with our institutions
+This is basically what’s happened with our institutions
 
 [](https://pbs.twimg.com/media/GZ4XUTrW4AAR2pA.jpg)
 
 12/  
-An economy built on bad mortgages people can't afford collapses when the payments stop because organizations that depend on those payments end up going broke, and other organizations that financially depend the first set of organizations also go broke. They fall like dominos.
+An economy built on bad mortgages people can’t afford collapses when the payments stop because organizations that depend on those payments end up going broke, and other organizations that financially depend the first set of organizations also go broke. They fall like dominos.
 
 13/  
-This is what's happening in our elite institutions.  
+This is what’s happening in our elite institutions.  
   
 I will explain.  
   

@@ -23,6 +23,6 @@ One chilling example of this is the new Apple TV+ series, “Sugar”. Its story
 
 Given this, we must remain vigilant in prayer and steadfast in our commitment to truth. We cannot be silent or complacent. The Rapture is not merely a doctrine for theological debate; it is a reality that could occur at any moment. Now is the time for the Church to rise up and proclaim this truth boldly, preparing both ourselves and those around us. A Rapture Will is just one practical way to demonstrate our faith in action, showing that we truly believe in what Scripture promises.
 
-As we live in these uncertain times, let us hold fast to the blessed hope of Jesus Christ's imminent return. Let us prepare our hearts, our homes, and our loved ones, both in practical and spiritual ways. Time is short, and the harvest is ready. May we be found faithfully serving when our Lord comes, and may we use every opportunity—even our own preparations for departure—to testify of His saving grace.
+As we live in these uncertain times, let us hold fast to the blessed hope of Jesus Christ’s imminent return. Let us prepare our hearts, our homes, and our loved ones, both in practical and spiritual ways. Time is short, and the harvest is ready. May we be found faithfully serving when our Lord comes, and may we use every opportunity—even our own preparations for departure—to testify of His saving grace.
 
 The world may not understand what is coming, but we do. Let us act like it.

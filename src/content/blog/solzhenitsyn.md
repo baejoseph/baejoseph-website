@@ -31,7 +31,7 @@ In his speech Solzhenitsyn gave a dire warning to the West. 
 14.  And yet—no weapons, no matter how powerful, can help the West until it overcomes its loss of willpower. In a state of psychological weakness, weapons become a burden for the capitulating side.
 15.  In the American democracy at the time of its birth, all individual human rights were granted because man is God’s creature. That is, freedom was given to the individual conditionally, in the assumption of his constant religious responsibility.
 16.  All the glorified technological achievements of Progress, including the conquest of outer space, do not redeem the 20th century’s moral poverty which no one could imagine even as late as in the 19th Century.
-17.  Not by coincidence all of communism’s meaningless pledges and oaths are about Man, with a capital M, and his earthly happiness. At first glance it seems an ugly parallel: common traits in the thinking and way of life of today's West and today’s East?
+17.  Not by coincidence all of communism’s meaningless pledges and oaths are about Man, with a capital M, and his earthly happiness. At first glance it seems an ugly parallel: common traits in the thinking and way of life of today’s West and today’s East?
 18.  Liberalism was inevitably displaced by radicalism; radicalism had to surrender to socialism; and socialism could never resist communism.
 19.  In our Eastern countries, communism has suffered a complete ideological defeat; it is zero and less than zero. But Western intellectuals still look at it with interest and with empathy.
 20.  Even if we are spared destruction by war, our lives will have to change if we want to save life from self-destruction.

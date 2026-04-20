@@ -13,7 +13,7 @@ tags: ["leftism", "trump"]
 
 ### Georgia:
 
--   Vote Discrepancies: Georgia's final certified results were 300,000 votes more than initially claimed. Various recounts yielded different results.
+-   Vote Discrepancies: Georgia’s final certified results were 300,000 votes more than initially claimed. Various recounts yielded different results.
 -   Ballot and Vote Manipulation: Instances of broken seals, removed memory cards, and missing ballot images. Significant numbers of ballots were counted multiple times.
 -   Ineligible Voters: Reports of ineligible and illicit votes, including votes from invalid residencies and early absentee ballots.
 -   Ballot Trafficking: Allegations of a significant ballot trafficking operation, with improper handling of drop box ballots.
@@ -24,7 +24,7 @@ tags: ["leftism", "trump"]
 -   Illegal Drop Boxes: The use of drop boxes, later ruled illegal, led to thousands of ballots being cast unlawfully.
 -   Indefinitely Confined Voters: Surge in absentee votes from individuals claiming to be indefinitely confined, without proper voter ID.
 -   Nursing Home Voting Fraud: Nursing home staff allegedly influenced elderly residents to vote, bypassing legal oversight.
--   Private Funding Influence: Mark Zuckerberg's funding through CTCL allegedly influenced election procedures, favoring Democrats.
+-   Private Funding Influence: Mark Zuckerberg’s funding through CTCL allegedly influenced election procedures, favoring Democrats.
 
 ### Pennsylvania:
 
@@ -74,7 +74,7 @@ This comprehensive database provides a collection of recent, proven instances of
 
 ### 2\. [Campaign Legal Center: Results of Lawsuits Regarding the 2020 Elections](https://campaignlegal.org/results-lawsuits-regarding-2020-elections)
 
--   This resource provides an extensive overview of the legal challenges and lawsuits filed in connection with the 2020 elections. It includes details about the nature of the lawsuits, the outcomes, and the courts' decisions.
+-   This resource provides an extensive overview of the legal challenges and lawsuits filed in connection with the 2020 elections. It includes details about the nature of the lawsuits, the outcomes, and the courts’ decisions.
 
 ### 3\. Georgia State Election Board
 

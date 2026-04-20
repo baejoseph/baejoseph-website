@@ -67,7 +67,7 @@ Simple.
 
 It’s not a matter of want for Christian values, but is rather a question of the nature and implementation of the Kingdom. This is the crux of the matter.
 
-To institute and rule the Kingdom without the bodily presence of the King, is to betray him and stage a coup d'état.
+To institute and rule the Kingdom without the bodily presence of the King, is to betray him and stage a coup d’état.
 
 In a word, it’s Antichrist.
 

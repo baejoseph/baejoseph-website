@@ -21,7 +21,7 @@ Secondly, I achieved clarity on the essence of the gospel message, succinctly ca
 2.  He was buried,
 3.  [He rose again on the third day](/bayes), according to the Scriptures.
 
-This understanding simplified my mission. My task is to communicate these truths clearly and allow the listener to respond. Questions may arise, such as the nature of sin or the scriptural basis for Christ's life and mission, and I am prepared to address these if asked. However, my primary duty remains the clear proclamation of these facts.
+This understanding simplified my mission. My task is to communicate these truths clearly and allow the listener to respond. Questions may arise, such as the nature of sin or the scriptural basis for Christ’s life and mission, and I am prepared to address these if asked. However, my primary duty remains the clear proclamation of these facts.
 
 Below is a typical interaction I might have during street evangelism:
 
@@ -34,7 +34,7 @@ Below is a typical interaction I might have during street evangelism:
     Me: “Excellent. I wish you a great day, sir.”
     [I then move on to the next individual.]
 
-This method reflects the biblical model of evangelism. Jesus did not instruct us to persuade but to proclaim the gospel. He assured us that His sheep would hear His voice and respond. Faith arises from hearing God's Word. While we are accountable for sharing the Gospel, the responsibility for individual responses rests not on our persuasiveness but on the Holy Spirit’s movement in each heart.
+This method reflects the biblical model of evangelism. Jesus did not instruct us to persuade but to proclaim the gospel. He assured us that His sheep would hear His voice and respond. Faith arises from hearing God’s Word. While we are accountable for sharing the Gospel, the responsibility for individual responses rests not on our persuasiveness but on the Holy Spirit’s movement in each heart.
 
 Related to these insights, I want to address the concept of “lordship salvation,” which posits that salvation requires one to accept Jesus not only as Saviour but also as Lord. This is a common mistake that I used to believe as well, but now I realise it is not scriptural. The lordship salvation doctrine adds a condition beyond the simple faith in the Gospel message of Christ’s atoning death and resurrection as outlined in the Scriptures. Such an addition is contrary to the Biblical pattern such as in Ephesians 2:8-9, where salvation is clearly stated to be by grace through faith alone, not by some acknowledgment of His lordship over our lives as a precondition. Sure, accepting Jesus as our Lord must happen and it happens after salvation, but to introduce it as a precondition for salvation introduces unnecessary barriers to salvation and hinders effective evangelism.
 

@@ -16,7 +16,7 @@ tags: ["eschatology"]
 
 The teaching on the rapture can first be found in John 14. After finishing the Last Supper, Jesus tells His disciples, “Do not let your hearts be troubled… I go to prepare a place for you. And if I go and prepare a place for you, I will come again and receive you to Myself, that where I am, there you may be also.” This “I will come again and receive you to Myself” refers to the rapture. In this event, Jesus comes specially to take His church saints to where He is, which is heaven.
 
-The second biblical basis for the rapture is found in 1 Thessalonians 4. Paul founded the church in Thessalonica and had three weeks to teach basic Christian doctrines, including the rapture. However, he didn't have time to explain everything, like what happens to believers who die before the rapture. Paul answers this in his first letter, explaining that not only will deceased believers participate in the rapture, but they will be resurrected before the living believers are caught up. Let’s list the seven stages of the rapture event from verses 13-18:
+The second biblical basis for the rapture is found in 1 Thessalonians 4. Paul founded the church in Thessalonica and had three weeks to teach basic Christian doctrines, including the rapture. However, he didn’t have time to explain everything, like what happens to believers who die before the rapture. Paul answers this in his first letter, explaining that not only will deceased believers participate in the rapture, but they will be resurrected before the living believers are caught up. Let’s list the seven stages of the rapture event from verses 13-18:
 
 1.  The Lord Jesus Himself will descend from heaven.
 2.  The Lord will give a shout (a military term for a commanding officer issuing orders).

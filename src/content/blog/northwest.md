@@ -14,21 +14,21 @@ Refugees from the northwest — landowners stripped bare, families murdered, chu
 
 Eighty to ninety percent were devout Protestants, many tied to Youngnak Church. They carried the Word in their hearts and steel in their hands. They did not negotiate with evil. They crushed it. When communists rose on Jeju, these men were the hammer that fell. Fiercely masculine, militantly Christian, they fought the way men are supposed to fight: without apology, without retreat.
 
-These were Korea's 20th-century Crusaders. This was our own Marine Corps storming the shores against the Barbary pirates — impossible odds, certain victory because God and courage were on their side.
+These were Korea’s 20th-century Crusaders. This was our own Marine Corps storming the shores against the Barbary pirates — impossible odds, certain victory because God and courage were on their side.
 
 They understood what too many soft Christians today have forgotten: leftism is not a policy error. It is spiritual warfare. It is the same ancient serpent that devours families, perverts truth, and mocks the Creator. The Northwest Youth saw it clearly because they had already buried their dead under it.
 
-They did not wait for permission. They did not post memes. They stood up, organized, and acted like men who knew their regiment's honor was at stake.
+They did not wait for permission. They did not post memes. They stood up, organized, and acted like men who knew their regiment’s honor was at stake.
 
 We are living in their sequel.
 
-Global leftism has returned — slicker, better funded, wearing rainbow flags and climate slogans instead of red stars. It still hates the family, still hates private property, still hates the God who made distinctions. And once again, the Church is full of boys in men's bodies who would rather virtue-signal than fight.
+Global leftism has returned — slicker, better funded, wearing rainbow flags and climate slogans instead of red stars. It still hates the family, still hates private property, still hates the God who made distinctions. And once again, the Church is full of boys in men’s bodies who would rather virtue-signal than fight.
 
 We need a 21st-century global 서북청년단.
 
 Not in name, but in spirit. Young men — and not-so-young — who are done cowering. Who read their Bibles like battle orders. Who lift weights, fast, pray like warriors, and refuse to let their cities, their nations, or their children fall to the same ancient lie.
 
-The regiment is already forming. It is the local church. It is the men's group. It is you and me.
+The regiment is already forming. It is the local church. It is the men’s group. It is you and me.
 
 Make your regiment proud.
 
@@ -52,4 +52,4 @@ Fight. Fight. Fight.
 
 - [Prayer for Christian warriors](/prayer) — How to pray like a soldier for the Kingdom.
 - [Fasting for spiritual strength](/fasting) — Training your body and soul for spiritual warfare.
-- [Men's group formation](/men-group) — How to start or join a men's group that trains disciples for battle.
+- [Men’s group formation](/men-group) — How to start or join a men’s group that trains disciples for battle.
