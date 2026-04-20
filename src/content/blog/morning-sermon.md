@@ -45,7 +45,7 @@ Now, let me share a bit about my life.
 
 When I moved to the UK in 5th grade, until my college years, my father would wake my younger sibling and me up every day at 6 AM to attend early morning prayer. At first, I was reluctant and often dozed off during the prayer, but over time, as we read through the Bible using the McCheyne Bible Reading Plan, and prayed with the Word, I began to develop a deep desire to pray. (“_**Let me be the best at pray-er in this world!**_”) Throughout my university and graduate years, I continued attending early morning prayers, and now, I lead early morning prayers with fellow church members in the UK on Mondays, Wednesdays, and Fridays.
 
-In 2017, the experience of joining the [UK Prayer Mission](/2017-prayer-mission-eng) was a significant turning point for me. At that time, I clung to the following passage from **Isaiah 40:28-31**:
+In 2017, the experience of joining the [UK Prayer Mission](/2017-prayer-mission) was a significant turning point for me. At that time, I clung to the following passage from **Isaiah 40:28-31**:
 
 > “Have you not known? Have you not heard? The everlasting God, the LORD, the Creator of the ends of the earth, neither faints nor is weary. His understanding is unsearchable. He gives power to the weak, and to those who have no might He increases strength. Even the youths shall faint and be weary, and the young men shall utterly fall, but those who wait on the LORD shall renew their strength; **they shall mount up with wings like eagles**, they shall run and not be weary, they shall walk and not faint.”
 > 

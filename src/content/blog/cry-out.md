@@ -10,7 +10,7 @@ youtubeId: "RhIkjOfLjEw"
 tags: ["prayer", "korea", "video"]
 ---
 
-\[_The following reflection was first sparked by an experience I had seven years ago while joining a Korean church prayer mission—see the original story [here](/2017-prayer-mission-eng1)_\]
+\[_The following reflection was first sparked by an experience I had seven years ago while joining a Korean church prayer mission—see the original story [here](/2017-prayer-mission)_\]
 
 Scripture is filled with urgent, vocal, even desperate cries to God. The psalmists “cry out” (Psalm 130:1; 142:1), Hannah pours out her soul with weeping and loud prayer (1 Samuel 1:10–16), Jesus Himself “offered up prayers and supplications with loud cries and tears” (Hebrews 5:7), and the early church lifted their voices together in united, loud, and public petition (Acts 4:24). Silent prayer and contemplative stillness certainly have their place—Jesus often withdrew to pray alone—but the dominant biblical pattern is unmistakable: God’s people cry aloud to Him, often together, often with intensity.
 
