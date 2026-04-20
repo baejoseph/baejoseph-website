@@ -6,6 +6,7 @@ tags: ["prayer", "theology", "testimony", "courage"]
 slug: "faith"
 pairedSlug: "믿음-말"
 featuredImage: "/assets/faith.jpg"
+youtubeId: "2HMisu5k8A0"
 ---
 
 > “I believed, therefore I spoke.”
