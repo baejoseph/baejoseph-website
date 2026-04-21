@@ -16,12 +16,18 @@ youtubeId: "2HMisu5k8A0"
 We were working through Psalm 118 in our small group Bible study last night. We came to verses 10–13, and the images there are vivid and violent:
 
 > “All nations surrounded me,
+>
 > But in the name of the Lᴏʀᴅ I will destroy them.
+>
 > They surrounded me, yes, they surrounded me;
+>
 > But in the name of the Lᴏʀᴅ I will destroy them.
+>
 > They surrounded me like bees;
 > They were quenched like a fire of thorns;
+>
 > For in the name of the Lᴏʀᴅ I will destroy them.
+>
 > **You pushed me violently, that I might fall,
 > But the Lᴏʀᴅ helped me.**”
 >
