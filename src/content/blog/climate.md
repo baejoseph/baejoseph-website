@@ -5,8 +5,8 @@ slug: "climate"
 lang: "en"
 featuredImage: "/assets/SCR-20231010-loc.jpeg"
 pairedSlug: "환경"
-
-tags: ["leftism", "eschatology"]
+youtubeId: "dUdQs2gKq5w"
+tags: ["leftism", "eschatology", "video"]
 ---
 
 According to the book of Revelation in the Bible, God will bring about a wholesale destruction of the environment as part of His end time judgement and wrath. In the Seven Trumpet judgements of chapter 8, John sees that “a third of the earth was burned up, a third of the trees were burned up, and all the green grass was burned up.” (v7) It goes on to say “a third of the sea turned to blood, a third of the living creatures in the sea died”.. and also “a third of the rivers and springs of waters turned bitter.” Later in the book, in the Seven Bowls judgements of chapter 16, we read “\[the sea\] turned into blood like that of a dead person, and every living thing in the sea died”.. and “rivers and springs of water became blood”. I don’t know about you, but this really struck me as an oddity at first. Why does God destroy the trees, the seas, rivers, and springs in order to punish for the rebellion of man against the Creator? Surely the trees haven’t done anything wrong?
