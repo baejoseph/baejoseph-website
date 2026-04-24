@@ -5,8 +5,9 @@ slug: "propitiation"
 lang: "en"
 pairedSlug: "속죄"
 featuredImage: "/assets/passionchrist-20170810094959.jpg"
+youtubeId: "6IgjdO4_ezg"
 
-tags: ["theology"]
+tags: ["theology", "video"]
 ---
 
 ### 🤷🏻 The Danger of a “Jesus-My-Boyfriend” Theology
