@@ -1,6 +1,6 @@
 ---
 title: "🔥 Survival"
-date: "2026-04-25"
+date: "2026-04-27"
 lang: "en"
 featuredImage: ""
 tags: ["trump", "leftism", "courage", "theology", "faith"]

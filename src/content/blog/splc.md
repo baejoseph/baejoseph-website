@@ -4,7 +4,7 @@ date: "2026-04-25"
 lang: "en"
 featuredImage: ""
 tags: ["leftism", "reflection"]
-pairedSlug: "splc-사기"
+pairedSlug: "사기"
 ---
 
 Picture this. You’re a well-meaning white leftist, probably a university professor somewhere in the Pacific Northwest. You send in your monthly tithe to the Southern Poverty Law Center to atone for your white guilt. You do this faithfully for over a decade, feeling righteous about your fight against extremism.

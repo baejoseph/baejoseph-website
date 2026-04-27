@@ -5,8 +5,8 @@ slug: "fasting"
 lang: "en"
 featuredImage: "/assets/SCR-20240524-rive.jpeg"
 pairedSlug: "금식"
-
-tags: ["fasting", "prayer"]
+youtubeId: "HRyHbQ1rZ-w"
+tags: ["fasting", "prayer", "video"]
 ---
 
 \[This is summary of Derek Prince’s teaching on fasting, broadly based on his book: “Shaping History Through Prayer and Fasting”.\]
