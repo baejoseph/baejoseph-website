@@ -19,7 +19,7 @@ Freedom is not democracy. Direct democracy is, in fact, the worst form of tyrann
 
 If freedom is not majority rule, what is it?
 
-I once worked at Samsung. The parallels with [North Korea](/north-korea/) are uncomfortable, and obvious to anyone who has been inside both systems. Both are run by a third-generation hereditary ruler. Both demand absolute top-down obedience. Both cultivate a culture in which colleagues are quietly encouraged to report on each other in the name of organisational purity. Both wrap brutal hierarchy in the rhetoric of collective purpose. Both organise labour around ideology as much as productivity. The indoctrination camps, portraits of the founder and his son’s in the corner office/cubicle polished every day — the resemblance is not metaphorical.
+I once worked at Samsung. The parallels with North Korea are uncomfortable, and obvious to anyone who has been inside both systems. Both are run by a third-generation hereditary ruler. Both demand absolute top-down obedience. Both cultivate a culture in which colleagues are quietly encouraged to report on each other in the name of organisational purity. Both wrap brutal hierarchy in the rhetoric of collective purpose. Both organise labour around ideology as much as productivity. The indoctrination camps, framed portraits of the founder and of his son in the corner office/cubicle polished every day — the resemblance is not metaphorical.
 
 But there is one difference between Samsung and North Korea. It is the only difference that matters. At Samsung, you can hand in your resignation any morning you choose. You can leave.
 
@@ -65,7 +65,7 @@ The remedy is not complicated. It is only politically difficult — which is to 
 
 **One.** Asylum on the grounds of religious persecution should be granted, by default, to ex-Muslims fleeing Islamic countries. The persecution they face is real, documented, and often lethal. They are the population for whom the asylum regime was made.
 
-**Two.** No further Islamic infrastructure should be permitted in the West. No new mosques. No Sharia councils, registered or otherwise. No state recognition of Islamic marriages outside the civil register. No Halal certification regimes operating with public sanction (and the same goes for Kosher — consistency cuts both ways). No exemptions from animal welfare law for [ritual slaughter](/halal/). No public funding, direct or indirect, for organisations with documented Muslim Brotherhood ties. No campus societies operating as recruiting fronts for the same.
+**Two.** No further Islamic infrastructure should be permitted in the West. No new mosques. No Sharia councils, registered or otherwise. No state recognition of Islamic marriages outside the civil register. No Halal certification regimes operating with public sanction (and the same goes for Kosher — consistency cuts both ways). No exemptions from animal welfare law for [ritual slaughter](/halal/). No public funding, direct or indirect, for organisations with documented Muslim Brotherhood ties. No campus societies operating as recruiting fronts for the same. The [Pakistani Muslim rape gangs](/reckoning) should be punished swiftly and publicly.
 
 **Three.** Those already here who wish to live under Sharia are free to leave. There are more than fifty Islamic countries in the world. The supply of jurisdictions willing to provide what they want is abundant. The supply of free societies is small, fragile, and being eroded.
 
@@ -77,6 +77,6 @@ This is not religious persecution. It is the basic condition of any free society
 
 The argument reduces to a simple either/or. Islam, in its mainstream and historical form, and Western civilisation are mutually incompatible systems. They make incompatible claims about freedom of conscience, the equality of women, the authority of secular law, the legitimacy of dissent, and the rights of those who change their minds. We cannot have both. We can have one, or we can have a long, ugly, demographic transition into the other, with the freedoms we inherited slipping away one Sharia council and one appeasement at a time.
 
-The compassionate, consistent, and self-respecting choice is clear. Open the door to those fleeing Islam. Close the door to the Islam they are fleeing. And recover the nerve to say so out loud.
+The compassionate, consistent, and self-respecting choice is clear. Open the door to those fleeing Islam. Close the door to the Islam they are fleeing. And recover the [nerve](/courage) to say so out [loud](/restore).
 
 If we cannot do this — if the polite consensus continues to insist that the question itself is forbidden — then within a generation we will discover that the freedom to leave, that one freedom which makes all the others real, has been quietly abolished in the country that used to be ours. And by then there will be no one left in power to hear the resignation letter.
