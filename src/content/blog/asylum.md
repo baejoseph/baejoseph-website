@@ -3,7 +3,8 @@ title: "🚪 The Only Logical Asylum Policy"
 date: "2026-04-28"
 lang: "en"
 featuredImage: ""
-tags: ["courage", "uk", "reflection", "faith"]
+tags: ["courage", "uk", "reflection", "faith", "video"]
+youtubeId: "-NtBY-iuG4M"
 pairedSlug: "난민"
 ---
 
