@@ -2,7 +2,7 @@
 title: "🔥 Survival"
 date: "2026-04-27"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/survival.jpg"
 tags: ["trump", "leftism", "courage", "theology", "faith"]
 pairedSlug: "생존"
 ---
