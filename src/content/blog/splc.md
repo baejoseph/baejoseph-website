@@ -2,7 +2,7 @@
 title: "🎭 The SPLC Hoax — How the Left Manufactured White Supremacy"
 date: "2026-04-25"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/splc.jpg"
 tags: ["leftism", "reflection"]
 pairedSlug: "사기"
 ---
