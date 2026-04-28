@@ -16,7 +16,7 @@ What follows is the argument.
 
 ## What is freedom?
 
-Freedom is not democracy. Direct democracy is, in fact, the worst form of tyranny ever devised, because the tyranny of the majority comes wrapped in the moral authority of “the people.” A king who jails you for dissent at least admits he is a king. Fifty—one percent of your neighbours voting to seize your home congratulate themselves on their virtue while doing it.
+Freedom is not democracy. Direct democracy is, in fact, the worst form of tyranny ever devised, because the tyranny of the majority comes wrapped in the moral authority of “the people.” A king who jails you for dissent at least admits he is a king. Fifty-one percent of your neighbours voting to seize your home congratulate themselves on their virtue while doing it.
 
 If freedom is not majority rule, what is it?
 
