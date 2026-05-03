@@ -1,14 +1,9 @@
 ---
 // FloatingThemedEmblem.astro — The Spirit moves through the words.
-//
 // Powered by @chenglou/pretext for real-time obstacle-aware text layout.
-// On each page load, randomly picks one themed emblem. Follows the cursor
-// with buttery 60fps lerp. Text reflows around it like water around a stone.
 //
-// Toggle flow: off → reflow (text wraps around emblem) → overlay (emblem only)
-// Accessibility: respects prefers-reduced-motion, toggle always available.
-//
-// Pretext loaded from esm.sh CDN to avoid bundling issues with is:inline scripts.
+// Pretext loaded via dynamic import at runtime. The library is ~10KB gzipped
+// and only loads on pages with article prose (not on index/tag listing pages).
 ---
 
 <div id="emblem-root"></div>
@@ -17,7 +12,6 @@
 (function () {
   'use strict';
 
-  /* ── Config ─────────────────────────────────────────────────────────── */
   var EMOJIS = [
     '\u271D\uFE0F',              // Cross
     '\uD83D\uDD4A\uFE0F',       // Dove
@@ -34,78 +28,54 @@
     '\uD83C\uDDF0\uD83C\uDDF7': 'rgba(150,160,200,0.5)',
   };
 
-  var SIZE       = 64;
+  var SIZE = 64;
   var OBSTACLE_R = 52;
-  var LINE_H     = 30;
-  var PARA_GAP   = 32;
-  var MIN_SLOT   = 40;
-  var LERP       = 0.15;
-  var STORAGE    = 'baejoseph_emblem_v2';
+  var LINE_H = 30;
+  var PARA_GAP = 32;
+  var MIN_SLOT = 40;
+  var LERP = 0.15;
+  var STORAGE = 'baejoseph_emblem_v2';
+  var PRETEXT_CDN = 'https://esm.sh/@chenglou/pretext@0.0.6';
 
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ── Guard ──────────────────────────────────────────────────────────── */
   var prose = document.querySelector('.prose');
   if (!prose) return;
 
   var isKo = prose.classList.contains('lang-ko');
-
-  /* ── Load Pretext from CDN ──────────────────────────────────────────── */
-  var PRETEXT_URL = 'https://esm.sh/@chenglou/pretext@0.0.6';
+  var fontStr = isKo ? '17px "Noto Sans KR", sans-serif' : '17px "Inter", -apple-system, BlinkMacSystemFont, sans-serif';
 
   (async function () {
     var pt;
-    try {
-      pt = await import(PRETEXT_URL);
-    } catch (e) {
-      // Pretext unavailable — fall back to overlay-only mode
-      initOverlayOnly();
-      return;
-    }
+    try { pt = await import(PRETEXT_CDN); } catch { return; }
 
-    // ── Extract article text from DOM ──────────────────────────────────
-    // Use innerText for natural rendering (respects display:none, etc.)
-    // Then split into paragraphs by double newlines
+    var prepareWithSegments = pt.prepareWithSegments;
+    var layoutNextLine = pt.layoutNextLine;
+
+    // ── Prepare text with Pretext ──────────────────────────────────
     var rawText = prose.innerText || prose.textContent || '';
-    if (!rawText) return;
-
     var rawParagraphs = rawText.split(/\n\n+/);
-
-    // ── Prepare text with Pretext ──────────────────────────────────────
-    var fontStr = isKo
-      ? '17px "Noto Sans KR", sans-serif'
-      : '17px "Inter", -apple-system, BlinkMacSystemFont, sans-serif';
-
     var preparedParagraphs = [];
 
     for (var i = 0; i < rawParagraphs.length; i++) {
       var text = rawParagraphs[i].trim();
       if (!text) continue;
-
-      var prepared = pt.prepareWithSegments(text, fontStr, {
-        wordBreak: isKo ? 'keep-all' : 'normal',
-      });
-
-      preparedParagraphs.push({
-        prepared: prepared,
-        cursor: { segmentIndex: 0, graphemeIndex: 0 },
-      });
+      var prepared = prepareWithSegments(text, fontStr, { wordBreak: isKo ? 'keep-all' : 'normal' });
+      preparedParagraphs.push({ prepared: prepared, cursor: { segmentIndex: 0, graphemeIndex: 0 } });
     }
-
     if (!preparedParagraphs.length) return;
 
-    // ── Pick random emoji ──────────────────────────────────────────────
+    // ── Pick emoji ─────────────────────────────────────────────────
     var emoji = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
     var glowColor = GLOW[emoji] || 'rgba(180,180,220,0.5)';
     var glowSoft = glowColor.replace(/[\d.]+\)$/, '0.3)');
     var glowFaint = glowColor.replace(/[\d.]+\)$/, '0.15)');
 
-    // ── Toggle state ───────────────────────────────────────────────────
+    // ── Toggle ─────────────────────────────────────────────────────
     var stored = localStorage.getItem(STORAGE);
     var enabled = stored === null ? (prefersReducedMotion ? false : true) : stored === 'true';
     var currentMode = 'reflow';
 
-    // ── DOM setup ──────────────────────────────────────────────────────
+    // ── DOM ────────────────────────────────────────────────────────
     var stage = document.createElement('div');
     stage.className = 'emblem-stage';
 
@@ -120,27 +90,14 @@
     stage.appendChild(emblemEl);
 
     var linePool = [];
-
-    // ── Pointer tracking ───────────────────────────────────────────────
     var targetX = window.innerWidth / 2;
     var targetY = window.innerHeight / 2;
-    var smoothX = targetX;
-    var smoothY = targetY;
+    var smoothX = targetX, smoothY = targetY;
 
-    function onPointer(e) {
-      if (e instanceof MouseEvent) {
-        targetX = e.clientX;
-        targetY = e.clientY;
-      } else if (e.touches && e.touches.length) {
-        targetX = e.touches[0].clientX;
-        targetY = e.touches[0].clientY;
-      }
-    }
-    document.addEventListener('mousemove', onPointer, { passive: true });
-    document.addEventListener('touchmove', onPointer, { passive: true });
-    document.addEventListener('touchstart', onPointer, { passive: true });
+    document.addEventListener('mousemove', function (e) { targetX = e.clientX; targetY = e.clientY; }, { passive: true });
+    document.addEventListener('touchmove', function (e) { if (e.touches.length) { targetX = e.touches[0].clientX; targetY = e.touches[0].clientY; } }, { passive: true });
+    document.addEventListener('touchstart', function (e) { if (e.touches.length) { targetX = e.touches[0].clientX; targetY = e.touches[0].clientY; } }, { passive: true });
 
-    // ── Stage positioning ──────────────────────────────────────────────
     function syncStage() {
       var rect = prose.getBoundingClientRect();
       stage.style.position = 'absolute';
@@ -150,13 +107,11 @@
       stage.style.height = rect.height + 'px';
     }
 
-    // ── Obstacle: circle interval at a y-band ──────────────────────────
+    // ── Obstacle math (editorial engine pattern) ───────────────────
     function circleInterval(cx, cy, r, bandTop, bandBottom) {
-      var vTop = bandTop - 2;
-      var vBot = bandBottom + 2;
+      var vTop = bandTop - 2, vBot = bandBottom + 2;
       if (vTop >= cy + r || vBot <= cy - r) return null;
-      var minDy = cy >= bandTop && cy <= bandBottom
-        ? 0 : cy < bandTop ? bandTop - cy : cy - bandBottom;
+      var minDy = cy >= bandTop && cy <= bandBottom ? 0 : cy < bandTop ? bandTop - cy : cy - bandBottom;
       if (minDy >= r) return null;
       var maxDx = Math.sqrt(r * r - minDy * minDy);
       return { left: cx - maxDx, right: cx + maxDx };
@@ -178,41 +133,27 @@
       return slots.filter(function (s) { return s.right - s.left >= MIN_SLOT; });
     }
 
-    // ── Layout engine ──────────────────────────────────────────────────
-    function layoutAll(cx, cy, proseLeft, proseW, proseTop, proseBottom) {
+    // ── Layout engine ──────────────────────────────────────────────
+    function layoutAll(cx, cy, pLeft, pW, pTop, pBottom) {
       var lines = [];
-      var y = proseTop;
-      var paraIdx = 0;
+      var y = pTop;
+      var pi = 0;
 
-      while (y + LINE_H <= proseBottom && paraIdx < preparedParagraphs.length) {
-        var para = preparedParagraphs[paraIdx];
-        var line = pt.layoutNextLine(para.prepared, para.cursor, proseW);
+      while (y + LINE_H <= pBottom && pi < preparedParagraphs.length) {
+        var para = preparedParagraphs[pi];
+        var line = layoutNextLine(para.prepared, para.cursor, pW);
 
-        if (line === null) {
-          paraIdx++;
-          if (paraIdx < preparedParagraphs.length) y += PARA_GAP;
-          continue;
-        }
+        if (!line) { pi++; if (pi < preparedParagraphs.length) y += PARA_GAP; continue; }
 
-        var bandTop = y;
-        var bandBottom = y + LINE_H;
+        var bandTop = y, bandBottom = y + LINE_H;
         var interval = circleInterval(cx, cy, OBSTACLE_R, bandTop, bandBottom);
         var blocked = interval ? [interval] : [];
-        var slots = carveSlots({ left: proseLeft, right: proseLeft + proseW }, blocked);
+        var slots = carveSlots({ left: pLeft, right: pLeft + pW }, blocked);
 
-        if (!slots.length) {
-          para.cursor = line.end;
-          y += LINE_H;
-          continue;
-        }
+        if (!slots.length) { para.cursor = line.end; y += LINE_H; continue; }
 
         var slot = slots[0];
-        lines.push({
-          x: Math.round(slot.left),
-          y: Math.round(y),
-          text: line.text,
-          width: line.width,
-        });
+        lines.push({ x: Math.round(slot.left), y: Math.round(y), text: line.text });
         para.cursor = line.end;
         y += LINE_H;
       }
@@ -220,7 +161,7 @@
       return lines;
     }
 
-    // ── Render loop ────────────────────────────────────────────────────
+    // ── Render loop ────────────────────────────────────────────────
     var rafId = null;
 
     function render() {
@@ -228,18 +169,11 @@
       smoothY += (targetY - smoothY) * LERP;
 
       var bounce = 1 + 0.025 * Math.sin(Date.now() / 400);
-      var ex = smoothX - SIZE / 2;
-      var ey = smoothY - SIZE / 2 + window.scrollY;
-      emblemEl.style.transform = 'translate(' + ex + 'px, ' + ey + 'px) scale(' + bounce + ')';
+      emblemEl.style.transform = 'translate(' + (smoothX - SIZE / 2) + 'px,' + (smoothY - SIZE / 2 + window.scrollY) + 'px) scale(' + bounce + ')';
 
       if (currentMode === 'reflow') {
         var rect = prose.getBoundingClientRect();
-        var lines = layoutAll(
-          smoothX, smoothY + window.scrollY,
-          rect.left, rect.width,
-          rect.top + window.scrollY,
-          rect.top + window.scrollY + rect.height
-        );
+        var lines = layoutAll(smoothX, smoothY + window.scrollY, rect.left, rect.width, rect.top + window.scrollY, rect.top + window.scrollY + rect.height);
 
         while (linePool.length < lines.length) {
           var span = document.createElement('span');
@@ -258,37 +192,31 @@
             linePool[i].style.left = l.x + 'px';
             linePool[i].style.top = l.y + 'px';
             linePool[i].style.display = '';
-          } else {
-            linePool[i].style.display = 'none';
-          }
+          } else { linePool[i].style.display = 'none'; }
         }
       }
 
       rafId = requestAnimationFrame(render);
     }
 
-    // ── Toggle button ──────────────────────────────────────────────────
+    // ── Toggle button ──────────────────────────────────────────────
     var header = document.querySelector('header .inner');
     if (!header) return;
 
     var toggle = document.createElement('button');
     toggle.id = 'emblem-toggle';
     toggle.className = 'emblem-toggle-btn';
-    toggle.setAttribute('aria-label', 'Toggle floating emblem');
 
     function updateToggleUI() {
       if (!enabled) {
         toggle.textContent = '\u2728';
         toggle.setAttribute('aria-label', 'Enable floating emblem');
-        toggle.title = 'Click to enable';
       } else if (currentMode === 'reflow') {
         toggle.textContent = '\u2600\uFE0F';
         toggle.setAttribute('aria-label', 'Switch to overlay mode');
-        toggle.title = 'Text reflow active — click for overlay';
       } else {
         toggle.textContent = '\uD83C\uDFFC\uFE0F';
         toggle.setAttribute('aria-label', 'Switch to reflow mode');
-        toggle.title = 'Overlay mode — click for text reflow';
       }
     }
     updateToggleUI();
@@ -299,24 +227,17 @@
 
     toggle.addEventListener('click', function () {
       if (!enabled) {
-        enabled = true;
-        currentMode = 'reflow';
+        enabled = true; currentMode = 'reflow';
         prose.style.visibility = 'hidden';
-        document.body.appendChild(stage);
-        syncStage();
-        for (var pi = 0; pi < preparedParagraphs.length; pi++) {
-          preparedParagraphs[pi].cursor = { segmentIndex: 0, graphemeIndex: 0 };
-        }
+        document.body.appendChild(stage); syncStage();
+        for (var pi = 0; pi < preparedParagraphs.length; pi++) preparedParagraphs[pi].cursor = { segmentIndex: 0, graphemeIndex: 0 };
         rafId = requestAnimationFrame(render);
       } else if (currentMode === 'reflow') {
         currentMode = 'overlay';
         prose.style.visibility = '';
-        for (var li = 0; li < linePool.length; li++) {
-          linePool[li].style.display = 'none';
-        }
+        for (var li = 0; li < linePool.length; li++) linePool[li].style.display = 'none';
       } else {
-        enabled = false;
-        currentMode = 'reflow';
+        enabled = false; currentMode = 'reflow';
         prose.style.visibility = '';
         stage.remove();
         if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
@@ -325,14 +246,14 @@
       updateToggleUI();
     });
 
-    // ── Resize / scroll handling ───────────────────────────────────────
+    // ── Resize / scroll ────────────────────────────────────────────
     if (typeof ResizeObserver !== 'undefined') {
       new ResizeObserver(function () { if (enabled) syncStage(); }).observe(prose);
     }
     window.addEventListener('resize', function () { if (enabled) syncStage(); });
     window.addEventListener('scroll', function () { if (enabled) syncStage(); }, { passive: true });
 
-    // ── Init ───────────────────────────────────────────────────────────
+    // ── Init ───────────────────────────────────────────────────────
     if (enabled) {
       if (currentMode === 'reflow') prose.style.visibility = 'hidden';
       document.body.appendChild(stage);
@@ -340,78 +261,5 @@
       rafId = requestAnimationFrame(render);
     }
   })();
-
-  // ── Fallback: overlay-only when Pretext CDN fails ────────────────────
-  function initOverlayOnly() {
-    var emoji = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
-    var glowColor = GLOW[emoji] || 'rgba(180,180,220,0.5)';
-    var stored = localStorage.getItem(STORAGE);
-    var enabled = stored === null ? (prefersReducedMotion ? false : true) : stored === 'true';
-
-    var stage = document.createElement('div');
-    stage.className = 'emblem-stage';
-
-    var emblemEl = document.createElement('div');
-    emblemEl.className = 'floating-emblem';
-    emblemEl.textContent = emoji;
-    emblemEl.style.fontSize = SIZE + 'px';
-    emblemEl.style.filter =
-      'drop-shadow(0 0 12px ' + glowColor + ')' +
-      'drop-shadow(0 0 32px ' + glowColor.replace(/[\d.]+\)$/, '0.3)') + ')' +
-      'drop-shadow(0 0 64px ' + glowColor.replace(/[\d.]+\)$/, '0.15)') + ')';
-    stage.appendChild(emblemEl);
-
-    var targetX = window.innerWidth / 2;
-    var targetY = window.innerHeight / 2;
-    var smoothX = targetX;
-    var smoothY = targetY;
-    var rafId = null;
-
-    document.addEventListener('mousemove', function (e) {
-      targetX = e.clientX; targetY = e.clientY;
-    }, { passive: true });
-    document.addEventListener('touchmove', function (e) {
-      if (e.touches.length) { targetX = e.touches[0].clientX; targetY = e.touches[0].clientY; }
-    }, { passive: true });
-
-    function render() {
-      smoothX += (targetX - smoothX) * LERP;
-      smoothY += (targetY - smoothY) * LERP;
-      var bounce = 1 + 0.025 * Math.sin(Date.now() / 400);
-      emblemEl.style.transform =
-        'translate(' + (smoothX - SIZE / 2) + 'px, ' + (smoothY - SIZE / 2 + window.scrollY) + 'px) scale(' + bounce + ')';
-      rafId = requestAnimationFrame(render);
-    }
-
-    if (enabled) {
-      document.body.appendChild(stage);
-      rafId = requestAnimationFrame(render);
-    }
-
-    // Toggle
-    var header = document.querySelector('header .inner');
-    if (!header) return;
-    var toggle = document.createElement('button');
-    toggle.id = 'emblem-toggle';
-    toggle.className = 'emblem-toggle-btn';
-    toggle.textContent = enabled ? '\u2600\uFE0F' : '\u2728';
-
-    var nav = header.querySelector('nav');
-    if (nav) header.insertBefore(toggle, nav);
-    else header.appendChild(toggle);
-
-    toggle.addEventListener('click', function () {
-      enabled = !enabled;
-      localStorage.setItem(STORAGE, enabled ? 'true' : 'false');
-      toggle.textContent = enabled ? '\u2600\uFE0F' : '\u2728';
-      if (enabled) {
-        document.body.appendChild(stage);
-        rafId = requestAnimationFrame(render);
-      } else {
-        stage.remove();
-        if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
-      }
-    });
-  }
 })();
 </script>
