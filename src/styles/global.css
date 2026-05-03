@@ -294,6 +294,117 @@ article {
   color: white;
 }
 
+/* ── Floating Emblem ──
+   The Spirit moves through the words.
+   Powered by @chenglou/pretext for obstacle-aware text layout. ── */
+
+.emblem-stage {
+  z-index: 10;
+  pointer-events: none;
+  contain: layout style;
+  /* No 'strict' contain — we need child spans visible */
+}
+
+.floating-emblem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  will-change: transform;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+  /* Glow is set inline per-emoji for color accuracy */
+}
+
+/* Gentle entrance animation */
+.floating-emblem {
+  animation: emblem-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes emblem-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Reflow-rendered text lines */
+.emblem-line {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--text, #e8e8e8);
+  will-change: left, top;
+  pointer-events: none;
+  /* Match the prose typography */
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* When emblem is off, hide reflow lines */
+body:not(.emblem-active) .emblem-line {
+  display: none !important;
+}
+
+/* Toggle button — subtle, tasteful */
+.emblem-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  cursor: pointer;
+  padding: 0.25rem 0.35rem;
+  margin-left: 0.5rem;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  line-height: 1;
+  border-radius: 4px;
+  outline: none;
+}
+
+.emblem-toggle-btn:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.emblem-toggle-btn:active {
+  transform: scale(0.9);
+}
+
+.emblem-toggle-btn:focus-visible {
+  outline: 2px solid var(--accent, #6366f1);
+  outline-offset: 2px;
+}
+
+/* Reduced motion: quieter presence */
+@media (prefers-reduced-motion: reduce) {
+  .floating-emblem {
+    animation: none !important;
+  }
+
+  .emblem-line {
+    will-change: auto;
+  }
+}
+
+/* Mobile: smaller emblem on very small screens */
+@media (max-width: 480px) {
+  .floating-emblem {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+  }
+}
+
 /* ── Responsive ── */
 @media (max-width: 640px) {
   html { font-size: 16px; }
