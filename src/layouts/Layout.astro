@@ -4,8 +4,6 @@ interface Props {
   description?: string;
 }
 
-import FloatingThemedEmblem from '../components/FloatingThemedEmblem.astro';
-
 const { title = 'Joseph Bae', description = 'Thoughts on faith, culture, and life.' } = Astro.props;
 const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
 ---
@@ -41,8 +39,6 @@ const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
     <main class="container">
       <slot />
     </main>
-
-    <FloatingThemedEmblem />
 
     <!-- Debug mode banner — hidden by default, shown when debug mode is active -->
     <div id="debug-banner" role="status" aria-live="polite">
