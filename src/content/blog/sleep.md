@@ -12,15 +12,15 @@ Sleep is one of the quiet mercies God gives us each day. We do not drift into re
 
 **Sleep is an act of trust.**
 
-When we lie down at night, we are actually entering a moment of trust. Sleep is the one part of life where we release control completely. We close our eyes, our strength leaves us, our thoughts fade, and our lives are held only by the care of God. That is why David could say with confidence, “I will both lie down in peace, and sleep; for You alone, O LORD, make me dwell in safety” (Psalm 4:8). He slept because God was awake.
+When we lie down at night, we are actually entering a moment of trust. Sleep is the one part of life where we release control completely. We close our eyes, our strength leaves us, our thoughts fade, and our lives are held only by the care of God. That is why David could say with confidence, “I will both lie down in peace, and sleep; for You alone, O Lᴏʀᴅ, make me dwell in safety” (Psalm 4:8). He slept because God was awake.
 
 I have had nights when sleep refused to come. When anxiety would circle like a dog that would not lie down. And the harder I fought for sleep, the further it ran. What I’ve learned — through those sleepless hours and through Scripture — is that you cannot force the gift. You can only receive it. Sleep is not something you achieve. It is something you allow God to give.
 
 **God gives rest slowly to the wounded.**
 
-Even our deepest worries and traumas cannot stop God from calming the mind when He chooses to give rest. Scripture acknowledges this reality. David cried, “Have mercy on me, O LORD, for I am weak; O LORD, heal me, for my bones are troubled” (Psalm 6:3). Elijah collapsed under a broom tree, exhausted and depressed, asking to die (1 Kings 19:4–8). God did not lecture him on theology — He sent an angel with food, then let him sleep. The first mercy God gave the broken prophet was not a sermon. It was rest.
+Even our deepest worries and traumas cannot stop God from calming the mind when He chooses to give rest. Scripture acknowledges this reality. David cried, “Have mercy on me, O Lᴏʀᴅ, for I am weak; O Lᴏʀᴅ, heal me, for my bones are troubled” (Psalm 6:3). Elijah collapsed under a broom tree, exhausted and depressed, asking to die (1 Kings 19:4–8). God did not lecture him on theology — He sent an angel with food, then let him sleep. The first mercy God gave the broken prophet was not a sermon. It was rest.
 
-> “The LORD is near to the brokenhearted” (Psalm 34:18).
+> “The Lᴏʀᴅ is near to the brokenhearted” (Psalm 34:18).
 
 I memorised that entire psalm during our last [21-day fast](/2026-fast). Verse by verse, day by day. And Psalm 34:18 has been my anchor — God is near to those whose hearts are shattered. He “heals the brokenhearted and binds up their wounds” (Psalm 147:3). For the wounded, God gives rest slowly, gently, and patiently, restoring the inner life until sleep becomes possible again. He steadies the heart. He quiets the thoughts. He relaxes the muscles. He reminds us that we are creatures with limits, and He is the Creator without any.
 
