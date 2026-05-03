@@ -64,8 +64,8 @@ const heroPool = posts
   </a>
 
   <div class="lang-filter">
-    <button class="lang-btn active" onclick="filterLang('all',this)">All</button>
-    <button class="lang-btn" onclick="filterLang('en',this)">English</button>
+    <button class="lang-btn" onclick="filterLang('all',this)">All</button>
+    <button class="lang-btn active" onclick="filterLang('en',this)">English</button>
     <button class="lang-btn" onclick="filterLang('ko',this)">한국어</button>
   </div>
 
@@ -123,7 +123,7 @@ const heroPool = posts
 
   // ── Lang / preview filter ─────────────────────────────────────────────────
   const STORAGE_KEY = 'baejoseph_preview_mode';
-  let activeLang = 'all';
+  let activeLang = 'en';
 
   function isPreview() {
     try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
