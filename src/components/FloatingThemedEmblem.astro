@@ -5,12 +5,10 @@
 // On each page load, randomly picks one themed emblem. Follows the cursor
 // with buttery 60fps lerp. Text reflows around it like water around a stone.
 //
-// Modes:
-//   reflow  — Original prose hidden; Pretext renders text as positioned spans
-//             that flow around the moving emblem. The main show.
-//   overlay — Emblem floats above the original prose. Lighter, keeps links alive.
-//
+// Toggle flow: off → reflow (text wraps around emblem) → overlay (emblem only)
 // Accessibility: respects prefers-reduced-motion, toggle always available.
+//
+// Pretext loaded from esm.sh CDN to avoid bundling issues with is:inline scripts.
 ---
 
 <div id="emblem-root"></div>
@@ -21,28 +19,27 @@
 
   /* ── Config ─────────────────────────────────────────────────────────── */
   var EMOJIS = [
-    '\u271D\uFE0F',       // Cross
-    '\uD83D\uDD4A\uFE0F', // Dove
+    '\u271D\uFE0F',              // Cross
+    '\uD83D\uDD4A\uFE0F',       // Dove
     '\uD83C\uDDEC\uD83C\uDDE7', // UK
     '\uD83C\uDDFA\uD83C\uDDF8', // USA
     '\uD83C\uDDF0\uD83C\uDDF7', // Korea
   ];
 
   var GLOW = {
-    '\u271D\uFE0F':       'rgba(218,167,65,0.6)',   // gold
-    '\uD83D\uDD4A\uFE0F': 'rgba(140,180,240,0.6)',  // sky
-    '\uD83C\uDDEC\uD83C\uDDE7': 'rgba(200,60,70,0.5)',  // crimson
-    '\uD83C\uDDFA\uD83C\uDDF8': 'rgba(80,120,200,0.5)', // blue
-    '\uD83C\uDDF0\uD83C\uDDF7': 'rgba(150,160,200,0.5)', // steel
+    '\u271D\uFE0F':       'rgba(218,167,65,0.6)',
+    '\uD83D\uDD4A\uFE0F': 'rgba(140,180,240,0.6)',
+    '\uD83C\uDDEC\uD83C\uDDE7': 'rgba(200,60,70,0.5)',
+    '\uD83C\uDDFA\uD83C\uDDF8': 'rgba(80,120,200,0.5)',
+    '\uD83C\uDDF0\uD83C\uDDF7': 'rgba(150,160,200,0.5)',
   };
 
-  var SIZE       = 64;    // emblem px
-  var OBSTACLE_R = 52;    // half-size + padding (circle radius for obstacle)
-  var LINE_H     = 30;    // px per line
-  var PARA_GAP   = 32;    // px between paragraphs
-  var MIN_SLOT   = 40;    // minimum usable slot width
-  var LERP       = 0.15;  // smooth factor (lower = smoother)
-  var WORD_GAP   = 3;     // px between words when composing lines
+  var SIZE       = 64;
+  var OBSTACLE_R = 52;
+  var LINE_H     = 30;
+  var PARA_GAP   = 32;
+  var MIN_SLOT   = 40;
+  var LERP       = 0.15;
   var STORAGE    = 'baejoseph_emblem_v2';
 
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -53,25 +50,25 @@
 
   var isKo = prose.classList.contains('lang-ko');
 
-  /* ── Import Pretext ─────────────────────────────────────────────────── */
-  // Dynamic import — only loads when this island hydrates on a prose page
-  var preparedParagraphs = [];
-  var paragraphGaps = []; // cumulative y-offsets at paragraph starts
+  /* ── Load Pretext from CDN ──────────────────────────────────────────── */
+  var PRETEXT_URL = 'https://esm.sh/@chenglou/pretext@0.0.6';
 
   (async function () {
     var pt;
     try {
-      pt = await import('@chenglou/pretext');
+      pt = await import(PRETEXT_URL);
     } catch (e) {
-      // Pretext not available — silently bail
+      // Pretext unavailable — fall back to overlay-only mode
+      initOverlayOnly();
       return;
     }
 
-    // ── Extract article text ───────────────────────────────────────────
+    // ── Extract article text from DOM ──────────────────────────────────
+    // Use innerText for natural rendering (respects display:none, etc.)
+    // Then split into paragraphs by double newlines
     var rawText = prose.innerText || prose.textContent || '';
     if (!rawText) return;
 
-    // Split into paragraphs (preserve empty ones for spacing)
     var rawParagraphs = rawText.split(/\n\n+/);
 
     // ── Prepare text with Pretext ──────────────────────────────────────
@@ -79,13 +76,16 @@
       ? '17px "Noto Sans KR", sans-serif'
       : '17px "Inter", -apple-system, BlinkMacSystemFont, sans-serif';
 
+    var preparedParagraphs = [];
+
     for (var i = 0; i < rawParagraphs.length; i++) {
       var text = rawParagraphs[i].trim();
-      if (!text) continue; // skip empty paragraphs
+      if (!text) continue;
 
       var prepared = pt.prepareWithSegments(text, fontStr, {
         wordBreak: isKo ? 'keep-all' : 'normal',
       });
+
       preparedParagraphs.push({
         prepared: prepared,
         cursor: { segmentIndex: 0, graphemeIndex: 0 },
@@ -97,6 +97,8 @@
     // ── Pick random emoji ──────────────────────────────────────────────
     var emoji = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
     var glowColor = GLOW[emoji] || 'rgba(180,180,220,0.5)';
+    var glowSoft = glowColor.replace(/[\d.]+\)$/, '0.3)');
+    var glowFaint = glowColor.replace(/[\d.]+\)$/, '0.15)');
 
     // ── Toggle state ───────────────────────────────────────────────────
     var stored = localStorage.getItem(STORAGE);
@@ -104,23 +106,20 @@
     var currentMode = 'reflow';
 
     // ── DOM setup ──────────────────────────────────────────────────────
-    var root = document.getElementById('emblem-root');
     var stage = document.createElement('div');
     stage.className = 'emblem-stage';
 
-    // Emblem element
     var emblemEl = document.createElement('div');
     emblemEl.className = 'floating-emblem';
     emblemEl.textContent = emoji;
     emblemEl.style.fontSize = SIZE + 'px';
-    emblemEl.style.filter = 'drop-shadow(0 0 12px ' + glowColor + ')' +
-                            'drop-shadow(0 0 32px ' + glowColor.replace(/[\d.]+\)$/, '0.3)') +
-                            'drop-shadow(0 0 64px ' + glowColor.replace(/[\d.]+\)$/, '0.15)';
+    emblemEl.style.filter =
+      'drop-shadow(0 0 12px ' + glowColor + ')' +
+      'drop-shadow(0 0 32px ' + glowSoft + ')' +
+      'drop-shadow(0 0 64px ' + glowFaint + ')';
     stage.appendChild(emblemEl);
 
-    // Line pool
     var linePool = [];
-    var maxLines = Math.ceil((prose.scrollHeight || 2000) / LINE_H) + 20;
 
     // ── Pointer tracking ───────────────────────────────────────────────
     var targetX = window.innerWidth / 2;
@@ -144,32 +143,25 @@
     // ── Stage positioning ──────────────────────────────────────────────
     function syncStage() {
       var rect = prose.getBoundingClientRect();
-      var sY = window.scrollY;
       stage.style.position = 'absolute';
       stage.style.left = rect.left + 'px';
-      stage.style.top = (rect.top + sY) + 'px';
+      stage.style.top = (rect.top + window.scrollY) + 'px';
       stage.style.width = rect.width + 'px';
       stage.style.height = rect.height + 'px';
     }
 
-    // ── Obstacle interval computation (from editorial engine pattern) ──
+    // ── Obstacle: circle interval at a y-band ──────────────────────────
     function circleInterval(cx, cy, r, bandTop, bandBottom) {
-      // Returns horizontal interval of a circle intersecting a y-band
       var vTop = bandTop - 2;
       var vBot = bandBottom + 2;
       if (vTop >= cy + r || vBot <= cy - r) return null;
-
       var minDy = cy >= bandTop && cy <= bandBottom
-        ? 0
-        : cy < bandTop ? bandTop - cy : cy - bandBottom;
-
+        ? 0 : cy < bandTop ? bandTop - cy : cy - bandBottom;
       if (minDy >= r) return null;
-
       var maxDx = Math.sqrt(r * r - minDy * minDy);
       return { left: cx - maxDx, right: cx + maxDx };
     }
 
-    // Carve blocked intervals from a base interval
     function carveSlots(base, blocked) {
       var slots = [base];
       for (var bi = 0; bi < blocked.length; bi++) {
@@ -177,10 +169,7 @@
         var next = [];
         for (var si = 0; si < slots.length; si++) {
           var s = slots[si];
-          if (b.right <= s.left || b.left >= s.right) {
-            next.push(s);
-            continue;
-          }
+          if (b.right <= s.left || b.left >= s.right) { next.push(s); continue; }
           if (b.left > s.left) next.push({ left: s.left, right: b.left });
           if (b.right < s.right) next.push({ left: b.right, right: s.right });
         }
@@ -190,7 +179,6 @@
     }
 
     // ── Layout engine ──────────────────────────────────────────────────
-    // Returns { lines: [{x, y, text, width}], paraIdx, cursor }
     function layoutAll(cx, cy, proseLeft, proseW, proseTop, proseBottom) {
       var lines = [];
       var y = proseTop;
@@ -198,36 +186,26 @@
 
       while (y + LINE_H <= proseBottom && paraIdx < preparedParagraphs.length) {
         var para = preparedParagraphs[paraIdx];
-
-        // Try to layout lines for this paragraph
         var line = pt.layoutNextLine(para.prepared, para.cursor, proseW);
 
         if (line === null) {
-          // Paragraph exhausted — move to next
           paraIdx++;
-          if (paraIdx < preparedParagraphs.length) {
-            y += PARA_GAP; // paragraph gap
-          }
+          if (paraIdx < preparedParagraphs.length) y += PARA_GAP;
           continue;
         }
 
-        // Layout succeeded — now handle obstacle
         var bandTop = y;
         var bandBottom = y + LINE_H;
-
         var interval = circleInterval(cx, cy, OBSTACLE_R, bandTop, bandBottom);
         var blocked = interval ? [interval] : [];
-
         var slots = carveSlots({ left: proseLeft, right: proseLeft + proseW }, blocked);
 
         if (!slots.length) {
-          // Emblem completely blocks this line — skip
           para.cursor = line.end;
           y += LINE_H;
           continue;
         }
 
-        // Place line in leftmost slot
         var slot = slots[0];
         lines.push({
           x: Math.round(slot.left),
@@ -235,46 +213,38 @@
           text: line.text,
           width: line.width,
         });
-
         para.cursor = line.end;
         y += LINE_H;
       }
 
-      return { lines: lines, paraIdx: paraIdx };
+      return lines;
     }
 
     // ── Render loop ────────────────────────────────────────────────────
     var rafId = null;
 
     function render() {
-      // Lerp cursor position
       smoothX += (targetX - smoothX) * LERP;
       smoothY += (targetY - smoothY) * LERP;
 
-      // Bounce animation
       var bounce = 1 + 0.025 * Math.sin(Date.now() / 400);
-
-      // Position emblem
       var ex = smoothX - SIZE / 2;
       var ey = smoothY - SIZE / 2 + window.scrollY;
       emblemEl.style.transform = 'translate(' + ex + 'px, ' + ey + 'px) scale(' + bounce + ')';
 
       if (currentMode === 'reflow') {
-        // Layout text around emblem
         var rect = prose.getBoundingClientRect();
-        var proseLeft = rect.left;
-        var proseW = rect.width;
-        var proseTop = rect.top + window.scrollY;
-        var proseBottom = proseTop + rect.height;
+        var lines = layoutAll(
+          smoothX, smoothY + window.scrollY,
+          rect.left, rect.width,
+          rect.top + window.scrollY,
+          rect.top + window.scrollY + rect.height
+        );
 
-        var result = layoutAll(smoothX, smoothY + window.scrollY, proseLeft, proseW, proseTop, proseBottom);
-        var lines = result.lines;
-
-        // Pool management
         while (linePool.length < lines.length) {
           var span = document.createElement('span');
           span.className = 'emblem-line';
-          span.style.font = '17px ' + (isKo ? '"Noto Sans KR", sans-serif' : '"Inter", -apple-system, BlinkMacSystemFont, sans-serif');
+          span.style.font = fontStr;
           span.style.lineHeight = LINE_H + 'px';
           span.style.color = 'var(--text, #e8e8e8)';
           stage.appendChild(span);
@@ -304,70 +274,49 @@
     var toggle = document.createElement('button');
     toggle.id = 'emblem-toggle';
     toggle.className = 'emblem-toggle-btn';
-    toggle.style.fontSize = '1.15rem';
-    toggle.style.cursor = 'pointer';
-    toggle.style.padding = '0.25rem 0.35rem';
-    toggle.style.marginLeft = '0.5rem';
-    toggle.style.opacity = '0.5';
-    toggle.style.transition = 'opacity 0.2s, transform 0.2s';
-    toggle.style.lineHeight = '1';
-    toggle.style.borderRadius = '4px';
+    toggle.setAttribute('aria-label', 'Toggle floating emblem');
 
     function updateToggleUI() {
-      if (currentMode === 'reflow') {
-        toggle.textContent = '\u2600\uFE0F'; // sun = active reflow
+      if (!enabled) {
+        toggle.textContent = '\u2728';
+        toggle.setAttribute('aria-label', 'Enable floating emblem');
+        toggle.title = 'Click to enable';
+      } else if (currentMode === 'reflow') {
+        toggle.textContent = '\u2600\uFE0F';
         toggle.setAttribute('aria-label', 'Switch to overlay mode');
         toggle.title = 'Text reflow active — click for overlay';
       } else {
-        toggle.textContent = '\u2728'; // sparkles = overlay
+        toggle.textContent = '\uD83C\uDFFC\uFE0F';
         toggle.setAttribute('aria-label', 'Switch to reflow mode');
         toggle.title = 'Overlay mode — click for text reflow';
       }
-      toggle.style.opacity = enabled ? '0.5' : '0.3';
     }
     updateToggleUI();
 
-    toggle.addEventListener('mouseenter', function () {
-      toggle.style.opacity = '1';
-    });
-    toggle.addEventListener('mouseleave', function () {
-      toggle.style.opacity = enabled ? '0.5' : '0.3';
-    });
-
-    // Insert toggle before nav
     var nav = header.querySelector('nav');
-    if (nav) {
-      header.insertBefore(toggle, nav);
-    } else {
-      header.appendChild(toggle);
-    }
+    if (nav) header.insertBefore(toggle, nav);
+    else header.appendChild(toggle);
 
     toggle.addEventListener('click', function () {
       if (!enabled) {
-        // Turn on — default to reflow
         enabled = true;
         currentMode = 'reflow';
         prose.style.visibility = 'hidden';
         document.body.appendChild(stage);
         syncStage();
-        // Reset paragraph cursors for fresh layout
         for (var pi = 0; pi < preparedParagraphs.length; pi++) {
           preparedParagraphs[pi].cursor = { segmentIndex: 0, graphemeIndex: 0 };
         }
         rafId = requestAnimationFrame(render);
       } else if (currentMode === 'reflow') {
-        // Switch to overlay
         currentMode = 'overlay';
         prose.style.visibility = '';
-        // Clear line pool display
         for (var li = 0; li < linePool.length; li++) {
           linePool[li].style.display = 'none';
         }
-        // Keep emblem floating
       } else {
-        // Turn off completely
         enabled = false;
-        currentMode = 'overlay';
+        currentMode = 'reflow';
         prose.style.visibility = '';
         stage.remove();
         if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
@@ -376,32 +325,93 @@
       updateToggleUI();
     });
 
-    // ── Resize handling ────────────────────────────────────────────────
+    // ── Resize / scroll handling ───────────────────────────────────────
     if (typeof ResizeObserver !== 'undefined') {
-      new ResizeObserver(function () {
-        if (enabled) syncStage();
-      }).observe(prose);
+      new ResizeObserver(function () { if (enabled) syncStage(); }).observe(prose);
     }
-    window.addEventListener('resize', function () {
-      if (enabled) syncStage();
-    });
-    window.addEventListener('scroll', function () {
-      if (enabled) syncStage();
-    }, { passive: true });
+    window.addEventListener('resize', function () { if (enabled) syncStage(); });
+    window.addEventListener('scroll', function () { if (enabled) syncStage(); }, { passive: true });
 
     // ── Init ───────────────────────────────────────────────────────────
     if (enabled) {
-      if (currentMode === 'reflow') {
-        prose.style.visibility = 'hidden';
-        document.body.appendChild(stage);
-        syncStage();
-      } else {
-        // Overlay mode — just show the emblem
-        document.body.appendChild(stage);
-        syncStage();
-      }
+      if (currentMode === 'reflow') prose.style.visibility = 'hidden';
+      document.body.appendChild(stage);
+      syncStage();
       rafId = requestAnimationFrame(render);
     }
   })();
+
+  // ── Fallback: overlay-only when Pretext CDN fails ────────────────────
+  function initOverlayOnly() {
+    var emoji = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
+    var glowColor = GLOW[emoji] || 'rgba(180,180,220,0.5)';
+    var stored = localStorage.getItem(STORAGE);
+    var enabled = stored === null ? (prefersReducedMotion ? false : true) : stored === 'true';
+
+    var stage = document.createElement('div');
+    stage.className = 'emblem-stage';
+
+    var emblemEl = document.createElement('div');
+    emblemEl.className = 'floating-emblem';
+    emblemEl.textContent = emoji;
+    emblemEl.style.fontSize = SIZE + 'px';
+    emblemEl.style.filter =
+      'drop-shadow(0 0 12px ' + glowColor + ')' +
+      'drop-shadow(0 0 32px ' + glowColor.replace(/[\d.]+\)$/, '0.3)') + ')' +
+      'drop-shadow(0 0 64px ' + glowColor.replace(/[\d.]+\)$/, '0.15)') + ')';
+    stage.appendChild(emblemEl);
+
+    var targetX = window.innerWidth / 2;
+    var targetY = window.innerHeight / 2;
+    var smoothX = targetX;
+    var smoothY = targetY;
+    var rafId = null;
+
+    document.addEventListener('mousemove', function (e) {
+      targetX = e.clientX; targetY = e.clientY;
+    }, { passive: true });
+    document.addEventListener('touchmove', function (e) {
+      if (e.touches.length) { targetX = e.touches[0].clientX; targetY = e.touches[0].clientY; }
+    }, { passive: true });
+
+    function render() {
+      smoothX += (targetX - smoothX) * LERP;
+      smoothY += (targetY - smoothY) * LERP;
+      var bounce = 1 + 0.025 * Math.sin(Date.now() / 400);
+      emblemEl.style.transform =
+        'translate(' + (smoothX - SIZE / 2) + 'px, ' + (smoothY - SIZE / 2 + window.scrollY) + 'px) scale(' + bounce + ')';
+      rafId = requestAnimationFrame(render);
+    }
+
+    if (enabled) {
+      document.body.appendChild(stage);
+      rafId = requestAnimationFrame(render);
+    }
+
+    // Toggle
+    var header = document.querySelector('header .inner');
+    if (!header) return;
+    var toggle = document.createElement('button');
+    toggle.id = 'emblem-toggle';
+    toggle.className = 'emblem-toggle-btn';
+    toggle.textContent = enabled ? '\u2600\uFE0F' : '\u2728';
+
+    var nav = header.querySelector('nav');
+    if (nav) header.insertBefore(toggle, nav);
+    else header.appendChild(toggle);
+
+    toggle.addEventListener('click', function () {
+      enabled = !enabled;
+      localStorage.setItem(STORAGE, enabled ? 'true' : 'false');
+      toggle.textContent = enabled ? '\u2600\uFE0F' : '\u2728';
+      if (enabled) {
+        document.body.appendChild(stage);
+        rafId = requestAnimationFrame(render);
+      } else {
+        stage.remove();
+        if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+      }
+    });
+  }
 })();
 </script>
