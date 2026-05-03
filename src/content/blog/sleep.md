@@ -24,7 +24,23 @@ Even our deepest worries and traumas cannot stop God from calming the mind when 
 
 I memorised that entire psalm during our last [21-day fast](/2026-fast). Verse by verse, day by day. And Psalm 34:18 has been my anchor — God is near to those whose hearts are shattered. He “heals the brokenhearted and binds up their wounds” (Psalm 147:3). For the wounded, God gives rest slowly, gently, and patiently, restoring the inner life until sleep becomes possible again. He steadies the heart. He quiets the thoughts. He relaxes the muscles. He reminds us that we are creatures with limits, and He is the Creator without any.
 
-People may use medicines or substances to force themselves into unconsciousness, but that is not the same as the nourishing rest God gives. True sleep restores the body, steadies the mind, and strengthens the spirit — because it comes from the One who made us. I’ve written about the [health of your spirit](/spiritual-health) before: neglect it and everything else collapses. Sleep is where the spirit gets its first repair.
+People may use medicines or substances to force themselves into unconsciousness, but that is not the same as the nourishing rest God gives. True sleep restores the body, steadies the mind, and strengthens the spirit — because it comes from the One who made us. I've written about the [health of your spirit](/spiritual-health) before: neglect it and everything else collapses. Sleep is where the spirit gets its first repair.
+
+**A practical sleep aid from Scripture.**
+
+Psalm 139:18 is one of my favourite verses for when sleep won't come. The psalmist writes of God's thoughts for us — thoughts so innumerable they defy counting:
+
+> "If I count them, they are more than the sand; When I awake, I am still with You." — NKJV
+
+> "If I were to count them, they would be more than the grains of sand. When I awake, I am still with you." — ESV
+
+> "If I could count them, they would outnumber the grains of sand— when I awake, I am still with you." — NIV
+
+> "If Thou shalt count the hairs of my head, they are more than the sand: When I awake, I am still with Thee." — KJV
+
+There's a version that renders it even more practically — the thoughts are so many that as the psalmist tries to count them, he actually falls asleep. Like counting sheep, but far more soul-satisfying. And the punchline? When he awakes, God is still with him.
+
+What an incredible practical tip to fall asleep. In fact, I often recite multiple psalms from memory when I can't sleep — and it works. Let God's Word lull you rather than your worries.
 
 **The Keeper does not sleep.**
 
