@@ -18,7 +18,7 @@ In June 2017, I served as an interpreter at the **6th UK Prayer Mission in 2017*
 
 Just a month or two earlier, I knew nothing about this sort of ministry and faced tough choices before committing fully. In April, I’d taken three weeks’ annual leave to host my parents visiting from Paraguay, leaving me with little left. It wasn’t easy to take another week off for the prayer mission, especially with our limited family time.
 
-Yet the main reason I wanted to join was to revive the faith of my youth. Living and working in the UK while raising a young family, I’d struggled to keep a faith uncompromised by the world. I longed to reclaim the godly passion and pure prayer life from my university days.
+Yet the main reason I wanted to join was to revive the faith of my youth. Living and working in the UK while raising a young family, I'd struggled to keep a faith uncompromised by the world. I longed to reclaim the godly passion and pure prayer life from my university days — something I've reflected on since, like in my piece on [the health of your spirit](/spiritual-health).
 
 I hoped this focused intercession for the UK would reset my walk with God. Looking back, I’m deeply grateful that He gave me far more than I’d hoped for.
 
@@ -158,7 +158,7 @@ The deeper reason I keep coming back to humility: Luton is a city that has been 
 
 #### Intercession: What I Learned
 
-Intercession is not a supplement to ministry. It *is* ministry. Everything else flows from it. We often say we’re interceding *for* our work—but that may be backwards. The church on its knees before God *is* the work.
+Intercession is not a supplement to ministry. It *is* ministry. Everything else flows from it. We often say we're interceding *for* our work—but that may be backwards. The church on its knees before God *is* the work. I've come to think of prayer as [spiritual connection](/connected) — the lifeline through which everything else breathes.
 
 The Daejeon team’s three churches all practiced what they called altar prayer—regular, nightly intercession in the sanctuary. One church: Monday through Friday, 8–10 pm. Another: Monday through Saturday, 9–10 pm. The specifics varied, but the commitment didn’t. One person or thirty—it didn’t matter. What mattered was not sinning against God by ceasing to pray (1 Samuel 12:23). And the primary subject of that intercession? The Sunday sermon—praying that God’s Word would go out from that pulpit in full power, that the dry bones in the congregation would come alive, that God’s army would form from people who had been spiritually dead.
 
@@ -172,7 +172,7 @@ Two tools the Korean intercessors taught that week stood out.
 
 The first was *blood prayer*—consciously pleading the blood of Christ over a person, place, or situation; claiming that covering; then binding every unclean spirit that had access to that uncovered ground, and lifting them before God to be dealt with. The image that guided it: the blood confuses and blinds the enemy; the name of Jesus binds; God disposes. Praying this way felt qualitatively different from simply speaking words.
 
-The second was *“Joo-yeo” prayer*—the Korean threefold cry of *“Lord! Lord! Lord!”*—drawn from Daniel’s prayer:
+The second was *"Joo-yeo" prayer*—the Korean threefold cry of *"Lord! Lord! Lord!"*—drawn from Daniel's prayer. This cry of intercession is what I explore in more detail in [the power of crying out in corporate prayer](/cry-out), a reflection directly sparked by this very mission week.
 
 > “O Lord, hear! O Lord, forgive! O Lord, listen and act! Do not delay for Your own sake, my God, for Your city and Your people are called by Your name.”
 >
@@ -190,7 +190,7 @@ On Wednesday night, something broke in me during prayer.
 
 I became aware—not as an idea but as a felt weight—of how thoroughly the name of Jesus is desecrated across Britain. It is used as a curse word in workplaces, schools, streets, homes. The Oxford English Dictionary’s second definition of “Jesus” lists it as a meaningless exclamation expressing surprise or anger. That’s what it has become to this nation.
 
-The *Lord’s Prayer* says: *Hallowed be Your name.* Britain is living the opposite of that prayer.
+The *Lord's Prayer* says: *Hallowed be Your name.* Britain is living the opposite of that prayer. I've written before about [standing up for the name of Jesus](/name-of-jesus) in this very context—how the desecration of His name is a spiritual wound that needs corporate repentance.
 
 I felt God say to me—quietly, but unmistakably—that before revival comes to Britain, the Church in Britain must repent of this. Must grieve it. Must take it seriously before He will move on the scale the nation needs.
 
