@@ -196,7 +196,7 @@ I felt God say to me—quietly, but unmistakably—that before revival comes to 
 
 When I shared this with the British believers at St. Hugh’s, they fell to the floor. They wept. They hit the ground with their fists. And I prayed that this spirit of repentance would spread from Luton to the whole country.
 
-> “if My people who are called by My name will humble themselves, and pray and seek My face, and turn from their wicked ways, then I will hear from heaven, and will forgive their sin and heal their land.”
+> "If My people who are called by My name will humble themselves, and pray and seek My face, and turn from their wicked ways, then I will hear from heaven, and will forgive their sin and heal their land."
 >
 > 2 Chronicles 7:14 (NKJV)
 
@@ -222,5 +222,3 @@ After seven years of mission work in Paraguay, God brought my parents back to th
 To that end, He guided them to the very church where I’d spent a week praying in 2017: St Hugh’s in Luton, now led by Pastor Martyn Shea.
 
 God even provided a house for them in Dunstable. They’re now active members of St Hugh’s, joining the congregation’s prayer warriors for daily early morning prayers from 6 to 7 a.m., preaching the gospel in Luton town centre during the day, and then heading to Harpenden to help with our children’s wraparound care—and even babysitting in the evenings!
-
-
