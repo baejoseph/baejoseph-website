@@ -5,7 +5,8 @@ slug: "blackberry"
 lang: "en"
 pairedSlug: "블랙베리"
 featuredImage: "/assets/blackberry-hero.jpg"
-tags: ["faith", "spiritual-health", "reflection"]
+tags: ["faith", "spiritual-health", "reflection", "video"]
+youtubeId: "2Lus-S9rsFU"
 ---
 
 Every July, when I go hunting for blackberries in the English hedgerows, the same thing happens. I push my hand gently toward a cluster of ripening fruit, and somewhere between me and my prize is a long, green, whip-like cane. It has no berries. It has only thorns. It arches out into the path, snags my sleeve, and generally behaves as though it exists for the sole purpose of frustrating me. I find myself wishing it gone.
