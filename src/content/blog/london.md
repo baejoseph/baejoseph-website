@@ -5,7 +5,7 @@ slug: "london"
 lang: "en"
 pairedSlug: "런던"
 featuredImage: "/assets/london-st-pauls-view.jpg"
-tags: ["uk", "leftism", "eschatology", "theology", "courage", "trump", "two-tier-justice"]
+tags: ["uk", "leftism", "eschatology", "theology", "courage", "trump"]
 ---
 
 ## A Foreign Country in My Own Land
