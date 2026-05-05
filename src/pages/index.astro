@@ -70,10 +70,13 @@ const heroPool = posts
   </div>
 
   {allTags.length > 0 && (
-    <div class="tag-browse">
-      {allTags.map(tag => (
-        <a href={`/tag/${tag}`} class="tag-pill-sm">#{tag}</a>
+    <div class="tag-browse" id="tag-browse">
+      {allTags.map((tag, i) => (
+        <a href={`/tag/${tag}`} class="tag-pill-sm" data-tag-index={i} class:list={i >= 6 ? ['tag-hidden'] : []}>#{tag}</a>
       ))}
+      {allTags.length > 6 && (
+        <button class="tag-expand" id="tag-expand-btn" onclick="toggleTags(this)">Show all {allTags.length} tags</button>
+      )}
     </div>
   )}
 
@@ -120,6 +123,23 @@ const heroPool = posts
       titleEl.textContent = pick.title;
     }
   })();
+
+  // ── Tag expand/collapse ──────────────────────────────────────────────────
+  function toggleTags(btn) {
+    const hidden = document.querySelectorAll('#tag-browse .tag-hidden');
+    const isExpanded = btn.dataset.expanded === 'true';
+    if (isExpanded) {
+      hidden.forEach(el => el.classList.remove('tag-revealed'));
+      btn.textContent = btn.dataset.originalText;
+      btn.dataset.expanded = 'false';
+    } else {
+      hidden.forEach(el => el.classList.add('tag-revealed'));
+      btn.dataset.originalText = btn.textContent;
+      btn.textContent = 'Show less';
+      btn.dataset.expanded = 'true';
+    }
+  }
+  window.toggleTags = toggleTags;
 
   // ── Lang / preview filter ─────────────────────────────────────────────────
   const STORAGE_KEY = 'baejoseph_preview_mode';
@@ -228,6 +248,7 @@ const heroPool = posts
     margin-bottom: 1.75rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border);
+    align-items: center;
   }
   .tag-pill-sm {
     display: inline-block;
@@ -246,6 +267,31 @@ const heroPool = posts
   .tag-pill-sm:hover {
     background: rgba(99, 102, 241, 0.14);
     color: #c7d2fe;
+  }
+  .tag-pill-sm.tag-hidden {
+    display: none;
+  }
+  .tag-pill-sm.tag-hidden.tag-revealed {
+    display: inline-block;
+  }
+  .tag-expand {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    background: transparent;
+    color: #6366f1;
+    border: 1px dashed rgba(99, 102, 241, 0.35);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+  }
+  .tag-expand:hover {
+    background: rgba(99, 102, 241, 0.1);
+    color: #a5b4fc;
+    border-color: rgba(99, 102, 241, 0.55);
   }
 
   /* ── Responsive ── */
