@@ -3,7 +3,7 @@ title: "😊 The Secret to Happiness"
 date: "2026-03-30"
 slug: "happiness"
 tags: ["leftism", "theology", "courage", "testimony", "video"]
-featuredImage: ""
+featuredImage: "/assets/happiness.jpg"
 pairedSlug: "행복의-비밀"
 youtubeId: "NwC1zNHPIQY"
 ---
