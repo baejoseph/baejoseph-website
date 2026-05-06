@@ -5,7 +5,7 @@ slug: "halal"
 lang: "en"
 pairedSlug: "할랄"
 tags: ["leftism", "theology", "courage", "uk"]
-featuredImage: ""
+featuredImage: "/assets/halal.jpg"
 ---
 
 There’s a particular kind of blindspot that reveals what a movement truly worships - not what it claims to value, but what it will never criticise, no matter how flagrant the contradiction.
