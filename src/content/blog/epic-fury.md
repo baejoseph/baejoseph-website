@@ -39,7 +39,7 @@ Before anything else, let us acknowledge who this victory truly belongs to.
 
 The Christians of Iran — the underground church, the house churches that have grown explosively under persecution — have been fasting and praying for decades. They prayed for their nation. They prayed under threat of imprisonment, torture, and death. God heard them.
 
-**Praise God.** This is what answered prayer looks like on a geopolitical scale. Do not let the [political commentary](/vivek-en/) crowd out the theological reality: the God of Abraham, Isaac, and Jacob moves in history. He always has. He always will.
+**Praise God.** This is what answered prayer looks like on a geopolitical scale. Do not let the [political commentary](/vivek/) crowd out the theological reality: the God of Abraham, Isaac, and Jacob moves in history. He always has. He always will.
 
 —-
 

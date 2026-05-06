@@ -20,7 +20,7 @@ The United States Navy was already escorting those very ships. American sailors 
 
 Think about what that means in practice. When maritime insurance disappears, shipping companies cannot operate legally. Ports refuse to receive uninsured vessels. Trade grinds to a halt. Energy prices spike. And who suffers? Not the bankers in London. Not the hedge funds. Ordinary people—paying more for petrol, heating, food, everything that moves by ship.
 
-## This Is How the [Deep State](/vivek-en/) Wages War
+## This Is How the [Deep State](/vivek/) Wages War
 
 This is the mechanism. Not tanks. Not troops. The weapon of choice for the globalist financial class is economic uncertainty. Create enough fog, enough hesitation, enough “risk”-and you strangle trade without firing a single shot. The beauty of it, from their perspective, is that it is completely deniable. Lloyd’s is a “private company.” Insurance decisions are “commercial.” Nothing to see here.
 
