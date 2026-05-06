@@ -136,7 +136,7 @@ const scheduledCount = posts.length - publishedCount;
   function syncTagPage() {
     const preview = isPreview();
     let visibleCount = 0;
-    document.querySelectorAll<HTMLElement>('.post-item').forEach(el => {
+    document.querySelectorAll('.post-item').forEach(el => {
       const langMatch = activeLang === 'all' || el.dataset.lang === activeLang;
       const isFuture = el.dataset.future === 'true';
       const show = langMatch && (!isFuture || preview);
