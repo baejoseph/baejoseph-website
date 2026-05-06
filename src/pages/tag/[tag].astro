@@ -46,7 +46,7 @@ const scheduledCount = posts.length - publishedCount;
 
 <Layout title={`#${tag} — Joseph Bae`} description={`Posts tagged ${tag}`}>
   <div class="tag-header">
-    <a href="/" class="back-link">← All posts</a>
+    <a href="/" id="back-link" class="back-link">← All posts</a>
     <h1 class="tag-title">#{tag}</h1>
     <p class="tag-count">
       <span id="visible-count">{publishedCount}</span> {publishedCount === 1 ? 'post' : 'posts'}
@@ -54,6 +54,12 @@ const scheduledCount = posts.length - publishedCount;
         <span id="scheduled-hint" style="display:none"> · {scheduledCount} scheduled</span>
       )}
     </p>
+  </div>
+
+  <div class="lang-filter">
+    <button class="lang-btn" id="lang-all" onclick="filterLang('all',this)">All</button>
+    <button class="lang-btn" id="lang-en" onclick="filterLang('en',this)">English</button>
+    <button class="lang-btn" id="lang-ko" onclick="filterLang('ko',this)">한국어</button>
   </div>
 
   <div class="post-list">
@@ -80,16 +86,60 @@ const scheduledCount = posts.length - publishedCount;
 
 <script>
   const STORAGE_KEY = 'baejoseph_preview_mode';
+  const LANG_SESSION_KEY = 'baejoseph_lang_filter';
+
   function isPreview() {
     try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
   }
+
+  // ── Lang filter ──────────────────────────────────────────────────────────
+  let activeLang = 'all';
+
+  function getInitialLang() {
+    // 1. Read from URL ?lang=en
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'ko') return urlLang;
+    // 2. Fallback to sessionStorage
+    try {
+      const sessionLang = sessionStorage.getItem(LANG_SESSION_KEY);
+      if (sessionLang === 'en' || sessionLang === 'ko') return sessionLang;
+    } catch {}
+    // 3. Default
+    return 'all';
+  }
+
+  function setActiveLang(lang) {
+    activeLang = lang;
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    const btn = document.getElementById(`lang-${lang}`);
+    if (btn) btn.classList.add('active');
+
+    // Update back link to carry lang
+    const backLink = document.getElementById('back-link');
+    if (backLink) {
+      if (lang !== 'all') {
+        backLink.href = `/?lang=${lang}`;
+      } else {
+        backLink.href = '/';
+      }
+    }
+  }
+
+  function filterLang(lang, btn) {
+    setActiveLang(lang);
+    try { sessionStorage.setItem(LANG_SESSION_KEY, lang); } catch {}
+    syncTagPage();
+  }
+  window.filterLang = filterLang;
 
   function syncTagPage() {
     const preview = isPreview();
     let visibleCount = 0;
     document.querySelectorAll<HTMLElement>('.post-item').forEach(el => {
+      const langMatch = activeLang === 'all' || el.dataset.lang === activeLang;
       const isFuture = el.dataset.future === 'true';
-      const show = !isFuture || preview;
+      const show = langMatch && (!isFuture || preview);
       el.style.display = show ? 'flex' : 'none';
       if (show) visibleCount++;
     });
@@ -101,8 +151,12 @@ const scheduledCount = posts.length - publishedCount;
 
   document.addEventListener('previewModeChanged', syncTagPage);
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', syncTagPage);
+    document.addEventListener('DOMContentLoaded', () => {
+      setActiveLang(getInitialLang());
+      syncTagPage();
+    });
   } else {
+    setActiveLang(getInitialLang());
     syncTagPage();
   }
 </script>

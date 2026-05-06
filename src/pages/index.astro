@@ -143,6 +143,7 @@ const heroPool = posts
 
   // ── Lang / preview filter ─────────────────────────────────────────────────
   const STORAGE_KEY = 'baejoseph_preview_mode';
+  const LANG_SESSION_KEY = 'baejoseph_lang_filter';
   let activeLang = 'en';
 
   function isPreview() {
@@ -162,12 +163,55 @@ const heroPool = posts
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeLang = lang;
+    try { sessionStorage.setItem(LANG_SESSION_KEY, lang); } catch {}
     updatePostVisibility();
   }
   window.filterLang = filterLang;
 
+  // ── Restore from URL or sessionStorage on load ────────────────────────────
+  function getInitialLang() {
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'ko') return urlLang;
+    try {
+      const sessionLang = sessionStorage.getItem(LANG_SESSION_KEY);
+      if (sessionLang === 'en' || sessionLang === 'ko') return sessionLang;
+    } catch {}
+    return 'en'; // default on home page
+  }
+
+  // ── Tag links carry lang filter ───────────────────────────────────────────
+  document.addEventListener('click', (e) => {
+    const tagLink = (e.target as HTMLElement).closest('.tag-pill-sm');
+    if (!tagLink) return;
+    if (activeLang === 'all') return; // no need to append param for "all"
+    e.preventDefault();
+    const href = tagLink.getAttribute('href') || '';
+    const sep = href.includes('?') ? '&' : '?';
+    window.location.href = `${href}${sep}lang=${activeLang}`;
+  });
+
   document.addEventListener('previewModeChanged', () => updatePostVisibility());
-  document.addEventListener('DOMContentLoaded', updatePostVisibility);
+
+  // Apply on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      activeLang = getInitialLang();
+      const btnId = activeLang === 'all' ? '' : `lang-${activeLang}`;
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      if (btnId) {
+        const btn = document.querySelector(`.lang-btn[onclick*="${activeLang}"]`);
+        if (btn) btn.classList.add('active');
+      }
+      updatePostVisibility();
+    });
+  } else {
+    activeLang = getInitialLang();
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    const btn = document.querySelector(`.lang-btn[onclick*="${activeLang}"]`);
+    if (btn) btn.classList.add('active');
+    updatePostVisibility();
+  }
 </script>
 
 <style>
