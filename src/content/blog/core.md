@@ -37,7 +37,7 @@ Paul writes those words from prison. He doesn’t know if he will live or die. A
 
 — *Philippians 1:23–24 (NKJV)*
 
-That is Paul’s dilemma — and it is ours with our friend. If it were only him, I’d say: go on ahead, brother. We’ll see you in heaven. But his young children need a father. I am convinced that God still has work for this man to do. So I am praying. Not the polite kind of prayer. I am believing for a miracle. Divine healing. In the name of Jesus. Amen.
+That is Paul’s dilemma — and it is ours with our friend. If it were only him, I’d say: go on ahead, brother. We’ll see you in heaven. But his young children need a father. I am convinced that God still has work for this man to do. So I am praying. Not the polite kind of prayer. I’m talking about the [kind of crying-out prayer](/cry-out) — the kind that doesn’t whisper, it roars. The kind that grabs God by His promises and refuses to let go. I am believing for a miracle. Divine healing. In the name of Jesus. Amen.
 
 But while we pray, let me turn this mirror on myself.
 
