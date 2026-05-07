@@ -1,9 +1,9 @@
 ---
 title: "🍯 Why Did God Create Sweetness?"
 date: "2023-11-03"
-slug: "sweet-en"
+slug: "sweet"
 lang: "en"
-pairedSlug: "sweet"
+pairedSlug: "단거"
 featuredImage: "/assets/SCR-20231110-jzx.jpeg"
 tags: ["family", "korea"]
 ---

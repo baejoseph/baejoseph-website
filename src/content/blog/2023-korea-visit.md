@@ -1,9 +1,9 @@
 ---
 title: "🛫 Two Nights in Korea — August 2023"
 date: "2023-08-18"
-slug: "korea-visit-2023"
+slug: "2023-korea-visit"
 lang: "en"
-pairedSlug: "2023-korea-visit"
+pairedSlug: "2023한국방문"
 featuredImage: "/assets/IMG_9294.jpeg"
 tags: ["korea", "family", "testimony"]
 ---

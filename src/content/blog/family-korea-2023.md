@@ -15,4 +15,4 @@ What a lovely family trip to Korea! The children relished their first experience
 
 —-
 
-**Update:** four months later, I was back in Korea alone — under very different circumstances — [Two Nights in Korea](/korea-visit-2023/).
+**Update:** four months later, I was back in Korea alone — under very different circumstances — [Two Nights in Korea](/2023-korea-visit/).
