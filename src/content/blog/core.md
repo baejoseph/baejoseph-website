@@ -2,7 +2,7 @@
 title: "💀 What Remains"
 date: "2026-05-07"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/core.jpg"
 tags: ["faith", "prayer", "spiritual-health", "reflection"]
 pairedSlug: "핵심"
 ---
