@@ -6,7 +6,7 @@ lang: en
 tags: [tech, leftism, courage, eschatology]
 excerpt: "Anthropic claimed to have built the most powerful AI in history. China stole it. And then Anthropic told the U.S. military they couldn’t use it. Think carefully about what that means."
 featuredImage: "/assets/anthropic-war.png"
-pairedSlug: anthropic-war-ko
+pairedSlug: "앤트로픽전쟁"
 ---
 
 Yesterday I wrote about my [rollercoaster relationship with Anthropic](/anthropic/) and Trump’s executive order banning them from all federal agencies. Since then, the situation has escalated sharply—and the commentary flooding in from serious thinkers has crystallised something important that I want to put on record.

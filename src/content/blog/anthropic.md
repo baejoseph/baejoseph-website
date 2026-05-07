@@ -6,7 +6,7 @@ lang: en
 tags: [tech, leftism, courage]
 excerpt: "I went from dismissing Anthropic as a woke EA vanity project to placing them second only to xAI-and then Trump banned them from every federal agency in America overnight."
 featuredImage: "/assets/anthropic.png"
-pairedSlug: anthropic-ko
+pairedSlug: "앤트로픽"
 ---
 
 I went from dismissing Anthropic as a woke EA vanity project to placing them second only to xAI-and then Trump banned them from every federal agency in America overnight. That is quite a trajectory for a single company to trace in the span of a few months.

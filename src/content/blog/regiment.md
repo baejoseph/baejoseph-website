@@ -6,7 +6,7 @@ lang: en
 tags: [theology, courage, family]
 excerpt: "God redirected my men’s breakfast talk at the last minute. What I would have said - about the British Army’s regiment system and what it means for Christian men fighting together."
 featuredImage: "/assets/regiment.png"
-pairedSlug: regiment-ko
+pairedSlug: "연대"
 ---
 
 I was asked to share a one-to-two minute thought at our church men’s breakfast recently. I spent time praying about what to say, and landed on something I had been sitting with for a few weeks — [an essay I wrote earlier this month on the oldest play in the tyrant’s handbook](/control/). The diagnosis: an epidemic of effeminate men, in society and in the church alike. The prescription: eat meat, lift weights, stop watching the [BBC](/sober/) and CNN, read your Bible, fast intentionally, pray with other men. Because to my mind, the softening of men and the disarming of men are part of the same agenda.

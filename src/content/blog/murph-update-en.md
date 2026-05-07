@@ -3,7 +3,7 @@ title: "💪 Murph Challenge: First Full Completion"
 date: "2023-10-21"
 slug: "murph-update-en"
 lang: "en"
-pairedSlug: "murph-update"
+pairedSlug: "머프업데이트"
 featuredImage: "/assets/IMG_9814.jpeg"
 tags: ["health", "testimony"]
 ---
