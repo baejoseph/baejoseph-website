@@ -23,8 +23,8 @@ tags: ["testimony"]
 -   🙏 [Prayer mission](/2023-prayer-mission) in Newbridge, Wales in July
 -   👩‍🍼 Founding of [the Sarah Club](/sarah-club) in July
 -   💰 [Getting paid for my coding work](/mymortgageinsight) for the first time
--   🛫 [A surprise visit](/2023-korea-visit) to Korea for auntie’s funeral and meeting Rick Ridings
--   💪 Starting the [Murph challenge](/murph)
+-   🛫 [A surprise visit](/2023한국방문) to Korea for auntie’s funeral and meeting Rick Ridings
+-   💪 Starting the [Murph challenge](/머프)
 -   🧑‍🏫 Teaching the [Ealing Youth Group](/ealing-yale).
 -   💑 [Jun & Juna wedding](/jun-juna-wedding) in Barcelona in October
 -   🏘️ [My parents finding a place to live on the Lord’s Hill](https://peterbae.org/eng04) after a year living with us in October

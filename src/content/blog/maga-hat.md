@@ -17,7 +17,7 @@ Longer answer: I’ve read somewhere that some people deliberately get tattoos t
 
 ![](/assets/IMG_9270-1-1024x768.jpeg)
 
-Another answer: to hack my body (fool my body) into producing extra testosterone when I go out for [exercise](/murph) every day. This is how I dress for murph:
+Another answer: to hack my body (fool my body) into producing extra testosterone when I go out for [exercise](/머프) every day. This is how I dress for murph:
 
 ![](/assets/IMG_8465-1024x683.jpeg)
 

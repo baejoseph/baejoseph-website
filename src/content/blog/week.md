@@ -15,7 +15,7 @@ Sunday
 
 7:30AM
 
-💪 70% [Murph](/murph) @ Rothamstead Park
+💪 70% [Murph](/머프) @ Rothamstead Park
 
 9:00AM
 

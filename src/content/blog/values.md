@@ -21,7 +21,7 @@ We wake up every morning whispering, “Perhaps today,” because we’re [pre-t
 
 **Our playbook**? The 66 books alone. [Daily McCheyne reading](/bible-app), family devotions, Scripture memory on repeat. We’re not just hearers; we’re doers: rejoice always, pray without ceasing, give thanks in everything (1 Thessalonians 5:16-18).
 
-**Our rhythm**? [Early mornings](/week), [Murph workouts](/murph), Monday fasting, first-three-days-of-the-month fasting, 21-day January [reset](/fasting). Bodies are useful slaves, not tyrants.
+**Our rhythm**? [Early mornings](/week), [Murph workouts](/머프), Monday fasting, first-three-days-of-the-month fasting, 21-day January [reset](/fasting). Bodies are useful slaves, not tyrants.
 
 **Our hates** (yes, perfect hatred is allowed—see Psalm 139:22)?  
 The BBC, [mainstream everything](/sober), [climate hysteria](/climate), globalism, [multiculturalism myths](/multiculturalism), [witchcraft](/tor), Islam, and every flavour of [Leftism](/leftism-eng)—[socialism](/starve), [Marxism](/3-men-room), CRT, queer theory, [Christian](/keller) [progressivism](/propitiation). We spot it, rebuke it, reject it.

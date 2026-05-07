@@ -86,7 +86,7 @@ Seeing that with my own eyes—and thinking about the pastor who had moved into 
 
 In the conversations I had with Pastor Han Sang-gyu, Pastor Ryu Ju-hyun, and Pastor Han Sung-mo of the “Kindling Spark” team, I found a shared concern that runs deep in all of us: the infiltration of left-wing and liberal theology into the Korean church. I shared a post I had written earlier, *“The Pure Gospel and Tim Keller’s Left-Wing Ideology”* [[2023-keller]](/keller).
 
-That conversation opened something. Pastor Han Sung-mo confessed that he had once been a left-wing pastor himself—and that only the grace of Jesus brought him through genuine repentance and restoration. After the mission ended, he was kind enough to write out that story and send it to me. [[2023-pastor-han]](/pastor-han)
+That conversation opened something. Pastor Han Sung-mo confessed that he had once been a left-wing pastor himself—and that only the grace of Jesus brought him through genuine repentance and restoration. After the mission ended, he was kind enough to write out that story and send it to me. [[2023-pastor-han]](/한목사님)
 
 —-
 
