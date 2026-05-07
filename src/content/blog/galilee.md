@@ -6,7 +6,7 @@ lang: "en"
 featuredImage: "/assets/SCR-20250426-g5k.jpeg"
 pairedSlug: "갈릴리"
 
-tags: ["travel", "testimony"]
+tags: ["travel", "testimony", "israel"]
 ---
 
 The palms whispered.  

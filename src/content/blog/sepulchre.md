@@ -6,7 +6,7 @@ lang: "en"
 featuredImage: "/assets/SCR-20250425-dq6.jpeg"
 pairedSlug: "성묘교회"
 
-tags: ["travel", "testimony"]
+tags: ["travel", "testimony", "israel"]
 ---
 
 Dust on my sandals. Incense in the air. The stones spoke. The Jerusalem Cross of _Custodia Terræ Sanctæ_—cut into marble, carved into iron, worn by zealots a thousand years dead—pressed down on my soul like a seal.
