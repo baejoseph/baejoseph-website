@@ -45,3 +45,7 @@ My chest burned as I heard it.
 Yes. Jesus is coming back. The day is not distant. And this is not the season for distraction, for compromise, or for divided hearts. It is the season to strip everything off—every weight, every sin that so easily entangles—and to serve the Lord with undivided devotion.
 
 I flew back to England the next morning. Two nights. But I am still processing what happened in that room in Heyri.
+
+—
+
+_Update: we went to Israel over Easter 2025, and here are two poems I was inspired to write at [Sea of Galilee](/galilee) and at the [Holy Sepulchre Church](/sepulchre)._
