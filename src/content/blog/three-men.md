@@ -1,9 +1,9 @@
 ---
 title: "🗡️ Three Men in a Room"
 date: "2023-11-24"
-slug: "three-men-in-a-room"
+slug: "three-men"
 lang: "en"
-pairedSlug: "3-men-room"
+pairedSlug: "세남자"
 featuredImage: "/assets/SCR-20231214-fjl-scaled.jpeg"
 tags: ["leftism", "theology"]
 ---
