@@ -25,27 +25,27 @@ I began to look more carefully. The deeper I looked, the more troubled I became.
 
 ### How his mind was shaped
 
-Keller openly credits a middle school guidance counsellor — an ultra-leftist activist — for forming his early convictions (*The Reason for God*, introduction, p. xi). At university, he immersed himself in the Frankfurt School’s [Critical Theory](/leftism-eng): the framework that identifies inequality as the world’s supreme evil and reads all human relations through the lens of oppressor and oppressed.
+Keller openly credits a middle school guidance counsellor — an ultra-leftist activist — for forming his early convictions (*The Reason for God*, introduction, p. xi). At university, he immersed himself in the Frankfurt School’s [Critical Theory](/leftism): the framework that identifies inequality as the world’s supreme evil and reads all human relations through the lens of oppressor and oppressed.
 
 Throughout his ministry, Keller regularly invoked Gustavo Gutiérrez — the Latin American Catholic bishop who fused Marxism with Catholic theology to create Liberation Theology, coining the phrase “God’s preferential option for the poor.” This phrase echoes throughout *Generous Justice* (p. 7).
 
-But Scripture says precisely the opposite: *”You shall do no injustice in judgment. You shall not be partial to the poor, nor honour the person of the mighty. In righteousness you shall judge your neighbour.”* (Leviticus 19:15)
+But Scripture says precisely the opposite: *“You shall do no injustice in judgment. You shall not be partial to the poor, nor honour the person of the mighty. In righteousness you shall judge your neighbour.”* (Leviticus 19:15)
 
-Critical Theory is incompatible with biblical anthropology. It does not see people as individual image-bearers of God with personal dignity and responsibility. It reduces persons to their group identities — race, gender, sexual orientation — and casts them purely as victims of systemic forces. There is no sin in this framework, only oppression. No redemption, only revolution.
+As I wrote in more detail [on Critical Theory](/leftism), Critical Theory is incompatible with biblical anthropology. It does not see people as individual image-bearers of God with personal dignity and responsibility. It reduces persons to their group identities — race, gender, sexual orientation — and casts them purely as victims of systemic forces. There is no sin in this framework, only oppression. No redemption, only revolution.
 
 ### The distorted gospel — in Keller’s own words
 
 These intellectual roots eventually infected Keller’s gospel. His own words are the most honest testimony here:
 
-*”Jesus’ life, death and resurrection was an infinitely costly rescue operation to restore justice to the oppressed and marginalised.”*
+*“Jesus’ life, death and resurrection was an infinitely costly rescue operation to restore justice to the oppressed and marginalised.”*
 — *The Reason for God*, pp. 56–57
 
-*”The ultimate purpose of Jesus is not only individual salvation and pardon for sin but also the renewal of this world, the end of disease, poverty, injustice… God hates the suffering and oppression of this material world so much, he was willing to get involved in it and to fight against it.”*
+*“The ultimate purpose of Jesus is not only individual salvation and pardon for sin but also the renewal of this world, the end of disease, poverty, injustice… God hates the suffering and oppression of this material world so much, he was willing to get involved in it and to fight against it.”*
 — *The Prodigal God*
 
 These statements sound compelling at first. But now read the angel’s announcement at the birth of Christ:
 
-*”She will give birth to a son, and you are to give him the name Jesus, because **he will save his people from their sins**.”* (Matthew 1:21)
+*“She will give birth to a son, and you are to give him the name Jesus, because **he will save his people from their sins**.”* (Matthew 1:21)
 
 Not from poverty. Not from structural oppression. From **sin**.
 
@@ -57,7 +57,7 @@ When Keller publicly defended the 2020 BLM rioters as “cries of the voiceless,
 
 ### Where silence replaced clarity
 
-Keller acknowledged that homosexuality “deviates from God’s original design.” But he immediately directed the blame toward the church: the Christians who condemn homosexuality are the greater scandal, he argued, and his counsel was to love gay and lesbian neighbours *”as you love Hindus”* — with warmth, but conspicuously without the word.
+Keller acknowledged that homosexuality “deviates from God’s original design.” But he immediately directed the blame toward the church: the Christians who condemn homosexuality are the greater scandal, he argued, and his counsel was to love gay and lesbian neighbours *“as you love Hindus”* — with warmth, but conspicuously without the word.
 
 Then in 2022, asked about the greatest danger facing evangelicalism, Keller did not point to liberal theology eroding Scripture’s authority. He did not point to the aggressive weaponisation of LGBTQ+ ideology against the church. He pointed instead to **Christian nationalism and “fanaticism”** — by which he meant, essentially, Christians who wanted Donald Trump re-elected.
 
@@ -69,11 +69,11 @@ At the root of it all, Keller’s method leaned on the wisdom of philosophers ov
 
 But Paul at the Areopagus still proclaimed the resurrection and the coming judgment. He was mocked for it, and he did not edit those things out. What Keller practised more closely resembles self-censorship for cultural acceptability. Scripture has a word for that kind of wisdom:
 
-> *”This wisdom does not descend from above, but is earthly, sensual, demonic. For where envy and self-seeking exist, confusion and every evil thing are there. But the wisdom that is from above is first pure, then peaceable, gentle, willing to yield, full of mercy and good fruits, without partiality and without hypocrisy.”*
+> *“This wisdom does not descend from above, but is earthly, sensual, demonic. For where envy and self-seeking exist, confusion and every evil thing are there. But the wisdom that is from above is first pure, then peaceable, gentle, willing to yield, full of mercy and good fruits, without partiality and without hypocrisy.”*
 >
 > James 3:15–18
 
-> *”For the message of the cross is foolishness to those who are perishing, but to us who are being saved it is the power of God.”*
+> *“For the message of the cross is foolishness to those who are perishing, but to us who are being saved it is the power of God.”*
 >
 > 1 Corinthians 1:18
 
@@ -89,10 +89,10 @@ Pastors: your congregations are being quietly formed by [ideas](/sober), languag
 
 When the young deacon Athanasius stood against Arius — a man forty years his senior, with the entire Greek-speaking Christian world behind him — he said:
 
-> *”If the world is against the truth, then I am against the world.”*
+> *“If the world is against the truth, then I am against the world.”*
 
 That is the spirit the church needs now. Not accommodation. Not a gospel sanded down until the world will praise it. The gospel as it is — the power of God, to the Jew first, and also to the Greek.
 
 ---
 
-**Update:** I later wrote a fuller treatment of what the gospel really requires — [On Propitiation](/propitiation/).
+**Update:** I later wrote a fuller treatment of what the gospel really requires — [On Propitiation](/propitiation).
