@@ -61,6 +61,8 @@ Imagine if Mossad fabricated terrorist attacks to justify Israel’s military bu
 
 ## The RICO Question
 
+![](/assets/splc_4.jpg)
+
 This brings us to an uncomfortable question that nobody wants to ask.
 
 The SPLC, Tides Foundation, and various censorship and de-banking pressure groups — do they coordinate their work? If one of them is breaking the law, are they all breaking the law together?
