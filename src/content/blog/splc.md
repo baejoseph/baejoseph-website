@@ -17,11 +17,15 @@ Not metaphorically. Literally. Through a labyrinth of foundations and shell orga
 
 The SPLC — Southern Poverty Law Center — positioned itself as the moral beacon against hate groups for decades. They tracked extremism, named names, built databases. Universities cited them. Law enforcement used their intelligence. Good people donated without question.
 
-But here’s what they didn’t tell you: SPLC was funding the very extremism it claimed to monitor.
+But here's what they didn't tell you: SPLC was funding the very extremism it claimed to monitor.
+
+![](/assets/splc_1.jpg)
 
 For over twenty years, SPLC channeled money through the Tides Foundation to groups that later became some of the most notorious right-wing extremist organisations in America. The League of the South. Indymedia. The [New York City](/starve/) Anti-Defamation Project. All of them received funding that originated from the same anti-extremist donors who gave to SPLC.
 
 ## The Money Trail
+
+![](/assets/splc_2.jpg)
 
 Well, well, well.
 
@@ -46,6 +50,8 @@ The logic is cold and mechanical. An anti-extremist organisation needs extremism
 It’s the ultimate perpetual motion machine of progressive guilt. The more extremism you create, the more donations you receive to fight it. The more donations you receive, the more extremism you can create. Round and round the guilt carousel goes.
 
 ## The Hoaxacre
+
+![](/assets/splc_3.jpg)
 
 And it gets worse. SPLC didn’t just fund extremists. It manufactured evidence of them.
 
