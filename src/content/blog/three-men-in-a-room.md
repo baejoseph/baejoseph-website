@@ -24,10 +24,10 @@ Initially, he moved with careful, understated steps, evading the attention of th
 
 ---
 
-This is the story of the modern West. The Christian and the libertarian shake hands on a gentleman’s agreement to keep state power off the table—because that’s what principled people do. Meanwhile, the left has never once played by those rules. They never intended to.
+This is the story of the modern West. The Christian and the libertarian shake hands on a gentleman’s agreement to keep state power off the table—because that’s what principled people do. Meanwhile, the left has never once played by those rules. I’ve [written extensively about why Christians must reject leftism](/leftism)—they never intended to play fair.
 
-The naïveté of the right is almost theological in its stubbornness: the belief that if we simply refuse to play power games, the other side will follow suit. They won’t. They never have. History is unambiguous on this point.
+The naïveté of the right is almost theological in its stubbornness: the belief that if we simply refuse to play power games, the other side will follow suit. They won’t. They never have. I’ve written about [the tyrant’s playbook before](/control)—disarm your opponents, then seize their sword. History is unambiguous on this point.
 
-The sword doesn’t disappear because you agree not to touch it. It waits. And the person willing to grab it—without hesitation, without apology—will determine what the room looks like when the lights come on.
+The sword doesn’t disappear because you agree not to touch it. It waits. This is exactly what the [wolf in sheep’s clothing](/fabian) does—poses as a friend, then strikes. And the person willing to grab it—without hesitation, without apology—will determine what the room looks like when the lights come on.
 
-I’m not arguing for ruthlessness. I’m arguing for clarity. Know what you’re dealing with. Name it accurately. And stop being surprised when people who have declared their intentions carry them out.
+I’m not arguing for ruthlessness. I’m arguing for clarity. This is the [courage](/courage) the world needs right now—not reckless bravery, but the clear-eyed kind. Know what you’re dealing with. Name it accurately. And stop being surprised when people who have declared their intentions carry them out.
