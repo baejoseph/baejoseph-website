@@ -3,8 +3,9 @@ title: "💀 What Remains"
 date: "2026-05-07"
 lang: "en"
 featuredImage: "/assets/core.jpg"
-tags: ["faith", "prayer", "spiritual-health", "reflection"]
+tags: ["faith", "prayer", "spiritual-health", "reflection", "video"]
 pairedSlug: "핵심"
+youtubeId: "KPiPIlNlqM0"
 ---
 
 I’ve been visiting a friend — let’s call him Paul — who has been battling brain cancer. The last few times I saw him, he was in palliative care already.

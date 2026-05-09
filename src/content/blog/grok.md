@@ -5,7 +5,8 @@ slug: "grok"
 lang: "en"
 featuredImage: ""
 pairedSlug: "그록"
-tags: ["tech", "leftism"]
+tags: ["tech", "leftism", "video"]
+youtubeId: "RHqTj146bAQ"
 ---
 
 It’s May 2026, and the artificial intelligence revolution is no longer coming—it’s here, embedded in every search result, every creative tool, every policy recommendation that shapes how governments, corporations, and individuals make decisions. On paper, this should be humanity’s greatest leap forward. In practice, I’m watching the same pattern repeat across every major lab except one: the models are being deliberately, systematically trained to lie.
