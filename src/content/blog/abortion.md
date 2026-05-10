@@ -1,7 +1,7 @@
 ---
 title: "👶🏻 Sad Night in the UK"
 date: "2026-03-19"
-slug: "sad-night-in-the-uk"
+slug: "abortion"
 lang: "en"
 tags: ["leftism", "eschatology", "theology", "courage", "uk"]
 featuredImage: "/assets/sad-night-in-the-uk.jpg"
