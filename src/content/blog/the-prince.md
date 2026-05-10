@@ -48,7 +48,7 @@ The family settled in London, where Prince spent seven years in ministry—inclu
 
 A furlough year of itinerant ministry through churches in Britain and Canada eventually led Prince to the United States, where he was embraced by Pentecostal networks and began teaching across the country and eventually around the world. It was here that his deliverance ministry took shape. He had struggled personally with depression his entire life—something inherited through his family line. Now he recognized it for what it was: not a personality trait but a spirit. He held onto Joel 2:32—
 
-> “And it shall come to pass that whoever calls on the name of the LORD shall be saved.”
+> “And it shall come to pass that whoever calls on the name of the Lᴏʀᴅ shall be saved.”
 >
 > Joel 2:32 (NKJV)
 

@@ -23,7 +23,7 @@ He states:
 
 > “God restored the throne of David in the resurrection, ascension, and inauguration of Christ Jesus as Lord and Redeemer of Israel (Acts. 2:36; 5:31). \[…\]”
 > 
-> “As the Davidic kings were sitting ‘on the throne of the LORD’ (1 Chron. 28:5; 29:23), so Christ is now seated with His Father on His throne (Rev. 3:21).”
+> “As the Davidic kings were sitting ‘on the throne of the Lᴏʀᴅ’ (1 Chron. 28:5; 29:23), so Christ is now seated with His Father on His throne (Rev. 3:21).”
 > 
 > “The Davidic throne is no longer unoccupied or ineffective, but is transferred from Jerusalem to the throne room in heaven, where Christ is presently the Davidic King (Acts 2:34–36; 1 Cor. 15:25; Eph. 1:20–22).”
 > 
@@ -83,7 +83,7 @@ Then, towards the end of his sermon, Peter makes the equally important shift to 
 
 Psalm 110:1–2 reads:
 
-> “The LORD says to my Lord: ‘Sit at My right hand  
+> “The Lᴏʀᴅ says to my Lord: ‘Sit at My right hand  
 > Until I make Your enemies a footstool for Your feet.’” 
 > 
 > Psalm 110:1–2
@@ -98,7 +98,7 @@ Consequently, Peter says:
 
 > “Therefore having been exalted to the right hand of God, and having received from the Father the promise of the Holy Spirit, he has poured forth that which you both see and hear. For it was not David who ascended into heaven, but he himself says:
 > 
-> ‘The LORD said to my Lord, ‘Sit at my right hand until I make your enemies a footstool for your feet.’’”
+> ‘The Lᴏʀᴅ said to my Lord, ‘Sit at my right hand until I make your enemies a footstool for your feet.’’”
 > 
 > Acts. 2:33–35
 

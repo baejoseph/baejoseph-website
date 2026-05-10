@@ -47,7 +47,7 @@ When I moved to the UK in 5th grade, until my college years, my father would wak
 
 In 2017, the experience of joining the [UK Prayer Mission](/2017-prayer-mission) was a significant turning point for me. At that time, I clung to the following passage from **Isaiah 40:28-31**:
 
-> “Have you not known? Have you not heard? The everlasting God, the LORD, the Creator of the ends of the earth, neither faints nor is weary. His understanding is unsearchable. He gives power to the weak, and to those who have no might He increases strength. Even the youths shall faint and be weary, and the young men shall utterly fall, but those who wait on the LORD shall renew their strength; **they shall mount up with wings like eagles**, they shall run and not be weary, they shall walk and not faint.”
+> “Have you not known? Have you not heard? The everlasting God, the Lᴏʀᴅ, the Creator of the ends of the earth, neither faints nor is weary. His understanding is unsearchable. He gives power to the weak, and to those who have no might He increases strength. Even the youths shall faint and be weary, and the young men shall utterly fall, but those who wait on the Lᴏʀᴅ shall renew their strength; **they shall mount up with wings like eagles**, they shall run and not be weary, they shall walk and not faint.”
 > 
 > **Isaiah 40:28-31**
 

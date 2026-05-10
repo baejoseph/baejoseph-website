@@ -33,7 +33,7 @@ What was even harder for many men was that the crew didn’t inform us of the en
 
 ![](/assets/XCC_WALES24__CE_8766-683x1024.jpg)
 
-The Brecon Beacons offered outstanding scenery. The weather during our stay was also good, with hardly any rain. Walking with my team members, we couldn’t help but marvel at the beautiful landscapes more than once. It naturally led to outbursts of praise. In particular, I had memorized Psalm 145 while preparing for this trip. With my team members’ permission, I recited it aloud atop a hill, and we all felt spiritually refreshed. “_All Your works shall praise You, O LORD; and Your saints shall bless You._”
+The Brecon Beacons offered outstanding scenery. The weather during our stay was also good, with hardly any rain. Walking with my team members, we couldn’t help but marvel at the beautiful landscapes more than once. It naturally led to outbursts of praise. In particular, I had memorized Psalm 145 while preparing for this trip. With my team members’ permission, I recited it aloud atop a hill, and we all felt spiritually refreshed. “_All Your works shall praise You, O Lᴏʀᴅ; and Your saints shall bless You._”
 
 ![](/assets/XCC_WALES24__CE_8592-683x1024.jpg)
 
@@ -51,7 +51,7 @@ On Sunday, we did church together as men. To borrow the words of my friend who r
 
 By Sunday afternoon, after our service in the woods, men were sharing intimate details with the team that they had never told another soul. Each time, we were instructed not to offer solutions but instead respond with, “Thank you for sharing.” This last sharing among the team and in the larger group was the highlight of the weekend for me. As my friend had said, I was amazed at how close one can become with 8–9 men in such a short time, and we all felt like we had gained at least a few men who truly accept each other and will be there to support us through hard times going forward.
 
-> “The right hand of the LORD does valiantly! The right hand of the LORD is exalted! The right hand of the LORD does valiantly! **_I shall not die, but live!_** And declare the works of the LORD.”
+> “The right hand of the Lᴏʀᴅ does valiantly! The right hand of the Lᴏʀᴅ is exalted! The right hand of the Lᴏʀᴅ does valiantly! **_I shall not die, but live!_** And declare the works of the Lᴏʀᴅ.”
 > 
 > Psalm 118:16-17
 

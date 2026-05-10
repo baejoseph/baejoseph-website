@@ -51,7 +51,7 @@ In a culture that cannot grasp divine anger, we must champion the gospel truth t
 
 Far from detracting from God’s love, the doctrine of propitiation reveals its grandeur. At the Cross, justice and mercy collide:
 
-> “Yet it pleased the LORD to bruise Him; He has put Him to grief.”
+> “Yet it pleased the Lᴏʀᴅ to bruise Him; He has put Him to grief.”
 > 
 > Isaiah 53:10a
 

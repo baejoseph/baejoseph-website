@@ -13,7 +13,7 @@ According to the book of Revelation in the Bible, God will bring about a wholesa
 
 To help us answer this question, let us go to Exodus. (The striking parallels between the Plagues of Egypt and the Tribulation are well known, and will not be explored here.) The first of the ten plagues was when God struck the River Nile and turned it into blood. Why did God do this? Why the River Nile? To the Egyptians, the River Nile was more than just a source of water vital for their agriculture and life. They worshipped it as a water-bearer god (Egyptologists say this Egyptian god of the Nile was called Hapi).
 
-I believe God is striking nature and the environment because the current world worships the Earth (nature, environment, Gaia, etc.), and this must be punished, “for the LORD, whose name is Jealous, is a jealous God.” (Exodus 34:14).
+I believe God is striking nature and the environment because the current world worships the Earth (nature, environment, Gaia, etc.), and this must be punished, “for the Lᴏʀᴅ, whose name is Jealous, is a jealous God.” (Exodus 34:14).
 
 As I’ve been meditating on this part of God’s wrath and judgement, I’ve come to the realisation: God destroys the environment because it has become an object of worship for the people of this world. Consider the Ten Plagues of Exodus.
 

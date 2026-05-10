@@ -111,7 +111,7 @@ I was grateful to meditate on and pray through them all week. Turning God’s pr
 
 On the first vigil, I clung to Isaiah 40:31:
 
-> “But they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.”
+> “But they who wait for the Lᴏʀᴅ shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.”
 > 
 > Isaiah 40:31
 

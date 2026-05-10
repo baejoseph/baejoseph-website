@@ -55,7 +55,7 @@ Scripture gives us multiple precedents for intimate, vocal, childlike crying to 
 -   Romans 8:15 – We have received the Spirit of adoption “by whom we cry out, ‘Abba, Father.’”  
     Again the verb is κράζομεν—we cry out.
 -   Romans 8:26 – The Spirit helps us in our weakness because we do not know how to pray as we should, and He intercedes with “groanings too deep for words” (or inexpressible groanings). Corporate crying-out prayer often releases these very groanings in audible form.
--   Psalm 130:1 – “Out of the depths I have cried (qārāʾtî) to You, O LORD (Yahweh).”  
+-   Psalm 130:1 – “Out of the depths I have cried (qārāʾtî) to You, O Lᴏʀᴅ (Yahweh).”  
     The verb qārāʾ is the standard Hebrew word for crying aloud, shouting, or calling with a loud voice.
 
 When hundreds of believers cry out together—whether in Korean, English, tongues, or wordless groans—the sound becomes a corporate “Abba!” that ascends like incense before the throne.

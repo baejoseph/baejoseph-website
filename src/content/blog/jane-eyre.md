@@ -23,7 +23,7 @@ However dull she may have been to understand the subtleties of some Christian do
 
 Taking a step back, especially as a Christian, one can see the omnipotent and faithful  hand of God in leading her steps (during the three harrowing days of wandering in the wild and being rejected multiple times by strangers, shopkeepers etc) to literally end up at the doorsteps of her three estranged cousins hundreds of miles away from Thornfield Hall, at exactly the time when all three were gathered from all over England to attend their father’s recent funeral. To me, this divine guidance is the bigger miracle than the climatic “telepathic” communication between Rochester and Jane at the end of the novel. As Christians, do we not also have many stories where we can testify to the faithful hand of God orchestrating all things for the good of those who love Him? At such times, we join Moses who burst into the following doxology:  
 
-> “Who is like you O LORD, amongst the gods? Who is like you? 
+> “Who is like you O Lᴏʀᴅ, amongst the gods? Who is like you? 
 > 
 > You are majestic in holiness, awesome in praises, doing wonders.”
 > 
