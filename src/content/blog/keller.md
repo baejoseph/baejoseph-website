@@ -1,5 +1,5 @@
 ---
-title: "Keller's Leftist Gospel"
+title: "⛪ Keller's Leftist Gospel"
 date: "2023-06-16"
 slug: "keller"
 lang: "en"
