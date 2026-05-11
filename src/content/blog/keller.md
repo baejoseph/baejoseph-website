@@ -5,8 +5,8 @@ slug: "keller"
 lang: "en"
 featuredImage: "/assets/1706522788-tim-keller.jpg"
 pairedSlug: "켈러"
-
-tags: ["theology", "leftism"]
+youtubeId: "r3hoVqAycu8"
+tags: ["theology", "leftism", "video"]
 ---
 
 Timothy Keller died in May 2023. I extend my sincere condolences to his family, friends, and Redeemer Presbyterian Church in New York.
