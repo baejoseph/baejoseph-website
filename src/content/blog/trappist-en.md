@@ -22,4 +22,4 @@ What strikes me about this teaching is where it places the target. It doesn’t 
 
 These three prayers are, in my view, one of the most concise and searingly accurate diagnoses of the human ego ever written. We all want to be recognized. We all want to feel safe. We all want to be the ones steering. And the gospel calls us to die to all three—not through willpower, but through prayer.
 
-([Derek Prince](/derek-prince))
+([Derek Prince](/prince))
