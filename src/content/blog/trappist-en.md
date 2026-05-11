@@ -10,7 +10,7 @@ tags: ["prayer", "theology"]
 
 There is a monastic order called the [Trappists](https://www.trappists.org)—a community of disciples who have taken a vow of silence, broken only when absolutely necessary, in pursuit of a deeper life with God.
 
-One of their monks left behind a teaching on prayer that stops me cold every time I encounter it. Derek Prince quoted it often, and I understand why. Three simple intentions—three things to actively pray that you would *desire*:
+One of their monks left behind a teaching on prayer that stops me cold every time I encounter it. [Derek Prince](/prince) quoted it often, and I understand why. Three simple intentions—three things to actively pray that you would *desire*:
 
 1. **Pray that you would desire not to be esteemed.** Not merely to avoid pride—that’s too easy, too passive. This is something harder: asking God to reshape your very *wants*, so that you genuinely stop craving the approval and admiration of others. Lord, may You alone receive the glory.
 

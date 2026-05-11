@@ -15,7 +15,7 @@ A [Trappist](https://www.trappists.org) Monk’s daily prayer:
 -   Pray to desire not to be secure.
 -   Pray to desire not to be in control.
 
-(Often quoted by Derek Prince)
+(Often quoted by [Derek Prince](/prince))
 
 “트라피스트” 라는 수도원이 있습니다. 이들은 경건 생활을 위해 꼭 필요할 때 빼고는 침묵을 서원한 제자들의 공동체 입니다.
 

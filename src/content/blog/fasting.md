@@ -9,7 +9,7 @@ youtubeId: "HRyHbQ1rZ-w"
 tags: ["fasting", "prayer", "video"]
 ---
 
-\[This is summary of Derek Prince’s teaching on fasting, broadly based on his book: “Shaping History Through Prayer and Fasting”.\]
+\\[This is summary of [Derek Prince](/prince)'s teaching on fasting, broadly based on his book: "Shaping History Through Prayer and Fasting".\\]
 
 The Bible speaks of a key to God’s people experiencing answered prayers and receiving power from God. It is also the secret for the church today to start practicing more effective and powerful prayers. This key is fasting: both individual and corporate.
 
@@ -99,7 +99,7 @@ John Wesley, recognizing the spiritual efficacy of fasting, wrote, “I am convi
 
 Do you want to grow spiritually? Do you desire greater intimacy with God? Do you want to hear His voice and pray more powerfully? Start regular fasting today (e.g., one day a week). Utilise the means God has given us to humble ourselves.
 
-Derek Prince, after accepting Jesus in his 20s, fasted every Wednesday until his death at 88. He fasted for longer periods as needed, fasting a total of about 3,000 days in his life. Near his death, he said that if he could change anything, he wished he could have done more fasting.
+[Derek Prince](/prince), after accepting Jesus in his 20s, fasted every Wednesday until his death at 88. He fasted for longer periods as needed, fasting a total of about 3,000 days in his life. Near his death, he said that if he could change anything, he wished he could have done more fasting.
 
 **\[Benefits of a 21-Day Fast\]**
 
