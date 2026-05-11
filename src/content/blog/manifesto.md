@@ -51,6 +51,6 @@ And that eschatology must **burn with urgency** in every realm: [evangelism](/ev
 
 ---
 
-Such men will change the world. They are the last-hour workers who supercharge the harvest while everything around them spirals into darkness. They eat [meat](/butter/), lift [weights](/murph-challenge/), read the Bible, fast with purpose, pray like warriors, and refuse every form of disarming softness. Their [wives submit](/submit/) and their [children are raised with the rod](/rod/) and the Word—because the household is the first regiment.
+Such men will change the world. They are the last-hour workers who supercharge the harvest while everything around them spirals into darkness. They eat [meat](/butter/), lift [weights](/murph/), read the Bible, fast with purpose, pray like warriors, and refuse every form of disarming softness. Their [wives submit](/submit/) and their [children are raised with the rod](/rod/) and the Word—because the household is the first regiment.
 
 O Lord of the harvest, send forth these workers! Raise the regiment. Make Your men proud. Maranatha—come quickly, Lord Jesus. The fields are white. The [time is short](/iran/). Let the mighty men arise.

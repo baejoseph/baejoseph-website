@@ -24,7 +24,7 @@ Looking back — another chapter in my [journey of faith](/journey) — 2023 has
 -   👩‍🍼 Founding of [the Sarah Club](/sarah-club) in July
 -   💰 [Getting paid for my coding work](/mymortgageinsight) for the first time
 -   🛫 [A surprise visit](/2023-korea-visit) to Korea for auntie's funeral and meeting Rick Ridings
--   💪 Starting the [Murph challenge](/murph-challenge)
+-   💪 Starting the [Murph challenge](/murph)
 -   🧑‍🏫 Teaching the [Ealing Youth Group](/ealing-yale).
 -   💑 [Jun & Juna wedding](/jun-juna-wedding) in Barcelona in October
 -   🏘️ [My parents finding a place to live on the Lord’s Hill](https://peterbae.org/eng04) after a year living with us in October
