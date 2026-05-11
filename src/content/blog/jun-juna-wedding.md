@@ -1,5 +1,5 @@
 ---
-title: "👩‍❤️‍👨 Jun &#038; Juna Wedding @ Barcelona"
+title: "👩‍❤️‍👨 Jun & Juna Wedding @ Barcelona"
 date: "2023-10-13"
 slug: "jun-juna-wedding"
 lang: "en"
