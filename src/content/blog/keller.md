@@ -17,7 +17,7 @@ But Keller was a public theologian whose ideas have shaped millions of believers
 
 ### What first raised the alarm
 
-My unease crystallised in April 2022, when Keller tweeted that abortion — the taking of unborn lives, millions upon millions of them — is simply “a political issue” on which Christians should not rush to judgment about its legalisation.
+My unease crystallised in April 2022, when Keller tweeted that [abortion](/abortion) — the taking of unborn lives, millions upon millions of them — is simply “a political issue” on which Christians should not rush to judgment about its legalisation.
 
 What worldview produces that statement from a pastor?
 
