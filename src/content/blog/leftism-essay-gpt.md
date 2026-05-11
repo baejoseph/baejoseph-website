@@ -1,5 +1,5 @@
 ---
-title: "⌨️ An Essay on Leftism &#038; Chat GPT"
+title: "⌨️ An Essay on Leftism & Chat GPT"
 date: "2023-09-22"
 slug: "leftism-essay-gpt"
 lang: "en"
