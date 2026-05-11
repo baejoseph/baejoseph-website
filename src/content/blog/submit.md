@@ -11,7 +11,7 @@ tags: ["theology", "family"]
 
 > “Wives, submit to your own husbands, as to the Lord.”
 >
-> [Ephesians 5:22](/sarah-club-en/) (NKJV)
+> [Ephesians 5:22](/sarah-club/) (NKJV)
 
 The same command appears three times in the New Testament—Ephesians 5:22, Colossians 3:18, 1 Peter 3:1. Three different letters, three different contexts, one consistent instruction. And yet this is perhaps the most avoided, apologised—for, and quietly buried verse in the modern evangelical church.
 
