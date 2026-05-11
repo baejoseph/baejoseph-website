@@ -1,5 +1,5 @@
 ---
-title: "👰 Paul &#038; Debbie Wedding"
+title: "👰 Paul & Debbie Wedding"
 date: "2023-01-28"
 slug: "paul-debbie-wedding"
 lang: "en"
