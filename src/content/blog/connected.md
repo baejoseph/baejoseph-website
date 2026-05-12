@@ -50,7 +50,7 @@ Another image from the book stayed with me: we file documents in filing cabinets
 
 —-
 
-At the start of this year, by God’s grace, I began leading early morning prayer. Three mornings a week—Monday, Wednesday, Friday—at 6 a.m., I gather with 8–10 believers here in the UK: church members and missionaries. We sing hymns, meditate on the M’Cheyne Bible reading plan, and pray *tong-seong* together for national and church revival. It is one of the richest hours of my week.
+At the start of this year, by God’s grace, I began leading early morning prayer. Three mornings a week—Monday, Wednesday, Friday—at 6 a.m., I gather with 8–10 believers here in the UK: church members and missionaries. We sing hymns, meditate on the [M'Cheyne Bible Reading Plan](/mccheyne), and pray *tong-seong* together for national and church revival. It is one of the richest hours of my week.
 
 Reading this book deepened my understanding of what I’m actually doing in those hours. I’m not performing a religious exercise. I’m connecting—to the Father who built all things, who hears everything, and who holds every prayer like gold.
 

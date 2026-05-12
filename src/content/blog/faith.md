@@ -37,7 +37,7 @@ Surrounded. Swarming like bees. Pushed with violence. And yet—the psalmist doe
 
 ### The McCheyne Connection
 
-I was also reminded of a passage I had read recently, following the [McCheyne Bible Reading plan](/bible-app/): 2 Corinthians 4:7–15. I’ve read it many times, but coming to it fresh off Psalm 118, it hit me differently.
+I was also reminded of a passage I had read recently, following the [McCheyne Bible Reading Plan](/mccheyne): 2 Corinthians 4:7–15. I’ve read it many times, but coming to it fresh off Psalm 118, it hit me differently.
 
 > “But we have this treasure in earthen vessels, that the excellence of the power may be of God and not of us. We are hard-pressed on every side, yet not crushed; we are perplexed, but not in despair; persecuted, but not forsaken; struck down, but not destroyed—always carrying about in the body the dying of the Lord Jesus, that the life of Jesus also may be manifested in our body.”
 >
