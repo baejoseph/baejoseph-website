@@ -53,7 +53,7 @@ In 2017, the experience of joining the [UK Prayer Mission](/2017-prayer-mission)
 
 **_“God! Please help me pray with the strength of an eagle’s wings! Right now, my prayers are like the shallow wings of a pigeon!”_**
 
-In answer to that prayer, God led me to meet Derek Prince, and through [this Jesus Academia](/jesus-academia), I met Pastor John Ko. I believe that these were God’s answers to the earnest prayer I made back then. **Hallelujah!**
+In answer to that prayer, God led me to meet [Derek Prince](/prince), and through [this Jesus Academia](/jesus-academia), I met Pastor John Ko. I believe that these were God’s answers to the earnest prayer I made back then. **Hallelujah!**
 
 ### **Third Keyword: Memorising Scripture**
 
