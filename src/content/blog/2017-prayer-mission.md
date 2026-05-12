@@ -158,7 +158,7 @@ The deeper reason I keep coming back to humility: Luton is a city that has been 
 
 #### Intercession: What I Learned
 
-Intercession is not a supplement to ministry. It *is* ministry. Everything else flows from it. We often say we’re interceding *for* our work—but that may be backwards. The church on its knees before God *is* the work. I’ve come to think of prayer as [spiritual connection](/connected) — the lifeline through which everything else breathes.
+Intercession is not a supplement to ministry. It *is* ministry. Everything else flows from it. We often say we’re interceding *for* our work—but that may be backwards. The church on its knees before God *is* the work. I’ve come to think of prayer as [spiritual connection](/connection) — the lifeline through which everything else breathes.
 
 The Daejeon team’s three churches all practiced what they called altar prayer—regular, nightly intercession in the sanctuary. One church: Monday through Friday, 8–10 pm. Another: Monday through Saturday, 9–10 pm. The specifics varied, but the commitment didn’t. One person or thirty—it didn’t matter. What mattered was not sinning against God by ceasing to pray (1 Samuel 12:23). And the primary subject of that intercession? The Sunday sermon—praying that God’s Word would go out from that pulpit in full power, that the dry bones in the congregation would come alive, that God’s army would form from people who had been spiritually dead.
 

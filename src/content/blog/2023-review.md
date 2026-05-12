@@ -31,7 +31,7 @@ Looking back — another chapter in my [journey of faith](/journey) — 2023 has
 -   🏠 Family moving to Harpenden
 -   🚀 Winning the [2023 DSEC Hackathon](/dsec-2023) with MROps
 -   💯 Launching [BaeGPT](/baegpt) in November
--   ⛪ Wrapping up the year looking forward to a new faith community — [prayer is spiritual connection](/connected) after all.
+-   ⛪ Wrapping up the year looking forward to a new faith community — [prayer is spiritual connection](/connection) after all.
 -   ⛺️ GNG Conference in December
 
 Thank You God, for an amazing year!
