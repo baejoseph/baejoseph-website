@@ -4,7 +4,7 @@ date: "2023-03-10"
 slug: "mccheyne"
 lang: "en"
 pairedSlug: "맥체인"
-featuredImage: "/assets/SCR-20231019-l93.png"
+featuredImage: "/assets/mccheyne-hero.jpg"
 
 tags: ["prayer"]
 ---
