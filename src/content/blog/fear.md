@@ -5,7 +5,7 @@ slug: "fear"
 lang: "en"
 featuredImage: ""
 tags: ["theology", "testimony", "prayer", "faith", "spiritual-health"]
-pairedSlug: "공경"
+pairedSlug: "경외"
 ---
 
 What is the fear of the Lᴏʀᴅ?
