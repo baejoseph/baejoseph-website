@@ -4,8 +4,9 @@ date: "2026-05-14"
 slug: "fear"
 lang: "en"
 featuredImage: ""
-tags: ["theology", "testimony", "prayer", "faith", "spiritual-health"]
+tags: ["theology", "testimony", "prayer", "faith", "spiritual-health", "video"]
 pairedSlug: "경외"
+youtubeId: "YUk0mQE-618"
 ---
 
 What is the fear of the Lᴏʀᴅ?
@@ -66,7 +67,7 @@ So I snapped.
 
 I committed a premeditated sin. There was a cartoon book I knew contained inappropriate images from a shop I had visited the other week. Even though I knew this would spoil the unbroken intimacy I had with God, I deliberately went back to that shop in search of that book. All the while shaking my fist at God out of bitter rebellion.
 
-I remember that moment vividly now. I repented right away and cried out to God. But it was not the same after that. I know that something so precious had been shattered.
+I remember that moment vividly now. I repented right away and cried out to God. But it was not the same after that. Something so precious had been shattered that day.
 
 Ever since then, I lost that _fear of the Lᴏʀᴅ._
 
