@@ -3,7 +3,7 @@ title: "😨 The Fear of the Lᴏʀᴅ"
 date: "2026-05-14"
 slug: "fear"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/IMG_1488-scaled.jpeg"
 tags: ["theology", "testimony", "prayer", "faith", "spiritual-health", "video"]
 pairedSlug: "경외"
 youtubeId: "YUkOmQE-618"

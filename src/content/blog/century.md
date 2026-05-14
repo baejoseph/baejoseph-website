@@ -3,7 +3,7 @@ title: "🚙 Toyota Century"
 date: "2025-12-15"
 slug: "century"
 lang: "en"
-featuredImage: "/assets/IMG_1488-scaled.jpeg"
+featuredImage: "/assets/fear-hero.jpg"
 pairedSlug: "센츄리"
 youtubeId: "qigkUPXqnz0"
 
