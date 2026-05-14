@@ -2,27 +2,24 @@
 title: "🧎🏻 A Trappist Monk’s Prayer"
 date: "2024-01-05"
 slug: "trappist"
-lang: "ko"
-pairedSlug: "trappist-en"
+lang: "en"
+pairedSlug: "트라피스트"
 featuredImage: "/assets/SCR-20240116-hnkd.jpeg"
-
 tags: ["prayer", "theology"]
 ---
 
-A [Trappist](https://www.trappists.org) Monk’s daily prayer:
+There is a monastic order called the [Trappists](https://www.trappists.org)—a community of disciples who have taken a vow of silence, broken only when absolutely necessary, in pursuit of a deeper life with God.
 
--   Pray to desire not to be esteemed.
--   Pray to desire not to be secure.
--   Pray to desire not to be in control.
+One of their monks left behind a teaching on prayer that stops me cold every time I encounter it. [Derek Prince](/prince) quoted it often, and I understand why. Three simple intentions—three things to actively pray that you would *desire*:
 
-(Often quoted by [Derek Prince](/prince))
+1. **Pray that you would desire not to be esteemed.** Not merely to avoid pride—that’s too easy, too passive. This is something harder: asking God to reshape your very *wants*, so that you genuinely stop craving the approval and admiration of others. Lord, may You alone receive the glory.
 
-“트라피스트” 라는 수도원이 있습니다. 이들은 경건 생활을 위해 꼭 필요할 때 빼고는 침묵을 서원한 제자들의 공동체 입니다.
+2. **Pray that you would desire not to be self-sufficient.** Not just to acknowledge dependence on God in theory while quietly trusting in your own competence in practice. This prayer goes after the root: Lord, make me *want* to need You—always, in everything.
 
-이 수도원 공동체 제자 중 하나의 기도에 대한 가르침입니다:
+3. **Pray that you would desire not to be in control.** This one cuts deepest for me. There is a particular anxiety that comes from feeling like your life is slipping out of your hands. This prayer doesn’t just ask God for peace in that anxiety—it asks Him to transform you so completely that you no longer feel compelled to hold the reins in the first place. My life belongs to God, not to me.
 
-1.  기도하라! 나 스스로가 높임을 받지 않도록 원하게 되길. 오직 주님만 영광 받으소서!
-2.  기도하라! 나 스스로 자급자족하지 않도록 원하게 되길. 항상 주님만 의지하며 나아가게 하소서!
-3.  기도하라! 모든 것이 나의 통제 안에 있지 않아도 괜찮게 되길. 내 삶의 주인은 내가 아니라 하나님이신 것을 항상 기억하게 하소서!
+What strikes me about this teaching is where it places the target. It doesn’t say *act* as if you don’t need esteem, security, and control—it says *pray to desire* their absence. That’s a far more honest starting point. Most of us still want these things desperately. The Trappist isn’t pretending otherwise; he’s bringing that hunger to God and asking Him to change it.
 
-([데릭 프린스](/프린스))
+These three prayers are, in my view, one of the most concise and searingly accurate diagnoses of the human ego ever written. We all want to be recognized. We all want to feel safe. We all want to be the ones steering. And the gospel calls us to die to all three—not through willpower, but through prayer.
+
+([Derek Prince](/prince))
