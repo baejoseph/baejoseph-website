@@ -43,7 +43,7 @@ At that moment, the penny dropped for me.
 
 I was immediately taken back twenty years. To Cambridge, Massachusetts. In the United States.
 
-## Cambridge
+## Cambridges
 
 The truth is, there was a time when I _did_ enjoy this unbroken spell of intimacy with God during my university years.
 
@@ -81,7 +81,7 @@ This is not the fear of the Lᴏʀᴅ. This is being afraid of God’s punishmen
 
 Now I understand.
 
-The fear of the Lᴏʀᴅ does not ask _“what can I get away with?”_ It shudders even at the thought of committing anything that would harm the precious, sweet, ongoing intimate relationship I have with the Heavenly Father who created the heavens and the earth and who loves me more than I can imagine. The all-powerful Abba who did not spare His only Son.
+The fear of the Lᴏʀᴅ does not ask _“what can I get away with?”_ It shudders even at the thought of committing anything that would harm the precious, sweet, ongoing intimate relationship I have with the Heavenly Father who created the heavens and the earth and who loves me more than I can imagine. The all-powerful Abba who [did not spare His only Son](/propitiation).
 
 _What do you mean, “what can I get away with?”_
 
