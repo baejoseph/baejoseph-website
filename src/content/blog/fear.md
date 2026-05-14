@@ -70,7 +70,7 @@ I remember that moment vividly now. I repented right away and cried out to God. 
 
 Ever since then, I lost that _fear of the Lᴏʀᴅ._
 
-I always loved God. Truly. I never truly turned my back on Him. I truly devoted my life to Him. I would even stand up to my bosses in defence of His Name. But did I truly fear the loss of a real, twenty—four—seven intimacy with God?
+I always loved God. Truly. I never truly turned my back on Him. I truly devoted my life to Him. I would even stand up to my bosses in defence of His Name. But did I truly fear the loss of a real, twenty-four-seven intimacy with God?
 
 No.
 
