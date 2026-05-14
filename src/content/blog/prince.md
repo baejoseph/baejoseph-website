@@ -26,7 +26,7 @@ He woke up a different man. The profanity that had been second nature to him—e
 
 After that, Prince was deployed to North Africa, where he spent seven years in the African desert. He used that time to read the Word, practice it in daily life, and train himself to hear the Holy Spirit’s voice. During that period, the Spirit told him to fast every Wednesday—one full day every week—and he kept that discipline for the rest of his life. He preached to fellow soldiers, prayed for the sick in Jesus’ name, and saw men saved—including, remarkably, a Muslim brother in that region who came to faith and was baptized.
 
-In the final year of his military service (1945–46), stationed in Egypt, he heard about a Danish missionary named Lydia Christensen who was running an orphanage in what was then Palestine. She was a Salvation Army worker, unmarried, twenty-six years his senior—the same age as his own mother—and she was raising eight adopted children: six Jewish, one British, one Arab. Prince began praying for her, and God spoke to him clearly: *”I have joined you under the same yoke and in the same harness.”*
+In the final year of his military service (1945–46), stationed in Egypt, he heard about a Danish missionary named Lydia Christensen who was running an orphanage in what was then Palestine. She was a Salvation Army worker, unmarried, twenty-six years his senior—the same age as his own mother—and she was raising eight adopted children: six Jewish, one British, one Arab. Prince began praying for her, and God spoke to him clearly: *“I have joined you under the same yoke and in the same harness.”*
 
 In obedience, he requested a transfer to Palestine.
 
@@ -34,7 +34,7 @@ In obedience, he requested a transfer to Palestine.
 
 At this moment Prince faced one of the defining choices of his life. Before the war, he had been elected to a Cambridge Fellowship—what we would today call a funded two-year postdoctoral position. Cambridge wanted him back. A distinguished academic career was waiting.
 
-But God spoke again, with a calling that made the Cambridge chair look small: *”I have called thee to be a teacher of the Scriptures, in Truth and Faith and Love, which are in Jesus Christ—for many.”*
+But God spoke again, with a calling that made the Cambridge chair look small: *“I have called thee to be a teacher of the Scriptures, in Truth and Faith and Love, which are in Jesus Christ—for many.”*
 
 He put down the fellowship and married Lydia in 1946. At twenty-nine years old, he became overnight the husband of one woman, the father of eight daughters, and the head of a household of ten. By any conventional measure, it was the worst possible position from which to become “a teacher of the Scriptures to many.” There was barely enough for daily bread and shelter. Yet God was faithful. Around this time, the Lord impressed on Prince the principle: *Watch what you put into your heart.* From that point on, he was extraordinarily selective about what he read—only the Word and carefully chosen devotional literature, such as the journals of John Wesley. He largely stopped reading secular newspapers and general fiction. Not as a rule—as a conviction.
 
@@ -64,6 +64,6 @@ He wrote more than fifty books, translated into over a hundred languages. His ra
 
 He died in Jerusalem in 2003 at the age of eighty-eight, having lived to see more than a hundred grandchildren born to the children he had adopted and raised. He blessed each one.
 
-His calling, in his own words: *”Reaching the unreached, teaching the untaught, and touching the untouched.”*
+His calling, in his own words: *“Reaching the unreached, teaching the untaught, and touching the untouched.”*
 
 He did exactly that.
