@@ -19,7 +19,7 @@ Until yesterday.
 
 ## The Train Home
 
-Thirteenth of May 2026. I was on the train home from work, watching a YouTube video — an interview between Ryan Miller and John Bevere.
+Thirteenth of May 2026. I was on the train home from work, watching [a YouTube video](https://www.youtube.com/watch?v=U06VtKch_xI) — an interview between Ryan Miller and John Bevere.
 
 I had been aware of John and Lisa Bevere before. In fact, I clicked on the video for a different reason entirely: the title was _The Signs of Jesus’ Return Most Christians Are Missing_. Like me, John has been obsessed with eschatology. I wanted to hear what fresh insight he had to offer.
 
