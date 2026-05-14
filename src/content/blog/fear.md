@@ -6,7 +6,7 @@ lang: "en"
 featuredImage: ""
 tags: ["theology", "testimony", "prayer", "faith", "spiritual-health", "video"]
 pairedSlug: "경외"
-youtubeId: "YUk0mQE-618"
+youtubeId: "YUkOmQE-618"
 ---
 
 What is the fear of the Lᴏʀᴅ?
