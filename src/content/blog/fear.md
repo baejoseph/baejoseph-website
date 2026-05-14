@@ -43,7 +43,7 @@ At that moment, the penny dropped for me.
 
 I was immediately taken back twenty years. To Cambridge, Massachusetts. In the United States.
 
-## Cambridgesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+## Cambridges
 
 The truth is, there was a time when I _did_ enjoy this unbroken spell of intimacy with God during my university years.
 
