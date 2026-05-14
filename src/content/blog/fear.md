@@ -37,7 +37,7 @@ The ex-pastor stared at him in the eye and answered:
 
 _“John, I never fell out of love with Jesus. I always loved Him, truthfully. I just did not have the fear of the Lᴏʀᴅ.”_
 
-And then John clarified — and I love this phrasing — the fear of the Lᴏʀᴅ is best described in the context of _enjoying a level of intimacy with God._ He quoted Psalm 139, how many thoughts God has for us, how they are all written in His book. The fear of the Lᴏʀᴅ is being absolutely petrified at the prospect of losing that daily, ever-present intimacy with God. Every decision you make, every word you say, every meditation of your heart — done with the utmost care, because you know that the absolute worst thing you could have, and you physically shake with terror even at the mere thought of it, is to lose the intimacy with God.
+And then John clarified — and I love this phrasing — the fear of the Lᴏʀᴅ is best described in the context of _enjoying a level of intimacy with God._ He quoted Psalm 139, how many thoughts God has for us, how they are all written in His book. The fear of the Lᴏʀᴅ is being absolutely petrified at the prospect of losing that daily, ever-present [intimacy](/trappist) with God. Every decision you make, every word you say, every meditation of your heart — done with the utmost care, because you know that the absolute worst thing you could have, and you physically shake with terror even at the mere thought of it, is to lose the intimacy with God.
 
 At that moment, the penny dropped for me.
 
