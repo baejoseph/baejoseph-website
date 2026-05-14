@@ -1,6 +1,7 @@
 ---
 title: "😨 The Fear of the Lᴏʀᴅ"
 date: "2026-05-14"
+slug: "fear"
 lang: "en"
 featuredImage: ""
 tags: ["theology", "testimony", "prayer", "faith", "spiritual-health"]
