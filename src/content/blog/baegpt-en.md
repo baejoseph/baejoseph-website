@@ -32,4 +32,4 @@ AI가 내일을 형성하는 세상에서, 우리는 중대한 시점에 서 있
 
 —-
 
-**Update:** two years on, that seed grew into something bigger — [Bible Fortress, co-founded with Dev at JD Fortress AI](/bible-app/).
+**Update:** two years on, that seed grew into something bigger — [Bible Fortress, co-founded with Dev at JD Fortress AI](/bible-app).
