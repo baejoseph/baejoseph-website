@@ -31,7 +31,7 @@ Throughout his ministry, Keller regularly invoked Gustavo Gutiérrez — the Lat
 
 But Scripture says precisely the opposite: *“You shall do no injustice in judgment. You shall not be partial to the poor, nor honour the person of the mighty. In righteousness you shall judge your neighbour.”* (Leviticus 19:15)
 
-As I wrote in more detail [on Critical Theory](/leftism), Critical Theory is incompatible with biblical anthropology. It does not see people as individual image-bearers of God with personal dignity and responsibility. It reduces persons to their group identities — race, gender, sexual orientation — and casts them purely as victims of systemic forces. There is no sin in this framework, only oppression. No redemption, only revolution.
+As I wrote in [more detail](/leftism), Critical Theory is incompatible with biblical anthropology. It does not see people as individual image-bearers of God with personal dignity and responsibility. It reduces persons to their group identities — race, gender, sexual orientation — and casts them purely as victims of systemic forces. There is no sin in this framework, only oppression. No redemption, only revolution.
 
 ### The distorted gospel — in Keller’s own words
 
