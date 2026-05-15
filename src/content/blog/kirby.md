@@ -5,7 +5,8 @@ slug: "kirby"
 lang: "en"
 pairedSlug: "커비"
 featuredImage: "/assets/kirby-demo.png"
-tags: ["theology", "family", "korea"]
+tags: ["theology", "family", "faith", "video"]
+youtubeId: "Nu3oZ5JJvGA"
 ---
 
 Nintendo Switch 2 launched last year. From what I can tell, it hasn’t quite captured the world the way the original Switch did back in 2017. We have a first-generation Switch at home, and honestly, we’re not in any rush to upgrade.
