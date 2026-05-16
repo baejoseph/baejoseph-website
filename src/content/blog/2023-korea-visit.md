@@ -16,21 +16,31 @@ We flew from Incheon Airport down to Buan in North Jeolla Province the morning I
 
 ![](/assets/IMG_9222-1024x768.jpeg)
 
+**A funeral—and a summons I couldn’t refuse.**
+
 The following day was Sunday, and I was grateful to spend it with my parents in worship. In the afternoon, after the services, my father mentioned there was a special gathering in Heyri and asked if I’d like to come. I didn’t need much convincing.
 
 Heyri Art Village, in Paju—the publishing city—was a place I’d only ever heard about. Walking through it, I thought: *I have to bring the kids here.* The whole place is an odd, delightful cluster of studios, galleries, museums, and shops, with oversized sculptures tucked around every corner and what was apparently the best *tteokbokki* in northern Gyeonggi Province calling out to me from across the street.
 
 ![](/assets/IMG_9245-1024x768.jpeg)
 
-In the back of Heyri, up on the second floor of a building called “The Church Where the Holy Spirit Lives,” we gathered for something called “Israel’s Restoration and the House of Prayer.” The gathering had been organised by Director Lee Tae-hyeong of Gukmin Books—the man who helped publish my father’s two books, *The Bible: My Love, My Life* and *Son, Live Like This*—and it bore the marks of something he’d put his heart into. The guest speakers were Rick and Patricia Ridings, missionaries who for 25 years have led a 24-hour house of prayer in Jerusalem. The attendees were invitation-only: Elder Song Man-seop—founder of KIBI (Korea Israel Bible Institute), established 38 years ago—along with a curated gathering of leaders, missionaries, and their children, around 100 people in total. I’d arrived from England yesterday and was leaving for England tomorrow. Being in that room felt like an undeserved gift.
+In the back of Heyri, up on the second floor of a building called “The Church Where the Holy Spirit Lives,” we gathered for something called “Israel’s Restoration and the House of Prayer.” The gathering had been organised by Director Lee Tae-hyeong of Gukmin Books—the man who helped publish my father’s two books, *The Bible: My Love, My Life* and *Son, Live Like This*—and it bore the marks of something he’d put his heart into.
+
+The guest speakers were Rick and Patricia Ridings, missionaries who for 25 years have led a 24-hour house of prayer in Jerusalem. The attendees were invitation-only: Elder Song Man-seop—founder of KIBI (Korea Israel Bible Institute), established 38 years ago—along with a curated gathering of leaders, missionaries, and their children, around 100 people in total. I’d arrived from England yesterday and was leaving for England tomorrow. Being in that room felt like an undeserved gift.
 
 ![](/assets/IMG_9249-1024x768.jpeg)
 
+**The kind of peace that only decades of presence can forge.**
+
 Just watching Rick and Patricia Ridings was its own kind of sermon. I kept thinking: *twenty years from now, I want Shin-ae and me to look like that.* There was a quality of Spirit-filled peace about them that wasn’t performed—it was simply who they had become after decades of dwelling in God’s presence.
+
+I’ve always been drawn to people who have stayed at the altar long enough that it has reshaped them. Rick and Patricia weren’t performing devotion—they radiated it.
 
 Missionary Ridings preached from Amos 9:11–15 and 1 Chronicles 15–16, and what he said hit me with the force of something I can only call prophetic weight. The core of the message was simple: in a world full of chaos and complexity, what we need most—what we have always needed most—is the *presence of God.*
 
 He shared how, forty years ago, on his first visit to Korea, he received a vision at a prayer mountain: go to Jerusalem and build a house of prayer. That became Succat Hallel—“Tent of Praise”—where today, around the clock, worship teams cycle through unceasing prayer and song. (What undid me was this detail: among those teams are two groups made up entirely of children aged 5–12, each capable of leading a full hour of worship on their own. And multiple youth teams able to sustain three hours. Children, in Jerusalem, singing to God without stopping.)
+
+I sat there and thought: *This is what a generation of prayer looks like.* Not noise. Not performance. Just children who know God well enough to lead Him into worship for an hour straight.
 
 > “On that day I will raise up the tabernacle of David, which has fallen down, and repair its damages; I will raise up its ruins, and rebuild it as in the days of old.”
 >
@@ -41,6 +51,8 @@ The closing section of his message stopped me cold. On May 14, 1948—a Friday a
 That passage speaks of three signs preceding Christ’s return: the ingathering of the diaspora, the restoration of David’s Tabernacle—24/7 worship and prayer in Jerusalem—and an acceleration of the harvest of souls. Missionary Ridings looked at us and said: we are living in the specific fulfilment of those prophecies right now.
 
 My chest burned as I heard it.
+
+**The day is not distant.**
 
 Yes. Jesus is coming back. The day is not distant. And this is not the season for distraction, for compromise, or for divided hearts. It is the season to strip everything off—every weight, every sin that so easily entangles—and to serve the Lord with undivided devotion.
 
