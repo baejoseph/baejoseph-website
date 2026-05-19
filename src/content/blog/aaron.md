@@ -81,7 +81,7 @@ Such an endeavor is not what good stewards engage in, but is rather for usurpers
 
 * * *
 
-As the black cloud of end times confusion mounts around the world, It’s becoming less important to know precisely what’s going on
+As the black cloud of end times confusion mounts around the world, it’s becoming less important to know precisely what’s going on
 
 …and more so WHY it’s all taking place.
 
@@ -149,11 +149,11 @@ This is why we save souls and await the King.
 
 ▪️Should I vote against laws that allow/encourage the murder of infants?
 
-\-Yes absolutely.
+– Yes, absolutely.
 
 ▪️Should I vote against laws that allow/encourage homosexual activity?
 
-\-Yes absolutely.
+– Yes, absolutely.
 
 ▪️Do I Believe that these evils will be conquered through political and judicial activism as the sole or even primary means of action?
 
@@ -219,7 +219,7 @@ If you don’t understand election you won’t understand the enduring status of
 
 Not only does this meme demonstrate the demonically inspired spiritual blindness that’s currently sweeping through the ranks of western Christendom, but it also fails to acknowledge that God’s election is held and brought to fruition irrespective of the current spiritual disposition of the Jewish people.
 
-In fact, it is because the Jew exhibits: “LMAO & \*spits” that God has regathered, and continues to regather them corporately unto a severe judgement, out of which will emerge a saved remnant who embrace Christ as their messiah.
+In fact, it is because the Jew exhibits: “LMAO & *spits” that God has regathered, and continues to regather them corporately unto a severe judgement, out of which will emerge a saved remnant who embrace Christ as their messiah.
 
 The irony with which so many of the “Truly Reformed” judge Israel’s significance betrays an astonishing level of hypocrisy and blindness in their ranks. They themselves within their Calvinistic system were elect of God even while his dire and blasphemous spiritual enemies.
 
@@ -229,7 +229,7 @@ The reason for this is that a deep spiritual blindness has set in due to their c
 
 As said before:
 
-\-Pay attention to the Reformed clique.
+– Pay attention to the Reformed clique.
 
 The level of deception currently afoot in this particular ecclesial body is potent beyond measure and is quickly proving to be the epicenter for satanic motivation against the Jews and all things Jewish.
 
@@ -239,7 +239,7 @@ The level of deception currently afoot in this particular ecclesial body is pote
 
 Cessationism is arrived at experientially and presuppositionally first and foremost.
 
-…and then only afterward is an attempt made to bolster the experiential stance through the  employment of a cobbled together scriptural and historical hermeneutic using scotch tape and paper clips.
+…and then only afterward is an attempt made to bolster the experiential stance through the employment of a cobbled together scriptural and historical hermeneutic using scotch tape and paper clips.
 
 * * *
 
