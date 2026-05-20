@@ -28,11 +28,11 @@ On Monday evening, I headed to Heathrow Airport to meet Rev. Kim Nam-jin, who ov
 
 Soon after, we welcomed nine prayer warriors from Korea, led by Pastor Kim Moon-su. We boarded Pastor Joe’s rented 16-seater minibus and arrived at St. Hugh’s Church in Luton, where we’d stay, sleep, and pray for the week.
 
-On arrival, we entered the sanctuary first to pray, dedicating the week to God and seeking protection for our families back home, before settling in for the night.
+On arrival, we entered the sanctuary first to pray, dedicating the week to God and seeking protection for our families back home, before settling in for the night. I remember standing there in that empty church and feeling the weight of what we were about to do.
 
-From Tuesday, mornings involved visiting sites around Luton for special prayer meetings organised by local churches with Pastor Joe’s help.
+From Tuesday, mornings involved visiting sites around Luton for special prayer meetings organised by local churches with Pastor Joe’s help. The rhythm became familiar — British hosts would share their ministries and prayer needs, then Pastors Kim Moon-su and Han Sang-gyu would lead Spirit-guided corporate prayer. Each time I listened to those prayers, I learned something new about what intercession sounds like when it’s not going through an interpreter.
 
-These meetings followed a pattern: British hosts shared their ministries and prayer needs, then Pastors Kim Moon-su and Han Sang-gyu led Spirit-guided corporate prayer.
+**Seven days. One city. One cry.**
 
 These are the venues we visited each day:
 
@@ -43,15 +43,19 @@ These are the venues we visited each day:
 -   **Saturday**: street evangelism;
 -   **Sunday**: morning worship at St Hugh’s, followed by a final evening intercessory service open to all Luton churches.
 
-From Tuesday, the team’s priority was nightly prayer sessions from 10 p.m. to 2 a.m. (known as “pulpit prayers”).
+But the heartbeat of the week was the nightly prayer sessions from 10 p.m. to 2 a.m. — known as “pulpit prayers.”
 
 We’d planned to rest on Saturday night, but the Holy Spirit stirred us to pray more. At 10 p.m., we gathered in the sanctuary and knelt as usual. Though tired and intending to finish by midnight, we prayed until dawn at 5 a.m.
 
 Intense spiritual warfare marked the night, but from 4 a.m., we felt the joy of God’s victory. The sharing from 5 a.m. was a blessed time of mutual encouragement.
 
+Some nights you pray and feel like you’re pushing a stone uphill. Saturday night, the stone rolled the other way.
+
 ### 🏘️ **Introduction to Luton**
 
-Luton doesn’t evoke positive images in the UK. It’s seen as one of the poorest areas, linked mainly to its airport and budget airlines.
+**A city the world wrote off. A city God hadn’t finished with.**
+
+Luton doesn’t evoke positive images in the UK. It’s seen as one of the poorest areas, linked mainly to its airport and budget airlines. I’d heard the reputation — what I hadn’t heard was the story of what happened when prayer arrived.
 
 In recent years, a surge in immigrants has raised the Muslim population above 30%.
 
@@ -69,7 +73,11 @@ Most encouragingly, everyone we met said changes began post-2014 prayers. They v
 
 I still recall Urika, who organised a meeting, saying: “Because prayer is the most important ministry!”
 
+Standing in Luton, I finally understood: prayer isn’t a reaction to a city’s problems. It’s the thing that precedes the solution.
+
 ### 🛡️ **Spiritual Warfare**
+
+**The darkness didn’t know we were coming. But it knew when we arrived.**
 
 The week brought enemy attacks. Nightly pulpit prayers usually meant locked church doors for safety.
 
@@ -101,7 +109,11 @@ Our pastors snapped each flag with their feet, expelling it in Jesus’ Name.
 
 Once broken, the lingering discomfort vanished for many in the intercessory team.
 
+I had never seen a demon before that week. I had never heard prayer that sounded like warfare — sharp, specific, unapologetically aggressive. By Sunday morning, I understood: the reason the world looks the way it does is not because God is absent. It’s because the battle has never been fought with enough persistence.
+
 ### 📖 **Praying through the Word**
+
+**You don’t pray the Word to get answers. You pray it because the answers are already in there.**
 
 As interpreter, I wanted to be a full prayer team member, not just a translator. I hoped my spiritual immaturity wouldn’t hinder them and that they’d see me as an equal intercessor.
 
@@ -133,7 +145,9 @@ Clinging to it, I prayed: “Father, this morning Iranian Christian Hamina share
 > 
 > Jeremiah 33:3
 
-Even though I earnestly prayed this prayer throughout the entire week, I did not receive such visions. But one thing I am certain of is that during that week, I clearly saw the reality of spiritual warfare with my own eyes, and I could also understand a little more of God’s heart for the Luton area and for the United Kingdom. Hallelujah!
+I didn’t receive visions that week. Not one. But I saw something else: the reality of spiritual warfare with my own eyes. I understood a little more of God’s heart for Luton, for Britain, for every city that has been told it’s too far gone.
+
+He doesn’t send visions to the curious. He sends them to the persistent. And I was just getting started.
 
 
 —-
