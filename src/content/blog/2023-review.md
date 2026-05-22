@@ -23,7 +23,7 @@ Looking back — another chapter in my [journey of faith](/journey) — 2023 has
 -   🙏 [Prayer mission](/2023-prayer-mission) in Newbridge, Wales in July
 -   👩‍🍼 Founding of [the Sarah Club](/sarah-club) in July
 -   💰 [Getting paid for my coding work](/mymortgageinsight) for the first time
--   🛫 [A surprise visit](/2023-korea-visit) to Korea for auntie's funeral and meeting Rick Ridings
+-   🛫 [A surprise visit](/2023-korea-visit) to Korea for auntie’s funeral and meeting Rick Ridings
 -   💪 Starting the [Murph challenge](/murph)
 -   🧑‍🏫 Teaching the [Ealing Youth Group](/ealing-yale).
 -   💑 [Jun & Juna wedding](/jun-juna-wedding) in Barcelona in October
