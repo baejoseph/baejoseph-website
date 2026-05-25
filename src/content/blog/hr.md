@@ -55,56 +55,70 @@ Look at crypto. America tolerates it. China bans it. The EU classifies it into s
 
 Its entire purpose is to identify risks, create committees, write guidelines, and slow everything down in the name of “protection.” It doesn’t build anything. It doesn’t make anything. It *regulates* things. It creates problems — “discrimination,” “data privacy concerns,” “algorithmic bias” — that didn’t exist until the regulators decided they needed to exist.
 
-## The City of London
+## A View from the Inside
 
-Let me get specific.
+I got an email recently from a French AI engineer who left for San Francisco. She wrote to [Anthropic](/anthropic/) and she made me stop and think. She called it what it is — not an environmental policy, not ecological prudence, but a *theology*. Original sin replaced by carbon footprint. Hell replaced by warming. Alms replaced by sobriety. The clergy replaced by "climate engineers" calculating the moral weight of every hamburger.
 
-The City of London — that tiny two-square-mile patch of real estate — accounts for roughly 70% of the UK’s GDP. And what does it *do*?
+She took a scene from a meeting at Bercy — the French Ministry of Economy. A Mistral delegation was there to talk about "AI sovereignty." Six senior officials around the table, all from the same schools, all agreeing on everything. Then she said: *"We'll need to build data centres in France if we want to seriously train tomorrow's models."*
 
-It moves money around. It creates financial instruments. It regulates other people’s money. It is, in Charles Murray’s phrase, a “bullshit jobs” economy scaled to a national level.
+Short silence. Then a woman, with a sorry smile: *"The French aren't ready to accept such a footprint."*
 
-The City doesn’t make cars. It doesn’t grow food. It doesn’t build infrastructure. It sits in glass towers and generates PDFs about risk management, compliance frameworks, and ESG reporting. It is the HR department of the global economy.
+She asked which one exactly. Answer: *"Water consumption, electricity consumption, the signal sent."*
 
-And the whole British political class — left and right — is complicit. Because the City pays the taxes that fund the NHS, the schools, the pensions. The UK is addicted to its own bureaucracy the way a junkie is addicted to a fix.
+She reminded them France has the world's second-most decarbonised electricity thanks to nuclear power — and that a modern data centre uses less water than a golf course in Provence.
 
-> “My people are fools, they do not know me.” — Jeremiah 2:10
+Re-silence. Someone saved the situation by mentioning *"more sober models."* Everyone nodded. She left.
 
-Isaiah said it about Israel: *“The leaders of this people mislead them.”* (Isaiah 9:16) The prophets weren’t afraid to call out the ruling class. They called it what it was — a system that feeds on itself.
+Four months later, Microsoft announced €4 billion in investment in France. Not in training data centres where value is created. In *inference* data centres — to serve models trained elsewhere.
 
-## The Coming Reckoning
+**France, digital subcontractor to California. And everyone thought it was wonderful.**
 
-Here’s what I think is coming.
+## The Carbon Accountancy Trick
 
-The same way Ryan Breslow looked at his HR department and said “we don’t need this anymore,” the major powers are starting to look at the regulatory state and see it for what it is.
+Here's what degrowth actually produces. Not a saved planet. A *vassalisation*.
 
-Trump didn’t need another term to start the conversation about ripping up the regulatory code. The Americans are waking up to the fact that every regulation is a tax on innovation, and every compliance officer is a dead weight on productivity.
+We refuse to produce at home, so we import. We refuse to refine at home, so we buy already-refined oil. We refuse to extract at home, so we depend on Chile and Congo. We refuse to manufacture at home, so we import from China via heavy fuel oil tankers.
 
-China doesn’t care about the EU’s regulations anyway. They’re building their own standards, their own supply chains, their own world. The Belt and Road Initiative is a giant middle finger to Western regulatory hegemony.
+At every step, the planet's *real* carbon footprint increases, and France's *accounting* carbon footprint decreases.
 
-And the rest of the world? The Global South doesn’t want European rules. They want Chinese infrastructure and American technology. They want to skip the “regulate first, build later” stage entirely.
+**That's the central trick.** We've displaced the pollution, not reduced it. And we call that "ecological transition."
 
-**One day, the big boys are going to decide: we’re done playing HR.**
+The UK does the same. It closed its steelworks, then shipped scrap metal to China for processing, then shipped the finished steel back. The accounting carbon footprint decreased. The real carbon footprint exploded.
 
-We’re done with the committees. We’re done with the impact assessments. We’re done with the seventeen-page consultation documents about whether a drone should be allowed to deliver a pizza.
+## Why AI is the Perfect Devil
 
-When that happens, the entire apparatus that the EU and the UK have built — the GDPR, the AI Act, the CBAM, the endless directives — will become irrelevant overnight. Like a department that discovers the problems it existed to manage have simply been declared irrelevant by the CEO.
+AI today is the perfect incarnation of everything degrowth hates. It checks every box:
 
-> “For the earth will be filled with the knowledge of the glory of the Lᴏʀᴅ, as the waters cover the sea.” — Habakkuk 2:14
+It consumes energy — *immoral.* It accelerates — *dangerous.* It destabilises jobs — *cruel.* It's produced by ambitious entrepreneurs — *suspect.* It comes from the United States — *imperialist.* It promises abundance — *excessive, hubristic, Promethean.*
 
-The world is accelerating. The foolish will drown in their own red tape. The wise will cut through.
+Check all six. You get the perfect devil.
 
-## What We Should Be Doing
+And that's why no major cutting-edge AI laboratory can sustainably emerge in France or the UK in the current climate. The *mental* climate is incompatible with the object.
 
-I’m not just talking about business. I’m talking about the church too.
+*You don't grow olive trees in a freezer, even with the world's best gardeners.*
 
-How many church staff positions exist to manage the church rather than serve the mission? How many committees meet to discuss the colour of the bulletins while the neighbourhood dies of spiritual death? How many pastors spend more time on safeguarding paperwork than on preaching the Word?
+## The Civilisation Question
 
-The [early church](/sunday/) didn’t have an HR department. It had *apostles*. It had *elders*. It had people who could actually do the job, not people who managed the people who might potentially do the job.
+She's 29. She wants to spend the next forty years understanding how these machines work — making them safer, more interpretable, more aligned with what we actually want. She doesn't want to spend the next forty years explaining to ethics committees why her work isn't an ecological sin.
 
-> “Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lᴏʀᴏ, because you know that your labour in the Lᴏʀᴅ is not in vain.” — 1 Corinthians 15:58
+*Life is too short. The historical window is too narrow.*
 
-Do the work. Not the paperwork. The *work*.
+AI will be built with or without us. If France wants to be part of it, it has months left to breathe a different air. If it prefers to stay in its "model of happy sobriety," more power to it. But let it not be surprised in ten years by the role it's already started to accept.
 
-The world is changing faster than any regulatory body can track. The smart ones are stripping away the fat, firing the managers, and getting back to what actually matters.
+*Museum hostess.*
+
+She'll work on models that consume a lot of energy. And that will produce, in exchange, an understanding of the world, biology, climate, materials that our children will thank us for.
+
+**That's the real economic calculation.** Not the "carbon footprint of the prompt" that editorialists roughly calculate between two Paris-to-New York flights.
+
+*The civilisational footprint of renunciation.*
+
+And here's the question she asked — the one that sits at the bottom of all of this:
+
+> How can a civilisation survive if it sacrifices its vital forces? If it disincentivises work?
+
+The prophet Jeremiah had an answer for that too. *"My people are fools, they do not know me."* (Jeremiah 2:10) The diagnosis is older than any regulatory framework. A people that stops trusting the things it should trust — work, innovation, the God-given capacity to build and create — is a people that has already begun to disappear.
+
+The world is accelerating. The ones who understand that will cut through. The ones who don't will become museum hostesses.
 
 *Maranatha.* Come, Lᴏʀᴅ Jesus. The clock is ticking, and the bureaucrats are running out of time.
