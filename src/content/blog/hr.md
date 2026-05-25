@@ -41,7 +41,9 @@ There’s a meme that’s been circulating for years:
 
 > **America innovates. China replicates. The EU regulates.**
 
-It started as a joke. It’s stopped being funny because it’s basically true.
+It started as a joke. It's stopped being funny because it's basically true.
+
+![America innovates, China replicates, EU regulates](/assets/hr-meme.jpg)
 
 Look at the electric vehicle market. America built Tesla. China copied it, scaled it, and now dominates manufacturing. And the EU? The EU spent a decade writing regulations about what electric vehicles should look like, how they should be tested, and whether they should be allowed on the road at all.
 
