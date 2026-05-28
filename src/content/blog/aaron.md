@@ -11,7 +11,7 @@ tags: ["leftism", "courage"]
 
 I really like [@AaronInWriting](https://x.com/AaronInWriting) on 𝕏. He really seems to get this “[three separate realms](/three)” balance right. Below are some of his tweets, quoted in full.
 
-🇮🇱Never confuse recognition of Israel’s eschatological significance with blanket validation of all her actions.
+🇮🇱Never confuse recognition of Israel’s [eschatological](/eschatology) significance with blanket validation of all her actions.
 
 🇮🇱Never confuse expectation of Israel’s messianic redemption with acceptance of Israel’s apostate current condition.
 
@@ -59,7 +59,7 @@ I am a Christian, who is also a Nationalist.
 
 Yet I am not a Dominionist, nor a proponent of an over-realized eschatological reality in which the Kingdom of God is temporally instituted by sociopolitical force, and in addition, is done so without the direct bodily presence of the King of Kings.
 
-…Hence, I am not a Christian Nationalist.
+…Hence, I am not a Christian Nationalist. See also [No King but Christ](/allegiance) for the same distinction.
 
 Simple.
 
@@ -81,7 +81,7 @@ Such an endeavor is not what good stewards engage in, but is rather for usurpers
 
 * * *
 
-As the black cloud of end times confusion mounts around the world, it’s becoming less important to know precisely what’s going on
+As the black cloud of end times confusion mounts around the world — I’ve explored this more in [The End of the End of the End Times](/end3) — it’s becoming less important to know precisely what’s going on
 
 …and more so WHY it’s all taking place.
 
@@ -125,7 +125,7 @@ As hearts grow colder and darker both within the church and without, we must kin
 
 * * *
 
-The culture war is a naturally occurring byproduct of consistent gospel proclamation.
+The culture war is a naturally occurring byproduct of consistent gospel proclamation — as I’ve argued extensively in [Why Christians must reject Leftism](/leftism).
 
 Reverse this order and you’ve forsaken the faith.
 
@@ -159,7 +159,7 @@ This is why we save souls and await the King.
 
 No, Absolutely Not.
 
-Don’t we see that so many are seeking to kill their children and dishonor their bodies between each other because the gospel has been all but forgotten and ignored as the all-sufficient catalyst for the destruction of these sins in the hearts of sinners? Because of this, the “culture war” has filled the vacuum the exit of the gospel has created, and in accepting this exchange as a more sure and powerful way to fight against these sins, the nation is ultimately doomed to failure.
+Don’t we see that so many are seeking to kill their children and dishonor their bodies between each other because the gospel has been all but forgotten and ignored as the all-sufficient catalyst for the destruction of these sins in the hearts of sinners? Because of this, the “culture war” has filled the vacuum the exit of the gospel has created, and in accepting this exchange as a more sure and powerful way to fight against these sins, the nation is ultimately doomed to failure — a dynamic I’ve traced in [Disarm and Starve: The Oldest Play in the Tyrant’s Handbook](/control).
 
 The “culture war” is the symptom of the underlying disease which is the repudiation of the gospel’s sufficiency to change individual hearts, which then bleeds into changed nations on a large scale and governmental level.
 
@@ -203,7 +203,7 @@ We attempt to convince ourselves that we aren’t friends with the world because
 
 Esteem, power, influence, prestige, control, authority?
 
-…Fooling ourselves into believing we desire such in the name of Christ and for his honor. Our friendship with the world is measured by the level of our covetousness regarding its goods and high places, and not by our emotional disposition towards it. One can both hate the world emotionally, and yet simultaneously be deeply envious of it, and driven to procure its high places.
+…Fooling ourselves into believing we desire such in the name of Christ and for his honor — a [human self-centredness](/self) I’ve examined elsewhere. Our friendship with the world is measured by the level of our covetousness regarding its goods and high places, and not by our emotional disposition towards it. One can both hate the world emotionally, and yet simultaneously be deeply envious of it, and driven to procure its high places.
 
 The genuine Holy Spirit will inspire within us a desire to be a clear contradiction to the world, marked by a peculiar and unmistakable holiness.
 
@@ -257,7 +257,7 @@ The world is paradigmatically incarnational in its most fundamental essence.
 
 * * *
 
-The radical Left is the instrument of preliminary social demoralization, acting in a preparatory fashion for the counteracting emergence of the far Right, which will come in hot to save the day.
+The radical Left is the instrument of preliminary social demoralization, acting in a preparatory fashion for the counteracting emergence of the far Right, which will come in hot to save the day — much like the [wolf in Downing Street](/fabian) I’ve written about before.
 
 The latter however, is the true instrument of deception for Christians.
 
