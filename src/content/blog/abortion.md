@@ -60,7 +60,7 @@ Britain aborts approximately 300,000 babies every year. That number is worth sit
 
 The ancient Aztecs, by historians’ best estimates, sacrificed somewhere between 20,000 and 250,000 people a year to appease their gods. We read about this in horror. We put it in museums. We call it barbarism.
 
-Britain kills 300,000 babies a year. And this week, our government celebrated the removal of the final legal restraint on that killing, to the applause of the educated, [the progressive](/leftism-eng), and the powerful.
+Britain kills 300,000 babies a year. And this week, our government celebrated the removal of the final legal restraint on that killing, to the applause of the educated, [the progressive](/leftism), and the powerful.
 
 Moloch is a very demanding god.
 
