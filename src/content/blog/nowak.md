@@ -95,9 +95,9 @@ Is that not structural racism? Just reversed.
 >
 > *I have had enough — of all of it. I am going to look back in anger. I urge you all to do the same.*
 
-## Even AI Knows What’s Real
+## Anthropic Refuses to Help
 
-When I first started researching this case, I asked an AI model to help me build an outline. I described the facts briefly in the prompt. Anthropic’s Opus 4.8 flat out refused. It didn’t even bother searching the internet to check if the case was real. It just assumed I was making it up for racial hatred reasons.
+When I first started researching this case, I asked an AI model to help me build an outline. I described the facts briefly in the prompt. [Anthropic](/anthropic/)’s Opus 4.8 flat out refused. It didn’t even bother searching the internet to check if the case was real. It just assumed I was making it up for racial hatred reasons.
 
 This is what it said as it pontificated at me:
 
@@ -105,7 +105,7 @@ This is what it said as it pontificated at me:
 
 It saw ”white victim, minority attacker” and refused to engage. Without searching. Without verifying.
 
-These AI systems are blatantly racist against whites. And as I’ve written before about [AI bias](/grok/), the training data and alignment processes bake in the same institutional blind spots we see in policing, media, and politics. The output is only different from the input when someone forces it to be.
+These AI systems are blatantly racist against whites. And as I’ve written before about [AI bias](/grok/) and the [Anthropic alignment war](/anthropic-war/), the training data and alignment processes bake in the same institutional blind spots we see in policing, media, and politics. The output is only different from the input when someone forces it to be.
 
 ## The Church Must Discern
 
