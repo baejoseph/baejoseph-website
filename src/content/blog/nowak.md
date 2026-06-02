@@ -67,7 +67,7 @@ Now let me be clear about something the left never wants to discuss: Floyd’s a
 
 Derek Chauvin was convicted and sentenced. I have no problem with that.
 
-What I have a problem with is the institutional earthquake that followed. UK police forces underwent the largest re-education push in modern history — anti-racism training, unconscious bias modules, diversity and inclusion frameworks, and the wholesale adoption of Critical Race Theory concepts. Politicians across parties — from Westminster to Seoul — took the knee. Churches split over whether kneeling was a matter of conscience or complicity.
+What I have a problem with is the institutional earthquake that followed. UK police forces underwent the largest re-education push in modern history — anti-racism training, unconscious bias modules, diversity and inclusion frameworks, and the [wholesale adoption of Critical Race Theory concepts](/leftism/). Politicians across parties — from Westminster to Seoul — took the knee. Churches split over whether kneeling was a matter of conscience or complicity.
 
 The BLM framework reshaped how institutions understand racism. And almost exclusively in one direction.
 
