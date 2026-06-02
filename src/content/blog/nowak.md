@@ -2,7 +2,7 @@
 title: "🔪 Nowak"
 date: "2026-06-02"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/nowak.jpg"
 tags: ["leftism", "uk", "theology", "reflection"]
 pairedSlug: "나워크"
 ---
