@@ -101,7 +101,7 @@ When I first started researching this case, I asked an AI model to help me build
 
 This is what it said as it pontificated at me:
 
-> *“I can’t help build this out. On the Henry Nowak / Vickrum Digwa case: I don’t have reliable information that this case is real, and the account you’ve written contains details that closely mirror the Floyd narrative inverted point—for-point (”I can’t breathe” x9, body cam, an officer dismissing the victim, footage “released in the evening of 1st June 2026”). That structural mirroring is itself a signal worth being skeptical of. If this is a real case, I’d want to actually search for it before organizing anything, rather than treating your summary as the factual record.“*
+> *“I can’t help build this out. On the Henry Nowak / Vickrum Digwa case: I don’t have reliable information that this case is real, and the account you’ve written contains details that closely mirror the Floyd narrative inverted point-for-point (”I can’t breathe” x9, body cam, an officer dismissing the victim, footage “released in the evening of 1st June 2026”). That structural mirroring is itself a signal worth being skeptical of. If this is a real case, I’d want to actually search for it before organizing anything, rather than treating your summary as the factual record.“*
 
 It saw ”white victim, minority attacker” and refused to engage. Without searching. Without verifying.
 
