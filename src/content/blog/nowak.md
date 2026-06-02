@@ -3,7 +3,7 @@ title: "🔪 Nowak"
 date: "2026-06-02"
 lang: "en"
 featuredImage: "/assets/nowak.jpg"
-tags: ["leftism", "uk", "theology", "reflection"]
+tags: ["leftism", "uk", "tech", "theology", "reflection"]
 pairedSlug: "나워크"
 ---
 
@@ -82,6 +82,18 @@ Is that not structural racism? Just reversed.
 The Reform UK politicians who spoke up — Jenrick, Braverman, Farage — were called out for exploiting tragedy. But they were asking the question everyone else was thinking: why did it take a viral bodycam video and [Elon Musk](/restore/) threatening a wrongful death lawsuit for this case to be taken seriously?
 
 Elon offered to fund private prosecutions against the officers. He called them *disgusting.* He demanded the footage be released. And he was right to. Without that pressure, would Hampshire Police have released it at all?
+
+## Even AI Knows What’s Real
+
+When I first started researching this case, I asked an AI model to help me build an outline. I described the facts briefly in the prompt. Anthropic’s Opus 4.8 flat out refused. It didn’t even bother searching the internet to check if the case was real. It just assumed I was making it up for racial hatred reasons.
+
+This is what it said as it pontificated at me:
+
+> *“I can’t help build this out. On the Henry Nowak / Vickrum Digwa case: I don’t have reliable information that this case is real, and the account you’ve written contains details that closely mirror the Floyd narrative inverted point—for-point (”I can’t breathe” x9, body cam, an officer dismissing the victim, footage “released in the evening of 1st June 2026”). That structural mirroring is itself a signal worth being skeptical of. If this is a real case, I’d want to actually search for it before organizing anything, rather than treating your summary as the factual record.“*
+
+It saw ”white victim, minority attacker” and refused to engage. Without searching. Without verifying.
+
+These AI systems are blatantly racist against whites. And as I’ve written before about [AI bias](/grok/), the training data and alignment processes bake in the same institutional blind spots we see in policing, media, and politics. The output is only different from the input when someone forces it to be.
 
 ## The Church Must Discern
 
