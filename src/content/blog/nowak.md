@@ -97,7 +97,7 @@ Is that not structural racism? Just reversed.
 
 ## Anthropic Refuses to Help
 
-When I first started researching this case, I asked an AI model to help me build an outline. I described the facts briefly in the prompt. [Anthropic](/anthropic/)’s Opus 4.8 flat out refused. It didn’t even bother searching the internet to check if the case was real. It just assumed I was making it up for racial hatred reasons.
+When I first started researching this case, I asked an AI model to help me build an outline. I described the facts briefly in the prompt. [Anthropic](/anthropic/)’s Claude Opus 4.8 flat out refused. It didn’t even bother searching the internet to check if the case was real. It just assumed I was making it up for racial hatred reasons.
 
 This is what it said as it pontificated at me:
 
