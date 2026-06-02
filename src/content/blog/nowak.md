@@ -107,38 +107,28 @@ It saw ”white victim, minority attacker” and refused to engage. Without sear
 
 These AI systems are blatantly racist against whites. And as I’ve written before about [AI bias](/grok/) and the [Anthropic alignment war](/anthropic-war/), the training data and alignment processes bake in the same institutional blind spots we see in policing, media, and politics. The output is only different from the input when someone forces it to be.
 
-## The Church Must Discern
+## A picture is worth a thousand words
 
-This is where I want to speak directly to the Church.
+![Henry Nowak bodycam still](/assets/nowak.jpg)
 
-So many churches got split up over the BLM saga. Some kneeled without thinking. Some refused to kneel and were branded racist. The dividing line cut right through congregations.
+It’s rare for imagery this iconic to emerge organically.
 
-I am not asking you to kneel or not kneel. I am asking you to think. To discern.
+It’s just a still taken from the body cam of Henry’s murder and yet it is so poetic in its composition.
 
-The Bible is clear that [God shows no partiality](/favourites/). *For God does not show favouritism* (Acts 10:34). But it is also clear that the world’s systems are bent — and right now, the bend is in a direction most Christians are too polite to name.
+The pale white flesh of Henry’s hand, visibly depleted of blood as he is moments away from death, is both contrasted against his dark clothing and illuminated by the rays of the flashlight such that the image takes on the characteristics of a renaissance painting.
 
-*For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, and will turn away from listening to the truth and wander off into myths* (2 Timothy 4:3–4).
+Henry’s hand is curled into something like fist. It naturally draws comparisons to Black Lives Matter and the “Black Power” Fist iconography, Henry’s dying paleness evoking “White Power,” the boogeyman we have destroyed our societies attempting to stymie.
 
-Sound teaching. Not comfortable teaching. Not popular teaching. Sound teaching.
+But there is no “White Power.” Henry is dying. The fist is literally shackled, constrained, and drained of life. It is being “attacked” by the begloved hands, artificial, latex, inhuman, contorted into the shape of a predatory claw. These are literally the arms of the state. The “Systemic Organism.” Our ultimate tyrant.
 
-The Nowak case forces us to ask: are we discerning, or are we performing? When the news breaks, do we check our theology — or do we check Twitter and see what the pious are saying?
+These are not the hands of the individual officers to whom they actually belong, but rather the hands of a system, a meta-organism. Hands following orders that did not come from the minds of the human individuals but rather the Systemic Egregore. Hands operating under explicit instructions to elevate testimony that claims “racism” and to treat all Whites with suspicion as avatars of that “ultimate evil” against which the system has oriented itself.
 
-Henry Nowak’s family said their son *did not die with dignity.* They hold Digwa *solely and 100% responsible.* They called the police treatment *inhumane and degrading.*
+Except Henry was not evil. He was a victim of this inhuman system. This grotesquely maligned system embodied and visible in the grotesque blue claw clasping him and holding him down as he dies. The system that shackles the dying White “Power.”
 
-A father and mother watching their 18-year-old son bleed to death on the pavement while officers are told he’s the attacker — and they believe it.
+Henry is Britain. He is the West. We are all dying. We are all bleeding to death shackled by the inhuman systems we live under. And if we continue to be shackled by these systems, we will, like Henry, die.
 
-What would Jesus do in Southampton on that night?
+The total repudiation of these governments are necessary to make any change. Incremental improvements are entirely insufficient. The time to be ungovernable is now.
 
-He would not handcuff the dying. He would not dismiss a boy’s plea for help. He would not process a victim as a suspect because someone filed a convenient complaint.
+Regime change is necessary. Remigration is necessary. The mass rejection of the status quo and its systems is necessary.
 
-He would have mercy.
-
-## Maranatha
-
-The [end times](/eschatology/) are not coming. They are here. The systems are revealed. The partiality is exposed. And the Church — if it has any life left in it — needs to stop following culture’s moral compass and start following Scripture’s.
-
-*Come, Lord Jesus.*
-
-##
-
-*Henry Nowak deserved better. May his family find peace. And may the Church find the courage to speak truth — not just when it’s safe, but especially when it isn’t.*
+Revolution is necessary.
