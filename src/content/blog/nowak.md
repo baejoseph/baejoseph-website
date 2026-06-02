@@ -79,9 +79,21 @@ But watch the footage. A dying boy is handcuffed because his attacker claimed ra
 
 Is that not structural racism? Just reversed.
 
-The Reform UK politicians who spoke up — Jenrick, Braverman, Farage — were called out for exploiting tragedy. But they were asking the question everyone else was thinking: why did it take a viral bodycam video and [Elon Musk](/restore/) threatening a wrongful death lawsuit for this case to be taken seriously?
+[Restore Britain](/restore/) founder Rupert Lowe said it best — and with a fire the mainstream media tried to drown out:
 
-Elon offered to fund private prosecutions against the officers. He called them *disgusting.* He demanded the footage be released. And he was right to. Without that pressure, would Hampshire Police have released it at all?
+> *How many more young British men and women are going to die? Bleeding in the street, alone and terrified. Cuffed, in a pool of their own blood. Begging for help.*
+>
+> *How many more parents are going to stand there, and say that they couldn’t help their children in their dying moments? Apologising to their dead children because they couldn’t stop it from happening?*
+>
+> *How many more?*
+>
+> *This is going to happen again, and again, and again. It’s happening right now, in every city across the country. Rape. Sexual torture. Even worse. Mass industrial abuse of British children.*
+>
+> *Henry Nowak is one of thousands and thousands and thousands. Innocent young men and women put through the most unimaginable pain, because our country has failed to do what needs to be done.*
+>
+> *Because children have been sacrificed to death in order to appease foreign cultures that have no place in our country.*
+>
+> *I have had enough — of all of it. I am going to look back in anger. I urge you all to do the same.*
 
 ## Even AI Knows What’s Real
 
