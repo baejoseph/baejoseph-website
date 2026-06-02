@@ -87,7 +87,7 @@ Is that not structural racism? Just reversed.
 >
 > *How many more?*
 >
-> *This is going to happen again, and again, and again. It’s happening right now, in every city across the country. Rape. Sexual torture. Even worse. Mass industrial abuse of British children.*
+> *This is going to happen again, and again, and again. It’s happening right now, in every city across the country. Rape. Sexual torture. Even worse. Mass [industrial abuse of British children](/reckoning/).*
 >
 > *Henry Nowak is one of thousands and thousands and thousands. Innocent young men and women put through the most unimaginable pain, because our country has failed to do what needs to be done.*
 >
