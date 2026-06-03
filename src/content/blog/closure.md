@@ -23,7 +23,7 @@ Even worse was the two-tiered legal system that followed, a weaponised lawfare a
 
 ![](/assets/SCR-20241022-m1l.jpeg)
 
-And in the midst of this, the feeling of being alone hit the hardest. What pained me deeply was the alienation not just from society at large, but even from some of my Christian brothers and sisters who could not see past the mainstream narrative and who suffered from Trump Derangement Syndrome. I was misunderstood, even by those closest to me, and the loneliness it created cut deep. The lowest point came when I clashed with my wife over my MAGA hat. I felt misunderstood, betrayed, and lost in a sea of isolation. It seemed at times that I was lone in this resolve to stand firm, especially after Trump’s assassination attempt.
+And in the midst of this, the feeling of being alone hit the hardest. What pained me deeply was the alienation not just from society at large, but even from some of my Christian brothers and sisters who could not see past the mainstream narrative — [spiritually intoxicated by the very media they trusted](/sober/) — and who suffered from Trump Derangement Syndrome. I was misunderstood, even by those closest to me, and the loneliness it created cut deep. The lowest point came when I clashed with my wife over my MAGA hat. I felt misunderstood, betrayed, and lost in a sea of isolation. It seemed at times that I was lone in this resolve to stand firm, especially after Trump’s assassination attempt.
 
 ![](/assets/c47fd592-43c5-4681-a209-b23801e224b7-1024x855.jpeg)
 
