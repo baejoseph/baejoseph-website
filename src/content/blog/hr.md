@@ -2,7 +2,7 @@
 title: "🪓 We Got Rid of Our HR Team"
 date: "2026-05-24"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/hr_hero.jpg"
 tags: ["leftism", "reflection", "tech", "uk"]
 pairedSlug: "인사부"
 ---
