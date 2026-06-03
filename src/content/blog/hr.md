@@ -51,7 +51,7 @@ Look at AI. America builds it. China adapts it. The EU writes an “AI Act” th
 
 Look at crypto. America tolerates it. China bans it. The EU classifies it into seventeen categories and requires a passport.
 
-**The European Union — and by extension the UK that apes it — has become the world’s glorified HR department.**
+**The European Union — and by extension [the UK that apes it](/london/) — has become the world's glorified HR department.**
 
 Its entire purpose is to identify risks, create committees, write guidelines, and slow everything down in the name of “protection.” It doesn’t build anything. It doesn’t make anything. It *regulates* things. It creates problems — “discrimination,” “data privacy concerns,” “algorithmic bias” — that didn’t exist until the regulators decided they needed to exist.
 
