@@ -14,7 +14,7 @@ _From Monday 26th June to Sunday 2nd July 2017 in Luton, UK_
 
 ### 📣 **Introduction**
 
-In June 2017, I served as an interpreter at the **6th UK Prayer Mission in 2017** and felt compelled to jot down my reflections. (**Update:** six years later, I went again — this time to Wales — [2023 Wales Prayer Mission](/2023-prayer-mission/).)
+In June 2017, I served as an interpreter at the **6th UK Prayer Mission in 2017** and felt compelled to jot down my reflections. (**Update:** six years later, I went again — this time to Wales — [2023 Wales Prayer Mission](/2023-prayer-mission).)
 
 Just a month or two earlier, I knew nothing about this sort of ministry and faced tough choices before committing fully. In April, I’d taken three weeks’ annual leave to host my parents visiting from Paraguay, leaving me with little left. It wasn’t easy to take another week off for the prayer mission, especially with our limited family time.
 
