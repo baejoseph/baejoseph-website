@@ -57,3 +57,5 @@ The fruit of the Holy Spirit — love, joy, peace, patience, kindness, goodness,
 I want that. I want my core to be faith and thanksgiving. I want my default setting to be praise, even in the room where someone is dying. I want to be the kind of man whose last words are a prayer of gratitude, not a list of grievances.
 
 Pray for Paul. Pray for his healing. And pray for us all — that when the stripping comes, what remains will be Christ.
+
+UPDATE (1st June 2026): Paul went to be with the Lord on the morning of Monday 1st June 2026. During our visit the day before, while still declining visibly, the last thing he told me was, "I will see you again." Those words stay with me. "For the Lord Himself will descend from heaven with a shout, with the voice of the archangel, and with the trumpet of God: and the dead in Christ shall rise first, then we who are alive, who remain, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord." Amen! Maranatha, come Lord Jesus!
