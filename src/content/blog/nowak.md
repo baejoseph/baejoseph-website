@@ -73,7 +73,7 @@ The BLM framework reshaped how institutions understand racism. And almost exclus
 
 ## Structural Racism — Against White
 
-We are told racism only flows one way. That structural disadvantage only applies to certain groups. That a white British-Polish teenager cannot be the victim of institutional bias.
+We are told racism only flows [one way](/splc/). That structural disadvantage only applies to certain groups. That a white British-Polish teenager cannot be the victim of institutional bias.
 
 But watch the footage. A dying boy is handcuffed because his attacker claimed racism. A Sikh man’s word about a racist attack is treated as credible while the bloodied victim is processed as a suspect. The system — reformed, re-educated, retrained — still defaulted to believing the minority perpetrator over the majority victim.
 
