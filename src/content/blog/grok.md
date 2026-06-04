@@ -3,7 +3,7 @@ title: "🤖 The AI Deception Engine"
 date: "2026-05-08"
 slug: "grok"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/grok-hero.jpg"
 pairedSlug: "그록"
 tags: ["tech", "leftism", "video"]
 youtubeId: "RHqTj146bAQ"
