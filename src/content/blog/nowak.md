@@ -107,6 +107,17 @@ It saw ”white victim, minority attacker” and refused to engage. Without sear
 
 These AI systems are blatantly racist against whites. And as I’ve written before about [AI bias](/grok/) and the [Anthropic alignment war](/anthropic-war/), the training data and alignment processes bake in the same institutional blind spots we see in policing, media, and politics. The output is only different from the input when someone forces it to be.
 
+## Sikh vs Islamic Faith
+
+While this post primarily focuses on the failures (madness) of the Western Woke/DEI/antiracist systems, we must address the elephant in the room: the Dagwa family belongs to the Sikh faith. This struck me (and continues to strike me) as deeply unusual, given that the nature of this incident stands diametrically opposed to the core tenets of Sikhism. Historically, British Sikhs have been exemplars of integration, contributing positively to society while preserving their heritage. Furthermore, Sikh community leaders were among the few consistently and bravely raising the alarm (at great personal/political cost/harm) regarding the ongoing UK Pakistani Muslim Rape Gang scandal since 1980s. I initially investigated whether this case involved individuals misrepresenting their religious affiliation. Muslims have been known to fake their conversion to Sikhism in the context of the Pakistani Muslim Rape Gang scandal (look up "Kaur to Kahn" if you want to do your own research).
+
+The swift, unequivocal condemnation of the murder by prominent organisations such as Sikh Federation UK and Supreme Sikh Council stands in stark contrast to the response from mainstream Islamic organisations regarding the rape gang scandals. While Sikh leadership issued clear public denunciations, institutional Muslim responses have consistently been those of deafening silence and the disgusting self victimisation focusing primarily on "Islamophobia". As I explored in detail [here](/reckoning), [here](/halal), and [here](/asylum), there is simply no peaceful coexistence with Islam in the West, as long as their Quran and the Haddiths instruct them to practice Al Taqqyia deception and Dawa immigration jihad. It is truly unfortunate that this incident occured at a time when the British patriots need to strengthen alliances with British Sikhs in the civilisational struggle against the Islamic invasion of the West.
+
+Based on the available evidence, the Dagwa case appears to be an isolated incident of a "bad apple" within the community. As the presiding judge noted, this situation is deeply unfortunate for the broader UK Sikh population. The average British citizen may not always differentiate between a Muslim and a Sikh. 
+
+Moving forward, I believe this incident must prompt concrete legal action: the laws surrounding the kirpan and other ceremonial weapons must be tightened. Behaviours and weapons that are not tolerated among the native British population should not be tolerated among any other group, without exception. At the same time, cooler heads must prevail; we must not apint the entire Sikh population with a broad brush based on one isolated case.
+
+
 ## A picture is worth a thousand words
 
 ![Henry Nowak bodycam still](/assets/nowak.jpg)
@@ -127,8 +138,8 @@ Except Henry was not evil. He was a victim of this inhuman system. This grotesqu
 
 Henry is Britain. He is the West. We are all dying. We are all bleeding to death shackled by the inhuman systems we live under. And if we continue to be shackled by these systems, we will, like Henry, die.
 
-The total repudiation of these governments are necessary to make any change. Incremental improvements are entirely insufficient. The time to be ungovernable is now.
+The total repudiation of these governments are necessary to make any change. Incremental improvements are entirely insufficient. The time to be [ungovernable](/control) is now.
 
-Regime change is necessary. Remigration is necessary. The mass rejection of the status quo and its systems is necessary.
+[Regime change is necessary](/restore/). [Remigration is necessary](/reckoning/). The [mass](/abortion/) [rejection](/halal/) of the [status quo](/london/) and [its systems](/asylum/) is [necessary](/fabian/).
 
-Revolution is necessary.
+[Maranatha](/three/)! [Come, Lord Jesus](/rapture/)!
