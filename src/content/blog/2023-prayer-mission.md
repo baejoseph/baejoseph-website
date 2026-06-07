@@ -19,7 +19,9 @@ The week I spent in Luton on the 2017 prayer mission was one of the most importa
 
 So when Pastor Kim Nam-jin reached out early this year with the message, “We’re planning another prayer mission for Wales—please keep it in prayer,” our family took it seriously. Every morning at dawn prayer, we lifted up that July mission and pressed in. Maybe because we kept at it so consistently, one morning after dawn prayer my mother-in-law quietly made a suggestion: “I’ll watch Junsu and Juno for the week. What if you and your wife go together and bring the baby?” The moment she said it, a strange peace settled over me. There were plenty of unresolved details—how would we both get time off work? Would any team even have space for us? Wouldn’t a two-year-old be a burden to the prayer team?—but instead of anxiety, what I felt was confidence that God would work each thing out one by one.
 
-He did. Pastor Kim responded immediately and placed us with the team called *“부흥의 마중불”*—which roughly translates as “The Kindling Spark of Revival,” the fire that lights the fire. The couple leading that team, Pastor Han Sang-gyu and his wife, were people we had prayed alongside in Luton in 2017. This would be their seventh year on a UK prayer mission. To be reunited with those same prayer companions, on the same ground, was itself a gift. And both my wife and I got our time off work without any trouble. Every door opened. You could feel God’s hand threading it all together.
+He did. Pastor Kim responded immediately and placed us with the team called *“부흥의 마중불”*—which roughly translates as “The Kindling Spark of Revival,” the fire that lights the fire. The couple leading that team, Pastor Han Sang-gyu and his wife, were people we had prayed alongside in Luton in 2017. This would be their seventh year on a UK prayer mission. To be reunited with those same prayer companions, on the same ground, was itself a gift. And both my wife and I got our time off work without any trouble.
+
+**God doesn’t answer prayer with a text message. He answers by opening doors you didn’t even know were locked.**
 
 —-
 
@@ -38,7 +40,9 @@ Pastor Cho had laid out a full itinerary for Tuesday through Saturday:
 - **7–10 pm:** Evening services and prayer meetings with Tabernacle congregation
 - **10 pm–12 am:** Pulpit prayer
 
-What follows are the episodes that stood out to me.
+I remember standing in that empty church hall on Monday evening, looking at the printed schedule, and feeling something shift inside me. This wasn’t a retreat. This was a campaign.
+
+What follows are the episodes that stayed with me.
 
 —-
 
@@ -47,6 +51,8 @@ What follows are the episodes that stood out to me.
 The team from Tabernacle moved into that school like a well-practiced unit, presenting the gospel to the children with real skill and confidence. This was not a one-time thing—the school had welcomed the church team back repeatedly, and that familiarity showed. The presentation centered on the story of Zacchaeus, pitched perfectly to every age group in the room. Then came singing and movement, with all the children—every single one of them—belting out *“Jesus Loves Me”* at the top of their lungs and throwing themselves into the actions.
 
 Standing there watching those Welsh children sing with everything they had, I caught a glimpse of what the next generation of Wales could look like.
+
+You don’t need a revival to see hope. You just need to watch children who have never heard the name of Jesus sing it like they’ve known it all their life.
 
 ![](/assets/IMG_8811.jpeg)
 
@@ -68,6 +74,8 @@ After about thirty minutes of that kind of intercession, the church leaders said
 
 What I heard afterward from Pastor Kim’s team has stayed with me: that church is not an exception in Wales. It is the rule. Across Wales, most churches are in exactly that situation—deacons rotating through the pulpit, no pastor, and a five-to-ten year window in which many of these congregations will either see God move or simply cease to exist. That is not hyperbole. That is the reality on the ground.
 
+Some churches are keeping the light on with duct tape and prayer. Most of them don’t have either.
+
 —-
 
 ## Thursday Morning — Cross Keys Pentecostal Church
@@ -80,6 +88,8 @@ We prayed earnestly, then went out for a prayer walk through the neighborhood be
 
 Seeing that with my own eyes—and thinking about the pastor who had moved into this community to serve and then fallen into this mysterious, exhausting illness—I found myself wondering whether there was something spiritually intentional about it. The health of a community’s spirit is not abstract; it is measurable in what it tolerates at its borders. I’ve written about the health of your spirit before ([The Health of Your Spirit](/spiritual-health)), and there is a sick spirit that shows in how a place treats death, the divine, and those who serve it. The prayer that rose up from inside me after that walk was a different kind of desperate.
 
+Some territories don’t need more pastors. They need more war.
+
 —-
 
 ## A Shared Burden: The Left in the Korean Church
@@ -88,13 +98,17 @@ In the conversations I had with Pastor Han Sang-gyu, Pastor Ryu Ju-hyun, and Pas
 
 That conversation opened something. Pastor Han Sung-mo confessed that he had once been a left-wing pastor himself—and that only the grace of Jesus brought him through genuine repentance and restoration. After the mission ended, he was kind enough to write out that story and send it to me — [Pastor Han’s Testimony](/한목사님).
 
+I sat with his testimony for a long time after I read it. It is one thing to talk about ideological captivity in abstract. It is another to read the account of someone who lived inside it, felt its pull, and found himself dragged further than he ever intended to go. Grace is the only exit.
+
 —-
 
 ## Friday Morning — Cardiff, in Front of the Senedd
 
 ![](/assets/IMG_8891.jpeg)
 
-Cardiff was once the coal export capital of the world. At its peak, more trade passed through Cardiff Bay than through New York City, and the wealth was staggering. But as global competition mounted, the mines closed one by one—by the 1970s and ‘80s, the mining industry had collapsed and tourism became the primary economy. The city never quite recovered. Standing in front of the Senedd—the Welsh Parliament—praying over it, I felt something like anticipation. When revival fire sweeps across Wales again, I believe it will bring not only spiritual renewal but economic restoration. That kind of hope is not naive. It is scriptural. I’ve laid out my thoughts on what the last days hold ([My Eschatology](/eschatology)), and one conviction has never wavered: God’s plan for the nations includes their restoration, and Wales is not forgotten.
+Cardiff was once the coal export capital of the world. At its peak, more trade passed through Cardiff Bay than through New York City, and the wealth was staggering. But as global competition mounted, the mines closed one by one—by the 1970s and ’80s, the mining industry had collapsed and tourism became the primary economy. The city never quite recovered. Standing in front of the Senedd—the Welsh Parliament—praying over it, I felt something like anticipation. When revival fire sweeps across Wales again, I believe it will bring not only spiritual renewal but economic restoration. That kind of hope is not naive. It is scriptural. I’ve laid out my thoughts on what the last days hold ([My Eschatology](/eschatology)), and one conviction has never wavered: God’s plan for the nations includes their restoration, and Wales is not forgotten.
+
+A city that once moved the world is still waiting for the God who made it.
 
 —-
 
@@ -124,15 +138,21 @@ Here is what I learned: even a genuinely good thing must be disciplined when it 
 
 One of the unexpected blessings of this trip was learning the story of how three men became something like sworn brothers in the faith. Pastor Kim Nam-jin, who leads the prayer missions; Pastor Lee Sang-bo, who pastors in London; and Pastor Cho Young-tae, our host in Newbridge—all three are the same age, and God brought them together a few years ago. What started as a providential meeting deepened so rapidly that they formed the kind of friendship where you can say the hard things, where you lay down the real burdens, where you find genuine rest. God gave them to each other as gospel partners.
 
+I don’t have many friends like that. Not that I complain—God gives exactly what we need, not what we want—but I’ve always admired men who find each other the way these three did. Not at a conference. Not through networking. Through prayer.
+
 And this, I found out, is partly the fruit of a prayer. Pastor Cho’s wife had been praying for years: “My husband is out here in this rural community, doing this ministry alone, with no real friends. God, give him a friend.” God answered that prayer—with two.
 
-Our God is a Father who attends to every detail.
+Our God is a Father who attends to every detail. He even knows when your husband needs a brother.
 
 —-
 
 ## VBS — Vacation Bible School
 
-Running concurrently with our prayer mission, an American Korean-church team of 1.5- and second-generation young adults had come to Wales to lead Vacation Bible School at several local churches—bringing the gospel directly to Welsh children. Throughout our week of intercession, we were praying over that VBS effort as well. It was a beautiful thing: the prayer mission and the evangelism mission running side by side, each covering the other. I am praying for much fruit and revival through that kind of sustained, layered kingdom work.
+Running concurrently with our prayer mission, an American Korean-church team of 1.5- and second-generation young adults had come to Wales to lead Vacation Bible School at several local churches—bringing the gospel directly to Welsh children. Throughout our week of intercession, we were praying over that VBS effort as well.
+
+I never thought much about the relationship between intercession and evangelism until I saw them running side by side. Prayer is the invisible work. VBS is the visible work. Together, they are the whole work.
+
+It was a beautiful thing: the prayer mission and the evangelism mission running side by side, each covering the other. I am praying for much fruit and revival through that kind of sustained, layered kingdom work.
 
 —-
 
@@ -147,6 +167,10 @@ Decades passed. That same young man eventually founded a charity called Guitar A
 John looked at us and said: “The truth I have experienced more times than I can count in my life is this—when you make a small sacrifice for the kingdom of God, He takes it and multiplies the fruit a hundredfold, not just years later but decades later.”
 
 I have been thinking about that ever since.
+
+Ten pounds. Three months of saving. Four thousand guitars later.
+
+**The smallest sacrifice, given faithfully, echoes across decades you will never see.**
 
 —-
 
