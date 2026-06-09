@@ -9,9 +9,9 @@ tags: ["reflection", "courage", "theology"]
 
 ## The Greatest Lie of Our Society
 
-In June 2026 it feels like we wake up every single day to hear the news of another third-world savage brutally murdering a white British national on our own soil. The news of a Somalian Muslim beheading a white northern Irish citizen in the middle of Belfast is indeed shocking. It will not be the last.
+In June 2026 it feels like we wake up every single day to hear the news of another third-world savage brutally murdering a white British national on our own soil. The news of a Somalian Muslim beheading a white northern Irish citizen in the middle of Belfast is indeed shocking. [It will not be the last](/nowak/).
 
-And through it all, the same tired slogan repeats from every mouthpiece of the establishment:
+And through it all, the same tired slogan repeats from every [mouthpiece](/sober/) of the establishment:
 
 **"Diversity is our greatest strength."**
 
@@ -19,7 +19,7 @@ It is the greatest lie of our society.
 
 Not diversity. **Unity.** Unity _in spite of_ our diverse backgrounds. That is our greatest strength. There is an enormous difference, and it is the difference between civilisation and collapse.
 
-Diversity without shared values, shared culture, shared allegiance is not a recipe for strength. It is a recipe for fragmentation. A society held together by nothing but tolerance is held together by nothing at all.
+Diversity without shared values, shared culture, shared allegiance is not a recipe for strength. It is a recipe for [fragmentation](/multiculturalism/). A society held together by nothing but tolerance is held together by nothing at all.
 
 Let me give you three examples — from the military, the Church, and the Kingdom to come.
 
@@ -31,9 +31,9 @@ Under Biden, the US Department of Defence rapidly became a joke.
 
 The fighting spirit was gone. Replaced by powerpoint presentations on inclusion.
 
-Then Peter Hegseth took over under Trump. **Unity at all costs. Meritocracy restored.** The DEI bureaucracy was ditched — sent to the scrapheap where it belongs. Standards returned. Competence was rewarded again.
+Then Peter Hegseth took over under Trump. **Unity at all costs. Meritocracy restored.** Aptly renamed the Department of War — because war is not diversity, and war is not inclusion. The DEI bureaucracy was ditched — sent to the scrapheap where it belongs. Standards returned. Competence was rewarded again.
 
-Now the US military is feared all over the world again. The Maduro mission in Venezuela — surgical, decisive, a masterclass in modern warfare. Operation Epic Fury against Iran — devastating precision that sent a message the entire Middle East could not ignore.
+Now the US military is feared all over the world again. The Maduro mission in Venezuela — surgical, decisive, a masterclass in modern warfare. [Operation Epic Fury against Iran](/epic-fury/) — devastating precision that sent a message the entire Middle East could not ignore.
 
 Same institution. Same soldiers. The only difference? They were told who their real enemies were, and that their competence mattered more than their identity.
 

@@ -61,7 +61,7 @@ Why the actual hell did we sacrifice so many great American men to the grinding 
 
 Part of the answer is technology. We did not have the drone capability we have today. GPS and satellite imagery were far less accurate. Precision strikes of this nature were simply impossible twenty years ago. People genuinely do not appreciate how far military technology has come, and how profoundly it changes the calculus of force.
 
-But part of the answer is darker: the forever wars were, at least in part, a machinery for laundering vast sums to the defence-contractor ecosystem in the DC–Virginia–Maryland corridor. Wars that were never meant to be won. Wars that were meant to *continue*.
+Part of the answer is darker: the forever wars were, at least in part, a machinery for laundering vast sums to the defence-contractor ecosystem in the DC–Virginia–Maryland corridor. Wars that were never meant to be won. Wars that were meant to *continue*. The military that ran them was gutted from within by the very ideology that now defines our politics — [DEI, diversity mandates, the destruction of meritocracy](/diversity/).
 
 Trump’s approach is different. The objective is to *win* — quickly, decisively, and with minimal American blood. Turns out wars are a lot simpler when that is actually the goal.
 
