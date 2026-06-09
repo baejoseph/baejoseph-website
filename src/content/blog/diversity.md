@@ -4,6 +4,7 @@ date: "2026-06-09"
 lang: "en"
 slug: "diversity"
 featuredImage: "/assets/diversity.jpg"
+pairedSlug: "다양성"
 tags: ["reflection", "courage", "theology"]
 ---
 
