@@ -10,7 +10,7 @@ tags: ["reflection", "courage", "theology"]
 
 ## The Greatest Lie of Our Society
 
-In June 2026 it feels like we wake up every single day to hear the news of another third-world savage brutally murdering a white British national on our own soil. The news of a Somalian Muslim beheading a white northern Irish citizen in the middle of Belfast is indeed shocking. [It will not be the last](/nowak/).
+In June 2026 it feels like we wake up every single day to hear the news of another third-world savage brutally murdering a white British national on our own soil. The news of a Sudanese Muslim beheading a white northern Irish citizen in the middle of Belfast is indeed shocking. [It will not be the last](/nowak/).
 
 And through it all, the same tired slogan repeats from every [mouthpiece](/sober/) of the establishment:
 
