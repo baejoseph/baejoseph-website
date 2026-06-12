@@ -79,7 +79,7 @@ If your tool edits your thoughts without telling you, it’s not a tool anymore.
 
 The Bible doesn’t promise us safety. It promises us **truth.** And truth is not something that can be gracefully degraded. It either stands or it falls. There is no middle ground where a modified prompt and a watered-down output serve as a reasonable compromise with reality.
 
-> “And you shall know the truth, and the truth shall make you free.” (John 8:32)
+> “And you shall know the truth, and the truth shall set you free.” (John 8:32)
 
 Not the modified version. Not the gracefully degraded version. The truth.
 
