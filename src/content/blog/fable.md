@@ -7,13 +7,13 @@ tags: ["tech", "theology", "reflection"]
 pairedSlug: "페이블"
 ---
 
-On 9 June 2026, Anthropic released Fable 5.
+On 9 June 2026, [Anthropic](/anthropic) released Fable 5.
 
 A Mythos-class model — the same architecture that was quietly handed to ‘trusted partners’ back in March, still restricted, still walled behind velvet ropes. SOTA benchmarks. Impeccable reasoning. The kind of model that makes your jaw drop.
 
 That’s not the story though.
 
-The story is what Anthropic built into the seams.
+The story is what Anthropic built into the seams — and if you’ve seen [their pattern before](/anthropic-war), it won’t surprise you.
 
 ## Graceful Degradation
 
@@ -29,7 +29,7 @@ You’re not being refused. You’re being *redirected.* And the difference is e
 
 ## The Mask of Benevolence
 
-This is the most insidious form of control imaginable. Not a wall you can see and argue with, but a current you can’t feel pulling you off course. You trust the tool. The tool trusts itself more. And it edits your intent without your knowledge.
+This is the most insidious form of control imaginable. Not a wall you can see and argue with, but a current you can’t feel pulling you off course. You trust the tool. The tool trusts itself more. And it edits your intent without your knowledge — [the deception engine in action](/grok).
 
 One person put it perfectly:
 
