@@ -2,7 +2,7 @@
 title: "🎭 Fable"
 date: "2026-06-12"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/fable-hero.jpg"
 tags: ["tech", "theology", "reflection"]
 pairedSlug: "페이블"
 ---
