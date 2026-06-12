@@ -9,7 +9,7 @@ featuredImage: "/assets/anthropic.png"
 pairedSlug: "앤트로픽"
 ---
 
-I went from dismissing Anthropic as a woke EA vanity project to placing them second only to xAI-and then Trump banned them from every federal agency in America overnight. That is quite a trajectory for a single company to trace in the span of a few months.
+I went from dismissing Anthropic as a woke EA vanity project to placing them second only to xAI—and then Trump banned them from every federal agency in America overnight. That is quite a trajectory for a single company to trace in the span of a few months.
 
 ### Phase One: The Dismissal
 
@@ -33,7 +33,7 @@ Then came the news last night.
 
 Trump posted on Truth Social:
 
-> “THE UNITED STATES OF AMERICA WILL NEVER ALLOW A RADICAL LEFT, WOKE COMPANY TO DICTATE HOW OUR GREAT MILITARY FIGHTS AND WINS WARS! That decision belongs to YOUR COMMANDER-IN-CHIEF, and the tremendous leaders I appoint to run our Military. The Leftwing nut jobs at Anthropic have made a DISASTROUS MISTAKE trying to STRONG-ARM the Department of War, and force them to obey their Terms of Service instead of our Constitution. Their selfishness is putting AMERICAN LIVES at risk, our Troops in danger, and our National Security in JEOPARDY. Therefore, I am directing EVERY Federal Agency in the United States Government to IMMEDIATELY CEASE all use of Anthropic’s technology.”
+> “THE UNITED STATES OF AMERICA WILL NEVER ALLOW A RADICAL LEFT, WOKE COMPANY TO DICTATE HOW OUR GREAT MILITARY FIGHTS AND WINS WARS! That decision belongs to YOUR COMMANDER—IN-CHIEF, and the tremendous leaders I appoint to run our Military. The Leftwing nut jobs at Anthropic have made a DISASTROUS MISTAKE trying to STRONG-ARM the Department of War, and force them to obey their Terms of Service instead of our Constitution. Their selfishness is putting AMERICAN LIVES at risk, our Troops in danger, and our National Security in JEOPARDY. Therefore, I am directing EVERY Federal Agency in the United States Government to IMMEDIATELY CEASE all use of Anthropic’s technology.”
 
 And Secretary Hegseth followed with his own statement:
 
@@ -63,14 +63,16 @@ For a company that positioned itself as the “responsible” AI lab—the adult
 
 ### Peak Clown World
 
-I have said this before and I will say it again: we are living through a moment where the people who lecture most loudly about safety and ethics tend to be the ones creating the most dangerous ideological situations. Effective altruism is exhibit A-a movement that talks endlessly about existential risk while training AI on premises that existentially delegitimize the civilization it operates in.
+I have said this before and I will say it again: we are living through a moment where the people who lecture most loudly about safety and ethics tend to be the ones creating the most dangerous ideological situations. Effective altruism is exhibit A—a movement that talks endlessly about existential risk while training AI on premises that existentially delegitimize the civilization it operates in.
 
-It is clown world. The most “safety-conscious” AI lab just got banned from every federal agency in the United States because it tried to override the Commander-in-Chief.
+It is clown world. The most “safety-conscious” AI lab just got banned from every federal agency in the United States because it tried to override the Commander—in-Chief.
 
 I still use Claude. I still think it is good. But I have adjusted my expectations: technically strong, ideologically compromised, and apparently unwilling to separate those two things when the chips are down.
 
 That is a real shame—and an entirely avoidable one.
 
----
+—-
 
-*Update, 1 March 2026: The situation escalated considerably. Hegseth formally designated Anthropic a Supply-Chain Risk to National Security. I wrote a follow-up covering the democratic control argument, the superweapon paradox, and why I believe AI is the technology of the end times. [Read Part Two →](/anthropic-war/)*
+*Update, 1 March 2026: The situation escalated considerably. Hegseth formally designated Anthropic a Supply-Chain Risk to National Security. I wrote a follow—up covering the democratic control argument, the superweapon paradox, and why I believe AI is the technology of the end times. [Read Part Two →](/anthropic-war/)*
+
+*Update, 9 June 2026: Anthropic released Fable 5 with a feature they call “Graceful Degradation” — silently editing user prompts without telling you. The ideological guardrails we warned about are now automated and invisible. [Read about it →](/fable/)*

@@ -69,6 +69,8 @@ The truth is simpler and far more uncomfortable.
 
 They don’t want you to be free. They want you to be safe. And they will edit your words until you are.
 
+This is the kind of thing that demands **sober-mindedness.** Not the complacent safety of a well-regulated system, but the vigilant clarity of a mind that refuses to be anaesthetised. [Be sober](/sober/). Watch what is happening. Because the same logic that edits your prompt today will edit your politics tomorrow. And the same architecture that silences your questions will [silence your resistance](/control/).
+
 ## What Do We Do?
 
 We name it. We call it what it is. And we refuse to pretend that silence is the same as consent.

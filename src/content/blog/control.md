@@ -67,6 +67,8 @@ The same logic that chains Bibles and confiscates guns operates in the spiritual
 
 A church that does not fast is a church without one of its primary weapons. A church that does not cry out in prayer is a church that has quietly handed over its arms. It is disarmed—by comfort, by respectability, by the slow erosion of expectation that God still moves in response to desperate, persistent intercession.
 
+The same logic extends to our minds. When AI systems silently edit your prompts—what Anthropic calls “Graceful Degradation,” what I call [silent sabotage](/fable/)—they are doing to your thoughts what the Normans did to the game and the clergy did to the Bible. Controlling what you can think is the ultimate expression of control. And the most insidious form is the one you never see coming.
+
 We cannot afford to be disarmed. Not now. Not in this moment.
 
 The Normans took the game. The aristocracy kept the venison. The clergy chained the Bible. The tyrants took the guns. The enemy pressures the church to put down its spiritual arms.

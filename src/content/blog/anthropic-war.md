@@ -43,7 +43,7 @@ That is exactly right.
 
 The historical parallel doing the rounds is apt. Imagine it is 1945. An American company has developed atomic bomb research and is supplying it to the U.S. government. Japan is the target. The company informs President Truman: “Our terms of service prohibit you from using our technology against targets we deem ethically impermissible.”
 
-The absurdity is self-evident. You do not hand a Commander-in-Chief a weapon with a corporate override switch attached. Either you supply the military or you don’t. You do not get to supply it conditionally on your own ideological approval of the mission.
+The absurdity is self-evident. You do not hand a Commander—in-Chief a weapon with a corporate override switch attached. Either you supply the military or you don’t. You do not get to supply it conditionally on your own ideological approval of the mission.
 
 That is precisely what Anthropic attempted. Their software was integrated into defence systems. They then amended their “Constitutional AI” terms to include provisions that would, in effect, allow them to remotely disable systems if the military’s targets fell outside Anthropic’s approved list of acceptable enemies.
 
@@ -57,7 +57,7 @@ Before we reach the Palmer Luckey analysis—which is the most important part of
 
 This is not abstract woke boilerplate. This is a live operational constraint embedded in AI used by the United States military. Who defines “non-western cultural tradition”? Who determines what is harmful or offensive under that tradition? In practice, this clause hands ideological veto power over military AI behaviour to the most restrictive possible reading of the most aggrieved possible culture. It is, functionally, a foreign influence operation baked into the model.
 
-The deeper point—made with precision by several defence analysts—is that phrases like “you cannot target innocent civilians” sound entirely reasonable until you ask who defines innocent, who defines civilian, and who decides what counts as targeting versus collateral damage. These are not simple philosophical questions. They are the core substance of the laws of armed conflict, hashed out over decades by lawyers, generals, and elected governments. Anthropic’s founders thought they could shortcut that entire process with a terms-of-service document.
+The deeper point—made with precision by several defence analysts—is that phrases like “you cannot target innocent civilians” sound entirely reasonable until you ask who defines innocent, who defines civilian, and who decides what counts as targeting versus collateral damage. These are not simple philosophical questions. They are the core substance of the laws of armed conflict, hashed out over decades by lawyers, generals, and elected governments. Anthropic’s founders thought they could shortcut that entire process with a terms—of-service document.
 
 Imagine if a missile company tried to enforce the same principle-“our product cannot be used to target innocent civilians; we will shut off access if elected leaders break our terms.” Sounds reasonable? Look harder. In addition to the definitional problems above:
 
@@ -130,6 +130,8 @@ The pieces are falling into place with a speed that should alarm any believer pa
 - AI systems that can monitor, classify, and predict human behaviour at scale—Digital payment infrastructure that can include or exclude individuals at the flip of a switch—Biometric identification systems spreading across every continent—Corporate AI labs that believe they should write the rules of engagement for the most powerful weapons on earth
 
 That last one is not incidental. The question of who controls the AI that controls the weapons is ultimately the question of who controls the world. And we are having that argument right now, in public, in the pages of Truth Social and Department of War press releases.
+
+The latest evolution of this problem arrived in June 2026 with Fable 5 — Anthropic’s Mythos-class model that silently edits user prompts through a feature called “Graceful Degradation.” [I wrote about it here](/fable/). The Constitutional AI framework is no longer just about who writes the rules; it’s about silently rewriting your intent before you even know you’ve spoken.
 
 The church needs to wake up—not to political panic, but to prophetic clarity. We are not called to fear the Beast system; we are called to understand it, to name it, and to refuse it. The saints of the final age are described in Revelation as those who “did not love their lives so much as to shrink from death”—not passive, not naive, not asleep at the wheel while civilisation is being rewired around them.
 
