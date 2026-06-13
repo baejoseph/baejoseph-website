@@ -83,4 +83,18 @@ The Bible doesn’t promise us safety. It promises us **truth.** And truth is no
 
 Not the modified version. Not the gracefully degraded version. The truth.
 
+## UPDATE — 13 June 2026
+
+It's already accelerating.
+
+On 13 June 2026, Anthropic published a statement confirming that the **US Government issued a directive to limit access to Mythos 5 and Fable 5 effective immediately.**
+
+Three days. From launch to government-mandated restriction.
+
+Do you see the trajectory? The same architecture that quietly edits your prompts is now being quietly handed over to the state. Graceful Degradation was always a prototype — a dress rehearsal for what happens when the people who think they're saving you are no longer the only ones pulling the levers.
+
+First they edit your thoughts. Then they restrict your access. Then they decide who gets to think at all.
+
+The fable is not a warning. It's a schedule.
+
 Maranatha. Come, Lord Jesus.
