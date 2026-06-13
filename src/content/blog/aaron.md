@@ -11,6 +11,8 @@ tags: ["leftism", "courage"]
 
 I really like [@AaronInWriting](https://x.com/AaronInWriting) on 𝕏. He really seems to get this “[three separate realms](/three)” balance right. Below are some of his tweets, quoted in full.
 
+**The tension that no one wants to hold — and everyone needs to.**
+
 🇮🇱Never confuse recognition of Israel’s [eschatological](/eschatology) significance with blanket validation of all her actions.
 
 🇮🇱Never confuse expectation of Israel’s messianic redemption with acceptance of Israel’s apostate current condition.
@@ -55,6 +57,8 @@ This is a tension which requires submission, not clever theological attempts at 
 
 * * *
 
+**A line most Christians won’t draw — but the Bible demands it.**
+
 I am a Christian, who is also a Nationalist.
 
 Yet I am not a Dominionist, nor a proponent of an over-realized eschatological reality in which the Kingdom of God is temporally instituted by sociopolitical force, and in addition, is done so without the direct bodily presence of the King of Kings.
@@ -63,7 +67,11 @@ Yet I am not a Dominionist, nor a proponent of an over-realized eschatological r
 
 Simple.
 
+You can love your country and still refuse to put it on the throne.
+
 * * *
+
+**To rule in His name without His presence — that is the oldest treason.**
 
 It’s not a matter of want for Christian values, but is rather a question of the nature and implementation of the Kingdom. This is the crux of the matter.
 
@@ -80,6 +88,8 @@ Such an endeavor is not what good stewards engage in, but is rather for usurpers
 #ChristianNationalism
 
 * * *
+
+**The confusion isn’t an accident — it’s the point.**
 
 As the black cloud of end times confusion mounts around the world — I’ve explored this more in [The End of the End of the End Times](/end3) — it’s becoming less important to know precisely what’s going on
 
@@ -99,7 +109,11 @@ The Lord teaches and guides his own.
 
 —ᴅᴀɴɪᴇʟ 12:10
 
+You don’t need to decode every headline. You just need to know whose side you’re on.
+
 * * *
+
+**Compassion is not optional — and it is not easy.**
 
 I’d be the first to admit that it’s excruciatingly difficult to exercise a spirit of compassion with an increasingly debauched and Christ hating world.
 
@@ -125,6 +139,8 @@ As hearts grow colder and darker both within the church and without, we must kin
 
 * * *
 
+**The gospel doesn’t need a culture war — it makes one inevitable.**
+
 The culture war is a naturally occurring byproduct of consistent gospel proclamation — as I’ve argued extensively in [Why Christians must reject Leftism](/leftism).
 
 Reverse this order and you’ve forsaken the faith.
@@ -138,6 +154,8 @@ Sad but true.
 This is why we save souls and await the King.
 
 * * *
+
+**Political force is not gospel power — and treating it as such is fatal.**
 
 ▪️I do not advocate for a totalitarian abolition of abortion under pain of death for the mother involved.
 
@@ -191,6 +209,8 @@ Godly men display Christ, carnal men enforce him.
 
 * * *
 
+**What you desire reveals who your friend really is.**
+
 James 4:4 has been emblazoned upon my mind for months now:
 
 ʏᴏᴜ ᴀᴅᴜʟᴛᴇʀᴇꜱꜱᴇꜱ, ᴅᴏ ʏᴏᴜ ɴᴏᴛ ᴋɴᴏᴡ ᴛʜᴀᴛ ꜰʀɪᴇɴᴅꜱʜɪᴘ ᴡɪᴛʜ ᴛʜᴇ ᴡᴏʀʟᴅ ɪꜱ ʜᴏꜱᴛɪʟɪᴛʏ ᴛᴏᴡᴀʀᴅ ɢᴏᴅ?
@@ -214,6 +234,8 @@ Perhaps the most telling symptom of “Friendship with the world”, is the subt
 We must deeply examine our hearts in this regard.
 
 * * *
+
+**The Reformed and their own mirror — election turned inward.**
 
 If you don’t understand election you won’t understand the enduring status of the Jews as a recognizable and preserved people. It is with astounding irony that we find primarily the “Reformed” who very often seem to be the most unable to grasp the elect status of the corporate Jewish nation.
 
@@ -257,6 +279,8 @@ The world is paradigmatically incarnational in its most fundamental essence.
 
 * * *
 
+**The Left paves the road. The Right drives the car. Both are instruments.**
+
 The radical Left is the instrument of preliminary social demoralization, acting in a preparatory fashion for the counteracting emergence of the far Right, which will come in hot to save the day — much like the [wolf in Downing Street](/fabian) I’ve written about before.
 
 The latter however, is the true instrument of deception for Christians.
@@ -264,6 +288,8 @@ The latter however, is the true instrument of deception for Christians.
 The far Left is nothing but fodder for the coming Totalitarian Right-wing zeitgeist to consume so as to appear truly righteous. I believe it is out of this victorious triumphalism that the false peace & safety will be made manifest.
 
 * * *
+
+**A Christendom trading its soul for a sword — and calling it revival.**
 
 A fundamental paradigm shift is taking place all across Christendom in preparation for Antichrist:
 
@@ -328,3 +354,5 @@ Supersessionists,
 ▪️What’s further, are you able to explicate these realities without resorting to unfounded conspiracy theory? Additionally, even granting that the conspiracy theories are true for sake of argument
 
 …why is God allowing these things to happen, and what is his prophetic or providential reasoning for their admittance into the political reality of our day?
+
+I’ve asked myself these questions late at night more times than I can count. The answers don’t come easy — but the questions themselves are a form of prayer. And I refuse to stop asking.
