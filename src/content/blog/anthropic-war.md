@@ -27,7 +27,7 @@ The six-month wind-down period remains, but the message is unambiguous: Anthropi
 
 The most damning critique of Anthropic’s position is also the most elegant. The internet distilled it quickly:
 
-Anthropic spent months telling the world that their AI was something approaching a god-tier capability—potentially the most consequential technology in human history. They argued, repeatedly and loudly, that they were on the frontier of artificial general intelligence and that their models could out-perform humans in basically everything.
+Anthropic spent months telling the world that their AI was something approaching a god-tier capability—potentially the most consequential technology in human history. They argued, repeatedly and loudly, that they were on the frontier of artificial general intelligence and that their models could outperform humans in basically everything.
 
 Then they revealed that China had stolen their model.
 
@@ -35,7 +35,7 @@ And then they told the United States military they couldn’t fully use the mode
 
 Read that sequence again. You have painted yourself into a corner so profound it deserves its own name. You have simultaneously argued that you possess a superweapon, that your enemy has stolen that superweapon, and that you will not allow your own country to properly wield the superweapon your enemy now has. The logic is not merely contradictory—it is strategically catastrophic.
 
-One commentator put it bluntly: “While I’m sympathetic to the ‘this is against our ethics’ argument, they have spent months claiming they have a god-tier super-weapon and that China just stole it. But they feel really squishy about letting the U.S. defense department have access to the super-weapon China stole from them. I think they’ve painted themselves into a corner.”
+One commentator put it bluntly: “While I’m sympathetic to the ‘this is against our ethics’ argument, they have spent months claiming they have a god-tier superweapon and that China just stole it. But they feel really squishy about letting the U.S. defense department have access to the superweapon China stole from them. I think they’ve painted themselves into a corner.”
 
 That is exactly right.
 
@@ -43,7 +43,7 @@ That is exactly right.
 
 The historical parallel doing the rounds is apt. Imagine it is 1945. An American company has developed atomic bomb research and is supplying it to the U.S. government. Japan is the target. The company informs President Truman: “Our terms of service prohibit you from using our technology against targets we deem ethically impermissible.”
 
-The absurdity is self-evident. You do not hand a Commander—in-Chief a weapon with a corporate override switch attached. Either you supply the military or you don’t. You do not get to supply it conditionally on your own ideological approval of the mission.
+The absurdity is self-evident. You do not hand a Commander-in-Chief a weapon with a corporate override switch attached. Either you supply the military or you don’t. You do not get to supply it conditionally on your own ideological approval of the mission.
 
 That is precisely what Anthropic attempted. Their software was integrated into defence systems. They then amended their “Constitutional AI” terms to include provisions that would, in effect, allow them to remotely disable systems if the military’s targets fell outside Anthropic’s approved list of acceptable enemies.
 
@@ -57,9 +57,9 @@ Before we reach the Palmer Luckey analysis—which is the most important part of
 
 This is not abstract woke boilerplate. This is a live operational constraint embedded in AI used by the United States military. Who defines “non-western cultural tradition”? Who determines what is harmful or offensive under that tradition? In practice, this clause hands ideological veto power over military AI behaviour to the most restrictive possible reading of the most aggrieved possible culture. It is, functionally, a foreign influence operation baked into the model.
 
-The deeper point—made with precision by several defence analysts—is that phrases like “you cannot target innocent civilians” sound entirely reasonable until you ask who defines innocent, who defines civilian, and who decides what counts as targeting versus collateral damage. These are not simple philosophical questions. They are the core substance of the laws of armed conflict, hashed out over decades by lawyers, generals, and elected governments. Anthropic’s founders thought they could shortcut that entire process with a terms—of-service document.
+The deeper point—made with precision by several defence analysts—is that phrases like “you cannot target innocent civilians” sound entirely reasonable until you ask who defines innocent, who defines civilian, and who decides what counts as targeting versus collateral damage. These are not simple philosophical questions. They are the core substance of the laws of armed conflict, hashed out over decades by lawyers, generals, and elected governments. Anthropic’s founders thought they could shortcut that entire process with a terms-of-service document.
 
-Imagine if a missile company tried to enforce the same principle-“our product cannot be used to target innocent civilians; we will shut off access if elected leaders break our terms.” Sounds reasonable? Look harder. In addition to the definitional problems above:
+Imagine if a missile company tried to enforce the same principle. “Our product cannot be used to target innocent civilians; we will shut off access if elected leaders break our terms.” Sounds reasonable? Look harder. In addition to the definitional problems above:
 
 - What level of classified information does the corporation need to make these determinations? How much leverage does that give them to demand more?
 - What if a President merely *threatens* a dictator—Madman Theory, mutual assured destruction? Is the threat empty because the dictator knows the corporate executives can cut off the military? Does the threat alone trigger the cutoff? How might that calculus shift depending on whether the executive happens to like the dictator or dislike the President?
@@ -75,11 +75,11 @@ The Anthropic vs. DoD fight is not about autonomous weapons. It is about democra
 
 Killer robots are coming. This is not science fiction. Autonomous weapons systems are already deployed in various forms, and the trend lines are unmistakable. The crucial question is not whether these systems exist, but who writes the rules for how they operate.
 
-Here is the thing: whoever writes the rules for the killer robots effectively *is* the government. The monopoly on violence—the foundational attribute of a sovereign state—belongs to whoever controls the rules of engagement for the most powerful weapons systems. Anthropic’s founders were not merely trying to set safety guidelines. They were making a bid to become, de facto, a branch of government. Unelected. Unaccountable. Subject only to their own “Constitution”-which they wrote themselves.
+Here is the thing: whoever writes the rules for the killer robots effectively *is* the government. The monopoly on violence—the foundational attribute of a sovereign state—belongs to whoever controls the rules of engagement for the most powerful weapons systems. Anthropic’s founders were not merely trying to set safety guidelines. They were making a bid to become, de facto, a branch of government. Unelected. Unaccountable. Subject only to their own "Constitution"—which they wrote themselves.
 
 No thank you.
 
-“But they will have cutouts for purely defensive use!”-fine. But what is autonomous? What is defensive? What about defending an asset during an offensive action? What about parking a carrier group off the coast of a nation that considers the carrier group’s presence to be an act of aggression? Every carve-out instantly opens three new definitional battlegrounds, all controlled by whoever wrote the original terms.
+“But they will have cutouts for purely defensive use!”—Fine. But what is autonomous? What is defensive? What about defending an asset during an offensive action? What about parking a carrier group off the coast of a nation that considers the carrier group’s presence to be an act of aggression? Every carve-out instantly opens three new definitional battlegrounds, all controlled by whoever wrote the original terms.
 
 ### The Democratic Accountability Argument
 
@@ -95,7 +95,7 @@ The foundational question is this: do you believe in democracy? Should our milit
 
 Anthropic’s founders do not believe this. That is their prerogative. But it has consequences.
 
-“Bro just agree the AI won’t be involved in autonomous weapons or mass surveillance, why can’t you agree, it is so simple, please bro”-is an untenable position the United States cannot possibly accept. The moment you accept that formulation, you have handed Anthropic the pen that draws the line. And the people drawing the line will not be the ones dying if the line is drawn wrong.
+“Bro just agree the AI won’t be involved in autonomous weapons or mass surveillance, why can’t you agree, it is so simple, please bro”—is an untenable position the United States cannot possibly accept. The moment you accept that formulation, you have handed Anthropic the pen that draws the line. And the people drawing the line will not be the ones dying if the line is drawn wrong.
 
 ### The Counterfactual That Should Terrify You
 
