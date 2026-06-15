@@ -2,7 +2,7 @@
 title: "🇯🇵 Japan’s Secret"
 date: "2026-06-14"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/japan.jpg"
 tags: ["theology", "reflection"]
 pairedSlug: "일본"
 ---
