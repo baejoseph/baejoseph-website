@@ -21,6 +21,8 @@ When the final whistle blew and the crowds began to leave, something remarkable 
 
 And it didn’t stop there. Reports came out that the Japanese players left their locker room in “a cleaner state” than they’d found it.
 
+![Japanese national team locker room — spotless](/assets/japan-locker.jpg)
+
 The world watched and was _stunned_. Social media exploded. People couldn’t believe what they were seeing.
 
 **Not all cultures are the same. Some are clearly superior.** ❤️🇯🇵
