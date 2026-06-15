@@ -49,8 +49,6 @@ The Jewish version: _“What is hateful to you, do not do to your neighbour.”_
 
 The Hindu version: _“This is the sum of duty: do not do to others what would cause pain if done to you.”_
 
-The Islamic version: _“None of you truly believes until he wishes for his brother what he wishes for himself.”_ (though this edges toward the Golden)
-
 Every major moral tradition has stumbled upon this negative formulation. Don’t harm. Don’t inconvenience. Don’t impose. It’s the floor of human ethics — the baseline beneath which a society collapses.
 
 **The Japanese are just the best at actually teaching it.** With rigour. From childhood. Until it becomes instinct.
@@ -77,19 +75,19 @@ The Silver Rule says: don’t be a problem. The Golden Rule says: be a gift.
 
 The difference is _everything._ It is not a marginal upgrade from negative to positive. It is an entirely new category of ethical teaching. One says: keep your hands to yourself. The other says: use your hands to build.
 
-**No one in the history of the world taught this before Jesus.** Not Confucius. Not Hillel. Not the Buddha. Not Muhammad. Not Socrates. The Silver Rule is ancient and universal. The Golden Rule is _new._ It arrives in one place, at one time, from one person.
+**No one in the history of the world taught this before Jesus.** Not Confucius. Not Hillel. Not the Buddha. Not Socrates. The Silver Rule is ancient and universal. The Golden Rule is _new._ It arrives in one place, at one time, from one person.
 
 And I would say: _I would not expect anything less._ If the Creator of the universe steps into His creation, it is entirely congruent that He would give humanity an entirely new concept of ethics. Why would He just repeat what every civilisation already knew? He came to _surpass._ To elevate. To show us what love actually looks like when it’s not just restraint but _generosity._
 
-### What Japan Gets Right — and Where It Points
+### Not Just Taught. Lived.
 
-So when you see Japanese fans cleaning a stadium in Texas, you’re looking at the Silver Rule executed at a level almost no other culture can match. And it’s beautiful. It’s admirable. It’s a culture that decided: we will not be the problem.
+**Jesus didn’t just teach the Golden Rule. He lived it.**
 
-**But the Gospel says: you can be the solution.**
+Not just _don’t harm._ He _absorbed the harm._ Not just _serve._ He _served._ Not just _be a gift._ He _was the gift._
 
-Not just _don’t trash._ _Clean up._ Not just _don’t impose._ _Serve._ Not just _don’t be the problem._ _Be the answer._
+He took a broken, filthy, sin-strewn world and offered to leave it spotless. He became the ultimate Solution — not the Silver Rule with a slightly shinier finish, but the full, unadulterated, [propitiation](/propitiation/) of the Creator dying for His creation.
 
-The Japanese have the discipline. They just need the Gospel — which is, in one sentence, the Golden Rule lived out by a man who left everything _far_ cleaner than He found it. He took a broken, filthy, trash-strewn world and offered to leave it spotless. On [the cross](/propitiation/).
+And He didn’t just die. He rose. The Resurrection — the historical evidence for which is, frankly, [overwhelming](/bayes/) — was the receipt. The universe’s way of saying: _paid in full._
 
 **That’s what the Creator does. That’s what love looks like.**
 
