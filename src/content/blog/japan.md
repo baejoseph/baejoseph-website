@@ -1,6 +1,6 @@
 ---
 title: "🇯🇵 Japan’s Secret"
-date: "2026-06-14"
+date: "2026-06-15"
 lang: "en"
 featuredImage: "/assets/japan.jpg"
 tags: ["theology", "reflection"]
