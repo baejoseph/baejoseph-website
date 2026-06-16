@@ -10,7 +10,7 @@ tags: ["korea", "family", "testimony"]
 
 When I heard that my eldest aunt had passed, I bought a ticket the same day. The next morning—Friday—I was on a flight to Korea.
 
-She had loved me in that particular way that aunts love the children who give them the most trouble. I was a handful, and she adored me for it. Going back for her funeral was not a question. But I also went for my parents—to be with them in their grief, to sit beside them in the loss of a sister.
+She had loved me in that particular way that aunts love the children who give them the most trouble. I was a handful, and she adored me for it. Going back for her funeral was not a question. But I also went for my parents—to be with them in their grief, to sit beside them in the loss of a sister. Death has a way of stripping away the noise and leaving only what endures—I’ve written about [what remains](/core) when someone we love passes.
 
 We flew from Incheon Airport down to Buan in North Jeolla Province the morning I arrived, joining the family for the full funeral proceedings. On the drive back up to Seoul, I felt it clearly: God had arranged this trip.
 
@@ -24,7 +24,7 @@ Heyri Art Village, in Paju—the publishing city—was a place I’d only ever h
 
 ![](/assets/IMG_9245-1024x768.jpeg)
 
-In the back of Heyri, up on the second floor of a building called “The Church Where the Holy Spirit Lives,” we gathered for something called “Israel’s Restoration and the House of Prayer.” The gathering had been organised by Director Lee Tae-hyeong of Gukmin Books—the man who helped publish my father’s two books, *The Bible: My Love, My Life* and *Son, Live Like This*—and it bore the marks of something he’d put his heart into.
+In the back of Heyri, up on the second floor of a building called “The Church Where the Holy Spirit Lives,” we gathered for something called “Israel’s Restoration and the House of Prayer.” The gathering had been organised by Director Lee Tae-hyeong of Gukmin Books—the man who helped publish my father’s two books, *The Bible: My Love, My Life* and *Son, Live Like This*—and it bore the marks of something he’d put his heart into. I’ve written about the power of crying out together in [corporate prayer](/cry-out) before, and this was it—the raw, unpolished sound of believers who know how to pray.
 
 The guest speakers were Rick and Patricia Ridings, missionaries who for 25 years have led a 24-hour house of prayer in Jerusalem. The attendees were invitation-only: Elder Song Man-seop—founder of KIBI (Korea Israel Bible Institute), established 38 years ago—along with a curated gathering of leaders, missionaries, and their children, around 100 people in total. I’d arrived from England yesterday and was leaving for England tomorrow. Being in that room felt like an undeserved gift.
 
@@ -48,13 +48,13 @@ I sat there and thought: *This is what a generation of prayer looks like.* Not n
 
 The closing section of his message stopped me cold. On May 14, 1948—a Friday afternoon—Israel declared its independence. As the Sabbath fell that evening and Jews gathered in synagogues across Jerusalem, the Torah portion read aloud was Amos 9:11–15. The same passage. On the very day the nation was reborn.
 
-That passage speaks of three signs preceding Christ’s return: the ingathering of the diaspora, the restoration of David’s Tabernacle—24/7 worship and prayer in Jerusalem—and an acceleration of the harvest of souls. Missionary Ridings looked at us and said: we are living in the specific fulfilment of those prophecies right now.
+That passage speaks of three signs preceding Christ’s return: the ingathering of the diaspora, the restoration of David’s Tabernacle—I’ve [explored the throne of David](/throne-of-david) in depth—24/7 worship and prayer in Jerusalem—and an acceleration of the harvest of souls. Missionary Ridings looked at us and said: we are living in the specific fulfilment of those prophecies right now.
 
 My chest burned as I heard it.
 
 **The day is not distant.**
 
-Yes. Jesus is coming back. The day is not distant. And this is not the season for distraction, for compromise, or for divided hearts. It is the season to strip everything off—every weight, every sin that so easily entangles—and to serve the Lord with undivided devotion.
+Yes. Jesus is coming back—I’ve [written about the signs that tell us the day is near](/end3). The day is not distant. And this is not the season for distraction, for compromise, or for divided hearts. It is the season to strip everything off—every weight, every sin that so easily entangles—and to serve the Lord with undivided devotion.
 
 I flew back to England the next morning. Two nights. But I am still processing what happened in that room in Heyri.
 
