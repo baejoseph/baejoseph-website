@@ -65,18 +65,26 @@ He said: “I don’t see why we can’t do the same at the very least.”
 
 He’s right. The punishment of Western institutions — fines, community service, decades in comfortable prison cells — is an insult to what these girls went through.
 
-## The Question Nobody Wants to Ask
+## The Tension of the Gospel
 
-The Rape Gang Report raises a question that should keep every Westerner awake at night:
+Eric Salmons, a US Reformed Baptist missionary, put it this way:
 
-If this can happen when we are in the majority — when our laws, our institutions, our police are nominally ours — what will happen in a few years when we are in the minority and subject to laws passed by a new majority demographic?
+_“In obedience to Christ, I spent nearly 10 years of my life learning languages and dedicated to sharing the gospel with Muslims. I also love westerners and my fellow countrymen. Reconciling these two things as a Christian means I want zero immigration from Muslim countries, I want millions of deportations, and I want our politicians to bring justice to things like ”gang rapes” in the UK or fraud in MN. We must elect the politicians who have a spine to do what is necessary. God is glorified by the Christian leaving his home to plant churches among the enemy. God is also glorified by righteous politicians who protect its people with law and judgement from the enemy, swiftly.“_
 
-This is why there is no peaceful coexistence between Islam and the West. Not ever has there been. Not ever will there be. Two civilizations. Two legal systems. Two definitions of justice. They cannot share the same house.
+That is the tension. And the Gospel doesn’t flatten it. It holds it.
 
-The window to act is narrowing. Not closing. Not yet. But narrowing.
+Look at Jesus in Gethsemane. John 18 — the armed mob comes to arrest Him. Who stands between Jesus and His own people? Not the crowd. Not the Sanhedrin. **Jesus Himself.**
+
+_”So Jesus, knowing all the things that would come upon Him, went forth and said to them, ‘Whom do you seek?’ They answered Him, ‘Jesus of Nazareth.’ Jesus said to them, ‘I am He.’ And Judas, who betrayed Him, also stood with them. As soon as He said to them, ‘I am He,’ they drew back and fell to the ground.“_ (John 18:4–6, NKJV)
+
+He did not abandon His disciples. Not one. He stepped in front of them. He put His own body between the enemy and His own.
+
+This is the shape of Christian manhood. Love your enemies. Preach the Gospel to every tongue. And when the enemy comes at your people — your children, your daughters, your neighbours — stand your ground. Protect. Defend. Judge.
+
+We must do both. Not one without the other. A Christianity that only loves enemies but won’t protect the beloved is not the Christianity of the Gospels.
 
 The church must wake up. Christians must engage the civic realm. This is not politics — this is justice. And God is a God of justice.
 
-_“For the LORD is a God of justice; blessed are all those who wait for Him.”_ (Isaiah 30:18, NKJV)
+_”For the LORD is a God of justice; blessed are all those who wait for Him.“_ (Isaiah 30:18, NKJV)
 
 Wait no longer.
