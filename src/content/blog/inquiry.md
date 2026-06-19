@@ -55,6 +55,47 @@ Some of these English girls were sent abroad and were never recovered. English g
 
 There needs to be an international investigation.
 
+## Why Won't Anyone Act?
+
+Nobunaga — my favourite Japanese poster — put it like this:
+
+> "When I was a kid, I saw news that seemed impossible.
+>
+> The Soviet Union collapsed.
+> The Berlin Wall came down.
+> The Arab Spring happened.
+>
+> I never thought I'd see things like that. They were huge shocks.
+>
+> But what's going on in Britain now is millions of times worse. No comparison at all.
+>
+> The British people used to rule the world.
+> Now they're just sitting there doing nothing while their own daughters — precious girls, like jewels — are being raped and tortured by immigrants. Muslim, Pakistani, who the hell knows. Total outsiders.
+>
+> Teenage girls. Their own girls. Going through hell.
+> And Britain stays silent.
+>
+> What is the Army doing?
+> What is the Navy doing?
+> What is the Air Force doing?
+>
+> In any country, when politics goes this wrong, the military has always stepped in to fix it.
+>
+> But not in Britain.
+> Why?
+>
+> This isn't China. This isn't North Korea.
+> So why won't the British military say no?
+>
+> Most soldiers are white. Most police are white too.
+>
+> How can they just stand by while their own people's daughters are being destroyed by these men?
+> How can they protect the outsiders instead of their own?
+>
+> It makes no sense. None at all.
+>
+> Why is this happening?"
+
 ## What Would They Do?
 
 Lord Miles, who works with Afghan men, translated parts of the report into Pashto and asked some Taliban what they would do to those rapists.
