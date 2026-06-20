@@ -9,7 +9,7 @@ youtubeId: "WW0IJu8uorU"
 tags: ["theology", "testimony", "apologetics", "video"]
 ---
 
-(I gave a morning prayer sermon during [Jesus Academia 55th Class](/jesus-academia). It was originally given [in Korean](/%ec%95%84%ec%b9%a8%ec%84%a4%ea%b5%90))
+(I gave a morning prayer sermon during [Jesus Academia 55th Class](/jesus-academia). It was originally given [in Korean](/아침설교))
 
 At 7 PM yesterday, I was asked to give a sermon in less than 12 hours! As someone who hasn’t studied theology and is a layperson, did I sleep soundly after such a request? Or did I toss and turn in worry? Of course, I slept well! Like Pastor John Ko, I told myself: “Who am I? I am a cosmic being! Ego Eimi! I am Joseph Bae!” and I slept soundly. 😄
 
@@ -59,7 +59,7 @@ In answer to that prayer, God led me to meet [Derek Prince](/prince), and throug
 
 When we talk about “praying in the Word,” the first thing that comes to mind for me is memorising of Scripture. When I first moved to the UK in 5th grade, my younger brother and I couldn’t speak any English. (I remember memorising the alphabet on the plane.) At that time, I was so frustrated because I couldn’t communicate that I even cried, wishing I could return to Korea alone. My father challenged us to memorise Matthew 5-7 in English, and if we did, he would buy us a Lego set we wanted, the Lego Technic 8880 Supercar (worth about 500 dollars in 2024 money).
 
-![](/assets/SCR-20250304-lk5-1024x683.jpeg)
+![Lego Technic 8880 Supercar — the reward for memorising Matthew 5-7](/assets/SCR-20250304-lk5-1024x683.jpeg)
 
 Thus motivated, in five months, without knowing any English grammar, my brother and I brute-force memorised those chapters in NIV. True to his word, my father bought us the toy, and then took us to an English church and had us recite Matthew 5 in front of the congregation. That experience gave us confidence in our English skills.
 
@@ -79,7 +79,7 @@ For example, I love **Nintendo** games, not just for the fun, but for the though
 
 This **desire to connect** is universal. But what about **connecting with the Creator of the universe**? In the past, many early scientists in Europe, while exploring the mysteries of the universe, were deeply moved by the connection with their Creator. They expressed their awe and wonder in **doxologies**. As believers, we too are awestruck by God’s providence and sovereignty as revealed through life and Scripture. Through prayer, we can open our hearts to our Heavenly Father, and experience **the incredible blessing of partnering with Him in prayer**. I’ve come to realise that deepening our relationship with God is one of the greatest rewards of prayer.
 
-### Fifth Keyword: Fine-Tuning of the Universe
+### **Fifth Keyword: Fine-Tuning of the Universe**
 
 You’re probably familiar with the concept of the universe’s fine-tuning. The fact that life exists and thrives on Earth is already an incredible wonder. As our understanding of the physical universe increases with the development of science and technology, what is clear is the fact of **how finely tuned the universe and Earth are** **for life**.
 
@@ -91,7 +91,7 @@ The Earth’s iron core, with a radius of about 3,400 km, generates a powerful m
 
 Hebrews 3:4 says, “**For every house is built by someone, but He who built all things is God**.” When we compare the universe’s complex design to man-made structures, it’s clear that **the universe is far more intricately designed**, pointing to God’s purposeful creation.
 
-This insight is curiously embedded in the Chinese characters. The Chinese characters for “universe” (宇宙) is made up of two letters, both meaning “house” or “home”; this suggest the universe is not just a vast physical space but a “home” with deep meaning and purpose, created by God.
+This insight is curiously embedded in the Chinese characters. The Chinese characters for “universe” (宇宙) is made up of two letters, both meaning “house” or “home”; this suggests the universe is not just a vast physical space but a “home” with deep meaning and purpose, created by God.
 
 One fascinating point in modern cosmology is the concept of **the cosmological constant** (or “dark energy”), often denoted by Lambda (Λ). Theoretical calculations of a vacuum energy using quantum mechanics predict it should be vastly larger than what we observe, by a factor of 10^120 ([“the worst theoretical prediction in the history of physics”](https://ned.ipac.caltech.edu/level5/March01/Carroll/Carroll1.html)). This means the universe’s fine-tuning is incredibly precise, and even the slightest deviation would have made life, as we know it, impossible.
 
