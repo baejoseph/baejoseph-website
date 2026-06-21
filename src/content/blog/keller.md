@@ -11,7 +11,7 @@ tags: ["theology", "leftism", "video"]
 
 Timothy Keller died in May 2023. I extend my sincere condolences to his family, friends, and Redeemer Presbyterian Church in New York.
 
-Keller was genuinely remarkable. His pioneering ministry in Manhattan, his books, and his Redeemer City to City network shaped a generation of evangelical Christianity. In my twenties, *The Meaning of Marriage* nourished me deeply — I gave copies to friends. His influence among young pastors worldwide is enormous, and much of it well-deserved.
+Keller was genuinely remarkable. His pioneering ministry in Manhattan, his books, and his Redeemer City to City network shaped a generation of evangelical Christianity. In my twenties, *The Meaning of Marriage* nourished me deeply — I gave copies to friends. His influence among young pastors worldwide is enormous, and much of it well-deserved. I have traced my own theological progression [elsewhere](/theology), and I know how formative early mentors can be — both for better and for worse.
 
 But Keller was a public theologian whose ideas have shaped millions of believers. That demands honest scrutiny — especially from those of us who hold Scripture as God’s inerrant Word and who prize the approval of Christ more than the world’s applause.
 
@@ -59,7 +59,7 @@ When Keller publicly defended the 2020 BLM rioters as “cries of the voiceless,
 
 Keller acknowledged that homosexuality “deviates from God’s original design.” But he immediately directed the blame toward the church: the Christians who condemn homosexuality are the greater scandal, he argued, and his counsel was to love gay and lesbian neighbours *“as you love Hindus”* — with warmth, but conspicuously without the word.
 
-Then in 2022, asked about the greatest danger facing evangelicalism, Keller did not point to liberal theology eroding Scripture’s authority. He did not point to the aggressive weaponisation of LGBTQ+ ideology against the church. He pointed instead to **Christian nationalism and “fanaticism”** — by which he meant, essentially, Christians who wanted Donald Trump re-elected.
+Then in 2022, asked about the greatest danger facing evangelicalism, Keller did not point to liberal theology eroding Scripture’s authority. He did not point to the aggressive weaponisation of LGBTQ+ ideology against the church. He pointed instead to **Christian nationalism and “fanaticism”** — by which he meant, essentially, Christians who wanted Donald Trump re-elected. The question of where our ultimate allegiance lies is not a political one — it is a theological one. [I have written elsewhere](/allegiance) on this tension.
 
 Think carefully about what is missing from that answer.
 
@@ -83,9 +83,9 @@ The cross will always be foolish to the world. That is its power, not its defect
 
 I wrote this reluctantly — I am aware of the pain it may cause to those who love Keller, and I do not question his personal faith or the genuine good his ministry produced.
 
-But the Body of Christ needs honest reckoning here. Fusing [social justice](/starve) and [creation care](/climate) into the gospel is not a minor supplement — it is a different gospel. Keller and John Stott walked this road. Spurgeon, Tozer, and Martyn Lloyd-Jones did not. They defied the cultural currents of their own eras, paid the social cost, and proclaimed the gospel alone — offensive to the world, foolish to the perishing, and the power of God unto salvation.
+But the Body of Christ needs honest reckoning here. Fusing [social justice](/starve) and [creation care](/climate) into the gospel is not a minor supplement — it is a different gospel. Keller and John Stott walked this road. Spurgeon, Tozer, and Martyn Lloyd-Jones did not. They defied the cultural currents of their own eras, paid the social cost, and proclaimed the gospel alone — offensive to the world, foolish to the perishing, and the power of God unto salvation. Solzhenitsyn did the same against Soviet ideology; Keller chose the other road. [I have written about it](/solzhenitsyn) before.
 
-Pastors: your congregations are being quietly formed by [ideas](/sober), language, and [frameworks](/control) they cannot yet name. Teach them [to think biblically](/three). Catechise them. Equip them to discern the worldview embedded in what they read and watch, before the culture does the catechising for them.
+Pastors: your congregations are being quietly formed by [ideas](/sober), language, and [frameworks](/control) they cannot yet name. Teach them [to think biblically](/three). Catechise them. Equip them to discern the worldview embedded in what they read and watch, before the culture does the catechising for them. And above all, send them into the world with the gospel — the only message that saves. [I have written about evangelism](/evangelism) and its centrality to our calling.
 
 When the young deacon Athanasius stood against Arius — a man forty years his senior, with the entire Greek-speaking Christian world behind him — he said:
 
