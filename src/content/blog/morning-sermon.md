@@ -11,7 +11,7 @@ tags: ["theology", "testimony", "apologetics", "video"]
 
 (I gave a morning prayer sermon during [Jesus Academia 55th Class](/jesus-academia). It was originally given [in Korean](/아침설교))
 
-At 7 PM yesterday, I was asked to give a sermon in less than 12 hours! As someone who hasn’t studied theology and is a layperson, did I sleep soundly after such a request? Or did I toss and turn in worry? Of course, I slept well! Like Pastor John Ko, I told myself: “Who am I? I am a cosmic being! Ego Eimi! I am Joseph Bae!” and I slept soundly. 😄
+At 7 PM yesterday, I was asked to give a sermon in less than 12 hours! As someone who hasn't studied theology and is a layperson — [my theological progression](/theology) has been more organic than academic — did I sleep soundly after such a request? Or did I toss and turn in worry? Of course, I slept well! Like Pastor John Ko, I told myself: “Who am I? I am a cosmic being! Ego Eimi! I am Joseph Bae!” and I slept soundly. 😄
 
 So, I’ve decided to begin this sermon in this way: Let’s imitate Pastor John Ko! Pastor said that sermons should not be based on sentences, but rather on keywords. Therefore, I will continue this sermon using several keywords.
 
@@ -37,7 +37,7 @@ In my experience, I frequently encounter the misuse of Jesus’ name as a curse 
 
 Once, my line manager’s line manager (my big boss) in the department used the curse loudly three times in front of everyone. He was clearly upset and tense. I had addressed this issue with colleagues many times before, but when it came to my superior’s superior, I hesitated. But I also knew that if I let this moment pass (with an excuse to think or pray about it more), then I would miss this opportunity altogether. So, without thinking, I stood up, approached him quietly, and explained that as a Christian, using my Lord’s name like that was offensive. Before I could finish my sentence, my boss apologised profusely and promised not to do it again. He seemed a bit surprised by my courage, and treated me with special favour ever since. A few years later, a new department head came in, and one day, he also used the same curse in front of me. This time, I politely asked him to speak with me in a meeting room. I explained the situation, and once again, he apologised sincerely and even sent an email to the whole department, warning everyone not to repeat such behaviour. **Hallelujah!**
 
-In the same way, when we return to our daily lives, we must gather the courage to publicly announce our faith in Jesus and also to make sure that the name of Jesus is honoured and revered in everything we do.
+In the same way, when we return to our daily lives, we must gather the courage to publicly announce our faith in Jesus and also to make sure that the name of Jesus is honoured and revered in everything we do. I've written before about [standing up for the name of Jesus](/name-of-jesus) — it's something that has become a non-negotiable part of my daily walk.
 
 Now, let me share a bit about my life.
 
@@ -67,7 +67,7 @@ During the pandemic, I memorised Psalm 119 (all 176 verses) with my oldest son (
 
 I can say with certainty that there is **no other spiritual activity with greater returns on the time invested than Scripture memorisation**. An hour spent memorising Scripture yields immeasurable benefits and return on investment (ROI) for your lifetime. When I was memorising Psalm 119, I had an amazing experience. Particularly when memorising the “Mem (מ)” section (verses 97-104), I had a remarkable breakthrough at work. I had been struggling with a problem, but God gave me **a double portion of wisdom**, and the problem was resolved in a single moment. It was an insight I would never have thought of myself, and I still remember that moment vividly.
 
-When we think of memorising Scripture, **fasting** naturally comes to mind. Fasting and memorising Scripture form a perfect combination! During a fast, we have more time, and using that time to memorise Bible verses brings great spiritual blessings. My wife and I have been [starting each year with a 21-day fast](/fasting) for the past two years. I highly recommend it—it’s incredibly powerful. **Fasting is the means God has given us by which we can humble ourselves before Him**.
+When we think of memorising Scripture, **fasting** naturally comes to mind. Fasting and memorising Scripture form a perfect combination! During a fast, we have more time, and using that time to memorise Bible verses brings great spiritual blessings. My wife and I have been [starting each year with a 21-day fast](/fasting) for the past two years. [I shared what our latest fast was like](/2026-fast). I highly recommend it—it's incredibly powerful. **Fasting is the means God has given us by which we can humble ourselves before Him**.
 
 ### **Fourth Keyword: Spiritual Connection**
 
@@ -77,7 +77,7 @@ I’ve long believed that **humans are naturally drawn to connection**. When we 
 
 For example, I love **Nintendo** games, not just for the fun, but for the thoughtful care and creativity of the developers. There’s a unique sense of connection with Nintendo’s EPD (Entertainment Planning & Development) when playing. **Apple** products also evoke this feeling—using an iPhone or MacBook isn’t just about the hardware, but the seamless experience designed with care and consideration. Every time I use them, I feel a connection with Apple’s engineers.
 
-This **desire to connect** is universal. But what about **connecting with the Creator of the universe**? In the past, many early scientists in Europe, while exploring the mysteries of the universe, were deeply moved by the connection with their Creator. They expressed their awe and wonder in **doxologies**. As believers, we too are awestruck by God’s providence and sovereignty as revealed through life and Scripture. Through prayer, we can open our hearts to our Heavenly Father, and experience **the incredible blessing of partnering with Him in prayer**. I’ve come to realise that deepening our relationship with God is one of the greatest rewards of prayer.
+This **desire to connect** is universal. But what about **connecting with the Creator of the universe**? In the past, many early scientists in Europe, while exploring the mysteries of the universe, were deeply moved by the connection with their Creator. They expressed their awe and wonder in **doxologies**. As believers, we too are awestruck by God’s providence and sovereignty as revealed through life and Scripture. Through prayer, we can open our hearts to our Heavenly Father, and experience **the incredible blessing of partnering with Him in prayer**. I've come to realise that deepening our relationship with God is one of the greatest rewards of prayer — it's the foundation of [the health of your spirit](/spiritual-health), which I believe is the most important thing we can nurture.
 
 ### **Fifth Keyword: Fine-Tuning of the Universe**
 
