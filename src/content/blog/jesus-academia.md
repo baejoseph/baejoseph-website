@@ -30,11 +30,11 @@ We were also blessed with a surprise snowfall during the week, which blanketed e
 
 Jesus Academia is the brainchild of Pastor John Suk-hee Ko, now 81 years strong. After leading the U.S. Korean Christian Student Movement and the World Korean Mission Movement for over 40 years, he announced his retirement in 2016 and launched this house of learning for Jesus in 2017, personally hosting and leading around ten sessions every year from his own house.
 
-Pastor John Ko and his mother became orphan/widow when John was just 8 years old, following the death of his father—an officer in the South Korean army—died during the Korean War, defending a hill in Junjoo. Remarkably, he still lives with his mother, now 101 years old.
+Pastor John Ko and his mother became orphan and widow when John was just 8 years old, when his father—an officer in the South Korean army—died during the Korean War, defending a hill in Junjoo. Remarkably, he still lives with his mother, now 101 years old.
 
 From an early age, Pastor John developed a passion for literature (even apprenticing under a famous Korean poet) and immersed himself in both Western and Eastern literature and philosophy during his teens. He became a Christian early in life, crediting his mother’s unending prayer for him, and he spent his life merging his insights into the Arts and Sciences with his love and passion for Jesus. Over the years, he says he’s devoted more time and effort to stripping away elements that “miss the mark” (hamartia) of Christ’s centrality than to acquiring new knowledge. By God’s grace, this process has allowed him to sharpen his focus on Jesus, bringing all his insights into a clearer alignment with the totality of Jesus that has become the curriculum of Jesus Academia.
 
-Pastor John embodies the essence of the Renaissance Man (or the Korean equivalent, the Sunbi): He is **a lifelong learner**—not only limited to literature and the arts (his session connecting _quantum mechanics_ and _modern cosmology_ to Jesus’ cosmic glory was especially remarkable)—but also a man of deep faithfulness and leisure. He enjoys serious hobbies such as landscape photography and painting, that enrich his well-rounded life.
+Pastor John embodies the essence of the Renaissance Man (or the Korean equivalent, the Sunbi): He is **a lifelong learner**—not only limited to literature and the arts (his session connecting _quantum mechanics_ and _modern cosmology_ to Jesus’ cosmic glory was especially remarkable)—but also a man of deep faithfulness and leisure. He enjoys serious hobbies such as landscape photography and painting that enrich his well-rounded life.
 
 ## The format of Jesus Academia
 
@@ -48,7 +48,7 @@ When speaking with participants who’ve returned for their third or fourth sess
 
 ![](/assets/IMG_6587-1024x768.jpg)
 
-The success of each session is made possible by the dedicated volunteer team, many of whom have known Pastor John for up to 40 years. We are especially grateful to **Anthony May** and his wife, **Yang**, who drove all the way from Houston, Texas, to care for the children and provide transportation. We also express our thanks to **Rev. T. Lee** of [Lynchberg Korean Church](https://www.lynchburgkoreanchurch.com) who made the whole programme run smoothly, as well as to the **various volunteers** who led the worship sessions. The **four students** from Handong Global University and Ghent University Global Capus did all the hard-lifting and video recording, as well as myriad other services. **Another gentleman** from the church Pastor John leads took annual leave to drive his van for a day, taking all the children to the Natural History Museum in Manhattan. On the last day, Pastor John’s son **Pastor Christopher Ko** gifted us all beautifully designed “Jesus Academia” T-shirts to take home as souvenirs. For these, we are truly grateful.
+The success of each session is made possible by the dedicated volunteer team, many of whom have known Pastor John for up to 40 years. We are especially grateful to **Anthony May** and his wife, **Yang**, who drove all the way from Houston, Texas, to care for the children and provide transportation. We also express our thanks to **Rev. T. Lee** of [Lynchberg Korean Church](https://www.lynchburgkoreanchurch.com) who made the whole programme run smoothly, as well as to the **various volunteers** who led the worship sessions. The **four students** from Handong Global University and Ghent University Global Campus did all the hard-lifting and video recording, as well as myriad other services. **Another gentleman** from the church Pastor John leads took annual leave to drive his van for a day, taking all the children to the Natural History Museum in Manhattan. On the last day, Pastor John’s son **Pastor Christopher Ko** gifted us all beautifully designed “Jesus Academia” T-shirts to take home as souvenirs. For these, we are truly grateful.
 
 Above all, we must acknowledge **Dr. Hyangsook Kim**, who has devoted her life—sacrificing her time and resources—to make these sessions happen. She even cooks for everyone out of her own pocket. She attends every single session (even though this is her 55th time attending!) and helps Pastor John in innumerable ways. These acts of sacrificial love truly embody the spirit of Jesus Academia, contributing to the other-worldly atmosphere that makes it so special: a taste of heaven on earth.
 
@@ -68,7 +68,7 @@ For God’s revolution to take place within us, we must first understand, throug
 
 * * *
 
-I cannot possibly capture all the vast material and the insights from the week, but below are some vignettes of key concepts and teachings that, I hope, convey the spirit what was shared.
+I cannot possibly capture all the vast material and the insights from the week, but below are some vignettes of key concepts and teachings that, I hope, convey the spirit of what was shared.
 
 ### Mimesis vs Diegesis
 
@@ -78,11 +78,11 @@ However, there is a _nemesis_ (Νέμεσις) within each of us, the old self t
 
 But here is the key: What often opposes true _mimesis_ is not the _nemesis_ inside of us or other external forces—it is the more subtle enemy of _diegesis_ (διήγησις). We can get caught in the trap of merely _talking_ about Jesus—discussing His death, resurrection, and teachings—and convince ourselves that understanding His story is enough. We become experts in the narrative of Christ, but fail to step into the narrative ourselves. We could spend our whole lives in the church, rehearsing doctrines, knowing all the right things, yet never _become_ what we know—never _live_ what we believe.
 
-The reality is this: while most of us are busy in the _diegesis_—talking about Jesus—God call us to _mimesis_—to _**live out**_ Jesus. To _become_ His hands and feet, His voice, His light in this world. Let us not waste our lives in comfortable theological debates while the world around us is desperate for true disciples—those who don’t just know the way, but walk in it. Let us fight the good fight of mimesis. Let the Holy Spirit transform us into the very likeness of Jesus Christ, from the inside out, so that when the world looks at us, they see not us—they see Christ in us, the hope of glory!
+The reality is this: while most of us are busy in the _diegesis_—talking about Jesus—God calls us to _mimesis_—to _**live out**_ Jesus. To _become_ His hands and feet, His voice, His light in this world. Let us not waste our lives in comfortable theological debates while the world around us is desperate for true disciples—those who don’t just know the way, but walk in it. Let us fight the good fight of mimesis. Let the Holy Spirit transform us into the very likeness of Jesus Christ, from the inside out, so that when the world looks at us, they see not us—they see Christ in us, the hope of glory!
 
 ### The True Heart
 
-In the pursuit of mimesis, one key concept to grasp is that of **True Heart** (참 마음, 진심). The Bible frequently speaks of the whole and undivided heart, emphasising that that this is what God requires from us. Interestingly, the Korean word for “True” is the same as “Full” (참-차다-채우다)ーjust as we are to fill our hearts to the brim with nothing but all things pertaining to Jesus.
+In the pursuit of mimesis, one key concept to grasp is that of **True Heart** (참 마음, 진심). The Bible frequently speaks of the whole and undivided heart, emphasising that this is what God requires from us. Interestingly, the Korean word for "True" is the same as "Full" (참-차다-채우다)—just as we are to fill our hearts to the brim with nothing but all things pertaining to Jesus.
 
 Hebrews 10:22 calls us to approach God with a “true heart”—a heart that is genuine, sincere, and unmoved by the deceptions of this world. The Hebrew word for “true” is _Amen_, signifying truth, trustworthiness, and reliability. This “true heart” is transformative. When it enters a son, he becomes a model of filial piety (효), honouring his parents with sacrificial love, respect, and integrity. When it enters a servant, he becomes loyal and faithful, devoted to his master’s will. When it enters a man, he becomes a faithful husband, loving his wife with sacrificial devotion.
 
@@ -96,9 +96,9 @@ For over a thousand years, Christendom wrestled with the question of whether fai
 
 ### Tents of Kedar vs Curtains of Solomon
 
-To understanding this shift from a self-centred worldview to one focused on God, let us consider the Biblical contrast between the _Tents of Kedar_ vs _Curtains of Solomon_.
+To understand this shift from a self-centred worldview to one focused on God, let us consider the Biblical contrast between the _Tents of Kedar_ vs _Curtains of Solomon_.
 
-In Song of Songs 1:5, the “Tents of Kedar” and the “Curtains of Solomon” represents two vastly different views of our worth and identity. The Tents of Kedar are rugged, temporary, and humble, representing the nomadic, weathered dwellings of the Bedouins. In contrast, the Curtains of Solomon, which cover the divine glory and majesty of the Temple, are adorned in gold and splendour. While they may appear similar from the outside, they reflect vastly different realities.
+In Song of Songs 1:5, the "Tents of Kedar" and the "Curtains of Solomon" represent two vastly different views of our worth and identity. The Tents of Kedar are rugged, temporary, and humble, representing the nomadic, weathered dwellings of the Bedouins. In contrast, the Curtains of Solomon, which cover the divine glory and majesty of the Temple, are adorned in gold and splendour. While they may appear similar from the outside, they reflect vastly different realities.
 
 This contrast echoes in Job 38-40, where God reveals His cosmic grandeur to Job in the midst of suffering, urging him to rise to the divine perspective—one of majesty, splendour, glory, and beauty (Job 40:10). Likewise, today God calls us His precious children, inviting us to transcend our earthly, Kedar-like view of ourselves and see ourselves as He does: as the Curtains of Solomon, full of divine majesty, splendour, glory, and beauty. In short, clothed with the righteousness of Jesus. This transformation is what Paul prays for in Ephesians 3:19, that we may be filled with the fullness of God, reflecting His majestic image.
 
