@@ -12,7 +12,7 @@ tags: ["travel", "testimony"]
 
 Years ago, a cousin who had backpacked through Europe gave me advice I’ve never forgotten: don’t just wander from place to place as a tourist—pick a *theme* and let it structure your travel. You’ll see more, remember more, and come away with something that actually means something.
 
-That stuck with me. So a few years back, our family adopted a mission: visit an Anglican cathedral in every British city we travel to, attend a service there, witness the ancient Christian heritage of this country, and pray for the Church of England. We’ve now done roughly 20–25 cathedrals this way. It has been one of the most meaningful ongoing practices of our family life.
+That stuck with me. So a few years back, our family adopted a mission: visit an Anglican cathedral in every British city we travel to, attend a service there, witness the ancient Christian heritage of this country, and pray for the Church of England—I’ve written before about [England’s reckoning](/reckoning) and why I think the Church here is at a crossroads. We’ve now done roughly 20–25 cathedrals this way. It has been one of the most meaningful ongoing practices of our family life.
 
 This summer we spent four days around Norwich. Every morning we attended the 7:30am morning prayer at Norwich Cathedral—a glorious way to begin each day. On the final Saturday, we made a slight detour on the way home to stop at Bury St Edmunds, a town with one of the most distinctive names in England, to visit St Edmundsbury Cathedral.
 
@@ -46,8 +46,10 @@ So I asked him directly: I’m passing through—I can’t follow this up myself
 
 ![](/assets/IMG_1867-768x1024.jpeg)
 
-Our God is slow to anger. He is merciful, patient, long-suffering. But a God who *never* grows angry? That is not the God of Scripture—that is an idol of our own comfort-seeking imagination. Many believers today have confused God’s patience with God’s indifference, and they have grown comfortable in that confusion.
+Our God is slow to anger. He is merciful, patient, long-suffering. But a God who *never* grows angry? That is not the God of Scripture—that is an idol of our own comfort-seeking imagination. Many believers today have confused God’s patience with God’s indifference, and they have grown comfortable in that confusion. I’ve explored [the doctrine of propitiation](/propitiation) before—how Christ’s sacrifice turned away the wrath we otherwise deserved, and why we can never treat God as if He doesn’t care about sin.
 
-We need to know the wrath of God as Scripture actually reveals it. Not to be paralyzed by fear, but because the fear of the Lord is the beginning of wisdom—and without it, we will not take holiness seriously. Our own or anyone else’s.
+We need to know the wrath of God as Scripture actually reveals it. Not to be paralyzed by fear, but because the fear of the Lᴏʀᴅ is the beginning of wisdom—I’ve written about [the fear of the Lᴏʀᴅ](/fear) as a posture of the heart, not terror—and without it, we will not take holiness seriously. Our own or anyone else’s.
 
 Lord, have mercy on the Church in England. Have mercy on me—for every part of my own life that grieves You. Hear us. Forgive us. Pour out once more upon this nation a spirit of grace and supplication, a hunger for You, a holy trembling before Your name.
+
+I’ve spoken before about [the power of crying out in corporate prayer](/cry-out). This isn’t just a personal conviction—it’s a cry that needs the whole Church to join in.
