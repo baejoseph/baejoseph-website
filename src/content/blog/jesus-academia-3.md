@@ -9,7 +9,7 @@ pairedSlug: "예수서원3"
 tags: ["testimony", "theology"]
 ---
 
-(Part one is [here](/jesus-academia/); Part two is [here](/jesus-academia-2/))
+(Part one is [here](/jesus-academia); Part two is [here](/jesus-academia-2))
 
 [Last time](/jesus-academia-2), we explored (in the form of “stories”) the sublime Jesus that Paul encountered, the life of Pastor Ko, who went **all in** for that same Jesus, and finally the life of Thomas Aquinas. As promised, the final part of the Jesus Academia review will begin with the story of Beethoven.
 
@@ -71,7 +71,7 @@ In a word, Beethoven lived a truly magnificent life. His life’s testimony is a
 
 Pastor Ko, who has mastered the classical Western canon of philosophy and literature, clearly distinguishes between the “human condition in the state of original sin” and the “human condition as a new creation, transformed through the work of the Holy Spirit.” He even brought in German terms like _Das Sein_, _Das Seiende_, and _Da Sein_ to elaborate on these ideas. However, as a “techie nerd” who majored in physics, I must admit that I found this part a bit challenging to grasp. Nonetheless, there was one key insight that I gained from this part of the lecture: it was Spinoza’s concept of _Conatus_.
 
-In fact, even before attending Jesus Academia, I had encountered the concept of “_Yetzir HaRa_” (יֵצֶר הַרַע) from ancient Jewish tradition while researching [the satanic roots of leftism and communism](/leftism-eng). This concept, which roughly translates to “evil inclination,” stands in contrast to _Yetzir HaTov_ (יֵצֶר הַטוֹב), meaning “good inclination”. However, the concept of Yetzir HaRa does not exclusively refer to “evil inclination,” as explained in ancient Rabbinic tradition. According to this tradition, when God first created humanity, He endowed them with only good intentions, devoid of _Yetzir HaRa_ (the evil inclination). The story goes that, created in this way, humans were fully content with everything and lacked any creative drive, ambition, or desire for achievement. This particular story left a deep impression on me. I remember thinking that Yetzir Hara not only resonated with my understanding of human nature, but also corresponded well to my observations of the world. It wasn’t just an “evil inclination” but something that is vital to abundant life and a necessary tension and drive that motivates human endeavour and creativity.
+In fact, even before attending Jesus Academia, I had encountered the concept of “_Yetzir HaRa_” (יֵצֶר הַרַע) from ancient Jewish tradition while researching [the satanic roots of leftism and communism](/leftism). This concept, which roughly translates to “evil inclination,” stands in contrast to _Yetzir HaTov_ (יֵצֶר הַטוֹב), meaning “good inclination”. However, the concept of Yetzir HaRa does not exclusively refer to “evil inclination,” as explained in ancient Rabbinic tradition. According to this tradition, when God first created humanity, He endowed them with only good intentions, devoid of _Yetzir HaRa_ (the evil inclination). The story goes that, created in this way, humans were fully content with everything and lacked any creative drive, ambition, or desire for achievement. This particular story left a deep impression on me. I remember thinking that Yetzir Hara not only resonated with my understanding of human nature, but also corresponded well to my observations of the world. It wasn’t just an “evil inclination” but something that is vital to abundant life and a necessary tension and drive that motivates human endeavour and creativity.
 
 During this session of Jesus Academia, I encountered a concept very similar to Yetzir HaRa, called _Conatus_. This concept is akin to Nietzsche’s “will to power” or even Carl Jung’s “libido” (other terms like “mojo” or “drive” also come to mind). Pastor Ko defines it as: _“Conatus is the drive to maintain one’s own identity.”_ Whether we are the old self, trapped in original sin, or the new creation, transformed through the Holy Spirit, the fact that _Conatus_ exists within all of us, driving progress, is a profoundly important insight. What is especially crucial for Christians is that, as we live out the principle of love, we must use the language of “praise” to encourage and nurture each other’s _Conatus_. Pastor Ko emphasised that this practice of regular praise is especially vital for those closest to us. Pastor Ko practices what he preaches: _heaping daily praises to his wife with a true heart_—and everyone attending Jesus Academia could clearly see that Mr. and Mrs. Ko are very much still in love with one another.
 
@@ -79,17 +79,17 @@ Coming from a family with deep roots in Gyeongsang Province—Eastern part of So
 
 Below, I would like to quote the “11 Miracle Phrases for Building a Happy Family” from the book _“Fool, the Real Game is in the Second Half”_ (Du Sang-dal, Kim Young-sook, 2023):
 
-1.  “Honey, it’s tough, isn’t it? You’ve worked hard.” \[Consideration\]
-2.  “I have no one but you.” \[Reliance\]
-3.  “I believe in you. Hang in there.” \[Respect\]
-4.  “I’m proud of you.” \[Encouragement\]
-5.  “Do what you think is best.” \[Trust\]
-6.  “It’s okay, it happens.” \[Acceptance\]
-7.  “You must have had a hard time with the kids all day.” \[Understanding\]
-8.  “Your cooking skills are the best, just like your mother’s.” \[Compliment\]
-9.  “I love you. I’m happy to be with you.” \[Love\]
-10.  “It’s my fault. I’m sorry. Please forgive me.” \[Forgiveness\]
-11.  “You’re beautiful. I love you. You’re amazing.” \[Affection\]
+1.  “Honey, ’s tough, ’t it? You’ve worked hard.” [Consideration]
+2.  “I have no one but you.” [Reliance]
+3.  “I believe in you. Hang in there.” [Respect]
+4.  “I’m proud of you.” [Encouragement]
+5.  “Do what you think is best.” [Trust]
+6.  “It’s okay, it happens.” [Acceptance]
+7.  “You must have had a hard time with the kids all day.” [Understanding]
+8.  “Your cooking skills are the best, just like your mother’s.” [Compliment]
+9.  “I love you. I’m happy to be with you.” [Love]
+10.  “It’s my fault. I’m sorry. Please forgive me.” [Forgiveness]
+11.  “You’re beautiful. I love you. You’re amazing.” [Affection]
 
 After attending Jesus Academia, our whole family spent two days sightseeing in NYC. During this time, I decided to put into practice what I had learned and experiment using “words of praise that ignites Conatus” with my two sons. For instance, even in situations where I would typically give a scolding, I tried saying things like, “When I was your age, I did this, but I see that you’re already so much smarter and more impressive. I’m actually proud of you!” And something truly amazing happened. Right before my eyes, it was as if flowers were blooming in real time, watching my sons’ faces light up. After that, they continued to be in high spirits, brainstorming ways they could make me even happier, and in that moment, my heart was filled with joy.
 
