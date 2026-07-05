@@ -17,12 +17,14 @@ export async function GET(context: APIContext) {
     title: 'Joseph Bae — Faith · Culture · Life',
     description: 'A personal blog exploring faith, culture, politics, and life journey. Maranatha! 🕦️',
     site: context.site ?? 'https://baejoseph.com',
-    items: sortedPosts.map(post => ({
-      title: post.data.title,
-      pubDate: new Date(post.data.date),
-      description: post.body?.slice(0, 200) || post.data.title,
-      link: `/${post.slug}/`
-    })),
+    items: sortedPosts
+      .filter(post => post.data.title && post.slug)
+      .map(post => ({
+        title: post.data.title,
+        pubDate: new Date(post.data.date),
+        description: post.data.title,
+        link: `/${post.slug}/`
+      })),
     customData: `<generator>Astro RSS</generator>`
   });
 }

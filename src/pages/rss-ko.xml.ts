@@ -17,12 +17,14 @@ export async function GET(context: APIContext) {
     title: 'Joseph Bae — 신앙 · 문화 · 삶 (한국어)',
     description: '신앙, 문화, 정치, 삶의 여정을 탐구하는 개인 블로그. 마라나타! 🕦️',
     site: context.site ?? 'https://baejoseph.com',
-    items: sortedPosts.map(post => ({
-      title: post.data.title,
-      pubDate: new Date(post.data.date),
-      description: post.body?.slice(0, 200) || post.data.title,
-      link: `/${post.slug}/`
-    })),
+    items: sortedPosts
+      .filter(post => post.data.title && post.slug)
+      .map(post => ({
+        title: post.data.title,
+        pubDate: new Date(post.data.date),
+        description: post.data.title,
+        link: `/${post.slug}/`
+      })),
     customData: `<generator>Astro RSS</generator>`
   });
 }

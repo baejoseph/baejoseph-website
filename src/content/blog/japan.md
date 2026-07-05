@@ -1,10 +1,10 @@
 ---
-title: “🇯🇵 Japan’s Secret”
-date: “2026-06-15”
-lang: “en”
-featuredImage: “/assets/japan.jpg”
-tags: [“theology”, “reflection”]
-pairedSlug: “일본”
+title: "🇯🇵 Japan's Secret"
+date: "2026-06-15"
+lang: "en"
+featuredImage: "/assets/japan.jpg"
+tags: ["theology", "reflection"]
+pairedSlug: "일본"
 ---
 
 **The scoreline was 2–2. But nobody remembers the scoreline.**
