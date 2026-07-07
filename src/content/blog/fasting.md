@@ -9,7 +9,7 @@ youtubeId: "HRyHbQ1rZ-w"
 tags: ["fasting", "prayer", "video"]
 ---
 
-\\[This is summary of [Derek Prince](/prince)'s teaching on fasting, broadly based on his book: "Shaping History Through Prayer and Fasting".\\]
+*[This is a summary of [Derek Prince](/prince)’s teaching on fasting, broadly based on his book: “Shaping History Through Prayer and Fasting”.]*
 
 The Bible speaks of a key to God’s people experiencing answered prayers and receiving power from God. It is also the secret for the church today to start practicing more effective and powerful prayers. This key is fasting: both individual and corporate.
 
@@ -101,7 +101,7 @@ Do you want to grow spiritually? Do you desire greater intimacy with God? Do you
 
 [Derek Prince](/prince), after accepting Jesus in his 20s, fasted every Wednesday until his death at 88. He fasted for longer periods as needed, fasting a total of about 3,000 days in his life. Near his death, he said that if he could change anything, he wished he could have done more fasting.
 
-**\[Benefits of a 21-Day Fast\]**
+**Benefits of a 21-Day Fast**
 
 -   All worship services became more graceful. Approaching God’s presence with a humble heart, I became more sensitive to the Holy Spirit’s prompting and felt more connected during prayers and worship.
 -   I began to think about God more. Every time I felt a slight hunger, I remembered why I was fasting and found myself turning my thoughts toward God.
@@ -114,7 +114,7 @@ Do you want to grow spiritually? Do you desire greater intimacy with God? Do you
 -   My skin improved. My face and whole body became smooth and glowing without any lotions or creams, and any skin problems went away.
 -   I lost weight. I lost 10 kg in the first two weeks, and by the third week, I had lost an additional 4 kg. I felt so much lighter, and it felt great.
 
-**\[What about Long-Term Fasting?\]**
+**What about Long-Term Fasting?**
 
 -   This is not just a physical detox, but a spiritual fast, so it’s important to prepare with prayer.
 -   **Supplies Needed:** High-quality water (top brand water glass bottles), electrolytes, coarse salt, apple cider vinegar (ACV), vitamin B6 & B12 supplements (e.g., Berocca), vitamin D—When fasting begins, you’ll need to drink a lot of water. Aim for at least 1.5 liters a day, and it’s even better if you add electrolytes to your water.
@@ -123,7 +123,7 @@ Do you want to grow spiritually? Do you desire greater intimacy with God? Do you
 -   It’s good to walk 2–3 km 2–3 times a day, but avoid other intense physical activities (like running or strength training) even if you feel energized.
 -   Before bed, take vitamin D to aid restful sleep.
 
-**\[Precautions (Disadvantages)\]**
+**Precautions (Disadvantages)**
 
 -   On day 17, you may experience a rash starting from your ankles. This is a common symptom called “keto rash,” and while it can be uncomfortable, it will disappear on its own, so try not to scratch it too much.
 -   You must be careful when breaking the fast. During the last 2–3 days of a long fast, it’s crucial to slowly reintroduce foods like bone broth or the broth from fermented kimchi to prepare your digestive system. Especially after a long fast, the refeeding phase must be carefully observed to avoid complications (read up on “refeeding syndrome” and educate yourself. It’s deadly.). Remember, the temptations during the refeeding period are often stronger than those during the fasting period.
@@ -131,4 +131,4 @@ Do you want to grow spiritually? Do you desire greater intimacy with God? Do you
 
 —-
 
-**Update:** we have now completed our fourth consecutive 21-day fast — [here’s what God did](/2026-fast/).
+**Update:** we have now completed our fourth consecutive 21-day fast — [here’s what God did](/2026-fast).
