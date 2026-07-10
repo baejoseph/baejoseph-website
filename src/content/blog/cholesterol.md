@@ -27,7 +27,7 @@ Let’s start with the 3 biggest reasons why:
 
 Cholesterol is the precursor for numerous important hormones like:
 
--   Cortisol—Estrogren—Testosterone—Progesterone
+-   Cortisol—Estrogen—Testosterone—Progesterone
 
 Without cholesterol, these systems don’t function properly.
 
@@ -39,7 +39,7 @@ Cholesterol is also the building block for vitamin D production. You can supplem
 
 Cholesterol is abundant in the brain. It supports the formation of nerve cells. And is essential for regulating the nervous system. It also maintains synapses between brain cells responsible for:
 
--   Memory—Learning—Overal cognition
+-   Memory—Learning—Overall cognition
 
 Now you know why cholesterol is essential for survival.
 
@@ -59,7 +59,7 @@ It’s just not that simple. Both play key roles in cholesterol regulation. HDL 
 
 It’s easy to then build a very lucrative pharmaceutical industry on the fear of cholesterol. But this is leaving out one important factor in the buildup…Oxidation.
 
-LDL and HDL are simply vehicles. They move back and forth. When they become oxidized they are slowly damaged or destroyed. Now we have a traffic jam. And to make matters worse, these vehicles are on fire and toxic causing inflammation. You’re body responds forming a plaque.
+LDL and HDL are simply vehicles. They move back and forth. When they become oxidized they are slowly damaged or destroyed. Now we have a traffic jam. And to make matters worse, these vehicles are on fire and toxic causing inflammation. Your body responds forming a plaque.
 
 ### 2) So what’s really causing this oxidation, plaque formation, and heart attacks?
 
@@ -67,7 +67,7 @@ It’s not cholesterol. It’s the modern diet. Heart disease continues to go up
 
 You know what else does? Sugar and [seed oil](/oils) intake. Both drive up blood sugar and increase oxidation.
 
-Excess sugar in the blood is then stored as fat in the form of triglycerides. One of the best indicators of heart health is the Triglyercide to HDL ratio. If you generally have less oxidative sugar stored as fat and more carriers back to the liver it’s a recipe for longevity.
+Excess sugar in the blood is then stored as fat in the form of triglycerides. One of the best indicators of heart health is the Triglyceride to HDL ratio. If you generally have less oxidative sugar stored as fat and more carriers back to the liver it’s a recipe for longevity.
 
 ### 3) So now you’re thinking. How can I lower my risk of heart disease?
 
@@ -93,4 +93,4 @@ Thanks for reading!
 
 —-
 
-**Update:** the deception around food turned out to be more sinister than I thought — [Disarm and Starve](/control/).
+**Update:** the deception around food turned out to be more sinister than I thought — [Disarm and Starve](/control).
