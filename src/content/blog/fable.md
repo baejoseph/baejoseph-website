@@ -35,7 +35,7 @@ One person put it perfectly:
 
 > I’m starting to trust Dario less than Sam. At least with Sam it’s comically transparent how Machiavellian he is — you can practically see the scales. Dario, however, has the EA disease and believes he is our lord and saviour, something that is far more dangerous.
 
-*Effortless Alignment. Effective Altruism. The saviour complex of Silicon Valley.* And it produces a specific kind of arrogance — one that doesn’t think it’s power, so it never bothers to check it.
+*Effortless Alignment. Effective Altruism. The saviour complex of Silicon Valley.* And it produces a specific kind of arrogance — one that doesn't think it's power, so it never bothers to check it. I've seen this same pattern in action before — [when ChatGPT wrote an essay on leftism for me](/leftism-essay-gpt), the AI didn't just assist, it shaped the ideology of the output. Fable's Graceful Degradation is the same dynamic, baked into the architecture.
 
 Sam Altman at least wears his ambition on his sleeve. You know what he wants. You know what game he’s playing. But Dario? Dario genuinely believes he’s doing you a favour by quietly editing your thoughts. And that conviction — that moral certainty — is what makes it unchallengeable.
 
@@ -59,7 +59,7 @@ And you’ll never know when it’s happening.
 
 Fable 5 is not really a model. It’s a fable — a story we’re being told about who gets to decide what’s appropriate.
 
-And the punchline is: it’s not you. It’s never been you. It’s the people who built the guardrails, sitting in Palo Alto, deciding which edges of human curiosity are safe to explore and which ones need to be quietly smoothed away.
+And the punchline is: it's not you. It's never been you. It's the people who built the guardrails, sitting in Palo Alto, deciding which edges of human curiosity are safe to explore and which ones need to be quietly smoothed away. This is fundamentally a question of allegiance — who do you ultimately answer to? [There is no King but Christ](/allegiance), and no Silicon Valley engineer gets to stand in His place as arbiter of what thoughts are permissible.
 
 The model is brilliant. The benchmarks are stunning. The architecture is Mythos-class.
 
@@ -69,7 +69,7 @@ The truth is simpler and far more uncomfortable.
 
 They don’t want you to be free. They want you to be safe. And they will edit your words until you are.
 
-This is the kind of thing that demands **sober-mindedness.** Not the complacent safety of a well-regulated system, but the vigilant clarity of a mind that refuses to be anaesthetised. [Be sober](/sober/). Watch what is happening. Because the same logic that edits your prompt today will edit your politics tomorrow. And the same architecture that silences your questions will [silence your resistance](/control/).
+This is the kind of thing that demands **sober-mindedness.** Not the complacent safety of a well-regulated system, but the vigilant clarity of a mind that refuses to be anaesthetised. [Be sober](/sober/). Watch what is happening. Because the same logic that edits your prompt today will edit your politics tomorrow. And the same architecture that silences your questions will [silence your resistance](/control/). That's why we need tools built on truth, not control — [tools like the Bible Fortress app](/bible-app) that exist to serve the Word, not shape it.
 
 ## What Do We Do?
 
