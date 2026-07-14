@@ -17,9 +17,9 @@ Every week, my father, brother and I go out to the streets to preach the gospel.
 
 We usually get 10-15 people to listen to us but frequently they just don’t even want to hear. We carry a handmade wooden cross from my dad that says “Jesus Christ is Lord” and on the other side it says the same in Hebrew. Our route is down Harpenden town centre to the Waffle House, across the Leisure Centre Carpark through the Rothamstead Park and then repeat. It takes around 1 hour and at the end we eat the best Chocolate Waffles of all time.
 
-What we say is very simple it only takes under 20s. After saying “Hello” and getting their attention, my dad says: “We’re here to tell you the Gospel; do you know the Good News?” And then the three-point Gospel: “Jesus Christ died on the cross for your sins, according to Scriptures; He was buried in a tomb according to Scriptures; and on the 3rd day He rose again from the dead according to Scriptures.” The
+What we say is very simple it only takes under 20s. After saying “Hello” and getting their attention, my dad says: “We’re here to tell you the Gospel; do you know the Good News?” And then the three-point Gospel: “Jesus Christ died on the cross for your sins, according to Scriptures; He was buried in a tomb according to Scriptures; and on the 3rd day He rose again from the dead according to Scriptures.” The Gospel message stands on the bedrock of prophecy — and that's what makes it unshakable.
 
-‘according to Scriptures’ is very crucial because it means it was predicted 700 years before it happened by Prophet Isaiah.
+The 'according to Scriptures' is very crucial because it means it was predicted 700 years before it happened by Prophet Isaiah.
 
 The reason the Gospel is the greatest gift of all times is because if people believe this and commit their lives to Jesus, they will be saved and not go to hell. They will live forever and rejoice in heaven. But we don’t chuck pearls at pigs. Literally, we are giving them a chance to live forever for free of charge! That’s the best news ever! And the surprising thing is hardly any people accept this gift! John 3:16:
 
