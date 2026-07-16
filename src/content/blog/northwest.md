@@ -46,10 +46,10 @@ Fight. Fight. Fight.
 
 - [Why Christians must reject Leftism](/leftism) — The theological foundation for why leftism is not just wrong but Satanic in nature.
 - [Leftism is Satanism](/leftism-essay-gpt) — A detailed theological argument connecting left-wing ideology to ancient Gnosticism.
-- [The Korean War and the Northwest Youth League](/korea-war) — More on the historical context and their role in 1946-47 Korea.
+- [From Shamanism to the Cross: Pastor Han's Testimony](/pastor-han-en) — A Korean testimony of deliverance from communist-era oppression.
 
 **Practical application:**
 
-- [Prayer for Christian warriors](/prayer) — How to pray like a soldier for the Kingdom.
+- [Prayer is Spiritual Connection](/connection) — How prayer is not a technique but deep intimacy with the Father.
 - [Fasting for spiritual strength](/fasting) — Training your body and soul for spiritual warfare.
-- [Men’s group formation](/men-group) — How to start or join a men’s group that trains disciples for battle.
+- [Regiment of Christ 2026](/manifesto) — A manifesto for Christian men to form covenant regiments for the last-hour harvest.
