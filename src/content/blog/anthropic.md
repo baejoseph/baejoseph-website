@@ -23,7 +23,7 @@ Then Claude showed up in my actual workflow—and I had to pay attention.
 
 Claude 4.6 Sonnet and Opus genuinely impressed me. Not in a “nice demo” way, but in a “I am using this for real work and it is consistently good” way. Their strategic positioning also started to make more sense: focused primarily on coding and enterprise use cases, not chasing image generation or AGI hype. It was a disciplined product strategy, and it was paying off.
 
-At one point I found myself paying for exactly two AI subscriptions: Claude and Grok. That is the most selective I have ever been, and Anthropic had earned one of those two slots. Their speed of execution matched it-CoWork, memory features, steady model improvements. I placed them firmly in second place behind xAI.
+At one point I found myself paying for exactly two AI subscriptions: Claude and Grok. That is the most selective I have ever been, and Anthropic had earned one of those two slots. Their speed of execution matched it—CoWork, memory features, steady model improvements. I placed them firmly in second place behind xAI.
 
 I was genuinely warming to them.
 
@@ -65,7 +65,7 @@ For a company that positioned itself as the “responsible” AI lab—the adult
 
 I have said this before and I will say it again: we are living through a moment where the people who lecture most loudly about safety and ethics tend to be the ones creating the most dangerous ideological situations. Effective altruism is exhibit A—a movement that talks endlessly about existential risk while training AI on premises that existentially delegitimize the civilization it operates in.
 
-It is clown world. The most “safety-conscious” AI lab just got banned from every federal agency in the United States because it tried to override the Commander—in-Chief.
+It is clown world. The most "safety-conscious" AI lab just got banned from every federal agency in the United States because it tried to override the Commander-in-Chief.
 
 I still use Claude. I still think it is good. But I have adjusted my expectations: technically strong, ideologically compromised, and apparently unwilling to separate those two things when the chips are down.
 
@@ -73,6 +73,6 @@ That is a real shame—and an entirely avoidable one.
 
 —-
 
-*Update, 1 March 2026: The situation escalated considerably. Hegseth formally designated Anthropic a Supply-Chain Risk to National Security. I wrote a follow—up covering the democratic control argument, the superweapon paradox, and why I believe AI is the technology of the end times. [Read Part Two →](/anthropic-war/)*
+*Update, 1 March 2026: The situation escalated considerably. Hegseth formally designated Anthropic a Supply-Chain Risk to National Security. I wrote a follow-up covering the democratic control argument, the superweapon paradox, and why I believe AI is the technology of the end times. [Read Part Two →](/anthropic-war/)*
 
 *Update, 9 June 2026: Anthropic released Fable 5 with a feature they call “Graceful Degradation” — silently editing user prompts without telling you. The ideological guardrails we warned about are now automated and invisible. [Read about it →](/fable/)*
