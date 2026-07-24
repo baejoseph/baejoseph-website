@@ -16,6 +16,8 @@ But if _everything_ is racist, _nothing_ is. And when a word loses its meaning, 
 
 So let’s clarify. Let’s distinguish. Let’s separate the real thing from the counterfeit.
 
+And let’s be honest about what this requires. Speaking clearly in 2026 takes something the Church has grown desperately short of. It takes **[courage](/courage)**. Not the polite kind. The kind that stands, raises a fist, and refuses to self-censor when the entire culture turns against you. The kind that says, “I will no longer cower in fear.”
+
 ## 1980s Racism
 
 By “1980s racism” I mean the classic, unambiguous definition that every English speaker once understood. Racism is the prejudice, hostility, discrimination, or antagonism directed against a person because of their racial or ethnic membership. It is the belief that one race is inherently superior or inferior in dignity and value.
@@ -46,9 +48,9 @@ Consider what Scripture actually says about nations and peoples.
 
 **Acts 17:26** — _“And He has made from one blood all nations of men to dwell on all the face of the earth, having determined _beforehand_ the appointed seasons and _the_ bounds of their dwelling.”_ God did not make one amorphous global mush. He made nations — distinct, bounded, separate — and He determined their boundaries. He designed [human diversity](/diversity) into the fabric of creation.
 
-**Deuteronomy 32:8** — _“According to the number of the sons of God, / So the assembly of Israel is a people alone.”_’ The full text speaks of God dividing the nations at Babel and assigning them. And Genesis 10 — the Table of Nations — confirms it. God scattered the peoples and gave them distinct inheritances.
+**Deuteronomy 32:8** — _“According to the number of the sons of God, / So the assembly of Israel is a people alone.”_ The full text speaks of God dividing the nations at Babel and assigning them. And Genesis 10 — the Table of Nations — confirms it. God scattered the peoples and gave them distinct inheritances.
 
-**Titus 1:12–13** — _“One of themselves, a prophet of their own, said, ‘Cretans are always liars, evil beasts, lazy gluttons.’ This testimony is true. Therefore rebuke them sharply, that they may be sound in the faith.”_’ Notice what Paul does. He endorses a cultural generalization about Cretans and uses it pastorally. He doesn’t backpedal. He says, “This testimony is true.” If observing cultural patterns makes you a racist, then Paul is a racist. But Paul is not a racist — he is an apostle.
+**Titus 1:12–13** — _“One of themselves, a prophet of their own, said, ‘Cretans are always liars, evil beasts, lazy gluttons.’ This testimony is true. Therefore rebuke them sharply, that they may be sound in the faith.”_ Notice what Paul does. He endorses a cultural generalization about Cretans and uses it pastorally. He doesn’t backpedal. He says, “This testimony is true.” If observing cultural patterns makes you a racist, then Paul is a racist. But Paul is not a racist — he is an apostle.
 
 To recognise differences between peoples is not to hate them. To prefer your own culture is not to despise another. To critique a policy or a practice is not to malign a race.
 
@@ -64,6 +66,12 @@ We must admonish and reprimand those who throw the term “racist” around in a
 
 **The Church does not set her agenda by what is popular. She sets her agenda by what is true.**
 
+And this is where courage becomes non-negotiable. Paul didn’t just say “believe correctly” — he said, *“Be on the alert, stand firm in the faith, act like men, be strong”* (1 Corinthians 16:13). The Greek is _andrizesthe_ — literally, **“be men.”** Quit ye like men. Stop whimpering. Stop apologising for hard truths. Stop coddling the perpetually offended. The Church of Jesus Christ in 2026 does not need more sensitivity. She needs **[mighty men](/heroics)**. She needs men who understand the times, like the sons of Issachar, and know what Israel — what the Church — ought to do. She needs brothers who will stand in the council of the mighty and not depart from it.
+
+We need the courage to be **[sober-minded](/sober)**. That word — _nēphalios_ — means clear-headed, vigilant, free from intoxication. And the Church has been drunk on the mainstream narrative for long enough. Half the leadership room is still spiritually intoxicated by the same media machinery that taught us to fear our own words. A sober mind is the foundation of everything else. You cannot have courage without clarity. You cannot stand firm if you are still drinking from Babylon’s cup.
+
+This is why we need one another. A man alone in his study, wrestling with these truths, will eventually talk himself into silence. But a brotherhood — a **[regiment](/regiment)** — holds the line. That is how the British Army fights. Not for abstract ideals, but for the man on your left and the man on your right. For the battle honours of those who came before. For the ones who will carry the flag after you. *“Make your regiment proud.”* That is what it means to be a Christian man in 2026. You are not just representing yourself. You are representing every man who carried the gospel before you, and every man who will carry it after.
+
 ## The Real Racism
 
 And here is the final irony — the one that the culture will not let you speak.
@@ -74,8 +82,16 @@ White people are told they are the problem. White history is presented as a cata
 
 And if you question this? If you dare to say out loud what everyone can see? You are branded a racist. The word is turned upside down. The victim is the oppressor. The accuser is the accused. It is a complete inversion of reality, and it is being done with deliberate malice.
 
+Look at what has happened on our own soil. An independent inquiry into systematic child exploitation across the UK — 250,000 young girls, targeted and tortured — and the institutions meant to protect them looked the other way. Why? Because they were afraid of being called racist. The same word that once named a genuine sin is now the chain that locks justice in its cell. [Read the inquiry report](/inquiry) and tell me the silence wasn’t purchased with the blood of girls.
+
+This is part of a broader pattern. There is a playbook — old as tyranny itself. Control the food. Chain the Word. Take the weapons. **[Disarm and starve](/control)**. And one of the most effective weapons of the modern tyrant is language itself. If you can control what people are allowed to say, you control what they are allowed to think. The word _racist_ has become that weapon. Point it at anyone who speaks honestly, and they will silence themselves. The population is disarmed — not by confiscation, but by fear.
+
 This madness — this poison of BLM, [leftism](/leftism), and critical race theory — must not be allowed to seep into the Church. It has no business in the house of God. It divides. It distracts. It discourages the Church from its mission. It is a weapon designed to destroy Western civilisation from within, and the Church must not become its unwitting accomplice.
 
 We are called to preach the gospel, not to perform penance for a race we did not choose. We are called to unity in Christ, not to ideological conformity. We are called to truth — and the truth is that the word _racist_ has been hijacked, the narrative has been inverted, and the Church must not be silenced.
+
+The hour is late. The Church does not need more apologists. She needs men of courage. Men who will stand, speak, and fight for the man next to them.
+
+Make your regiment proud.
 
 Come, Lord Jesus.
