@@ -4,6 +4,7 @@ date: "2026-07-20"
 slug: "occa-ko"
 lang: "ko"
 pairedSlug: "occa"
+featuredImage: "/assets/occa-2026.jpg"
 tags: ["증언", "신학"]
 ---
 
