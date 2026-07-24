@@ -15,7 +15,7 @@ Concrete examples highlight this systemic problem. The Grievance Studies Affair 
 
 If unaddressed, this corruption threatens to trigger a domino effect of institutional failures, mirroring the financial crisis of 2008. As society becomes aware that much of the knowledge and information disseminated by these elite institutions is compromised, their credibility, reputation, and funding could evaporate. Recognising and confronting this deep-seated rot is crucial to prevent a widespread collapse and to restore the integrity of the institutions that hold our social fabric together.
 
-\[The above is a GPT o1-preview summary of the following [Thread](https://x.com/wokal_distance/status/1845916343553740928) by @wokal\_distance.\]
+[The above is a GPT o1-preview summary of the following [Thread](https://x.com/wokal_distance/status/1845916343553740928) by @wokal_distance.]
 
 1/
 
