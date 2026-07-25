@@ -23,3 +23,7 @@ I didn’t have to finish the sentence. He understood exactly what I was saying,
 > Matthew 10:32 (NKJV)
 
 Here is one of the few instances when Christians can acknowledge their living Lord Jesus in our politically correct, pc-obsessed western workplace. We don’t have to be loud or aggressive about it. We just have to be willing to get up from our seat.
+
+## Update
+
+Since writing this, I’ve expanded on the theme in a [morning sermon](/morning-sermon) I gave during Jesus Academia. There, I connected standing up for the name of Jesus to early morning prayer, Scripture memorization, and even the fine-tuning of the universe. The courage to honour His name isn’t just a workplace battle — it’s the foundation of every area of spiritual life.
