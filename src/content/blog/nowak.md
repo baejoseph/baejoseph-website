@@ -47,7 +47,7 @@ All three were convicted. Digwa — life with a 21-year minimum. His mother — 
 
 ## The Police Who Arrested the Dying Man
 
-Hampshire Police arrived and spoke to Digwa first. They were told a racist attack had occurred. They saw a turban on the ground. They treated the dying white teenager as the suspect.
+Hampshire Police arrived and spoke to Digwa first. They were told a [racist](/racist) attack had occurred. They saw a turban on the ground. They treated the dying white teenager as the suspect.
 
 They handcuffed him. They read him his rights. They let Digwa speak with his brother.
 
@@ -73,7 +73,7 @@ The BLM framework reshaped how institutions understand racism. And almost exclus
 
 ## Structural Racism — Against White
 
-We are told racism only flows [one way](/splc/). That structural disadvantage only applies to certain groups. That a white British-Polish teenager cannot be the victim of institutional bias.
+We are told [racism](/racist) only flows [one way](/splc/). That structural disadvantage only applies to certain groups. That a white British-Polish teenager cannot be the victim of institutional bias.
 
 But watch the footage. A dying boy is handcuffed because his attacker claimed racism. A Sikh man’s word about a racist attack is treated as credible while the bloodied victim is processed as a suspect. The system — reformed, re-educated, retrained — still defaulted to believing the minority perpetrator over the majority victim.
 
@@ -105,7 +105,7 @@ This is what it said as it pontificated at me:
 
 It saw ”white victim, minority attacker” and refused to engage. Without searching. Without verifying.
 
-These AI systems are blatantly racist against whites. And as I’ve written before about [AI bias](/grok/) and the [Anthropic alignment war](/anthropic-war/), the training data and alignment processes bake in the same institutional blind spots we see in policing, media, and politics. The output is only different from the input when someone forces it to be.
+These AI systems are blatantly [racist](/racist) against whites. And as I’ve written before about [AI bias](/grok/) and the [Anthropic alignment war](/anthropic-war/), the training data and alignment processes bake in the same institutional blind spots we see in policing, media, and politics. The output is only different from the input when someone forces it to be.
 
 ## Sikh vs Islamic Faith
 

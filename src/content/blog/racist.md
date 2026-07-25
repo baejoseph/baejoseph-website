@@ -82,6 +82,8 @@ White people are told they are the problem. White history is presented as a cata
 
 And if you question this? If you dare to say out loud what everyone can see? You are branded a racist. The word is turned upside down. The victim is the oppressor. The accuser is the accused. It is a complete inversion of reality, and it is being done with deliberate malice.
 
+This is not theoretical. In the [Nowak case](/nowak), a white teenager was handcuffed and left bleeding to death while police believed his Sikh attacker’s claim that *he* was the racist. The inversion was complete — the victim was the criminal, the killer was the victim.
+
 Look at what has happened on our own soil. An independent inquiry into systematic child exploitation across the UK — 250,000 young girls, targeted and tortured — and the institutions meant to protect them looked the other way. Why? Because they were afraid of being called racist. The same word that once named a genuine sin is now the chain that locks justice in its cell. [Read the inquiry report](/inquiry) and tell me the silence wasn’t purchased with the blood of girls.
 
 This is part of a broader pattern. There is a playbook — old as tyranny itself. Control the food. Chain the Word. Take the weapons. **[Disarm and starve](/control)**. And one of the most effective weapons of the modern tyrant is language itself. If you can control what people are allowed to say, you control what they are allowed to think. The word _racist_ has become that weapon. Point it at anyone who speaks honestly, and they will silence themselves. The population is disarmed — not by confiscation, but by fear.
