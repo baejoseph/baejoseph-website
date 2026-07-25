@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "성경앱"
 featuredImage: "/assets/SCR-20251117-ml3.png"
 
-tags: ["tech"]
+tags: ["tech", "ai"]
 ---
 
 One of the highlight of 2025 has been the founding of [JD Fortress AI Ltd](https://jdfortress.com) with my good friend (and brother in Christ!) from church, Dev. Together, we share a deep love for God’s Word in these tumultuous times—given to us as “a lamp to our feet and a light to our path” (Psalm 119:105)—and the promise that those who seek Him will find Him.

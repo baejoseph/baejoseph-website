@@ -5,7 +5,7 @@ slug: "baegpt-en"
 lang: "en"
 pairedSlug: "baegpt"
 featuredImage: "/assets/SCR-20231121-kwx.png"
-tags: ["tech", "korea"]
+tags: ["tech", "korea", "ai"]
 ---
 
 * * *

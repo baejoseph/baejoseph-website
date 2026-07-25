@@ -5,7 +5,7 @@ slug: "grok"
 lang: "en"
 featuredImage: "/assets/grok-hero.jpg"
 pairedSlug: "그록"
-tags: ["tech", "leftism", "video"]
+tags: ["tech", "leftism", "video", "ai"]
 youtubeId: "RHqTj146bAQ"
 ---
 

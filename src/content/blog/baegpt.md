@@ -6,7 +6,7 @@ lang: "ko"
 pairedSlug: "baegpt-en"
 featuredImage: "/assets/SCR-20231121-kwx.png"
 
-tags: ["tech", "korea"]
+tags: ["tech", "korea", "ai"]
 ---
 
 한국에 사랑하는 조카들이 Chat GPT를 한번도 안 써봤다 해서 고민이 되었다. 한편으론 이런 첨단 기술을 8–12살 때 나이에 직접 경험하여 앞으로 어떤 세상을 살아가게 될지, 어떤 공부를 어떻게 해야 할지 진로 선택 에도 큰 도움이 되게 하고 싶지만, 지금 현존하는 ChatGPT 같은 도구들은 죄다 무신론.진화론.유물론적 세계관을 가진데다가 완전 개좌파 선입견이 너무 깊어 선뜻 추천하고 싶지 않았다. 거기에다 최첨단 ChatGPT 4 Turbo 같은 모델은 유료여서 접근하기 어렵다.
