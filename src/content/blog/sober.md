@@ -3,7 +3,7 @@ title: "📺 Be Sober-Minded"
 date: "2025-11-17"
 slug: "sober"
 lang: "en"
-featuredImage: "/assets/defund_BBC.webp"
+featuredImage: "/assets/sober_hero.jpg"
 pairedSlug: "정신"
 
 tags: ["leftism", "courage", "uk", "trump"]
