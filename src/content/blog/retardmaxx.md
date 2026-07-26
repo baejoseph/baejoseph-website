@@ -7,7 +7,8 @@ tags: ["theology", "courage", "faith", "reflection"]
 pairedSlug: "리타드맥싱"
 ---
 
-_Brothers, we gotta freakin talk._
+_Brothers, we gotta freakin’ talk._
+
 A few months back I watched Marc Andreessen — billionaire, one of the most powerful men in tech — say his new life coach was a guy who sits in a backyard with a cigar telling men to stop thinking so much. I laughed. Then I looked him up. Then I stopped laughing.
 
 ## The Guy
@@ -26,7 +27,7 @@ _The short bus_. That’s the crew. Long tells his men to get on the short bus �
 
 _High Thumos_. Thumos is an old Greek word for spiritedness — the fire in a man’s chest, the part of you that wants to fight and win and be somebody. Plato wrote about it three thousand years ago. It’s the thing our age has spent thirty years trying to put out.
 
-_Balss bigger than brains_. That’s retardmaxxing in four words. Stop letting your brain talk your body out of everything. _Scoop up your balls_ and act first. Think later, if at all.
+_Balls bigger than brains_. That’s retardmaxxing in four words. Stop letting your brain talk your body out of everything. _Scoop up your [balls](/courage)_ and act first. Think later, if at all.
 
 And then there’s the one that stopped me.
 
@@ -44,7 +45,7 @@ Jesus is the greatest mogger who ever lived.
 
 ## Be, Not Do
 
-Sit with that, because it’s the whole gospel in gym-rat language.
+Sit with that, because it’s the whole [gospel](/evangelism) in gym-rat language.
 
 You have spent your life trying to do enough to matter. Do more, earn more, prove more, think harder, optimise, hustle, never rest. And you are tired down to the bone. The whole machine of the modern man runs on doing — and it is grinding good men to powder.
 
@@ -66,11 +67,11 @@ That is be, not do, taken to the bottom of the universe.
 
 ## Why Now
 
-Look at men in 2026. Anxious. Medicated. Scrolling. Talked out of their own strength by a culture that calls it toxic, exhausted from proving a worth they were told they had to earn. Frozen — thinking, doubting, waiting, never just moving.
+Look at men in 2026. Anxious. Medicated. Scrolling. Talked out of their own [strength](/heroics) by a culture that calls it toxic, exhausted from proving a worth they were told they had to earn. Frozen — thinking, doubting, waiting, never just moving.
 
 Into that walks a man with a cigar who tells them to stop, breathe, act, and rest in what they already are. Retardmaxx. Be a retard. Crude name. Right medicine. A Christian brother pointing a whole generation of lost men back toward the oldest news there is: you don’t have to earn your way into being a man. In Christ, you already are one. Now go stand in the world and let it see.
 
-Retardmaxx, brothers. But the greatest mog in history came from a cross. Go and be like Him.
+Retardmaxx, brothers. But the greatest mog in history came from a cross. Go and [be like Him](/jesus-academia).
 
 > “I came to cast fire on the earth, and would that it were already kindled!”
 > Luke 12:49
