@@ -34,7 +34,7 @@ And then there’s the one that stopped me.
 
 To mog is to outshine another man just by standing there. The kids use it for jawlines and height. Long uses it for something deeper.
 
-He explains it bluntly. Two women stand side by side. One is super well endowed while the other doesn’t. She isn’t competing. She isn’t trying. Just by standing there, being what she is, she mogs the other. That’s it.
+He explains it bluntly. Two women stand side by side. One is super well endowed while the other is flat-chested. She isn’t competing. She isn’t trying. Just by standing there, being what she is, she mogs the other. That’s it.
 
 Mogging, he says, is the purest form of influence. Be, not do. You don’t win the room by striving for it. You win it by being something the room can’t ignore.
 
@@ -66,5 +66,5 @@ Into that walks a man with a cigar who tells them to stop, breathe, act, and res
 
 Retardmaxx, brothers. But the greatest mog in history came from a cross. Go and be like Him.
 
-“And I, if I be lifted up from the earth, will draw all men unto me.”
-John 12:32
+“I came to cast fire on the earth, and would that it were already kindled!”
+Luke 12:49
