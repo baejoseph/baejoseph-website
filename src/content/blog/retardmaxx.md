@@ -2,7 +2,7 @@
 title: "🚌 The Greatest Mogger"
 date: "2026-07-26"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/retardmaxx.jpg"
 tags: ["theology", "courage", "faith", "reflection"]
 pairedSlug: "리타드맥싱"
 ---
