@@ -4,7 +4,7 @@ date: "2026-07-26"
 lang: "en"
 featuredImage: ""
 tags: ["theology", "courage", "faith", "reflection"]
-pairedSlug: "모거"
+pairedSlug: "리타드맥싱"
 ---
 
 Brothers, we gotta freakin talk.
