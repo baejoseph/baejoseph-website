@@ -1,19 +1,14 @@
 ---
-title: "⚔️ The Long March"
+title: "🥾 The Long March"
 date: "2026-07-27"
 slug: "march"
 lang: "en"
 featuredImage: ""
+pairedSlug: "행군"
 tags: ["theology", "eschatology", "courage", "evangelism"]
 ---
 
-I believe this is my mission. God-given. Not a hobby, not a ministry project, not a weekend seminar I offer while the real work of the church continues around me.
-
-This is what I am here to do.
-
-Tour churches. Preach ten sermons. Shake the foundations. Leave behind a remnant who loved not their lives unto death.
-
-Pastors—what if I offered you the option of halving your congregation? What if I told you that a tenth of your church might leave?
+Pastors—what if I told you that a tenth of your church might leave?
 
 But I also guarantee you this: the remnant that remains will be battle-ready. Radically committed to Christ. The kind of people God uses to shake a region, a generation, a world.
 
