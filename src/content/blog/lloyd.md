@@ -1,5 +1,5 @@
 ---
-title: "🚢 Lloyd’s of London vs. America: Trump Nationalises the Strait"
+title: "🚢 Lloyd’s of London vs. America"
 date: "2026-03-04"
 slug: "lloyd"
 lang: "en"

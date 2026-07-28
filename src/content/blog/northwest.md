@@ -1,5 +1,5 @@
 ---
-title: "🇰🇷 The Northwest Youth League: A Battle Cry for Christian Warriors"
+title: "🇰🇷 The Northwest Youth League"
 date: "2025-03-19"
 slug: "northwest"
 lang: "en"
@@ -7,6 +7,8 @@ featuredImage: "/assets/northwest-youth.jpg"
 pairedSlug: "서북청년단"
 tags: ["leftism", "theology", "courage", "korea"]
 ---
+
+### A Battle Cry for Christian Warriors
 
 In the furnace of 1946, as Korea bled from Soviet occupation in the North, a band of young men rose up.
 

@@ -1,5 +1,5 @@
 ---
-title: "⚔️ Anthropic vs. America: The Superweapon Paradox"
+title: "⚔️ Anthropic vs. America"
 date: "2026-02-27"
 slug: anthropic-war
 lang: en

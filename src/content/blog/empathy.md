@@ -1,5 +1,5 @@
 ---
-title: "🖤 Empathy: A Biblical Perspective"
+title: "🖤 On Empathy"
 date: "2025-03-07"
 slug: "empathy"
 lang: "en"
@@ -8,6 +8,8 @@ pairedSlug: "공감"
 
 tags: ["theology", "leftism"]
 ---
+
+### Empathy: A Biblical Perspective
 
 Traditionally, the words “empathy” and “sympathy” have often been used interchangeably. In today’s world, however, “sympathy” is very much out of fashion (even associated with condescension), while “empathy” is all the rage. People are often heard saying, “I don’t want your _sympathy_; I want your _empathy_!” In this essay, we will explore the profound difference between these two concepts. We will discover that while **sympathy** is rooted in biblical truth, **empathy**, as it is commonly understood, is not only unbiblical, but it may even lead us into sin. This essay seeks to explain why **empathy is actually a distortion of God’s design for love and compassion**.
 

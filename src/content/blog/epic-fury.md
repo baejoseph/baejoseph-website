@@ -1,5 +1,5 @@
 ---
-title: "🦁 Operation Epic Fury: The Fall of the Ayatollahs"
+title: "🦁 Operation Epic Fury"
 date: "2026-03-01"
 slug: epic-fury
 lang: en

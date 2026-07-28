@@ -1,5 +1,5 @@
 ---
-title: "🎭 The SPLC Hoax — How the Left Manufactured White Supremacy"
+title: "🎭 The SPLC Hoax"
 date: "2026-04-25"
 lang: "en"
 featuredImage: "/assets/splc.jpg"

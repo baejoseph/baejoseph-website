@@ -1,5 +1,5 @@
 ---
-title: "⚔️ Regiment of Christ 2026: A Manifesto for the Last-Hour Harvest"
+title: "⚔️ Regiment of Christ 2026"
 date: "2026-04-10"
 slug: "manifesto"
 lang: "en"

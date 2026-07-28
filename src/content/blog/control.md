@@ -1,5 +1,5 @@
 ---
-title: "🔫 Disarm and Starve: The Oldest Play in the Tyrant’s Handbook"
+title: "🔫 Disarm and Starve"
 date: "2026-02-06"
 slug: "control"
 lang: "en"
@@ -8,6 +8,8 @@ tags: ["leftism", "theology", "courage", "health", "video"]
 youtubeId: "wUz28kah-fw"
 featuredImage: "/assets/control.png"
 ---
+
+### The Oldest Play in the Tyrant’s Handbook
 
 > “For the weapons of our warfare are not carnal but mighty in God for pulling down strongholds, casting down arguments and every high thing that exalts itself against the knowledge of God, bringing every thought into captivity to the obedience of Christ.”
 >
