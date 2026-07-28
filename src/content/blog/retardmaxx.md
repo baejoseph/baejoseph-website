@@ -8,6 +8,8 @@ tags: ["theology", "courage", "faith", "reflection", "video"]
 pairedSlug: "리타드맥싱"
 ---
 
+## Retardmaxx.
+
 _Brothers, we gotta freakin’ talk._
 
 A few months back I watched Marc Andreessen — billionaire, one of the most powerful men in tech — say his new life coach was a guy who sits in a backyard with a cigar telling men to stop thinking so much. I laughed. Then I looked him up. Then I stopped laughing.
@@ -27,6 +29,8 @@ Every tribe has its language. Here’s theirs.
 _The short bus_. That’s the crew. Long tells his men to get on the short bus — the special-ed bus, the one for the kids everyone laughed at. It’s a joke, and it isn’t. Stop being the clever, careful man who never does anything. Come ride with the fools who actually live.
 
 _High Thumos_. Thumos is an old Greek word for spiritedness — the fire in a man’s chest, the part of you that wants to fight and win and be somebody. Plato wrote about it three thousand years ago. It’s the thing our age has spent thirty years trying to put out.
+
+_Soons_. As Long says, you gotta have soons (things you will look forward to) or you are going to goon. Start something, be in motion, go out and talk to people and make things happen. Create your soons and all these depression and anxiety will go away. _Retardmaxx_.
 
 _Balls bigger than brains_. That’s retardmaxxing in four words. Stop letting your brain talk your body out of everything. _Scoop up your [balls](/courage)_ and act first. Think later, if at all.
 
