@@ -10,7 +10,7 @@ tags: ["theology", "eschatology", "courage", "evangelism"]
 
 Pastors—what if I told you that a tenth of your church might leave?
 
-But I also guarantee you this: the remnant that remains will be battle-ready. Radically committed to Christ. The kind of people God uses to shake a region, a generation, a world.
+But I also guarantee you this: the remnant that remains will be battle-ready. Radically committed to Christ, who did not love their lives even unto death. The kind of people God uses to shake a region, a generation, a world.
 
 Here is what I propose. A ten-part sermon series. It will offend most people. Some will come around. Those who choose to be offended will leave—and they were never going to see it any other way anyway.
 
