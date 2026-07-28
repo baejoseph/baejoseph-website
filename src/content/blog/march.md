@@ -3,7 +3,7 @@ title: "🥾 The Long March"
 date: "2026-07-27"
 slug: "march"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/TheLongMarch.png"
 pairedSlug: "행군"
 tags: ["theology", "eschatology", "courage", "evangelism"]
 ---
