@@ -54,6 +54,8 @@ Consider what Scripture actually says about nations and peoples.
 
 To recognise differences between peoples is not to hate them. To prefer your own culture is not to despise another. To critique a policy or a practice is not to malign a race.
 
+![Church gathering](/assets/racist_1.jpg)
+
 ## The Church Is Not a Social Club
 
 Here is the line we must draw and hold. The Church is not a committee. The Church is not a social club. The Church is not a mirror of current cultural consensus. The Church submits to God’s Word — even, and especially, when it puts us at odds with the culture around us.
