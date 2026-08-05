@@ -87,7 +87,7 @@ We so easily assume that faith means projecting strength. Mustering resolve. Kee
 
 Real faith—the kind that Psalm 116 is describing—does something different. It says: **I believe God is real and present and good, and therefore I will tell him exactly how desperate I am.**
 
-This connects directly to what I’ve written about elsewhere: [the cry-out principle](/cry-out/). “This poor man cried out, and the Lᴏʀᴅ heard him” (Psalm 34:6). The cry itself is the hinge—the thing that opens the door to God’s deliverance and salvation. And what Psalm 116 shows us is that reaching that point of crying out is not weakness. **It is faith.**
+This connects directly to what I’ve written about elsewhere: [the cry-out principle](/cry-out). “This poor man cried out, and the Lᴏʀᴅ heard him” (Psalm 34:6). The cry itself is the hinge—the thing that opens the door to God’s deliverance and salvation. And what Psalm 116 shows us is that reaching that point of crying out is not weakness. **It is faith.**
 
 ### Don’t Trust Your Own Understanding First
 
