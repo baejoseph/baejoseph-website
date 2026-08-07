@@ -78,25 +78,11 @@ The college masters. The senior figures who cried racism. The ones who signed th
 
 Or elite institutions will only confirm what every ordinary person already suspects: that they prioritise ideology over truth. Self-image over public trust. Narrative over evidence.
 
-## A Word From Scripture
+The Jason Arday episode is a perfect microcosm of a Western system rotting under the weight of human deadwood. Not just academia. Not just wokeness, welfare bureaucracies, "learning" centres, or the laptop manager class exposed during Covid. An entire civilisation in which millions contribute nothing, produce nothing, and solve nothing — while participating in an elaborate theatre of fake productivity designed to conceal their complete uselessness.
 
-Solomon chased wisdom to the end of the earth and returned with this:
+The real work is left to a shrinking productive minority forced to carry everyone else.
 
-> "Trust in the Lord with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He shall direct your paths."
-> Proverbs 3:5–6
-
-Cambridge acknowledged no one. It trusted its own understanding. It leaned on its own metrics of diversity and inclusion and moral superiority. And it produced Arday.
-
-God's metrics are different. He looks at the heart. He values truth — not the identity of the truth-teller, but the truth itself.
-
-> "And ye shall know the truth, and the truth shall make you free."
-> John 8:32
-
-The truth about Arday has set him free. He is no longer a professor. He is no longer a fellow. He is a man who has told too many stories and finally had to leave the stage.
-
-But the institution that built him — the system that rewarded fiction over fact, narrative over competence, identity over integrity — it remains. And it will produce another Arday. And another. Until we demand more from the institutions we trust with our children's minds.
-
-Until we demand truth.
+Maranatha. This deep rot will only truly be fixed when the Rightful Ruler returns and establishes justice with an iron sceptre.
 
 ---
 
