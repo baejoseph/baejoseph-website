@@ -3,7 +3,7 @@ title: "🎓 The Arday Affair"
 date: "2026-08-06"
 lang: "en"
 slug: "arday"
-featuredImage: ""
+featuredImage: "/assets/arday.jpg"
 tags: ["academia", "courage", "leftism", "reflection"]
 pairedSlug: "아데이"
 ---
