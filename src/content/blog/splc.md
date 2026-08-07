@@ -93,7 +93,7 @@ The SPLC scandal reveals something hopeful: America’s white supremacy problem 
 
 When you manufacture the problem, you reveal that the problem was always mostly theatre.
 
-The real evil isn’t white supremacy. The real evil is the industrial complex that profits from keeping you afraid, guilty, and compliant. It’s the NGO-industrial complex that turns moral outrage into a revenue stream. It’s the system that manufactures enemies to justify its own power.
+The real evil isn’t white supremacy. The real evil is the industrial complex that profits from keeping you afraid, guilty, and compliant. It’s the NGO-industrial complex that turns moral outrage into a revenue stream. It's the system that manufactures enemies to justify its own power. The [Arday affair](/arday) is the same pattern operating in academia — fabricate credentials, manufacture outrage against critics, and call it justice.
 
 ## Maranatha
 

@@ -84,7 +84,7 @@ White people are told they are the problem. White history is presented as a cata
 
 And if you question this? If you dare to say out loud what everyone can see? You are branded a racist. The word is turned upside down. The victim is the oppressor. The accuser is the accused. It is a complete inversion of reality, and it is being done with deliberate malice.
 
-This is not theoretical. In the [Nowak case](/nowak), a white teenager was handcuffed and left bleeding to death while police believed his Sikh attacker’s claim that *he* was the racist. The inversion was complete — the victim was the criminal, the killer was the victim.
+This is not theoretical. In the [Arday affair](/arday), a professor weaponised accusations of racism to get the police to investigate a journalist who simply asked questions. In the [Nowak case](/nowak), a white teenager was handcuffed and left bleeding to death while police believed his Sikh attacker's claim that *he* was the racist. The inversion was complete — the victim was the criminal, the killer was the victim.
 
 Look at what has happened on our own soil. An independent inquiry into systematic child exploitation across the UK — 250,000 young girls, targeted and tortured — and the institutions meant to protect them looked the other way. Why? Because they were afraid of being called racist. The same word that once named a genuine sin is now the chain that locks justice in its cell. [Read the inquiry report](/inquiry) and tell me the silence wasn’t purchased with the blood of girls.
 

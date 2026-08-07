@@ -32,7 +32,7 @@ Under Biden, the US Department of Defence rapidly became a joke.
 
 The fighting spirit was gone. Replaced by powerpoint presentations on inclusion.
 
-Then Peter Hegseth took over under Trump. **Unity at all costs. Meritocracy restored.** Aptly renamed the Department of War — because war is not diversity, and war is not inclusion. The DEI bureaucracy was ditched — sent to the scrapheap where it belongs. Standards returned. Competence was rewarded again.
+Then Peter Hegseth took over under Trump. **Unity at all costs. Meritocracy restored.** Aptly renamed the Department of War — because war is not diversity, and war is not inclusion. The DEI bureaucracy was ditched — sent to the scrapheap where it belongs. See what happens when it isn't — the [Jason Arday affair](/arday) at Cambridge. Standards returned. Competence was rewarded again.
 
 Now the US military is feared all over the world again. The Maduro mission in Venezuela — surgical, decisive, a masterclass in modern warfare. [Operation Epic Fury against Iran](/epic-fury) — devastating precision that sent a message the entire Middle East could not ignore.
 

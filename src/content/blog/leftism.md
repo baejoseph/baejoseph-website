@@ -83,7 +83,7 @@ We live in a world where the state has ballooned far beyond this mandate — red
 
 Left-wing ideology did not arrive from nowhere. It has a clear lineage.
 
-When the Russian Revolution failed to spark proletarian uprisings across Europe as Marx had predicted, Marxist intellectuals gathered in Frankfurt in the 1930s and produced something more dangerous than Bolshevism: **Critical Theory**. The Frankfurt School — these thinkers later migrated to Harvard and began what became a century-long conquest of Western academia.
+When the Russian Revolution failed to spark proletarian uprisings across Europe as Marx had predicted, Marxist intellectuals gathered in Frankfurt in the 1930s and produced something more dangerous than Bolshevism: **Critical Theory**. The Frankfurt School — these thinkers later migrated to Harvard and began what became a century-long conquest of Western academia. The [Jason Arday affair](/arday) is one of its fruits.
 
 Classical Marxism divided humanity along one axis — economic class (bourgeoisie vs. proletariat). Critical Theory multiplied the axes: gender, race, sexual orientation, religion. Now everyone could be sorted into oppressors and oppressed. The result is a worldview that abolishes individual uniqueness and dignity. Every person is reduced to their group identities and seen purely as a victim of systemic forces.
 
