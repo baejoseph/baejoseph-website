@@ -84,8 +84,6 @@ The real work is left to a shrinking productive minority forced to carry everyon
 
 Maranatha. This deep rot will only truly be fixed when the Rightful Ruler returns and establishes justice with an iron sceptre.
 
-![Arday meme 1](/assets/arday_1.jpg)
-
 ![Arday meme 2](/assets/arday_2.jpg)
 
 ![Arday meme 3](/assets/arday_3.jpg)
@@ -95,3 +93,5 @@ Maranatha. This deep rot will only truly be fixed when the Rightful Ruler return
 ![Arday meme 5](/assets/arday_5.jpg)
 
 ![Arday meme 6](/assets/arday_6.jpg)
+
+![Arday meme 1](/assets/arday_1.jpg)
