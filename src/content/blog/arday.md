@@ -78,12 +78,10 @@ The college masters. The senior figures who cried racism. The ones who signed th
 
 Or elite institutions will only confirm what every ordinary person already suspects: that they prioritise ideology over truth. Self-image over public trust. Narrative over evidence.
 
-The Jason Arday episode is a perfect microcosm of a Western system rotting under the weight of human deadwood. Not just academia. Not just wokeness, welfare bureaucracies, "learning" centres, or the laptop manager class exposed during Covid. An entire civilisation in which millions contribute nothing, produce nothing, and solve nothing — while participating in an elaborate theatre of fake productivity designed to conceal their complete uselessness.
+The Jason Arday episode is a perfect microcosm of a Western system rotting under the weight of human deadwood. Not just academia. Not just wokeness, welfare bureaucracies, "learing" centres, or the laptop manager class exposed during Covid. An entire civilisation in which millions contribute nothing, produce nothing, and solve nothing — while participating in an elaborate theatre of fake productivity designed to conceal their complete uselessness.
 
 The real work is left to a shrinking productive minority forced to carry everyone else.
 
 Maranatha. This deep rot will only truly be fixed when the Rightful Ruler returns and establishes justice with an iron sceptre.
 
----
 
-_This is not a story about race. It is a story about truth. And in the end, truth does not care about your identity. It only cares about your accuracy._
