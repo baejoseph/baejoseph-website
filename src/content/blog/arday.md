@@ -1,5 +1,5 @@
 ---
-title: "🎓 The Arday Affair"
+title: "🎓 The Arday Fiasco"
 date: "2026-08-06"
 lang: "en"
 slug: "arday"
@@ -84,4 +84,6 @@ The real work is left to a shrinking productive minority forced to carry everyon
 
 Maranatha. This deep rot will only truly be fixed when the Rightful Ruler returns and establishes justice with an iron sceptre.
 
+![Arday meme 1](/assets/arday_1.jpg)
 
+![Arday meme 2](/assets/arday_2.jpg)
