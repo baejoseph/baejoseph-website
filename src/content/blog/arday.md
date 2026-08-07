@@ -94,4 +94,4 @@ Maranatha. This deep rot will only truly be fixed when the Rightful Ruler return
 
 ![Arday meme 6](/assets/arday_6.jpg)
 
-![Arday meme 1](/assets/arday_1.jpg)
+[![Arday meme 1](/assets/arday_1.jpg)](/sober)
