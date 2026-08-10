@@ -27,7 +27,7 @@ Scotland tells the same story. For centuries, the Highland aristocracy feasted o
 
 Go back further—to ancient Greece and Rome. The slave class was deliberately undernourished. Not starved to death, but kept in a state of low-grade depletion. Weak enough to be controlled. Strong enough to pull an oar. The ruling philosophers understood what we have forgotten: the body is political. A strong, well-fed man is dangerous. A malnourished, metabolically compromised one is manageable.
 
-Now look at today. [Butter](/butter/) is vilified by the medical establishment. Red meat is linked—via corrupt and industry-funded studies—to cancer and heart disease. Meanwhile, [seed oils](/oils/), the laboratory-synthesised byproducts of the petrochemical industry, are certified heart-healthy by every major dietetic body. The population is being [poisoned](/poison/) not with a single dramatic toxin but with a thousand small ones, administered through processed food, contaminated water, synthetic cookware, and a medical establishment that has been thoroughly captured by pharmaceutical interests. And the great majority have no idea it is happening, because the same institutions that profit from their sickness control the information ecosystem that shapes their beliefs.
+Now look at today. [Butter](/butter) is vilified by the medical establishment. Red meat is linked—via corrupt and industry-funded studies—to cancer and heart disease. Meanwhile, [seed oils](/oils), the laboratory-synthesised byproducts of the petrochemical industry, are certified heart-healthy by every major dietetic body. The population is being [poisoned](/poison) not with a single dramatic toxin but with a thousand small ones, administered through processed food, contaminated water, synthetic cookware, and a medical establishment that has been thoroughly captured by pharmaceutical interests. And the great majority have no idea it is happening, because the same institutions that profit from their sickness control the information ecosystem that shapes their beliefs.
 
 This is not incompetence. It is the Norman Forest Law, updated for modernity.
 
@@ -41,7 +41,7 @@ John Wycliffe translated the New Testament into English in the 1380s and died un
 
 The pattern is identical. Control the food. Chain the Bible. Keep the people dependent, weak, and intermediated. A saint who can read Scripture for himself and eat well is more dangerous to corrupted power than an army.
 
-And yet most saints today — including card-carrying Bible-believers — remain daily consumers of exactly this poison in another form: [the corrupt mainstream media](/sober/). The intermediary has changed; the dependency has not. Rome chained the Bible; the BBC and CNN simply poison the mind that reads it.
+And yet most saints today — including card-carrying Bible-believers — remain daily consumers of exactly this poison in another form: [the corrupt mainstream media](/sober). The intermediary has changed; the dependency has not. Rome chained the Bible; the BBC and CNN simply poison the mind that reads it.
 
 ### The Second Amendment and the Porcupine
 
@@ -65,11 +65,11 @@ Paul was not speaking in metaphor when he told the Corinthians that our weapons 
 
 But those weapons are only effective if we use them. And the enemy knows it.
 
-The same logic that chains Bibles and confiscates guns operates in the spiritual realm. The church is pressured—subtly, persistently, from a thousand directions—to become tame. To be therapeutic rather than prophetic. To replace [fervent, corporate prayer](/cry-out/) with programmes, counselling, and comfortable weekly gatherings. To treat [fasting](/2026-fast/) as an extreme practice for mystics rather than the standard discipline of the Christian life that Jesus assumed when he said *“when you fast”*—not *“if.”*
+The same logic that chains Bibles and confiscates guns operates in the spiritual realm. The church is pressured—subtly, persistently, from a thousand directions—to become tame. To be therapeutic rather than prophetic. To replace [fervent, corporate prayer](/cry-out) with programmes, counselling, and comfortable weekly gatherings. To treat [fasting](/2026-fast) as an extreme practice for mystics rather than the standard discipline of the Christian life that Jesus assumed when he said *“when you fast”*—not *“if.”*
 
 A church that does not fast is a church without one of its primary weapons. A church that does not cry out in prayer is a church that has quietly handed over its arms. It is disarmed—by comfort, by respectability, by the slow erosion of expectation that God still moves in response to desperate, persistent intercession.
 
-The same logic extends to our minds. When AI systems silently edit your prompts—what Anthropic calls “Graceful Degradation,” what I call [silent sabotage](/fable/)—they are doing to your thoughts what the Normans did to the game and the clergy did to the Bible. Controlling what you can think is the ultimate expression of control. And the most insidious form is the one you never see coming.
+The same logic extends to our minds. When AI systems silently edit your prompts—what Anthropic calls “Graceful Degradation,” what I call [silent sabotage](/fable)—they are doing to your thoughts what the Normans did to the game and the clergy did to the Bible. Controlling what you can think is the ultimate expression of control. And the most insidious form is the one you never see coming.
 
 We cannot afford to be disarmed. Not now. Not in this moment.
 
@@ -77,4 +77,4 @@ The Normans took the game. The aristocracy kept the venison. The clergy chained 
 
 The answer, in every era, is the same: refuse.
 
-Eat the meat. [Read the Word](/bible-app/). Keep your weapons. Pray without ceasing. Fast with purpose. Let the strongholds fall. And [celebrate the heroics](/heroics/).
+Eat the meat. [Read the Word](/bible-app). Keep your weapons. Pray without ceasing. Fast with purpose. Let the strongholds fall. And [celebrate the heroics](/heroics).
