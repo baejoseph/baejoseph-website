@@ -1,6 +1,6 @@
 ---
 title: "⌨️ I Built Three Typing Games — And They’re Obsessed"
-date: 2026-08-10
+date: "2026-08-10"
 tags: ["tech", "family"]
 ---
 
