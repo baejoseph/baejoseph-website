@@ -1,9 +1,7 @@
 ---
 title: "⌨️ I Built Three Typing Games — And They’re Obsessed"
-description: "Three keyboard typing games, one mission: get children touch-typing. Poké Typing, Type The Flag, and Typecraft — and a healthy rivalry stretching from London to California."
 date: 2026-08-10
 tags: ["tech", "family"]
-pairedSlug: ""
 ---
 
 I launched three typing games in quick succession.
