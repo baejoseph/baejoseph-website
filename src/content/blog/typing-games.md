@@ -16,6 +16,8 @@ So I built what would actually get them to practice.
 
 ## Poké Typing
 
+![Poké Typing — Pokémon-themed typing game](/assets/typing-games-poke.jpg)
+
 First came [**pkmtype.com**](https://pkmtype.com).
 
 Pokémon themed typing. Because nothing motivates a child like the promise of battling with Pikachu while their fingers learn the QWERTY layout they’ve been dodging for years.
@@ -26,6 +28,8 @@ They didn’t just play it. They **camped** it.
 
 ## Type The Flag
 
+![Type The Flag — flag recognition typing game](/assets/typing-games-flag.jpg)
+
 Second was [**typetheflag.com**](https://typetheflag.com).
 
 This one kills two birds with one stone. Children learn to type *and* recognise every country flag in the world. Geography education disguised as a speed challenge.
@@ -33,6 +37,8 @@ This one kills two birds with one stone. Children learn to type *and* recognise 
 The results? My kids now walk around naming flags they see on telly, in magazines, on other people’s luggage at airport departures. **It stuck.**
 
 ## Typecraft
+
+![Typecraft — Minecraft-themed typing game](/assets/typing-games-mc.jpg)
 
 Third — [**typecraft.uk**](https://typecraft.uk).
 
