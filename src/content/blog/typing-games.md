@@ -19,7 +19,7 @@ So I built what would actually get them to practice.
 
 ## Poké Typing
 
-![Poké Typing — Pokémon-themed typing game](/assets/typing-games-poke.jpg)
+[![Poké Typing — Pokémon-themed typing game](/assets/typing-games-poke.jpg)](https://pkmtype.com)
 
 First came [**pkmtype.com**](https://pkmtype.com).
 
@@ -29,7 +29,7 @@ It works exactly like the classic Pokémon Typing Adventure Game for Nintendo DS
 
 ## Type The Flag
 
-![Type The Flag — flag recognition typing game](/assets/typing-games-flag.jpg)
+[![Type The Flag — flag recognition typing game](/assets/typing-games-flag.jpg)](https://typetheflag.com)
 
 Second was [**typetheflag.com**](https://typetheflag.com).
 
@@ -39,7 +39,7 @@ The results? My kids now know not only the flags of countries but also the capit
 
 ## Typecraft
 
-![Typecraft — Minecraft-themed typing game](/assets/typing-games-mc.jpg)
+[![Typecraft — Minecraft-themed typing game](/assets/typing-games-mc.jpg)](https://typecraft.uk)
 
 Third — [**typecraft.uk**](https://typecraft.uk).
 
