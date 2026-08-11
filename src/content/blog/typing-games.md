@@ -65,3 +65,13 @@ Touch typing is not just a skill. It’s **fluency** — the difference between 
 I’m so thankful that God gave me the idea, the ability to build these, and the opportunity to see children genuinely enjoying something that will serve them for the rest of their lives.
 
 **Praise the Lᴏʀᴅ** — for the little wins, for the unexpected competitions, and for the art of typing that I prayed wouldn’t be lost to another generation of two-finger peckers.
+
+![typing-games-6](/assets/typing-games-6.jpg)
+
+![typing-games-7](/assets/typing-games-7.jpg)
+
+![typing-games-8](/assets/typing-games-8.jpg)
+
+![typing-games-9](/assets/typing-games-9.jpg)
+
+![typing-games-10](/assets/typing-games-10.jpg)
