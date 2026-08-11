@@ -1,16 +1,16 @@
 ---
-title: "⌨️ I Built Three Typing Games — And They’re Obsessed"
+title: "⌨️ I Built Three Typing Games"
 date: "2026-08-10"
 tags: ["tech", "family"]
 ---
 
 I launched three typing games in quick succession.
 
-Not because I wanted to. Because I had a problem — and it’s one most parents don’t even notice until it’s too late.
+In the age of iPads and smart phones,
 
 **Children have stopped learning to type.**
 
-Not “type with two fingers and pray.” Not “hunt and peck like a confused woodpecker.” I mean actual **touch typing** — all ten fingers, home row, the whole lost art of it.
+Not “type with two thumbs on a touch screen.” Not “hunt and peck like a confused woodpecker.” I mean actual **touch typing** — all ten fingers, home row, the whole lost art of it.
 
 So I built what would actually get them to practice.
 
@@ -20,11 +20,9 @@ So I built what would actually get them to practice.
 
 First came [**pkmtype.com**](https://pkmtype.com).
 
-Pokémon themed typing. Because nothing motivates a child like the promise of battling with Pikachu while their fingers learn the QWERTY layout they’ve been dodging for years.
+Pokémon themed typing. This is actually how it all began, [over two years ago](/poke). 
 
-It works exactly like the classic Pokémon battles — but you type the words to execute moves. Faster typing means faster attacks. The mechanic teaches speed *and* accuracy simultaneously.
-
-They didn’t just play it. They **camped** it.
+It works exactly like the classic Pokémon Typing Adventure Game for Nintendo DS — you type the words to catch the mons. Begin in Kanto (Gen 1) to maximise the nostalgia factor. Faster typing means you move to the next gen, up to Unova (Gen 5). Gen 1 to Gen 5 only: a feature, not a bug, since Pokémon peaked in Gen 5.
 
 ## Type The Flag
 
@@ -34,7 +32,7 @@ Second was [**typetheflag.com**](https://typetheflag.com).
 
 This one kills two birds with one stone. Children learn to type *and* recognise every country flag in the world. Geography education disguised as a speed challenge.
 
-The results? My kids now walk around naming flags they see on telly, in magazines, on other people’s luggage at airport departures. **It stuck.**
+The results? My kids now know not only the flags of countries but also the capitals and the national animals of each nation, sorted by Continents. I have also finally learned where all the African countries are and their flags. Also see below but this is where I realised everything is political.
 
 ## Typecraft
 
@@ -44,15 +42,15 @@ Third — [**typecraft.uk**](https://typecraft.uk).
 
 Minecraft themed. Because if Pokémon doesn’t hook them, Minecraft certainly will.
 
-Same concept: type words to survive, build, and progress. The blocky aesthetic is pure Minecraft, and the typing mechanics are identical to Poké Typing — so skills transfer between all three games.
+Same concept: type words to survive, catch, and progress. The blocky aesthetic is pure Minecraft, even down to the fonts — I think showing the recipes for each craftable item is a nice touch.
 
 ## The Real Win: California vs London
 
 Here’s what I didn’t expect.
 
-My nephews in California found the games. Then they saw the **global leaderboards**.
+I sent the URLs to my nephews and nieces in California. Then they saw the **global halls of fame** (top 10 scores).
 
-Now there’s a **healthy competition** running between London and California, with both sets of kids determined to crack the global top ten scores.
+Now there’s a **healthy competition** running between London and Irvine, with both sets of kids determined to crack the global leaderboards.
 
 *That’s* when I knew I’d cracked something.
 
@@ -64,14 +62,23 @@ Touch typing is not just a skill. It’s **fluency** — the difference between 
 
 I’m so thankful that God gave me the idea, the ability to build these, and the opportunity to see children genuinely enjoying something that will serve them for the rest of their lives.
 
-**Praise the Lᴏʀᴅ** — for the little wins, for the unexpected competitions, and for the art of typing that I prayed wouldn’t be lost to another generation of two-finger peckers.
+## Easter Eggs in Type the Flags
 
-![typing-games-6](/assets/typing-games-6.jpg)
+Below are some screenshots from [type the flag](https://typetheflag.com) game:
 
-![typing-games-7](/assets/typing-games-7.jpg)
+![Britain](/assets/typing-games-6.jpg)
+The official UN name “United Kingdom” is too long. I also chose against “Great Britain”, because remember, [Britain](/reckoning) [right](/abortion) [now](/london) [is](/nowak) [not](/arday) [great](/halal) [at all](/hr): [it](/asylum) [is](/restore) [not](/fabian) [a serious country](/inquiry). 
 
-![typing-games-8](/assets/typing-games-8.jpg)
+![Korea](/assets/typing-games-7.jpg)
+Korea. Not South Korea. Because I get to make the rules for my game.
 
-![typing-games-9](/assets/typing-games-9.jpg)
+![Israel](/assets/typing-games-8.jpg)
+Showing the correct borders. Because the UN can go screw themselves.
 
-![typing-games-10](/assets/typing-games-10.jpg)
+![Taiwan](/assets/typing-games-9.jpg)
+Taiwan. Not Chinese Taipei. Because again, the CCP can go screw themselves. Similarly for Hong Kong and Macao, I got rid of the “SAR China” that the UN saw fit to append. Go away.
+
+![Iran](/assets/typing-games-10.jpg)
+Notice the flag. It is not the Islamic Terror Regime one that the UN insists on. The rightful lion of [Persia](/Iran). Because this is [propethic certainty](/epic-fury).
+
+Maranatha! Come, Lord Jesus.
