@@ -2,7 +2,7 @@
 title: "⌨️ I Built Three Typing Games"
 date: "2026-08-10"
 lang: "en"
-featuredImage: ""
+featuredImage: "/assets/typing-games-hero.jpg"
 tags: ["tech", "family"]
 pairedSlug: "타이핑게임"
 ---
