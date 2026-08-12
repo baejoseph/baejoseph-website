@@ -5,7 +5,7 @@ slug: "occa-ko"
 lang: "ko"
 pairedSlug: "occa"
 featuredImage: "/assets/occa-2026.jpg"
-tags: ["증언", "신학"]
+tags: ["testimony", "theology"]
 ---
 
 2026년 7월 14일부터 18일까지, 영국 옥스퍼드에서 OCCA(Oxford Centre for Christian Apologetics, 옥스퍼드 기독교 변증학 센터)가 매년 개최하는 여름학교에 참석했다. 올해 초 처남댁이 기도하던 중, 처남과 내가 함께 참석하면 얻을 것이 많을 것 같다며 소개해 주었고, 평소 변증론에 깊은 관심이 있던 나는 기쁜 마음으로 휴가를 냈다. 이번 참석을 가능하게 해 주신 부모님(집에서 아이들을 봐주셨다)과 처남댁에게 감사를 표한다.
