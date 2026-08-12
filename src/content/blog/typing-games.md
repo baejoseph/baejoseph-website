@@ -65,7 +65,7 @@ Touch typing is not just a skill. It’s **fluency** — the difference between 
 
 I’m so thankful that God gave me the idea, the ability to build these, and the opportunity to see children genuinely enjoying something that will serve them for the rest of their lives.
 
-## Easter Eggs in Type the Flags
+## Easter Eggs in Type the Flag
 
 Below are some screenshots from [type the flag](https://typetheflag.com) game:
 
