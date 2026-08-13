@@ -13,7 +13,7 @@ pairedSlug: "에픽퓨리"
 
 On 28 February 2026, a joint United States–Israel precision operation — codenamed **Epic Fury** — decapitated the leadership of the Islamic Republic of Iran. Forty-seven years of clerical tyranny, exported terrorism, and apocalyptic posturing ended not with a grinding ground war but with surgical, technology-enabled strikes of breathtaking precision.
 
-[I called this in June 2025](/iran/). I wrote that a regime change in Iran was not only plausible — it was **prophetically necessary**. I said the Ayatollahs had to go before Ezekiel 38 could unfold. And here we are.
+[I called this in June 2025](/iran). I wrote that a regime change in Iran was not only plausible — it was **prophetically necessary**. I said the Ayatollahs had to go before Ezekiel 38 could unfold. And here we are.
 
 Let me try to process what this means — for Iran, for America, for prophecy, and for the Church.
 
@@ -25,7 +25,7 @@ Iranians all over the world are celebrating. Let that sink in. Not just dissiden
 
 The regime that murdered tens of thousands of its own citizens — many of them gunned down by mercenary forces imported from abroad, because Persian soldiers refused to shoot their own people — is gone. The regime that funded Hamas, armed Hezbollah, bankrolled the Houthis, and turned Iran’s young generation into collateral for an apocalyptic theocratic dream is gone.
 
-Even the [mainstream media](/sober/) — the press that viscerally hates Donald Trump — is having to cover this. There is no way to spin it. The Islamic Republic is finished.
+Even the [mainstream media](/sober) — the press that viscerally hates Donald Trump — is having to cover this. There is no way to spin it. The Islamic Republic is finished.
 
 May the people of Iran take back their country and their freedom. May Iranian patriots from every corner of the diaspora pour back into that beautiful, ancient nation and help rebuild it. Persia is one of the great civilisations of human history. She deserves better than mullahs with blood on their hands.
 
@@ -39,13 +39,13 @@ Before anything else, let us acknowledge who this victory truly belongs to.
 
 The Christians of Iran — the underground church, the house churches that have grown explosively under persecution — have been fasting and praying for decades. They prayed for their nation. They prayed under threat of imprisonment, torture, and death. God heard them.
 
-**Praise God.** This is what answered prayer looks like on a geopolitical scale. Do not let the [political commentary](/vivek/) crowd out the theological reality: the God of Abraham, Isaac, and Jacob moves in history. He always has. He always will.
+**Praise God.** This is what answered prayer looks like on a geopolitical scale. Do not let the [political commentary](/vivek) crowd out the theological reality: the God of Abraham, Isaac, and Jacob moves in history. He always has. He always will.
 
 —-
 
 ### On Donald J. Trump
 
-Some of the supposed character “flaws” of Donald Trump are precisely those qualities needed to be a courageous and bold global leader. [I have written about this before.](/courage/) He is not beholden to the castrated political and academic classes, so he simply acts out of conviction. The world owes him a significant debt.
+Some of the supposed character “flaws” of Donald Trump are precisely those qualities needed to be a courageous and bold global leader. [I have written about this before.](/courage) He is not beholden to the castrated political and academic classes, so he simply acts out of conviction. The world owes him a significant debt.
 
 What is dawning on me slowly — and I think on many others — is that perhaps no American leader since the dawn of modern warfare actually knew what to do with the military, or how to use it appropriately and effectively, with minimal cost and minimal casualty. Not one. Which is why the last eighty years have been one blundering disaster after another, punctuated by a few accidentally brilliant moments — usually achieved *in spite of*, not *because of*, brilliant strategic leadership.
 
@@ -61,7 +61,7 @@ Why the actual hell did we sacrifice so many great American men to the grinding 
 
 Part of the answer is technology. We did not have the drone capability we have today. GPS and satellite imagery were far less accurate. Precision strikes of this nature were simply impossible twenty years ago. People genuinely do not appreciate how far military technology has come, and how profoundly it changes the calculus of force.
 
-Part of the answer is darker: the forever wars were, at least in part, a machinery for laundering vast sums to the defence-contractor ecosystem in the DC–Virginia–Maryland corridor. Wars that were never meant to be won. Wars that were meant to *continue*. The military that ran them was gutted from within by the very ideology that now defines our politics — [DEI, diversity mandates, the destruction of meritocracy](/diversity/).
+Part of the answer is darker: the forever wars were, at least in part, a machinery for laundering vast sums to the defence-contractor ecosystem in the DC–Virginia–Maryland corridor. Wars that were never meant to be won. Wars that were meant to *continue*. The military that ran them was gutted from within by the very ideology that now defines our politics — [DEI, diversity mandates, the destruction of meritocracy](/diversity).
 
 Trump’s approach is different. The objective is to *win* — quickly, decisively, and with minimal American blood. Turns out wars are a lot simpler when that is actually the goal.
 
@@ -83,11 +83,11 @@ The lesson for every bad actor on earth is simple: **if Donald Trump says “unl
 
 Now we must not forget the prophetic angle — because I believe this is the most important lens through which to view these events.
 
-[I have written extensively on this](/eschatology/). But let me lay out what I believe the sequence looks like:
+[I have written extensively on this](/eschatology). But let me lay out what I believe the sequence looks like:
 
 **👉🏼 The Aftermath**
 
-- Iran’s regime collapses—Hezbollah, the Houthis, and Hamas lose their patron — funding dries up, momentum collapses—A power vacuum opens across the Shia crescent—Sunni Arab nations — Saudi Arabia, the UAE — move closer to Israel—A temporary, deceptive peace emerges
+- Iran’s regime collapses — Hezbollah, the Houthis, and Hamas lose their patron — funding dries up, momentum collapses — A power vacuum opens across the Shia crescent — Sunni Arab nations — Saudi Arabia, the UAE — move closer to Israel — A temporary, deceptive peace emerges
 
 **💥 The Prophetic Sequence**
 
@@ -102,9 +102,9 @@ Now we must not forget the prophetic angle — because I believe this is the mos
 
 The Church needs to wake up. We are living through the last days. The pieces are not merely falling into place — they are *snapping* into place, one by one, with extraordinary speed.
 
-[The Rapture is not a fairy tale — it is the next event on the prophetic calendar.](/rapture/) The question is not whether these things are unfolding. They are. The real question is: **are you ready?**
+[The Rapture is not a fairy tale — it is the next event on the prophetic calendar.](/rapture) The question is not whether these things are unfolding. They are. The real question is: **are you ready?**
 
-[Repent and believe](/allegiance/) in the Lord Jesus Christ. *Time is short.*
+[Repent and believe](/allegiance) in the Lord Jesus Christ. *Time is short.*
 
 —-
 
