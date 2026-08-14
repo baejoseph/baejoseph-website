@@ -57,13 +57,13 @@ But to *explore* it—to move past the first three levels into the forty-plus st
 >
 > 1 Corinthians 9:27 (NKJV)
 
-What does that cost look like in practice? Not the flesh living as it pleases. [Daily feeding on Scripture](/bible-app/) rather than treating it as optional. [Guarding what enters your eyes and ears](/sober/)—not from legalism, but because the heart follows its inputs. Unceasing prayer, genuinely joyful and thankful, not a ritual obligation. And above all: following the prompting of the Holy Spirit immediately, not after deliberation, not when it’s convenient.
+What does that cost look like in practice? Not the flesh living as it pleases. [Daily feeding on Scripture](/bible-app) rather than treating it as optional. [Guarding what enters your eyes and ears](/sober)—not from legalism, but because the heart follows its inputs. Unceasing prayer, genuinely joyful and thankful, not a ritual obligation. And above all: following the prompting of the Holy Spirit immediately, not after deliberation, not when it’s convenient.
 
-Jesus himself taught that certain depths are reached through [fasting](/fasting/), giving, and [sustained prayer](/cry-out/) (Matthew 6:2, 5, 16)—not to earn anything, but because these disciplines strip away the noise and make you present to what God is already doing.
+Jesus himself taught that certain depths are reached through [fasting](/fasting), giving, and [sustained prayer](/cry-out) (Matthew 6:2, 5, 16)—not to earn anything, but because these disciplines strip away the noise and make you present to what God is already doing.
 
 ### Still a Gift
 
-I want to be clear, because the analogy can mislead here. The full game does not become yours because you *deserve* it. [Grace is grace](/propitiation/)—unearned, unreserved, given freely in Christ. What I’m describing is not a transaction with God but a posture toward the gift already given.
+I want to be clear, because the analogy can mislead here. The full game does not become yours because you *deserve* it. [Grace is grace](/propitiation)—unearned, unreserved, given freely in Christ. What I’m describing is not a transaction with God but a posture toward the gift already given.
 
 The grace is total. The adventure is real. But most of us are still on level one, bouncing happily, never wondering what’s beyond the edge of the screen.
 
