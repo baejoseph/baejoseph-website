@@ -95,3 +95,11 @@ Maranatha. This deep rot will only truly be fixed when the Rightful Ruler return
 ![Arday meme 6](/assets/arday_6.jpg)
 
 [![Arday meme 1](/assets/arday_1.jpg)](/sober)
+
+---
+
+## Update — 14 August 2026
+
+Jason Arday has been found dead at his home in South London.
+
+If all the academics in Jason Arday’s life had told him the truth and just let him be a gym teacher, an amateur runner, and a local do-gooder, this very sad end would have been avoided.
