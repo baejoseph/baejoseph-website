@@ -30,3 +30,7 @@ This is apparently something the Jewish community has understood for a long time
 The Psalmist isn’t being poetic in the abstract here. He’s describing a *sensory* experience of Scripture—something that can be tasted. And I think God built that connection into us by design.
 
 So here’s what I’m committing to going forward: every time we gather as a family around the Word—evening devotions, memory verses on the school run, Bible time of any kind—the children will have something sweet in their hands. A small thing, maybe. But small things, done consistently, are how we form souls.
+
+It helps to have a daily reading plan that keeps the Word in front of us, so the devotions don’t depend on my willpower—I wrote about that in [daily bread](/daily-bread). And it fits naturally into how our family already approaches Scripture, as I laid out in [our family values](/values): devotions and memory verses on repeat, not just for us but for them.
+
+There’s something about a habit formed in the first decade that outlasts every argument you’ll ever make. I’ve written before about how the [Korean Presbyterian church](/journey) I grew up in formed me the same way—through repetition, liturgy, and habits older than my memory. This is the same mechanism. We’re just adding honey.
