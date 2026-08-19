@@ -11,11 +11,11 @@ tags: ["theology", "family"]
 
 > “Wives, submit to your own husbands, as to the Lord.”
 >
-> [Ephesians 5:22](/sarah-club/) (NKJV)
+> [Ephesians 5:22](/sarah-club) (NKJV)
 
 The same command appears three times in the New Testament—Ephesians 5:22, Colossians 3:18, 1 Peter 3:1. Three different letters, three different contexts, one consistent instruction. And yet this is perhaps the most avoided, apologised—for, and quietly buried verse in the modern evangelical church.
 
-Each passage pairs the wife’s command with a command to husbands: love your wives as Christ loved the Church. That pairing matters. But note what the Bible never says. It never instructs wives to love their husbands, nor does it command husbands to submit to their wives. This is not an accident or a cultural artefact—it reflects something true about [human nature](/self/) on both sides.
+Each passage pairs the wife’s command with a command to husbands: love your wives as Christ loved the Church. That pairing matters. But note what the Bible never says. It never instructs wives to love their husbands, nor does it command husbands to submit to their wives. This is not an accident or a cultural artefact—it reflects something true about [human nature](/self) on both sides.
 
 Women do not need a separate command to love; it comes naturally. What goes against a wife’s fallen nature is deference—yielding authority to her husband rather than seizing it for herself. Genesis 3:16 makes this explicit: the consequence of the Fall is that the woman’s desire will be *for* her husband, meaning to control and dominate him. The command to submit is God’s corrective to that fallen instinct, not a cultural imposition.
 
@@ -31,10 +31,10 @@ The Church has quietly reversed this priority. Today’s preaching puts almost a
 
 The consequences are visible. Men are disappearing from church. A husband who receives consistent disrespect at home while being told from the pulpit that he is the one failing will eventually stop showing up—to church, to family, to faith. The feminisation of the Church has not made it more loving; it has made it inhospitable to men and has left women without the biblical framework they need to build a marriage that holds.
 
-Returning to this teaching is not about hierarchy for its own sake. It is about obedience to a God who designed marriage and knows how it works. His commands are not a power play—they are a description of reality. Wives who submit and husbands who love sacrificially create the kind of home where [children are raised well](/rod/), faith is passed on, and the image of Christ and the Church is displayed to a watching world.
+Returning to this teaching is not about hierarchy for its own sake. It is about obedience to a God who designed marriage and knows how it works. His commands are not a power play—they are a description of reality. Wives who submit and husbands who love sacrificially create the kind of home where [children are raised well](/rod), faith is passed on, and the image of Christ and the Church is displayed to a watching world.
 
 That is the design. Let us return to it without apology.
 
 ---
 
-*Update (April 2026): I have since written a follow-up — [Upbringing and Marriage](/upbringing/) — which explores how wifely submission and parental discipline are not merely related but are, in the end, one and the same.*
+*Update (April 2026): I have since written a follow-up — [Upbringing and Marriage](/upbringing) — which explores how wifely submission and parental discipline are not merely related but are, in the end, one and the same.*
