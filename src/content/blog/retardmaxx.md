@@ -56,16 +56,16 @@ You have spent your life trying to do enough to matter. Do more, earn more, prov
 
 Christ walks in and flips the table. You don’t do to become a son. You are a son — bought, named, loved — before you lift a finger. Being comes first. The doing flows out of it, or it doesn’t come at all.
 
-That’s why Solomon, the wisest man who ever lived, chased wisdom to the end and came back with this: 
+That’s why Solomon, the wisest man who ever lived, chased wisdom to the end and came back with this:
 
-> “There is nothing better for a man than that he should eat and drink, and make his soul enjoy good in his labour. This also, I saw, was from the hand of God” 
-> Ecclesiastes 2:24 
+> “There is nothing better for a man than that he should eat and drink, and make his soul enjoy good in his labour. This also, I saw, was from the hand of God”
+> Ecclesiastes 2:24
 
 Don’t overthink it. Eat, work, rest, enjoy — it’s a gift from His hand. Retardmaxxing, three thousand years early.
 
 And it’s why Jesus really is the greatest mogger. He didn’t network. He didn’t grind. He didn’t optimise His personal brand. He was the Light, and men were drawn or undone just by standing near Him. “We beheld his glory” (John 1:14). He mogged the world not with a jawline but from a cross — a bleeding man who did nothing but hang there, and pulled all of history toward Him:
 
-> “And I, if I be lifted up from the earth, will draw all men unto me.” 
+> “And I, if I be lifted up from the earth, will draw all men unto me.”
 > John 12:32
 
 That is be, not do, taken to the bottom of the universe.
