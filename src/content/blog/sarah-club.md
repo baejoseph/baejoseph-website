@@ -28,4 +28,4 @@ My prayer is that this small beginning in Ealing would spread—London, Korea, t
 
 —-
 
-**Update:** I later wrote a fuller biblical treatment of this — [Wives, Submit to Your Husbands](/submit/).
+**Update:** I later wrote a fuller biblical treatment of this — [Wives, Submit to Your Husbands](/submit).
