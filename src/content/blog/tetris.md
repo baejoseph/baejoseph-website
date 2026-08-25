@@ -8,33 +8,25 @@ tags:
 pairedSlug: "테트리스"
 ---
 
-I have played Tetris for more than thirty years. Arcade cabinets in Seoul, a grey Game Boy on a school run in Harpenden, a browser tab kept open while a meeting runs long. That is a long time to watch falling blocks, and it has given me an insight that sounds strange at first: the neatest stacks are the ones that get you killed.
+I have played Tetris for more than thirty years. I grew up in Seoul until I was eleven, and I know the hum of an arcade. Then I came to Scotland for secondary school, where a grey Game Boy lived in my bag for years. Then Cambridge, then Yale, still with that one browser tab open while a meeting runs long. That is a long time to watch falling blocks, and it has given me an insight that sounds strange at first: the neatest stacks are the ones that get you killed.
 
-The beginner clears lines. The intermediate player learns to clear lines *where the game is heading*. But the player who actually survives to high scores is doing something more counterintuitive. She is deliberately building a stack that looks imperfect on purpose.
+Let me be clear about what I am writing about, because there is a lot of noise around Tetris. Building a clean, flat tower—smoothing the top so it sits even, edge to edge, all the way across—is a beginner and intermediate game. The real art is elsewhere. The expert opens the board up. She plays T spins, stacking on purpose, deliberately chaotic, in order to score bigger. It is truly an art form, and most people have not even heard of a T spin.
 
-## The one-gap strategy
+That is not what I am writing about. What I am writing about is simpler, and I think truer. It is about the top of the tower you are building—your nine-wide column of blocks—and why its surface has to carry a little imperfection, rather than being flat all the way across, if it is going to keep working.
 
-Here is the trick that separates the good from the great. Keep exactly one gap in your surface—just a single square hole, sitting where you expect the next awkward piece to land. Not two holes. Not a jagged mess. One.
+## The top surface has to give
 
-Why one? Because one gap is a *feature*, not a defect. It is a place for the game to give you something to do. When the S piece comes down, it slots into that gap and the surface stays workable. When the Z comes, it takes the gap and leaves a new one somewhere else. You are always feeding the stack instead of letting it feed itself.
+Here is the thing about building a tower. You are not building it for its own sake. You are building it so you have a surface to land the next piece on. And the next piece is not under your control. The random engine throws whatever it throws, and half the time it throws you an S or a Z.
 
-The moment you smooth everything flat, you have actually made things worse.
+So if your top surface is perfectly flat, edge to edge, you have exactly one problem: there is nowhere for that S or that Z to sit. A flat top is the one landscape where those pieces have to create two holes instead of closing one. They land, and they rip the surface open. You clear a line, and the gap that appears is in the worst possible place, because you had no spare slot to absorb it.
 
-## Why S and Z pieces need your mess
+But if the top carries a small, known imperfection—a little step, a single square that is not flush—the awkward piece lands, nests, and the surface stays roughly the shape you built it in. The imperfection is not the flaw. It is the thing that lets the tower keep working.
 
-There is a reason the S and Z pieces feel personal. They are the pieces that do not fit a perfect surface at all. A flat, flawless top is the one landscape where an S piece has nowhere to sit without creating two holes instead of closing one. Same with the Z.
+## The flat surface is the trap
 
-So when your stack is immaculate—every column even, every edge clean—those two pieces become poison. They land on your perfect surface and rip it open. You clear a line, and the gap that appears is in the worst possible place, because you had no spare slot to absorb it.
+And here is the quiet part that gets people. When a surface is perfectly flat, pieces do not settle. They slide. A block rolling across a level top lands somewhere you did not choose, and now you have a gap under it, and a gap is exactly what you were trying to avoid.
 
-A stack with a small, known imperfection is forgiving. The awkward piece lands, nests, and leaves the surface in roughly the same shape you built it in. A flawless stack is brittle. One bad drop and you are digging yourself out of a hole that did not exist two pieces ago.
-
-Perfection in Tetris is not a destination. It is a trap.
-
-## The surface becomes the enemy
-
-And here is the quiet part that gets people. When the surface is perfectly flat, pieces do not settle. They slide. A tetromino rolling across a level top lands somewhere you did not choose, and now you have a gap under it, and a gap is exactly what you were trying to avoid.
-
-The flat surface, which looked like safety, became the mechanism of your defeat. You built a landscape so smooth that the game itself started making your mistakes.
+The flat surface, which looked like safety, becomes the mechanism of your defeat. You build a landscape so smooth that the game itself starts making your mistakes.
 
 I have watched players lose on a completely clean board. Not because the board was hard. Because the board was too easy to look at. They trusted the flatness. The flatness lied.
 
@@ -42,9 +34,9 @@ I have watched players lose on a completely clean board. Not because the board w
 
 Now step back from the screen, and you will find the same shape in a boardroom, a pulpit, a classroom, a home.
 
-People who present themselves as flawless are doing to the people around them exactly what a perfect stack does to the S piece. They leave the awkward one nowhere to land.
+People who present themselves as flawless are doing to the people around them exactly what a flat top does to an S piece. They leave the awkward one nowhere to land.
 
-The leader who never admits a mistake, the teacher who never says “I don’t know,” the colleague whose portfolio is immaculate and whose door is closed—people stop bringing them the S and Z pieces. Not because they are unkind. Because it is safer to drop the awkward problem somewhere else, where someone might actually absorb it.
+The leader who never admits a mistake, the teacher who never says “I don’t know,” the colleague whose record is immaculate and whose door is closed—people stop bringing them the S and Z pieces. Not because they are unkind. Because it is safer to drop the awkward problem somewhere else, where someone might actually absorb it.
 
 Perfection is a surface that slides. People roll their real problems off of it and onto someone else, and the leader ends up alone on a clean board, losing a game that was already over.
 
@@ -56,8 +48,8 @@ And when a leader is honest about what he does not know, something else happens.
 
 ## The gap is not the flaw
 
-So no—do not build the immaculate stack. Do not build the immaculate résumé, the immaculate ministry, the immaculate self-presentation. It looks like strength from the outside and functions as a trap from the inside.
+So no—do not build the immaculate tower. Do not build the immaculate résumé, the immaculate ministry, the immaculate self-presentation. It looks like strength from the outside and functions as a trap from the inside.
 
-Build with one honest gap in it. A known weakness, spoken out loud. A failure you will say in a meeting. A question you will answer with “I don’t know, but I will find out.” That gap is not the flaw in the stack. That is the place where the game keeps working—where the S and Z pieces, the awkward ones, the real ones, can actually land and be absorbed without tearing the whole thing open.
+Build with one honest imperfection in it. A known weakness, spoken out loud. A failure you will name in a meeting. A question you will answer with “I don’t know, but I will find out.” That gap is not the flaw in the tower. It is the place where the game keeps working—where the S and Z pieces, the awkward ones, the real ones, can actually land and be absorbed without tearing the whole thing open.
 
-Thirty years of falling blocks taught me this: the stack that survives is never the prettiest one. It is the one with a place for the mess to sit.
+Thirty years of falling blocks taught me this: the tower that survives is never the prettiest one. It is the one with a place for the mess to sit.
