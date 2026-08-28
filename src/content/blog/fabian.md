@@ -28,7 +28,7 @@ The language changes. The project does not.
 
 This is what makes me most angry. They were never entirely secret. The wolf in sheep’s clothing was their *logo*. They said it plainly enough—gradual, patient, institutional capture. George Bernard Shaw, one of the founding Fabians, was explicit about the goal. Yet generation after generation, Britain looked away. We preferred to think of these people as harmless eccentrics debating socialism in Bloomsbury drawing rooms.
 
-We were not paying attention. And [the mainstream media wasn’t going to tell us](/sober/).
+We were not paying attention. And [the mainstream media wasn’t going to tell us](/sober).
 
 Jesus warned us: “Beware of false prophets, who come to you in sheep’s clothing but inwardly are ravenous wolves” (Matthew 7:15). The warning is not merely spiritual. It is political. It is sociological. Wolves do not announce themselves. That is the entire point.
 
@@ -40,9 +40,9 @@ What has 140 years of Fabian infiltration produced? Look at Britain in 2025 and 
 
 **Families attacked.** The tax system punishes marriage. Welfare rewards fatherlessness. Schools undermine parental authority at every turn. The Fabians understood early: strong families mean weak states. So the family must be weakened.
 
-**Faith and tradition erased.** [Christian heritage](/recon/) is mocked as colonialism. History is rewritten as a litany of shame. People rooted in faith and tradition are harder to manipulate—so they must be cut off from their roots. [This is the core of what I’ve called the Christian critique of the left](/leftism/): leftism is not merely a political programme but a spiritual one, aimed at displacing God with the state.
+**Faith and tradition erased.** [Christian heritage](/recon) is mocked as colonialism. History is rewritten as a litany of shame. People rooted in faith and tradition are harder to manipulate—so they must be cut off from their roots. [This is the core of what I’ve called the Christian critique of the left](/leftism): leftism is not merely a political programme but a spiritual one, aimed at displacing God with the state.
 
-**[Free speech](/aaron/) silenced.** Opinions are criminalised. People are jailed for words posted online. The Fabians don’t need a secret police when self-censorship does the work for them.
+**[Free speech](/aaron) silenced.** Opinions are criminalised. People are jailed for words posted online. The Fabians don’t need a secret police when self-censorship does the work for them.
 
 **Community destroyed.** Local councils stripped of power. Pubs, clubs and voluntary associations suffocated by regulation. People atomised and made dependent on central government. No mediating institutions. Only the individual and the state.
 
@@ -62,7 +62,7 @@ Everything channelled through government. Everything monitored. Everything ratio
 
 This is not the dystopian fantasy of a conspiracy theorist. This is the stated programme of the Fabian Society, pursued with extraordinary patience across 140 years. The Britain of 2025 is not an accident—it is a destination.
 
-[We are living through England’s long reckoning](/reckoning/). Psalm 101 is a psalm of the king who pledges to cut off the wicked from the city of the Lᴏʀᴅ. We are not there yet. The wicked are cutting off the righteous. But that cannot hold forever.
+[We are living through England’s long reckoning](/reckoning). Psalm 101 is a psalm of the king who pledges to cut off the wicked from the city of the Lᴏʀᴅ. We are not there yet. The wicked are cutting off the righteous. But that cannot hold forever.
 
 ### The Wolf Is in Downing Street
 
@@ -72,7 +72,7 @@ This is not incompetence. This is not chance. This is Fabianism. A deliberate be
 
 The wolf was always there. We just refused to see it.
 
-[The fight to take Britain back](/restore/) will not be won by a single election or a single man. It will be won by families who refuse to be atomised, by churches that refuse to be silenced, by men and women who are willing to name what is happening plainly and pay the cost of doing so. In Harpenden, as in every town across this island, that choice falls to ordinary people.
+[The fight to take Britain back](/restore) will not be won by a single election or a single man. It will be won by families who refuse to be atomised, by churches that refuse to be silenced, by men and women who are willing to name what is happening plainly and pay the cost of doing so. In Harpenden, as in every town across this island, that choice falls to ordinary people.
 
 The first step is seeing clearly. Stop calling this incompetence.
 
