@@ -22,7 +22,7 @@ This is not a fringe assessment. The Farm Animal Welfare Council concluded that 
 
 The animals cannot lobby. They cannot vote. They cannot accuse their advocates of abandoning them. So their advocates did.
 
-## The Pastoral as [Theology](/biblical-political-vision/)
+## The Pastoral as [Theology](/biblical-political-vision)
 
 There is a reason Constable painted the Stour Valley, and Turner painted the English countryside, and not a factory floor. The shepherd with his flock is not merely a picturesque feature of British life - it is theological. It is the closest thing our culture has to a sacred image.
 
@@ -30,11 +30,11 @@ Psalm 23 does not say “The Lᴏʀᴅ is my manager.” It says *shepherd*. And
 
 Genesis 1:28 gives humanity dominion over the animals - but the Hebrew *radah* is not the dominion of the conqueror. It is the dominion of the king who rules by protecting. Centuries of British animal husbandry developed within that framework, even after the theology faded from public view: you do not cause unnecessary suffering to an animal in your care. You honour the hierarchy of stewardship by exercising it well. You give it a clean death.
 
-To allow animals to have their throats slit while fully conscious - while lines from an alien theology are recited over them invoking a different god - is not [multiculturalism](/multiculturalism/). It is the replacement of one civilisational framework with another, conducted quietly, beneath the cover of tolerance.
+To allow animals to have their throats slit while fully conscious - while lines from an alien theology are recited over them invoking a different god - is not [multiculturalism](/multiculturalism). It is the replacement of one civilisational framework with another - the same dynamic I have exposed in [Diversity Is Not Our Strength](/diversity) - conducted quietly, beneath the cover of tolerance.
 
 ## The Left’s Sacred Blindspot
 
-The left’s silence on halal slaughter is not accidental. It follows a logic that produces all its other blindspots. Minority cultures [must be accommodated](/empathy/); any critique of Islamic practice is coded racism; therefore the animal welfare argument - however scientifically airtight - must be suppressed or qualified into irrelevance.
+The left’s silence on halal slaughter is not accidental. It follows a logic that produces all its other blindspots. Minority cultures [must be accommodated](/empathy); any critique of Islamic practice is coded racism - a mechanism I have traced in [Why Christians must reject Leftism](/leftism); therefore the animal welfare argument - however scientifically airtight - must be suppressed or qualified into irrelevance.
 
 The cognitive dissonance required to hold these positions simultaneously is extraordinary. An activist who has picketed a rodeo for animal cruelty, and who simultaneously defends the right to slit a lamb’s throat while reciting Islamic invocations, has not found a principled position. They have found a hierarchy of protected groups and are applying it mechanically. The lamb pays with its life for their ideological comfort.
 
