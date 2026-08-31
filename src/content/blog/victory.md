@@ -17,6 +17,8 @@ It’s a First World War memorial — stained glass from the old Baltic Exchange
 
 On my first visits I was drawn to those. The figures are beautiful. The virtues are good. Who doesn’t want Truth, Hope, Justice, Fortitude, Faith? I stood there admiring them, the craftsmanship, the quiet dignity of each one.
 
+![The Five Virtues](/assets/victory-five.jpeg)
+
 Then on the second visit I noticed the left side. The window there is bigger than all five of the others put together. It dwarfs them. And right in the middle of it, the word: Victory.
 
 That landed differently than I expected. I’d never thought of Victory as a virtue. But the glass makes the argument for you — the virtues are good, well and good, but without Victory they’re just decoration. Fortitude without the win is just suffering. Faith without the win is just empty. Hope without the win is just wishful thinking. As Paul says in 1 Corinthians 15:19, “If we have hoped in Christ only in this life, we are of all people most to be pitied.”
