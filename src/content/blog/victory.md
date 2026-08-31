@@ -25,7 +25,7 @@ That landed differently than I expected. I’d never thought of Victory as a vir
 
 ![Victory](/assets/victory-focus.jpeg)
 
-“But the fact is, Christ has been raised from the dead, the first fruits of those who are asleep.” Yes, Jesus already won that victory for us on that Sunday morning, exactly on the day of the Feast of First Fruits. That’s the victory we rest on — which is exactly why Revelation points to the blood of the Lamb. “They overcame him by the blood of the Lamb and by the word of their testimony, and they did not love their lives even unto death.” Overcame. That’s the word. Not endured. Not believed. Overcame.
+“But the fact is, Christ has been [raised from the dead](/bayes), the first fruits of those who are asleep.” Yes, Jesus already won that victory for us on that Sunday morning, exactly on the day of the Feast of First Fruits. That’s the victory we rest on — which is exactly why Revelation points to the blood of the Lamb. “They overcame him by the blood of the Lamb and by the word of their testimony, and they did not love their lives even unto death.” Overcame. That’s the word. Not endured. Not believed. Overcame.
 
 Paul knew it too. At the end of that long chapter on the resurrection, he breaks into a mocking poem:
 
