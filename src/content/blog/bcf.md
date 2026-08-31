@@ -1,5 +1,5 @@
 ---
-title: "🎓 The Big Church Festival"
+title: "🎪 The Big Church Festival"
 date: "2026-08-30"
 lang: "en"
 slug: "bcf"

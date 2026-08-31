@@ -1,5 +1,5 @@
 ---
-title: "🧱 Victory"
+title: "🏆 Victory"
 date: "2026-08-25"
 lang: "en"
 featuredImage: "/assets/victory-hero.jpeg"
