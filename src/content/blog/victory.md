@@ -23,6 +23,8 @@ Then on the second visit I noticed the left side. The window there is bigger tha
 
 That landed differently than I expected. I’d never thought of Victory as a virtue. But the glass makes the argument for you — the virtues are good, well and good, but without Victory they’re just decoration. Fortitude without the win is just suffering. Faith without the win is just empty. Hope without the win is just wishful thinking. As Paul says in 1 Corinthians 15:19, “If we have hoped in Christ only in this life, we are of all people most to be pitied.”
 
+![Victory](/assets/victory-focus.jpeg)
+
 “But the fact is, Christ has been raised from the dead, the first fruits of those who are asleep.” Yes, Jesus already won that victory for us on that Sunday morning, exactly on the day of the Feast of First Fruits. That’s the victory we rest on — which is exactly why Revelation points to the blood of the Lamb. “They overcame him by the blood of the Lamb and by the word of their testimony, and they did not love their lives even unto death.” Overcame. That’s the word. Not endured. Not believed. Overcame.
 
 Paul knew it too. At the end of that long chapter on the resurrection, he breaks into a mocking poem:
