@@ -30,7 +30,7 @@ Young men are starving for this. They are drowning in a culture that hates them,
 
 When the men come alive, the families follow. When fathers stand in the council of the mighty, their sons will not depart from it.
 
-So let the world keep its [soft](/empathy), [effeminate](/climate), [whimpering](/memes) [religion](/leftism-eng). [We will not bow](/courage). We will mock it, scorn it, and raise David’s banner again:
+So let the world keep its [soft](/empathy), [effeminate](/climate), [whimpering](/memes) [religion](/leftism). [We will not bow](/courage). We will mock it, scorn it, and raise David’s banner again:
 
 > “Blessed be the Lᴏʀᴅ my Rock, Who trains my hands for war, And my fingers for battle.”
 > 
