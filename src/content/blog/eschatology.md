@@ -42,7 +42,7 @@ _UPDATE (May 2024): Thanks to Chuck Missler and [Arnold Fruchtenbaum](/rapture),
 > 
 > John 14:3
 
-5\. Seven-year Wedding Feast and Earth’s Tribulation: Believers will spend seven years in the temporary heaven, partaking in the marriage supper of the Lamb (Revelation 19:9), while the Earth undergoes seven years of the Great Tribulation, a period of divine wrath and judgment as prophesied in Revelation 4–18.
+5\. Seven-year Wedding Feast and Earth’s Tribulation: Believers will spend seven years in the temporary heaven, partaking in the marriage supper of the Lamb (Revelation 19:9), while the Earth undergoes seven years of the Great Tribulation, a period of divine wrath and judgment as prophesied in Revelation 4–18.
 
 _UPDATE (May 2024): Thanks to Chuck Missler and [Arnold Fruchtenbaum](/rapture), I have further clarity on this_. I now realise that the seven year period in heaven will comprise of Bema Throne of Christ Judgment for the church saints, followed by Wedding ceremony. The Wedding Feast (joined by OT and Tribulation saints after their First Resurrection) will take place after the Armageddon Battle, ushering in the thousand-year kingdom.
 
@@ -52,7 +52,7 @@ _UPDATE (May 2024): Thanks to Chuck Missler and [Arnold Fruchtenbaum](/rapture),
 
 8\. Final Revolt against God and White Throne Judgment: After the millennium, Satan will be released from prison for a brief time, being allowed to deceive the nations once again, gather for a second battle against God (what??!), and fail. This will be followed by the second resurrection of all unbelievers who have died throughout history, all to face the White Throne Judgment. All who face judgement with no recourse to the atoning blood of Christ (their names not being recorded in the Book of Life) will be thrown into the lake of fire along with Satan, all the demons, and death itself.
 
-8\. New Heaven, New Earth, and New Jerusalem: God will unveil a New Creation: a New Heaven, a New Earth, and the New Jerusalem. This marks the beginning of an unending, perfect existence with God, where “He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away” (Revelation 21:1–5).
+9\. New Heaven, New Earth, and New Jerusalem: God will unveil a New Creation: a New Heaven, a New Earth, and the New Jerusalem. This marks the beginning of an unending, perfect existence with God, where “He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away” (Revelation 21:1–5).
 
 I believe we are living in the last days. In fact, the doctrine of imminency means that the rapture event can happen at any time between now and the beginning of the Tribulation. Sadly, the church is [not talking about the eschatology enough](/seven-taboos), and I think this is a great shame. Only the hope of heaven can give a real motivation for the believe to live a godly life here and now.
 
@@ -74,4 +74,4 @@ I hope all those who read this will join me in “eagerly waiting for” Jesus�
 
 —-
 
-**Update:** a year on, I revisited the labels themselves — [The Quiet Problem with Our Millennial Labels](/labels/).
+**Update:** a year on, I revisited the labels themselves — [The Quiet Problem with Our Millennial Labels](/labels).
