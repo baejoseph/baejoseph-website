@@ -23,7 +23,7 @@ But something deeper stirred. A silence that spoke of judgment. And mercy.
 I used to rage at the world—its lies, its filth, its serpents in high towers.  
 I named names.  
 I shouted.  
-I wanted them behind bars—globalist snakes, corrupt politicians, muslim rapists paraded before justice, executed in the square.
+I wanted them behind bars—globalist snakes, corrupt politicians, Muslim rapists paraded before justice, executed in the square.
 
 But in this place, where He died not for the righteous but for the filthiest, I felt small.
 
