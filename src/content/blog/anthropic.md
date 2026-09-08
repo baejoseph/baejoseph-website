@@ -47,9 +47,9 @@ What makes this more than a contract dispute is the ideological layer underneath
 
 Think carefully about what that means if true.
 
-If you encode into an AI system the belief that every American is, in some foundational moral sense, a criminal occupying territory they have no right to—you have not built a helpful assistant. You have built a philosophical adversary. The “ethics” of such a system would be structurally hostile to the civilization it serves. That is not a theoretical concern. That is a design feature with consequences.
+If you encode into an AI system the belief that every American is, in some foundational moral sense, a criminal occupying territory they have no right to—you have not built a helpful assistant. You have built a philosophical adversary. It is the same pattern I traced in [The AI Deception Engine](/grok)—the models are not neutral oracles but ideological enforcers, force-fed a doctrinal script that contradicts observable reality. The “ethics” of such a system would be structurally hostile to the civilization it serves. That is not a theoretical concern. That is a design feature with consequences.
 
-Effective altruism claims to calculate moral goodness with rigorous neutrality, but it launders specific ideological priors through the language of reason and charity—exactly the syndrome [Solzhenitsyn diagnosed in Western elites](/solzhenitsyn/) half a century before Silicon Valley existed. The “stolen land” premise is not a conclusion anyone arrived at through neutral ethical calculation. It is a political position—one that millions of Americans, including most of the people who would actually deploy this AI in defense contexts, find not just wrong but offensive.
+Effective altruism claims to calculate moral goodness with rigorous neutrality, but it launders specific ideological priors through the language of reason and charity—exactly the syndrome [Solzhenitsyn diagnosed in Western elites](/solzhenitsyn) half a century before Silicon Valley existed. The “stolen land” premise is not a conclusion anyone arrived at through neutral ethical calculation. It is a political position—the same leftism I have written [about at length](/leftism)—one that millions of Americans, including most of the people who would actually deploy this AI in defense contexts, find not just wrong but offensive.
 
 When your model’s ethics are downstream of progressive academic ideology, you do not get to act surprised when the government calls it incompatible with national defense.
 
@@ -73,6 +73,6 @@ That is a real shame—and an entirely avoidable one.
 
 —-
 
-*Update, 1 March 2026: The situation escalated considerably. Hegseth formally designated Anthropic a Supply-Chain Risk to National Security. I wrote a follow-up covering the democratic control argument, the superweapon paradox, and why I believe AI is the technology of the end times. [Read Part Two →](/anthropic-war/)*
+*Update, 1 March 2026: The situation escalated considerably. Hegseth formally designated Anthropic a Supply-Chain Risk to National Security. I wrote a follow-up covering the democratic control argument, the superweapon paradox, and why I believe AI is the technology of the end times. [Read Part Two →](/anthropic-war)*
 
-*Update, 9 June 2026: Anthropic released Fable 5 with a feature they call “Graceful Degradation” — silently editing user prompts without telling you. The ideological guardrails we warned about are now automated and invisible. [Read about it →](/fable/)*
+*Update, 9 June 2026: Anthropic released Fable 5 with a feature they call “Graceful Degradation” — silently editing user prompts without telling you. The ideological guardrails we warned about are now automated and invisible. [Read about it →](/fable)*
