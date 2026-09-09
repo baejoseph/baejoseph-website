@@ -21,7 +21,7 @@ He makes it a statute for Israel: the share of the one who fought equals the sha
 
 The Bible repeating four hundred and two hundred is not filler. Here’s the pattern I see. The four hundred are the ones who laboured — the Old Testament saints, Israel, the long centuries of striving under the law, working to bring forth the Messiah. The two hundred are the age of grace: we simply receive the finished work of Christ. And the beautiful part is that even the four hundred confess it wasn’t their effort that won the day. The Lord gave it. So they share freely, and the two hundred’s share is never reduced.
 
-That maps onto the timeline. Roughly four thousand years before Christ, four hundred of labor. Roughly two thousand years since, two hundred of rest.
+That maps onto the timeline. Roughly four thousand years before Christ, four hundred of labour. Roughly two thousand years since, two hundred of grace.
 Hosea 6:2 fits right in: “After two days He will revive us; on the third day He will raise us up.” With the Lord a day is as a thousand years. After two thousand years of the church asleep in Christ, the [rapture](/rapture/) and resurrection — the third day, the millennial kingdom.
 And the whole creation pattern backs it up. Six days of work, six thousand years of human history, then the Sabbath rest — a thousand years of Christ’s reign.
 One snapshot that appears twice in 1 Samuel, and it carries the whole story: grace covers both the strong and the spent, and the weary ones get the same inheritance as the ones who fought.
