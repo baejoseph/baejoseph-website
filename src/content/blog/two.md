@@ -25,4 +25,4 @@ What I’ve been realising lately is that the truths of the Bible often require 
 
 —-
 
-**Update:** I later went deeper on the eschatological language itself — [The Quiet Problem with Our Millennial Labels](/labels/).
+**Update:** I later went deeper on the eschatological language itself — [The Quiet Problem with Our Millennial Labels](/labels).
