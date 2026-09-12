@@ -40,7 +40,7 @@ The repeated teaching throughout the Bible is that to pray effectively, we must 
 
 Now, let’s look through the Bible.
 
-Leviticus 16:29–31 discusses the Day of Atonement, the most important feast, calling it the Sabbath of Sabbaths. A phrase is repeated twice: “afflict your souls”. The Jews understood this phrase to mean fasting, or humbling oneself. In Acts 27:9, this Day of Atonement is referred to as “the Fast”.
+Leviticus 16:29–31 discusses the [Day of Atonement](/feasts), the most important feast, calling it the Sabbath of Sabbaths. A phrase is repeated twice: “afflict your souls”. The Jews understood this phrase to mean fasting, or humbling oneself. In Acts 27:9, this Day of Atonement is referred to as “the Fast”.
 
 Every Israelite understood that the people needed to ”afflict their souls” to enjoy God’s atonement, that is, they needed to abstain from all food and water and humble themselves. The same principle applies to us today. While we can add nothing to Jesus’ finished work on the cross, we must humble ourselves to enjoy its benefits.
 

@@ -64,7 +64,7 @@ Paul uses “sleep” to describe the death of believers, indicating that while 
 
 In verses 51-52, Paul references the fourth (God’s trumpet), fifth (resurrection of dead church saints), and sixth (rapture of living church saints) stages of the rapture as listed above. During this sixth stage, we are caught up and instantly transformed into resurrection bodies.
 
-Some believers in a post-tribulation rapture equate the “last trumpet” in this passage to one of the seven trumpet judgments in Revelation 16–18, but this is incorrect. The Corinthians didn’t have the Book of Revelation (written about 30 years later), but instead they understood Paul’s reference to the “last trumpet” because he had taught them about the seven Jewish festivals. Throughout 1 Corinthians, Paul mentions the other festivals, expecting his readers to get the references without need for explanations:
+Some believers in a post-tribulation rapture equate the “last trumpet” in this passage to one of the seven trumpet judgments in Revelation 16–18, but this is incorrect. The Corinthians didn’t have the Book of Revelation (written about 30 years later), but instead they understood Paul’s reference to the “last trumpet” because he had taught them about the [seven Jewish festivals](/feasts). Throughout 1 Corinthians, Paul mentions the other festivals, expecting his readers to get the references without need for explanations:
 
 1.  Passover: Fulfilled by the Messiah’s death (1 Cor. 5:6–7)
 2.  Unleavened Bread: Fulfilled by the Messiah’s shedding of blood (1 Cor. 5:8)

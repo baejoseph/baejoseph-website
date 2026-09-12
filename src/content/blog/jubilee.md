@@ -7,7 +7,7 @@ tags: ["eschatology", "theology", "israel"]
 pairedSlug: "희년"
 ---
 
-Most of the prophetic watch community maps the fall feasts like this:
+Most of the prophetic watch community maps the [fall feasts](/feasts) like this:
 
 - Feast of Trumpets = rapture
 - Day of Atonement = second coming with the saints
