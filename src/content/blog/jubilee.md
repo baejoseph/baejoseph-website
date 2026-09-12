@@ -25,7 +25,7 @@ If the rapture is tied to Trumpets—a fixed date on the calendar—then imminen
 
 You can’t have that edge if the rapture only happens once a year. “Well, it’s the only feast where no one knows the day or hour because of the new moon”—sure, but that’s once a year. The rest of the year, the rapture is less likely. That’s not imminency. That’s a countdown.
 
-Amir Tsarfati’s 2024 mapping fixes the imminency issue by putting the second coming on Trumpets and Israel’s cry on Atonement ten days later. But Revelation 19 doesn’t give Jesus a ten-day gap. Israel cries “Baruch haba b’shem Adonai” and He comes down and immediately deals with the Armageddon army. No waiting period.
+[Amir Tsarfati’s 2024 mapping](https://beholdisrael.org/the-true-meaning-of-rosh-hashanah/) fixes the imminency issue by putting the second coming on Trumpets and Israel’s cry on Atonement ten days later. But Revelation 19 doesn’t give Jesus a ten-day gap. Israel cries “Baruch haba b’shem Adonai” and He comes down and immediately deals with the Armageddon army. No waiting period.
 
 **So here’s the realization—and Christian Widener has been teaching this for years.**
 
