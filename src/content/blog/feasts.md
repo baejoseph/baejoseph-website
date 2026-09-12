@@ -1,6 +1,6 @@
 ---
 title: "⛺ The Feasts of the Lᴏʀᴅ"
-date: "2026-09-12"
+date: "2026-09-10"
 lang: "en"
 featuredImage: "/assets/feasts.jpg"
 tags: ["eschatology", "theology", "israel"]
