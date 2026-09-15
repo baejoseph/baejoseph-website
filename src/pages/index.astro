@@ -36,36 +36,74 @@ function postHref(post: typeof posts[0]) {
   return '/' + wpSlug + '/';
 }
 
-// Build the hero pool: EN posts only, non-future, must have a featuredImage
+function cardTitle(title: string) {
+  return title
+    .replace(/\u201c/g, '"')
+    .replace(/\u201d/g, '"')
+    .replace(/\u2018/g, "'")
+    .replace(/\u2019/g, "'");
+}
+
+function toCard(post: typeof posts[0], label: string) {
+  return {
+    src:   (post.data.featuredImage as string) || '/assets/intro.jpg',
+    href:  postHref(post),
+    title: cardTitle(post.data.title as string),
+    label,
+  };
+}
+
+const introEnPost = posts.find(p => p.slug === 'intro');
+const introKoPost = posts.find(p => p.slug === '소개');
+
+const introEn = introEnPost
+  ? toCard(introEnPost, 'Intro')
+  : { src: '/assets/intro.jpg', href: '/intro/', title: 'Who Is Joseph Bae?', label: 'Intro' };
+
+const introKo = introKoPost
+  ? toCard(introKoPost, '소개')
+  : { ...introEn, href: '/소개/', title: '조셉 배는 누구인가', label: '소개' };
+
+// Featured pool: EN posts only, non-future, must have a featuredImage.
+// Exclude the intro pair so Featured is never the same card as Intro.
 const heroPool = posts
   .filter(p =>
     p.data.featuredImage &&
     (p.data.lang ?? 'en') === 'en' &&
-    (p.data.date ?? '1970-01-01') <= buildDate
+    (p.data.date ?? '1970-01-01') <= buildDate &&
+    p.slug !== 'intro' &&
+    p.slug !== '소개'
   )
   .map(p => ({
     src:   p.data.featuredImage as string,
     href:  postHref(p),
-    title: (p.data.title as string)
-      .replace(/\u201c/g, '"')
-      .replace(/\u201d/g, '"')
-      .replace(/\u2018/g, "'")
-      .replace(/\u2019/g, "'"),
+    title: cardTitle(p.data.title as string),
+    label: 'Featured',
   }));
 ---
 
 <Layout title="Joseph Bae" description="Faith · Culture · Life — by Joseph Bae.">
-  <!-- Hero: background + href set by JS on every load -->
-  <a class="home-hero" id="home-hero" href="#" aria-label="Read featured post">
-    <div class="hero-text">
-      <h1>A Personal Blog</h1>
-      <p>Faith · Culture · Life · Maranatha 🕦️</p>
-    </div>
-    <div class="hero-featured">
-      <span class="hero-featured-label">Featured</span>
-      <span class="hero-featured-title" id="hero-featured-title"></span>
-    </div>
-  </a>
+  <!-- Hero carousel: Intro (default) → Featured (random). Signup card comes later. -->
+  <div
+    class="home-hero"
+    id="home-hero"
+    tabindex="0"
+    style={`background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.58)), url('${introEn.src}')`}
+  >
+    <button type="button" class="hero-nav hero-nav-prev" id="hero-prev" aria-label="Previous card">‹</button>
+    <a class="hero-link" id="hero-link" href={introEn.href} aria-label={introEn.title}>
+      <div class="hero-text">
+        <h1>A Personal Blog</h1>
+        <p>Faith · Culture · Life · Maranatha 🕦️</p>
+      </div>
+      <div class="hero-featured">
+        <span class="hero-featured-label" id="hero-label">{introEn.label}</span>
+        <span class="hero-featured-title" id="hero-featured-title">{introEn.title}</span>
+      </div>
+    </a>
+    <div class="hero-dots" id="hero-dots" role="tablist" aria-label="Hero cards"></div>
+    <button type="button" class="hero-nav hero-nav-next" id="hero-next" aria-label="Next card">›</button>
+  </div>
 
   <div class="lang-filter">
     <button class="lang-btn" onclick="filterLang('all',this)">All</button>
@@ -104,29 +142,101 @@ const heroPool = posts
   </div>
 </Layout>
 
-<script define:vars={{ heroPool }}>
-  // ── Random hero ──────────────────────────────────────────────────────────
-  (function () {
-    if (!heroPool || heroPool.length === 0) return;
+<script define:vars={{ heroPool, introEn, introKo }}>
+  // ── Hero carousel: Intro (0) → Featured (1). Signup will be (2). ──────────
+  const HERO_OVERLAY = 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.58))';
+  const featuredPick = (heroPool && heroPool.length > 0)
+    ? heroPool[Math.floor(Math.random() * heroPool.length)]
+    : null;
 
-    const pick = heroPool[Math.floor(Math.random() * heroPool.length)];
+  let heroIndex = 0;
+
+  function heroSlides(lang) {
+    const intro = lang === 'ko' ? introKo : introEn;
+    const slides = [intro];
+    if (featuredPick) {
+      slides.push({
+        ...featuredPick,
+        label: lang === 'ko' ? '추천' : 'Featured',
+      });
+    }
+    // Later: slides.push(signupCard)
+    return slides;
+  }
+
+  function renderHeroDots(slides, index) {
+    const dots = document.getElementById('hero-dots');
+    if (!dots) return;
+    dots.replaceChildren();
+    slides.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'hero-dot' + (i === index ? ' active' : '');
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', i === index ? 'true' : 'false');
+      btn.setAttribute('aria-label', `Hero card ${i + 1} of ${slides.length}`);
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        heroIndex = i;
+        renderHero();
+      });
+      dots.appendChild(btn);
+    });
+  }
+
+  function renderHero() {
+    const slides = heroSlides(activeLang);
+    if (slides.length === 0) return;
+    if (heroIndex >= slides.length) heroIndex = 0;
+    const slide = slides[heroIndex];
     const hero = document.getElementById('home-hero');
+    const link = document.getElementById('hero-link');
     const titleEl = document.getElementById('hero-featured-title');
+    const labelEl = document.getElementById('hero-label');
 
-    if (hero) {
-      // Preload image, then swap in once ready to avoid a flash of wrong image
-      const img = new Image();
-      img.onload = () => {
-        hero.style.backgroundImage =
-          `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.58)), url('${pick.src}')`;
-        hero.setAttribute('href', pick.href);
-      };
-      img.src = pick.src;
+    const apply = () => {
+      if (hero) {
+        hero.style.backgroundImage = `${HERO_OVERLAY}, url('${slide.src}')`;
+      }
+      if (link) {
+        link.setAttribute('href', slide.href);
+        link.setAttribute('aria-label', slide.title);
+      }
+      if (titleEl) titleEl.textContent = slide.title;
+      if (labelEl) labelEl.textContent = slide.label;
+      renderHeroDots(slides, heroIndex);
+    };
+
+    if (!slide.src) {
+      apply();
+      return;
     }
-    if (titleEl) {
-      titleEl.textContent = pick.title;
-    }
-  })();
+    const img = new Image();
+    img.onload = apply;
+    img.onerror = apply;
+    img.src = slide.src;
+  }
+
+  function stepHero(delta) {
+    const slides = heroSlides(activeLang);
+    if (slides.length < 2) return;
+    heroIndex = (heroIndex + delta + slides.length) % slides.length;
+    renderHero();
+  }
+
+  document.getElementById('hero-prev')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    stepHero(-1);
+  });
+  document.getElementById('hero-next')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    stepHero(1);
+  });
+  document.getElementById('home-hero')?.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); stepHero(-1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); stepHero(1); }
+  });
 
   // ── Tag expand/collapse ──────────────────────────────────────────────────
   function toggleTags(btn) {
@@ -169,6 +279,7 @@ const heroPool = posts
     activeLang = lang;
     try { sessionStorage.setItem(LANG_SESSION_KEY, lang); } catch {}
     updatePostVisibility();
+    renderHero();
   }
   window.filterLang = filterLang;
 
@@ -192,6 +303,7 @@ const heroPool = posts
     const btn = document.querySelector(`.lang-btn[onclick*="${lang}"]`);
     if (btn) btn.classList.add('active');
     updatePostVisibility();
+    renderHero();
   }
 
   // ── Tag links carry lang filter ───────────────────────────────────────────
@@ -231,23 +343,77 @@ const heroPool = posts
     margin: 0;
   }
 
-  /* ── Random hero link wrapper ── */
-  a.home-hero {
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
+  /* ── Hero carousel wrapper ── */
+  .home-hero {
+    position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 2rem 1.5rem;
     border-radius: 8px;
-    background-color: #1a1a2e; /* fallback while image loads */
+    background-color: #1a1a2e;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    overflow: hidden;
+  }
+  .hero-link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 3rem 3.25rem 2.15rem;
+    color: inherit;
     transition: opacity 0.2s;
   }
-  a.home-hero:hover {
+  .hero-link:hover {
     opacity: 0.92;
+  }
+  .hero-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.28);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .hero-nav:hover {
+    background: rgba(99,102,241,0.45);
+    border-color: rgba(165,180,252,0.7);
+  }
+  .hero-nav-prev { left: 0.55rem; }
+  .hero-nav-next { right: 0.55rem; }
+  .hero-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.45rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 0.35rem;
+    pointer-events: none;
+  }
+  .hero-dot {
+    pointer-events: auto;
+    width: 0.45rem;
+    height: 0.45rem;
+    padding: 0;
+    border-radius: 999px;
+    border: 0;
+    background: rgba(255,255,255,0.35);
+    cursor: pointer;
+  }
+  .hero-dot.active {
+    background: #fff;
   }
 
   /* ── Featured article strip at the bottom of the hero ── */
@@ -341,6 +507,7 @@ const heroPool = posts
   /* ── Responsive ── */
   @media (max-width: 640px) {
     .home-hero h1 { font-size: 1.5rem; }
-    .hero-featured-title { max-width: 220px; }
+    .hero-featured-title { max-width: 180px; }
+    .hero-nav { width: 2rem; height: 2rem; font-size: 1.2rem; }
   }
 </style>
