@@ -25,11 +25,11 @@ That inconsistency in the labels puzzled me for a while. But over time, I began 
 
 In conversation after conversation with believers who hold to amillennialism, I began to detect a pattern. Rarely—if never—did they speak with any sense of urgency about the **nearness** of Jesus’ return. In fact, quite often they seemed **dismissive**, treating it as something remote, theoretical, or perhaps for a far-off future. A thousand years from now, maybe.
 
-And sometimes, if I’m honest, there was something even more troubling. When the subject of Christ’s imminent return came up, it wasn’t uncommon to encounter discomfort, even frustration. It was as if the thought of Jesus returning soon was somehow interrupting their plans—the life they were building, the success they were pursuing, the pleasures they were enjoying.
+And sometimes, if I’m honest, there was something even more troubling. When the subject of Christ’s [imminent return](/jubilee) came up, it wasn’t uncommon to encounter discomfort, even frustration. It was as if the thought of Jesus returning soon was somehow interrupting their plans—the life they were building, the success they were pursuing, the pleasures they were enjoying.
 
 Of course, I don’t doubt their faith or their place in God’s family. They are my brothers and sisters. But I can’t help but wonder whether they’ve lost sight of what Paul called “the crown of righteousness, which the Lord will award… to all who have _[longed for His appearing](/rapture)_” (2 Timothy 4:8).
 
-Jesus, after all, described a certain kind of servant—a faithful _and_ wise one—who gives food to God’s household in due season. In 2025, I believe this means faithfully _and_ wisely helping the church recover its longing for the imminent return of our Bridegroom.
+Jesus, after all, described a certain kind of servant—a faithful _and_ wise one—who gives food to God’s household in due season. In 2025, I believe this means faithfully _and_ wisely helping the church recover its longing for the [imminent return](/endurance) of our Bridegroom.
 
 > “Blessed is that servant whom his Master finds so doing when He returns.”
 > 

@@ -23,7 +23,7 @@ The second biblical basis for the rapture is found in 1 Thessalonians 4. Paul fo
 3.  The archangel will call out (repeating the command).
 4.  The trumpet of God will sound (signalling the order to be carried out.)
 5.  The dead in Christ will rise first (believers who have received the baptism of the Holy Spirit become “church saints”; according to Daniel 12:2, Old Testament saints will be resurrected after the Tribulation).
-6.  “We who are alive and remain will be caught up together with them in the clouds.” Here, Paul includes himself when he says “we”, because he believed he might still be alive when Jesus returns, showing the **Doctrine of Imminence**—since the early church, we’ve been living in the “last days,” meaning the rapture event can happen at anytime.
+6.  “We who are alive and remain will be caught up together with them in the clouds.” Here, Paul includes himself when he says “we”, because he believed he might still be alive when Jesus returns, showing the **[Doctrine of Imminence](/jubilee)**—since the early church, we’ve been living in the “last days,” meaning the rapture event can happen at anytime.
 7.  “We will meet the Lord in the air, and so we will always be with the Lord.” The church, meeting Jesus in the air in glory, goes to heaven as promised in John 14.
 
 Doubting the rapture because the word “rapture” doesn’t appear in the Bible is like doubting the Trinity because the word “Trinity” doesn’t appear in the Bible. The Greek word for rapture, “harpazo”, means “to be caught up.” It is nothing more and nothing less.
@@ -133,6 +133,6 @@ This promise means the Church will be kept from the Great Tribulation, not merel
 
 In Revelation 19, the first 10 verses describe events in heaven before Jesus’ Second Coming in verses 11-21. The marriage of the Lamb (verses 6-7) involves the raptured church, clothed in “fine linen, bright and clean,” symbolising righteous acts validated at the Bema Seat of Christ.
 
-In conclusion, since the early Church, we have lived in the “last days,” and the rapture can happen at any moment. Our “blessed hope” is not watching for the Antichrist or worrying about the Great Tribulation but looking forward to “meeting the Lord in the air” and being with Him forever.
+In conclusion, since the early Church, we have lived in the “last days,” and the rapture can happen at any moment. [Keep the kit packed](/endurance). Our “blessed hope” is not watching for the Antichrist or worrying about the Great Tribulation but looking forward to “meeting the Lord in the air” and being with Him forever.
 
 > “Maranatha! Amen. Come, Lord Jesus!”

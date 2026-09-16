@@ -15,7 +15,7 @@ tags: ["theology", "eschatology", "family"]
 
 Here’s the short, unapologetic vision of who we are and what we’re about.
 
-We wake up every morning whispering, “Perhaps today,” because we’re [pre-trib](/rapture), [pre-mill](/labels), and pre-excited for the trumpet. “In a moment, in the twinkling of an eye… we shall be changed” (1 Corinthians 15:52). That **Blessed Hope** keeps the grin on our faces and the spring in our step.
+We wake up every morning whispering, “[Perhaps today](/jubilee),” because we’re [pre-trib](/rapture), [pre-mill](/labels), and pre-excited for the trumpet. “In a moment, in the twinkling of an eye… we shall be changed” (1 Corinthians 15:52). That **Blessed Hope** keeps the grin on our faces and the spring in our step.
 
 **Our one allegiance**? [King Jesus](/allegiance)—the Lion of Judah who died, was buried, and [rose again](/bayes) exactly “[according to the Scriptures](/evangelism)” (1 Corinthians 15:3–4).
 
@@ -31,6 +31,6 @@ Biblical hierarchy (husband → [wife](/submit) → [kids](/rod)); unashamed [ma
 
 We [tithe](/tithes) to the church, “parent-tithe” to honour mum and dad, and we train our children to [confess Christ boldly](/best-gift) because “whoever confesses Me before men, him I will also confess before My Father who is in heaven” (Matthew 10:32 NKJV).
 
-In short: we live ready, singing, disciplined, grateful, and expectant—because our King is coming [quickly](/will) to [rule from Jerusalem](/throne-of-david) for a thousand glorious years.
+In short: we [live ready](/endurance), singing, disciplined, grateful, and expectant—because our King is coming [quickly](/will) to [rule from Jerusalem](/throne-of-david) for a thousand glorious years.
 
 Maranatha!

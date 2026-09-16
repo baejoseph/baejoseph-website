@@ -54,7 +54,7 @@ _UPDATE (May 2024): Thanks to Chuck Missler and [Arnold Fruchtenbaum](/rapture),
 
 9\. New Heaven, New Earth, and New Jerusalem: God will unveil a New Creation: a New Heaven, a New Earth, and the New Jerusalem. This marks the beginning of an unending, perfect existence with God, where “He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away” (Revelation 21:1–5).
 
-I believe we are living in the last days. In fact, the doctrine of imminency means that the rapture event can happen at any time between now and the beginning of the Tribulation. Sadly, the church is [not talking about the eschatology enough](/seven-taboos), and I think this is a great shame. Only the hope of heaven can give a real motivation for the believe to live a godly life here and now.
+I believe we are living in the last days. In fact, the [doctrine of imminency](/jubilee) means that the rapture event can happen at any time between now and the beginning of the Tribulation. Sadly, the church is [not talking about the eschatology enough](/seven-taboos), and I think this is a great shame. Only the hope of heaven can give a real motivation for the believe to [live a godly life here and now](/endurance).
 
 In his second Epistle to Timothy, Paul, nearing the end of his life, declares:
 
