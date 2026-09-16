@@ -1,6 +1,6 @@
 ---
 title: "🚢 Rapture Ready"
-date: "2026-09-16"
+date: "2026-09-11"
 lang: "en"
 featuredImage: "/assets/endurance.jpg"
 tags: ["eschatology", "theology", "faith"]
