@@ -72,4 +72,4 @@ Trump calling this out—not just rhetorically but with a counter-move that expo
 
 We live in a time when evil is called good and good is called evil, when the people most loudly proclaiming their concern for the poor are the ones engineering the policies that impoverish them. Against that backdrop, a man who simply identifies the mechanism, names it, and dismantles it is genuinely rare—and genuinely valuable.
 
-God bless President Trump. And may the Lᴏʀᴅ continue to expose the globalist scum who have kept the world in manufactured disarray for far too long.
+God bless President Trump. And may the Lᴏʀᴅ continue to expose the globalist elite who have kept the world in manufactured disarray for far too long.
