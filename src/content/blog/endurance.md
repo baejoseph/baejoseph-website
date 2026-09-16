@@ -19,9 +19,9 @@ Not one of the twenty-eight *Endurance* men died.
 
 That is the church. That is us. That is the [pre-tribulation rapture](/rapture).
 
-The *Endurance* left England in 1914 to cross Antarctica. Ice crushed her in the Weddell Sea. She sank in November 1915. The men lived on the floes, then reached uninhabited Elephant Island on 15 April 1916 — first dry land in 497 days. No ships passed there. They had no radio.
+Sir Ernest Shackleton led the *Endurance* expedition (1914–17) to cross Antarctica. Ice crushed her in the Weddell Sea. She sank in November 1915. The men lived on the floes, then reached uninhabited Elephant Island on 15 April 1916 — first dry land in 497 days. No ships passed there. They had no radio.
 
-So on 24 April, Shackleton left in the *James Caird*. Five men with him: navigator Frank Worsley, Tom Crean, carpenter Harry McNish, Timothy McCarthy, John Vincent. Twenty—two left under Frank Wild, with that charge. They sailed eight hundred miles of the Drake Passage in sixteen days and hit South Georgia on 10 May. Shackleton, Worsley and Crean then walked thirty-six hours over unmapped mountains and reached the Stromness whaling station on 20 May.
+So on 24 April, Shackleton left in the *James Caird*. Five men with him: navigator Frank Worsley, Tom Crean, carpenter Harry McNish, Timothy McCarthy, John Vincent. Twenty-two left under second-in-command Frank Wild, with that charge. They sailed eight hundred miles of the Drake Passage in sixteen days and hit South Georgia on 10 May. Shackleton, Worsley and Crean then walked thirty-six hours over unmapped mountains and reached the Stromness whaling station on 20 May.
 
 Ice blocked the first three rescue ships. The fourth was *Yelcho*, Captain Luis Pardo. She broke through on 30 August 1916 — 128 days after the *Caird* left, 137 days after they first landed. The men on the beach had kept kit packed. They were ready to move that same hour. Shackleton later said that if they had not been ready, they would not have got out.
 
@@ -31,7 +31,7 @@ Jesus did not leave us a maybe. He left us a promise.
 >
 > John 14:1–3
 
-He will come again. Personally. To receive us to Himself. Not a committee. Not an idea. The Lord Himself.
+He will come again. Personally. To receive us to Himself. Not a committee. Not an idea. The Lord Himself. Surely. Soon. Suddenly.
 
 > “For the Lord Himself will descend from heaven with a shout, with the voice of an archangel, and with the trumpet of God. And the dead in Christ will rise first. Then we who are alive and remain shall be caught up together with them in the clouds to meet the Lord in the air. And thus we shall always be with the Lord. Therefore comfort one another with these words.”
 >
