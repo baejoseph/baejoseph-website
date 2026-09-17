@@ -25,28 +25,37 @@ function matchSlug(post: Awaited<ReturnType<typeof getCollection<'blog'>>>[0], s
   return post.slug === slug
     || post.id === slug
     || post.id.replace(/\.mdx?$/, '') === slug
-    || post.data.wpSlug === slug
-    || post.data.pairedSlug === slug;
+    || post.data.wpSlug === slug;
 }
 
-export async function postBySlug(slug: string) {
+export async function postBySlug(slug: string, lang?: 'en' | 'ko') {
   const posts = await getCollection('blog');
-  return posts.find(p => matchSlug(p, slug)) ?? null;
+  const wantKo = lang === 'ko';
+  const pool = lang
+    ? posts.filter(p => ((p.data.lang ?? 'en') === 'ko') === wantKo)
+    : posts;
+  return pool.find(p => p.slug === slug)
+    || pool.find(p => matchSlug(p, slug))
+    ?? null;
 }
 
 export async function composeFromSlug(slug: string, kind: Slot, note?: string, uiLang?: 'en' | 'ko') {
-  const post = await postBySlug(slug);
+  const lang = (uiLang === 'ko' ? 'ko' : uiLang === 'en' ? 'en' : undefined);
+  const post = await postBySlug(slug, lang) || await postBySlug(slug);
   if (!post) return null;
-  const lang = ((uiLang || post.data.lang || 'en') === 'ko' ? 'ko' : 'en') as 'en' | 'ko';
+  const resolved = ((lang || post.data.lang || 'en') === 'ko' ? 'ko' : 'en') as 'en' | 'ko';
+  if (lang && ((post.data.lang ?? 'en') === 'ko') !== (lang === 'ko')) {
+    throw new Error(`Slug ${slug} is not a ${lang} post`);
+  }
   const excerpt = excerptFromMarkdown(post.body ?? '');
   const date = post.data.date
-    ? new Date(post.data.date).toLocaleDateString(lang === 'ko' ? 'ko-KR' : 'en-GB', {
+    ? new Date(post.data.date).toLocaleDateString(resolved === 'ko' ? 'ko-KR' : 'en-GB', {
         day: 'numeric', month: 'long', year: 'numeric',
       })
     : '';
   return {
     post,
-    lang,
+    lang: resolved,
     letter: buildNewsletter({
       title: post.data.title as string,
       slug: post.slug,
@@ -56,7 +65,7 @@ export async function composeFromSlug(slug: string, kind: Slot, note?: string, u
       unsubToken: '{{UNSUB}}',
       kind,
       note: kind === 'tuesday_featured' ? (note ?? '') : undefined,
-      uiLang: lang,
+      uiLang: resolved,
     }),
   };
 }
@@ -78,7 +87,7 @@ function findPair(posts: Awaited<ReturnType<typeof getCollection<'blog'>>>, post
 
 export async function composePair(slug: string, kind: Slot, notes?: { en?: string; ko?: string }) {
   const posts = await getCollection('blog');
-  const post = posts.find(p => matchSlug(p, slug));
+  const post = posts.find(p => p.slug === slug) || posts.find(p => matchSlug(p, slug));
   if (!post) return null;
   const pair = findPair(posts, post);
   const pickedLang = (post.data.lang ?? 'en') === 'ko' ? 'ko' : 'en';
