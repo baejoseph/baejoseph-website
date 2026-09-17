@@ -394,6 +394,31 @@ const rebuildAll = await queuePatch({
 const rebuildBody = await rebuildAll.json();
 check('the dashboard rebuild button answers with a per-letter report', rebuildAll.status === 200 && rebuildBody.report && Array.isArray(rebuildBody.report.outcomes), JSON.stringify(rebuildBody).slice(0, 140));
 
+section('16. a letter sent by mistake can be put back in the queue');
+const mistaken = await addItem('faithfulness', 'friday_new', '2026-10-16');
+await addSub('witness@test.local');
+resetSink();
+// What pressing "Send now" by accident does.
+const wrongSend = await drainQueueItem(mistaken, { chunk: 50, budgetMs: 30000 });
+check('the mistaken send went out', wrongSend.remaining === 0, JSON.stringify(wrongSend));
+const logged = await db`SELECT count(*)::int AS n FROM send_log WHERE queue_id = ${mistaken} AND status = 'sent'`;
+check('and it was recorded per recipient', Number(logged[0].n) > 0, JSON.stringify(logged));
+
+const requeued = await queuePatch({
+  request: new Request('http://x/api/queue', {
+    method: 'PATCH', headers: { 'content-type': 'application/json', cookie },
+    body: JSON.stringify({ id: mistaken, action: 'requeue' }),
+  }),
+}).then((r) => r.json());
+check('putting it back reports how many had already received it', requeued.ok === true && requeued.previouslyDelivered === Number(logged[0].n), JSON.stringify(requeued).slice(0, 180));
+const afterRequeue = await db`SELECT status, sent_at, letters_version, html FROM queue_items WHERE id = ${mistaken}`;
+check('the item is queued again, with a rebuilt full-text letter', afterRequeue[0].status === 'queued' && afterRequeue[0].sent_at === null && isFinalHtml(afterRequeue[0].html) && String(afterRequeue[0].html).includes('{{LIKE}}'), JSON.stringify({ status: afterRequeue[0].status, version: afterRequeue[0].letters_version }));
+const clearedLog = await db`SELECT count(*)::int AS n FROM send_log WHERE queue_id = ${mistaken}`;
+check('its delivery record was cleared so the letter can send again', Number(clearedLog[0].n) === 0, JSON.stringify(clearedLog));
+resetSink();
+const properSend = await drainQueueItem(mistaken, { chunk: 50, budgetMs: 30000 });
+check('it goes out again, to everyone', properSend.remaining === 0 && emailsSent().includes('witness@test.local'), JSON.stringify({ sent: properSend.sent, remaining: properSend.remaining }));
+
 await sinkReal.close();
 
 console.log(`\n${pass} checks passed, ${failures.length} failed`);

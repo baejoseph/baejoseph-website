@@ -370,17 +370,22 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         ? `<button class="ghost" data-open="${it.id}">Edit</button>
            <button class="ghost" data-send="${it.id}">Send</button>
            <button class="danger" data-del="${it.id}">Remove</button>`
-        : `<button class="ghost" data-open="${it.id}">View</button>`;
+        : `<button class="ghost" data-open="${it.id}">View</button>
+           <button class="ghost" data-requeue="${it.id}">Put back in queue</button>`;
       const pair = it.slug_ko ? `${esc(it.slug)} + ${esc(it.slug_ko)}` : esc(it.slug);
       const likes = Number(it.likes_en || 0) + Number(it.likes_ko || 0);
       const mode = letterMode(it.html, it.html_ko);
+      const delivered = Number(it.delivered || 0);
+      // For anything already sent, the letter format is history, not a to-do.
+      const modePill = mode ? `<span class="pill">${it.status === 'queued' ? mode : `sent as ${mode}`}</span>` : '';
+      const sentPill = it.status !== 'queued' && delivered ? `<span class="pill">✓ ${delivered} delivered</span>` : '';
       const progress = it.status === 'queued' && it.error
         ? `<br /><small class="muted">${esc(it.error)}</small>`
         : '';
       return `<tr>
         <td>${esc(String(it.send_on).slice(0,10))}</td>
         <td>${pair}</td>
-        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${mode ? ` <span class="pill">${mode}</span>` : ''}${likes ? ` <span class="pill">♥ ${likes}</span>` : ''}${progress}</td>
+        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${modePill}${sentPill}${likes ? ` <span class="pill">♥ ${likes}</span>` : ''}${progress}</td>
         <td>${actions}</td>
       </tr>`;
     }
@@ -390,7 +395,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       const s = String(enHtml || '') + String(koHtml || '');
       if (!s) return '';
       if (s.includes('<!--LETTER:full-->')) return 'full text';
-      if (s.includes('<!--LETTER:excerpt-->')) return 'teaser';
+      if (s.includes('<!--LETTER:teaser-oversize-->')) return 'teaser (too long to send in full)';
+      if (s.includes('<!--LETTER:teaser-->')) return 'teaser';
       return 'older format';
     }
 
@@ -437,6 +443,41 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
           selectEmail(Number(btn.getAttribute('data-open')));
         });
       });
+      document.querySelectorAll('[data-requeue]').forEach(btn => {
+        btn.addEventListener('click', () => requeue(Number(btn.getAttribute('data-requeue'))));
+      });
+    }
+
+    /**
+     * Puts an already-sent (or failed) letter back in the queue, so a scheduled
+     * slot is not lost to a mis-click. Sends nothing by itself: the next cron run
+     * for that slot does, with the post in full.
+     */
+    async function requeue(id) {
+      const it = queueItems.find(x => x.id === id);
+      const delivered = Number(it?.delivered || 0);
+      const warn = delivered
+        ? `This letter already reached ${delivered} ${delivered === 1 ? 'person' : 'people'}.\n\nPutting it back in the queue means they will receive it again on its send date, this time with the whole post.`
+        : 'This letter has not reached anyone yet.\n\nPut it back in the queue and it will send on its send date, with the whole post.';
+      if (!confirm(`${warn}\n\nNothing is sent now. Continue?`)) return;
+      const msg = document.getElementById('queue-msg');
+      const res = await fetch('/api/queue', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, action: 'requeue' }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        if (msg) msg.textContent = data.error || 'Failed';
+        return;
+      }
+      const r = data.report?.outcomes?.[0];
+      if (msg) {
+        msg.textContent = `Back in the queue${r ? `, letter rebuilt (${r.detail})` : ''}. Nothing sent yet — it goes out on its send date.`
+          + (data.previouslyDelivered ? ` Previously delivered to ${data.previouslyDelivered}.` : '');
+      }
+      loadQueue();
+      loadStats();
     }
 
     async function queueSlot(slot, dateId, slugId) {
@@ -783,6 +824,13 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
 
     async function sendItem(id) {
       const msg = document.getElementById('queue-msg');
+      // A mis-click mailed the list once already. Never again without a count.
+      const active = document.getElementById('n-active')?.textContent || '?';
+      const ok = confirm(
+        `Send this letter to all ${active} active subscriber${active === '1' ? '' : 's'} right now?\n\n`
+        + 'It cannot be recalled. Scheduled letters send themselves on their send date.',
+      );
+      if (!ok) return;
       const res = await fetch('/api/queue', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },

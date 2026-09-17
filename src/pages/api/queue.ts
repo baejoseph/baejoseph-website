@@ -22,10 +22,20 @@ export const GET: APIRoute = async ({ request }) => {
   const items = await db`
     SELECT q.*,
       COALESCE(le.n, 0)::int AS likes_en,
-      COALESCE(lk.n, 0)::int AS likes_ko
+      COALESCE(lk.n, 0)::int AS likes_ko,
+      COALESCE(sd.delivered, 0)::int AS delivered,
+      COALESCE(sd.failed, 0)::int AS delivery_failed
     FROM queue_items q
     LEFT JOIN (SELECT slug, count(*) AS n FROM post_likes GROUP BY slug) le ON le.slug = q.slug
     LEFT JOIN (SELECT slug, count(*) AS n FROM post_likes GROUP BY slug) lk ON lk.slug = q.slug_ko
+    LEFT JOIN (
+      SELECT queue_id,
+        SUM(CASE WHEN status = 'sent' THEN 1 ELSE 0 END)::int AS delivered,
+        SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END)::int AS failed
+      FROM send_log
+      WHERE queue_id IS NOT NULL
+      GROUP BY queue_id
+    ) sd ON sd.queue_id = q.id
     ORDER BY q.send_on DESC, q.slot ASC
     LIMIT 80
   `;
@@ -218,6 +228,32 @@ export const PATCH: APIRoute = async ({ request }) => {
     } catch (err) {
       return json({ error: err instanceof Error ? err.message : String(err) }, 500);
     }
+  }
+  // Put a sent (or failed) letter back in the queue. Deliberately destructive, and
+  // deliberately explicit: it clears this item's delivery record so the letter can
+  // go out again, because otherwise every recipient would be skipped as "already
+  // sent" and the full letter would reach nobody.
+  if (body.action === 'requeue') {
+    const db = await withSchema();
+    const rows = await db`SELECT id, slug, status FROM queue_items WHERE id = ${id} LIMIT 1`;
+    if (!rows[0]) return json({ error: 'Not found' }, 404);
+    const counts = await db`
+      SELECT
+        SUM(CASE WHEN status = 'sent' THEN 1 ELSE 0 END)::int AS delivered,
+        SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END)::int AS failed
+      FROM send_log WHERE queue_id = ${id}
+    ` as { delivered: number | null; failed: number | null }[];
+    const previouslyDelivered = Number(counts[0]?.delivered ?? 0);
+    await db`DELETE FROM send_log WHERE queue_id = ${id}`;
+    await db`
+      UPDATE queue_items
+      SET status = 'queued', sent_at = NULL, error = NULL, letters_version = NULL
+      WHERE id = ${id}
+    `;
+    // Bring the letter up to date straight away, so what is queued is what sends.
+    const report = await rebuildQueuedLetters(db, { id });
+    const after = await db`SELECT * FROM queue_items WHERE id = ${id}`;
+    return json({ ok: true, previouslyDelivered, report, item: after[0] });
   }
   return json({ error: 'unknown action' }, 400);
 };
