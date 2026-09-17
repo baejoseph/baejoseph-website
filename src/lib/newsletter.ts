@@ -150,6 +150,7 @@ export function defaultWelcomeLetter() {
       'Welcome. I am really glad you are here.',
       'You will hear from me twice a week: a new post on Fridays, and one from the archive on Tuesdays. No noise in between.',
       'If you want a little of who I am first, this is the door.',
+      '환영합니다. 사이트 곳곳에 한국어 버튼이 있으니, 한글로도 편하게 읽으실 수 있습니다.',
     ].join('\n\n'),
     image: 'https://baejoseph.com/assets/intro.jpg',
     unsubToken: '{{UNSUB}}',

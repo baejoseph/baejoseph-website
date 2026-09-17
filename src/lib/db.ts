@@ -79,6 +79,10 @@ export async function ensureSchema() {
     UPDATE email_templates
     SET subject = ${welcome.subject}, html = ${welcome.html}, text_body = ${welcome.text}, updated_at = now()
     WHERE key = 'welcome'
-      AND subject IN ('Welcome: Who Is Joseph Bae?', 'Welcome — Who Is Joseph Bae?')
+      AND subject IN (
+        'Welcome: Who Is Joseph Bae?',
+        'Welcome — Who Is Joseph Bae?',
+        'Welcome — thank you for signing up'
+      )
   `;
 }
