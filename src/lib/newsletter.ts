@@ -16,9 +16,22 @@ export function excerptFromMarkdown(body: string, max = 420) {
   return text.slice(0, max).replace(/\s+\S*$/, '') + '…';
 }
 
+export async function allPosts() {
+  return getCollection('blog');
+}
+
+function matchSlug(post: Awaited<ReturnType<typeof getCollection<'blog'>>>[0], slug: string) {
+  if (!slug) return false;
+  return post.slug === slug
+    || post.id === slug
+    || post.id.replace(/\.mdx?$/, '') === slug
+    || post.data.wpSlug === slug
+    || post.data.pairedSlug === slug;
+}
+
 export async function postBySlug(slug: string) {
   const posts = await getCollection('blog');
-  return posts.find(p => p.slug === slug) ?? null;
+  return posts.find(p => matchSlug(p, slug)) ?? null;
 }
 
 export async function composeFromSlug(slug: string, kind: Slot, note?: string, uiLang?: 'en' | 'ko') {
@@ -48,23 +61,39 @@ export async function composeFromSlug(slug: string, kind: Slot, note?: string, u
   };
 }
 
+function findPair(posts: Awaited<ReturnType<typeof getCollection<'blog'>>>, post: Awaited<ReturnType<typeof getCollection<'blog'>>>[0]) {
+  const candidates = [
+    post.data.pairedSlug,
+    post.data.wpSlug,
+    post.slug,
+  ].filter(Boolean) as string[];
+  for (const c of candidates) {
+    const hit = posts.find(p => p.slug !== post.slug && (
+      p.slug === c || p.data.pairedSlug === post.slug || p.data.pairedSlug === c || p.data.wpSlug === c
+    ));
+    if (hit) return hit;
+  }
+  return posts.find(p => p.slug !== post.slug && p.data.pairedSlug === post.slug) ?? null;
+}
+
 export async function composePair(slug: string, kind: Slot, notes?: { en?: string; ko?: string }) {
   const posts = await getCollection('blog');
-  const post = posts.find(p => p.slug === slug);
+  const post = posts.find(p => matchSlug(p, slug));
   if (!post) return null;
-  const pair = post.data.pairedSlug
-    ? posts.find(p => p.slug === post.data.pairedSlug) ?? null
-    : null;
+  const pair = findPair(posts, post);
   const pickedLang = (post.data.lang ?? 'en') === 'ko' ? 'ko' : 'en';
   const enPost = pickedLang === 'ko' ? pair : post;
   const koPost = pickedLang === 'ko' ? post : pair;
-  const en = enPost ? await composeFromSlug(enPost.slug, kind, notes?.en, 'en') : null;
-  const ko = koPost ? await composeFromSlug(koPost.slug, kind, notes?.ko, 'ko') : null;
+  if (!enPost || !koPost) {
+    throw new Error(`Every queued post needs an EN+KO pair. Missing pair for ${slug}`);
+  }
+  const en = await composeFromSlug(enPost.slug, kind, notes?.en, 'en');
+  const ko = await composeFromSlug(koPost.slug, kind, notes?.ko, 'ko');
   return {
     en,
     ko,
-    enSlug: enPost?.slug ?? null,
-    koSlug: koPost?.slug ?? null,
+    enSlug: enPost.slug,
+    koSlug: koPost.slug,
   };
 }
 

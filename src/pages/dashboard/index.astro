@@ -8,13 +8,27 @@ if (!isAdmin(Astro.request)) {
   return Astro.redirect('/dashboard/login');
 }
 
-const posts = (await getCollection('blog'))
-  .map(p => ({
-    slug: p.slug,
-    title: p.data.title as string,
-    date: p.data.date ?? '',
-    lang: p.data.lang ?? 'en',
-  }))
+const allPosts = await getCollection('blog');
+const bySlug = new Map<string, typeof allPosts[0]>();
+for (const p of allPosts) {
+  bySlug.set(p.slug, p);
+  if (p.data.wpSlug) bySlug.set(p.data.wpSlug, p);
+}
+const posts = allPosts
+  .filter(p => (p.data.lang ?? 'en') !== 'ko')
+  .map(p => {
+    const ko = (p.data.pairedSlug ? bySlug.get(p.data.pairedSlug) : undefined)
+      || allPosts.find(k => (k.data.lang ?? 'en') === 'ko' && k.data.pairedSlug === p.slug);
+    return {
+      slug: p.slug,
+      title: p.data.title as string,
+      date: p.data.date ?? '',
+      lang: 'en',
+      koSlug: ko?.slug ?? '',
+      koTitle: (ko?.data.title as string) || '',
+    };
+  })
+  .filter(p => p.koSlug)
   .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
 const smtpOk = smtpConfigured();
@@ -170,12 +184,12 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       <p class="muted" id="queue-msg"></p>
       <div class="qgrid">
         <div class="qcol">
-          <h3>Tuesday · featured (archive)</h3>
+          <h3>Tuesday · featured (archive) · EN+KO</h3>
           <div class="row">
             <input type="date" id="tue-date" value={nextTue} />
             <select id="tue-slug">
               {posts.map(p => (
-                <option value={p.slug}>{p.date} · {p.lang.toUpperCase()} · {p.title}</option>
+                <option value={p.slug}>{p.date} · {p.title}{p.koTitle ? ` / ${p.koTitle}` : ''}</option>
               ))}
             </select>
             <button type="button" id="tue-btn">Queue</button>
@@ -186,12 +200,12 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
           </table>
         </div>
         <div class="qcol">
-          <h3>Friday · new</h3>
+          <h3>Friday · new · EN+KO</h3>
           <div class="row">
             <input type="date" id="fri-date" value={nextFri} />
             <select id="fri-slug">
               {posts.map(p => (
-                <option value={p.slug}>{p.date} · {p.lang.toUpperCase()} · {p.title}</option>
+                <option value={p.slug}>{p.date} · {p.title}{p.koTitle ? ` / ${p.koTitle}` : ''}</option>
               ))}
             </select>
             <button type="button" id="fri-btn">Queue</button>
@@ -318,10 +332,11 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
            <button class="ghost" data-send="${it.id}">Send</button>
            <button class="danger" data-del="${it.id}">Remove</button>`
         : `<button class="ghost" data-open="${it.id}">View</button>`;
+      const pair = it.slug_ko ? `${esc(it.slug)} + ${esc(it.slug_ko)}` : esc(it.slug);
       return `<tr>
         <td>${esc(String(it.send_on).slice(0,10))}</td>
-        <td><a href="/${encodeURI(it.slug)}/">${esc(it.slug)}</a></td>
-        <td><span class="pill">${esc(it.status)}</span></td>
+        <td>${pair}</td>
+        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}</td>
         <td>${actions}</td>
       </tr>`;
     }
@@ -383,7 +398,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         }),
       });
       const data = await res.json().catch(() => ({}));
-      if (msg) msg.textContent = res.ok ? 'Queued — open Emails to preview.' : (data.error || 'Failed');
+      if (msg) msg.textContent = res.ok ? 'Queued EN + KO — open Emails to preview both.' : (data.error || 'Failed');
       if (res.ok) {
         await loadQueue();
         if (data.item?.id) {

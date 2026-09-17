@@ -22,8 +22,11 @@ export async function sendQueueItem(id: number, opts?: { testTo?: string; lang?:
   const item = rows[0] as Record<string, unknown> | undefined;
   if (!item) throw new Error('Queue item not found');
 
-  if (!item.html && !item.html_ko) {
-    const pair = await composePair(String(item.slug || item.slug_ko), item.slot as Slot);
+  if (!item.html || !item.html_ko) {
+    const pair = await composePair(String(item.slug || item.slug_ko), item.slot as Slot, {
+      en: String(item.note || ''),
+      ko: String(item.note_ko || ''),
+    });
     if (!pair) throw new Error(`Post not found: ${item.slug}`);
     if (pair.en) {
       item.html = pair.en.letter.html;

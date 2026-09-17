@@ -10,7 +10,33 @@ export const GET: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
   const db = await withSchema();
-  const rows = await db`SELECT * FROM queue_items ORDER BY send_on DESC, slot ASC LIMIT 80`;
+  let rows = await db`SELECT * FROM queue_items ORDER BY send_on DESC, slot ASC LIMIT 80`;
+  for (const row of rows) {
+    if (row.status !== 'queued' || row.html_ko) continue;
+    try {
+      const pair = await composePair(String(row.slug || row.slug_ko), row.slot, {
+        en: row.note || '',
+        ko: row.note_ko || '',
+      });
+      if (!pair?.en || !pair?.ko) continue;
+      const updated = await db`
+        UPDATE queue_items SET
+          slug = ${pair.enSlug},
+          slug_ko = ${pair.koSlug},
+          subject = ${pair.en.letter.subject},
+          html = ${pair.en.letter.html},
+          text_body = ${pair.en.letter.text},
+          subject_ko = ${pair.ko.letter.subject},
+          html_ko = ${pair.ko.letter.html},
+          text_body_ko = ${pair.ko.letter.text}
+        WHERE id = ${row.id} AND status = 'queued'
+        RETURNING *
+      `;
+      if (updated[0]) Object.assign(row, updated[0]);
+    } catch {
+      // leave the row; Emails tab will show the gap
+    }
+  }
   return json({ items: rows });
 };
 
@@ -31,8 +57,13 @@ export const POST: APIRoute = async ({ request }) => {
   if (slot === 'friday_new' && weekday !== 5) {
     return json({ error: 'New-post slot must fall on a Friday' }, 400);
   }
-  const pair = await composePair(slug, slot);
-  if (!pair || (!pair.en && !pair.ko)) return json({ error: 'Unknown slug' }, 404);
+  let pair;
+  try {
+    pair = await composePair(slug, slot);
+  } catch (err) {
+    return json({ error: err instanceof Error ? err.message : String(err) }, 400);
+  }
+  if (!pair || !pair.en || !pair.ko) return json({ error: 'Could not build the EN+KO pair for that post' }, 400);
   const en = pair.en?.letter;
   const ko = pair.ko?.letter;
 
