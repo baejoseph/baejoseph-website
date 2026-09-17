@@ -48,7 +48,7 @@ function composeFromMd(post: MdPost, kind: Slot, note: string | undefined, uiLan
       image: post.featuredImage,
       unsubToken: '{{UNSUB}}',
       kind,
-      note: kind === 'tuesday_featured' ? (note ?? '') : undefined,
+      note: note ?? '',
       uiLang,
     }),
   };
@@ -124,7 +124,7 @@ export function buildNewsletter(opts: {
     : '';
 
   const note = (opts.note || '').trim();
-  const noteMarkup = opts.kind === 'tuesday_featured' ? noteBlock(note) : '';
+  const noteMarkup = opts.note !== undefined ? noteBlock(note) : '';
 
   const text = [
     `${kicker}`,

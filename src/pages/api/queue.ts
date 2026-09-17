@@ -75,8 +75,8 @@ export const POST: APIRoute = async ({ request }) => {
       VALUES (
         ${slot}, ${sendOn},
         ${pair.enSlug || slug}, ${pair.koSlug},
-        ${en?.subject || null}, ${en?.html || null}, ${en?.text || null}, ${slot === 'tuesday_featured' ? '' : null},
-        ${ko?.subject || null}, ${ko?.html || null}, ${ko?.text || null}, ${slot === 'tuesday_featured' ? '' : null}
+        ${en?.subject || null}, ${en?.html || null}, ${en?.text || null}, ${''},
+        ${ko?.subject || null}, ${ko?.html || null}, ${ko?.text || null}, ${''}
       )
       RETURNING *
     `;

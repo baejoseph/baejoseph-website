@@ -242,8 +242,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
             </div>
             <p class="muted" id="e-msg"></p>
             <div id="e-note-wrap" hidden>
-              <label class="muted" for="e-note" style="display:block;margin:0.4rem 0 0.35rem">Why this one (shown at the top of Tuesday letters)</label>
-              <textarea id="e-note" style="min-height:88px;font-family:Georgia,serif;font-size:1rem;font-style:italic" placeholder="A sentence or two — why you pulled this from the archive."></textarea>
+              <label class="muted" for="e-note" style="display:block;margin:0.4rem 0 0.35rem">Your note (shown at the very top)</label>
+              <textarea id="e-note" style="min-height:88px;font-family:Georgia,serif;font-size:1rem;font-style:italic" placeholder="A sentence or two — why this one, this week."></textarea>
             </div>
             <iframe class="prev" id="e-prev" title="Email preview"></iframe>
             <h2>HTML</h2>
@@ -524,7 +524,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         locked: it.status !== 'queued',
         rebuildLabel: 'Rebuild from post',
         showSend: it.status === 'queued',
-        showNote: it.slot === 'tuesday_featured',
+        showNote: it.slot === 'tuesday_featured' || it.slot === 'friday_new',
         note: (editorLang === 'ko' ? it.note_ko : it.note) || '',
       });
     }
