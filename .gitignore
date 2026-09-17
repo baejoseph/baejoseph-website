@@ -22,6 +22,9 @@ pnpm-debug.log*
 *com.apple.*
 *Zone.Identifier
 
+# generated email bodies (large, derived from src/content/blog on every build)
+src/lib/email-bodies.json
+
 # jetbrains setting folder
 .idea/
 .vercel/

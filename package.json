@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "node scripts/build-email-posts.mjs && astro dev",
     "build": "node scripts/build-email-posts.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro"

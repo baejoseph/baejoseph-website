@@ -29,11 +29,22 @@ export const GET: APIRoute = async ({ request }) => {
       LIMIT 100
     `;
     const active = await db`SELECT count(*)::int AS n FROM subscribers WHERE unsubscribed_at IS NULL`;
+    // Which posts landed: unique presses per post ("I liked this" button).
+    const likes = await db`
+      SELECT slug, lang, count(*)::int AS n
+      FROM post_likes
+      GROUP BY slug, lang
+      ORDER BY n DESC, slug ASC
+      LIMIT 25
+    `;
+    const likeTotal = await db`SELECT count(*)::int AS n FROM post_likes`;
     return new Response(JSON.stringify({
       subscribers: subs,
       sources,
       events,
       active: active[0]?.n ?? 0,
+      likes,
+      likeTotal: likeTotal[0]?.n ?? 0,
     }), { status: 200, headers: { 'Content-Type': 'application/json' } });
   } catch (err) {
     return new Response(JSON.stringify({ error: err instanceof Error ? err.message : String(err) }), {

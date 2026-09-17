@@ -16,7 +16,16 @@ export const GET: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
   const db = await withSchema();
-  const items = await db`SELECT * FROM queue_items ORDER BY send_on DESC, slot ASC LIMIT 80`;
+  const items = await db`
+    SELECT q.*,
+      COALESCE(le.n, 0)::int AS likes_en,
+      COALESCE(lk.n, 0)::int AS likes_ko
+    FROM queue_items q
+    LEFT JOIN (SELECT slug, count(*) AS n FROM post_likes GROUP BY slug) le ON le.slug = q.slug
+    LEFT JOIN (SELECT slug, count(*) AS n FROM post_likes GROUP BY slug) lk ON lk.slug = q.slug_ko
+    ORDER BY q.send_on DESC, q.slot ASC
+    LIMIT 80
+  `;
   return json({ items });
 };
 

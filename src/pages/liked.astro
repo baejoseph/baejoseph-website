@@ -1,0 +1,77 @@
+---
+export const prerender = false;
+import { postTitle } from '../lib/newsletter';
+
+const slug = Astro.url.searchParams.get('slug') || '';
+const identity = Astro.url.searchParams.get('i') || '';
+const lang = Astro.url.searchParams.get('l') === 'ko' ? 'ko' : 'en';
+const post = slug ? postTitle(slug) : null;
+const valid = Boolean(post) && /^[0-9a-f]{16,64}$/i.test(identity);
+const ko = lang === 'ko';
+const postHref = `/${encodeURIComponent(slug)}/`;
+---
+<!doctype html>
+<html lang={ko ? 'ko' : 'en'}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{ko ? '좋았습니다' : 'Thank you'} — Joseph Bae</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="/styles/global.css" />
+  <style>
+    .wrap { max-width: 460px; margin: 12vh auto; padding: 0 1.5rem; text-align: center; }
+    h1 { font-size: 1.35rem; margin-bottom: 0.6rem; line-height: 1.35; }
+    p { color: var(--text-muted); }
+    .post { color: var(--text); font-style: italic; }
+    button {
+      margin-top: 1.5rem; padding: 0.75rem 1.4rem; border: 1px solid var(--accent);
+      border-radius: 999px; background: transparent; color: var(--accent);
+      font-weight: 600; font-size: 1rem; cursor: pointer; font-family: inherit;
+    }
+    button:hover { background: rgba(99, 102, 241, 0.12); }
+    button[disabled] { opacity: 0.6; cursor: default; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    {valid ? (
+      <>
+        <h1>{ko ? '이 글이 마음에 닿았나요?' : 'Did this land with you?'}</h1>
+        <p class="post">{post?.title}</p>
+        <button id="like" type="button" data-slug={slug} data-identity={identity} data-lang={ko ? 'ko' : 'en'}>
+          {ko ? '♥ 좋았습니다' : '♥ I liked this article'}
+        </button>
+        <p id="msg" style="margin-top:1.25rem"></p>
+      </>
+    ) : (
+      <>
+        <h1>{ko ? '링크가 온전하지 않습니다' : 'That link did not come through'}</h1>
+        <p>{ko ? '이메일의 버튼을 다시 눌러 주세요.' : 'Try the button in the letter again.'}</p>
+      </>
+    )}
+    <p style="margin-top:2rem"><a href={valid ? postHref : '/'} class="back-link">← {valid ? (ko ? '이 글 다시 읽기' : 'Read it again') : (ko ? '블로그로' : 'Back to the blog')}</a></p>
+  </div>
+  <script>
+    const btn = document.getElementById('like');
+    const msg = document.getElementById('msg');
+    btn?.addEventListener('click', async () => {
+      btn.disabled = true;
+      const ko = btn.dataset.lang === 'ko';
+      const res = await fetch('/api/liked', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug: btn.dataset.slug, i: btn.dataset.identity, l: btn.dataset.lang }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok) {
+        if (msg) msg.textContent = data.repeat
+          ? (ko ? '이미 기록해 두었습니다. 감사합니다.' : 'Already noted — thank you.')
+          : (ko ? '감사합니다. 잘 기록해 두었습니다.' : 'Thank you — noted.');
+      } else {
+        btn.disabled = false;
+        if (msg) msg.textContent = data.error || (ko ? '다시 시도해 주세요.' : 'Please try again.');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,6 +1,17 @@
 import emailPosts from './email-posts.json';
+import emailBodies from './email-bodies.json';
 
 export type Slot = 'tuesday_featured' | 'friday_new';
+
+/** How a letter was built. Stored in the letter itself as a marker comment so the
+ *  dashboard can show it and a migration can spot letters from an older format. */
+export type LetterMode = 'full' | 'excerpt';
+
+export const LIKE_PLACEHOLDER = '{{LIKE}}';
+
+/** Gmail clips a message over ~102KB and hides everything past the cut — the
+ *  unsubscribe link included. Anything over this falls back to the teaser. */
+export const MAX_LETTER_BYTES = 95 * 1024;
 
 export function excerptFromMarkdown(body: string, max = 420) {
   const text = body
@@ -26,12 +37,38 @@ type MdPost = {
   excerpt: string;
 };
 
+type Body = { html: string; text: string; bytes: number };
+
+const bodies = emailBodies as Record<string, Body>;
+let warnedMissingBodies = false;
+
+/**
+ * Rendered full body for a post, produced by scripts/build-email-posts.mjs. If the
+ * generated file is missing (not built yet, or a fresh checkout), letters fall
+ * back to teasers rather than failing — and say so, once, in the logs.
+ */
+function bodyFor(post: { slug: string; lang: string }): Body | undefined {
+  const hit = bodies[`${post.lang}:${post.slug}`];
+  if (!hit && !warnedMissingBodies) {
+    warnedMissingBodies = true;
+    console.warn('[newsletter] email-bodies.json has no entry — run: node scripts/build-email-posts.mjs (letters fall back to teasers)');
+  }
+  return hit;
+}
+
 function allMd(): MdPost[] {
   return emailPosts as MdPost[];
 }
 
+/** Title of a post by slug, in either language. Used by the "I liked this" page. */
+export function postTitle(slug: string): { title: string; lang: 'en' | 'ko' } | null {
+  const post = allMd().find((p) => p.slug === slug);
+  return post ? { title: post.title, lang: post.lang } : null;
+}
+
 function composeFromMd(post: MdPost, kind: Slot, note: string | undefined, uiLang: 'en' | 'ko') {
   const excerpt = post.excerpt;
+  const body = bodyFor(post);
   const date = post.date
     ? new Date(post.date).toLocaleDateString(uiLang === 'ko' ? 'ko-KR' : 'en-GB', {
         day: 'numeric', month: 'long', year: 'numeric',
@@ -45,6 +82,9 @@ function composeFromMd(post: MdPost, kind: Slot, note: string | undefined, uiLan
       slug: post.slug,
       date,
       excerpt,
+      bodyHtml: body?.html,
+      bodyText: body?.text,
+      likeSlug: post.slug,
       image: post.featuredImage,
       unsubToken: '{{UNSUB}}',
       kind,
@@ -87,11 +127,33 @@ export function postUrl(slug: string) {
   return `https://baejoseph.com/${slug}/`;
 }
 
+/**
+ * The "I liked this" button. The identity is filled in per recipient at send time
+ * ({{LIKE}}), so one subscriber pressing it twice counts once, and no email
+ * address is ever put in the URL.
+ */
+function likeBlock(slug: string, ko: boolean) {
+  const href = `https://baejoseph.com/liked?slug=${encodeURIComponent(slug)}&i=${LIKE_PLACEHOLDER}&l=${ko ? 'ko' : 'en'}`;
+  const label = ko ? '♥ 좋았습니다' : '♥ I liked this article';
+  return `<tr>
+            <td style="padding:4px 0 30px 0;">
+              <a href="${href}" style="display:inline-block;border:1px solid #3a3a4a;border-radius:999px;padding:10px 18px;color:#818cf8;text-decoration:none;font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;">
+                ${label}
+              </a>
+            </td>
+          </tr>`;
+}
+
 export function buildNewsletter(opts: {
   title: string;
   slug: string;
   date?: string;
   excerpt: string;
+  /** Full post body as email-safe HTML. Omit for a teaser letter. */
+  bodyHtml?: string;
+  bodyText?: string;
+  /** Slug to hang the "I liked this" button on. Omitted for the welcome letter. */
+  likeSlug?: string;
   image?: string;
   unsubToken: string;
   kind: Slot;
@@ -102,7 +164,24 @@ export function buildNewsletter(opts: {
   subject?: string;
   note?: string;
   uiLang?: 'en' | 'ko';
-}) {
+}): { html: string; text: string; subject: string; mode: LetterMode; oversize?: boolean } {
+  const full = opts.bodyHtml
+    ? renderLetter(opts, 'full')
+    : renderLetter(opts, 'excerpt');
+  // The clip limit is on the whole message, text part included.
+  const totalBytes = Buffer.byteLength(full.html, 'utf8') + Buffer.byteLength(full.text, 'utf8');
+  if (opts.bodyHtml && totalBytes > MAX_LETTER_BYTES) {
+    // Too big to survive the inbox intact: send the teaser instead.
+    console.warn(`[newsletter] ${opts.slug}: ${(totalBytes / 1024).toFixed(0)}KB letter fell back to a teaser`);
+    return { ...renderLetter(opts, 'excerpt'), oversize: true };
+  }
+  return full;
+}
+
+function renderLetter(
+  opts: Parameters<typeof buildNewsletter>[0],
+  mode: LetterMode,
+): { html: string; text: string; subject: string; mode: LetterMode } {
   const ko = opts.uiLang === 'ko';
   const url = opts.ctaHref || postUrl(opts.slug);
   const tokenQs = opts.unsubToken.includes('{{UNSUB}}')
@@ -125,6 +204,12 @@ export function buildNewsletter(opts: {
 
   const note = (opts.note || '').trim();
   const noteMarkup = opts.note !== undefined ? noteBlock(note) : '';
+  const likeMarkup = opts.likeSlug ? likeBlock(opts.likeSlug, ko) : '';
+  const siteLine = ko
+    ? `사이트에서 읽기: ${escapeHtml(url)}`
+    : `Read it on the site: ${escapeHtml(url)}`;
+
+  const bodyText = mode === 'full' && opts.bodyText ? opts.bodyText : opts.excerpt;
 
   const text = [
     `${kicker}`,
@@ -132,13 +217,33 @@ export function buildNewsletter(opts: {
     opts.title,
     opts.date || '',
     '',
-    opts.excerpt,
+    bodyText,
     '',
+    opts.likeSlug ? `Liked it? https://baejoseph.com/liked?slug=${opts.likeSlug}&i=${LIKE_PLACEHOLDER}&l=${ko ? 'ko' : 'en'}` : '',
     `Read: ${url}`,
     '',
     `${unsubLabel}: ${unsubHref}`,
     `${prefsLabel}: ${prefsHref}`,
   ].filter((l, i, a) => l !== '' || a[i - 1] !== '').join('\n');
+
+  const contentRow = mode === 'full' && opts.bodyHtml
+    ? `<tr>
+            <td style="padding-bottom:26px;">
+              ${opts.bodyHtml}
+            </td>
+          </tr>`
+    : `<tr>
+            <td style="padding-bottom:24px;font-size:17px;line-height:1.7;color:#d4d4d4;">
+              ${escapeHtml(opts.excerpt).replace(/\n/g, '<br />')}
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom:36px;">
+              <a href="${escapeHtml(url)}" style="display:inline-block;background:#6366f1;color:#fff;text-decoration:none;font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.04em;padding:12px 20px;border-radius:999px;">
+                ${escapeHtml(ctaLabel)}
+              </a>
+            </td>
+          </tr>`;
 
   const html = `<!DOCTYPE html>
 <html lang="${ko ? 'ko' : 'en'}">
@@ -148,6 +253,7 @@ export function buildNewsletter(opts: {
   <title>${escapeHtml(opts.title)}</title>
 </head>
 <body style="margin:0;padding:0;background:#0a0a0a;color:#e8e8e8;font-family:Georgia, 'Times New Roman', serif;">
+  <!--LETTER:${mode}-->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0a0a0a;">
     <tr>
       <td align="center" style="padding:32px 16px;">
@@ -167,18 +273,13 @@ export function buildNewsletter(opts: {
             </td>
           </tr>
           ${opts.date ? `<tr><td style="padding-bottom:16px;font-family:Inter,Arial,sans-serif;font-size:13px;color:#888;">${escapeHtml(opts.date)}</td></tr>` : ''}
-          <tr>
-            <td style="padding-bottom:24px;font-size:17px;line-height:1.7;color:#d4d4d4;">
-              ${escapeHtml(opts.excerpt).replace(/\n/g, '<br />')}
+          ${contentRow}
+          ${mode === 'full' ? `<tr>
+            <td style="padding-bottom:18px;font-family:Inter,Arial,sans-serif;font-size:13px;color:#888;">
+              ${siteLine}
             </td>
-          </tr>
-          <tr>
-            <td style="padding-bottom:36px;">
-              <a href="${escapeHtml(url)}" style="display:inline-block;background:#6366f1;color:#fff;text-decoration:none;font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.04em;padding:12px 20px;border-radius:999px;">
-                ${escapeHtml(ctaLabel)}
-              </a>
-            </td>
-          </tr>
+          </tr>` : ''}
+          ${likeMarkup}
           <tr>
             <td style="border-top:1px solid #222;padding-top:16px;font-family:Inter,Arial,sans-serif;font-size:12px;line-height:1.6;color:#666;">
               ${escapeHtml(footer)}<br />
@@ -194,7 +295,7 @@ export function buildNewsletter(opts: {
 </body>
 </html>`;
 
-  return { html, text, subject: opts.subject || `${kicker}: ${opts.title}` };
+  return { html, text, subject: opts.subject || `${kicker}: ${opts.title}`, mode };
 }
 
 export function defaultWelcomeLetter() {

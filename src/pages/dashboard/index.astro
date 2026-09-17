@@ -35,6 +35,10 @@ const smtpOk = smtpConfigured();
 const dbOk = Boolean(import.meta.env.DATABASE_URL || process.env.DATABASE_URL);
 const adminEmail = import.meta.env.ADMIN_EMAIL || process.env.ADMIN_EMAIL || '';
 
+/** slug -> title, for showing which posts were liked without a second lookup. */
+const titleBySlug: Record<string, string> = {};
+for (const p of allPosts) titleBySlug[p.slug] = p.data.title as string;
+
 function nextWeekday(from: Date, weekday: number) {
   const d = new Date(from);
   const add = (weekday + 7 - d.getUTCDay()) % 7 || 7;
@@ -68,7 +72,7 @@ const nextFri = nextWeekday(today, 5);
     .tab.on { color: #fff; border-bottom-color: #6366f1; }
     .panel { display: none; }
     .panel.on { display: block; }
-    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-bottom: 1.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem; }
     @media (max-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
     .stat { background: #111; border: 1px solid #222; border-radius: 10px; padding: 1rem 1.1rem; }
     .stat b { display: block; font-size: 1.5rem; margin-top: 0.2rem; }
@@ -144,6 +148,7 @@ const nextFri = nextWeekday(today, 5);
         <div class="stat"><span class="muted">Active</span><b id="n-active">—</b></div>
         <div class="stat"><span class="muted">Unsubscribed</span><b id="n-left">—</b></div>
         <div class="stat"><span class="muted">Queued</span><b id="n-queued">—</b></div>
+        <div class="stat"><span class="muted">Liked</span><b id="n-likes">—</b></div>
         <div class="stat"><span class="muted">Wiring</span>
           <div style="margin-top:0.45rem;font-size:0.85rem">
             DB: <span class={dbOk ? 'ok' : 'bad'}>{dbOk ? 'set' : 'missing'}</span><br />
@@ -151,6 +156,12 @@ const nextFri = nextWeekday(today, 5);
           </div>
         </div>
       </div>
+      <h2>Which posts landed</h2>
+      <p class="muted" style="margin-top:-0.35rem">Readers who pressed “I liked this” at the end of a letter. One press per person per post.</p>
+      <table>
+        <thead><tr><th>Post</th><th>Lang</th><th>Likes</th></tr></thead>
+        <tbody id="like-body"><tr><td colspan="3" class="muted">Loading…</td></tr></tbody>
+      </table>
       <h2>Signups by source</h2>
       <table>
         <thead><tr><th>Source</th><th>Count</th></tr></thead>
@@ -269,7 +280,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     </section>
   </div>
 
-  <script define:vars={{ adminEmail }}>
+  <script define:vars={{ adminEmail, titleBySlug }}>
     const tabs = [...document.querySelectorAll('.tab')];
     const panels = [...document.querySelectorAll('.panel')];
     function showTab(id) {
@@ -321,6 +332,12 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       const left = subs.filter(s => s.unsubscribed_at).length;
       document.getElementById('n-active').textContent = String(data.active ?? 0);
       document.getElementById('n-left').textContent = String(left);
+      document.getElementById('n-likes').textContent = String(data.likeTotal ?? 0);
+      document.getElementById('like-body').innerHTML = (data.likes || []).map(l => `<tr>
+        <td>${esc(titleBySlug[l.slug] || l.slug)}</td>
+        <td>${esc(l.lang)}</td>
+        <td>${l.n}</td>
+      </tr>`).join('') || '<tr><td colspan="3" class="muted">Nothing yet — the button is at the end of every letter.</td></tr>';
       const srcRows = (data.sources || []).map(s => `<tr><td>${esc(s.source)}</td><td>${s.n}</td></tr>`).join('')
         || '<tr><td colspan="2" class="muted">None yet</td></tr>';
       document.getElementById('src-body').innerHTML = srcRows;
@@ -346,15 +363,26 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
            <button class="danger" data-del="${it.id}">Remove</button>`
         : `<button class="ghost" data-open="${it.id}">View</button>`;
       const pair = it.slug_ko ? `${esc(it.slug)} + ${esc(it.slug_ko)}` : esc(it.slug);
+      const likes = Number(it.likes_en || 0) + Number(it.likes_ko || 0);
+      const mode = letterMode(it.html, it.html_ko);
       const progress = it.status === 'queued' && it.error
         ? `<br /><small class="muted">${esc(it.error)}</small>`
         : '';
       return `<tr>
         <td>${esc(String(it.send_on).slice(0,10))}</td>
         <td>${pair}</td>
-        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${progress}</td>
+        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${mode ? ` <span class="pill">${mode}</span>` : ''}${likes ? ` <span class="pill">♥ ${likes}</span>` : ''}${progress}</td>
         <td>${actions}</td>
       </tr>`;
+    }
+
+    /** How the stored letter was built, from the marker the composer writes. */
+    function letterMode(enHtml, koHtml) {
+      const s = String(enHtml || '') + String(koHtml || '');
+      if (!s) return '';
+      if (s.includes('<!--LETTER:full-->')) return 'full text';
+      if (s.includes('<!--LETTER:excerpt-->')) return 'teaser';
+      return 'older format';
     }
 
     async function loadQueue() {
@@ -535,7 +563,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
           : `EN · /${it.slug}`;
       }
       fillEditor({
-        meta: `${slotLabel(it.slot)} · ${String(it.send_on).slice(0,10)} · ${it.status}`,
+        meta: `${slotLabel(it.slot)} · ${String(it.send_on).slice(0,10)} · ${it.status}${letterMode(it.html, it.html_ko) ? ` · ${letterMode(it.html, it.html_ko)}` : ''}`,
         subject: (editorLang === 'ko' ? it.subject_ko : it.subject) || '',
         html: (editorLang === 'ko' ? it.html_ko : it.html) || '',
         text: (editorLang === 'ko' ? it.text_body_ko : it.text_body) || '',
@@ -601,9 +629,14 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       if (noteWrap && noteWrap.classList.contains('show') && noteEl) {
         html = applyNoteHtml(html, noteEl.value);
       }
+      // Preview only: the per-recipient tokens are still placeholders in storage,
+      // and must stay that way — replacing them here never touches the saved HTML.
+      const shown = html
+        .replaceAll('{{UNSUB}}', 'preview-token')
+        .replaceAll('{{LIKE}}', 'preview');
       const iframe = document.getElementById('e-prev');
       iframe.tabIndex = -1;
-      iframe.srcdoc = html || '<p style="padding:1rem;font-family:sans-serif;color:#888">No HTML yet.</p>';
+      iframe.srcdoc = shown || '<p style="padding:1rem;font-family:sans-serif;color:#888">No HTML yet.</p>';
     }
     document.getElementById('e-html')?.addEventListener('input', refreshPreview);
     document.getElementById('e-note')?.addEventListener('keydown', (e) => {

@@ -1,6 +1,7 @@
 import { withSchema } from './db';
 import { sendMail, smtpConfigured } from './email';
-import { composePair, type Slot } from './newsletter';
+import { composePair, LIKE_PLACEHOLDER, type Slot } from './newsletter';
+import { identityHash } from './identity';
 
 /**
  * Sending used to be one long loop inside a single invocation: the function got
@@ -22,7 +23,7 @@ export const MAX_ATTEMPTS = 3;
 export const STALE_SENDING_MS = 15 * 60 * 1000;
 
 type Item = Record<string, any>;
-type Letter = { html: string; text: string; subject: string };
+type Letter = { html: string; text: string; subject: string; slug: string };
 type Pair = NonNullable<Awaited<ReturnType<typeof composePair>>>;
 
 export type SendSummary = {
@@ -36,16 +37,26 @@ export type SendSummary = {
   test?: boolean;
 };
 
-function applyUnsub(s: string, token: string) {
-  return s.replaceAll('{{UNSUB}}', encodeURIComponent(token));
+/** Resolve the per-recipient tokens: their unsubscribe link and their anonymous
+ *  like identity. Neither the token nor the address is guessable from the other. */
+function personalize(letter: Letter, recipient: { unsub_token: string; email: string }): Letter {
+  const token = encodeURIComponent(recipient.unsub_token);
+  const like = identityHash(letter.slug, recipient.email);
+  return {
+    html: letter.html.replaceAll('{{UNSUB}}', token).replaceAll(LIKE_PLACEHOLDER, like),
+    text: letter.text.replaceAll('{{UNSUB}}', token).replaceAll(LIKE_PLACEHOLDER, like),
+    subject: letter.subject,
+    slug: letter.slug,
+  };
 }
 
 function letterFor(item: Item, lang: string): Letter {
-  const useKo = lang === 'ko' && item.html_ko;
+  const ko = lang === 'ko' && item.html_ko;
   return {
-    html: String((useKo ? item.html_ko : item.html) || item.html || ''),
-    text: String((useKo ? item.text_body_ko : item.text_body) || item.text_body || ''),
-    subject: String((useKo ? item.subject_ko : item.subject) || item.subject || ''),
+    html: String((ko ? item.html_ko : item.html) || item.html || ''),
+    text: String((ko ? item.text_body_ko : item.text_body) || item.text_body || ''),
+    subject: String((ko ? item.subject_ko : item.subject) || item.subject || ''),
+    slug: String((ko ? item.slug_ko : item.slug) || item.slug || ''),
   };
 }
 
@@ -127,7 +138,12 @@ async function koOverrideFor(item: Item): Promise<Letter | null> {
   try {
     const pair = await composeFor(item);
     if (!pair?.ko) return null;
-    return { html: pair.ko.letter.html, text: pair.ko.letter.text, subject: pair.ko.letter.subject };
+    return {
+      html: pair.ko.letter.html,
+      text: pair.ko.letter.text,
+      subject: pair.ko.letter.subject,
+      slug: pair.koSlug,
+    };
   } catch {
     return null;
   }
@@ -167,13 +183,14 @@ export async function sendQueueItem(
   const koOverride = await koOverrideFor(item);
 
   if (opts?.testTo) {
-    const letter = opts.lang === 'ko' && koOverride ? koOverride : letterFor(item, opts.lang || 'en');
-    if (!letter.html) throw new Error('That letter is empty');
+    const base = opts.lang === 'ko' && koOverride ? koOverride : letterFor(item, opts.lang || 'en');
+    if (!base.html) throw new Error('That letter is empty');
+    const letter = personalize(base, { unsub_token: 'test', email: opts.testTo });
     await sendMail({
       to: opts.testTo,
       subject: letter.subject,
-      html: applyUnsub(letter.html, 'test'),
-      text: applyUnsub(letter.text, 'test'),
+      html: letter.html,
+      text: letter.text,
     });
     return { sent: 1, failed: 0, skipped: 0, remaining: 0, done: false, status: String(item.status), test: true };
   }
@@ -219,19 +236,20 @@ export async function sendQueueItem(
     }
 
     const lang = r.lang === 'ko' ? 'ko' : 'en';
-    const letter = lang === 'ko' && koOverride ? koOverride : letterFor(item, lang);
-    if (!letter.html) {
+    const base = lang === 'ko' && koOverride ? koOverride : letterFor(item, lang);
+    if (!base.html) {
       await db`DELETE FROM send_log WHERE id = ${claimId}`;
       skipped += 1;
       continue;
     }
+    const letter = personalize(base, r);
 
     try {
       await sendMail({
         to: r.email,
         subject: letter.subject,
-        html: applyUnsub(letter.html, r.unsub_token),
-        text: applyUnsub(letter.text, r.unsub_token),
+        html: letter.html,
+        text: letter.text,
       });
       sent += 1;
       await db`UPDATE send_log SET status = 'sent', updated_at = now() WHERE id = ${claimId}`;

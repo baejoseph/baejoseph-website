@@ -1,5 +1,5 @@
 import { neon } from '@neondatabase/serverless';
-import { defaultWelcomeLetter, defaultWelcomeLetterKo } from './newsletter';
+import { composePair, defaultWelcomeLetter, defaultWelcomeLetterKo, type Slot } from './newsletter';
 
 export function sql() {
   const url = import.meta.env.DATABASE_URL || process.env.DATABASE_URL;
@@ -14,7 +14,7 @@ export type Db = ReturnType<typeof sql>;
  * start can skip ~20 round trips to Neon and just check one row.
  * /api/setup forces the full run regardless (dashboard → "Create / migrate tables").
  */
-const SCHEMA_VERSION = 'v2026-09-17-welcome-tracking';
+const SCHEMA_VERSION = 'v2026-09-17-fulltext-letters-and-likes';
 
 let schemaReady: Promise<void> | null = null;
 
@@ -145,6 +145,57 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
     window_start TIMESTAMPTZ NOT NULL DEFAULT now()
   )`;
   await db`CREATE INDEX IF NOT EXISTS rate_limits_window_idx ON rate_limits (window_start)`;
+
+  // "I liked this" presses. The identity is an HMAC of the slug and the reader's
+  // address, so the same person pressing twice counts once and no address is
+  // stored. Per-post counts are what tell Joseph which posts landed.
+  await db`CREATE TABLE IF NOT EXISTS post_likes (
+    id SERIAL PRIMARY KEY,
+    slug TEXT NOT NULL,
+    lang TEXT NOT NULL DEFAULT 'en',
+    identity TEXT NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE (slug, identity)
+  )`;
+  await db`CREATE INDEX IF NOT EXISTS post_likes_slug_idx ON post_likes (slug)`;
+  await db`CREATE INDEX IF NOT EXISTS post_likes_created_idx ON post_likes (created_at)`;
+
+  // One-shot: letters queued before letters became full text are teasers, and have
+  // no "I liked this" button. Rebuild them from their posts. Notes are preserved;
+  // anything already sent is left untouched.
+  if (await once(db, 'rebuild_queued_letters_fulltext_v1')) {
+    const rows = await db`
+      SELECT id, slug, slug_ko, slot, note, note_ko, html, html_ko
+      FROM queue_items WHERE status = 'queued'
+    ` as {
+      id: number; slug: string; slug_ko: string | null; slot: string;
+      note: string | null; note_ko: string | null; html: string | null; html_ko: string | null;
+    }[];
+    for (const row of rows) {
+      const stale = !String(row.html || '').includes('<!--LETTER:') ||
+                    !String(row.html_ko || '').includes('<!--LETTER:');
+      if (!stale) continue;
+      try {
+        const pair = await composePair(String(row.slug || row.slug_ko), row.slot as Slot, {
+          en: row.note || '',
+          ko: row.note_ko || '',
+        });
+        if (!pair?.en || !pair?.ko) continue;
+        const en = pair.en.letter;
+        const ko = pair.ko.letter;
+        await db`
+          UPDATE queue_items SET
+            slug = ${pair.enSlug}, slug_ko = ${pair.koSlug},
+            subject = ${en.subject}, html = ${en.html}, text_body = ${en.text},
+            subject_ko = ${ko.subject}, html_ko = ${ko.html}, text_body_ko = ${ko.text}
+          WHERE id = ${row.id} AND status = 'queued'
+        `;
+        console.log(`[schema] rebuilt queued letter ${row.slug} as ${en.mode} text`);
+      } catch (err) {
+        console.error(`[schema] could not rebuild queued letter ${row.slug}:`, err);
+      }
+    }
+  }
 
   await db`CREATE TABLE IF NOT EXISTS email_templates (
     key TEXT PRIMARY KEY,
