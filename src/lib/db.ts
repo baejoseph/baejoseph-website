@@ -31,11 +31,15 @@ export async function ensureSchema() {
     slug TEXT NOT NULL,
     status TEXT NOT NULL DEFAULT 'queued',
     subject TEXT,
+    html TEXT,
+    text_body TEXT,
     error TEXT,
     sent_at TIMESTAMPTZ,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     UNIQUE (slot, send_on)
   )`;
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS html TEXT`;
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS text_body TEXT`;
   await db`CREATE TABLE IF NOT EXISTS send_log (
     id SERIAL PRIMARY KEY,
     queue_id INTEGER REFERENCES queue_items(id) ON DELETE SET NULL,

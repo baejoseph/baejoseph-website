@@ -3,7 +3,7 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
 import { sql } from '../../lib/db';
-import { postBySlug } from '../../lib/newsletter';
+import { composeFromSlug } from '../../lib/newsletter';
 import { sendQueueItem } from '../../lib/send-queue';
 
 export const GET: APIRoute = async ({ request }) => {
@@ -31,14 +31,14 @@ export const POST: APIRoute = async ({ request }) => {
   if (slot === 'friday_new' && weekday !== 5) {
     return json({ error: 'New-post slot must fall on a Friday' }, 400);
   }
-  const post = await postBySlug(slug);
-  if (!post) return json({ error: 'Unknown slug' }, 404);
+  const composed = await composeFromSlug(slug, slot);
+  if (!composed) return json({ error: 'Unknown slug' }, 404);
 
   const db = sql();
   try {
     const rows = await db`
-      INSERT INTO queue_items (slot, send_on, slug, subject)
-      VALUES (${slot}, ${sendOn}, ${slug}, ${post.data.title})
+      INSERT INTO queue_items (slot, send_on, slug, subject, html, text_body)
+      VALUES (${slot}, ${sendOn}, ${slug}, ${composed.letter.subject}, ${composed.letter.html}, ${composed.letter.text})
       RETURNING *
     `;
     return json({ item: rows[0] });
@@ -75,6 +75,34 @@ export const PATCH: APIRoute = async ({ request }) => {
     } catch (err) {
       return json({ error: err instanceof Error ? err.message : String(err) }, 500);
     }
+  }
+  if (body.action === 'save') {
+    const subject = String(body.subject ?? '');
+    const html = String(body.html ?? '');
+    const text = String(body.text ?? '');
+    const db = sql();
+    const rows = await db`
+      UPDATE queue_items
+      SET subject = ${subject}, html = ${html}, text_body = ${text}
+      WHERE id = ${id} AND status = 'queued'
+      RETURNING *
+    `;
+    if (!rows[0]) return json({ error: 'Not found or already sent' }, 404);
+    return json({ item: rows[0] });
+  }
+  if (body.action === 'rebuild') {
+    const db = sql();
+    const existing = await db`SELECT slug, slot FROM queue_items WHERE id = ${id} LIMIT 1`;
+    if (!existing[0]) return json({ error: 'Not found' }, 404);
+    const composed = await composeFromSlug(String(existing[0].slug), existing[0].slot);
+    if (!composed) return json({ error: 'Post missing' }, 404);
+    const rows = await db`
+      UPDATE queue_items
+      SET subject = ${composed.letter.subject}, html = ${composed.letter.html}, text_body = ${composed.letter.text}
+      WHERE id = ${id} AND status = 'queued'
+      RETURNING *
+    `;
+    return json({ item: rows[0] });
   }
   return json({ error: 'unknown action' }, 400);
 };

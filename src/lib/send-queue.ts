@@ -1,6 +1,10 @@
 import { sql } from './db';
 import { sendMail, smtpConfigured } from './email';
-import { buildNewsletter, excerptFromMarkdown, postBySlug, type Slot } from './newsletter';
+import { composeFromSlug, postBySlug, type Slot } from './newsletter';
+
+function applyUnsub(s: string, token: string) {
+  return s.replaceAll('{{UNSUB}}', encodeURIComponent(token));
+}
 
 export async function sendQueueItem(id: number, opts?: { testTo?: string }) {
   if (!smtpConfigured()) throw new Error('SMTP is not configured');
@@ -13,12 +17,16 @@ export async function sendQueueItem(id: number, opts?: { testTo?: string }) {
   if (!post) throw new Error(`Post not found: ${item.slug}`);
 
   const lang = (post.data.lang ?? 'en') as string;
-  const excerpt = excerptFromMarkdown(post.body ?? '');
-  const date = post.data.date
-    ? new Date(post.data.date).toLocaleDateString(lang === 'ko' ? 'ko-KR' : 'en-GB', {
-        day: 'numeric', month: 'long', year: 'numeric',
-      })
-    : '';
+  let html = String(item.html || '');
+  let text = String(item.text_body || '');
+  let subject = String(item.subject || '');
+  if (!html) {
+    const composed = await composeFromSlug(String(item.slug), item.slot as Slot);
+    if (!composed) throw new Error(`Post not found: ${item.slug}`);
+    html = composed.letter.html;
+    text = composed.letter.text;
+    subject = subject || composed.letter.subject;
+  }
 
   let recipients: { email: string; unsub_token: string }[];
   if (opts?.testTo) {
@@ -41,21 +49,12 @@ export async function sendQueueItem(id: number, opts?: { testTo?: string }) {
   let lastError = '';
 
   for (const r of recipients) {
-    const letter = buildNewsletter({
-      title: post.data.title as string,
-      slug: post.slug,
-      date,
-      excerpt,
-      image: (post.data.featuredImage as string) || '',
-      unsubToken: r.unsub_token,
-      kind: item.slot as Slot,
-    });
     try {
       await sendMail({
         to: r.email,
-        subject: item.subject || letter.subject,
-        html: letter.html,
-        text: letter.text,
+        subject,
+        html: applyUnsub(html, r.unsub_token),
+        text: applyUnsub(text, r.unsub_token),
       });
       sent += 1;
       if (!opts?.testTo) {

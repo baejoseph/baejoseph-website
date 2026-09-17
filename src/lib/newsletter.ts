@@ -21,6 +21,31 @@ export async function postBySlug(slug: string) {
   return posts.find(p => p.slug === slug) ?? null;
 }
 
+export async function composeFromSlug(slug: string, kind: Slot) {
+  const post = await postBySlug(slug);
+  if (!post) return null;
+  const lang = (post.data.lang ?? 'en') as string;
+  const excerpt = excerptFromMarkdown(post.body ?? '');
+  const date = post.data.date
+    ? new Date(post.data.date).toLocaleDateString(lang === 'ko' ? 'ko-KR' : 'en-GB', {
+        day: 'numeric', month: 'long', year: 'numeric',
+      })
+    : '';
+  return {
+    post,
+    lang,
+    letter: buildNewsletter({
+      title: post.data.title as string,
+      slug: post.slug,
+      date,
+      excerpt,
+      image: (post.data.featuredImage as string) || '',
+      unsubToken: '{{UNSUB}}',
+      kind,
+    }),
+  };
+}
+
 export function postUrl(slug: string) {
   return `https://baejoseph.com/${slug}/`;
 }
