@@ -3,7 +3,10 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
 import { withSchema } from '../../lib/db';
-import { applyNote, composePair } from '../../lib/newsletter';
+import { rebuildQueuedLetters } from '../../lib/letters';
+import {
+  applyNote, composePair, isFinalHtml, LETTERS_VERSION, versionFor,
+} from '../../lib/newsletter';
 import { drainQueueItem, sendQueueItem } from '../../lib/send-queue';
 
 /**
@@ -61,13 +64,14 @@ export const POST: APIRoute = async ({ request }) => {
     const rows = await db`
       INSERT INTO queue_items (
         slot, send_on, slug, slug_ko, subject, html, text_body, note,
-        subject_ko, html_ko, text_body_ko, note_ko
+        subject_ko, html_ko, text_body_ko, note_ko, letters_version
       )
       VALUES (
         ${slot}, ${sendOn},
         ${pair.enSlug || slug}, ${pair.koSlug},
         ${en?.subject || null}, ${en?.html || null}, ${en?.text || null}, ${''},
-        ${ko?.subject || null}, ${ko?.html || null}, ${ko?.text || null}, ${''}
+        ${ko?.subject || null}, ${ko?.html || null}, ${ko?.text || null}, ${''},
+        ${versionFor([en, ko])}
       )
       RETURNING *
     `;
@@ -96,6 +100,18 @@ export const PATCH: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
   const body = await request.json().catch(() => ({}));
+  // Rebuild every queued letter that is behind the current format, and say what
+  // happened to each one. This is the manual version of what a cold start does.
+  // Needs no id, so it is checked before the id guard below.
+  if (body.action === 'rebuild-all') {
+    const db = await withSchema();
+    try {
+      const report = await rebuildQueuedLetters(db);
+      return json({ ok: true, report });
+    } catch (err) {
+      return json({ error: err instanceof Error ? err.message : String(err) }, 500);
+    }
+  }
   const id = Number(body.id);
   if (!id) return json({ error: 'id required' }, 400);
   if (body.action === 'send-now') {
@@ -155,7 +171,8 @@ export const PATCH: APIRoute = async ({ request }) => {
         text_body = ${en?.text || null},
         subject_ko = ${ko?.subject || null},
         html_ko = ${ko?.html || null},
-        text_body_ko = ${ko?.text || null}
+        text_body_ko = ${ko?.text || null},
+        letters_version = ${versionFor([en, ko])}
       WHERE id = ${id} AND status = 'queued'
       RETURNING *
     `;
@@ -183,7 +200,24 @@ export const PATCH: APIRoute = async ({ request }) => {
       RETURNING *
     `;
     if (!rows[0]) return json({ error: 'Not found or already sent' }, 404);
-    return json({ item: rows[0] });
+    // The item is only up to date once both sides are in the current format.
+    const item = rows[0] as Record<string, unknown>;
+    const current = isFinalHtml(String(item.html ?? '')) && isFinalHtml(String(item.html_ko ?? ''));
+    if (current) {
+      await db`UPDATE queue_items SET letters_version = ${LETTERS_VERSION} WHERE id = ${id}`;
+    }
+    return json({ item: { ...item, letters_version: current ? LETTERS_VERSION : item.letters_version ?? null } });
+  }
+  // Rebuild every queued letter that is behind the current format, and say what
+  // happened to each one. This is the manual version of what a cold start does.
+  if (body.action === 'rebuild-all') {
+    const db = await withSchema();
+    try {
+      const report = await rebuildQueuedLetters(db);
+      return json({ ok: true, report });
+    } catch (err) {
+      return json({ error: err instanceof Error ? err.message : String(err) }, 500);
+    }
   }
   return json({ error: 'unknown action' }, 400);
 };

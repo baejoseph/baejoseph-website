@@ -1,5 +1,6 @@
 import { neon } from '@neondatabase/serverless';
-import { composePair, defaultWelcomeLetter, defaultWelcomeLetterKo, type Slot } from './newsletter';
+import { defaultWelcomeLetter, defaultWelcomeLetterKo } from './newsletter';
+import { rebuildQueuedLetters } from './letters';
 
 export function sql() {
   const url = import.meta.env.DATABASE_URL || process.env.DATABASE_URL;
@@ -14,7 +15,7 @@ export type Db = ReturnType<typeof sql>;
  * start can skip ~20 round trips to Neon and just check one row.
  * /api/setup forces the full run regardless (dashboard → "Create / migrate tables").
  */
-const SCHEMA_VERSION = 'v2026-09-17-fulltext-letters-and-likes';
+const SCHEMA_VERSION = 'v2026-09-17-letters-version';
 
 let schemaReady: Promise<void> | null = null;
 
@@ -50,7 +51,10 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
 
   if (!opts.force) {
     const applied = await db`SELECT key FROM schema_meta WHERE key = ${SCHEMA_VERSION} LIMIT 1`;
-    if (applied.length) return;
+    if (applied.length) {
+      await catchUpQueuedLetters(db);
+      return;
+    }
   }
 
   await db`CREATE TABLE IF NOT EXISTS subscribers (
@@ -160,42 +164,9 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
   await db`CREATE INDEX IF NOT EXISTS post_likes_slug_idx ON post_likes (slug)`;
   await db`CREATE INDEX IF NOT EXISTS post_likes_created_idx ON post_likes (created_at)`;
 
-  // One-shot: letters queued before letters became full text are teasers, and have
-  // no "I liked this" button. Rebuild them from their posts. Notes are preserved;
-  // anything already sent is left untouched.
-  if (await once(db, 'rebuild_queued_letters_fulltext_v1')) {
-    const rows = await db`
-      SELECT id, slug, slug_ko, slot, note, note_ko, html, html_ko
-      FROM queue_items WHERE status = 'queued'
-    ` as {
-      id: number; slug: string; slug_ko: string | null; slot: string;
-      note: string | null; note_ko: string | null; html: string | null; html_ko: string | null;
-    }[];
-    for (const row of rows) {
-      const stale = !String(row.html || '').includes('<!--LETTER:') ||
-                    !String(row.html_ko || '').includes('<!--LETTER:');
-      if (!stale) continue;
-      try {
-        const pair = await composePair(String(row.slug || row.slug_ko), row.slot as Slot, {
-          en: row.note || '',
-          ko: row.note_ko || '',
-        });
-        if (!pair?.en || !pair?.ko) continue;
-        const en = pair.en.letter;
-        const ko = pair.ko.letter;
-        await db`
-          UPDATE queue_items SET
-            slug = ${pair.enSlug}, slug_ko = ${pair.koSlug},
-            subject = ${en.subject}, html = ${en.html}, text_body = ${en.text},
-            subject_ko = ${ko.subject}, html_ko = ${ko.html}, text_body_ko = ${ko.text}
-          WHERE id = ${row.id} AND status = 'queued'
-        `;
-        console.log(`[schema] rebuilt queued letter ${row.slug} as ${en.mode} text`);
-      } catch (err) {
-        console.error(`[schema] could not rebuild queued letter ${row.slug}:`, err);
-      }
-    }
-  }
+  // Queued letters learn which letter format they were built with, so anything
+  // behind the current one can be rebuilt (see lib/letters.ts).
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS letters_version TEXT`;
 
   await db`CREATE TABLE IF NOT EXISTS email_templates (
     key TEXT PRIMARY KEY,
@@ -231,4 +202,23 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
     INSERT INTO schema_meta (key) VALUES (${SCHEMA_VERSION})
     ON CONFLICT (key) DO NOTHING
   `;
+
+  await catchUpQueuedLetters(db);
+}
+
+/**
+ * Queued letters behind the current format get rebuilt from their posts. Runs on
+ * every cold start (one indexed-ish SELECT when there is nothing to do), so a
+ * letter that could not be composed last time is retried rather than forgotten.
+ * Never allowed to break a request: a failure here is logged, not thrown.
+ */
+async function catchUpQueuedLetters(db: Db) {
+  try {
+    const report = await rebuildQueuedLetters(db);
+    if (report.checked > 0) {
+      console.log(`[letters] queued letters: ${report.rebuilt} rebuilt, ${report.skipped} skipped, ${report.failed} failed`);
+    }
+  } catch (err) {
+    console.error('[letters] could not catch up queued letters:', err);
+  }
 }

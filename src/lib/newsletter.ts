@@ -4,8 +4,15 @@ import emailBodies from './email-bodies.json';
 export type Slot = 'tuesday_featured' | 'friday_new';
 
 /** How a letter was built. Stored in the letter itself as a marker comment so the
- *  dashboard can show it and a migration can spot letters from an older format. */
+ *  dashboard can show it and a stale letter can be spotted and rebuilt. */
 export type LetterMode = 'full' | 'excerpt';
+
+/**
+ * Bumped whenever the letter format changes. Queued letters carry the version they
+ * were built with, and anything behind the current one is rebuilt from its post
+ * automatically — no once-only migration that can fail silently and never retry.
+ */
+export const LETTERS_VERSION = 'fulltext-v1';
 
 export const LIKE_PLACEHOLDER = '{{LIKE}}';
 
@@ -41,6 +48,13 @@ type Body = { html: string; text: string; bytes: number };
 
 const bodies = emailBodies as Record<string, Body>;
 let warnedMissingBodies = false;
+
+/** True when a body lookup has missed, i.e. the generated bodies file is stale or
+ *  absent. Surfaced in the dashboard, because the alternative is finding out from
+ *  a reader who got a teaser. */
+export function bodiesMissing() {
+  return warnedMissingBodies;
+}
 
 /**
  * Rendered full body for a post, produced by scripts/build-email-posts.mjs. If the
@@ -164,24 +178,59 @@ export function buildNewsletter(opts: {
   subject?: string;
   note?: string;
   uiLang?: 'en' | 'ko';
-}): { html: string; text: string; subject: string; mode: LetterMode; oversize?: boolean } {
+}): Letter {
   const full = opts.bodyHtml
-    ? renderLetter(opts, 'full')
-    : renderLetter(opts, 'excerpt');
+    ? renderLetter(opts, 'full', 'full')
+    : renderLetter(opts, 'excerpt', 'teaser');
   // The clip limit is on the whole message, text part included.
   const totalBytes = Buffer.byteLength(full.html, 'utf8') + Buffer.byteLength(full.text, 'utf8');
   if (opts.bodyHtml && totalBytes > MAX_LETTER_BYTES) {
-    // Too big to survive the inbox intact: send the teaser instead.
+    // Too big to survive the inbox intact: send the teaser, on purpose. Marked
+    // separately so it is not mistaken for a letter that still needs rebuilding.
     console.warn(`[newsletter] ${opts.slug}: ${(totalBytes / 1024).toFixed(0)}KB letter fell back to a teaser`);
-    return { ...renderLetter(opts, 'excerpt'), oversize: true };
+    return { ...renderLetter(opts, 'excerpt', 'teaser-oversize'), oversize: true };
   }
   return full;
 }
 
+/** A letter in the right format says so in a comment at the top. Used to decide
+ *  whether a stored letter is finished, or wants rebuilding. */
+export function storedMarker(html: string | null | undefined): string | null {
+  const m = /<!--LETTER:(full|teaser|teaser-oversize)-->/.exec(String(html || ''));
+  return m ? m[1] : null;
+}
+
+/** Finished letters carry the post, or are a deliberate oversize teaser. */
+export function isFinalHtml(html: string | null | undefined) {
+  const marker = storedMarker(html);
+  return marker === 'full' || marker === 'teaser-oversize';
+}
+
+/** A letter is finished when it either carries the post, or is a deliberate
+ *  oversize teaser. Anything else wants rebuilding. */
+export function isFinalLetter(letter: Letter | null | undefined) {
+  return Boolean(letter && (letter.marker === 'full' || letter.marker === 'teaser-oversize'));
+}
+
+/** The letters_version to store for a freshly composed pair. */
+export function versionFor(letters: (Letter | null | undefined)[]) {
+  return letters.every(isFinalLetter) ? LETTERS_VERSION : null;
+}
+
+type Letter = {
+  html: string;
+  text: string;
+  subject: string;
+  mode: LetterMode;
+  marker: 'full' | 'teaser' | 'teaser-oversize';
+  oversize?: boolean;
+};
+
 function renderLetter(
   opts: Parameters<typeof buildNewsletter>[0],
   mode: LetterMode,
-): { html: string; text: string; subject: string; mode: LetterMode } {
+  marker: 'full' | 'teaser' | 'teaser-oversize',
+): Letter {
   const ko = opts.uiLang === 'ko';
   const url = opts.ctaHref || postUrl(opts.slug);
   const tokenQs = opts.unsubToken.includes('{{UNSUB}}')
@@ -253,7 +302,7 @@ function renderLetter(
   <title>${escapeHtml(opts.title)}</title>
 </head>
 <body style="margin:0;padding:0;background:#0a0a0a;color:#e8e8e8;font-family:Georgia, 'Times New Roman', serif;">
-  <!--LETTER:${mode}-->
+  <!--LETTER:${marker}-->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0a0a0a;">
     <tr>
       <td align="center" style="padding:32px 16px;">
@@ -295,7 +344,7 @@ function renderLetter(
 </body>
 </html>`;
 
-  return { html, text, subject: opts.subject || `${kicker}: ${opts.title}`, mode };
+  return { html, text, subject: opts.subject || `${kicker}: ${opts.title}`, mode, marker };
 }
 
 export function defaultWelcomeLetter() {

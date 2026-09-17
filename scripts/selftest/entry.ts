@@ -344,16 +344,55 @@ check('the Korean reader got the Korean slug in the button', koSlugInButton, `${
 const unsubA = (bodyA.match(/unsubscribe\?token=(tok-[^\s"&]+)/) || [])[1];
 check('their unsubscribe token is still personal and encoded', unsubA === 'tok-liker-a%40test.local' || unsubA === 'tok-liker-a@test.local', String(unsubA));
 
-section('15. queued teasers are rebuilt as full text on deploy');
-const oldItem = await addItem('journey', 'tuesday_featured', '2026-10-06');
-await db`UPDATE queue_items SET html = ${'<html><body><p>old teaser</p></body></html>'}, html_ko = ${'<html><body><p>old teaser ko</p></body></html>'}, note = ${'my original note'} WHERE id = ${oldItem}`;
-await db`DELETE FROM schema_meta WHERE key = 'rebuild_queued_letters_fulltext_v1'`;
-await ensureSchema({ force: true });
-const rebuilt = await db`SELECT html, html_ko, note, slug_ko FROM queue_items WHERE id = ${oldItem}`;
-check('stored letter now contains the full body marker', String(rebuilt[0].html).includes('<!--LETTER:full-->'), String(rebuilt[0].html).slice(0, 80));
-check('Korean letter rebuilt too', String(rebuilt[0].html_ko).includes('<!--LETTER:full-->') && /[\uac00-\ud7af]/.test(String(rebuilt[0].html_ko)));
-check('the handwritten note survived the rebuild', rebuilt[0].note === 'my original note', String(rebuilt[0].note));
-check('the like button came with it', String(rebuilt[0].html).includes('{{LIKE}}'));
+section('15. queued letters catch up on their own, time after time');
+const { LETTERS_VERSION, isFinalHtml } = await import('../../src/lib/newsletter');
+const stale = await addItem('faithfulness', 'tuesday_featured', '2026-10-06');
+// Exactly Joseph's situation: a teaser for the English side, and a Korean slot
+// holding the English body, with the item never touched by a once-only migration.
+await db`UPDATE queue_items SET
+    html = ${'<html><body><p>old teaser</p></body></html>'},
+    html_ko = ${'<html><body><p>old teaser, but in English</p></body></html>'},
+    slug_ko = ${'신실'},
+    note = ${'my original note'},
+    letters_version = NULL
+  WHERE id = ${stale}`;
+await ensureSchema({ force: true }); // what a cold start does
+const caught = await db`SELECT html, html_ko, note, slug_ko, letters_version FROM queue_items WHERE id = ${stale}`;
+check('English letter caught up to the full post', isFinalHtml(caught[0].html) && String(caught[0].html).includes('{{LIKE}}'), String(caught[0].html).slice(0, 60));
+check('Korean letter caught up too', isFinalHtml(caught[0].html_ko), String(caught[0].html_ko).slice(0, 60));
+check('and the Korean letter is actually Korean now', /[\uac00-\ud7af]/.test(String(caught[0].html_ko)));
+check('the handwritten note survived', caught[0].note === 'my original note', String(caught[0].note));
+check('the item is stamped with the letters version', caught[0].letters_version === LETTERS_VERSION, String(caught[0].letters_version));
+
+// An item whose post is gone is reported rather than silently forgotten, and is
+// left unstamped so the next run tries again.
+const orphan = await addItem('no-such-post-xyz', 'friday_new', '2026-10-09');
+const { rebuildQueuedLetters } = await import('../../src/lib/letters');
+const report = await rebuildQueuedLetters(db, { id: orphan });
+check('an unresolvable slug is reported, not skipped silently', report.checked === 1 && report.skipped === 1 && /no post found/.test(report.outcomes[0].detail), JSON.stringify(report.outcomes));
+const orphanRow = await db`SELECT letters_version FROM queue_items WHERE id = ${orphan}`;
+check('and it is left unstamped so it retries', orphanRow[0].letters_version === null, String(orphanRow[0].letters_version));
+
+const secondPass = await rebuildQueuedLetters(db);
+check('a second pass rebuilds nothing and fails nothing', secondPass.rebuilt === 0 && secondPass.failed === 0, JSON.stringify({ checked: secondPass.checked, rebuilt: secondPass.rebuilt, failed: secondPass.failed }));
+check('the letter that was caught up is no longer even considered', !secondPass.outcomes.some((o) => o.id === stale), JSON.stringify(secondPass.outcomes.map((o) => o.slug)));
+
+// A letter already in the current format is never rewritten, even when the item
+// is unstamped — that is what protects a hand-edited letter.
+const handEdited = String(caught[0].html).replace('</body>', '<p>my own addition</p></body>');
+await db`UPDATE queue_items SET html = ${handEdited}, letters_version = NULL WHERE id = ${stale}`;
+await rebuildQueuedLetters(db, { id: stale });
+const kept = await db`SELECT html FROM queue_items WHERE id = ${stale}`;
+check('a hand-edited letter survives a rebuild', String(kept[0].html).includes('my own addition'), String(kept[0].html).slice(-80));
+
+const rebuildAll = await queuePatch({
+  request: new Request('http://x/api/queue', {
+    method: 'PATCH', headers: { 'content-type': 'application/json', cookie },
+    body: JSON.stringify({ action: 'rebuild-all' }),
+  }),
+});
+const rebuildBody = await rebuildAll.json();
+check('the dashboard rebuild button answers with a per-letter report', rebuildAll.status === 200 && rebuildBody.report && Array.isArray(rebuildBody.report.outcomes), JSON.stringify(rebuildBody).slice(0, 140));
 
 await sinkReal.close();
 

@@ -3,6 +3,7 @@ export const prerender = false;
 import { getCollection } from 'astro:content';
 import { isAdmin } from '../../lib/auth';
 import { smtpConfigured } from '../../lib/email';
+import emailBodies from '../../lib/email-bodies.json';
 
 if (!isAdmin(Astro.request)) {
   return Astro.redirect('/dashboard/login');
@@ -34,6 +35,9 @@ const posts = allPosts
 const smtpOk = smtpConfigured();
 const dbOk = Boolean(import.meta.env.DATABASE_URL || process.env.DATABASE_URL);
 const adminEmail = import.meta.env.ADMIN_EMAIL || process.env.ADMIN_EMAIL || '';
+/** Rendered post bodies. Zero means the build never generated them, and every
+ *  letter would silently go out as a teaser. */
+const bodiesCount = Object.keys(emailBodies as Record<string, unknown>).length;
 
 /** slug -> title, for showing which posts were liked without a second lookup. */
 const titleBySlug: Record<string, string> = {};
@@ -152,7 +156,8 @@ const nextFri = nextWeekday(today, 5);
         <div class="stat"><span class="muted">Wiring</span>
           <div style="margin-top:0.45rem;font-size:0.85rem">
             DB: <span class={dbOk ? 'ok' : 'bad'}>{dbOk ? 'set' : 'missing'}</span><br />
-            SMTP: <span class={smtpOk ? 'ok' : 'bad'}>{smtpOk ? 'set' : 'missing'}</span>
+            SMTP: <span class={smtpOk ? 'ok' : 'bad'}>{smtpOk ? 'set' : 'missing'}</span><br />
+            Bodies: <span class={bodiesCount ? 'ok' : 'bad'}>{bodiesCount ? `${bodiesCount} posts` : 'missing — run npm run build'}</span>
           </div>
         </div>
       </div>
@@ -243,6 +248,10 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     </section>
 
     <section class="panel" id="panel-emails">
+      <div class="row" style="margin-bottom:1rem">
+        <button type="button" id="rebuild-all">Rebuild queued letters</button>
+        <span class="muted" id="rebuild-msg">Recomposes any queued letter that is not in the current format. Notes and hand edits to the post stay as they are.</span>
+      </div>
       <div class="split">
         <div class="elist" id="e-list"><div class="muted" style="padding:0.8rem">Loading…</div></div>
         <div>
@@ -453,6 +462,35 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     }
     document.getElementById('tue-btn')?.addEventListener('click', () => queueSlot('tuesday_featured', 'tue-date', 'tue-slug'));
     document.getElementById('fri-btn')?.addEventListener('click', () => queueSlot('friday_new', 'fri-date', 'fri-slug'));
+
+    // Manual version of what a cold start does: bring every queued letter up to the
+    // current format, and say exactly what happened to each one that did not.
+    document.getElementById('rebuild-all')?.addEventListener('click', async () => {
+      const msg = document.getElementById('rebuild-msg');
+      const btn = document.getElementById('rebuild-all');
+      btn.disabled = true;
+      if (msg) msg.textContent = 'Rebuilding…';
+      const res = await fetch('/api/queue', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'rebuild-all' }),
+      });
+      const data = await res.json().catch(() => ({}));
+      btn.disabled = false;
+      if (!res.ok) {
+        if (msg) msg.textContent = data.error || 'Failed';
+        return;
+      }
+      const r = data.report || {};
+      const trouble = (r.outcomes || []).filter(o => o.result !== 'rebuilt');
+      if (msg) {
+        msg.textContent = `${r.rebuilt || 0} rebuilt, ${r.skipped || 0} skipped, ${r.failed || 0} failed`
+          + (r.bodiesMissing ? ' — email bodies are missing from the build' : '')
+          + (trouble.length ? ` · ${trouble.map(o => `${o.slug}: ${o.detail}`).join(' · ')}` : '');
+      }
+      loadQueue();
+      loadTemplates();
+    });
 
     async function loadTemplates() {
       const res = await fetch('/api/templates');
