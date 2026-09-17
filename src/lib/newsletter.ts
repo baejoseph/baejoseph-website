@@ -62,6 +62,7 @@ export function buildNewsletter(opts: {
   ctaLabel?: string;
   ctaHref?: string;
   footer?: string;
+  subject?: string;
 }) {
   const url = opts.ctaHref || postUrl(opts.slug);
   const unsubHref = opts.unsubToken.includes('{{UNSUB}}')
@@ -138,31 +139,26 @@ export function buildNewsletter(opts: {
 </body>
 </html>`;
 
-  return { html, text, subject: `${kicker}: ${opts.title}` };
+  return { html, text, subject: opts.subject || `${kicker}: ${opts.title}` };
 }
 
 export function defaultWelcomeLetter() {
-  const image = 'https://baejoseph.com/assets/intro.jpg';
-  const url = 'https://baejoseph.com/intro/';
-  const title = 'Who Is Joseph Bae?';
-  const kicker = 'Welcome';
-  const excerpt = [
-    'You asked for a letter, not a feed.',
-    'I am Joseph Bae — Korean-British, husband and father, a physicist by training and a layman who writes about Christ, the times, and the country I live in. One new post on Fridays. One from the archive on Tuesdays. That is the whole list.',
-    'Start here: who I am, what I believe, and why I write.',
-  ].join('\n\n');
   return buildNewsletter({
-    title,
+    title: 'Thank you for signing up',
     slug: 'intro',
-    date: 'A letter, not a feed',
-    excerpt,
-    image,
+    excerpt: [
+      'Welcome. I am really glad you are here.',
+      'You will hear from me twice a week: a new post on Fridays, and one from the archive on Tuesdays. No noise in between.',
+      'If you want a little of who I am first, this is the door.',
+    ].join('\n\n'),
+    image: 'https://baejoseph.com/assets/intro.jpg',
     unsubToken: '{{UNSUB}}',
     kind: 'friday_new',
-    kicker,
-    ctaLabel: 'Read the intro →',
-    ctaHref: url,
-    footer: 'You asked for this. One new post on Fridays, one from the archive on Tuesdays.',
+    kicker: 'Welcome',
+    ctaLabel: 'Come in →',
+    ctaHref: 'https://baejoseph.com/intro/',
+    footer: 'You can leave anytime. No hard feelings.',
+    subject: 'Welcome — thank you for signing up',
   });
 }
 
