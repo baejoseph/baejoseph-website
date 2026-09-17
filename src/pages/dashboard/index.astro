@@ -100,6 +100,8 @@ const nextFri = nextWeekday(today, 5);
     .eitem.on { background: #19192a; }
     .eitem small { display: block; color: var(--text-muted); font-weight: 400; }
     iframe.prev { width: 100%; height: 420px; border: 1px solid #222; border-radius: 10px; background: #fff; }
+    #e-note-wrap { position: relative; z-index: 2; margin: 0.5rem 0 0.75rem; }
+    #e-note { pointer-events: auto; }
     pre.help { white-space: pre-wrap; background: #111; border: 1px solid #222; border-radius: 10px; padding: 1rem; font-size: 0.8rem; line-height: 1.55; color: #c4c4c4; }
     details { margin-top: 1rem; }
     details summary { cursor: pointer; color: var(--text-muted); }
@@ -454,7 +456,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       document.getElementById('e-subject').disabled = locked;
       document.getElementById('e-html').disabled = locked;
       document.getElementById('e-text').disabled = locked;
-      document.getElementById('e-note').disabled = locked;
+      document.getElementById('e-note').disabled = false;
+      document.getElementById('e-note').readOnly = locked;
       document.getElementById('e-save').disabled = locked;
       document.getElementById('e-rebuild').disabled = locked;
       document.getElementById('e-rebuild').textContent = rebuildLabel;
@@ -521,7 +524,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         subject: (editorLang === 'ko' ? it.subject_ko : it.subject) || '',
         html: (editorLang === 'ko' ? it.html_ko : it.html) || '',
         text: (editorLang === 'ko' ? it.text_body_ko : it.text_body) || '',
-        locked: it.status !== 'queued',
+        locked: it.status === 'sent' || it.status === 'failed',
         rebuildLabel: 'Rebuild from post',
         showSend: it.status === 'queued',
         showNote: it.slot === 'tuesday_featured' || it.slot === 'friday_new',
@@ -562,16 +565,34 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       if (idx === -1) return html;
       return html.slice(0, idx + 5) + block + html.slice(idx + 5);
     }
+    let previewTimer = null;
     function refreshPreview() {
       let html = document.getElementById('e-html').value;
+      const noteEl = document.getElementById('e-note');
       const noteWrap = document.getElementById('e-note-wrap');
-      if (noteWrap && !noteWrap.hidden) {
-        html = applyNoteHtml(html, document.getElementById('e-note').value);
+      if (noteWrap && !noteWrap.hidden && noteEl) {
+        html = applyNoteHtml(html, noteEl.value);
       }
-      document.getElementById('e-prev').srcdoc = html || '<p style="padding:1rem;font-family:sans-serif;color:#888">No HTML yet.</p>';
+      const iframe = document.getElementById('e-prev');
+      const keepNote = document.activeElement === noteEl;
+      const start = noteEl ? noteEl.selectionStart : null;
+      const end = noteEl ? noteEl.selectionEnd : null;
+      iframe.tabIndex = -1;
+      iframe.srcdoc = html || '<p style="padding:1rem;font-family:sans-serif;color:#888">No HTML yet.</p>';
+      if (keepNote && noteEl) {
+        noteEl.focus({ preventScroll: true });
+        if (typeof start === 'number') noteEl.setSelectionRange(start, end);
+      }
     }
-    document.getElementById('e-html')?.addEventListener('input', refreshPreview);
-    document.getElementById('e-note')?.addEventListener('input', refreshPreview);
+    function schedulePreview() {
+      clearTimeout(previewTimer);
+      previewTimer = setTimeout(refreshPreview, 200);
+    }
+    document.getElementById('e-html')?.addEventListener('input', schedulePreview);
+    document.getElementById('e-note')?.addEventListener('input', schedulePreview);
+    document.getElementById('e-note')?.addEventListener('keydown', (e) => {
+      e.stopPropagation();
+    });
 
     async function patch(action, extra = {}) {
       const msg = document.getElementById('e-msg');
