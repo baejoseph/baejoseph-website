@@ -4,40 +4,20 @@ import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
 import { withSchema } from '../../lib/db';
 import { applyNote, composePair } from '../../lib/newsletter';
-import { sendQueueItem } from '../../lib/send-queue';
+import { drainQueueItem, sendQueueItem } from '../../lib/send-queue';
 
+/**
+ * Read-only on purpose. This used to re-compose every queued letter and write it
+ * back, which silently threw away any edit made in the dashboard the next time
+ * the page loaded. Healing (empty or wrong-language letters) now happens in
+ * send-queue.ts and in the explicit "Rebuild" actions below.
+ */
 export const GET: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
   const db = await withSchema();
-  let rows = await db`SELECT * FROM queue_items ORDER BY send_on DESC, slot ASC LIMIT 80`;
-  for (const row of rows) {
-    if (row.status !== 'queued') continue;
-    try {
-      const pair = await composePair(String(row.slug || row.slug_ko), row.slot, {
-        en: row.note || '',
-        ko: row.note_ko || '',
-      });
-      if (!pair?.en || !pair?.ko) continue;
-      const updated = await db`
-        UPDATE queue_items SET
-          slug = ${pair.enSlug},
-          slug_ko = ${pair.koSlug},
-          subject = ${pair.en.letter.subject},
-          html = ${pair.en.letter.html},
-          text_body = ${pair.en.letter.text},
-          subject_ko = ${pair.ko.letter.subject},
-          html_ko = ${pair.ko.letter.html},
-          text_body_ko = ${pair.ko.letter.text}
-        WHERE id = ${row.id} AND status = 'queued'
-        RETURNING *
-      `;
-      if (updated[0]) Object.assign(row, updated[0]);
-    } catch {
-      // leave the row; Emails tab will show the gap
-    }
-  }
-  return json({ items: rows });
+  const items = await db`SELECT * FROM queue_items ORDER BY send_on DESC, slot ASC LIMIT 80`;
+  return json({ items });
 };
 
 export const POST: APIRoute = async ({ request }) => {
@@ -111,9 +91,12 @@ export const PATCH: APIRoute = async ({ request }) => {
   if (!id) return json({ error: 'id required' }, 400);
   if (body.action === 'send-now') {
     try {
-      const result = await sendQueueItem(id, body.testTo
-        ? { testTo: String(body.testTo), lang: body.lang === 'ko' ? 'ko' : 'en' }
-        : undefined);
+      // A test send goes to one address and touches no bookkeeping; a real send
+      // keeps batching until the list is finished (or the time budget runs out),
+      // and is safe to press twice because each recipient is claimed first.
+      const result = body.testTo
+        ? await sendQueueItem(id, { testTo: String(body.testTo), lang: body.lang === 'ko' ? 'ko' : 'en' })
+        : await drainQueueItem(id, { budgetMs: 30_000 });
       return json({ ok: true, result });
     } catch (err) {
       return json({ error: err instanceof Error ? err.message : String(err) }, 500);
@@ -167,6 +150,30 @@ export const PATCH: APIRoute = async ({ request }) => {
       WHERE id = ${id} AND status = 'queued'
       RETURNING *
     `;
+    return json({ item: rows[0] });
+  }
+  // Korean only: used when a stored Korean letter is missing or was built from
+  // the English body. Leaves the English letter (and any edit to it) alone.
+  if (body.action === 'rebuild-ko') {
+    const db = await withSchema();
+    const existing = await db`SELECT slug, slug_ko, slot, note, note_ko FROM queue_items WHERE id = ${id} LIMIT 1`;
+    if (!existing[0]) return json({ error: 'Not found' }, 404);
+    const pair = await composePair(String(existing[0].slug || existing[0].slug_ko), existing[0].slot, {
+      en: existing[0].note || '',
+      ko: existing[0].note_ko || '',
+    });
+    if (!pair?.ko) return json({ error: 'No Korean pair for that post' }, 404);
+    const ko = pair.ko.letter;
+    const rows = await db`
+      UPDATE queue_items SET
+        slug_ko = ${pair.koSlug},
+        subject_ko = ${ko.subject},
+        html_ko = ${ko.html},
+        text_body_ko = ${ko.text}
+      WHERE id = ${id} AND status = 'queued'
+      RETURNING *
+    `;
+    if (!rows[0]) return json({ error: 'Not found or already sent' }, 404);
     return json({ item: rows[0] });
   }
   return json({ error: 'unknown action' }, 400);

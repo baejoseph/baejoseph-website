@@ -4,11 +4,12 @@ import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
 import { ensureSchema } from '../../lib/db';
 
+/** Dashboard → "Create / migrate tables". Always runs the full statement list. */
 export const POST: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
   try {
-    await ensureSchema();
+    await ensureSchema({ force: true });
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },

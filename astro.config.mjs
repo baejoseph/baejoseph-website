@@ -23,7 +23,9 @@ export default defineConfig({
   site: 'https://baejoseph.com',
   trailingSlash: 'ignore',
   output: 'static',
-  adapter: vercel(),
+  // Newsletter sends run in batches, but they still need a longer leash than the
+  // platform default: the cron routes budget 30s (see lib/cron-auth.ts).
+  adapter: vercel({ maxDuration: 40 }),
   vite: {
     plugins: [unicodeUrlNormalizer],
   },

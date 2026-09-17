@@ -7,11 +7,21 @@ export function sql() {
   return neon(url);
 }
 
+export type Db = ReturnType<typeof sql>;
+
+/**
+ * Bump this string whenever the statements in ensureSchema() change, so a cold
+ * start can skip ~20 round trips to Neon and just check one row.
+ * /api/setup forces the full run regardless (dashboard → "Create / migrate tables").
+ */
+const SCHEMA_VERSION = 'v2026-09-17-welcome-tracking';
+
 let schemaReady: Promise<void> | null = null;
 
-export async function withSchema() {
+export async function withSchema(opts: { force?: boolean } = {}) {
+  if (opts.force) schemaReady = null;
   if (!schemaReady) {
-    schemaReady = ensureSchema().catch((err) => {
+    schemaReady = ensureSchema(opts).catch((err) => {
       schemaReady = null;
       throw err;
     });
@@ -20,8 +30,29 @@ export async function withSchema() {
   return sql();
 }
 
-export async function ensureSchema() {
+/** One-shot migration guard: true the first time this key is ever seen. */
+async function once(db: Db, key: string) {
+  const rows = await db`
+    INSERT INTO schema_meta (key) VALUES (${key})
+    ON CONFLICT (key) DO NOTHING
+    RETURNING key
+  `;
+  return rows.length > 0;
+}
+
+export async function ensureSchema(opts: { force?: boolean } = {}) {
   const db = sql();
+
+  await db`CREATE TABLE IF NOT EXISTS schema_meta (
+    key TEXT PRIMARY KEY,
+    applied_at TIMESTAMPTZ NOT NULL DEFAULT now()
+  )`;
+
+  if (!opts.force) {
+    const applied = await db`SELECT key FROM schema_meta WHERE key = ${SCHEMA_VERSION} LIMIT 1`;
+    if (applied.length) return;
+  }
+
   await db`CREATE TABLE IF NOT EXISTS subscribers (
     id SERIAL PRIMARY KEY,
     email TEXT NOT NULL UNIQUE,
@@ -68,6 +99,53 @@ export async function ensureSchema() {
     error TEXT,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
   )`;
+
+  // Subscriber lifecycle: did the welcome letter actually land, and has the
+  // address hard-bounced (in which case we stop mailing it).
+  await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS welcomed_at TIMESTAMPTZ`;
+  await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS welcome_error TEXT`;
+  await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS suppressed_at TIMESTAMPTZ`;
+  await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS suppress_reason TEXT`;
+
+  // Per-recipient send bookkeeping. One row per (queue item, address) is what
+  // makes a send idempotent: a second run skips anyone already claimed.
+  await db`ALTER TABLE send_log ADD COLUMN IF NOT EXISTS attempts INTEGER NOT NULL DEFAULT 1`;
+  await db`ALTER TABLE send_log ADD COLUMN IF NOT EXISTS updated_at TIMESTAMPTZ NOT NULL DEFAULT now()`;
+
+  // Collapse historical duplicates before the unique index goes on. The old code
+  // could write two send_log rows for one recipient in a single queue item; the
+  // winner is their newest 'sent' row, else their newest row of any kind.
+  if (await once(db, 'send_log_dedupe_v1')) {
+    const grouped = await db`
+      SELECT queue_id, email, count(*)::int AS n FROM send_log
+      WHERE queue_id IS NOT NULL
+      GROUP BY queue_id, email
+    ` as { queue_id: number; email: string; n: number }[];
+    for (const pair of grouped.filter((p) => Number(p.n) > 1)) {
+      const rows = await db`
+        SELECT id, status FROM send_log
+        WHERE queue_id = ${pair.queue_id} AND email = ${pair.email}
+        ORDER BY id DESC
+      ` as { id: number; status: string }[];
+      const keep = rows.find((r) => r.status === 'sent')?.id ?? rows[0]?.id;
+      for (const row of rows) {
+        if (Number(row.id) === Number(keep)) continue;
+        await db`DELETE FROM send_log WHERE id = ${row.id}`;
+      }
+    }
+  }
+  await db`CREATE UNIQUE INDEX IF NOT EXISTS send_log_queue_email_uniq ON send_log (queue_id, email)`;
+  await db`CREATE INDEX IF NOT EXISTS send_log_queue_idx ON send_log (queue_id)`;
+  await db`CREATE INDEX IF NOT EXISTS subscribers_unsub_idx ON subscribers (unsubscribed_at)`;
+  await db`CREATE INDEX IF NOT EXISTS signup_events_created_idx ON signup_events (created_at)`;
+
+  await db`CREATE TABLE IF NOT EXISTS rate_limits (
+    bucket TEXT PRIMARY KEY,
+    count INTEGER NOT NULL DEFAULT 0,
+    window_start TIMESTAMPTZ NOT NULL DEFAULT now()
+  )`;
+  await db`CREATE INDEX IF NOT EXISTS rate_limits_window_idx ON rate_limits (window_start)`;
+
   await db`CREATE TABLE IF NOT EXISTS email_templates (
     key TEXT PRIMARY KEY,
     subject TEXT NOT NULL,
@@ -96,5 +174,10 @@ export async function ensureSchema() {
         'Welcome — Who Is Joseph Bae?',
         'Welcome — thank you for signing up'
       )
+  `;
+
+  await db`
+    INSERT INTO schema_meta (key) VALUES (${SCHEMA_VERSION})
+    ON CONFLICT (key) DO NOTHING
   `;
 }
