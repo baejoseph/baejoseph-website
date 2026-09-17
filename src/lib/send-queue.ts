@@ -1,47 +1,55 @@
 import { withSchema } from './db';
 import { sendMail, smtpConfigured } from './email';
-import { composeFromSlug, postBySlug, type Slot } from './newsletter';
+import { composePair, type Slot } from './newsletter';
 
 function applyUnsub(s: string, token: string) {
   return s.replaceAll('{{UNSUB}}', encodeURIComponent(token));
 }
 
-export async function sendQueueItem(id: number, opts?: { testTo?: string }) {
+function letterFor(item: Record<string, unknown>, lang: string) {
+  const useKo = lang === 'ko' && item.html_ko;
+  return {
+    html: String((useKo ? item.html_ko : item.html) || item.html || ''),
+    text: String((useKo ? item.text_body_ko : item.text_body) || item.text_body || ''),
+    subject: String((useKo ? item.subject_ko : item.subject) || item.subject || ''),
+  };
+}
+
+export async function sendQueueItem(id: number, opts?: { testTo?: string; lang?: 'en' | 'ko' }) {
   if (!smtpConfigured()) throw new Error('SMTP is not configured');
   const db = await withSchema();
   const rows = await db`SELECT * FROM queue_items WHERE id = ${id} LIMIT 1`;
-  const item = rows[0];
+  const item = rows[0] as Record<string, unknown> | undefined;
   if (!item) throw new Error('Queue item not found');
 
-  const post = await postBySlug(String(item.slug));
-  if (!post) throw new Error(`Post not found: ${item.slug}`);
-
-  const lang = (post.data.lang ?? 'en') as string;
-  let html = String(item.html || '');
-  let text = String(item.text_body || '');
-  let subject = String(item.subject || '');
-  if (!html) {
-    const composed = await composeFromSlug(String(item.slug), item.slot as Slot);
-    if (!composed) throw new Error(`Post not found: ${item.slug}`);
-    html = composed.letter.html;
-    text = composed.letter.text;
-    subject = subject || composed.letter.subject;
+  if (!item.html && !item.html_ko) {
+    const pair = await composePair(String(item.slug || item.slug_ko), item.slot as Slot);
+    if (!pair) throw new Error(`Post not found: ${item.slug}`);
+    if (pair.en) {
+      item.html = pair.en.letter.html;
+      item.text_body = pair.en.letter.text;
+      item.subject = pair.en.letter.subject;
+    }
+    if (pair.ko) {
+      item.html_ko = pair.ko.letter.html;
+      item.text_body_ko = pair.ko.letter.text;
+      item.subject_ko = pair.ko.letter.subject;
+    }
   }
 
-  let recipients: { email: string; unsub_token: string }[];
+  let recipients: { email: string; unsub_token: string; lang: string }[];
   if (opts?.testTo) {
-    recipients = [{ email: opts.testTo, unsub_token: 'test' }];
+    recipients = [{ email: opts.testTo, unsub_token: 'test', lang: opts.lang || 'en' }];
   } else {
     const subRows = await db`
       SELECT email, unsub_token, lang FROM subscribers
       WHERE unsubscribed_at IS NULL
     `;
-    recipients = subRows
-      .filter((s: { lang: string }) => s.lang === lang || s.lang === 'all')
-      .map((s: { email: string; unsub_token: string }) => ({
-        email: s.email,
-        unsub_token: s.unsub_token,
-      }));
+    recipients = subRows.map((s: { email: string; unsub_token: string; lang: string }) => ({
+      email: s.email,
+      unsub_token: s.unsub_token,
+      lang: s.lang === 'ko' ? 'ko' : 'en',
+    }));
   }
 
   let sent = 0;
@@ -49,12 +57,14 @@ export async function sendQueueItem(id: number, opts?: { testTo?: string }) {
   let lastError = '';
 
   for (const r of recipients) {
+    const letter = letterFor(item, r.lang);
+    if (!letter.html) continue;
     try {
       await sendMail({
         to: r.email,
-        subject,
-        html: applyUnsub(html, r.unsub_token),
-        text: applyUnsub(text, r.unsub_token),
+        subject: letter.subject,
+        html: applyUnsub(letter.html, r.unsub_token),
+        text: applyUnsub(letter.text, r.unsub_token),
       });
       sent += 1;
       if (!opts?.testTo) {

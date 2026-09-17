@@ -3,7 +3,7 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
 import { withSchema } from '../../lib/db';
-import { applyNote, composeFromSlug } from '../../lib/newsletter';
+import { applyNote, composePair } from '../../lib/newsletter';
 import { sendQueueItem } from '../../lib/send-queue';
 
 export const GET: APIRoute = async ({ request }) => {
@@ -31,14 +31,24 @@ export const POST: APIRoute = async ({ request }) => {
   if (slot === 'friday_new' && weekday !== 5) {
     return json({ error: 'New-post slot must fall on a Friday' }, 400);
   }
-  const composed = await composeFromSlug(slug, slot);
-  if (!composed) return json({ error: 'Unknown slug' }, 404);
+  const pair = await composePair(slug, slot);
+  if (!pair || (!pair.en && !pair.ko)) return json({ error: 'Unknown slug' }, 404);
+  const en = pair.en?.letter;
+  const ko = pair.ko?.letter;
 
   const db = await withSchema();
   try {
     const rows = await db`
-      INSERT INTO queue_items (slot, send_on, slug, subject, html, text_body, note)
-      VALUES (${slot}, ${sendOn}, ${slug}, ${composed.letter.subject}, ${composed.letter.html}, ${composed.letter.text}, ${slot === 'tuesday_featured' ? '' : null})
+      INSERT INTO queue_items (
+        slot, send_on, slug, slug_ko, subject, html, text_body, note,
+        subject_ko, html_ko, text_body_ko, note_ko
+      )
+      VALUES (
+        ${slot}, ${sendOn},
+        ${pair.enSlug || slug}, ${pair.koSlug},
+        ${en?.subject || null}, ${en?.html || null}, ${en?.text || null}, ${slot === 'tuesday_featured' ? '' : null},
+        ${ko?.subject || null}, ${ko?.html || null}, ${ko?.text || null}, ${slot === 'tuesday_featured' ? '' : null}
+      )
       RETURNING *
     `;
     return json({ item: rows[0] });
@@ -70,41 +80,59 @@ export const PATCH: APIRoute = async ({ request }) => {
   if (!id) return json({ error: 'id required' }, 400);
   if (body.action === 'send-now') {
     try {
-      const result = await sendQueueItem(id, body.testTo ? { testTo: String(body.testTo) } : undefined);
+      const result = await sendQueueItem(id, body.testTo
+        ? { testTo: String(body.testTo), lang: body.lang === 'ko' ? 'ko' : 'en' }
+        : undefined);
       return json({ ok: true, result });
     } catch (err) {
       return json({ error: err instanceof Error ? err.message : String(err) }, 500);
     }
   }
   if (body.action === 'save') {
+    const lang = body.lang === 'ko' ? 'ko' : 'en';
     const subject = String(body.subject ?? '');
     let html = String(body.html ?? '');
     const text = String(body.text ?? '');
     const note = body.note == null ? null : String(body.note);
     const db = await withSchema();
     if (note != null) html = applyNote(html, note);
-    const rows = await db`
-      UPDATE queue_items
-      SET subject = ${subject}, html = ${html}, text_body = ${text}, note = ${note}
-      WHERE id = ${id} AND status = 'queued'
-      RETURNING *
-    `;
+    const rows = lang === 'ko'
+      ? await db`
+          UPDATE queue_items
+          SET subject_ko = ${subject}, html_ko = ${html}, text_body_ko = ${text}, note_ko = ${note}
+          WHERE id = ${id} AND status = 'queued'
+          RETURNING *
+        `
+      : await db`
+          UPDATE queue_items
+          SET subject = ${subject}, html = ${html}, text_body = ${text}, note = ${note}
+          WHERE id = ${id} AND status = 'queued'
+          RETURNING *
+        `;
     if (!rows[0]) return json({ error: 'Not found or already sent' }, 404);
     return json({ item: rows[0] });
   }
   if (body.action === 'rebuild') {
     const db = await withSchema();
-    const existing = await db`SELECT slug, slot, note FROM queue_items WHERE id = ${id} LIMIT 1`;
+    const existing = await db`SELECT slug, slug_ko, slot, note, note_ko FROM queue_items WHERE id = ${id} LIMIT 1`;
     if (!existing[0]) return json({ error: 'Not found' }, 404);
-    const composed = await composeFromSlug(
-      String(existing[0].slug),
-      existing[0].slot,
-      existing[0].note || '',
-    );
-    if (!composed) return json({ error: 'Post missing' }, 404);
+    const pair = await composePair(String(existing[0].slug || existing[0].slug_ko), existing[0].slot, {
+      en: existing[0].note || '',
+      ko: existing[0].note_ko || '',
+    });
+    if (!pair) return json({ error: 'Post missing' }, 404);
+    const en = pair.en?.letter;
+    const ko = pair.ko?.letter;
     const rows = await db`
-      UPDATE queue_items
-      SET subject = ${composed.letter.subject}, html = ${composed.letter.html}, text_body = ${composed.letter.text}
+      UPDATE queue_items SET
+        slug = ${pair.enSlug || existing[0].slug},
+        slug_ko = ${pair.koSlug},
+        subject = ${en?.subject || null},
+        html = ${en?.html || null},
+        text_body = ${en?.text || null},
+        subject_ko = ${ko?.subject || null},
+        html_ko = ${ko?.html || null},
+        text_body_ko = ${ko?.text || null}
       WHERE id = ${id} AND status = 'queued'
       RETURNING *
     `;

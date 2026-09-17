@@ -89,6 +89,7 @@ const nextFri = nextWeekday(today, 5);
     pre.help { white-space: pre-wrap; background: #111; border: 1px solid #222; border-radius: 10px; padding: 1rem; font-size: 0.8rem; line-height: 1.55; color: #c4c4c4; }
     details { margin-top: 1rem; }
     details summary { cursor: pointer; color: var(--text-muted); }
+    .e-lang.on { background: #6366f1; border-color: #6366f1; color: #fff; }
   </style>
 </head>
 <body>
@@ -211,6 +212,11 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
           <div id="e-editor" hidden>
             <div class="row">
               <span class="pill" id="e-meta"></span>
+              <button type="button" class="ghost e-lang on" id="e-lang-en">English</button>
+              <button type="button" class="ghost e-lang" id="e-lang-ko">한국어</button>
+              <span class="muted" id="e-lang-hint"></span>
+            </div>
+            <div class="row">
               <button type="button" id="e-rebuild" class="ghost">Rebuild default</button>
               <button type="button" id="e-save">Save</button>
               <button type="button" id="e-send" class="ghost">Send now</button>
@@ -263,7 +269,9 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
 
     let queueItems = [];
     let welcomeTpl = null;
+    let welcomeKo = null;
     let selectedId = 'welcome';
+    let editorLang = 'en';
 
     function esc(s) {
       return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
@@ -390,7 +398,9 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     async function loadTemplates() {
       const res = await fetch('/api/templates');
       const data = await res.json().catch(() => ({}));
-      welcomeTpl = (data.templates || []).find(t => t.key === 'welcome') || null;
+      const tpls = data.templates || [];
+      welcomeTpl = tpls.find(t => t.key === 'welcome') || null;
+      welcomeKo = tpls.find(t => t.key === 'welcome_ko') || null;
       renderEmailList();
       if (selectedId === 'welcome') selectWelcome();
     }
@@ -398,8 +408,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     function renderEmailList() {
       const box = document.getElementById('e-list');
       const welcomeBtn = `<button type="button" class="eitem${selectedId==='welcome'?' on':''}" data-eid="welcome">
-        ${esc(welcomeTpl?.subject || 'Welcome — Who Is Joseph Bae?')}
-        <small>Intro / welcome letter · sent on signup</small>
+        ${esc((editorLang === 'ko' ? welcomeKo?.subject : welcomeTpl?.subject) || 'Welcome')}
+        <small>Intro / welcome · EN + KO</small>
       </button>`;
       const rest = queueItems.map(it => `<button type="button" class="eitem${it.id===selectedId?' on':''}" data-eid="${it.id}">
         ${esc(it.subject || it.slug)}
@@ -438,37 +448,92 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       renderEmailList();
     }
 
-    function selectWelcome() {
-      selectedId = 'welcome';
-      fillEditor({
-        meta: 'Welcome / intro · sent when someone subscribes',
-        subject: welcomeTpl?.subject || '',
-        html: welcomeTpl?.html || '',
-        text: welcomeTpl?.text_body || '',
-        locked: false,
-        rebuildLabel: 'Reset to default',
-        showSend: false,
-        showNote: false,
-        note: '',
-      });
+    function paintLangBtns() {
+      document.getElementById('e-lang-en')?.classList.toggle('on', editorLang === 'en');
+      document.getElementById('e-lang-ko')?.classList.toggle('on', editorLang === 'ko');
     }
 
-    function selectEmail(id) {
-      selectedId = id;
-      const it = queueItems.find(x => x.id === id);
+    function stashEditor() {
+      const f = {
+        subject: document.getElementById('e-subject').value,
+        html: document.getElementById('e-html').value,
+        text_body: document.getElementById('e-text').value,
+        note: document.getElementById('e-note').value,
+      };
+      if (selectedId === 'welcome') {
+        if (editorLang === 'ko') welcomeKo = { ...(welcomeKo || {}), ...f, key: 'welcome_ko' };
+        else welcomeTpl = { ...(welcomeTpl || {}), ...f, key: 'welcome' };
+        return;
+      }
+      const it = queueItems.find(x => x.id === selectedId);
+      if (!it) return;
+      if (editorLang === 'ko') {
+        it.subject_ko = f.subject; it.html_ko = f.html; it.text_body_ko = f.text_body; it.note_ko = f.note;
+      } else {
+        it.subject = f.subject; it.html = f.html; it.text_body = f.text_body; it.note = f.note;
+      }
+    }
+
+    function fillFromLang() {
+      paintLangBtns();
+      const hint = document.getElementById('e-lang-hint');
+      if (selectedId === 'welcome') {
+        const t = editorLang === 'ko' ? welcomeKo : welcomeTpl;
+        if (hint) hint.textContent = editorLang === 'ko' ? 'Sent to Korean signups' : 'Sent to English signups';
+        fillEditor({
+          meta: 'Welcome / intro · sent when someone subscribes',
+          subject: t?.subject || '',
+          html: t?.html || '',
+          text: t?.text_body || '',
+          locked: false,
+          rebuildLabel: 'Reset to default',
+          showSend: false,
+          showNote: false,
+          note: '',
+        });
+        return;
+      }
+      const it = queueItems.find(x => x.id === selectedId);
       if (!it) { selectWelcome(); return; }
+      const hasKo = Boolean(it.html_ko || it.slug_ko);
+      if (hint) {
+        hint.textContent = editorLang === 'ko'
+          ? (hasKo ? `KO · /${it.slug_ko}` : 'No Korean pair for this post')
+          : `EN · /${it.slug}`;
+      }
       fillEditor({
         meta: `${slotLabel(it.slot)} · ${String(it.send_on).slice(0,10)} · ${it.status}`,
-        subject: it.subject || '',
-        html: it.html || '',
-        text: it.text_body || '',
+        subject: (editorLang === 'ko' ? it.subject_ko : it.subject) || '',
+        html: (editorLang === 'ko' ? it.html_ko : it.html) || '',
+        text: (editorLang === 'ko' ? it.text_body_ko : it.text_body) || '',
         locked: it.status !== 'queued',
         rebuildLabel: 'Rebuild from post',
         showSend: it.status === 'queued',
         showNote: it.slot === 'tuesday_featured',
-        note: it.note || '',
+        note: (editorLang === 'ko' ? it.note_ko : it.note) || '',
       });
     }
+
+    function selectWelcome() {
+      selectedId = 'welcome';
+      fillFromLang();
+    }
+
+    function selectEmail(id) {
+      selectedId = id;
+      fillFromLang();
+    }
+
+    document.getElementById('e-lang-en')?.addEventListener('click', () => {
+      stashEditor();
+      editorLang = 'en';
+      fillFromLang();
+    });
+    document.getElementById('e-lang-ko')?.addEventListener('click', () => {
+      stashEditor();
+      editorLang = 'ko';
+      fillFromLang();
+    });
 
     function applyNoteHtml(html, note) {
       const inner = String(note || '').trim()
@@ -511,11 +576,12 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
 
     document.getElementById('e-save')?.addEventListener('click', async () => {
       if (selectedId === 'welcome') {
+        const key = editorLang === 'ko' ? 'welcome_ko' : 'welcome';
         const res = await fetch('/api/templates', {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            key: 'welcome',
+            key,
             subject: document.getElementById('e-subject').value,
             html: document.getElementById('e-html').value,
             text: document.getElementById('e-text').value,
@@ -524,12 +590,14 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         const data = await res.json().catch(() => ({}));
         const msg = document.getElementById('e-msg');
         if (!res.ok) { if (msg) msg.textContent = data.error || 'Failed'; return; }
-        welcomeTpl = data.template;
-        if (msg) msg.textContent = 'Welcome letter saved.';
+        if (editorLang === 'ko') welcomeKo = data.template;
+        else welcomeTpl = data.template;
+        if (msg) msg.textContent = editorLang === 'ko' ? '한국어 환영 메일 저장.' : 'Welcome letter saved.';
         selectWelcome();
         return;
       }
       const data = await patch('save', {
+        lang: editorLang,
         subject: document.getElementById('e-subject').value,
         html: document.getElementById('e-html').value,
         text: document.getElementById('e-text').value,
@@ -545,11 +613,12 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         const res = await fetch('/api/templates', {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ key: 'welcome', action: 'rebuild' }),
+          body: JSON.stringify({ key: editorLang === 'ko' ? 'welcome_ko' : 'welcome', action: 'rebuild' }),
         });
         const data = await res.json().catch(() => ({}));
         if (data?.template) {
-          welcomeTpl = data.template;
+          if (editorLang === 'ko') welcomeKo = data.template;
+          else welcomeTpl = data.template;
           document.getElementById('e-msg').textContent = 'Reset to the default welcome letter.';
           selectWelcome();
         }
@@ -572,13 +641,13 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         const res = await fetch('/api/templates', {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ key: 'welcome', action: 'test', testTo: to }),
+          body: JSON.stringify({ key: editorLang === 'ko' ? 'welcome_ko' : 'welcome', action: 'test', testTo: to }),
         });
         const data = await res.json().catch(() => ({}));
         if (msg) msg.textContent = res.ok ? `Test sent to ${to}.` : (data.error || 'Failed');
         return;
       }
-      const data = await patch('send-now', { testTo: to });
+      const data = await patch('send-now', { testTo: to, lang: editorLang });
       if (data && msg) msg.textContent = `Test sent to ${to}.`;
     });
 

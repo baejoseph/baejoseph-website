@@ -3,7 +3,7 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
 import { withSchema } from '../../lib/db';
-import { defaultWelcomeLetter } from '../../lib/newsletter';
+import { defaultWelcomeLetter, defaultWelcomeLetterKo } from '../../lib/newsletter';
 import { sendMail, smtpConfigured } from '../../lib/email';
 
 export const GET: APIRoute = async ({ request }) => {
@@ -22,11 +22,11 @@ export const PATCH: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
   const body = await request.json().catch(() => ({}));
-  const key = String(body.key || 'welcome');
+  const key = body.key === 'welcome_ko' ? 'welcome_ko' : 'welcome';
   const db = await withSchema();
 
   if (body.action === 'rebuild') {
-    const welcome = defaultWelcomeLetter();
+    const welcome = key === 'welcome_ko' ? defaultWelcomeLetterKo() : defaultWelcomeLetter();
     const rows = await db`
       INSERT INTO email_templates (key, subject, html, text_body, updated_at)
       VALUES (${key}, ${welcome.subject}, ${welcome.html}, ${welcome.text}, now())

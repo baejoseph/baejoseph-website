@@ -1,5 +1,5 @@
 import { neon } from '@neondatabase/serverless';
-import { defaultWelcomeLetter } from './newsletter';
+import { defaultWelcomeLetter, defaultWelcomeLetterKo } from './newsletter';
 
 export function sql() {
   const url = import.meta.env.DATABASE_URL || process.env.DATABASE_URL;
@@ -55,6 +55,11 @@ export async function ensureSchema() {
   await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS html TEXT`;
   await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS text_body TEXT`;
   await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS note TEXT`;
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS slug_ko TEXT`;
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS subject_ko TEXT`;
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS html_ko TEXT`;
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS text_body_ko TEXT`;
+  await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS note_ko TEXT`;
   await db`CREATE TABLE IF NOT EXISTS send_log (
     id SERIAL PRIMARY KEY,
     queue_id INTEGER REFERENCES queue_items(id) ON DELETE SET NULL,
@@ -71,9 +76,15 @@ export async function ensureSchema() {
     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
   )`;
   const welcome = defaultWelcomeLetter();
+  const welcomeKo = defaultWelcomeLetterKo();
   await db`
     INSERT INTO email_templates (key, subject, html, text_body)
     VALUES ('welcome', ${welcome.subject}, ${welcome.html}, ${welcome.text})
+    ON CONFLICT (key) DO NOTHING
+  `;
+  await db`
+    INSERT INTO email_templates (key, subject, html, text_body)
+    VALUES ('welcome_ko', ${welcomeKo.subject}, ${welcomeKo.html}, ${welcomeKo.text})
     ON CONFLICT (key) DO NOTHING
   `;
   await db`

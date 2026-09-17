@@ -1,0 +1,70 @@
+---
+export const prerender = false;
+const token = Astro.url.searchParams.get('token') || '';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preferences — Joseph Bae</title>
+  <link rel="stylesheet" href="/styles/global.css" />
+  <style>
+    .wrap { max-width: 440px; margin: 12vh auto; padding: 0 1.5rem; text-align: center; }
+    h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    p { color: var(--text-muted); }
+    .langs { display: flex; gap: 0.5rem; justify-content: center; margin: 1.25rem 0 0.5rem; }
+    .langs button {
+      padding: 0.6rem 1.1rem; border-radius: 999px; border: 1px solid var(--border);
+      background: transparent; color: var(--text); font-weight: 600; cursor: pointer; font-family: inherit;
+    }
+    .langs button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+    #save { margin-top: 1rem; padding: 0.65rem 1.2rem; border: 0; border-radius: 999px;
+      background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; font-family: inherit; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Preferences / 설정</h1>
+    <p id="msg">Which language should the Tuesday and Friday letters arrive in?</p>
+    {token ? (
+      <>
+        <div class="langs">
+          <button type="button" id="btn-en" class="on">English</button>
+          <button type="button" id="btn-ko">한국어</button>
+        </div>
+        <button type="button" id="save">Save</button>
+      </>
+    ) : <p>Missing token.</p>}
+    <p style="margin-top:1.5rem"><a href="/" class="back-link">← Back to the blog</a></p>
+  </div>
+  <script define:vars={{ token }}>
+    let lang = 'en';
+    function paint() {
+      document.getElementById('btn-en')?.classList.toggle('on', lang === 'en');
+      document.getElementById('btn-ko')?.classList.toggle('on', lang === 'ko');
+    }
+    document.getElementById('btn-en')?.addEventListener('click', () => { lang = 'en'; paint(); });
+    document.getElementById('btn-ko')?.addEventListener('click', () => { lang = 'ko'; paint(); });
+
+    if (token) {
+      fetch('/api/preferences?token=' + encodeURIComponent(token))
+        .then(r => r.json())
+        .then(d => { if (d.lang === 'ko' || d.lang === 'en') { lang = d.lang; paint(); } })
+        .catch(() => {});
+    }
+
+    document.getElementById('save')?.addEventListener('click', async () => {
+      const res = await fetch('/api/preferences', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, lang }),
+      });
+      const msg = document.getElementById('msg');
+      if (res.ok && msg) msg.textContent = lang === 'ko'
+        ? '저장했습니다. 이제 한국어로 보내드립니다.'
+        : 'Saved. Letters will come in English.';
+    });
+  </script>
+</body>
+</html>

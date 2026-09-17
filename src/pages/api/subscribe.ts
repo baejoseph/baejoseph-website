@@ -40,7 +40,8 @@ export const POST: APIRoute = async ({ request }) => {
 
     if (smtpConfigured()) {
       try {
-        const tpl = await db`SELECT * FROM email_templates WHERE key = 'welcome' LIMIT 1`;
+        const tplKey = lang === 'ko' ? 'welcome_ko' : 'welcome';
+        const tpl = await db`SELECT * FROM email_templates WHERE key = ${tplKey} LIMIT 1`;
         const t = tpl[0];
         if (t) {
           await sendMail({

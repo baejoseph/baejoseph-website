@@ -21,10 +21,10 @@ export async function postBySlug(slug: string) {
   return posts.find(p => p.slug === slug) ?? null;
 }
 
-export async function composeFromSlug(slug: string, kind: Slot, note?: string) {
+export async function composeFromSlug(slug: string, kind: Slot, note?: string, uiLang?: 'en' | 'ko') {
   const post = await postBySlug(slug);
   if (!post) return null;
-  const lang = (post.data.lang ?? 'en') as string;
+  const lang = ((uiLang || post.data.lang || 'en') === 'ko' ? 'ko' : 'en') as 'en' | 'ko';
   const excerpt = excerptFromMarkdown(post.body ?? '');
   const date = post.data.date
     ? new Date(post.data.date).toLocaleDateString(lang === 'ko' ? 'ko-KR' : 'en-GB', {
@@ -43,7 +43,28 @@ export async function composeFromSlug(slug: string, kind: Slot, note?: string) {
       unsubToken: '{{UNSUB}}',
       kind,
       note: kind === 'tuesday_featured' ? (note ?? '') : undefined,
+      uiLang: lang,
     }),
+  };
+}
+
+export async function composePair(slug: string, kind: Slot, notes?: { en?: string; ko?: string }) {
+  const posts = await getCollection('blog');
+  const post = posts.find(p => p.slug === slug);
+  if (!post) return null;
+  const pair = post.data.pairedSlug
+    ? posts.find(p => p.slug === post.data.pairedSlug) ?? null
+    : null;
+  const pickedLang = (post.data.lang ?? 'en') === 'ko' ? 'ko' : 'en';
+  const enPost = pickedLang === 'ko' ? pair : post;
+  const koPost = pickedLang === 'ko' ? post : pair;
+  const en = enPost ? await composeFromSlug(enPost.slug, kind, notes?.en, 'en') : null;
+  const ko = koPost ? await composeFromSlug(koPost.slug, kind, notes?.ko, 'ko') : null;
+  return {
+    en,
+    ko,
+    enSlug: enPost?.slug ?? null,
+    koSlug: koPost?.slug ?? null,
   };
 }
 
@@ -65,14 +86,24 @@ export function buildNewsletter(opts: {
   footer?: string;
   subject?: string;
   note?: string;
+  uiLang?: 'en' | 'ko';
 }) {
+  const ko = opts.uiLang === 'ko';
   const url = opts.ctaHref || postUrl(opts.slug);
-  const unsubHref = opts.unsubToken.includes('{{UNSUB}}')
-    ? 'https://baejoseph.com/unsubscribe?token={{UNSUB}}'
-    : `https://baejoseph.com/unsubscribe?token=${encodeURIComponent(opts.unsubToken)}`;
-  const kicker = opts.kicker || (opts.kind === 'friday_new' ? 'New this Friday' : 'From the archive');
-  const ctaLabel = opts.ctaLabel || 'Read the rest →';
-  const footer = opts.footer || 'You asked for this. One new post on Fridays, one from the archive on Tuesdays.';
+  const tokenQs = opts.unsubToken.includes('{{UNSUB}}')
+    ? '{{UNSUB}}'
+    : encodeURIComponent(opts.unsubToken);
+  const unsubHref = `https://baejoseph.com/unsubscribe?token=${tokenQs}`;
+  const prefsHref = `https://baejoseph.com/preferences?token=${tokenQs}`;
+  const kicker = opts.kicker || (opts.kind === 'friday_new'
+    ? (ko ? '이번 금요일' : 'New this Friday')
+    : (ko ? '지난 글에서' : 'From the archive'));
+  const ctaLabel = opts.ctaLabel || (ko ? '이어서 읽기 →' : 'Read the rest →');
+  const footer = opts.footer || (ko
+    ? '금요일에 새 글 하나, 화요일에 지난 글 하나. 그뿐입니다.'
+    : 'You asked for this. One new post on Fridays, one from the archive on Tuesdays.');
+  const unsubLabel = ko ? '구독 해지' : 'Unsubscribe';
+  const prefsLabel = ko ? '설정' : 'Preferences';
   const img = opts.image
     ? (opts.image.startsWith('http') ? opts.image : `https://baejoseph.com${opts.image}`)
     : '';
@@ -90,11 +121,12 @@ export function buildNewsletter(opts: {
     '',
     `Read: ${url}`,
     '',
-    `Unsubscribe: ${unsubHref}`,
+    `${unsubLabel}: ${unsubHref}`,
+    `${prefsLabel}: ${prefsHref}`,
   ].filter((l, i, a) => l !== '' || a[i - 1] !== '').join('\n');
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="${ko ? 'ko' : 'en'}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
@@ -135,7 +167,8 @@ export function buildNewsletter(opts: {
           <tr>
             <td style="border-top:1px solid #222;padding-top:16px;font-family:Inter,Arial,sans-serif;font-size:12px;line-height:1.6;color:#666;">
               ${escapeHtml(footer)}<br />
-              <a href="${escapeHtml(unsubHref)}" style="color:#818cf8;">Unsubscribe</a>
+              <a href="${escapeHtml(unsubHref)}" style="color:#818cf8;">${escapeHtml(unsubLabel)}</a>
+              · <a href="${escapeHtml(prefsHref)}" style="color:#818cf8;">${escapeHtml(prefsLabel)}</a>
               · <a href="https://baejoseph.com/" style="color:#818cf8;">baejoseph.com</a>
             </td>
           </tr>
@@ -167,6 +200,29 @@ export function defaultWelcomeLetter() {
     ctaHref: 'https://baejoseph.com/intro/',
     footer: 'You can leave anytime. No hard feelings.',
     subject: 'Welcome — thank you for signing up',
+    uiLang: 'en',
+  });
+}
+
+export function defaultWelcomeLetterKo() {
+  return buildNewsletter({
+    title: '구독해 주셔서 감사합니다',
+    slug: '소개',
+    excerpt: [
+      '환영합니다. 와 주셔서 정말 기쁩니다.',
+      '금요일마다 새 글 하나, 화요일마다 지난 글 하나를 보내드립니다. 그 사이에는 소음이 없습니다.',
+      '제가 누구인지 먼저 알고 싶으시면, 이 문이 시작입니다.',
+      'Welcome. There is an English button on every page if you would rather read in English.',
+    ].join('\n\n'),
+    image: 'https://baejoseph.com/assets/intro.jpg',
+    unsubToken: '{{UNSUB}}',
+    kind: 'friday_new',
+    kicker: '환영합니다',
+    ctaLabel: '들어오기 →',
+    ctaHref: 'https://baejoseph.com/%EC%86%8C%EA%B0%9C/',
+    footer: '언제든 떠나셔도 됩니다. 섭섭해하지 않습니다.',
+    subject: '환영합니다 — 구독해 주셔서 감사합니다',
+    uiLang: 'ko',
   });
 }
 
