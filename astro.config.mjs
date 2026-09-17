@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import vercel from '@astrojs/vercel';
 
 // Vite plugin: normalize non-ASCII chars in dev server URLs to lowercase percent-encoding
 // This fixes Korean slugs like /용기/ being received as literal chars instead of %ec%9a%a9%ea%b8%b0
@@ -21,6 +22,8 @@ export default defineConfig({
   integrations: [mdx()],
   site: 'https://baejoseph.com',
   trailingSlash: 'ignore',
+  output: 'static',
+  adapter: vercel(),
   vite: {
     plugins: [unicodeUrlNormalizer],
   },

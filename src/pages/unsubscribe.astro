@@ -1,0 +1,47 @@
+---
+export const prerender = false;
+const token = Astro.url.searchParams.get('token') || '';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unsubscribe — Joseph Bae</title>
+  <link rel="stylesheet" href="/styles/global.css" />
+  <style>
+    .wrap { max-width: 440px; margin: 12vh auto; padding: 0 1.5rem; text-align: center; }
+    h1 { font-size: 1.4rem; margin-bottom: 0.6rem; }
+    p { color: var(--text-muted); }
+    button {
+      margin-top: 1.25rem; padding: 0.65rem 1.2rem; border: 0; border-radius: 999px;
+      background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Leave the list</h1>
+    <p id="msg">You will stop getting the Tuesday and Friday letters. That is all.</p>
+    {token ? <button id="go" type="button">Unsubscribe</button> : <p>Missing token.</p>}
+    <p style="margin-top:1.5rem"><a href="/" class="back-link">← Back to the blog</a></p>
+  </div>
+  <script define:vars={{ token }}>
+    document.getElementById('go')?.addEventListener('click', async () => {
+      const res = await fetch('/api/unsubscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token }),
+      });
+      const msg = document.getElementById('msg');
+      const btn = document.getElementById('go');
+      if (res.ok) {
+        if (msg) msg.textContent = 'Done. You are off the list.';
+        if (btn) btn.remove();
+      } else if (msg) {
+        msg.textContent = 'Could not complete that. Try again, or write to me.';
+      }
+    });
+  </script>
+</body>
+</html>

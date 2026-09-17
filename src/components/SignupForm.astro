@@ -1,0 +1,65 @@
+---
+interface Props {
+  source: string;
+  lang?: string;
+  compact?: boolean;
+}
+const { source, lang = 'en', compact = false } = Astro.props;
+const ko = lang === 'ko';
+---
+<form class:list={['signup-form', compact && 'compact']} data-signup data-source={source} data-lang={lang}>
+  <label class="sr-only" for={`email-${source}`}>{ko ? '이메일' : 'Email'}</label>
+  <input
+    id={`email-${source}`}
+    type="email"
+    name="email"
+    required
+    autocomplete="email"
+    placeholder={ko ? '이메일 주소' : 'you@example.com'}
+  />
+  <button type="submit">{ko ? '구독' : 'Subscribe'}</button>
+  <p class="signup-status" aria-live="polite"></p>
+</form>
+
+<style>
+  .signup-form { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: center; }
+  .signup-form input {
+    flex: 1 1 180px; min-width: 0; padding: 0.55rem 0.8rem; border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.25); background: rgba(0,0,0,0.35); color: #fff;
+    font-family: inherit; font-size: 0.9rem;
+  }
+  .signup-form button {
+    padding: 0.55rem 1rem; border: 0; border-radius: 999px; background: #6366f1; color: #fff;
+    font-weight: 600; cursor: pointer; font-family: inherit; font-size: 0.9rem;
+  }
+  .signup-status { width: 100%; font-size: 0.8rem; color: rgba(255,255,255,0.75); min-height: 1.1em; margin: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+</style>
+
+<script>
+  document.querySelectorAll('form[data-signup]').forEach((form) => {
+    if (form.dataset.bound) return;
+    form.dataset.bound = '1';
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const status = form.querySelector('.signup-status');
+      const email = form.querySelector('input[name="email"]').value;
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          lang: form.getAttribute('data-lang') || 'en',
+          source: form.getAttribute('data-source') || 'unknown',
+          path: location.pathname,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (status) {
+        status.textContent = res.ok
+          ? (data.already ? 'You are already on the list.' : 'You are on the list. Tuesdays and Fridays.')
+          : (data.error || 'Could not subscribe just now.');
+      }
+    });
+  });
+</script>

@@ -1,0 +1,68 @@
+---
+export const prerender = false;
+import { isAdmin, isConfigured } from '../../lib/auth';
+
+if (isAdmin(Astro.request)) {
+  return Astro.redirect('/dashboard');
+}
+const configured = isConfigured();
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard login — Joseph Bae</title>
+  <link rel="stylesheet" href="/styles/global.css" />
+  <style>
+    .wrap { max-width: 380px; margin: 12vh auto; padding: 0 1.5rem; }
+    h1 { font-size: 1.4rem; margin-bottom: 0.4rem; }
+    p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    input {
+      width: 100%; padding: 0.7rem 0.85rem; border-radius: 8px;
+      border: 1px solid var(--border); background: var(--bg-card); color: var(--text);
+      font-size: 1rem; font-family: inherit;
+    }
+    button {
+      margin-top: 0.75rem; width: 100%; padding: 0.7rem;
+      border: 0; border-radius: 8px; background: var(--accent); color: #fff;
+      font-weight: 600; cursor: pointer; font-family: inherit;
+    }
+    .err { color: #fca5a5; font-size: 0.85rem; margin-top: 0.75rem; min-height: 1.2em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Dashboard</h1>
+    {configured ? (
+      <p>Password for Joseph only. This is not a public account.</p>
+    ) : (
+      <p>Set <code>ADMIN_PASSWORD</code> and <code>ADMIN_SECRET</code> in Vercel env, then reload.</p>
+    )}
+    <form id="f">
+      <input type="password" name="password" placeholder="Password" autocomplete="current-password" required />
+      <button type="submit">Enter</button>
+      <div class="err" id="err"></div>
+    </form>
+  </div>
+  <script>
+    document.getElementById('f')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const err = document.getElementById('err');
+      const fd = new FormData(e.target);
+      const password = String(fd.get('password') || '');
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        if (err) err.textContent = data.error || 'Could not log in';
+        return;
+      }
+      window.location.href = '/dashboard';
+    });
+  </script>
+</body>
+</html>

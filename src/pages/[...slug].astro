@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import TagList from '../components/TagList.astro';
+import NewsletterCta from '../components/NewsletterCta.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -63,7 +64,7 @@ const buildDate = new Date().toISOString().slice(0, 10);
 const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
 ---
 
-<Layout title={post.data.title} description={post.data.title}>
+<Layout title={post.data.title} description={post.data.title} noindex={isFuture}>
   <article>
     {isFuture && (
       <div class="scheduled-notice">
@@ -122,6 +123,8 @@ const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
     <div id="content-primary" class={`prose${lang === 'ko' ? ' lang-ko' : ''}`}>
       <Content />
     </div>
+
+    <NewsletterCta slug={post.slug} lang={lang} />
 
     {/* Second-language content (for mixed posts) */}
     {hasSecondLang && (

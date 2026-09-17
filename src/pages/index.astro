@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
+import SignupForm from '../components/SignupForm.astro';
 
 const allPosts = await getCollection('blog');
 
@@ -101,6 +102,15 @@ const heroPool = posts
         <span class="hero-featured-title" id="hero-featured-title">{introEn.title}</span>
       </div>
     </a>
+    <div class="hero-signup" id="hero-signup" hidden>
+      <div class="hero-text">
+        <h1 id="signup-h1">A letter, not a feed</h1>
+        <p id="signup-p">New post on Fridays. One from the archive on Tuesdays.</p>
+      </div>
+      <div class="hero-signup-form">
+        <SignupForm source="home_hero" lang="en" compact />
+      </div>
+    </div>
     <div class="hero-dots" id="hero-dots" role="tablist" aria-label="Hero cards"></div>
     <button type="button" class="hero-nav hero-nav-next" id="hero-next" aria-label="Next card">›</button>
   </div>
@@ -157,10 +167,17 @@ const heroPool = posts
     if (featuredPick) {
       slides.push({
         ...featuredPick,
+        kind: 'featured',
         label: lang === 'ko' ? '추천' : 'Featured',
       });
     }
-    // Later: slides.push(signupCard)
+    slides.push({
+      kind: 'signup',
+      src: intro.src,
+      href: '#signup',
+      title: lang === 'ko' ? '금요일의 편지' : 'A letter, not a feed',
+      label: lang === 'ko' ? '구독' : 'Newsletter',
+    });
     return slides;
   }
 
@@ -196,12 +213,28 @@ const heroPool = posts
     const labelEl = document.getElementById('hero-label');
 
     const apply = () => {
+      const signup = document.getElementById('hero-signup');
+      const isSignup = slide.kind === 'signup';
       if (hero) {
         hero.style.backgroundImage = `${HERO_OVERLAY}, url('${slide.src}')`;
       }
       if (link) {
-        link.setAttribute('href', slide.href);
-        link.setAttribute('aria-label', slide.title);
+        link.hidden = isSignup;
+        if (!isSignup) {
+          link.setAttribute('href', slide.href);
+          link.setAttribute('aria-label', slide.title);
+        }
+      }
+      if (signup) signup.hidden = !isSignup;
+      if (isSignup) {
+        const h1 = document.getElementById('signup-h1');
+        const p = document.getElementById('signup-p');
+        if (h1) h1.textContent = activeLang === 'ko' ? '피드가 아니라 편지' : 'A letter, not a feed';
+        if (p) p.textContent = activeLang === 'ko'
+          ? '금요일에 새 글. 화요일에 지난 글.'
+          : 'New post on Fridays. One from the archive on Tuesdays.';
+        const form = signup?.querySelector('form[data-signup]');
+        if (form) form.setAttribute('data-lang', activeLang === 'ko' ? 'ko' : 'en');
       }
       if (titleEl) titleEl.textContent = slide.title;
       if (labelEl) labelEl.textContent = slide.label;
@@ -261,6 +294,9 @@ const heroPool = posts
   let activeLang = 'en';
 
   function isPreview() {
+    try {
+      if (document.cookie.split(';').some(c => c.trim().startsWith('bae_admin_ui=1'))) return true;
+    } catch {}
     try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
   }
 
@@ -415,6 +451,10 @@ const heroPool = posts
   .hero-dot.active {
     background: #fff;
   }
+  .hero-signup {
+    padding: 3rem 3.25rem 2.15rem;
+  }
+  .hero-signup-form { margin-top: 1.25rem; }
 
   /* ── Featured article strip at the bottom of the hero ── */
   .hero-featured {

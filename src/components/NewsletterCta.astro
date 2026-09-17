@@ -1,0 +1,39 @@
+---
+import SignupForm from './SignupForm.astro';
+interface Props {
+  slug: string;
+  lang?: string;
+}
+const { slug, lang = 'en' } = Astro.props;
+const ko = lang === 'ko';
+---
+<aside class="nl-cta">
+  <p class="nl-kicker">{ko ? '편지' : 'A letter, not a feed'}</p>
+  <h2>{ko ? '금요일에 새 글 하나, 화요일에 지난 글 하나.' : 'A new post on Fridays. One from the archive on Tuesdays.'}</h2>
+  <p class="nl-copy">
+    {ko
+      ? '구독은 언제든 끊을 수 있습니다. 광고 없고, 남은 건 글뿐입니다.'
+      : 'No pitches. Unsubscribe whenever you like. Just the writing.'}
+  </p>
+  <SignupForm source={`post:${slug}`} lang={lang} />
+</aside>
+
+<style>
+  .nl-cta {
+    margin: 3rem 0 1rem;
+    padding: 1.5rem 1.25rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #111;
+  }
+  .nl-kicker {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 0.4rem;
+  }
+  .nl-cta h2 { font-size: 1.15rem; margin: 0 0 0.45rem; letter-spacing: -0.02em; }
+  .nl-copy { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 1rem; }
+  .nl-cta :global(.signup-form input) {
+    background: #0a0a0a; color: var(--text); border-color: var(--border);
+  }
+  .nl-cta :global(.signup-status) { color: var(--text-muted); }
+</style>

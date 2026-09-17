@@ -1,0 +1,273 @@
+---
+export const prerender = false;
+import { getCollection } from 'astro:content';
+import { isAdmin } from '../../lib/auth';
+import { smtpConfigured } from '../../lib/email';
+
+if (!isAdmin(Astro.request)) {
+  return Astro.redirect('/dashboard/login');
+}
+
+const posts = (await getCollection('blog'))
+  .map(p => ({
+    slug: p.slug,
+    title: p.data.title as string,
+    date: p.data.date ?? '',
+    lang: p.data.lang ?? 'en',
+    image: (p.data.featuredImage as string) || '',
+  }))
+  .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+const smtpOk = smtpConfigured();
+const dbOk = Boolean(import.meta.env.DATABASE_URL || process.env.DATABASE_URL);
+
+function nextWeekday(from: Date, weekday: number) {
+  const d = new Date(from);
+  const add = (weekday + 7 - d.getUTCDay()) % 7 || 7;
+  d.setUTCDate(d.getUTCDate() + add);
+  return d.toISOString().slice(0, 10);
+}
+const today = new Date();
+const nextTue = nextWeekday(today, 2);
+const nextFri = nextWeekday(today, 5);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard — Joseph Bae</title>
+  <link rel="stylesheet" href="/styles/global.css" />
+  <style>
+    body { background: #0a0a0a; }
+    .dash { max-width: 880px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header.bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; gap: 1rem; }
+    header.bar h1 { font-size: 1.25rem; }
+    .muted { color: var(--text-muted); font-size: 0.88rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 2rem; }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+    .stat { background: #111; border: 1px solid #222; border-radius: 10px; padding: 1rem 1.1rem; }
+    .stat b { display: block; font-size: 1.6rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 { font-size: 1.05rem; margin-bottom: 0.75rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    th, td { text-align: left; padding: 0.45rem 0.35rem; border-bottom: 1px solid #222; vertical-align: top; }
+    th { color: var(--text-muted); font-weight: 500; }
+    select, input[type="date"], input[type="email"] {
+      background: #111; color: var(--text); border: 1px solid #333; border-radius: 8px;
+      padding: 0.5rem 0.65rem; font-family: inherit; font-size: 0.9rem; max-width: 100%;
+    }
+    .row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem; }
+    button, .btn {
+      background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 0.5rem 0.85rem;
+      font-weight: 600; cursor: pointer; font-family: inherit; font-size: 0.85rem;
+    }
+    button.ghost { background: transparent; border: 1px solid #333; color: var(--text); }
+    button.danger { background: transparent; border: 1px solid #7f1d1d; color: #fca5a5; }
+    .ok { color: #86efac; } .bad { color: #fca5a5; }
+    pre.help { white-space: pre-wrap; background: #111; border: 1px solid #222; border-radius: 10px; padding: 1rem; font-size: 0.8rem; line-height: 1.55; color: #c4c4c4; }
+    .pill { display: inline-block; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.1rem 0.4rem; border-radius: 4px; border: 1px solid #333; color: #a5b4fc; }
+  </style>
+</head>
+<body>
+  <div class="dash">
+    <header class="bar">
+      <div>
+        <h1>Newsletter dashboard</h1>
+        <p class="muted">Tuesday archive · Friday new post · you only</p>
+      </div>
+      <div class="row">
+        <a class="btn ghost" href="/">Blog</a>
+        <button class="ghost" id="logout" type="button">Log out</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div class="stat"><span class="muted">Active subscribers</span><b id="n-active">—</b></div>
+      <div class="stat"><span class="muted">Wiring</span>
+        <div style="margin-top:0.4rem">
+          DB: <span class={dbOk ? 'ok' : 'bad'}>{dbOk ? 'env set' : 'missing DATABASE_URL'}</span><br />
+          SMTP: <span class={smtpOk ? 'ok' : 'bad'}>{smtpOk ? 'env set' : 'missing SMTP_*'}</span>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2>Signups by source</h2>
+      <table>
+        <thead><tr><th>Source</th><th>Count</th></tr></thead>
+        <tbody id="src-body"><tr><td colspan="2" class="muted">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Queue</h2>
+      <div class="row">
+        <select id="slot">
+          <option value="friday_new">Friday · new</option>
+          <option value="tuesday_featured">Tuesday · featured</option>
+        </select>
+        <input type="date" id="send_on" value={nextFri} />
+        <select id="slug">
+          {posts.map(p => (
+            <option value={p.slug}>{p.date} · {p.lang.toUpperCase()} · {p.title}</option>
+          ))}
+        </select>
+        <button type="button" id="queue-btn">Queue</button>
+      </div>
+      <p class="muted" id="queue-msg"></p>
+      <table>
+        <thead><tr><th>Date</th><th>Slot</th><th>Post</th><th>Status</th><th></th></tr></thead>
+        <tbody id="q-body"><tr><td colspan="5" class="muted">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Subscribers</h2>
+      <table>
+        <thead><tr><th>Email</th><th>Lang</th><th>Signed up via</th><th>When</th></tr></thead>
+        <tbody id="sub-body"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Setup</h2>
+      <div class="row">
+        <button type="button" id="setup-btn">Create tables</button>
+        <span class="muted" id="setup-msg"></span>
+      </div>
+      <pre class="help">Hostinger mailbox (do this once)
+
+1. In Hostinger hPanel → Emails → Create email account
+   Address: newsletter@baejoseph.com  (or hello@, letters@ — your call)
+2. DNS at the domain registrar / Hostinger DNS:
+   MX    @    mx1.hostinger.com    5
+   MX    @    mx2.hostinger.com    10
+   TXT   @    v=spf1 include:_spf.mail.hostinger.com ~all
+   (Hostinger will also give you a DKIM CNAME — add it)
+   TXT   _dmarc    v=DMARC1; p=none; rua=mailto:newsletter@baejoseph.com
+3. In Vercel → Project → Settings → Environment Variables, set everything
+   from .env.example (DATABASE_URL from Neon, SMTP_* from this mailbox,
+   ADMIN_PASSWORD, ADMIN_SECRET, CRON_SECRET).
+4. Neon: Vercel Marketplace → Neon → create a free project → copy
+   DATABASE_URL. Then click “Create tables” above.
+5. Cron is already in vercel.json: Tuesday 08:00 UTC featured, Friday
+   08:00 UTC new. Hobby allows weekly jobs. London 08:00 BST = 07:00 UTC
+   in summer; this fires 08:00 UTC (09:00 BST). Close enough.
+
+SMTP note: Hostinger sometimes blocks datacentre IPs. If sends fail
+from Vercel with a timeout, switch the mailbox to Resend later — the
+queue code only needs SMTP_* env vars.</pre>
+    </section>
+  </div>
+
+  <script define:vars={{ nextTue, nextFri }}>
+    const slotEl = document.getElementById('slot');
+    const dateEl = document.getElementById('send_on');
+
+    slotEl?.addEventListener('change', () => {
+      if (!dateEl) return;
+      dateEl.value = slotEl.value === 'tuesday_featured' ? nextTue : nextFri;
+    });
+
+    document.getElementById('logout')?.addEventListener('click', async () => {
+      await fetch('/api/auth/logout', { method: 'POST' });
+      window.location.href = '/dashboard/login';
+    });
+
+    document.getElementById('setup-btn')?.addEventListener('click', async () => {
+      const msg = document.getElementById('setup-msg');
+      const res = await fetch('/api/setup', { method: 'POST' });
+      const data = await res.json().catch(() => ({}));
+      if (msg) msg.textContent = res.ok ? 'Tables ready.' : (data.error || 'Failed');
+      if (res.ok) load();
+    });
+
+    document.getElementById('queue-btn')?.addEventListener('click', async () => {
+      const msg = document.getElementById('queue-msg');
+      const res = await fetch('/api/queue', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          slot: document.getElementById('slot').value,
+          send_on: document.getElementById('send_on').value,
+          slug: document.getElementById('slug').value,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (msg) msg.textContent = res.ok ? 'Queued.' : (data.error || 'Failed');
+      if (res.ok) loadQueue();
+    });
+
+    async function load() {
+      const res = await fetch('/api/stats');
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        document.getElementById('n-active').textContent = '—';
+        document.getElementById('src-body').innerHTML = `<tr><td colspan="2" class="muted">${data.error || 'Database not ready. Run Setup.'}</td></tr>`;
+        document.getElementById('sub-body').innerHTML = `<tr><td colspan="4" class="muted">${data.error || '—'}</td></tr>`;
+        return;
+      }
+      document.getElementById('n-active').textContent = String(data.active ?? 0);
+      const src = (data.sources || []).map(s => `<tr><td>${esc(s.source)}</td><td>${s.n}</td></tr>`).join('')
+        || '<tr><td colspan="2" class="muted">None yet</td></tr>';
+      document.getElementById('src-body').innerHTML = src;
+      const subs = (data.subscribers || []).map(s => `<tr>
+        <td>${esc(s.email)}${s.unsubscribed_at ? ' <span class="pill">left</span>' : ''}</td>
+        <td>${esc(s.lang)}</td>
+        <td>${esc(s.source)}</td>
+        <td>${esc(String(s.created_at).slice(0, 10))}</td>
+      </tr>`).join('') || '<tr><td colspan="4" class="muted">None yet</td></tr>';
+      document.getElementById('sub-body').innerHTML = subs;
+    }
+
+    async function loadQueue() {
+      const res = await fetch('/api/queue');
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        document.getElementById('q-body').innerHTML = `<tr><td colspan="5" class="muted">${data.error || '—'}</td></tr>`;
+        return;
+      }
+      const rows = (data.items || []).map(it => `<tr>
+        <td>${esc(String(it.send_on).slice(0, 10))}</td>
+        <td>${it.slot === 'friday_new' ? 'Friday new' : 'Tuesday featured'}</td>
+        <td><a href="/${encodeURI(it.slug)}/">${esc(it.slug)}</a></td>
+        <td><span class="pill">${esc(it.status)}</span></td>
+        <td>
+          ${it.status === 'queued' ? `<button class="ghost" data-send="${it.id}">Send now</button>
+          <button class="danger" data-del="${it.id}">Remove</button>` : ''}
+        </td>
+      </tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing queued</td></tr>';
+      document.getElementById('q-body').innerHTML = rows;
+      document.querySelectorAll('[data-del]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          await fetch('/api/queue?id=' + btn.getAttribute('data-del'), { method: 'DELETE' });
+          loadQueue();
+        });
+      });
+      document.querySelectorAll('[data-send]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          btn.disabled = true;
+          const res = await fetch('/api/queue', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: Number(btn.getAttribute('data-send')), action: 'send-now' }),
+          });
+          const data = await res.json().catch(() => ({}));
+          document.getElementById('queue-msg').textContent = res.ok
+            ? `Sent ${data.result?.sent ?? 0}, failed ${data.result?.failed ?? 0}`
+            : (data.error || 'Send failed');
+          loadQueue();
+        });
+      });
+    }
+
+    function esc(s) {
+      return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+    }
+
+    load();
+    loadQueue();
+  </script>
+</body>
+</html>

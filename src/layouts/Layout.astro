@@ -2,9 +2,10 @@
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
 
-const { title = 'Joseph Bae', description = 'Thoughts on faith, culture, and life.' } = Astro.props;
+const { title = 'Joseph Bae', description = 'Thoughts on faith, culture, and life.', noindex = false } = Astro.props;
 const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
 ---
 
@@ -24,6 +25,7 @@ const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={siteTitle} />
     <meta name="twitter:description" content={description} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
   </head>
   <body>
     <header>
@@ -55,7 +57,13 @@ const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
 
   const STORAGE_KEY = 'baejoseph_preview_mode';
 
+  function isAdminUi(): boolean {
+    try {
+      return document.cookie.split(';').some(c => c.trim().startsWith('bae_admin_ui=1'));
+    } catch { return false; }
+  }
   function getDebugMode(): boolean {
+    if (isAdminUi()) return true;
     try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
   }
   function setDebugMode(val: boolean) {

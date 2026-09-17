@@ -89,6 +89,9 @@ const scheduledCount = posts.length - publishedCount;
   const LANG_SESSION_KEY = 'baejoseph_lang_filter';
 
   function isPreview() {
+    try {
+      if (document.cookie.split(';').some(c => c.trim().startsWith('bae_admin_ui=1'))) return true;
+    } catch {}
     try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
   }
 
