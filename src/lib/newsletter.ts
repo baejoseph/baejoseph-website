@@ -39,23 +39,22 @@ export async function postBySlug(slug: string, lang?: 'en' | 'ko') {
     ?? null;
 }
 
-export async function composeFromSlug(slug: string, kind: Slot, note?: string, uiLang?: 'en' | 'ko') {
-  const lang = (uiLang === 'ko' ? 'ko' : uiLang === 'en' ? 'en' : undefined);
-  const post = await postBySlug(slug, lang) || await postBySlug(slug);
-  if (!post) return null;
-  const resolved = ((lang || post.data.lang || 'en') === 'ko' ? 'ko' : 'en') as 'en' | 'ko';
-  if (lang && ((post.data.lang ?? 'en') === 'ko') !== (lang === 'ko')) {
-    throw new Error(`Slug ${slug} is not a ${lang} post`);
-  }
+type BlogEntry = Awaited<ReturnType<typeof getCollection<'blog'>>>[0];
+
+function isKo(post: BlogEntry) {
+  return (post.data.lang ?? 'en') === 'ko';
+}
+
+function composeFromPost(post: BlogEntry, kind: Slot, note: string | undefined, uiLang: 'en' | 'ko') {
   const excerpt = excerptFromMarkdown(post.body ?? '');
   const date = post.data.date
-    ? new Date(post.data.date).toLocaleDateString(resolved === 'ko' ? 'ko-KR' : 'en-GB', {
+    ? new Date(post.data.date).toLocaleDateString(uiLang === 'ko' ? 'ko-KR' : 'en-GB', {
         day: 'numeric', month: 'long', year: 'numeric',
       })
     : '';
   return {
     post,
-    lang: resolved,
+    lang: uiLang,
     letter: buildNewsletter({
       title: post.data.title as string,
       slug: post.slug,
@@ -65,42 +64,49 @@ export async function composeFromSlug(slug: string, kind: Slot, note?: string, u
       unsubToken: '{{UNSUB}}',
       kind,
       note: kind === 'tuesday_featured' ? (note ?? '') : undefined,
-      uiLang: resolved,
+      uiLang,
     }),
   };
 }
 
-function findPair(posts: Awaited<ReturnType<typeof getCollection<'blog'>>>, post: Awaited<ReturnType<typeof getCollection<'blog'>>>[0]) {
-  const candidates = [
-    post.data.pairedSlug,
-    post.data.wpSlug,
-    post.slug,
-  ].filter(Boolean) as string[];
-  for (const c of candidates) {
-    const hit = posts.find(p => p.slug !== post.slug && (
-      p.slug === c || p.data.pairedSlug === post.slug || p.data.pairedSlug === c || p.data.wpSlug === c
-    ));
+export async function composeFromSlug(slug: string, kind: Slot, note?: string, uiLang?: 'en' | 'ko') {
+  const post = await postBySlug(slug, uiLang);
+  if (!post) return null;
+  const resolved = (uiLang || (isKo(post) ? 'ko' : 'en')) as 'en' | 'ko';
+  return composeFromPost(post, kind, note, resolved);
+}
+
+function findOpposite(posts: BlogEntry[], post: BlogEntry) {
+  const wantKo = !isKo(post);
+  const pool = posts.filter(p => isKo(p) === wantKo);
+  const keys = [post.data.pairedSlug, post.slug, post.data.wpSlug].filter(Boolean) as string[];
+  for (const c of keys) {
+    const hit = pool.find(p =>
+      p.slug === c
+      || p.data.pairedSlug === post.slug
+      || p.data.pairedSlug === c
+      || p.data.wpSlug === c
+    );
     if (hit) return hit;
   }
-  return posts.find(p => p.slug !== post.slug && p.data.pairedSlug === post.slug) ?? null;
+  return null;
 }
 
 export async function composePair(slug: string, kind: Slot, notes?: { en?: string; ko?: string }) {
   const posts = await getCollection('blog');
   const post = posts.find(p => p.slug === slug) || posts.find(p => matchSlug(p, slug));
   if (!post) return null;
-  const pair = findPair(posts, post);
-  const pickedLang = (post.data.lang ?? 'en') === 'ko' ? 'ko' : 'en';
-  const enPost = pickedLang === 'ko' ? pair : post;
-  const koPost = pickedLang === 'ko' ? post : pair;
+  const enPost = isKo(post) ? findOpposite(posts, post) : post;
+  const koPost = isKo(post) ? post : findOpposite(posts, post);
   if (!enPost || !koPost) {
     throw new Error(`Every queued post needs an EN+KO pair. Missing pair for ${slug}`);
   }
-  const en = await composeFromSlug(enPost.slug, kind, notes?.en, 'en');
-  const ko = await composeFromSlug(koPost.slug, kind, notes?.ko, 'ko');
+  if (isKo(enPost) || !isKo(koPost)) {
+    throw new Error(`Pair lookup mixed languages for ${slug} (en=${enPost.slug}, ko=${koPost.slug})`);
+  }
   return {
-    en,
-    ko,
+    en: composeFromPost(enPost, kind, notes?.en, 'en'),
+    ko: composeFromPost(koPost, kind, notes?.ko, 'ko'),
     enSlug: enPost.slug,
     koSlug: koPost.slug,
   };
