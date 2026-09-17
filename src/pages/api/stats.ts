@@ -2,13 +2,13 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
-import { sql } from '../../lib/db';
+import { withSchema } from '../../lib/db';
 
 export const GET: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
   try {
-    const db = sql();
+    const db = await withSchema();
     const subs = await db`
       SELECT id, email, lang, source, created_at, unsubscribed_at
       FROM subscribers

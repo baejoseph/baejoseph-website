@@ -207,11 +207,11 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       <div class="split">
         <div class="elist" id="e-list"><div class="muted" style="padding:0.8rem">Loading…</div></div>
         <div>
-          <p class="muted" id="e-empty">Pick a queued letter to preview and edit.</p>
+          <p class="muted" id="e-empty">Loading the welcome letter…</p>
           <div id="e-editor" hidden>
             <div class="row">
               <span class="pill" id="e-meta"></span>
-              <button type="button" id="e-rebuild" class="ghost">Rebuild from post</button>
+              <button type="button" id="e-rebuild" class="ghost">Rebuild default</button>
               <button type="button" id="e-save">Save</button>
               <button type="button" id="e-send" class="ghost">Send now</button>
             </div>
@@ -258,7 +258,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     });
 
     let queueItems = [];
-    let selectedId = null;
+    let welcomeTpl = null;
+    let selectedId = 'welcome';
 
     function esc(s) {
       return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
@@ -337,6 +338,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       </tr>`).join('') || '<tr><td colspan="3" class="muted">Nothing queued</td></tr>';
       renderEmailList();
       bindQueueButtons();
+      if (selectedId === 'welcome') selectWelcome();
     }
 
     function bindQueueButtons() {
@@ -381,41 +383,80 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     document.getElementById('tue-btn')?.addEventListener('click', () => queueSlot('tuesday_featured', 'tue-date', 'tue-slug'));
     document.getElementById('fri-btn')?.addEventListener('click', () => queueSlot('friday_new', 'fri-date', 'fri-slug'));
 
+    async function loadTemplates() {
+      const res = await fetch('/api/templates');
+      const data = await res.json().catch(() => ({}));
+      welcomeTpl = (data.templates || []).find(t => t.key === 'welcome') || null;
+      renderEmailList();
+      if (selectedId === 'welcome') selectWelcome();
+    }
+
     function renderEmailList() {
       const box = document.getElementById('e-list');
-      if (!queueItems.length) {
-        box.innerHTML = '<div class="muted" style="padding:0.8rem">Nothing queued yet.</div>';
-        return;
-      }
-      box.innerHTML = queueItems.map(it => `<button type="button" class="eitem${it.id===selectedId?' on':''}" data-eid="${it.id}">
+      const welcomeBtn = `<button type="button" class="eitem${selectedId==='welcome'?' on':''}" data-eid="welcome">
+        ${esc(welcomeTpl?.subject || 'Welcome — Who Is Joseph Bae?')}
+        <small>Intro / welcome letter · sent on signup</small>
+      </button>`;
+      const rest = queueItems.map(it => `<button type="button" class="eitem${it.id===selectedId?' on':''}" data-eid="${it.id}">
         ${esc(it.subject || it.slug)}
         <small>${esc(String(it.send_on).slice(0,10))} · ${slotLabel(it.slot)} · ${esc(it.status)}</small>
       </button>`).join('');
+      box.innerHTML = welcomeBtn + (rest || '<div class="muted" style="padding:0.8rem">No queued letters yet.</div>');
       box.querySelectorAll('[data-eid]').forEach(btn => {
-        btn.addEventListener('click', () => selectEmail(Number(btn.getAttribute('data-eid'))));
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-eid');
+          if (id === 'welcome') selectWelcome();
+          else selectEmail(Number(id));
+        });
+      });
+    }
+
+    function fillEditor({ meta, subject, html, text, locked, rebuildLabel, showSend }) {
+      const editor = document.getElementById('e-editor');
+      const empty = document.getElementById('e-empty');
+      empty.hidden = true;
+      editor.hidden = false;
+      document.getElementById('e-meta').textContent = meta;
+      document.getElementById('e-subject').value = subject || '';
+      document.getElementById('e-html').value = html || '';
+      document.getElementById('e-text').value = text || '';
+      document.getElementById('e-subject').disabled = locked;
+      document.getElementById('e-html').disabled = locked;
+      document.getElementById('e-text').disabled = locked;
+      document.getElementById('e-save').disabled = locked;
+      document.getElementById('e-rebuild').disabled = locked;
+      document.getElementById('e-rebuild').textContent = rebuildLabel;
+      document.getElementById('e-send').hidden = !showSend;
+      refreshPreview();
+      renderEmailList();
+    }
+
+    function selectWelcome() {
+      selectedId = 'welcome';
+      fillEditor({
+        meta: 'Welcome / intro · sent when someone subscribes',
+        subject: welcomeTpl?.subject || '',
+        html: welcomeTpl?.html || '',
+        text: welcomeTpl?.text_body || '',
+        locked: false,
+        rebuildLabel: 'Reset to default',
+        showSend: false,
       });
     }
 
     function selectEmail(id) {
       selectedId = id;
       const it = queueItems.find(x => x.id === id);
-      const editor = document.getElementById('e-editor');
-      const empty = document.getElementById('e-empty');
-      if (!it) { editor.hidden = true; empty.hidden = false; return; }
-      empty.hidden = true;
-      editor.hidden = false;
-      document.getElementById('e-meta').textContent = `${slotLabel(it.slot)} · ${String(it.send_on).slice(0,10)} · ${it.status}`;
-      document.getElementById('e-subject').value = it.subject || '';
-      document.getElementById('e-html').value = it.html || '';
-      document.getElementById('e-text').value = it.text_body || '';
-      const locked = it.status !== 'queued';
-      document.getElementById('e-subject').disabled = locked;
-      document.getElementById('e-html').disabled = locked;
-      document.getElementById('e-text').disabled = locked;
-      document.getElementById('e-save').disabled = locked;
-      document.getElementById('e-rebuild').disabled = locked;
-      refreshPreview();
-      renderEmailList();
+      if (!it) { selectWelcome(); return; }
+      fillEditor({
+        meta: `${slotLabel(it.slot)} · ${String(it.send_on).slice(0,10)} · ${it.status}`,
+        subject: it.subject || '',
+        html: it.html || '',
+        text: it.text_body || '',
+        locked: it.status !== 'queued',
+        rebuildLabel: 'Rebuild from post',
+        showSend: it.status === 'queued',
+      });
     }
 
     function refreshPreview() {
@@ -441,6 +482,25 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     }
 
     document.getElementById('e-save')?.addEventListener('click', async () => {
+      if (selectedId === 'welcome') {
+        const res = await fetch('/api/templates', {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            key: 'welcome',
+            subject: document.getElementById('e-subject').value,
+            html: document.getElementById('e-html').value,
+            text: document.getElementById('e-text').value,
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        const msg = document.getElementById('e-msg');
+        if (!res.ok) { if (msg) msg.textContent = data.error || 'Failed'; return; }
+        welcomeTpl = data.template;
+        if (msg) msg.textContent = 'Welcome letter saved.';
+        selectWelcome();
+        return;
+      }
       const data = await patch('save', {
         subject: document.getElementById('e-subject').value,
         html: document.getElementById('e-html').value,
@@ -452,18 +512,44 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       }
     });
     document.getElementById('e-rebuild')?.addEventListener('click', async () => {
+      if (selectedId === 'welcome') {
+        const res = await fetch('/api/templates', {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ key: 'welcome', action: 'rebuild' }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (data?.template) {
+          welcomeTpl = data.template;
+          document.getElementById('e-msg').textContent = 'Reset to the default welcome letter.';
+          selectWelcome();
+        }
+        return;
+      }
       const data = await patch('rebuild');
       if (data?.item) {
         queueItems = queueItems.map(x => x.id === data.item.id ? data.item : x);
         selectEmail(data.item.id);
       }
     });
-    document.getElementById('e-send')?.addEventListener('click', () => selectedId && sendItem(selectedId));
+    document.getElementById('e-send')?.addEventListener('click', () => {
+      if (selectedId && selectedId !== 'welcome') sendItem(selectedId);
+    });
     document.getElementById('e-test-btn')?.addEventListener('click', async () => {
       const to = document.getElementById('e-test').value;
-      if (!to || !selectedId) return;
-      const data = await patch('send-now', { testTo: to });
+      if (!to) return;
       const msg = document.getElementById('e-msg');
+      if (selectedId === 'welcome') {
+        const res = await fetch('/api/templates', {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ key: 'welcome', action: 'test', testTo: to }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (msg) msg.textContent = res.ok ? `Test sent to ${to}.` : (data.error || 'Failed');
+        return;
+      }
+      const data = await patch('send-now', { testTo: to });
       if (data && msg) msg.textContent = `Test sent to ${to}.`;
     });
 
@@ -486,6 +572,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
 
     loadStats();
     loadQueue();
+    loadTemplates();
   </script>
 </body>
 </html>

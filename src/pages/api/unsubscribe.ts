@@ -1,13 +1,13 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-import { sql } from '../../lib/db';
+import { withSchema } from '../../lib/db';
 
 export const POST: APIRoute = async ({ request }) => {
   const body = await request.json().catch(() => ({}));
   const token = String(body.token ?? '').trim();
   if (!token) return json({ error: 'Missing token' }, 400);
-  const db = sql();
+  const db = await withSchema();
   const rows = await db`
     UPDATE subscribers
     SET unsubscribed_at = now()

@@ -2,7 +2,8 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { randomBytes } from 'node:crypto';
-import { sql } from '../../lib/db';
+import { withSchema } from '../../lib/db';
+import { smtpConfigured, sendMail } from '../../lib/email';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -18,7 +19,7 @@ export const POST: APIRoute = async ({ request }) => {
       return json({ error: 'That does not look like an email address.' }, 400);
     }
 
-    const db = sql();
+    const db = await withSchema();
     const token = randomBytes(16).toString('hex');
 
     try {
@@ -36,6 +37,24 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     await db`INSERT INTO signup_events (email, source, path) VALUES (${email}, ${source}, ${path})`;
+
+    if (smtpConfigured()) {
+      try {
+        const tpl = await db`SELECT * FROM email_templates WHERE key = 'welcome' LIMIT 1`;
+        const t = tpl[0];
+        if (t) {
+          await sendMail({
+            to: email,
+            subject: String(t.subject),
+            html: String(t.html).replaceAll('{{UNSUB}}', token),
+            text: String(t.text_body).replaceAll('{{UNSUB}}', token),
+          });
+        }
+      } catch {
+        // Signup still succeeds if the welcome letter cannot send.
+      }
+    }
+
     return json({ ok: true });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);

@@ -2,14 +2,14 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { requireAdmin } from '../../lib/auth';
-import { sql } from '../../lib/db';
+import { withSchema } from '../../lib/db';
 import { composeFromSlug } from '../../lib/newsletter';
 import { sendQueueItem } from '../../lib/send-queue';
 
 export const GET: APIRoute = async ({ request }) => {
   const denied = requireAdmin(request);
   if (denied) return denied;
-  const db = sql();
+  const db = await withSchema();
   const rows = await db`SELECT * FROM queue_items ORDER BY send_on DESC, slot ASC LIMIT 80`;
   return json({ items: rows });
 };
@@ -34,7 +34,7 @@ export const POST: APIRoute = async ({ request }) => {
   const composed = await composeFromSlug(slug, slot);
   if (!composed) return json({ error: 'Unknown slug' }, 404);
 
-  const db = sql();
+  const db = await withSchema();
   try {
     const rows = await db`
       INSERT INTO queue_items (slot, send_on, slug, subject, html, text_body)
@@ -57,7 +57,7 @@ export const DELETE: APIRoute = async ({ request }) => {
   const url = new URL(request.url);
   const id = Number(url.searchParams.get('id'));
   if (!id) return json({ error: 'id required' }, 400);
-  const db = sql();
+  const db = await withSchema();
   await db`DELETE FROM queue_items WHERE id = ${id} AND status = 'queued'`;
   return json({ ok: true });
 };
@@ -80,7 +80,7 @@ export const PATCH: APIRoute = async ({ request }) => {
     const subject = String(body.subject ?? '');
     const html = String(body.html ?? '');
     const text = String(body.text ?? '');
-    const db = sql();
+    const db = await withSchema();
     const rows = await db`
       UPDATE queue_items
       SET subject = ${subject}, html = ${html}, text_body = ${text}
@@ -91,7 +91,7 @@ export const PATCH: APIRoute = async ({ request }) => {
     return json({ item: rows[0] });
   }
   if (body.action === 'rebuild') {
-    const db = sql();
+    const db = await withSchema();
     const existing = await db`SELECT slug, slot FROM queue_items WHERE id = ${id} LIMIT 1`;
     if (!existing[0]) return json({ error: 'Not found' }, 404);
     const composed = await composeFromSlug(String(existing[0].slug), existing[0].slot);

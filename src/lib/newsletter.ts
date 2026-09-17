@@ -58,10 +58,18 @@ export function buildNewsletter(opts: {
   image?: string;
   unsubToken: string;
   kind: Slot;
+  kicker?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+  footer?: string;
 }) {
-  const url = postUrl(opts.slug);
-  const unsub = `https://baejoseph.com/unsubscribe?token=${encodeURIComponent(opts.unsubToken)}`;
-  const kicker = opts.kind === 'friday_new' ? 'New this Friday' : 'From the archive';
+  const url = opts.ctaHref || postUrl(opts.slug);
+  const unsubHref = opts.unsubToken.includes('{{UNSUB}}')
+    ? 'https://baejoseph.com/unsubscribe?token={{UNSUB}}'
+    : `https://baejoseph.com/unsubscribe?token=${encodeURIComponent(opts.unsubToken)}`;
+  const kicker = opts.kicker || (opts.kind === 'friday_new' ? 'New this Friday' : 'From the archive');
+  const ctaLabel = opts.ctaLabel || 'Read the rest →';
+  const footer = opts.footer || 'You asked for this. One new post on Fridays, one from the archive on Tuesdays.';
   const img = opts.image
     ? (opts.image.startsWith('http') ? opts.image : `https://baejoseph.com${opts.image}`)
     : '';
@@ -69,13 +77,14 @@ export function buildNewsletter(opts: {
   const text = [
     `${kicker}`,
     opts.title,
+    opts.date || '',
     '',
     opts.excerpt,
     '',
     `Read: ${url}`,
     '',
-    `Unsubscribe: ${unsub}`,
-  ].join('\n');
+    `Unsubscribe: ${unsubHref}`,
+  ].filter((l, i, a) => l !== '' || a[i - 1] !== '').join('\n');
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -111,14 +120,14 @@ export function buildNewsletter(opts: {
           <tr>
             <td style="padding-bottom:36px;">
               <a href="${escapeHtml(url)}" style="display:inline-block;background:#6366f1;color:#fff;text-decoration:none;font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.04em;padding:12px 20px;border-radius:999px;">
-                Read the rest →
+                ${escapeHtml(ctaLabel)}
               </a>
             </td>
           </tr>
           <tr>
             <td style="border-top:1px solid #222;padding-top:16px;font-family:Inter,Arial,sans-serif;font-size:12px;line-height:1.6;color:#666;">
-              You asked for this. One new post on Fridays, one from the archive on Tuesdays.<br />
-              <a href="${escapeHtml(unsub)}" style="color:#818cf8;">Unsubscribe</a>
+              ${escapeHtml(footer)}<br />
+              <a href="${escapeHtml(unsubHref)}" style="color:#818cf8;">Unsubscribe</a>
               · <a href="https://baejoseph.com/" style="color:#818cf8;">baejoseph.com</a>
             </td>
           </tr>
@@ -130,6 +139,31 @@ export function buildNewsletter(opts: {
 </html>`;
 
   return { html, text, subject: `${kicker}: ${opts.title}` };
+}
+
+export function defaultWelcomeLetter() {
+  const image = 'https://baejoseph.com/assets/intro.jpg';
+  const url = 'https://baejoseph.com/intro/';
+  const title = 'Who Is Joseph Bae?';
+  const kicker = 'Welcome';
+  const excerpt = [
+    'You asked for a letter, not a feed.',
+    'I am Joseph Bae — Korean-British, husband and father, a physicist by training and a layman who writes about Christ, the times, and the country I live in. One new post on Fridays. One from the archive on Tuesdays. That is the whole list.',
+    'Start here: who I am, what I believe, and why I write.',
+  ].join('\n\n');
+  return buildNewsletter({
+    title,
+    slug: 'intro',
+    date: 'A letter, not a feed',
+    excerpt,
+    image,
+    unsubToken: '{{UNSUB}}',
+    kind: 'friday_new',
+    kicker,
+    ctaLabel: 'Read the intro →',
+    ctaHref: url,
+    footer: 'You asked for this. One new post on Fridays, one from the archive on Tuesdays.',
+  });
 }
 
 function escapeHtml(s: string) {

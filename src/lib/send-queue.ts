@@ -1,4 +1,4 @@
-import { sql } from './db';
+import { withSchema } from './db';
 import { sendMail, smtpConfigured } from './email';
 import { composeFromSlug, postBySlug, type Slot } from './newsletter';
 
@@ -8,7 +8,7 @@ function applyUnsub(s: string, token: string) {
 
 export async function sendQueueItem(id: number, opts?: { testTo?: string }) {
   if (!smtpConfigured()) throw new Error('SMTP is not configured');
-  const db = sql();
+  const db = await withSchema();
   const rows = await db`SELECT * FROM queue_items WHERE id = ${id} LIMIT 1`;
   const item = rows[0];
   if (!item) throw new Error('Queue item not found');
@@ -78,7 +78,7 @@ export async function sendQueueItem(id: number, opts?: { testTo?: string }) {
 }
 
 export async function sendDue(slot: Slot, dateIso: string) {
-  const db = sql();
+  const db = await withSchema();
   const due = await db`
     SELECT id FROM queue_items
     WHERE slot = ${slot} AND send_on = ${dateIso} AND status = 'queued'

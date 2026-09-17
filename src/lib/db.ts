@@ -1,9 +1,23 @@
 import { neon } from '@neondatabase/serverless';
+import { defaultWelcomeLetter } from './newsletter';
 
 export function sql() {
   const url = import.meta.env.DATABASE_URL || process.env.DATABASE_URL;
   if (!url) throw new Error('DATABASE_URL is not set');
   return neon(url);
+}
+
+let schemaReady: Promise<void> | null = null;
+
+export async function withSchema() {
+  if (!schemaReady) {
+    schemaReady = ensureSchema().catch((err) => {
+      schemaReady = null;
+      throw err;
+    });
+  }
+  await schemaReady;
+  return sql();
 }
 
 export async function ensureSchema() {
@@ -48,4 +62,17 @@ export async function ensureSchema() {
     error TEXT,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
   )`;
+  await db`CREATE TABLE IF NOT EXISTS email_templates (
+    key TEXT PRIMARY KEY,
+    subject TEXT NOT NULL,
+    html TEXT NOT NULL,
+    text_body TEXT NOT NULL,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+  )`;
+  const welcome = defaultWelcomeLetter();
+  await db`
+    INSERT INTO email_templates (key, subject, html, text_body)
+    VALUES ('welcome', ${welcome.subject}, ${welcome.html}, ${welcome.text})
+    ON CONFLICT (key) DO NOTHING
+  `;
 }
