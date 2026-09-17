@@ -1,3 +1,5 @@
+import emailPosts from './email-posts.json';
+
 export type Slot = 'tuesday_featured' | 'friday_new';
 
 export function excerptFromMarkdown(body: string, max = 420) {
@@ -21,49 +23,15 @@ type MdPost = {
   date: string;
   pairedSlug: string;
   featuredImage: string;
-  body: string;
+  excerpt: string;
 };
 
-const rawFiles = import.meta.glob('../content/blog/*.md', {
-  eager: true,
-  query: '?raw',
-  import: 'default',
-}) as Record<string, string>;
-
-function parsePost(path: string, raw: string): MdPost {
-  const fileSlug = (path.split('/').pop() || '').replace(/\.md$/, '');
-  let fm = '';
-  let body = raw;
-  if (raw.startsWith('---')) {
-    const end = raw.indexOf('\n---', 3);
-    if (end >= 0) {
-      fm = raw.slice(4, end);
-      body = raw.slice(end + 4).replace(/^\n/, '');
-    }
-  }
-  const data: Record<string, string> = {};
-  for (const line of fm.split('\n')) {
-    const m = line.match(/^([A-Za-z0-9_]+):\s*(.*)$/);
-    if (!m) continue;
-    data[m[1]] = m[2].trim().replace(/^["']|["']$/g, '');
-  }
-  return {
-    slug: data.slug || fileSlug,
-    lang: data.lang === 'ko' ? 'ko' : 'en',
-    title: data.title || fileSlug,
-    date: data.date || '',
-    pairedSlug: data.pairedSlug || '',
-    featuredImage: data.featuredImage || '',
-    body,
-  };
-}
-
 function allMd(): MdPost[] {
-  return Object.entries(rawFiles).map(([path, raw]) => parsePost(path, raw));
+  return emailPosts as MdPost[];
 }
 
 function composeFromMd(post: MdPost, kind: Slot, note: string | undefined, uiLang: 'en' | 'ko') {
-  const excerpt = excerptFromMarkdown(post.body);
+  const excerpt = post.excerpt;
   const date = post.date
     ? new Date(post.date).toLocaleDateString(uiLang === 'ko' ? 'ko-KR' : 'en-GB', {
         day: 'numeric', month: 'long', year: 'numeric',
