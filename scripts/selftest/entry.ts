@@ -419,6 +419,27 @@ resetSink();
 const properSend = await drainQueueItem(mistaken, { chunk: 50, budgetMs: 30000 });
 check('it goes out again, to everyone', properSend.remaining === 0 && emailsSent().includes('witness@test.local'), JSON.stringify({ sent: properSend.sent, remaining: properSend.remaining }));
 
+section('17. sending to the list needs an explicit confirmation');
+const item17 = await addItem('faithfulness', 'friday_new', '2026-10-30');
+await addSub('confirm-test@test.local');
+resetSink();
+const noConfirm = await queuePatch({ request: await adminReq('PATCH', { id: item17, action: 'send-now' }) });
+const noConfirmBody = await noConfirm.json();
+check('sending without a confirmation is refused', noConfirm.status === 428 && /confirmation/i.test(String(noConfirmBody.error)), JSON.stringify({ status: noConfirm.status, error: noConfirmBody.error }).slice(0, 150));
+check('and nothing was mailed', sinkReal.deliveries.length === 0, JSON.stringify(sinkReal.deliveries.map((d) => d.to[0])));
+const stillQueued = await db`SELECT status FROM queue_items WHERE id = ${item17}`;
+check('and the letter is untouched', stillQueued[0].status === 'queued', String(stillQueued[0].status));
+
+const testSend = await queuePatch({ request: await adminReq('PATCH', { id: item17, action: 'send-now', testTo: 'me@test.local' }) });
+const testBody = await testSend.json();
+check('a test send still works without a confirmation', testSend.status === 200 && testBody.ok === true, JSON.stringify(testBody).slice(0, 150));
+check('and it reached only the test address', emailsSent().length === 1 && emailsSent()[0] === 'me@test.local', JSON.stringify(emailsSent()));
+
+resetSink();
+const confirmed = await queuePatch({ request: await adminReq('PATCH', { id: item17, action: 'send-now', confirm: true }) });
+const confirmedBody = await confirmed.json();
+check('with the confirmation it sends', confirmed.status === 200 && (confirmedBody.result?.sent ?? 0) > 0, JSON.stringify(confirmedBody).slice(0, 170));
+
 await sinkReal.close();
 
 console.log(`\n${pass} checks passed, ${failures.length} failed`);

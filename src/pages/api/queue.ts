@@ -129,7 +129,16 @@ export const PATCH: APIRoute = async ({ request }) => {
       // A test send goes to one address and touches no bookkeeping; a real send
       // keeps batching until the list is finished (or the time budget runs out),
       // and is safe to press twice because each recipient is claimed first.
-      const result = body.testTo
+      const isTest = Boolean(body.testTo);
+      // A real send mails the whole list and cannot be recalled, so it has to carry
+      // an explicit confirmation. Enforced here as well as in the dialog, because a
+      // browser holding a cached dashboard page would otherwise skip the dialog.
+      if (!isTest && body.confirm !== true) {
+        return json({
+          error: 'Reload this page first — sending to the list now requires an explicit confirmation.',
+        }, 428);
+      }
+      const result = isTest
         ? await sendQueueItem(id, { testTo: String(body.testTo), lang: body.lang === 'ko' ? 'ko' : 'en' })
         : await drainQueueItem(id, { budgetMs: 30_000 });
       return json({ ok: true, result });

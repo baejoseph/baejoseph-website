@@ -822,19 +822,39 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       if (data && msg) msg.textContent = `Test sent to ${to}.`;
     });
 
+    /**
+     * The active subscriber count, from the stats panel when it has loaded and from
+     * the API otherwise, so the confirmation never says "send to ? people".
+     */
+    async function activeCount() {
+      const shown = (document.getElementById('n-active')?.textContent || '').trim();
+      if (/^\d+$/.test(shown)) return Number(shown);
+      const res = await fetch('/api/stats');
+      const data = await res.json().catch(() => ({}));
+      return Number(data.active ?? 0) || 0;
+    }
+
+    /**
+     * Mails the whole list. Guarded by a dialog that names the letter and the number
+     * of people, and by a matching check on the server, because this cannot be
+     * recalled and a mis-click already sent one letter early.
+     */
     async function sendItem(id) {
       const msg = document.getElementById('queue-msg');
-      // A mis-click mailed the list once already. Never again without a count.
-      const active = document.getElementById('n-active')?.textContent || '?';
+      const it = queueItems.find(x => x.id === id);
+      const title = it?.subject || it?.slug || `letter ${id}`;
+      const count = await activeCount();
       const ok = confirm(
-        `Send this letter to all ${active} active subscriber${active === '1' ? '' : 's'} right now?\n\n`
-        + 'It cannot be recalled. Scheduled letters send themselves on their send date.',
+        `Send “${title}”\n\nto all ${count} active subscriber${count === 1 ? '' : 's'} right now?\n\n`
+        + 'This is the real list, and it cannot be recalled.\n\n'
+        + 'You do not need this button: scheduled letters send themselves on their send date. '
+        + 'Use the test send if you only want to see the letter.',
       );
       if (!ok) return;
       const res = await fetch('/api/queue', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id, action: 'send-now' }),
+        body: JSON.stringify({ id, action: 'send-now', confirm: true }),
       });
       const data = await res.json().catch(() => ({}));
       const r = data.result || {};
