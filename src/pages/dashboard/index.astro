@@ -221,6 +221,10 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
               <button type="button" id="e-test-btn" class="ghost">Test send</button>
             </div>
             <p class="muted" id="e-msg"></p>
+            <div id="e-note-wrap" hidden>
+              <label class="muted" for="e-note" style="display:block;margin:0.4rem 0 0.35rem">Why this one (shown at the top of Tuesday letters)</label>
+              <textarea id="e-note" style="min-height:88px;font-family:Georgia,serif;font-size:1rem;font-style:italic" placeholder="A sentence or two — why you pulled this from the archive."></textarea>
+            </div>
             <iframe class="prev" id="e-prev" title="Email preview"></iframe>
             <h2>HTML</h2>
             <textarea id="e-html"></textarea>
@@ -411,7 +415,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       });
     }
 
-    function fillEditor({ meta, subject, html, text, locked, rebuildLabel, showSend }) {
+    function fillEditor({ meta, subject, html, text, locked, rebuildLabel, showSend, showNote, note }) {
       const editor = document.getElementById('e-editor');
       const empty = document.getElementById('e-empty');
       empty.hidden = true;
@@ -420,9 +424,12 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       document.getElementById('e-subject').value = subject || '';
       document.getElementById('e-html').value = html || '';
       document.getElementById('e-text').value = text || '';
+      document.getElementById('e-note').value = note || '';
+      document.getElementById('e-note-wrap').hidden = !showNote;
       document.getElementById('e-subject').disabled = locked;
       document.getElementById('e-html').disabled = locked;
       document.getElementById('e-text').disabled = locked;
+      document.getElementById('e-note').disabled = locked;
       document.getElementById('e-save').disabled = locked;
       document.getElementById('e-rebuild').disabled = locked;
       document.getElementById('e-rebuild').textContent = rebuildLabel;
@@ -441,6 +448,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         locked: false,
         rebuildLabel: 'Reset to default',
         showSend: false,
+        showNote: false,
+        note: '',
       });
     }
 
@@ -456,14 +465,33 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         locked: it.status !== 'queued',
         rebuildLabel: 'Rebuild from post',
         showSend: it.status === 'queued',
+        showNote: it.slot === 'tuesday_featured',
+        note: it.note || '',
       });
     }
 
+    function applyNoteHtml(html, note) {
+      const inner = String(note || '').trim()
+        ? `<tr><td style="padding:0 0 22px 0;"><div style="font-size:17px;line-height:1.65;color:#e8e8e8;font-style:italic;border-left:3px solid #818cf8;padding:2px 0 2px 16px;">${esc(note.trim()).replace(/\n/g, '<br />')}</div></td></tr>`
+        : '';
+      const block = `<!--NOTE-->${inner}<!--/NOTE-->`;
+      if (/<!--NOTE-->[\s\S]*?<!--\/NOTE-->/.test(html)) {
+        return html.replace(/<!--NOTE-->[\s\S]*?<!--\/NOTE-->/, block);
+      }
+      const idx = html.indexOf('</tr>');
+      if (idx === -1) return html;
+      return html.slice(0, idx + 5) + block + html.slice(idx + 5);
+    }
     function refreshPreview() {
-      const html = document.getElementById('e-html').value;
+      let html = document.getElementById('e-html').value;
+      const noteWrap = document.getElementById('e-note-wrap');
+      if (noteWrap && !noteWrap.hidden) {
+        html = applyNoteHtml(html, document.getElementById('e-note').value);
+      }
       document.getElementById('e-prev').srcdoc = html || '<p style="padding:1rem;font-family:sans-serif;color:#888">No HTML yet.</p>';
     }
     document.getElementById('e-html')?.addEventListener('input', refreshPreview);
+    document.getElementById('e-note')?.addEventListener('input', refreshPreview);
 
     async function patch(action, extra = {}) {
       const msg = document.getElementById('e-msg');
@@ -505,6 +533,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         subject: document.getElementById('e-subject').value,
         html: document.getElementById('e-html').value,
         text: document.getElementById('e-text').value,
+        note: document.getElementById('e-note-wrap').hidden ? undefined : document.getElementById('e-note').value,
       });
       if (data?.item) {
         queueItems = queueItems.map(x => x.id === data.item.id ? data.item : x);

@@ -21,7 +21,7 @@ export async function postBySlug(slug: string) {
   return posts.find(p => p.slug === slug) ?? null;
 }
 
-export async function composeFromSlug(slug: string, kind: Slot) {
+export async function composeFromSlug(slug: string, kind: Slot, note?: string) {
   const post = await postBySlug(slug);
   if (!post) return null;
   const lang = (post.data.lang ?? 'en') as string;
@@ -42,6 +42,7 @@ export async function composeFromSlug(slug: string, kind: Slot) {
       image: (post.data.featuredImage as string) || '',
       unsubToken: '{{UNSUB}}',
       kind,
+      note: kind === 'tuesday_featured' ? (note ?? '') : undefined,
     }),
   };
 }
@@ -63,6 +64,7 @@ export function buildNewsletter(opts: {
   ctaHref?: string;
   footer?: string;
   subject?: string;
+  note?: string;
 }) {
   const url = opts.ctaHref || postUrl(opts.slug);
   const unsubHref = opts.unsubToken.includes('{{UNSUB}}')
@@ -75,8 +77,12 @@ export function buildNewsletter(opts: {
     ? (opts.image.startsWith('http') ? opts.image : `https://baejoseph.com${opts.image}`)
     : '';
 
+  const note = (opts.note || '').trim();
+  const noteMarkup = opts.kind === 'tuesday_featured' ? noteBlock(note) : '';
+
   const text = [
     `${kicker}`,
+    note ? note : '',
     opts.title,
     opts.date || '',
     '',
@@ -104,6 +110,7 @@ export function buildNewsletter(opts: {
               ${escapeHtml(kicker)} · Joseph Bae
             </td>
           </tr>
+          ${noteMarkup}
           ${img ? `<tr><td style="padding-bottom:20px;">
             <img src="${escapeHtml(img)}" alt="" width="560" style="display:block;width:100%;max-width:560px;height:auto;border-radius:8px;border:1px solid #222;" />
           </td></tr>` : ''}
@@ -161,6 +168,29 @@ export function defaultWelcomeLetter() {
     footer: 'You can leave anytime. No hard feelings.',
     subject: 'Welcome — thank you for signing up',
   });
+}
+
+export function noteBlock(note: string) {
+  const inner = note.trim()
+    ? `<tr>
+            <td style="padding:0 0 22px 0;">
+              <div style="font-size:17px;line-height:1.65;color:#e8e8e8;font-style:italic;border-left:3px solid #818cf8;padding:2px 0 2px 16px;">
+                ${escapeHtml(note.trim()).replace(/\n/g, '<br />')}
+              </div>
+            </td>
+          </tr>`
+    : '';
+  return `<!--NOTE-->${inner}<!--/NOTE-->`;
+}
+
+export function applyNote(html: string, note: string) {
+  const block = noteBlock(note);
+  if (/<!--NOTE-->[\s\S]*?<!--\/NOTE-->/.test(html)) {
+    return html.replace(/<!--NOTE-->[\s\S]*?<!--\/NOTE-->/, block);
+  }
+  const idx = html.indexOf('</tr>');
+  if (idx === -1) return html;
+  return html.slice(0, idx + 5) + block + html.slice(idx + 5);
 }
 
 function escapeHtml(s: string) {
