@@ -162,6 +162,7 @@ const heroPool = posts
     : null;
 
   let heroIndex = 0;
+  let heroGen = 0;
 
   function heroSlides(lang) {
     const intro = lang === 'ko' ? introKo : introEn;
@@ -186,11 +187,19 @@ const heroPool = posts
   function renderHeroDots(slides, index) {
     const dots = document.getElementById('hero-dots');
     if (!dots) return;
+    const existing = dots.querySelectorAll('.hero-dot');
+    if (existing.length === slides.length) {
+      existing.forEach((btn, i) => {
+        btn.classList.toggle('is-active', i === index);
+        btn.setAttribute('aria-selected', i === index ? 'true' : 'false');
+      });
+      return;
+    }
     dots.replaceChildren();
     slides.forEach((_, i) => {
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'hero-dot' + (i === index ? ' active' : '');
+      btn.className = 'hero-dot' + (i === index ? ' is-active' : '');
       btn.setAttribute('role', 'tab');
       btn.setAttribute('aria-selected', i === index ? 'true' : 'false');
       btn.setAttribute('aria-label', `Hero card ${i + 1} of ${slides.length}`);
@@ -208,13 +217,17 @@ const heroPool = posts
     const slides = heroSlides(activeLang);
     if (slides.length === 0) return;
     if (heroIndex >= slides.length) heroIndex = 0;
-    const slide = slides[heroIndex];
+    const index = heroIndex;
+    const slide = slides[index];
+    const gen = ++heroGen;
+    renderHeroDots(slides, index);
     const hero = document.getElementById('home-hero');
     const link = document.getElementById('hero-link');
     const titleEl = document.getElementById('hero-featured-title');
     const labelEl = document.getElementById('hero-label');
 
     const apply = () => {
+      if (gen !== heroGen) return;
       const signup = document.getElementById('hero-signup');
       const isSignup = slide.kind === 'signup';
       if (hero) {
@@ -240,7 +253,6 @@ const heroPool = posts
       }
       if (titleEl) titleEl.textContent = slide.title;
       if (labelEl) labelEl.textContent = slide.label;
-      renderHeroDots(slides, heroIndex);
     };
 
     if (!slide.src) {
@@ -429,29 +441,44 @@ const heroPool = posts
   }
   .hero-nav-prev { left: 0.55rem; }
   .hero-nav-next { right: 0.55rem; }
-  .hero-dots {
+  :global(.hero-dots) {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0.45rem;
+    bottom: 0.55rem;
     z-index: 2;
     display: flex;
     justify-content: center;
-    gap: 0.35rem;
+    align-items: center;
+    gap: 0.45rem;
     pointer-events: none;
   }
-  .hero-dot {
+  :global(.hero-dot) {
     pointer-events: auto;
-    width: 0.45rem;
-    height: 0.45rem;
+    appearance: none;
+    -webkit-appearance: none;
+    display: block;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    max-width: 8px;
+    max-height: 8px;
     padding: 0;
-    border-radius: 999px;
+    margin: 0;
     border: 0;
-    background: rgba(255,255,255,0.35);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
     cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    flex: 0 0 8px;
+    overflow: hidden;
   }
-  .hero-dot.active {
+  :global(.hero-dot.is-active) {
     background: #fff;
+    transform: scale(1.15);
   }
   .hero-signup {
     padding: 3rem 3.25rem 2.15rem;

@@ -34,6 +34,41 @@ body {
   padding: 0;
 }
 
+.hero-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.55rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  pointer-events: none;
+}
+.hero-dot {
+  pointer-events: auto;
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  min-height: 8px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  flex: 0 0 8px;
+}
+.hero-dot.is-active {
+  background: #fff;
+}
+
 /* ── Layout ── */
 .container {
   max-width: var(--max-width);
