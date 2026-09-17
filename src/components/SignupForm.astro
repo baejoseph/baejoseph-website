@@ -19,6 +19,10 @@ const ko = lang === 'ko';
   />
   <button type="submit">{ko ? '구독' : 'Subscribe'}</button>
   <p class="signup-status" aria-live="polite"></p>
+  <div class="hp" aria-hidden="true">
+    <label for={`website-${source}`}>Website</label>
+    <input id={`website-${source}`} type="text" name="website" tabindex="-1" autocomplete="off" />
+  </div>
 </form>
 
 <style>
@@ -34,6 +38,8 @@ const ko = lang === 'ko';
   }
   .signup-status { width: 100%; font-size: 0.8rem; color: rgba(255,255,255,0.75); min-height: 1.1em; margin: 0; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  /* Honeypot: off-screen for people, irresistible to bots. */
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 </style>
 
 <script>
@@ -44,6 +50,7 @@ const ko = lang === 'ko';
       e.preventDefault();
       const status = form.querySelector('.signup-status');
       const email = form.querySelector('input[name="email"]').value;
+      const trap = form.querySelector('input[name="website"]');
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -52,12 +59,17 @@ const ko = lang === 'ko';
           lang: form.getAttribute('data-lang') || 'en',
           source: form.getAttribute('data-source') || 'unknown',
           path: location.pathname,
+          website: trap ? trap.value : '',
         }),
       });
       const data = await res.json().catch(() => ({}));
       if (status) {
         status.textContent = res.ok
-          ? (data.already ? 'You are already on the list.' : 'You are on the list. Tuesdays and Fridays.')
+          ? (data.revived
+            ? 'Welcome back — you are on the list again.'
+            : data.already
+              ? 'You are already on the list.'
+              : 'You are on the list. Tuesdays and Fridays.')
           : (data.error || 'Could not subscribe just now.');
       }
     });

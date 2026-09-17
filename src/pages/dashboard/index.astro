@@ -50,6 +50,7 @@ const nextFri = nextWeekday(today, 5);
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
   <title>Dashboard — Joseph Bae</title>
   <link rel="stylesheet" href="/styles/global.css" />
   <style>
@@ -325,7 +326,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       document.getElementById('src-body').innerHTML = srcRows;
       document.getElementById('src-body-2').innerHTML = srcRows;
       document.getElementById('sub-body').innerHTML = subs.map(s => `<tr>
-        <td>${esc(s.email)}${s.unsubscribed_at ? ' <span class="pill">left</span>' : ''}</td>
+        <td>${esc(s.email)}${s.unsubscribed_at ? ' <span class="pill">left</span>' : ''}${s.suppressed_at ? ' <span class="pill">bounced</span>' : ''}${s.welcome_error ? ' <span class="pill">no welcome</span>' : ''}</td>
         <td>${esc(s.lang)}</td>
         <td>${esc(s.source)}</td>
         <td>${esc(String(s.created_at).slice(0, 16).replace('T',' '))}</td>
@@ -345,10 +346,13 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
            <button class="danger" data-del="${it.id}">Remove</button>`
         : `<button class="ghost" data-open="${it.id}">View</button>`;
       const pair = it.slug_ko ? `${esc(it.slug)} + ${esc(it.slug_ko)}` : esc(it.slug);
+      const progress = it.status === 'queued' && it.error
+        ? `<br /><small class="muted">${esc(it.error)}</small>`
+        : '';
       return `<tr>
         <td>${esc(String(it.send_on).slice(0,10))}</td>
         <td>${pair}</td>
-        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}</td>
+        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${progress}</td>
         <td>${actions}</td>
       </tr>`;
     }
@@ -554,8 +558,12 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       const it = queueItems.find(x => x.id === id);
       if (!it || it.status === 'sent' || it.status === 'failed') return;
       const koHtml = String(it.html_ko || '');
-      if (!/[\uac00-\ud7af]/.test(koHtml)) {
-        const data = await patch('rebuild');
+      const emptyEn = !String(it.html || '').trim() || !String(it.subject || '').trim();
+      // Fill in a letter that is missing (nothing to lose), or repair a Korean
+      // letter built from the English body (no Hangul at all). A letter that has
+      // content is never overwritten — that is what lost hand edits before.
+      if (emptyEn || !koHtml || !/[\uac00-\ud7af]/.test(koHtml)) {
+        const data = await patch(emptyEn ? 'rebuild' : 'rebuild-ko');
         if (data?.item) {
           queueItems = queueItems.map(x => x.id === data.item.id ? data.item : x);
           fillFromLang();
@@ -615,7 +623,13 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         if (msg) msg.textContent = data.error || 'Failed';
         return null;
       }
-      if (msg) msg.textContent = action === 'save' ? 'Saved.' : action === 'rebuild' ? 'Rebuilt from the post.' : 'Sent.';
+      if (msg) msg.textContent = action === 'save'
+        ? 'Saved.'
+        : action === 'rebuild-ko'
+          ? 'Rebuilt the Korean letter from the post.'
+          : action === 'rebuild'
+            ? 'Rebuilt from the post.'
+            : 'Sent.';
       return data;
     }
 
@@ -704,8 +718,9 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         body: JSON.stringify({ id, action: 'send-now' }),
       });
       const data = await res.json().catch(() => ({}));
+      const r = data.result || {};
       const text = res.ok
-        ? `Sent ${data.result?.sent ?? 0}, failed ${data.result?.failed ?? 0}`
+        ? `Sent ${r.sent ?? 0}, failed ${r.failed ?? 0}${r.remaining ? `, ${r.remaining} still to send — press Send again` : ''}`
         : (data.error || 'Send failed');
       if (msg) msg.textContent = text;
       const em = document.getElementById('e-msg');
