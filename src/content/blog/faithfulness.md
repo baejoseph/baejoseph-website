@@ -1,6 +1,6 @@
 ---
 title: "🎮 Faithfulness, Not Brilliance"
-date: "2026-09-16"
+date: "2026-09-17"
 lang: "en"
 featuredImage: "/assets/faithfulness.jpg"
 tags: ["theology", "faith", "video"]

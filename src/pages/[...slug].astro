@@ -68,7 +68,7 @@ const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
   <article>
     {isFuture && (
       <div class="scheduled-notice">
-        🔮 Scheduled post · not yet visible in the public listing
+        Scheduled — not yet on the public list. Anyone with this URL can still read it.
       </div>
     )}
     <a href="/" class="back-link">← All posts</a>

@@ -18,7 +18,7 @@ export async function GET(context: APIContext) {
     description: 'A personal blog exploring faith, culture, politics, and life journey. Maranatha! 🕦️',
     site: context.site ?? 'https://baejoseph.com',
     items: sortedPosts
-      .filter(post => post.data.title && post.slug)
+      .filter(post => post.data.title && post.slug && (post.data.date ?? '') <= new Date().toISOString().slice(0, 10))
       .map(post => ({
         title: post.data.title,
         pubDate: new Date(post.data.date),

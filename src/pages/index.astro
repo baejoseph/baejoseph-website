@@ -134,6 +134,8 @@ const heroPool = posts
 
   <div class="post-list" id="post-list">
     {posts.map(post => {
+      // Future-dated: in the HTML for anyone with the URL, hidden from the
+      // public list, shown on this machine when signed in (bae_admin_ui).
       const isFuture = (post.data.date ?? '1970-01-01') > buildDate;
       return (
         <a
