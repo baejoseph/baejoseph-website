@@ -28,3 +28,4 @@ src/lib/email-bodies.json
 # jetbrains setting folder
 .idea/
 .vercel/
+scripts/selftest/.probe.ts
