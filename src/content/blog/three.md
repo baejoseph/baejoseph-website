@@ -12,7 +12,7 @@ tags: ["theology", "eschatology", "leftism"]
 There are three distinct categories for ordering the life of a Christian. Believers striving to live in obedience to God’s Word, guided by the Holy Spirit, need to navigate between three key areas when ordering their thoughts, words, and actions:
 
 1.  The church realm, where we focus on [preaching the gospel](/evangelism) and making disciples of all nations.
-2.  The civic realm, where Christians organise to support the lesser of evils to curb the world’s free-fall corruption and [opposing communism](/leftism-eng) in every sphere of our lives.
+2.  The civic realm, where Christians organise to support the lesser of evils to curb the world’s free-fall corruption and [opposing communism](/leftism) in every sphere of our lives.
 3.  The eternal realm, where we [eagerly wait for](/end3) Jesus’ [glorious appearing](/rapture), the Millennium Kingdom, and the final establishment of New Heavens, New Earth, and the New Jerusalem.
 
 While we focus our lives on being faithful in the first two realms, we must not lose sight of the third realm, in that true justice will be realised in this world only upon Jesus’ glorious return when he will finally establish [the Millennial Kingdom](/throne-of-david) and rule the whole world with a rod of iron. Personally, I am convinced that King Jesus will appoint me to be in the elite squad to tour the world and annihilate all remnants of communism in the His name. The thought of ruling the world together with Him for one thousand years during the Messianic Kingdom really excites me.

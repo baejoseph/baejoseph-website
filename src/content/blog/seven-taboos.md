@@ -15,7 +15,7 @@ In contemporary evangelical churches in the West, certain subjects are often avo
 
 ## 1\. Biblical Politics
 
-The Church must reject the man-centred, atheistic, and materialistic worldviews of [leftist ideologies](/leftism-eng). Instead, we should teach and promote a biblical approach to politics that recognises free enterprise, a free market, and a conservative view of governance that minimises state control and emphasises individual responsibility. Leftist ideologies wreck individual lives through victimhood mentality; leftist ideologies wreck nations through race-to-the-bottom handouts and disincentivising hard work. Leftist ideologies metamorphoses into liberal, progress theologies that reject the authority of God’s Word.
+The Church must reject the man-centred, atheistic, and materialistic worldviews of [leftist ideologies](/leftism). Instead, we should teach and promote a biblical approach to politics that recognises free enterprise, a free market, and a conservative view of governance that minimises state control and emphasises individual responsibility. Leftist ideologies wreck individual lives through victimhood mentality; leftist ideologies wreck nations through race-to-the-bottom handouts and disincentivising hard work. Leftist ideologies metamorphoses into liberal, progress theologies that reject the authority of God’s Word.
 
 ## 2\. Power of the Holy Spirit
 
@@ -49,7 +49,7 @@ In the wake of rampant feminism making significant inroads into the Church, the 
 
 ## 7b. Family Order 2: Disciplining of Children
 
-The Biblical mandate is succinctly captured by the directives to “make disciples of your children” (Old Testament) and “make disciples of all nations” (New Testament). For thousands of years, Christians who have upheld the Bible as the infallible Word of God have relied on its wisdom and instructions for disciple-making. Yet, modern psychology often stands in opposition to biblical teachings on child-rearing, especially regarding discipline. The Church must actively discuss and encourage adherence to [biblical instructions on corporal punishment](/disciplining) and the holistic upbringing of children in Christian values, rejecting secular norms that conflict with Scripture and refusing to conform to the patterns of this world.
+The Biblical mandate is succinctly captured by the directives to “make disciples of your children” (Old Testament) and “make disciples of all nations” (New Testament). For thousands of years, Christians who have upheld the Bible as the infallible Word of God have relied on its wisdom and instructions for disciple-making. Yet, modern psychology often stands in opposition to biblical teachings on child-rearing, especially regarding discipline. The Church must actively discuss and encourage adherence to [biblical instructions on corporal punishment](/rod) and the holistic upbringing of children in Christian values, rejecting secular norms that conflict with Scripture and refusing to conform to the patterns of this world.
 
 ## 8\. Repentance for Historical Sins (Special for the Korean Church)
 

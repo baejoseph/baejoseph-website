@@ -9,7 +9,7 @@ pairedSlug: "인사부"
 
 “We got rid of our HR team.”
 
-That’s not a quote from some edgy startup manifesto. That’s [Bolt CEO Ryan Breslow](https://news.bolt.eu/company/press-releases/bolt-ceo-ryan-breslow-on-building-a-high-performance-culture) — defending the elimination of his entire [HR department](/pride-month-en/), alongside layoffs affecting roughly 30% of his workforce. His accusation? HR was “creating problems that didn’t exist.”
+That’s not a quote from some edgy startup manifesto. That’s [Bolt CEO Ryan Breslow](https://news.bolt.eu/company/press-releases/bolt-ceo-ryan-breslow-on-building-a-high-performance-culture) — defending the elimination of his entire [HR department](/pride-month/), alongside layoffs affecting roughly 30% of his workforce. His accusation? HR was “creating problems that didn’t exist.”
 
 Read that again. *Creating problems that didn’t exist.*
 

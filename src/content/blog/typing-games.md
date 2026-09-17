@@ -82,6 +82,6 @@ Showing the correct borders. Because the UN can go screw themselves.
 Taiwan. Not Chinese Taipei. Because again, the CCP can go screw themselves. Similarly for Hong Kong and Macao, I got rid of the “SAR China” that the UN saw fit to append. Go away.
 
 ![Iran](/assets/typing-games-10.jpg)
-Notice the flag. It is not the Islamic Terror Regime one that the UN insists on. The rightful lion of [Persia](/Iran). Because this is [propethic certainty](/epic-fury).
+Notice the flag. It is not the Islamic Terror Regime one that the UN insists on. The rightful lion of [Persia](/iran). Because this is [propethic certainty](/epic-fury).
 
 Maranatha! Come, Lord Jesus.

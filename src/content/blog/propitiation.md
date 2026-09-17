@@ -43,7 +43,7 @@ These are not peripheral footnotes. They lie at the very heart of the gospel: **
 Critics point out that explicit references to propitiation are few in the New Testament. To them I offer two responses:
 
 1.  **What Scripture _does_ teach, we must not deny/ignore.** Though the term may be rare, its truth is undeniable: Christ appeased divine wrath on our behalf.
-2.  **Its rarity underscores our need to emphasise it today.** First-century readers lived under the looming shadow of an angry deity; they instinctively understood wrath and sacrifice. By contrast, our 21st-century world—and even many churches—are utterly devoid of fear of God. We chant “God is love” yet shrink from His justice and judgment. The fruit is all around us: [moral chaos](/leftism-eng), redefined marriage, the slaughter of the unborn, broken families, churches navel-gazing about “inclusivity” while abandoning holiness.
+2.  **Its rarity underscores our need to emphasise it today.** First-century readers lived under the looming shadow of an angry deity; they instinctively understood wrath and sacrifice. By contrast, our 21st-century world—and even many churches—are utterly devoid of fear of God. We chant “God is love” yet shrink from His justice and judgment. The fruit is all around us: [moral chaos](/leftism), redefined marriage, the slaughter of the unborn, broken families, churches navel-gazing about “inclusivity” while abandoning holiness.
 
 In a culture that cannot grasp divine anger, we must champion the gospel truth that **Jesus bore the wrath of God**. Only then can sinners see both the depth of their rebellion and the height of God’s mercy.
 
