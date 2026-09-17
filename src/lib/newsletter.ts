@@ -1,5 +1,3 @@
-import { getCollection } from 'astro:content';
-
 export type Slot = 'tuesday_featured' | 'friday_new';
 
 export function excerptFromMarkdown(body: string, max = 420) {
@@ -16,51 +14,70 @@ export function excerptFromMarkdown(body: string, max = 420) {
   return text.slice(0, max).replace(/\s+\S*$/, '') + '…';
 }
 
-export async function allPosts() {
-  return getCollection('blog');
+type MdPost = {
+  slug: string;
+  lang: 'en' | 'ko';
+  title: string;
+  date: string;
+  pairedSlug: string;
+  featuredImage: string;
+  body: string;
+};
+
+const rawFiles = import.meta.glob('../content/blog/*.md', {
+  eager: true,
+  query: '?raw',
+  import: 'default',
+}) as Record<string, string>;
+
+function parsePost(path: string, raw: string): MdPost {
+  const fileSlug = (path.split('/').pop() || '').replace(/\.md$/, '');
+  let fm = '';
+  let body = raw;
+  if (raw.startsWith('---')) {
+    const end = raw.indexOf('\n---', 3);
+    if (end >= 0) {
+      fm = raw.slice(4, end);
+      body = raw.slice(end + 4).replace(/^\n/, '');
+    }
+  }
+  const data: Record<string, string> = {};
+  for (const line of fm.split('\n')) {
+    const m = line.match(/^([A-Za-z0-9_]+):\s*(.*)$/);
+    if (!m) continue;
+    data[m[1]] = m[2].trim().replace(/^["']|["']$/g, '');
+  }
+  return {
+    slug: data.slug || fileSlug,
+    lang: data.lang === 'ko' ? 'ko' : 'en',
+    title: data.title || fileSlug,
+    date: data.date || '',
+    pairedSlug: data.pairedSlug || '',
+    featuredImage: data.featuredImage || '',
+    body,
+  };
 }
 
-function matchSlug(post: Awaited<ReturnType<typeof getCollection<'blog'>>>[0], slug: string) {
-  if (!slug) return false;
-  return post.slug === slug
-    || post.id === slug
-    || post.id.replace(/\.mdx?$/, '') === slug
-    || post.data.wpSlug === slug;
+function allMd(): MdPost[] {
+  return Object.entries(rawFiles).map(([path, raw]) => parsePost(path, raw));
 }
 
-export async function postBySlug(slug: string, lang?: 'en' | 'ko') {
-  const posts = await getCollection('blog');
-  const wantKo = lang === 'ko';
-  const pool = lang
-    ? posts.filter(p => ((p.data.lang ?? 'en') === 'ko') === wantKo)
-    : posts;
-  return pool.find(p => p.slug === slug)
-    || pool.find(p => matchSlug(p, slug))
-    ?? null;
-}
-
-type BlogEntry = Awaited<ReturnType<typeof getCollection<'blog'>>>[0];
-
-function isKo(post: BlogEntry) {
-  return (post.data.lang ?? 'en') === 'ko';
-}
-
-function composeFromPost(post: BlogEntry, kind: Slot, note: string | undefined, uiLang: 'en' | 'ko') {
-  const excerpt = excerptFromMarkdown(post.body ?? '');
-  const date = post.data.date
-    ? new Date(post.data.date).toLocaleDateString(uiLang === 'ko' ? 'ko-KR' : 'en-GB', {
+function composeFromMd(post: MdPost, kind: Slot, note: string | undefined, uiLang: 'en' | 'ko') {
+  const excerpt = excerptFromMarkdown(post.body);
+  const date = post.date
+    ? new Date(post.date).toLocaleDateString(uiLang === 'ko' ? 'ko-KR' : 'en-GB', {
         day: 'numeric', month: 'long', year: 'numeric',
       })
     : '';
   return {
-    post,
+    post: { slug: post.slug, data: { title: post.title, lang: post.lang } },
     lang: uiLang,
     letter: buildNewsletter({
-      title: post.data.title as string,
+      title: post.title,
       slug: post.slug,
       date,
       excerpt,
-      image: (post.data.featuredImage as string) || '',
+      image: post.featuredImage,
       unsubToken: '{{UNSUB}}',
       kind,
       note: kind === 'tuesday_featured' ? (note ?? '') : undefined,
@@ -70,43 +87,29 @@ function composeFromPost(post: BlogEntry, kind: Slot, note: string | undefined, 
 }
 
 export async function composeFromSlug(slug: string, kind: Slot, note?: string, uiLang?: 'en' | 'ko') {
-  const post = await postBySlug(slug, uiLang);
+  const posts = allMd();
+  const post = uiLang
+    ? posts.find(p => p.slug === slug && p.lang === uiLang)
+    : posts.find(p => p.slug === slug);
   if (!post) return null;
-  const resolved = (uiLang || (isKo(post) ? 'ko' : 'en')) as 'en' | 'ko';
-  return composeFromPost(post, kind, note, resolved);
-}
-
-function findOpposite(posts: BlogEntry[], post: BlogEntry) {
-  const wantKo = !isKo(post);
-  const pool = posts.filter(p => isKo(p) === wantKo);
-  const keys = [post.data.pairedSlug, post.slug, post.data.wpSlug].filter(Boolean) as string[];
-  for (const c of keys) {
-    const hit = pool.find(p =>
-      p.slug === c
-      || p.data.pairedSlug === post.slug
-      || p.data.pairedSlug === c
-      || p.data.wpSlug === c
-    );
-    if (hit) return hit;
-  }
-  return null;
+  return composeFromMd(post, kind, note, post.lang);
 }
 
 export async function composePair(slug: string, kind: Slot, notes?: { en?: string; ko?: string }) {
-  const posts = await getCollection('blog');
-  const post = posts.find(p => p.slug === slug) || posts.find(p => matchSlug(p, slug));
+  const posts = allMd();
+  const post = posts.find(p => p.slug === slug);
   if (!post) return null;
-  const enPost = isKo(post) ? findOpposite(posts, post) : post;
-  const koPost = isKo(post) ? post : findOpposite(posts, post);
-  if (!enPost || !koPost) {
+  const pair = posts.find(p =>
+    p.lang !== post.lang && (p.slug === post.pairedSlug || p.pairedSlug === post.slug)
+  );
+  const enPost = post.lang === 'ko' ? pair : post;
+  const koPost = post.lang === 'ko' ? post : pair;
+  if (!enPost || !koPost || enPost.lang !== 'en' || koPost.lang !== 'ko') {
     throw new Error(`Every queued post needs an EN+KO pair. Missing pair for ${slug}`);
   }
-  if (isKo(enPost) || !isKo(koPost)) {
-    throw new Error(`Pair lookup mixed languages for ${slug} (en=${enPost.slug}, ko=${koPost.slug})`);
-  }
   return {
-    en: composeFromPost(enPost, kind, notes?.en, 'en'),
-    ko: composeFromPost(koPost, kind, notes?.ko, 'ko'),
+    en: composeFromMd(enPost, kind, notes?.en, 'en'),
+    ko: composeFromMd(koPost, kind, notes?.ko, 'ko'),
     enSlug: enPost.slug,
     koSlug: koPost.slug,
   };

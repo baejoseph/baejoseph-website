@@ -20,8 +20,7 @@ export const GET: APIRoute = async ({ request }) => {
       });
       if (!pair?.en || !pair?.ko) continue;
       const koTitle = String(pair.ko.post.data.title || '');
-      const sameSlug = row.slug && row.slug_ko && row.slug === row.slug_ko;
-      if (!sameSlug && row.html_ko && koTitle && String(row.html_ko).includes(koTitle)) continue;
+      if (row.html_ko && koTitle && String(row.html_ko).includes(koTitle)) continue;
       const updated = await db`
         UPDATE queue_items SET
           slug_ko = ${pair.koSlug},
