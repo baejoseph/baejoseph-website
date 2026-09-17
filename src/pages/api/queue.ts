@@ -19,11 +19,13 @@ export const GET: APIRoute = async ({ request }) => {
         ko: row.note_ko || '',
       });
       if (!pair?.en || !pair?.ko) continue;
-      const koTitle = String(pair.ko.post.data.title || '');
-      if (row.html_ko && koTitle && String(row.html_ko).includes(koTitle)) continue;
       const updated = await db`
         UPDATE queue_items SET
+          slug = ${pair.enSlug},
           slug_ko = ${pair.koSlug},
+          subject = ${pair.en.letter.subject},
+          html = ${pair.en.letter.html},
+          text_body = ${pair.en.letter.text},
           subject_ko = ${pair.ko.letter.subject},
           html_ko = ${pair.ko.letter.html},
           text_body_ko = ${pair.ko.letter.text}

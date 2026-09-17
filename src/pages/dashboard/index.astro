@@ -100,8 +100,18 @@ const nextFri = nextWeekday(today, 5);
     .eitem.on { background: #19192a; }
     .eitem small { display: block; color: var(--text-muted); font-weight: 400; }
     iframe.prev { width: 100%; height: 420px; border: 1px solid #222; border-radius: 10px; background: #fff; }
-    #e-note-wrap { position: relative; z-index: 2; margin: 0.5rem 0 0.75rem; }
-    #e-note { pointer-events: auto; }
+    .note-box { display: none; margin: 0.75rem 0; position: relative; z-index: 5; }
+    .note-box.show { display: block; }
+    #e-note {
+      display: block;
+      width: 100%;
+      min-height: 96px;
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      font-style: italic;
+      line-height: 1.45;
+      pointer-events: auto;
+    }
     pre.help { white-space: pre-wrap; background: #111; border: 1px solid #222; border-radius: 10px; padding: 1rem; font-size: 0.8rem; line-height: 1.55; color: #c4c4c4; }
     details { margin-top: 1rem; }
     details summary { cursor: pointer; color: var(--text-muted); }
@@ -243,11 +253,11 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
               <button type="button" id="e-test-btn" class="ghost">Test send</button>
             </div>
             <p class="muted" id="e-msg"></p>
-            <div id="e-note-wrap" hidden>
-              <label class="muted" for="e-note" style="display:block;margin:0.4rem 0 0.35rem">Your note (shown at the very top)</label>
-              <textarea id="e-note" style="min-height:88px;font-family:Georgia,serif;font-size:1rem;font-style:italic" placeholder="A sentence or two — why this one, this week."></textarea>
+            <div id="e-note-wrap" class="note-box">
+              <label class="muted" for="e-note">Your note (top of the letter — EN and KO are separate)</label>
+              <textarea id="e-note" rows="4" placeholder="A sentence or two — why this one, this week."></textarea>
             </div>
-            <iframe class="prev" id="e-prev" title="Email preview"></iframe>
+            <iframe class="prev" id="e-prev" title="Email preview" tabindex="-1"></iframe>
             <h2>HTML</h2>
             <textarea id="e-html"></textarea>
             <h2>Plain text</h2>
@@ -452,18 +462,19 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       document.getElementById('e-html').value = html || '';
       document.getElementById('e-text').value = text || '';
       document.getElementById('e-note').value = note || '';
-      document.getElementById('e-note-wrap').hidden = !showNote;
+      document.getElementById('e-note-wrap').classList.toggle('show', !!showNote);
+      document.getElementById('e-note-wrap').hidden = false;
       document.getElementById('e-subject').disabled = locked;
       document.getElementById('e-html').disabled = locked;
       document.getElementById('e-text').disabled = locked;
       document.getElementById('e-note').disabled = false;
-      document.getElementById('e-note').readOnly = locked;
+      document.getElementById('e-note').readOnly = false;
       document.getElementById('e-save').disabled = locked;
       document.getElementById('e-rebuild').disabled = locked;
       document.getElementById('e-rebuild').textContent = rebuildLabel;
       document.getElementById('e-send').hidden = !showSend;
-      refreshPreview();
       renderEmailList();
+      refreshPreview();
     }
 
     function paintLangBtns() {
@@ -537,9 +548,19 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       fillFromLang();
     }
 
-    function selectEmail(id) {
+    async function selectEmail(id) {
       selectedId = id;
       fillFromLang();
+      const it = queueItems.find(x => x.id === id);
+      if (!it || it.status === 'sent' || it.status === 'failed') return;
+      const koHtml = String(it.html_ko || '');
+      if (!/[\uac00-\ud7af]/.test(koHtml)) {
+        const data = await patch('rebuild');
+        if (data?.item) {
+          queueItems = queueItems.map(x => x.id === data.item.id ? data.item : x);
+          fillFromLang();
+        }
+      }
     }
 
     document.getElementById('e-lang-en')?.addEventListener('click', () => {
@@ -565,34 +586,22 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       if (idx === -1) return html;
       return html.slice(0, idx + 5) + block + html.slice(idx + 5);
     }
-    let previewTimer = null;
     function refreshPreview() {
       let html = document.getElementById('e-html').value;
       const noteEl = document.getElementById('e-note');
       const noteWrap = document.getElementById('e-note-wrap');
-      if (noteWrap && !noteWrap.hidden && noteEl) {
+      if (noteWrap && noteWrap.classList.contains('show') && noteEl) {
         html = applyNoteHtml(html, noteEl.value);
       }
       const iframe = document.getElementById('e-prev');
-      const keepNote = document.activeElement === noteEl;
-      const start = noteEl ? noteEl.selectionStart : null;
-      const end = noteEl ? noteEl.selectionEnd : null;
       iframe.tabIndex = -1;
       iframe.srcdoc = html || '<p style="padding:1rem;font-family:sans-serif;color:#888">No HTML yet.</p>';
-      if (keepNote && noteEl) {
-        noteEl.focus({ preventScroll: true });
-        if (typeof start === 'number') noteEl.setSelectionRange(start, end);
-      }
     }
-    function schedulePreview() {
-      clearTimeout(previewTimer);
-      previewTimer = setTimeout(refreshPreview, 200);
-    }
-    document.getElementById('e-html')?.addEventListener('input', schedulePreview);
-    document.getElementById('e-note')?.addEventListener('input', schedulePreview);
+    document.getElementById('e-html')?.addEventListener('input', refreshPreview);
     document.getElementById('e-note')?.addEventListener('keydown', (e) => {
       e.stopPropagation();
     });
+    document.getElementById('e-note')?.addEventListener('blur', refreshPreview);
 
     async function patch(action, extra = {}) {
       const msg = document.getElementById('e-msg');
