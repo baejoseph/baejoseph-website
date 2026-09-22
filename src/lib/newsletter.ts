@@ -193,6 +193,41 @@ export function buildNewsletter(opts: {
   return full;
 }
 
+/**
+ * Dark palette written into a letter, and the light palette a light reader gets.
+ * Longer colours first so a short token cannot nibble a longer one.
+ * Button text stays #fff on the indigo button; that token is not in this list.
+ */
+const LETTER_LIGHT: [string, string][] = [
+  ['#0a0a0a', '#fcfcfd'],
+  ['#e8e8e8', '#16161d'],
+  ['#d4d4d4', '#3a3a44'],
+  ['#ffffff', '#16161d'],
+  ['#818cf8', '#4f46e5'],
+  ['#3a3a4a', '#c8c8d4'],
+  ['#222222', '#dcdce4'],
+  ['#888888', '#5b5b68'],
+  ['#666666', '#5b5b68'],
+  ['#222', '#dcdce4'],
+  ['#888', '#5b5b68'],
+  ['#666', '#5b5b68'],
+];
+
+/**
+ * Letters built from now on carry <!--THEMEABLE-->. A light reader gets a
+ * recolored copy at send time. A letter built before that marker — including
+ * everything already queued — is returned unchanged, so it stays dark.
+ */
+export function paintLetter(html: string, theme: 'dark' | 'light' | string | null | undefined): string {
+  if (theme !== 'light') return html;
+  if (!html.includes('<!--THEMEABLE-->')) return html;
+  let out = html;
+  for (const [from, to] of LETTER_LIGHT) {
+    out = out.replace(new RegExp(from + '(?![0-9a-fA-F])', 'gi'), to);
+  }
+  return out;
+}
+
 /** A letter in the right format says so in a comment at the top. Used to decide
  *  whether a stored letter is finished, or wants rebuilding. */
 export function storedMarker(html: string | null | undefined): string | null {
@@ -303,6 +338,7 @@ function renderLetter(
 </head>
 <body style="margin:0;padding:0;background:#0a0a0a;color:#e8e8e8;font-family:Georgia, 'Times New Roman', serif;">
   <!--LETTER:${marker}-->
+  <!--THEMEABLE-->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0a0a0a;">
     <tr>
       <td align="center" style="padding:32px 16px;">

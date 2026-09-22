@@ -98,16 +98,28 @@ const nextFri = nextWeekday(today, 5);
     button.danger { background: transparent; border: 1px solid #7f1d1d; color: #fca5a5; }
     .ok { color: #86efac; } .bad { color: #fca5a5; }
     .pill { display: inline-block; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.1rem 0.4rem; border-radius: 4px; border: 1px solid #333; color: #a5b4fc; }
-    .qgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-    @media (max-width: 800px) { .qgrid { grid-template-columns: 1fr; } }
+    .qgrid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
     .qcol { background: #111; border: 1px solid #222; border-radius: 12px; padding: 1rem; }
     .qcol h3 { margin: 0 0 0.75rem; font-size: 0.95rem; }
     .split { display: grid; grid-template-columns: 280px 1fr; gap: 1rem; min-height: 520px; }
     @media (max-width: 800px) { .split { grid-template-columns: 1fr; } }
     .elist { border: 1px solid #222; border-radius: 10px; overflow: auto; max-height: 70vh; }
-    .eitem { display: block; width: 100%; text-align: left; background: none; border: 0; border-bottom: 1px solid #222; border-radius: 0; color: inherit; padding: 0.7rem 0.8rem; font-weight: 500; }
+    .e-legend { display: flex; flex-wrap: wrap; gap: 0.4rem 0.7rem; padding: 0.55rem 0.7rem; font-size: 0.68rem; color: var(--text-muted); border-bottom: 1px solid #222; }
+    .e-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .e-swatch { width: 0.55rem; height: 0.55rem; border-radius: 2px; display: inline-block; }
+    .e-swatch.sent { background: #71717a; }
+    .e-swatch.queued { background: #6366f1; }
+    .e-swatch.noted { background: #f5c16c; }
+    .eitem { display: block; width: 100%; text-align: left; background: none; border: 0; border-bottom: 1px solid #222; border-left: 3px solid transparent; border-radius: 0; color: inherit; padding: 0.7rem 0.8rem; font-weight: 500; }
     .eitem.on { background: #19192a; }
+    .eitem.e-sent { border-left-color: #71717a; }
+    .eitem.e-queued { border-left-color: #6366f1; }
+    .eitem.e-noted { border-left-color: #f5c16c; }
     .eitem small { display: block; color: var(--text-muted); font-weight: 400; }
+    .e-pills { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; }
+    .e-pill { font-size: 0.62rem; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.05rem 0.35rem; border-radius: 4px; border: 1px solid #333; color: #a1a1aa; }
+    .e-pill.queued { color: #c7d2fe; border-color: #6366f1; }
+    .e-pill.note { color: #fde68a; border-color: #a16207; }
     iframe.prev { width: 100%; height: 420px; border: 1px solid #222; border-radius: 10px; background: #fff; }
     .note-box { display: none; margin: 0.75rem 0; position: relative; z-index: 5; }
     .note-box.show { display: block; }
@@ -253,7 +265,14 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         <span class="muted" id="rebuild-msg">Recomposes any queued letter that is not in the current format. Notes and hand edits to the post stay as they are.</span>
       </div>
       <div class="split">
-        <div class="elist" id="e-list"><div class="muted" style="padding:0.8rem">Loading…</div></div>
+        <div>
+          <div class="e-legend">
+            <span><i class="e-swatch sent"></i> Sent</span>
+            <span><i class="e-swatch queued"></i> Queued</span>
+            <span><i class="e-swatch noted"></i> Queued, intro saved</span>
+          </div>
+          <div class="elist" id="e-list"><div class="muted" style="padding:0.8rem">Loading…</div></div>
+        </div>
         <div>
           <p class="muted" id="e-empty">Loading the welcome letter…</p>
           <div id="e-editor" hidden>
@@ -366,6 +385,17 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       </tr>`).join('') || '<tr><td colspan="4" class="muted">None yet</td></tr>';
     }
 
+    /** Newest send dates first, ten rows. The rest stay in the database. */
+    function queueRows(items) {
+      const sorted = items.slice().sort((a, b) => String(b.send_on).localeCompare(String(a.send_on)) || Number(b.id) - Number(a.id));
+      const top = sorted.slice(0, 10);
+      if (!top.length) return '<tr><td colspan="4" class="muted">Empty</td></tr>';
+      const more = items.length > top.length
+        ? `<tr><td colspan="4" class="muted">Showing 10 of ${items.length}</td></tr>`
+        : '';
+      return top.map(queueRow).join('') + more;
+    }
+
     function queueRow(it) {
       const actions = it.status === 'queued'
         ? `<button class="ghost" data-open="${it.id}">Edit</button>
@@ -416,8 +446,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       const fri = queueItems.filter(i => i.slot === 'friday_new');
       const queued = queueItems.filter(i => i.status === 'queued');
       document.getElementById('n-queued').textContent = String(queued.length);
-      document.getElementById('tue-body').innerHTML = tue.map(queueRow).join('') || '<tr><td colspan="4" class="muted">Empty</td></tr>';
-      document.getElementById('fri-body').innerHTML = fri.map(queueRow).join('') || '<tr><td colspan="4" class="muted">Empty</td></tr>';
+      document.getElementById('tue-body').innerHTML = queueRows(tue);
+      document.getElementById('fri-body').innerHTML = queueRows(fri);
       document.getElementById('up-body').innerHTML = queued.map(i => `<tr>
         <td>${esc(String(i.send_on).slice(0,10))}</td>
         <td>${slotLabel(i.slot)}</td>
@@ -544,16 +574,37 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       if (selectedId === 'welcome') selectWelcome();
     }
 
+    function emailMark(it) {
+      const en = String(it.note || '').trim();
+      const ko = String(it.note_ko || '').trim();
+      const hasNote = Boolean(en || ko);
+      if (it.status === 'sent') {
+        return { cls: 'e-sent', pills: '<span class="e-pill">Sent</span>' };
+      }
+      if (it.status === 'queued' && hasNote) {
+        const which = en && ko ? 'EN+KO' : en ? 'EN' : 'KO';
+        return { cls: 'e-noted', pills: `<span class="e-pill queued">Queued</span><span class="e-pill note">Intro ${which}</span>` };
+      }
+      if (it.status === 'queued') {
+        return { cls: 'e-queued', pills: '<span class="e-pill queued">Queued</span>' };
+      }
+      return { cls: '', pills: `<span class="e-pill">${esc(it.status)}</span>` };
+    }
+
     function renderEmailList() {
       const box = document.getElementById('e-list');
       const welcomeBtn = `<button type="button" class="eitem${selectedId==='welcome'?' on':''}" data-eid="welcome">
         ${esc((editorLang === 'ko' ? welcomeKo?.subject : welcomeTpl?.subject) || 'Welcome')}
         <small>Intro / welcome · EN + KO</small>
       </button>`;
-      const rest = queueItems.map(it => `<button type="button" class="eitem${it.id===selectedId?' on':''}" data-eid="${it.id}">
+      const rest = queueItems.map(it => {
+        const mark = emailMark(it);
+        return `<button type="button" class="eitem ${mark.cls}${it.id===selectedId?' on':''}" data-eid="${it.id}">
         ${esc(it.subject || it.slug)}
-        <small>${esc(String(it.send_on).slice(0,10))} · ${slotLabel(it.slot)} · ${esc(it.status)}</small>
-      </button>`).join('');
+        <small>${esc(String(it.send_on).slice(0,10))} · ${slotLabel(it.slot)}</small>
+        <span class="e-pills">${mark.pills}</span>
+      </button>`;
+      }).join('');
       box.innerHTML = welcomeBtn + (rest || '<div class="muted" style="padding:0.8rem">No queued letters yet.</div>');
       box.querySelectorAll('[data-eid]').forEach(btn => {
         btn.addEventListener('click', () => {

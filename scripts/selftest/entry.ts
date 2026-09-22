@@ -468,6 +468,33 @@ check('a refused save changed nothing', unaffected.theme === 'light' && unaffect
 const noToken = await prefsGet({ request: new Request('http://x/api/preferences') });
 check('no token, no settings', noToken.status === 400, String(noToken.status));
 
+section('19. a new letter follows the reader theme; an old one stays dark');
+const { paintLetter } = await import('../../src/lib/newsletter');
+const oldLetter = '<body style="background:#0a0a0a;color:#e8e8e8"><!--LETTER:full-->already queued</body>';
+check('a letter built before themes is not recolored', paintLetter(oldLetter, 'light') === oldLetter);
+const freshLetter = '<body style="background:#0a0a0a;color:#e8e8e8"><!--LETTER:full--><!--THEMEABLE-->new</body>';
+const lit = paintLetter(freshLetter, 'light');
+check('a new letter is recolored for a light reader', lit.includes('background:#fcfcfd') && lit.includes('color:#16161d') && !lit.includes('#0a0a0a'), lit);
+check('the same new letter stays dark for a dark reader', paintLetter(freshLetter, 'dark') === freshLetter);
+
+await addSub('paper-dark@test.local');
+await addSub('paper-light@test.local');
+await db`UPDATE subscribers SET theme = 'light' WHERE email = 'paper-light@test.local'`;
+const itemTheme = await addItem('theme-post', 'friday_new', '2026-11-06');
+await db`
+  UPDATE queue_items
+  SET html = ${freshLetter}, html_ko = ${freshLetter}, subject = 'Theme subject', subject_ko = 'Theme subject'
+  WHERE id = ${itemTheme}
+`;
+resetSink();
+await drainQueueItem(itemTheme, { chunk: 40, budgetMs: 60000 });
+const darkMail = sinkReal.deliveries.find((d) => d.to[0] === 'paper-dark@test.local');
+const lightMail = sinkReal.deliveries.find((d) => d.to[0] === 'paper-light@test.local');
+const darkBody = darkMail ? decodeMail(darkMail.body) : '';
+const lightBody = lightMail ? decodeMail(lightMail.body) : '';
+check('dark reader was sent the stored dark letter', darkBody.includes('#0a0a0a') && !darkBody.includes('#fcfcfd'), darkBody.slice(0, 160));
+check('light reader was sent the light letter', lightBody.includes('#fcfcfd') && !lightBody.includes('#0a0a0a'), lightBody.slice(0, 160));
+
 await sinkReal.close();
 
 console.log(`\n${pass} checks passed, ${failures.length} failed`);

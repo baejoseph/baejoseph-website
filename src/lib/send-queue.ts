@@ -1,6 +1,6 @@
 import { withSchema } from './db';
 import { sendMail, smtpConfigured } from './email';
-import { composePair, LIKE_PLACEHOLDER, type Slot } from './newsletter';
+import { composePair, LIKE_PLACEHOLDER, paintLetter, type Slot } from './newsletter';
 import { identityHash } from './identity';
 
 /**
@@ -50,14 +50,21 @@ function personalize(letter: Letter, recipient: { unsub_token: string; email: st
   };
 }
 
-function letterFor(item: Item, lang: string): Letter {
+function letterFor(item: Item, lang: string, theme: 'dark' | 'light' = 'dark'): Letter {
   const ko = lang === 'ko' && item.html_ko;
+  const html = String((ko ? item.html_ko : item.html) || item.html || '');
   return {
-    html: String((ko ? item.html_ko : item.html) || item.html || ''),
+    // Dark is the stored letter. Light is a recolor of a themeable letter only;
+    // an older queued letter has no marker and is sent dark to everyone.
+    html: paintLetter(html, theme),
     text: String((ko ? item.text_body_ko : item.text_body) || item.text_body || ''),
     subject: String((ko ? item.subject_ko : item.subject) || item.subject || ''),
     slug: String((ko ? item.slug_ko : item.slug) || item.slug || ''),
   };
+}
+
+function readerTheme(value: unknown): 'dark' | 'light' {
+  return value === 'light' ? 'light' : 'dark';
 }
 
 function hasHangul(value: unknown) {
@@ -201,7 +208,7 @@ export async function sendQueueItem(
   // claimed and abandoned by an invocation that died mid-send long enough ago
   // that it cannot still be running.
   const due = await db`
-    SELECT s.email, s.unsub_token, s.lang
+    SELECT s.email, s.unsub_token, s.lang, s.theme
     FROM subscribers s
     LEFT JOIN send_log l ON l.queue_id = ${id} AND l.email = s.email
     WHERE s.unsubscribed_at IS NULL AND s.suppressed_at IS NULL
@@ -212,7 +219,7 @@ export async function sendQueueItem(
       )
     ORDER BY s.created_at ASC
     LIMIT ${batch}
-  ` as { email: string; unsub_token: string; lang: string }[];
+  ` as { email: string; unsub_token: string; lang: string; theme: string | null }[];
 
   let sent = 0;
   let failed = 0;
@@ -236,7 +243,10 @@ export async function sendQueueItem(
     }
 
     const lang = r.lang === 'ko' ? 'ko' : 'en';
-    const base = lang === 'ko' && koOverride ? koOverride : letterFor(item, lang);
+    const theme = readerTheme(r.theme);
+    const base = lang === 'ko' && koOverride
+      ? { ...koOverride, html: paintLetter(koOverride.html, theme) }
+      : letterFor(item, lang, theme);
     if (!base.html) {
       await db`DELETE FROM send_log WHERE id = ${claimId}`;
       skipped += 1;

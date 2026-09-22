@@ -4,6 +4,7 @@ import type { APIRoute } from 'astro';
 import { randomBytes } from 'node:crypto';
 import { withSchema, type Db } from '../../lib/db';
 import { smtpConfigured, sendMail } from '../../lib/email';
+import { paintLetter } from '../../lib/newsletter';
 import { allow, clientIp, hashKey, prune } from '../../lib/rate-limit';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -135,10 +136,12 @@ async function sendWelcome(
     const tpl = await db`SELECT * FROM email_templates WHERE key = ${key} LIMIT 1` as any[];
     const t = tpl[0];
     if (!t) return { ok: false, error: `template '${key}' is missing` };
+    const pref = await db`SELECT theme FROM subscribers WHERE email = ${email} LIMIT 1` as { theme: string | null }[];
+    const theme = pref[0]?.theme === 'light' ? 'light' : 'dark';
     await sendMail({
       to: email,
       subject: String(t.subject),
-      html: String(t.html).replaceAll('{{UNSUB}}', token),
+      html: paintLetter(String(t.html).replaceAll('{{UNSUB}}', token), theme),
       text: String(t.text_body).replaceAll('{{UNSUB}}', token),
     });
     return { ok: true, error: null };
