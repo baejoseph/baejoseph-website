@@ -4,11 +4,11 @@ date: "2023-09-01"
 slug: "sted-cathedral-en"
 lang: "en"
 pairedSlug: "sted-cathedral"
-featuredImage: "/assets/IMG_1867-e1694180515211.jpeg"
+featuredImage: "/assets/IMG_1867-e1694180515211.jpg"
 tags: ["travel", "testimony"]
 ---
 
-![](/assets/IMG_9400-768x1024.jpeg)
+![](/assets/IMG_9400-768x1024.jpg)
 
 Years ago, a cousin who had backpacked through Europe gave me advice I’ve never forgotten: don’t just wander from place to place as a tourist—pick a *theme* and let it structure your travel. You’ll see more, remember more, and come away with something that actually means something.
 
@@ -44,7 +44,7 @@ On the way out, I told them calmly why I had done it. I quoted Acts 4:12—
 
 So I asked him directly: I’m passing through—I can’t follow this up myself. But would he please escalate this to the right people? Would he make sure this didn’t happen again? He listened carefully but gave me no firm answer.
 
-![](/assets/IMG_1867-768x1024.jpeg)
+![](/assets/IMG_1867-768x1024.jpg)
 
 Our God is slow to anger. He is merciful, patient, long-suffering. But a God who *never* grows angry? That is not the God of Scripture—that is an idol of our own comfort-seeking imagination. Many believers today have confused God’s patience with God’s indifference, and they have grown comfortable in that confusion. I’ve explored [the doctrine of propitiation](/propitiation) before—how Christ’s sacrifice turned away the wrath we otherwise deserved, and why we can never treat God as if He doesn’t care about sin.
 

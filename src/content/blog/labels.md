@@ -3,7 +3,7 @@ title: "🕚 The Quiet Problem with Our Millennial Labels"
 date: "2025-05-09"
 slug: "labels"
 lang: "en"
-featuredImage: "/assets/SCR-20250509-o62.jpeg"
+featuredImage: "/assets/SCR-20250509-o62.jpg"
 pairedSlug: "천년설"
 
 tags: ["eschatology", "theology"]

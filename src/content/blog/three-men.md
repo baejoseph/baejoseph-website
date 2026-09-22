@@ -4,7 +4,7 @@ date: "2023-11-24"
 slug: "three-men"
 lang: "en"
 pairedSlug: "세남자"
-featuredImage: "/assets/SCR-20231214-fjl-scaled.jpeg"
+featuredImage: "/assets/SCR-20231214-fjl-scaled.jpg"
 tags: ["leftism", "theology"]
 ---
 

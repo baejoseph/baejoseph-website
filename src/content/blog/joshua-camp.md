@@ -4,7 +4,7 @@ date: "2023-08-04"
 slug: "joshua-camp"
 lang: "en"
 pairedSlug: "여호수아캠프"
-featuredImage: "/assets/IMG_9102.jpeg"
+featuredImage: "/assets/IMG_9102.jpg"
 
 tags: ["family", "testimony"]
 ---

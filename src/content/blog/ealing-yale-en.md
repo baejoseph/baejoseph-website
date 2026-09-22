@@ -4,7 +4,7 @@ date: "2023-09-29"
 slug: "ealing-yale-en"
 lang: "en"
 pairedSlug: "ealing-yale"
-featuredImage: "/assets/YaleSupreme.png"
+featuredImage: "/assets/YaleSupreme.jpg"
 tags: ["korea", "testimony"]
 ---
 
@@ -40,7 +40,7 @@ Our teenagers are pulled in a hundred directions—pressure to get into top univ
 
 To pursue this, we will join the main congregation for the first Sunday of every month, learning to experience the grace of sung worship and the preached Word together. We will also add a focused, crying-out-in-prayer time every week. And we are renaming the youth group: “예일이”—a wordplay on “Yale” and “예수 제일,” meaning “Jesus First.”
 
-![](/assets/YaleSupreme-1024x384.png)
+![](/assets/YaleSupreme-1024x384.jpg)
 
 **Goal Three: Confidence in Scripture**
 

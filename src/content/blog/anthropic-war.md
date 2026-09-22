@@ -5,7 +5,7 @@ slug: anthropic-war
 lang: en
 tags: [tech, leftism, courage, eschatology, ai]
 excerpt: "Anthropic claimed to have built the most powerful AI in history. China stole it. And then Anthropic told the U.S. military they couldn’t use it. Think carefully about what that means."
-featuredImage: "/assets/anthropic-war.png"
+featuredImage: "/assets/anthropic-war.jpg"
 pairedSlug: "앤트로픽전쟁"
 ---
 

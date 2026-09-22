@@ -4,7 +4,7 @@ date: "2026-02-03"
 slug: "kirby"
 lang: "en"
 pairedSlug: "커비"
-featuredImage: "/assets/kirby-demo.png"
+featuredImage: "/assets/kirby-demo.jpg"
 tags: ["theology", "family", "faith", "video"]
 youtubeId: "Nu3oZ5JJvGA"
 ---

@@ -4,7 +4,7 @@ date: "2024-04-19"
 slug: "multiculturalism"
 lang: "en"
 pairedSlug: "다문화주의"
-featuredImage: "/assets/SCR-20240512-tbvh.png"
+featuredImage: "/assets/SCR-20240512-tbvh.jpg"
 
 tags: ["leftism", "uk"]
 ---

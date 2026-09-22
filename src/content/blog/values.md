@@ -3,7 +3,7 @@ title: "🏠 At the Bae Household, We…"
 date: "2025-12-02"
 slug: "values"
 lang: "en"
-featuredImage: "/assets/SCR-20251202-fq4-scaled.jpeg"
+featuredImage: "/assets/SCR-20251202-fq4-scaled.jpg"
 pairedSlug: "가치"
 
 tags: ["theology", "eschatology", "family"]

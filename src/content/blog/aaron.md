@@ -4,7 +4,7 @@ date: "2024-07-12"
 slug: "aaron"
 lang: "en"
 pairedSlug: "아론"
-featuredImage: "/assets/GZyciA3WUAASpZf.jpeg"
+featuredImage: "/assets/GZyciA3WUAASpZf.jpg"
 
 tags: ["leftism", "courage"]
 ---

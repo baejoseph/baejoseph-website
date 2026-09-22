@@ -3,7 +3,7 @@ title: "🏛️ Jesus Academia Part 1"
 date: "2024-12-27"
 slug: "jesus-academia"
 lang: "en"
-featuredImage: "/assets/SCR-20250104-uo9.jpeg"
+featuredImage: "/assets/SCR-20250104-uo9.jpg"
 pairedSlug: "예수서원"
 
 tags: ["testimony", "theology"]
@@ -18,7 +18,7 @@ The best way to describe Jesus Academia is by invoking Rivendell from _The Lord 
 
 Attendees are consistently amazed by three things: the stunning surroundings of the Jesus Academia grounds and mansion; the warm hospitality and sumptuous feasts; and the transformative teaching of Pastor John Ko. Additionally, we enjoy sweet Christian fellowship.
 
-![](/assets/IMG_3090.heic)
+![](/assets/IMG_3090.jpg)
 
 Jesus Academia is located in Oyster Bay, Long Island, NY, in the Sagamore neighbourhood, home to Theodore Roosevelt, one of my favourite U.S. presidents. This ultra-wealthy area is known for vast properties—where “next door” often means a 400-meter distance, with forests and wild deer separating homes. Every house is grand. For context, all 35 participants, plus a team of five who helped run the course (more on them later), were comfortably accommodated across the main house and guest lodge, with rooms to spare!
 
@@ -26,7 +26,7 @@ We were also blessed with a surprise snowfall during the week, which blanketed e
 
 ## Who is pastor John Suk-hee Ko?
 
-![](/assets/IMG_6452.heic)
+![](/assets/IMG_6452.jpg)
 
 Jesus Academia is the brainchild of Pastor John Suk-hee Ko, now 81 years strong. After leading the U.S. Korean Christian Student Movement and the World Korean Mission Movement for over 40 years, he announced his retirement in 2016 and launched this house of learning for Jesus in 2017, personally hosting and leading around ten sessions every year from his own house.
 

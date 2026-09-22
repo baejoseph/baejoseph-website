@@ -3,7 +3,7 @@ title: "🌎 Environmentalism and Revelation"
 date: "2022-10-07"
 slug: "climate"
 lang: "en"
-featuredImage: "/assets/SCR-20231010-loc.jpeg"
+featuredImage: "/assets/SCR-20231010-loc.jpg"
 pairedSlug: "환경"
 youtubeId: "dUdQs2gKq5w"
 tags: ["leftism", "eschatology", "video"]

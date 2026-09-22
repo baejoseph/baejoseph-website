@@ -4,7 +4,7 @@ date: "2023-07-14"
 slug: "pastor-han-en"
 lang: "en"
 pairedSlug: "한목사님"
-featuredImage: "/assets/SCR-20230905-dox-e1694180411789.jpeg"
+featuredImage: "/assets/SCR-20230905-dox-e1694180411789.jpg"
 tags: ["testimony", "prayer"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["testimony", "prayer"]
 
 —-
 
-![](/assets/SCR-20230905-dox-762x1024.jpeg)
+![](/assets/SCR-20230905-dox-762x1024.jpg)
 
 #### God’s Astonishing Plan for One Life
 

@@ -4,7 +4,7 @@ date: "2025-06-13"
 slug: "week"
 lang: "en"
 pairedSlug: "한주간"
-featuredImage: "/assets/SCR-20240610-tjeh.jpeg"
+featuredImage: "/assets/SCR-20240610-tjeh.jpg"
 
 tags: ["testimony"]
 ---

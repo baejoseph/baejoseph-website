@@ -3,7 +3,7 @@ title: "🎪 The Big Church Festival"
 date: "2026-08-30"
 lang: "en"
 slug: "bcf"
-featuredImage: "/assets/bcf-hero.jpeg"
+featuredImage: "/assets/bcf-hero.jpg"
 tags: ["uk", "reflection", "eschatology"]
 pairedSlug: "bcf-kr"
 ---

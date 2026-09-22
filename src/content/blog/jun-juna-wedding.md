@@ -4,7 +4,7 @@ date: "2023-10-13"
 slug: "jun-juna-wedding"
 lang: "en"
 pairedSlug: "준주나결혼"
-featuredImage: "/assets/SCR-20231212-lecy.jpeg"
+featuredImage: "/assets/SCR-20231212-lecy.jpg"
 
 tags: ["family", "testimony"]
 ---

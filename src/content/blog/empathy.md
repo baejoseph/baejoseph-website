@@ -3,7 +3,7 @@ title: "🖤 On Empathy"
 date: "2025-03-07"
 slug: "empathy"
 lang: "en"
-featuredImage: "/assets/image.webp"
+featuredImage: "/assets/image-webp.jpg"
 pairedSlug: "공감"
 
 tags: ["theology", "leftism"]

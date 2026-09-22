@@ -4,7 +4,7 @@ date: "2024-05-31"
 slug: "butter"
 lang: "en"
 pairedSlug: "버터"
-featuredImage: "/assets/SCR-20240627-tdjj.jpeg"
+featuredImage: "/assets/SCR-20240627-tdjj.jpg"
 
 tags: ["health"]
 ---

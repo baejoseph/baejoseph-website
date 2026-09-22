@@ -3,7 +3,7 @@ title: "🥣 Derek Prince on Fasting"
 date: "2023-03-24"
 slug: "fasting"
 lang: "en"
-featuredImage: "/assets/SCR-20240524-rive.jpeg"
+featuredImage: "/assets/SCR-20240524-rive.jpg"
 pairedSlug: "금식"
 youtubeId: "HRyHbQ1rZ-w"
 tags: ["fasting", "prayer", "video"]

@@ -4,7 +4,7 @@ date: "2025-10-20"
 slug: "bible-app"
 lang: "en"
 pairedSlug: "성경앱"
-featuredImage: "/assets/SCR-20251117-ml3.png"
+featuredImage: "/assets/SCR-20251117-ml3.jpg"
 
 tags: ["tech", "ai"]
 ---

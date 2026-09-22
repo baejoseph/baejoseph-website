@@ -4,7 +4,7 @@ date: "2024-01-26"
 slug: "throne-of-david"
 lang: "en"
 pairedSlug: "다윗의왕좌"
-featuredImage: "/assets/SCR-20240718-g4e.jpeg"
+featuredImage: "/assets/SCR-20240718-g4e.jpg"
 
 tags: ["eschatology", "israel"]
 ---

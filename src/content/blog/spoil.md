@@ -2,7 +2,7 @@
 title: "💰 The 400 and the 200"
 date: "2026-09-05"
 lang: "en"
-featuredImage: "/assets/spoil-hero.JPG"
+featuredImage: "/assets/spoil-hero.jpg"
 tags:
   - reflection
   - faith

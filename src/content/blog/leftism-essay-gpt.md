@@ -4,7 +4,7 @@ date: "2023-09-22"
 slug: "leftism-essay-gpt"
 lang: "en"
 pairedSlug: "좌파주의에세이"
-featuredImage: "/assets/chat-gpt-logo-scaled-1.jpeg"
+featuredImage: "/assets/chat-gpt-logo-scaled-1.jpg"
 
 tags: ["leftism", "tech"]
 ---

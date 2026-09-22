@@ -4,14 +4,14 @@ date: "2023-07-21"
 slug: "2023-prayer-mission"
 lang: "en"
 pairedSlug: "2023-기도선교"
-featuredImage: "/assets/IMG_8925.jpeg"
+featuredImage: "/assets/IMG_8925.jpg"
 tags: ["prayer", "korea", "testimony"]
 ---
 
 *Prayer mission dates: July 3–12, across Wales.*
 *My participation: July 3–8 (Mon–Sat), five nights and six days in Newbridge, Wales.*
 
-![](/assets/IMG_8925.jpeg)
+![](/assets/IMG_8925.jpg)
 
 ## How We Got Here
 
@@ -54,7 +54,7 @@ Standing there watching those Welsh children sing with everything they had, I ca
 
 You don’t need a revival to see hope. You just need to watch children who have never heard the name of Jesus sing it like they’ve known it all their life.
 
-![](/assets/IMG_8811.jpeg)
+![](/assets/IMG_8811.jpg)
 
 The influence Pastor Cho and his whole family have built in Newbridge is extraordinary. Walking through those streets, I could not find a single person—child or adult—who did not know Pastor Cho, who goes by Peter among the locals. He greeted everyone we passed, and the warmth was unmistakably mutual. That is what years of loving a place looks like.
 
@@ -62,7 +62,7 @@ The influence Pastor Cho and his whole family have built in Newbridge is extraor
 
 ## Wednesday Morning — Clyde Street Pentecostal Church, Risca
 
-![](/assets/IMG_8823.jpeg)
+![](/assets/IMG_8823.jpg)
 
 This church in Risca had gone without a pastor for about two years. The deacons were taking turns preaching. The lead deacon explained their situation to us, and what struck me was how openly desperate he was—remarkably un-British, in the best sense. He must have said “we are desperate” more than ten times. He was not exaggerating. The congregation kept holding funerals as older members went home to heaven one by one, but no younger generation was filling in behind them. Most of their own children and grandchildren had walked away from the faith. The sadness in his face as he described that was real—and it was the kind of sadness that produces intercession rather than despair. There was nothing left to try except God.
 
@@ -80,7 +80,7 @@ Some churches are keeping the light on with duct tape and prayer. Most of them d
 
 ## Thursday Morning — Cross Keys Pentecostal Church
 
-![](/assets/IMG_0822.jpeg)
+![](/assets/IMG_0822.jpg)
 
 This church had also gone through a prolonged stretch without a pastor after their previous one left suddenly. Attendance had fallen so far that they had stopped using the main sanctuary entirely and were holding services in the adjoining education hall. About a year and a half earlier, Pastor Matthew had come on board as a part-time minister—but for the past eighteen months he had been battling an unnamed illness that left him perpetually exhausted, with no energy. He asked us to pray.
 
@@ -104,7 +104,7 @@ I sat with his testimony for a long time after I read it. It is one thing to tal
 
 ## Friday Morning — Cardiff, in Front of the Senedd
 
-![](/assets/IMG_8891.jpeg)
+![](/assets/IMG_8891.jpg)
 
 Cardiff was once the coal export capital of the world. At its peak, more trade passed through Cardiff Bay than through New York City, and the wealth was staggering. But as global competition mounted, the mines closed one by one—by the 1970s and ’80s, the mining industry had collapsed and tourism became the primary economy. The city never quite recovered. Standing in front of the Senedd—the Welsh Parliament—praying over it, I felt something like anticipation. When revival fire sweeps across Wales again, I believe it will bring not only spiritual renewal but economic restoration. That kind of hope is not naive. It is scriptural. I’ve laid out my thoughts on what the last days hold ([My Eschatology](/eschatology)), and one conviction has never wavered: God’s plan for the nations includes their restoration, and Wales is not forgotten.
 
@@ -114,7 +114,7 @@ A city that once moved the world is still waiting for the God who made it.
 
 ## Thursday Evening — The Joint Service in Pontypridd
 
-![](/assets/IMG_0808.jpeg)
+![](/assets/IMG_0808.jpg)
 
 Three prayer mission teams serving the Pontypridd region gathered with the local believers they had been ministering alongside for a joint evening service. The worship was hot, the preaching was direct, and the prayer was thick with expectation. I caught another glimpse of what Welsh revival looks like in seed form.
 
@@ -174,7 +174,7 @@ Ten pounds. Three months of saving. Four thousand guitars later.
 
 —-
 
-![](/assets/IMG_8935.jpeg)
+![](/assets/IMG_8935.jpg)
 
 Lord—we lift up the tears and the sacrifice of this “Kindling Spark of Revival” team before You. Lord, in Your time, pour out a spirit of grace and supplication upon this land of Wales, so that its people would look again to Jesus. Lord, as the gospel of Christ is proclaimed to the next generation of this land, pour out upon them a spirit of genuine repentance and mourning—so that these churches would be revived.
 

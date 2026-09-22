@@ -11,7 +11,7 @@ tags: ["prayer"]
 
 Here is a diagram to make sense of the four-track McCheyne Bible reading plan:
 
-![](/assets/SCR-20231019-l93-789x1024.png)
+![](/assets/SCR-20231019-l93-789x1024.jpg)
 
 —-
 

@@ -5,7 +5,7 @@ slug: epic-fury
 lang: en
 tags: [eschatology, israel, courage, theology]
 excerpt: "On 28 February 2026, a joint US-Israel precision strike — Operation Epic Fury — decapitated the Iranian regime after 47 years. I called it in June 2025. Here is what it means for the world, for America, for prophecy, and for the people of Iran."
-featuredImage: "/assets/epic-fury.png"
+featuredImage: "/assets/epic-fury.jpg"
 pairedSlug: "에픽퓨리"
 ---
 

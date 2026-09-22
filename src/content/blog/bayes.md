@@ -3,7 +3,7 @@ title: "🧮 Bayes’ Theorem and the Resurrection"
 date: "2025-02-21"
 slug: "bayes"
 lang: "en"
-featuredImage: "/assets/SCR-20250221-rcc-scaled.jpeg"
+featuredImage: "/assets/SCR-20250221-rcc-scaled.jpg"
 pairedSlug: "베이즈"
 youtubeId: "lL9s-jZeT9c"
 tags: ["theology", "apologetics", "video"]

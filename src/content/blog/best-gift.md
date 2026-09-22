@@ -4,7 +4,7 @@ date: "2024-10-04"
 slug: "best-gift"
 lang: "en"
 pairedSlug: "최고의선물"
-featuredImage: "/assets/SCR-20240512-smss.jpeg"
+featuredImage: "/assets/SCR-20240512-smss.jpg"
 
 tags: ["evangelism", "family", "testimony"]
 ---

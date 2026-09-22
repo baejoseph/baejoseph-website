@@ -4,7 +4,7 @@ date: "2025-02-22"
 slug: "maths"
 lang: "en"
 pairedSlug: "수학"
-featuredImage: "/assets/SCR-20250222-vpr.jpeg"
+featuredImage: "/assets/SCR-20250222-vpr.jpg"
 
 tags: ["theology", "apologetics"]
 ---
@@ -28,15 +28,15 @@ Baye’s Theorem itself states that:
 
 This is written mathematically as:
 
-![ql_a0f40b7601f734a4c6bf1de10e54ddc8_l3.png](/assets/image.png)
+![ql_a0f40b7601f734a4c6bf1de10e54ddc8_l3.png](/assets/image.jpg)
 
 Now, we can express the denominator as:
 
-![ql_dcf17c899a6750635f66363fadb5286e_l3.png](/assets/image-1.png)
+![ql_dcf17c899a6750635f66363fadb5286e_l3.png](/assets/image-1.jpg)
 
 With some rearranging, we can simplify the expression for the posterior probability to:
 
-![ql_11ecdf07ab36e8fb40f2877c0e9b4b83_l3.png](/assets/image-2.png)
+![ql_11ecdf07ab36e8fb40f2877c0e9b4b83_l3.png](/assets/image-2.jpg)
 
 At this point, the formula may look a bit complicated, but don’t worry—it boils down to two key ratios:
 
@@ -45,7 +45,7 @@ At this point, the formula may look a bit complicated, but don’t worry—it bo
 
 Let’s focus on the first ratio. The key point here is **the importance of keeping an open mind**. This means we don’t assume a prior probability of zero for miracles, no matter how unlikely they might seem. In mathematical terms:
 
-![ql_c377b2f737448cb57bcb1ece6b5b7c2f_l3.png](/assets/image-3.png)
+![ql_c377b2f737448cb57bcb1ece6b5b7c2f_l3.png](/assets/image-3.jpg)
 
 In simpler terms, this means we assign a non-zero probability to the resurrection being possible.
 
@@ -57,19 +57,19 @@ Now let’s focus on the second ratio. **How can we incorporate the testimonies 
 
 To do this, we need to apply a key rule of probability, known as the **multiplication rule for independent events**. This rule states:
 
-![ql_69f4811311e2bfaf932b0e5235464cbc_l3.png](/assets/image-4.png)
+![ql_69f4811311e2bfaf932b0e5235464cbc_l3.png](/assets/image-4.jpg)
 
 In simple terms, it says that the probability of two independent events—A and B—both occurring is the product of their individual probabilities.
 
 Now, let’s extend this concept to **_N_** independent eyewitnesses. The probability of all **_N_** eyewitnesses independently corroborating the miracle (i.e., witnessing the resurrection) is the product of the probabilities of each individual testimony. Mathematically, we write this as:
 
-![ql_a56e51d9f8ec8da6a124e42cbb097dde_l3.png](/assets/image-5.png)
+![ql_a56e51d9f8ec8da6a124e42cbb097dde_l3.png](/assets/image-5.jpg)
 
 This equation shows how we multiply the probabilities of each eyewitness testimony to find the overall likelihood of the evidence, assuming the resurrection occurred.
 
 With this, we can now re-write the ratio of likelihoods from earlier:
 
-![ql_76f6b79803d4f874ca0fe1feff740042_l3.png](/assets/image-6.png)
+![ql_76f6b79803d4f874ca0fe1feff740042_l3.png](/assets/image-6.jpg)
 
 Here, **_t_** represents the **average trustworthiness** of an independent eyewitness. In this context, **trustworthiness** is defined as the ratio of two probabilities: the probability that an eyewitness would report having seen the resurrection, assuming the resurrection actually occurred, versus the probability that an eyewitness is falsely claiming to have seen it, assuming the resurrection did not happen.
 
@@ -77,7 +77,7 @@ For the average person, who is not a sociopath or psychopath, we can reasonably 
 
 Putting it together, the expression for our posterior probability now reads:
 
-![ql_f65d697ead796bc4a5a883498ede7cbf_l3.png](/assets/image-10.png)
+![ql_f65d697ead796bc4a5a883498ede7cbf_l3.png](/assets/image-10.jpg)
 
 Let’s now follow in the footsteps of Charles Babbage, the father of computing, and calculate some key probabilities involved in evaluating the evidence for the resurrection. We’ll use numerical approximations to estimate the likelihood of Jesus’ resurrection based on the principles of Bayes’ Theorem. To do this, we need to make educated guesses about three main factors:
 
@@ -89,13 +89,13 @@ In fact, it’s worth briefly noting that, in light of recent advancements in qu
 
 Now, let’s do the math. First, we calculate the contribution of the eyewitnesses using the formula _**tN**_ :
 
-![ql_a47f016c86713c4143ceb26848e654f2_l3.png](/assets/image-8.png)
+![ql_a47f016c86713c4143ceb26848e654f2_l3.png](/assets/image-8.jpg)
 
 The impact of independent testimonies grows exponentially—10 to the power of 167—illustrating how their combined strength amplifies in an overwhelmingly powerful way.
 
 Now, using Bayes’ Theorem, we can calculate the **posterior probability**, which tells us how likely the resurrection is, given the evidence. This is written as:
 
-![ql_c15bdc3383e5ddb6d87cc6b534b46a80_l3.png](/assets/image-9.png)
+![ql_c15bdc3383e5ddb6d87cc6b534b46a80_l3.png](/assets/image-9.jpg)
 
 This approximation shows that the posterior probability of the resurrection is virtually **100%**, or **99.99999…** with **65 nines** after the decimal! In other words, once we update our prior belief with the overwhelming evidence of **500 independent eyewitnesses** who all testified to seeing the risen Jesus, the probability that the resurrection actually happened skyrockets.
 

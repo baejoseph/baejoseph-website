@@ -3,7 +3,7 @@ title: "👁 Rothschilds"
 date: "2024-08-16"
 slug: "rothschilds"
 lang: "en"
-featuredImage: "/assets/SCR-20240818-jtmr.jpeg"
+featuredImage: "/assets/SCR-20240818-jtmr.jpg"
 
 tags: ["leftism"]
 ---
@@ -14,7 +14,7 @@ tags: ["leftism"]
 
 Moses Amschel Bauer places a red sign above the entrance door to his counting house. This sign is a red hexagram (which geometrically and numerically translates into the number 666) which under Rothschild instruction will end up on the Israeli flag some two centuries later.
 
-![](/assets/Mayer-Amschel-Rothschild.png) 
+![](/assets/Mayer-Amschel-Rothschild.jpg) 
 
 1760: During this decade Mayer Amschel Bauer works for a bank owned by the Oppenheimers’ in Hanover, Germany. He is highly successful and becomes a junior partner. Whilst working at the bank he becomes acquainted with General von Estorff.
 

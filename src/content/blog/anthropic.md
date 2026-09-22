@@ -5,7 +5,7 @@ slug: anthropic
 lang: en
 tags: [tech, leftism, courage, ai]
 excerpt: "I went from dismissing Anthropic as a woke EA vanity project to placing them second only to xAI-and then Trump banned them from every federal agency in America overnight."
-featuredImage: "/assets/anthropic.png"
+featuredImage: "/assets/anthropic.jpg"
 pairedSlug: "앤트로픽"
 ---
 

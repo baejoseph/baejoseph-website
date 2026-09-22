@@ -4,7 +4,7 @@ date: "2024-11-29"
 slug: "einstein"
 lang: "en"
 pairedSlug: "아인슈타인"
-featuredImage: "/assets/GdeTq3TXkAElHWl.jpeg"
+featuredImage: "/assets/GdeTq3TXkAElHWl.jpg"
 
 tags: ["testimony"]
 ---

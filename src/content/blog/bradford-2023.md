@@ -4,7 +4,7 @@ date: "2023-05-12"
 slug: "bradford-2023"
 lang: "en"
 pairedSlug: "브래드포드"
-featuredImage: "/assets/SCR-20231212-lvyw.jpeg"
+featuredImage: "/assets/SCR-20231212-lvyw.jpg"
 
 tags: ["evangelism", "testimony"]
 ---
@@ -13,4 +13,4 @@ Since end of 2022, I’ve been serving [Compassion2All](https://www.compassion2a
 
 May this year, it was finally time to visit them in person and to fellowship with them. What a blessed time! Joshua accompanied, and was able to see first hand what his dad was up to every Tuesday evening.
 
-![](/assets/SCR-20231212-lvvg-1-1024x766.jpeg)
+![](/assets/SCR-20231212-lvvg-1-1024x766.jpg)

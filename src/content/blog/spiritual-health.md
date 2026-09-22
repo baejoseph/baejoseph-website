@@ -3,7 +3,7 @@ title: "💪 The Health of Your Spirit"
 date: "2026-01-20"
 slug: "spiritual-health"
 lang: "en"
-featuredImage: "/assets/spiritual-health.png"
+featuredImage: "/assets/spiritual-health.jpg"
 tags: ["theology", "health", "korea"]
 pairedSlug: "영적-건강"
 ---

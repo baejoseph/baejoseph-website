@@ -4,7 +4,7 @@ date: "2023-08-25"
 slug: "murph"
 lang: "en"
 pairedSlug: "머프"
-featuredImage: "/assets/IMG_8468.jpeg"
+featuredImage: "/assets/IMG_8468.jpg"
 tags: ["testimony", "health"]
 ---
 

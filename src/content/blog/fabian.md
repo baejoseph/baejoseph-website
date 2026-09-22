@@ -3,7 +3,7 @@ title: "🐺 The Wolf Is in Downing Street"
 date: "2025-09-13"
 slug: "fabian"
 lang: "en"
-featuredImage: "/assets/fabian.png"
+featuredImage: "/assets/fabian.jpg"
 tags: ["leftism", "courage", "theology", "family", "uk"]
 pairedSlug: "페이비언"
 ---

@@ -3,7 +3,7 @@ title: "🏛️ Jesus Academia Part 3"
 date: "2025-01-24"
 slug: "jesus-academia-3"
 lang: "en"
-featuredImage: "/assets/SCR-20250104-uo9.jpeg"
+featuredImage: "/assets/SCR-20250104-uo9.jpg"
 pairedSlug: "예수서원3"
 
 tags: ["testimony", "theology"]
@@ -95,7 +95,7 @@ After attending Jesus Academia, our whole family spent two days sightseeing in N
 
 Reflecting on this, I was deeply convicted in my heart. I reflected on how I had mostly been quick to anger with my sons and had often failed to offer enough praise. I made a firm resolve that from now on, **I would change my language habit and strive to be a good father who continually sparks their Conatus**. That evening, as we sailed past the Statue of Liberty, watching the sunset, I silently made this promise to myself.
 
-![](/assets/image-1024x727.png)
+![](/assets/image-1024x727.jpg)
 
 ## **Meeting My Mentor**
 

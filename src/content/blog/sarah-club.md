@@ -4,7 +4,7 @@ date: "2023-07-21"
 slug: "sarah-club"
 lang: "en"
 pairedSlug: "사라클럽"
-featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"
+featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.jpg"
 tags: ["family", "testimony"]
 ---
 

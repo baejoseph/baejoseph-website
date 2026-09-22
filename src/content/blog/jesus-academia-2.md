@@ -3,7 +3,7 @@ title: "🏛️ Jesus Academia Part 2"
 date: "2025-01-10"
 slug: "jesus-academia-2"
 lang: "en"
-featuredImage: "/assets/SCR-20250104-uo9.jpeg"
+featuredImage: "/assets/SCR-20250104-uo9.jpg"
 pairedSlug: "예수서원2"
 
 tags: ["testimony", "theology"]

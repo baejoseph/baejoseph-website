@@ -3,7 +3,7 @@ title: "7️⃣ Breaking the Seven Taboos in the Church"
 date: "2024-03-22"
 slug: "seven-taboos"
 lang: "en"
-featuredImage: "/assets/DALL%C2%B7E-2024-04-14-18.08.21-A-serene-and-thought-provoking-banner-for-a-blog-post-titled-Breaking-the-Seven-Taboos-in-the-Church-without-doors.-The-image-should-depict-a-symbo.webp"
+featuredImage: "/assets/DALL%C2%B7E-2024-04-14-18.08.21-A-serene-and-thought-provoking-banner-for-a-blog-post-titled-Breaking-the-Seven-Taboos-in-the-Church-without-doors.-The-image-should-depict-a-symbo.jpg"
 pairedSlug: "7금기들"
 
 tags: ["theology", "courage"]

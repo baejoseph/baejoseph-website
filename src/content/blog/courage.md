@@ -3,7 +3,7 @@ title: "🦁 Trump and Courage"
 date: "2024-07-14"
 slug: "courage"
 lang: "en"
-featuredImage: "/assets/SCR-20240714-ubhf.jpeg"
+featuredImage: "/assets/SCR-20240714-ubhf.jpg"
 pairedSlug: "용기"
 
 tags: ["courage", "leftism", "eschatology", "trump"]

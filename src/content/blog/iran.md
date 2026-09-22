@@ -3,7 +3,7 @@ title: "🦁 Why I believe Iran Regime Change is Soon"
 date: "2025-06-17"
 slug: "iran"
 lang: "en"
-featuredImage: "/assets/SCR-20250617-jzj.jpeg"
+featuredImage: "/assets/SCR-20250617-jzj.jpg"
 pairedSlug: "이란"
 
 tags: ["eschatology", "israel"]

@@ -6,7 +6,7 @@ lang: "en"
 pairedSlug: "통제"
 tags: ["leftism", "theology", "courage", "health", "video"]
 youtubeId: "wUz28kah-fw"
-featuredImage: "/assets/control.png"
+featuredImage: "/assets/control.jpg"
 ---
 
 ### The Oldest Play in the Tyrant’s Handbook

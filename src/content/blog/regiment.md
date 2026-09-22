@@ -5,7 +5,7 @@ slug: regiment
 lang: en
 tags: [theology, courage, family]
 excerpt: "God redirected my men’s breakfast talk at the last minute. What I would have said - about the British Army’s regiment system and what it means for Christian men fighting together."
-featuredImage: "/assets/regiment.png"
+featuredImage: "/assets/regiment.jpg"
 pairedSlug: "연대"
 ---
 

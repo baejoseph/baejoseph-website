@@ -3,7 +3,7 @@ title: "🐟 At the Water’s Edge"
 date: "2025-04-26"
 slug: "galilee"
 lang: "en"
-featuredImage: "/assets/SCR-20250426-g5k.jpeg"
+featuredImage: "/assets/SCR-20250426-g5k.jpg"
 pairedSlug: "갈릴리"
 
 tags: ["travel", "testimony", "israel"]

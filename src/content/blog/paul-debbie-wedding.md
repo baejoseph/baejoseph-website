@@ -4,7 +4,7 @@ date: "2023-01-28"
 slug: "paul-debbie-wedding"
 lang: "en"
 pairedSlug: "폴데비결혼"
-featuredImage: "/assets/IMG_6436-e1698938493182.jpeg"
+featuredImage: "/assets/IMG_6436-e1698938493182.jpg"
 
 tags: ["family", "testimony"]
 ---
@@ -13,4 +13,4 @@ It was great to attend the beautiful wedding service and reception afterwards! T
 
 Note how my wife and I both have lost so much weight, right after our 21-day fast at the beginning of the year; so many people were asking why we lost so much weight [🥰](https://emojipedia.org/smiling-face-with-hearts/)
 
-![](/assets/IMG_6575-1024x683.jpeg)
+![](/assets/IMG_6575-1024x683.jpg)

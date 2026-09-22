@@ -3,7 +3,7 @@ title: "🎪 2026년 영국 빅 처치 축제"
 date: "2026-08-30"
 lang: "ko"
 slug: "bcf-kr"
-featuredImage: "/assets/bcf-hero.jpeg"
+featuredImage: "/assets/bcf-hero.jpg"
 tags: ["uk", "reflection", "eschatology"]
 pairedSlug: "bcf"
 ---

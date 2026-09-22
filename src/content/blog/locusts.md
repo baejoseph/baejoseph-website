@@ -4,7 +4,7 @@ date: "2024-01-12"
 slug: "locusts"
 lang: "en"
 pairedSlug: "메뚜기"
-featuredImage: "/assets/SCR-20240114-pdhi.jpeg"
+featuredImage: "/assets/SCR-20240114-pdhi.jpg"
 
 tags: ["theology"]
 ---

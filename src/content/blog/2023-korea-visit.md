@@ -4,7 +4,7 @@ date: "2023-08-18"
 slug: "2023-korea-visit"
 lang: "en"
 pairedSlug: "2023한국방문"
-featuredImage: "/assets/IMG_9294.jpeg"
+featuredImage: "/assets/IMG_9294.jpg"
 tags: ["korea", "family", "testimony"]
 ---
 
@@ -14,7 +14,7 @@ She had loved me in that particular way that aunts love the children who give th
 
 We flew from Incheon Airport down to Buan in North Jeolla Province the morning I arrived, joining the family for the full funeral proceedings. On the drive back up to Seoul, I felt it clearly: God had arranged this trip.
 
-![](/assets/IMG_9222-1024x768.jpeg)
+![](/assets/IMG_9222-1024x768.jpg)
 
 **A funeral—and a summons I couldn’t refuse.**
 
@@ -22,13 +22,13 @@ The following day was Sunday, and I was grateful to spend it with my parents in 
 
 Heyri Art Village, in Paju—the publishing city—was a place I’d only ever heard about. Walking through it, I thought: *I have to bring the kids here.* The whole place is an odd, delightful cluster of studios, galleries, museums, and shops, with oversized sculptures tucked around every corner and what was apparently the best *tteokbokki* in northern Gyeonggi Province calling out to me from across the street.
 
-![](/assets/IMG_9245-1024x768.jpeg)
+![](/assets/IMG_9245-1024x768.jpg)
 
 In the back of Heyri, up on the second floor of a building called “The Church Where the Holy Spirit Lives,” we gathered for something called “Israel’s Restoration and the House of Prayer.” The gathering had been organised by Director Lee Tae-hyeong of Gukmin Books—the man who helped publish my father’s two books, *The Bible: My Love, My Life* and *Son, Live Like This*—and it bore the marks of something he’d put his heart into. I’ve written about the power of crying out together in [corporate prayer](/cry-out) before, and this was it—the raw, unpolished sound of believers who know how to pray.
 
 The guest speakers were Rick and Patricia Ridings, missionaries who for 25 years have led a 24-hour house of prayer in Jerusalem. The attendees were invitation-only: Elder Song Man-seop—founder of KIBI (Korea Israel Bible Institute), established 38 years ago—along with a curated gathering of leaders, missionaries, and their children, around 100 people in total. I’d arrived from England yesterday and was leaving for England tomorrow. Being in that room felt like an undeserved gift.
 
-![](/assets/IMG_9249-1024x768.jpeg)
+![](/assets/IMG_9249-1024x768.jpg)
 
 **The kind of peace that only decades of presence can forge.**
 

@@ -3,7 +3,7 @@ title: "💰 Solomon’s Real Wealth Secret"
 date: "2025-12-09"
 slug: "trade"
 lang: "en"
-featuredImage: "/assets/SCR-20251202-v2i-scaled.jpeg"
+featuredImage: "/assets/SCR-20251202-v2i-scaled.jpg"
 pairedSlug: "솔로몬의-부의-비밀"
 
 tags: ["theology"]

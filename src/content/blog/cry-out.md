@@ -3,7 +3,7 @@ title: "🤲🏻 The Power of Crying Out in Corporate Prayer"
 date: "2025-11-29"
 slug: "cry-out"
 lang: "en"
-featuredImage: "/assets/SCR-20251129-rndc-scaled.jpeg"
+featuredImage: "/assets/SCR-20251129-rndc-scaled.jpg"
 pairedSlug: "부르짖으라"
 youtubeId: "RhIkjOfLjEw"
 

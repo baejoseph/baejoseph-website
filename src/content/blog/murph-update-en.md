@@ -4,7 +4,7 @@ date: "2023-10-21"
 slug: "murph-update-en"
 lang: "en"
 pairedSlug: "머프업데이트"
-featuredImage: "/assets/IMG_9814.jpeg"
+featuredImage: "/assets/IMG_9814.jpg"
 tags: ["health", "testimony"]
 ---
 

@@ -4,7 +4,7 @@ date: "2024-09-13"
 slug: "self"
 lang: "en"
 pairedSlug: "자아"
-featuredImage: "/assets/SCR-20240718-g4e.jpeg"
+featuredImage: "/assets/SCR-20240718-g4e.jpg"
 
 tags: ["theology", "family"]
 ---

@@ -4,22 +4,22 @@ date: "2023-07-07"
 slug: "wooden-cross"
 lang: "en"
 pairedSlug: "나무십자가"
-featuredImage: "/assets/IMG_9017.jpeg"
+featuredImage: "/assets/IMG_9017.jpg"
 
 tags: ["evangelism"]
 ---
 
 I made a wooden cross for street evangelism. A trip to the B&Q, buy 15x68x2400mm pine strip wood planks, and some nuts and bolts. Cut to length, drill some holes, and file down some notches:
 
-![](/assets/IMG_9015-1024x768.jpeg)
+![](/assets/IMG_9015-1024x768.jpg)
 
 It is easy to make a wooden cross that folds up. We made one for Joshua and for Jonathan too:
 
-![](/assets/IMG_9017-1024x768.jpeg)
+![](/assets/IMG_9017-1024x768.jpg)
 
 We carry the cross as a visible sign when we go out to the streets:
 
-![](/assets/IMG_1712-1024x768.jpeg)
+![](/assets/IMG_1712-1024x768.jpg)
 
 —-
 

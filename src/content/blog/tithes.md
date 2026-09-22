@@ -4,7 +4,7 @@ date: "2024-08-23"
 slug: "tithes"
 lang: "en"
 pairedSlug: "십일조"
-featuredImage: "/assets/SCR-20241005-sce.jpeg"
+featuredImage: "/assets/SCR-20241005-sce.jpg"
 
 tags: ["theology"]
 ---

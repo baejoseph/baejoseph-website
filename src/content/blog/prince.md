@@ -4,7 +4,7 @@ date: "2019-03-15"
 slug: "prince"
 lang: "en"
 pairedSlug: "프린스"
-featuredImage: "/assets/OIP.ymIpXpon3veAYEAJTTAiCgHaKU.jpeg"
+featuredImage: "/assets/OIP.ymIpXpon3veAYEAJTTAiCgHaKU.jpg"
 tags: ["fasting", "prayer", "testimony"]
 ---
 

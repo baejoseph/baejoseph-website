@@ -4,7 +4,7 @@ date: "2024-05-24"
 slug: "oils"
 lang: "en"
 pairedSlug: "기름"
-featuredImage: "/assets/SCR-20240628-ho9.jpeg"
+featuredImage: "/assets/SCR-20240628-ho9.jpg"
 
 tags: ["health"]
 ---
@@ -35,7 +35,7 @@ But another bonus appealed to their business innovation…
 
 They learned the oil could be chemically altered via a process called “hydrogenation” to turn it into a solid cooking fat that resembled lard. Proctor & Gamble filed for two patents in 1908 in America. In 1911, they came out with the first hydrogenated oil food product. This product would later be called Crisco.
 
-![](/assets/SCR-20240627-sxqb.png)
+![](/assets/SCR-20240627-sxqb.jpg)
 
 That’s how an oil formerly classified as “toxic waste” became an integral part of the American diet in the early 1900s.
 

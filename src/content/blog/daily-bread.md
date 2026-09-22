@@ -4,7 +4,7 @@ date: "2026-02-12"
 slug: "daily-bread"
 lang: "en"
 pairedSlug: "일용할양식"
-featuredImage: "/assets/ip1307.png"
+featuredImage: "/assets/ip1307.jpg"
 
 tags: ["tech"]
 ---
@@ -41,7 +41,7 @@ Will this become a movement? Will the Body of Christ fall in love with God’s W
 
 He is coming quickly (Revelation 22:12). Will we be found feeding on His Word when He appears?
 
-![](/assets/Simulator-Screenshot-iPad-Pro-13-inch-M5-2026-02-12-at-12.56.56-1024x768.png)
+![](/assets/Simulator-Screenshot-iPad-Pro-13-inch-M5-2026-02-12-at-12.56.56-1024x768.jpg)
 
 If you crave simplicity—four chapters, no clutter, just Scripture—[try it](https://apps.apple.com/us/app/no-nonsense-daily-bread/id6758887678).
 

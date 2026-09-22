@@ -4,7 +4,7 @@ date: "2024-09-27"
 slug: "will"
 lang: "en"
 pairedSlug: "유언장"
-featuredImage: "/assets/MTkxMjc4OTQ4OTk3NDczODkw.webp"
+featuredImage: "/assets/MTkxMjc4OTQ4OTk3NDczODkw.jpg"
 
 tags: ["eschatology"]
 ---

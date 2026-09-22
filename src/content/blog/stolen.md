@@ -4,7 +4,7 @@ date: "2024-08-02"
 slug: "stolen"
 lang: "en"
 pairedSlug: "도난"
-featuredImage: "/assets/2020stolen.webp"
+featuredImage: "/assets/2020stolen.jpg"
 
 tags: ["leftism", "trump"]
 ---

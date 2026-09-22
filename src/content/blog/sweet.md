@@ -4,7 +4,7 @@ date: "2023-11-03"
 slug: "sweet"
 lang: "en"
 pairedSlug: "단거"
-featuredImage: "/assets/SCR-20231110-jzx.jpeg"
+featuredImage: "/assets/SCR-20231110-jzx.jpg"
 tags: ["family", "korea"]
 ---
 

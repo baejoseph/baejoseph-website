@@ -3,7 +3,7 @@ title: "↔️ Why Christians must reject Leftism"
 date: "2023-10-20"
 slug: "leftism"
 lang: "en"
-featuredImage: "/assets/90-2.jpeg"
+featuredImage: "/assets/90-2.jpg"
 pairedSlug: "좌파"
 youtubeId: "FvXiomUOC90"
 tags: ["leftism", "theology", "video"]

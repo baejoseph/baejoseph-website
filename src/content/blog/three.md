@@ -3,7 +3,7 @@ title: "3️⃣ Three Realms"
 date: "2024-08-30"
 slug: "three"
 lang: "en"
-featuredImage: "/assets/SCR-20240718-g4e.jpeg"
+featuredImage: "/assets/SCR-20240718-g4e.jpg"
 pairedSlug: "세가지"
 
 tags: ["theology", "eschatology", "leftism"]

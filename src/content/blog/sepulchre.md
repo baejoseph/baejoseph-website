@@ -3,7 +3,7 @@ title: "🪦 In the Stone Shadows"
 date: "2025-04-25"
 slug: "sepulchre"
 lang: "en"
-featuredImage: "/assets/SCR-20250425-dq6.jpeg"
+featuredImage: "/assets/SCR-20250425-dq6.jpg"
 pairedSlug: "성묘교회"
 
 tags: ["travel", "testimony", "israel"]

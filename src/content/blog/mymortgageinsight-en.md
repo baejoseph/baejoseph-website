@@ -4,7 +4,7 @@ date: "2023-07-28"
 slug: "mymortgageinsight-en"
 lang: "en"
 pairedSlug: "mymortgageinsight"
-featuredImage: "/assets/SCR-20231019-lhv.png"
+featuredImage: "/assets/SCR-20231019-lhv.jpg"
 tags: ["tech", "testimony"]
 ---
 

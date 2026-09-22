@@ -3,7 +3,7 @@ title: "👑 No King but Christ"
 date: "2025-05-25"
 slug: "allegiance"
 lang: "en"
-featuredImage: "/assets/Gemini_Generated_Image_bz7hqybz7hqybz7h.png"
+featuredImage: "/assets/Gemini_Generated_Image_bz7hqybz7hqybz7h.jpg"
 pairedSlug: "충성"
 
 tags: ["theology", "courage"]

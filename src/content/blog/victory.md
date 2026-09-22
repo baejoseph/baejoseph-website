@@ -2,7 +2,7 @@
 title: "🏆 Victory"
 date: "2026-08-25"
 lang: "en"
-featuredImage: "/assets/victory-hero.jpeg"
+featuredImage: "/assets/victory-hero.jpg"
 tags:
   - reflection
   - faith
@@ -17,13 +17,13 @@ It’s a First World War memorial — stained glass from the old Baltic Exchange
 
 On my first visits I was drawn to those. The figures are beautiful. The virtues are good. Who doesn’t want Truth, Hope, Justice, Fortitude, Faith? I stood there admiring them, the craftsmanship, the quiet dignity of each one.
 
-![The Five Virtues](/assets/victory-five.jpeg)
+![The Five Virtues](/assets/victory-five.jpg)
 
 Then on the second visit I noticed the left side. The window there is bigger than all five of the others put together. It dwarfs them. And right in the middle of it, the word: ***Victory***.
 
 I’d never thought of Victory as a virtue. But the glass makes the argument for you — the virtues are well and good, but without Victory they’re just decoration. Fortitude without the win is just suffering. Faith without the win is just empty. Hope without the win is just wishful thinking. As Paul says in 1 Corinthians 15:19, “If we have hoped in Christ only in this life, we are of all people most to be pitied.”
 
-![Victory](/assets/victory-focus.jpeg)
+![Victory](/assets/victory-focus.jpg)
 
 “But the fact is, Christ has been [raised from the dead](/bayes), the first fruits of those who are asleep.” Yes, Jesus already won that victory for us on that Sunday morning, exactly on the day of the Feast of First Fruits. That’s the victory we rest on — which is exactly why Revelation points to the blood of the Lamb. “They overcame him by the blood of the Lamb and by the word of their testimony, and they did not love their lives even unto death.” Overcame. That’s the word. Not endured. Not believed. Overcame.
 

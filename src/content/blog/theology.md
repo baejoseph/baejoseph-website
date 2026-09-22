@@ -4,7 +4,7 @@ date: "2024-09-20"
 slug: "theology"
 lang: "en"
 pairedSlug: "신학"
-featuredImage: "/assets/SCR-20241022-k1q.jpeg"
+featuredImage: "/assets/SCR-20241022-k1q.jpg"
 
 tags: ["theology", "testimony"]
 ---

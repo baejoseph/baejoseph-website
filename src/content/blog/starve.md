@@ -3,7 +3,7 @@ title: "🌭 Let Them Starve"
 date: "2025-02-07"
 slug: "starve"
 lang: "en"
-featuredImage: "/assets/5c7ea092250000d902c8b478.jpeg"
+featuredImage: "/assets/5c7ea092250000d902c8b478.jpg"
 pairedSlug: "먹지마"
 
 tags: ["leftism", "courage"]
@@ -36,7 +36,7 @@ This isn’t just about beggars. This applies to every broken institution that t
 -   A culture that celebrates victimhood rather than hard work and calls for endless “reparations”.
 -   A criminal justice system that coddles criminals instead of punishing them; and perversely, punishes those who complain online about the crimes.
 
-![](/assets/SCR-20250209-jufr-791x1024.jpeg)
+![](/assets/SCR-20250209-jufr-791x1024.jpg)
 
 Screenshot
 

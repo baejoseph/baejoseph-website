@@ -4,7 +4,7 @@ date: "2023-11-17"
 slug: "baegpt-en"
 lang: "en"
 pairedSlug: "baegpt"
-featuredImage: "/assets/SCR-20231121-kwx.png"
+featuredImage: "/assets/SCR-20231121-kwx.jpg"
 tags: ["tech", "korea", "ai"]
 ---
 

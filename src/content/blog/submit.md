@@ -4,7 +4,7 @@ date: "2024-08-09"
 slug: "submit"
 lang: "en"
 pairedSlug: "복종"
-featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.webp"
+featuredImage: "/assets/300r-family-first-trad-wives-1200x799-1.jpg"
 
 tags: ["theology", "family"]
 ---
