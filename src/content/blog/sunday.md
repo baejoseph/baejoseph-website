@@ -4,7 +4,7 @@ date: "2026-02-10"
 slug: "sunday"
 lang: "en"
 pairedSlug: "주일"
-featuredImage: "/assets/Screenshot-2026-02-08-at-19.56.20.jpg"
+featuredImage: "/assets/sunday-first-calendar-clock.jpg"
 
 tags: ["tech"]
 ---
@@ -19,14 +19,14 @@ So I built it myself.
 
 The process of publishing my first app was humbling—and more frustrating than I expected. So many tax declarations to fill in. Privacy Policy statements. Legal declarations. Apple’s review guidelines are strict for good reasons (protecting users, ensuring quality), but some rejections caught me off guard. My initial submission was turned down partly because the subtitle included “iPhone”—apparently, you can’t use Apple’s product names in ways that might imply official ties. It felt odd for an app designed precisely to breathe new life into old iPhones, but rules are rules. After rethinking, I resubmitted as “**_No Nonsense Calendar Clock: Old Phone, New Life_**.” After 48 hours that felt like weeks, it was finally approved, and version 1.2 went live on February 9, 2026. You can find it [here on the App Store](https://apps.apple.com/gb/app/no-nonsense-calendar-clock/id6758530388)—a one-time purchase at £0.99, yours forever.
 
-And now, with version 1.3 underway, I’m embracing a clearer direction.
+And now **version 2.1** is out. The headline change is a beautiful analogue clock face, inspired by the red dot that marks today on the calendar — that same crimson on the second hand, the rim, and the heart of the dial. The name is “Sunday First Calendar Clock”, or simply “**Sunday First**.” It still names my core belief: restoring Sunday as the starting point of the week. Users get that Sunday-first layout by default, with clean design, swipe navigation through months, burn-in protection for always-on use, and full localisation so it feels native everywhere.
 
-The pivot is to “Sunday First Calendar Clock”, or simply, “**Sunday First**.” This name highlights my core belief: restoring Sunday as the starting point of the week. In the app, users get that Sunday-first layout by default, with clean design, swipe navigation through months, burn-in protection for always-on use, and now full localisation so it feels native everywhere.
-
-![](/assets/Screenshot-2026-02-10-at-12.46.28-1024x472.jpg)
+![](/assets/sunday-first-calendar-clock-portrait.jpg)
 
 For the Body of Christ, emphasising Sunday as the week’s beginning can quietly reinforce expectancy: a weekly reminder that our lives start not with work, but with worship and the risen Lord. In a world that often treats Sunday as the close of the week, this small tool invites us to begin with grace.
 
 If you’ve ever felt that pull to honour the Lord’s Day more intentionally—or just want a simple, ad-free clock/calendar that runs on old devices—give it a try. Let me know what you think. Maybe it’s a small step toward living with more hope and urgency for His appearing.
 
-“Behold, I am coming quickly.” (Revelation 22:12)
+> “Behold, I am coming quickly.”
+>
+> Revelation 22:12
