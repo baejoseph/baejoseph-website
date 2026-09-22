@@ -15,7 +15,7 @@ export type Db = ReturnType<typeof sql>;
  * start can skip ~20 round trips to Neon and just check one row.
  * /api/setup forces the full run regardless (dashboard → "Create / migrate tables").
  */
-const SCHEMA_VERSION = 'v2026-09-17-letters-version';
+const SCHEMA_VERSION = 'v2026-09-17-reader-theme';
 
 let schemaReady: Promise<void> | null = null;
 
@@ -61,6 +61,7 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
     id SERIAL PRIMARY KEY,
     email TEXT NOT NULL UNIQUE,
     lang TEXT NOT NULL DEFAULT 'en',
+    theme TEXT NOT NULL DEFAULT 'dark',
     source TEXT NOT NULL DEFAULT 'unknown',
     unsub_token TEXT NOT NULL UNIQUE,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
@@ -110,6 +111,9 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
   await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS welcome_error TEXT`;
   await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS suppressed_at TIMESTAMPTZ`;
   await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS suppress_reason TEXT`;
+  // Dark/light choice made on the preferences page. Existing readers default to dark,
+  // which is what they have been reading all along.
+  await db`ALTER TABLE subscribers ADD COLUMN IF NOT EXISTS theme TEXT NOT NULL DEFAULT 'dark'`;
 
   // Per-recipient send bookkeeping. One row per (queue item, address) is what
   // makes a send idempotent: a second run skips anyone already claimed.

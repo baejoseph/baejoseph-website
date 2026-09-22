@@ -1,5 +1,7 @@
 ---
 export const prerender = false;
+import ThemeScript from '../components/ThemeScript.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
 const token = Astro.url.searchParams.get('token') || '';
 ---
 <!doctype html>
@@ -10,6 +12,7 @@ const token = Astro.url.searchParams.get('token') || '';
   <title>Unsubscribe — Joseph Bae</title>
   <meta name="robots" content="noindex" />
   <link rel="stylesheet" href="/styles/global.css" />
+  <ThemeScript />
   <style>
     .wrap { max-width: 440px; margin: 12vh auto; padding: 0 1.5rem; text-align: center; }
     h1 { font-size: 1.4rem; margin-bottom: 0.6rem; }
@@ -21,6 +24,7 @@ const token = Astro.url.searchParams.get('token') || '';
   </style>
 </head>
 <body>
+  <ThemeToggle floating />
   <div class="wrap">
     <h1>Leave the list</h1>
     <p id="msg">You will stop getting the Tuesday and Friday letters. That is all.</p>

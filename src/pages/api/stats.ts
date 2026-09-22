@@ -10,7 +10,7 @@ export const GET: APIRoute = async ({ request }) => {
   try {
     const db = await withSchema();
     const subs = await db`
-      SELECT id, email, lang, source, created_at, unsubscribed_at,
+      SELECT id, email, lang, theme, source, created_at, unsubscribed_at,
              welcomed_at, welcome_error, suppressed_at, suppress_reason
       FROM subscribers
       ORDER BY created_at DESC

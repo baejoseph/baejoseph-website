@@ -199,8 +199,8 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       </table>
       <h2>People</h2>
       <table>
-        <thead><tr><th>Email</th><th>Lang</th><th>Signed up via</th><th>When</th></tr></thead>
-        <tbody id="sub-body"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody>
+        <thead><tr><th>Email</th><th>Lang</th><th>Theme</th><th>Signed up via</th><th>When</th></tr></thead>
+        <tbody id="sub-body"><tr><td colspan="5" class="muted">Loading…</td></tr></tbody>
       </table>
       <h2>Recent events</h2>
       <table>
@@ -330,7 +330,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
         document.getElementById('n-active').textContent = '—';
-        const err = `<tr><td colspan="4" class="muted">${esc(data.error || 'Database not ready. Open Summary → Create tables.')}</td></tr>`;
+        const err = `<tr><td colspan="5" class="muted">${esc(data.error || 'Database not ready. Open Summary → Create tables.')}</td></tr>`;
         document.getElementById('src-body').innerHTML = err;
         document.getElementById('src-body-2').innerHTML = err;
         document.getElementById('sub-body').innerHTML = err;
@@ -354,9 +354,10 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       document.getElementById('sub-body').innerHTML = subs.map(s => `<tr>
         <td>${esc(s.email)}${s.unsubscribed_at ? ' <span class="pill">left</span>' : ''}${s.suppressed_at ? ' <span class="pill">bounced</span>' : ''}${s.welcome_error ? ' <span class="pill">no welcome</span>' : ''}</td>
         <td>${esc(s.lang)}</td>
+        <td>${s.theme === 'light' ? 'light' : 'dark'}</td>
         <td>${esc(s.source)}</td>
         <td>${esc(String(s.created_at).slice(0, 16).replace('T',' '))}</td>
-      </tr>`).join('') || '<tr><td colspan="4" class="muted">None yet</td></tr>';
+      </tr>`).join('') || '<tr><td colspan="5" class="muted">None yet</td></tr>';
       document.getElementById('ev-body').innerHTML = (data.events || []).map(e => `<tr>
         <td>${esc(String(e.created_at).slice(0, 16).replace('T',' '))}</td>
         <td>${esc(e.email)}</td>

@@ -440,6 +440,34 @@ const confirmed = await queuePatch({ request: await adminReq('PATCH', { id: item
 const confirmedBody = await confirmed.json();
 check('with the confirmation it sends', confirmed.status === 200 && (confirmedBody.result?.sent ?? 0) > 0, JSON.stringify(confirmedBody).slice(0, 170));
 
+section('18. readers can pick a theme, and it sticks');
+const { POST: prefsPost, GET: prefsGet } = await import('../../src/pages/api/preferences');
+await addSub('theme-test@test.local');
+const themeToken = 'tok-theme-test@test.local';
+const prefsReq = (method, body) => new Request('http://x/api/preferences', {
+  method, headers: { 'content-type': 'application/json' }, body: body ? JSON.stringify(body) : undefined,
+});
+const readPrefs = () => prefsGet({
+  request: new Request(`http://x/api/preferences?token=${encodeURIComponent(themeToken)}`),
+}).then((r) => r.json());
+
+const fresh = await readPrefs();
+check('a new subscription defaults to dark', fresh.lang === 'en' && fresh.theme === 'dark', JSON.stringify(fresh));
+const lightSave = await prefsPost({ request: prefsReq('POST', { token: themeToken, theme: 'light' }) }).then((r) => r.json());
+check('choosing light saves without touching the language', lightSave.ok === true && lightSave.theme === 'light' && lightSave.lang === 'en', JSON.stringify(lightSave));
+const koSave = await prefsPost({ request: prefsReq('POST', { token: themeToken, lang: 'ko' }) }).then((r) => r.json());
+check('changing the language leaves the theme alone', koSave.lang === 'ko' && koSave.theme === 'light', JSON.stringify(koSave));
+const later = await readPrefs();
+check('both choices are still there next visit', later.lang === 'ko' && later.theme === 'light', JSON.stringify(later));
+const badTheme = await prefsPost({ request: prefsReq('POST', { token: themeToken, theme: 'neon' }) });
+check('an unknown theme is refused', badTheme.status === 400, String(badTheme.status));
+const nothing = await prefsPost({ request: prefsReq('POST', { token: themeToken }) });
+check('a save with nothing to change is refused', nothing.status === 400, String(nothing.status));
+const unaffected = await readPrefs();
+check('a refused save changed nothing', unaffected.theme === 'light' && unaffected.lang === 'ko', JSON.stringify(unaffected));
+const noToken = await prefsGet({ request: new Request('http://x/api/preferences') });
+check('no token, no settings', noToken.status === 400, String(noToken.status));
+
 await sinkReal.close();
 
 console.log(`\n${pass} checks passed, ${failures.length} failed`);

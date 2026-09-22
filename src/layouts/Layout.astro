@@ -1,4 +1,7 @@
 ---
+import ThemeScript from '../components/ThemeScript.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+
 interface Props {
   title?: string;
   description?: string;
@@ -22,6 +25,7 @@ const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="/styles/global.css" />
+    <ThemeScript />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={siteTitle} />
     <meta name="twitter:description" content={description} />
@@ -31,6 +35,7 @@ const siteTitle = title === 'Joseph Bae' ? title : `${title} — Joseph Bae`;
     <header>
       <div class="inner">
         <a href="/" class="site-title" id="site-title-trigger">בשם יהושוע ✦ Joseph Bae</a>
+        <ThemeToggle />
       </div>
     </header>
 

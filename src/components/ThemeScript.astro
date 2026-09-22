@@ -1,0 +1,44 @@
+---
+/**
+ * Applies the theme before the first paint.
+ *
+ * Inline and synchronous in <head> on purpose: if this waited for the stylesheet or
+ * a deferred script, a reader who chose light would get a flash of the dark page on
+ * every navigation. Doing it here means the attribute is set before anything renders.
+ *
+ * Dark is the default, so with no stored choice nothing happens at all.
+ */
+interface Props {
+  /**
+   * Theme saved against the reader's subscription, when the page has a token to
+   * look it up with. It wins over whatever this browser last chose, and is copied
+   * into localStorage so the rest of the site follows them too.
+   */
+  theme?: 'dark' | 'light' | null;
+}
+const { theme = null } = Astro.props;
+---
+<script is:inline define:vars={{ serverTheme: theme }}>
+  (() => {
+    const KEY = 'baejoseph_theme';
+    // Dark is the absence of the attribute, matching the stylesheet: :root is dark,
+    // and only data-theme="light" opts into the light variables.
+    function apply(theme) {
+      const root = document.documentElement;
+      if (theme === 'light') root.setAttribute('data-theme', 'light');
+      else root.removeAttribute('data-theme');
+    }
+    try {
+      let theme = serverTheme;
+      if (theme !== 'light' && theme !== 'dark') {
+        const stored = localStorage.getItem(KEY);
+        theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+      }
+      apply(theme);
+      if (theme === 'light' || theme === 'dark') localStorage.setItem(KEY, theme);
+    } catch (err) {
+      // localStorage throws in some private modes. Dark is the default, so carry on.
+      if (serverTheme === 'light' || serverTheme === 'dark') apply(serverTheme);
+    }
+  })();
+</script>

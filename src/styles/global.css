@@ -9,10 +9,84 @@
   --accent: #6366f1;
   --accent-hover: #818cf8;
   --border: #222;
+  /* Tag pills sit on flat surfaces, so they need their own pair of colours. */
+  --tag-text: #7b7fc4;
+  --tag-text-hover: #c7d2fe;
+  --tag-strong-text: #6366f1;
+  --tag-strong-hover: #a5b4fc;
+  /* Fallback behind the hero carousel before its image loads, and the tint for
+     the featured strip. Over an image the hero keeps white text in both themes. */
+  --hero-bg: #1a1a2e;
+  --on-accent: #fff;
   --font-en: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-ko: 'Noto Sans KR', sans-serif;
   --max-width: 720px;
+  color-scheme: dark;
 }
+
+/**
+ * Light theme. Dark is the default: nothing is set until a reader asks for light
+ * (the toggle, or the preference saved against their subscription), and the only
+ * thing that changes is this block of variables.
+ *
+ * Values are chosen for contrast rather than a mechanical inversion: the accent
+ * darkens to #4f46e5 so white button text still passes, and the surfaces stay a
+ * touch off-white so the page does not glare.
+ */
+[data-theme='light'] {
+  --bg: #fcfcfd;
+  --bg-card: #f2f2f6;
+  --bg-hover: #e9e9f0;
+  --text: #16161d;
+  --text-muted: #5b5b68;
+  --accent: #4f46e5;
+  --accent-hover: #3730a3;
+  --border: #dcdce4;
+  --tag-text: #4f46e5;
+  --tag-text-hover: #3730a3;
+  --tag-strong-text: #4f46e5;
+  --tag-strong-hover: #3730a3;
+  --hero-bg: #eef0fb;
+  color-scheme: light;
+}
+
+/* ── Theme toggle (shared: the header on the blog, and the token pages) ── */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.theme-toggle.floating {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  background: var(--bg);
+}
+
+/* The icon shows the theme you are in: moon while dark, sun while light. */
+.theme-toggle .tt-sun { display: none; }
+[data-theme='light'] .theme-toggle .tt-sun { display: inline; }
+[data-theme='light'] .theme-toggle .tt-moon { display: none; }
 
 * {
   box-sizing: border-box;

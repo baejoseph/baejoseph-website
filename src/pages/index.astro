@@ -398,7 +398,7 @@ const heroPool = posts
     position: relative;
     margin-bottom: 3rem;
     border-radius: 8px;
-    background-color: #1a1a2e;
+    background-color: var(--hero-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -537,7 +537,7 @@ const heroPool = posts
     font-weight: 500;
     letter-spacing: 0.04em;
     background: rgba(99, 102, 241, 0.06);
-    color: #7b7fc4;
+    color: var(--tag-text);
     border: 1px solid rgba(99, 102, 241, 0.15);
     text-decoration: none;
     transition: background 0.15s, color 0.15s;
@@ -545,7 +545,7 @@ const heroPool = posts
   }
   .tag-pill-sm:hover {
     background: rgba(99, 102, 241, 0.14);
-    color: #c7d2fe;
+    color: var(--tag-text-hover);
   }
   .tag-pill-sm.tag-hidden {
     display: none;
@@ -561,7 +561,7 @@ const heroPool = posts
     font-weight: 500;
     letter-spacing: 0.04em;
     background: transparent;
-    color: #6366f1;
+    color: var(--tag-strong-text);
     border: 1px dashed rgba(99, 102, 241, 0.35);
     cursor: pointer;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
@@ -569,7 +569,7 @@ const heroPool = posts
   }
   .tag-expand:hover {
     background: rgba(99, 102, 241, 0.1);
-    color: #a5b4fc;
+    color: var(--tag-strong-hover);
     border-color: rgba(99, 102, 241, 0.55);
   }
 

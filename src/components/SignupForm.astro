@@ -29,14 +29,19 @@ const ko = lang === 'ko';
   .signup-form { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: center; }
   .signup-form input {
     flex: 1 1 180px; min-width: 0; padding: 0.55rem 0.8rem; border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.25); background: rgba(0,0,0,0.35); color: #fff;
+    border: 1px solid var(--border); background: var(--bg); color: var(--text);
     font-family: inherit; font-size: 0.9rem;
   }
+  /* The homepage hero sits on a photograph, so that one field stays light-on-dark. */
+  .signup-form.compact input {
+    border-color: rgba(255,255,255,0.25); background: rgba(0,0,0,0.35); color: #fff;
+  }
   .signup-form button {
-    padding: 0.55rem 1rem; border: 0; border-radius: 999px; background: #6366f1; color: #fff;
+    padding: 0.55rem 1rem; border: 0; border-radius: 999px; background: var(--accent); color: var(--on-accent);
     font-weight: 600; cursor: pointer; font-family: inherit; font-size: 0.9rem;
   }
-  .signup-status { width: 100%; font-size: 0.8rem; color: rgba(255,255,255,0.75); min-height: 1.1em; margin: 0; }
+  .signup-status { width: 100%; font-size: 0.8rem; color: var(--text-muted); min-height: 1.1em; margin: 0; }
+  .signup-form.compact .signup-status { color: rgba(255,255,255,0.75); }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
   /* Honeypot: off-screen for people, irresistible to bots. */
   .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

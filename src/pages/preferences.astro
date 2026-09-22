@@ -1,71 +1,161 @@
 ---
 export const prerender = false;
+import ThemeScript from '../components/ThemeScript.astro';
+import { withSchema } from '../lib/db';
+
+/**
+ * The reader's own page: what arrives, and what it looks like when they click
+ * through. Reached from the preferences link at the foot of every letter.
+ *
+ * The saved values are read on the server so the page arrives in the right theme
+ * rather than flashing dark and switching — which is the whole point of keeping
+ * the choice at all.
+ */
 const token = Astro.url.searchParams.get('token') || '';
+let lang: 'en' | 'ko' = 'en';
+let theme: 'dark' | 'light' = 'dark';
+let known = false;
+let loadError = false;
+
+if (token) {
+  try {
+    const db = await withSchema();
+    const rows = await db`
+      SELECT lang, theme FROM subscribers
+      WHERE unsub_token = ${token} AND unsubscribed_at IS NULL
+      LIMIT 1
+    `;
+    if (rows[0]) {
+      known = true;
+      lang = rows[0].lang === 'ko' ? 'ko' : 'en';
+      // Anything other than an explicit light choice, including a blank legacy
+      // cell, is dark. That is also what a brand-new signup gets.
+      theme = rows[0].theme === 'light' ? 'light' : 'dark';
+    }
+  } catch (err) {
+    // Do not show a form of defaults: Save would write those defaults over the
+    // real row once the database answers again.
+    console.error('[preferences] could not load the subscription:', err);
+    loadError = true;
+  }
+}
+
+const ko = lang === 'ko';
 ---
 <!doctype html>
-<html lang="en">
+<html lang={ko ? 'ko' : 'en'} data-theme={theme === 'light' ? 'light' : undefined}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Preferences — Joseph Bae</title>
+  <title>{ko ? '설정' : 'Preferences'} — Joseph Bae</title>
   <meta name="robots" content="noindex" />
   <link rel="stylesheet" href="/styles/global.css" />
+  <ThemeScript theme={known ? theme : null} />
   <style>
-    .wrap { max-width: 440px; margin: 12vh auto; padding: 0 1.5rem; text-align: center; }
-    h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
-    p { color: var(--text-muted); }
-    .langs { display: flex; gap: 0.5rem; justify-content: center; margin: 1.25rem 0 0.5rem; }
-    .langs button {
+    .wrap { max-width: 460px; margin: 12vh auto; padding: 0 1.5rem; text-align: center; }
+    h1 { font-size: 1.4rem; margin-bottom: 1.75rem; }
+    .group + .group { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--border); }
+    .group-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.9rem; }
+    .opts { display: flex; gap: 0.5rem; justify-content: center; }
+    .opts button {
       padding: 0.6rem 1.1rem; border-radius: 999px; border: 1px solid var(--border);
       background: transparent; color: var(--text); font-weight: 600; cursor: pointer; font-family: inherit;
     }
-    .langs button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
-    #save { margin-top: 1rem; padding: 0.65rem 1.2rem; border: 0; border-radius: 999px;
-      background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .opts button.on { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+    .hint { color: var(--text-muted); font-size: 0.82rem; margin-top: 0.75rem; }
+    #save { margin-top: 2rem; padding: 0.7rem 1.3rem; border: 0; border-radius: 999px;
+      background: var(--accent); color: var(--on-accent); font-weight: 600; cursor: pointer; font-family: inherit; }
+    #msg { color: var(--text-muted); margin-top: 0.9rem; min-height: 1.2em; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>Preferences / 설정</h1>
-    <p id="msg">Which language should the Tuesday and Friday letters arrive in?</p>
-    {token ? (
+
+    {known ? (
       <>
-        <div class="langs">
-          <button type="button" id="btn-en" class="on">English</button>
-          <button type="button" id="btn-ko">한국어</button>
+        <div class="group">
+          <div class="group-label">{ko ? '편지 언어' : 'Letter language'}</div>
+          <div class="opts">
+            <button type="button" id="btn-en">English</button>
+            <button type="button" id="btn-ko">한국어</button>
+          </div>
+          <p class="hint" id="lang-hint">
+            {ko ? '화요일과 금요일 편지를 어느 언어로 받을지 정합니다.' : 'Which language the Tuesday and Friday letters arrive in.'}
+          </p>
         </div>
-        <button type="button" id="save">Save</button>
+
+        <div class="group">
+          <div class="group-label">{ko ? '화면 테마' : 'Theme'}</div>
+          <div class="opts">
+            <button type="button" id="btn-dark">{ko ? '다크' : 'Dark'}</button>
+            <button type="button" id="btn-light">{ko ? '라이트' : 'Light'}</button>
+          </div>
+          <p class="hint" id="theme-hint">
+            {ko
+              ? '이 사이트를 열 때 적용됩니다. 고르지 않으면 다크입니다. 저장해야 남습니다.'
+              : 'Used when you open the site. Dark if you never choose. Press Save to keep it.'}
+          </p>
+        </div>
+
+        <button type="button" id="save">{ko ? '저장' : 'Save'}</button>
+        <p id="msg"></p>
       </>
-    ) : <p>Missing token.</p>}
-    <p style="margin-top:1.5rem"><a href="/" class="back-link">← Back to the blog</a></p>
+    ) : loadError ? (
+      <p class="hint">Could not load your settings. Open the link from the letter again.<br />설정을 불러오지 못했습니다. 편지의 링크를 다시 열어 주세요.</p>
+    ) : (
+      <p class="hint">{token ? 'That link does not match a subscription. / 이 링크는 구독 정보와 맞지 않습니다.' : 'Missing token. / 토큰이 없습니다.'}</p>
+    )}
+
+    <p style="margin-top:1.5rem"><a href="/" class="back-link">← {ko ? '블로그로' : 'Back to the blog'}</a></p>
   </div>
-  <script define:vars={{ token }}>
-    let lang = 'en';
+
+  <script define:vars={{ token, startLang: lang, startTheme: theme, known }}>
+    let lang = startLang;
+    let theme = startTheme;
+
     function paint() {
       document.getElementById('btn-en')?.classList.toggle('on', lang === 'en');
       document.getElementById('btn-ko')?.classList.toggle('on', lang === 'ko');
+      document.getElementById('btn-dark')?.classList.toggle('on', theme === 'dark');
+      document.getElementById('btn-light')?.classList.toggle('on', theme === 'light');
     }
+
+    // Preview only. localStorage is updated after a successful save, so leaving
+    // without saving does not change the rest of the site.
+    function applyTheme() {
+      const root = document.documentElement;
+      if (theme === 'light') root.setAttribute('data-theme', 'light');
+      else root.removeAttribute('data-theme');
+    }
+
+    function rememberTheme() {
+      try { localStorage.setItem('baejoseph_theme', theme); } catch (err) {}
+    }
+
     document.getElementById('btn-en')?.addEventListener('click', () => { lang = 'en'; paint(); });
     document.getElementById('btn-ko')?.addEventListener('click', () => { lang = 'ko'; paint(); });
+    document.getElementById('btn-dark')?.addEventListener('click', () => { theme = 'dark'; paint(); applyTheme(); });
+    document.getElementById('btn-light')?.addEventListener('click', () => { theme = 'light'; paint(); applyTheme(); });
 
-    if (token) {
-      fetch('/api/preferences?token=' + encodeURIComponent(token))
-        .then(r => r.json())
-        .then(d => { if (d.lang === 'ko' || d.lang === 'en') { lang = d.lang; paint(); } })
-        .catch(() => {});
-    }
-
-    document.getElementById('save')?.addEventListener('click', async () => {
-      const res = await fetch('/api/preferences', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ token, lang }),
+    paint();
+    if (known) {
+      document.getElementById('save')?.addEventListener('click', async () => {
+        const msg = document.getElementById('msg');
+        const res = await fetch('/api/preferences', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ token, lang, theme }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!msg) return;
+        if (!res.ok) { msg.textContent = data.error || (lang === 'ko' ? '저장하지 못했습니다.' : 'Could not save that.'); return; }
+        rememberTheme();
+        msg.textContent = lang === 'ko'
+          ? `저장했습니다. 편지는 한국어로, 화면은 ${theme === 'light' ? '라이트' : '다크'} 모드로 보여드립니다.`
+          : `Saved. Letters in English, pages in ${theme === 'light' ? 'light' : 'dark'} mode.`;
       });
-      const msg = document.getElementById('msg');
-      if (res.ok && msg) msg.textContent = lang === 'ko'
-        ? '저장했습니다. 이제 한국어로 보내드립니다.'
-        : 'Saved. Letters will come in English.';
-    });
+    }
   </script>
 </body>
 </html>
