@@ -9,7 +9,7 @@ pairedSlug: "어원"
 
 I published three books in quick succession.
 
-My first three commercial books ever, with my name on the cover. (Not counting my doctorate dissertation.)
+My first three commercial books ever, with my name on the cover. (Not counting my [doctorate dissertation](https://www.mathgenealogy.org/id.php?id=203936).)
 
 Earlier this year I built [three typing games](/typing-games). Now, three books. They say buses come in threes. I did not plan a convoy — I planned one booklet for my own children during a long summer, and the thing multiplied.
 
