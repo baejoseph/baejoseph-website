@@ -5,43 +5,39 @@ slug: "locusts"
 lang: "en"
 pairedSlug: "메뚜기"
 featuredImage: "/assets/SCR-20240114-pdhi.jpg"
-
-tags: ["theology"]
+tags: ["theology", "leftism"]
 ---
 
-In the realm of wisdom literature, the Bible often presents profound insights through simple observations. “There are four things which are little on the earth, but they are exceedingly wise”—thus begins the Wisdom of Agur in Proverbs 30. Agur invites us to glean wisdom from the behaviour of small creatures. The focal verse for our discussion is Proverbs 30:27:
+> “There are four things which are little on the earth, but they are exceedingly wise… The locusts have no king, yet they all advance in ranks.”
+>
+> Proverbs 30:24, 27
 
-> “The locusts have no king,  
-> Yet they all advance in ranks.”
-> 
-> Proverbs 30:27
+No throne. No ministry. They still move as one. That is enough to break the [Left’s](/leftism) faith that a “king” must redistribute wealth and administer mercy.
 
-This succinct verse challenges the Left’s reliance on government, or “king”, in orchestrating societal matters, especially in the context of wealth redistribution and aid administration.
+**Force is not charity.** Taxes are collected under threat of court and cell. Call it welfare — it is still compulsion. Biblical giving is voluntary, from the heart, because someone actually saw the need.
 
-### The Leftist’s Obsession with Government Intervention
+> “So let each one give as he purposes in his heart, not grudgingly or of necessity; for God loves a cheerful giver.”
+>
+> 2 Corinthians 9:7
 
-Leftist ideologies invariably advocate for the use of the government mechanisms to redistribute wealth and provide aid to the less fortunate. While aiming to create a more “equitable” society, this approach is marred by two critical flaws: the forced nature of government intervention and its inherent inefficiency.
+When the state plays the cheerful giver, two things die: the giver’s moral choice, and the receiver’s dignity. You cannot grow in generosity if a clerk has already taken the decision from you. Gratitude becomes a claim. Work looks optional. Then [tyranny](/control) looks necessary, because someone has to keep feeding the machine and someone has to punish the ones who will not. That is why socialism never works. It disincentivises the very labour a people live on, then calls the resulting poverty a proof that the king must take still more.
 
-Firstly, government intervention in wealth redistribution necessarily involves an element of force. Taxes are levied under the threat of violence and legal consequences. This enforced participation in the name of welfare starkly contrasts with the Biblical endorsement of voluntary charity, which is motivated by empathy and compassion. Such coercion in the guise of aid not only undermines the free will and individual moral choice that are central to Biblical teachings but also risks paving the way towards totalitarianism. When the government assumes the role of enforcing charity, it not only inhibits the individual’s right to choose generosity, but also fosters a reliance and dependency mentality in recipients. Most damagingly, this forced redistribution disincentivises hard work in the general population, which in turn will lead to a cycle of entitlement and societal degradation. It’s the whole reason why socialism never works.
+It is also clumsy. Bureaucracies cannot see a street the way a neighbour can. Layers of process sit between the money and the mouth. They write one rule for every town and then act surprised when the rule bites. The 1960s “man in the house” [welfare](/starve) policy told African American single mothers: lose the cheque if a man lives here. The incentive was obvious. Fatherlessness in that community went from under 30% in 1950 to over 75% by 1990. A generation learned that a present father was a financial penalty. The swarm got a king. The ranks broke.
 
-Secondly, the efficacy of government-run programs frequently falls short of expectations. Their levels of bureaucracy and the disconnect from local contexts hinder governmental bodies from administering aid effectively. This results in a one-size-fits-all approach, which fails to address the specific needs of different communities and individuals. Moreover, government policies can inadvertently create counterproductive incentives, undermining the very welfare they aim to improve. A notable example is the [“man in the house” rule](https://en.wikipedia.org/wiki/Aid_to_Families_with_Dependent_Children) implemented in the 1960s for African American single mothers. This policy incentivised and thus unintentionally promoted single-parent families, contributing to the epidemic of fatherlessness in the Black community—from under 30% in 1950 to over 75% by 1990, thus having a profound and detrimental impact on the demographic.
+**Locusts do locally what Whitehall cannot.** People who live there know who is hungry, who is lazy, and who just lost a job. They bring local knowledge and a personal stake. Churches and [households](/values) can move this week without a white paper. Targeted. Personal. No incentive to stay broken. That is why a collection in one congregation often does more good, pound for pound, than a department with a logo. Even drones have copied the same trick: no central brain, each unit reading the one beside it, the formation still holds. Agur saw it first.
 
-### The Locusts’ Wisdom: Grassroots, Self-Organised Acts of Charity
+None of this is “keep every penny and let the poor starve.” A strictly every-man-for-himself market, with no duty to share, produces a cold people and then a restless one. A people that will not share becomes a people that will not hold. The other ditch is as ugly as the first. We need the tension: personal achievement and communal responsibility, without a king with a gun collecting the tithe. Paul does not skip equality in the household of God — he just refuses to get there by the sword.
 
-Proverbs 30:27 presents an alternative model, exemplified by the orderly swarming of locusts without a central authority. When individuals or smaller community groups come together voluntarily to address the societal needs that they can observe, they bring with them a deeper understanding of the local context and a personal commitment to the cause. This decentralised approach not only ensures more effective and targeted aid but also fosters a stronger sense of community.
+> “For you know the grace of our Lord Jesus Christ, that though He was rich, yet for your sakes He became poor, that you through His poverty might become rich.”
+>
+> 2 Corinthians 8:9
 
-### Technological Parallel: Swarming Algorithms
+Surplus walks toward lack because Christ walked toward us. That is 2 Corinthians 8. Not a tax code. And he will not baptise idleness:
 
-Interestingly, this concept finds resonance in cutting-edge technological advancements, notably in swarming algorithms in drone technology. These algorithms, inspired by natural swarms like locusts, operate without centralised control. Instead, each drone adjusts its behaviour based on its nearest neighbours, resulting in efficient, adaptable formations achieved through decentralised interactions.
+> “If anyone will not work, neither shall he eat.”
+>
+> 2 Thessalonians 3:10
 
-### The Necessity of Sharing in Society
+So: no king required. Ranks, yes. Give freely. Work honestly. Be found a [faithful steward](/faithfulness), not a brilliant central planner. The locusts already know. The church should too.
 
-At this point in the essay, it is crucial to acknowledge the dangers of a society that shuns sharing altogether. A strictly free-market “every man for himself” mentality, underpinned by the belief that a person deserves to keep all their earnings without a duty to share, risks creating a fragmented, indifferent society, eroding the sense of community and leading to social unrest. We need to find a balance between personal achievement and communal responsibility, steering clear of the extremes of government-enforced redistribution and total non-sharing.
-
-### Biblical Teaching on Equality
-
-The Bible does not overlook the need for “equality” among believers in the Household of God. In 2 Corinthians 8:1-15, Paul states that those with surplus should help those in need, not as an imposition but as a reflection of what Christ has done for us (“That though He was rich, yet for your sakes He became poor, that you through His poverty might become rich” v9). This model of voluntary, community-driven support, where sharing of resources is motivated not by compulsion but by a shared sense of compassion underscores the value of generosity as a reflection of Christ’s love.
-
-## Conclusion
-
-Reflecting on the wisdom of Proverbs, we have explored the efficacy of decentralised, grassroots approaches over government-led interventions in addressing societal needs. This model, rooted in voluntary participation and local understanding, not only aligns with Biblical teachings of charity and the core principles of freedom and personal responsibility but also ensures a more effective, empathetic, and cohesive society. When not giving or sharing at all is not a viable option, embracing this wisdom of voluntary, grassroots giving can lead to more harmonious and effective community living, honouring the Biblical teachings of charity and freedom.
+Maranatha.
