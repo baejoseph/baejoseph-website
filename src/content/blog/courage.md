@@ -33,4 +33,8 @@ In the face of growing wickedness and societal decay, it is clear that silence a
 
 —-
 
-**Update:** fifteen months later, tragedy — and a reckoning — [An End Time Prophet’s Cry](/kirk).
+**2025 Update:** fifteen months later, tragedy — and a reckoning — [An End Time Prophet’s Cry](/kirk).
+
+**2026 Update:** I published [three books on Etymologies](/etymologies). I hope these courageous men would approve.
+
+[![](/assets/courage-update.jpg)](/etymologies) 

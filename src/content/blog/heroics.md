@@ -36,6 +36,6 @@ So let the world keep its [soft](/empathy), [effeminate](/climate), [whimpering]
 > 
 > Psalm 144
 
-2026 Update: I published [three books on Etymologies](/etymologies). These strong men would approve.
+**2026 Update:** I published [three books on Etymologies](/etymologies). These strong men would approve.
 
 [![](/assets/heroics-update.jpg)](/etymologies) 
