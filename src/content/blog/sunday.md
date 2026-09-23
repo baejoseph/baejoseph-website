@@ -21,7 +21,7 @@ The process of publishing my first app was humbling—and more frustrating than 
 
 And now **version 2.1** is out. The headline change is a beautiful analogue clock face, inspired by the red dot that marks today on the calendar — that same crimson on the second hand, the rim, and the heart of the dial. The name is “Sunday First Calendar Clock”, or simply “**Sunday First**.” It still names my core belief: restoring Sunday as the starting point of the week. Users get that Sunday-first layout by default, with clean design, swipe navigation through months, burn-in protection for always-on use, and full localisation so it feels native everywhere.
 
-![](/assets/sunday-first-calendar-clock-portrait.jpg)
+[![](/assets/sunday-duo.jpg)](https://apps.apple.com/gb/app/no-nonsense-calendar-clock/id6758530388)
 
 For the Body of Christ, emphasising Sunday as the week’s beginning can quietly reinforce expectancy: a weekly reminder that our lives start not with work, but with worship and the risen Lord. In a world that often treats Sunday as the close of the week, this small tool invites us to begin with grace.
 
