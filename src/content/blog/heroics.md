@@ -35,3 +35,7 @@ So let the world keep its [soft](/empathy), [effeminate](/climate), [whimpering]
 > “Blessed be the Lᴏʀᴅ my Rock, Who trains my hands for war, And my fingers for battle.”
 > 
 > Psalm 144
+
+2026 Update: I published [three books on Etymologies](/etymologies). These strong men would approve.
+
+[![](/assets/heroics-update.jpg)](/etymologies) 
