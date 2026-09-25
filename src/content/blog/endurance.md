@@ -59,6 +59,12 @@ Mind above. Not below. That is how you enjoy God’s peace in a chaotic world. T
 
 We wait. Eagerly. Citizenship already transferred. Body still lowly — until He appears.
 
+> We shall be like Him; O how the promise cheers!
+>
+> We shall be like Him, When Jesus appears.
+>
+> C.H. Gabriel (1856 - 1932)
+
 David prayed the packed-kit prayer:
 
 > “I will behave wisely in a blameless way. Oh, when will You come to me? I will walk within my house with a perfect heart.”
