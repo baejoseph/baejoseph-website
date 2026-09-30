@@ -20,23 +20,23 @@ A Spirit church also believes that the Bible is the Word of God, and lives under
 
 In [another essay](/journey) I recorded how I came from a Word church to a theology that stresses the gifts of the Spirit, Israel, and eschatology. All of this is the grace of God.
 
-But it is a sad fact that churches which so earnestly desire the Spirit are rarely seen hungering for the written Word of God with the same heat and the same systematic training.
+But it is a sad fact that churches which so earnestly desire the Spirit are rarely seen hungering for the written Word of God with the same zeal and the same systematic discipline.
 
 This was last year. A brother I love and respect. I respect him still. At the end of a Bible study we found a large theological difference over the [propitiatory nature](/propitiation) of the Cross. We argued fiercely over the truth that God the Son Himself bore the wrath of God the Father. He flatly denied the propitiatory nature of the Cross. He was following the "New Perspective on Paul" trend represented by William Paul Young, the author of *The Shack*, and N. T. Wright.
 
-I opened the Bible. Yes, propitiation is a teaching that grates on a 2026 ear. I grant that it seems very unlike the "good God" spoken of in twenty-first-century Western society. But should we not look at what the Word of God says?
+I opened the Bible. Yes, I told him, propitiation is a teaching that grates on a 2026 ear. I grant that it seems very unlike the "good God" spoken of in twenty-first-century Western society. But should we not look at what the Word of God actually says?
 
-He would not even begin the argument. He would not study the open text together, with an open mind. At the end he said this:
+He would not even engage with the debate. He was not willing to read and study the open text together, with an open mind. At the end he simply explained his position thus:
 
 _"That is too different from the Jesus I know and walk with every day."_
 
-For me it was shock itself. How do you even answer words like that?
+For me it was shock itself. How do you even respond to words like that?
 
-The sentence above captures this danger exactly. Yes, walking with Jesus is the core of the Christian life. Intimacy with God, and [the fear of losing that intimacy](/fear), is the heart of holiness. But if we are not rooted in the Word, the Christ we believe we are enjoying intimacy with may be 100% a Christ we have made. Paul warns the Corinthian church:
+The sentence above captures this danger exactly. Yes, walking with Jesus is the core of the Christian life. Intimacy with God, and [the fear of losing that intimacy](/fear), is the heart of holiness. But if we are not rooted in the Word, then the Christ we believe we are enjoying intimacy with may be 100% a Christ we have made up after our own 21st century imagination. Paul warns the Corinthian church:
 
-> For if he who comes preaches another Jesus whom we have not preached, or if you receive a different spirit which you have not received, or a different gospel which you have not accepted—you may well put up with it!
+> For if someone comes and preaches another Jesus whom we have not preached, or if you receive a different spirit which you have not received, or a different gospel which you have not accepted—how is it that you so well put up with it!
 >
-> 2 Corinthians 11:4, NKJV
+> 2 Corinthians 11:4
 
 Only the written Word of God tells us who Jesus is. No. Jesus is the eternal Word of God, the Logos, who became flesh for us.
 
@@ -48,15 +48,15 @@ The experience of the heart growing hot. The experience of meeting Him personall
 
 In Matthew 24:45 Jesus speaks of "a faithful and wise servant." The one "to give them food in due season." What, then, is the food that fits 2026, the end of the end of the end?
 
-The [seven](/seven-taboos) that Word churches and Spirit churches must teach out loud, what we must discern by not being conformed to this world, but by being transformed through the renewing of the mind, so as to prove what is the good and acceptable and perfect will of God, are these:
+The [seven](/seven-taboos) that Word churches and Spirit churches must teach boldly, what we must discern by not being conformed to this world, but by being transformed through the renewing of the mind, so as to prove what is the good and acceptable and perfect will of God, are these:
 
-- **A biblical worldview.** Not a mere political leaning. Rightly discern, and reject, the [leftist worldview](/leftism), which is another gospel.
-- **The power of the Holy Spirit.** Seek the baptism of the Spirit, the gifts, and the power, specifically and earnestly. Pray the crying-out prayer.
-- **Israel.** Reject, and repent of, the replacement theology that ignores Romans 9–11 and teaches that the church has replaced Israel.
-- **The Second Coming and the Millennium.** Await the imminent rapture, and the millennial kingdom in which Jesus Himself will reign for 1,000 years from the throne of David in Jerusalem.
-- **Fasting.** Regularly practise the best means God has given us to beat the body, afflict the soul, and humble ourselves. As a habit, in private (in secret), and publicly with the church, use this spiritual nuclear bomb.
-- **Tithing.** In the management of money and time, live a life set apart from this world.
-- **The home.** The wife submits to her husband, and the father teaches the children with the Word and with discipline.
+- **A biblical worldview.** Not a mere political preference. Rightly discern, and reject, the [leftist worldview](/leftism), which is another gospel.
+- **The power of the Holy Spirit.** Seek the baptism of the Spirit, the gifts, and the power, specifically and earnestly. Pray the [crying-out prayer](/cry-out).
+- **Israel.** Reject, and repent of, the [replacement theology](/journey) that ignores Romans 9–11 and teaches that the church has replaced Israel.
+- **The Second Coming and the Millennium.** Await the imminent [rapture](/rapture), and the millennial kingdom in which Jesus Himself will reign for 1,000 years from the [earthly throne of David](/throne-of-david) in Jerusalem.
+- **[Fasting](/fasting).** Regularly practise the best means God has given us to discipline the body, afflict the soul, and humble ourselves before God. As a habit, in private (in secret), and publicly with the church, use this spiritual nuclear bomb.
+- **[Tithing](/tithes).** In the management of money and time, live a life set apart from this world.
+- **The home.** The wife [submits to her husband](/submit), and the father teaches the children with the Word and with [the rod](/rod), exactly as the Word of God prescribes.
 
 Lord, raise up such churches, churches that "emphasise both," churches that stand firm on the Word and earnestly long for the anointing of God the Holy Spirit.
 
