@@ -46,17 +46,17 @@ The experience of the heart growing hot. The experience of meeting Him personall
 >
 > Matthew 22:29, NKJV
 
-In Matthew 24:45 Jesus speaks of "a faithful and wise servant." The one "to give them food in due season." What, then, is the food that fits 2026, the end of the end of the end?
+In Matthew 24:45 Jesus speaks of "a faithful and wise servant." The one "to give them food in due season." What, then, is the food that fits 2026, the end of the end of the end? First, stop listening to the poison of [main stream media](/sober).
 
 The [seven](/seven-taboos) that Word churches and Spirit churches must teach boldly, what we must discern by not being conformed to this world, but by being transformed through the renewing of the mind, so as to prove what is the good and acceptable and perfect will of God, are these:
 
 - **A biblical worldview.** Not a mere political preference. Rightly discern, and reject, the [leftist worldview](/leftism), which is another gospel.
 - **The power of the Holy Spirit.** Seek the baptism of the Spirit, the gifts, and the power, specifically and earnestly. Pray the [crying-out prayer](/cry-out).
 - **Israel.** Reject, and repent of, the [replacement theology](/journey) that ignores Romans 9–11 and teaches that the church has replaced Israel.
-- **The Second Coming and the Millennium.** Await the imminent [rapture](/rapture), and the millennial kingdom in which Jesus Himself will reign for 1,000 years from the [earthly throne of David](/throne-of-david) in Jerusalem.
+- **[The Second Coming and the Millennium](/endurance).** Await the imminent [rapture](/rapture), and the millennial kingdom in which Jesus Himself will reign for 1,000 years from the [earthly throne of David](/throne-of-david) in Jerusalem.
 - **[Fasting](/fasting).** Regularly practise the best means God has given us to discipline the body, afflict the soul, and humble ourselves before God. As a habit, in private (in secret), and publicly with the church, use this spiritual nuclear bomb.
 - **[Tithing](/tithes).** In the management of money and time, live a life set apart from this world.
-- **The home.** The wife [submits to her husband](/submit), and the father teaches the children with the Word and with [the rod](/rod), exactly as the Word of God prescribes.
+- **[The home](/upbringing).** The wife [submits to her husband](/submit), and the father teaches the children with the Word and with [the rod](/rod), exactly as the Word of God prescribes.
 
 Lord, raise up such churches, churches that "emphasise both," churches that stand firm on the Word and earnestly long for the anointing of God the Holy Spirit.
 
