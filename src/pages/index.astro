@@ -143,6 +143,7 @@ const heroPool = posts
           class="post-item"
           data-lang={post.data.lang ?? 'en'}
           data-future={isFuture ? 'true' : 'false'}
+          data-date={post.data.date ?? ''}
           style={isFuture ? 'display:none' : undefined}
         >
           <span class="post-date">{formatDate(post.data.date)}</span>
@@ -314,11 +315,20 @@ const heroPool = posts
     try { return localStorage.getItem(STORAGE_KEY) === 'true'; } catch { return false; }
   }
 
+  // Future-dating is evaluated against the VISITOR's current date (not the
+  // build date), so a scheduled post appears automatically on its date without
+  // waiting for a redeploy. Falls back to the build-time data-future flag.
+  function isFuturePost(el) {
+    const d = el.dataset.date;
+    if (d) return d > new Date().toISOString().slice(0, 10);
+    return el.dataset.future === 'true';
+  }
+
   function updatePostVisibility() {
     const preview = isPreview();
     document.querySelectorAll('.post-item').forEach(el => {
       const langMatch = activeLang === 'all' || el.dataset.lang === activeLang;
-      const isFuture = el.dataset.future === 'true';
+      const isFuture = isFuturePost(el);
       el.style.display = langMatch && (!isFuture || preview) ? 'flex' : 'none';
     });
   }

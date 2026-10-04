@@ -71,6 +71,7 @@ const scheduledCount = posts.length - publishedCount;
           class="post-item"
           data-lang={post.data.lang ?? 'en'}
           data-future={isFuture ? 'true' : 'false'}
+          data-date={post.data.date ?? ''}
           style={isFuture ? 'display:none' : undefined}
         >
           <span class="post-date">{formatDate(post.data.date)}</span>
@@ -136,12 +137,18 @@ const scheduledCount = posts.length - publishedCount;
   }
   window.filterLang = filterLang;
 
+  function isFuturePost(el) {
+    const d = el.dataset.date;
+    if (d) return d > new Date().toISOString().slice(0, 10);
+    return el.dataset.future === 'true';
+  }
+
   function syncTagPage() {
     const preview = isPreview();
     let visibleCount = 0;
     document.querySelectorAll('.post-item').forEach(el => {
       const langMatch = activeLang === 'all' || el.dataset.lang === activeLang;
-      const isFuture = el.dataset.future === 'true';
+      const isFuture = isFuturePost(el);
       const show = langMatch && (!isFuture || preview);
       el.style.display = show ? 'flex' : 'none';
       if (show) visibleCount++;
