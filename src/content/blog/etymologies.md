@@ -15,25 +15,28 @@ Earlier this year I built [three typing games](/typing-games). Now, three books.
 
 ## Classical Etymologies — Greek
 
-![](/assets/etymologies_greek.png)
-
-[Amazon US](https://a.co/d/0eL7ktWR) · [Amazon UK](https://amzn.eu/d/0dW6uoNX)
+<figure>
+  <img src="/assets/etymologies_greek.png" alt="Classical Etymologies — Greek" />
+  <figcaption><a href="https://a.co/d/0eL7ktWR">Amazon US</a> · <a href="https://amzn.eu/d/0dW6uoNX">Amazon UK</a></figcaption>
+</figure>
 
 Thirty-one Greek roots, one a day. Each day takes a root like *bio* or *chron*, builds real English words out of it with the child's own hands, and then matches it to the Korean 한자어 that carries the same idea.
 
 ## Classical Etymologies — Latin
 
-![](/assets/etymologies_latin.png)
-
-[Amazon US](https://a.co/d/07qWJpuK) · [Amazon UK](https://amzn.eu/d/04LY7Lud)
+<figure>
+  <img src="/assets/etymologies_latin.png" alt="Classical Etymologies — Latin" />
+  <figcaption><a href="https://a.co/d/07qWJpuK">Amazon US</a> · <a href="https://amzn.eu/d/04LY7Lud">Amazon UK</a></figcaption>
+</figure>
 
 The same treatment for thirty-one Latin roots — *vid*, *scrib*, *dict*, *duc*, *fac*, *ven*, *spect* — plus the phrases still printed on our walls: *veni, vidi, vici*; *vox populi*; *status quo*; *facta non verba*. It also explains why September is not the seventh month, which no one has ever asked me but everyone should.
 
 ## Biblical Etymologies — Hebrew
 
-![](/assets/etymologies_hebrew.png)
-
-[Amazon US](https://a.co/d/04wDbMzM) · [Amazon UK](https://amzn.eu/d/0eShOLWH)
+<figure>
+  <img src="/assets/etymologies_hebrew.png" alt="Biblical Etymologies — Hebrew" />
+  <figcaption><a href="https://a.co/d/04wDbMzM">Amazon US</a> · <a href="https://a.co/d/0eShOLWH">Amazon UK</a></figcaption>
+</figure>
 
 Thirty-one Hebrew roots from the Old Testament, taught the way Hebrew actually works: three consonants first, then the vowels and the little bits that change the job, then the whole family of words sharing that skeleton — *bara*, *mayim*, *ruach*, *qadosh*, *shalom*, *shema*, *yasha*, *bayit*.
 
