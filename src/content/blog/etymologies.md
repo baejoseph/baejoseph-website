@@ -15,17 +15,23 @@ Earlier this year I built [three typing games](/typing-games). Now, three books.
 
 ## Classical Etymologies — Greek
 
+![](/assets/etymologies_greek.jpg)
+
 [Amazon US](https://a.co/d/0eL7ktWR) · [Amazon UK](https://amzn.eu/d/0dW6uoNX)
 
 Thirty-one Greek roots, one a day. Each day takes a root like *bio* or *chron*, builds real English words out of it with the child's own hands, and then matches it to the Korean 한자어 that carries the same idea.
 
 ## Classical Etymologies — Latin
 
+![](/assets/etymologies_latin.jpg)
+
 [Amazon US](https://a.co/d/07qWJpuK) · [Amazon UK](https://amzn.eu/d/04LY7Lud)
 
 The same treatment for thirty-one Latin roots — *vid*, *scrib*, *dict*, *duc*, *fac*, *ven*, *spect* — plus the phrases still printed on our walls: *veni, vidi, vici*; *vox populi*; *status quo*; *facta non verba*. It also explains why September is not the seventh month, which no one has ever asked me but everyone should.
 
 ## Biblical Etymologies — Hebrew
+
+![](/assets/etymologies_hebrew.jpg)
 
 [Amazon US](https://a.co/d/04wDbMzM) · [Amazon UK](https://amzn.eu/d/0eShOLWH)
 
