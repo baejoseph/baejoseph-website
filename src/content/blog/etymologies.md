@@ -15,7 +15,7 @@ Earlier this year I built [three typing games](/typing-games). Now, three books.
 
 ## Classical Etymologies — Greek
 
-![](/assets/etymologies_greek.jpg)
+![](/assets/etymologies_greek.png)
 
 [Amazon US](https://a.co/d/0eL7ktWR) · [Amazon UK](https://amzn.eu/d/0dW6uoNX)
 
@@ -23,7 +23,7 @@ Thirty-one Greek roots, one a day. Each day takes a root like *bio* or *chron*, 
 
 ## Classical Etymologies — Latin
 
-![](/assets/etymologies_latin.jpg)
+![](/assets/etymologies_latin.png)
 
 [Amazon US](https://a.co/d/07qWJpuK) · [Amazon UK](https://amzn.eu/d/04LY7Lud)
 
@@ -31,7 +31,7 @@ The same treatment for thirty-one Latin roots — *vid*, *scrib*, *dict*, *duc*,
 
 ## Biblical Etymologies — Hebrew
 
-![](/assets/etymologies_hebrew.jpg)
+![](/assets/etymologies_hebrew.png)
 
 [Amazon US](https://a.co/d/04wDbMzM) · [Amazon UK](https://amzn.eu/d/0eShOLWH)
 
