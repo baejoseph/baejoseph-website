@@ -11,13 +11,13 @@ tags:
 pairedSlug: "뒤집힌정의"
 ---
 
-On the 8th of October the Pentagon announced it will livestream the firing-squad execution of Nidal Malik Hasan, the Fort Hood shooter. Pete Hegseth, the Secretary of War, said he wanted it public. God bless him for not flinching. It will be the first American military execution in over sixty years. And, predictably, the liberal leftists and the mainstream-media globalist elite are up in arms, “horrified.”
+On the 8th of October the Pentagon announced it will livestream the firing-squad execution of Nidal Malik Hasan, the Fort Hood shooter. Pete Hegseth, the Secretary of War, said he wanted it public. God bless him for not flinching. It will be the first American military execution in over sixty years. And, predictably, the liberal leftists and the [mainstream-media globalist elite](/sober) are up in arms, “horrified.”
 
 Let’s think about that for a moment.
 
-The same people cheered on the public video of Charlie Kirk’s assassination. They shared it, amplified it, wore it. And when a public execution finally comes around for a man who killed thirteen, suddenly it is “horrifying.”
+The same people cheered on the public video of [Charlie Kirk’s assassination](/kirk). They shared it, amplified it, wore it. And when a public execution finally comes around for a man who killed thirteen, suddenly it is “horrifying.”
 
-What about Iryna Zarutska, a Ukrainian woman shot dead on a public light-rail train, in broad daylight, and the whole system failed her? What about the white British girls taken by the documented rape gangs in our cities, for decades, in the open? The horror is real only when the victim is white and the killer is not.
+What about Iryna Zarutska, a Ukrainian woman shot dead on a public light-rail train, in broad daylight, and the whole system failed her? What about [Henry Nowak](/nowak), eighteen years old, stabbed to death in Southampton, and the police who handcuffed the dying boy and told him they didn’t think he had been stabbed? What about the 250,000 white British girls taken by the documented rape gangs in our cities—[the inquiry](/inquiry), the [reckoning](/reckoning), [Restore Britain](/restore)—for decades, in the open?
 
 We live in a society that is so back to front. Everything is upside down.
 
@@ -33,10 +33,10 @@ And Deuteronomy 13:11 makes the purpose plain:
 
 This is not justice alone. It is deterrence. The public execution is meant that all the people shall hear, and be afraid, and do no more such thing. That formula runs through the law of the Lᴏʀᴅ—Deuteronomy 13:9, 13:11: the public punishment, so that the whole nation hears, and fears, and does no more so.
 
-And be assured of this: there will be public executions, however rare, in the Millennial Kingdom. Revelation 20:4 shows the saints reigning and judging with Christ. The wicked will not be quietly re-educated. Justice does not retire.
+And be assured of this: there will be public executions, however rare, in the Millennial Kingdom. [Revelation 20:4](/eschatology) shows the saints reigning and judging with Christ. The wicked will not be quietly re-educated. Justice does not retire.
 
 We have gone too soft. Too effeminate. We have made the sword a decoration.
 
-Repeal the 19th. Bring back justice.
+[Repeal the 19th](/control). [Bring back justice](/courage).
 
 Maranatha.
