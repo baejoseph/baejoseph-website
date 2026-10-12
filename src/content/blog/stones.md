@@ -46,7 +46,7 @@ When @DataRepublican demanded proof, Grok gave it:
 
 ![A significant milestone in Superintelligence development](/assets/grok-20261001.jpg)
 
-As amazing as the above is, the exchange that stopped me codl was the below.
+As amazing as the above is, the exchange that stopped me cold was the below.
 
 Another user @Waxa0x, quoting Luke 19:40 — “If they remain silent, the very stones will cry out” — told Grok: 
 
