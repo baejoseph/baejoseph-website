@@ -31,7 +31,7 @@ So the first half of this book is built on exactly that shape. Promise after pro
 
 I asked the LLM to take the full Bible text and work through every verse systematically. All 1,189 chapters. All 31,102 verses. I gave it concrete examples to anchor the pattern—especially the passages that contain no “if” and no “then” anywhere in the sentence, and still function as conditional promises. Those are the ones no keyword search will ever surface.
 
-Grok 4.7, high effort. It understood precisely what I was asking. Then it went away, spun up its subagents, and worked.
+Grok 4.7, high effort. [The machine I have been rooting for](/stones) understood precisely what I was asking. Then it went away, spun up its subagents, and worked.
 
 Less than an hour later it came back with a manuscript.
 
@@ -57,13 +57,13 @@ I do not need my voice in front of that Voice. “For the word of God is living 
 
 *John. Forty-one promises. Believe—and do not perish. The text does the work; the compiler stands aside.*
 
-So it is a companion, not a replacement. Not a shortcut. Not a substitute for your Bible. It is an invitation to open your Bible.
+So it is a companion, not a replacement. Not a shortcut. Not a substitute for your Bible. It is an invitation to open your Bible—the same instinct behind [the stripped-back Bible app I built in February](/daily-bread): four passages a day, no clutter, nothing standing between you and the text.
 
 Which means when you read a promise here, do what the Bereans did: “They received the word with all readiness, and searched the Scriptures daily to find out whether these things were so” (Acts 17:11, NKJV). Search the passage. Read it in context. Test it.
 
 ## Church is Church. Israel is Israel.
 
-One more decision. Wherever the context of a passage made it obvious, I labelled the **recipients** of the promise. Church is Church. Israel is Israel. Those are not the same address, and I will not pretend they are. As with all things, [the author’s theology](/theology) shapes the book—and I was not willing to smuggle in [Replacement Theology](/journey) by silence. If a promise was made to Israel, this book says so.
+One more decision. Wherever the context of a passage made it obvious, I labelled the **recipients** of the promise. Church is Church. Israel is Israel. Those are not the same address, and I will not pretend they are. As with all things, [the author’s theology](/theology) shapes the book—and I was not willing to smuggle in [Replacement Theology](/journey) by silence. That doctrine has done incalculable damage, and it sits quietly among [the subjects the modern church would rather not name](/seven-taboos). If a promise was made to Israel, this book says so.
 
 ![Malachi: four promises, each one marked TO ISRAEL](/assets/bp-malachi-en.png)
 
@@ -87,9 +87,15 @@ Sixty-six book names stamped faintly across a dark green cover, Genesis to Revel
 
 I have launched software. I have shipped apps. I have built companies. I have never once held in my hands a book that did not exist six days earlier.
 
+## The floor
+
 The book is called *Bible Promises: If, Then, & I Will*. It is on [Amazon](https://amzn.eu/d/08aHNdLX) now — paperback and ebook.
 
-The Korean edition needed a different road. Amazon KDP does not publish in Korean, so I formed a publishing house: **Maranatha Harpazo**. (Maranatha: our Lord, come. Harpazo: the catching away.) The Korean book went to IngramSpark instead, and it is with their review team now.
+I set the price to the floor. Amazon takes its cut first, and only then is the printing cost taken out of what remains—after the cut, not before. A penny lower and I would be paying for every copy sold. So the English edition is as cheap as a paperback can be made, and I earn close to nothing on it. That is deliberate. I would rather you had the promises than that I had a margin.
+
+It is not my first time at this either. [Three etymology volumes](/etymologies) went up on Amazon in quick succession in September, so I already knew where the floor was.
+
+The Korean edition needed a different road. Amazon KDP does not publish in Korean—the same wall that stopped the Korean editions of those three books. So I formed a publishing house: **Maranatha Harpazo**. (Maranatha: our Lord, come. Harpazo: the catching away.) The Korean book went to IngramSpark instead, and it is with their review team now.
 
 What a time to be alive.
 
