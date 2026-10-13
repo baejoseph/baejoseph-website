@@ -23,6 +23,10 @@ I already knew part of the answer. From [Derek Prince](/prince) I had learned th
 
 So the first half of this book is built on exactly that shape. Promise after promise, laid out in **If** and **Then**. ([My notes on his fasting teaching](/fasting) work the same way—God’s promises are not decoration, they are mechanisms.)
 
+![Genesis and Exodus: twenty conditional promises, laid out in If and Then](/assets/bible_promises_en_1.png)
+
+*The first spread of the book. Genesis and Exodus—twenty conditional promises, every one of them carrying its condition and its recipient.*
+
 ## One morning, one machine
 
 I asked the LLM to take the full Bible text and work through every verse systematically. All 1,189 chapters. All 31,102 verses. I gave it concrete examples to anchor the pattern—especially the passages that contain no “if” and no “then” anywhere in the sentence, and still function as conditional promises. Those are the ones no keyword search will ever surface.
@@ -32,6 +36,10 @@ Grok 4.7, high effort. It understood precisely what I was asking. Then it went a
 Less than an hour later it came back with a manuscript.
 
 I was shaken. It was *good*. Not good for AI—good. I sat reading promises I had never noticed, and I was blessed by my own draft.
+
+![Galatians: ten promises, one If and one Then gathering four verses](/assets/bp-galatians-en.png)
+
+*Galatians. Ten promises—and the first of them folds four separate verses into a single If and a single Then.*
 
 Then the next thought arrived, obvious in hindsight: what about the promises with no conditions at all? The ones where God simply declares what He will do—no “if,” nothing required of me, nothing but a Father’s intent toward His children. That became the second half: **I will**.
 
@@ -45,6 +53,10 @@ That is the feature, not the bug.
 
 I do not need my voice in front of that Voice. “For the word of God is living and powerful, and sharper than any two-edged sword” (Hebrews 4:12, NKJV). “So shall My word be that goes forth from My mouth; it shall not return to Me void” (Isaiah 55:11, NKJV). If that is true—and it is—the last thing this book needs is me explaining it.
 
+![John: forty-one promises](/assets/bp-john-en.png)
+
+*John. Forty-one promises. Believe—and do not perish. The text does the work; the compiler stands aside.*
+
 So it is a companion, not a replacement. Not a shortcut. Not a substitute for your Bible. It is an invitation to open your Bible.
 
 Which means when you read a promise here, do what the Bereans did: “They received the word with all readiness, and searched the Scriptures daily to find out whether these things were so” (Acts 17:11, NKJV). Search the passage. Read it in context. Test it.
@@ -53,7 +65,27 @@ Which means when you read a promise here, do what the Bereans did: “They recei
 
 One more decision. Wherever the context of a passage made it obvious, I labelled the **recipients** of the promise. Church is Church. Israel is Israel. Those are not the same address, and I will not pretend they are. As with all things, [the author’s theology](/theology) shapes the book—and I was not willing to smuggle in [Replacement Theology](/journey) by silence. If a promise was made to Israel, this book says so.
 
+![Malachi: four promises, each one marked TO ISRAEL](/assets/bp-malachi-en.png)
+
+*Malachi. Four promises, and every one of them is marked TO ISRAEL. That is not decoration. That is the address.*
+
+## The proof
+
 The manuscript came in a morning. The cover design took longer. That is roughly the ratio you would expect.
+
+This afternoon a parcel arrived: my author copy, ordered from Amazon like any other reader’s. I have not put it down since.
+
+![The author’s copy, in my hand, the afternoon it arrived](/assets/bp-book-in-hand.jpg)
+
+*Held in my hand—13 October 2026, the day the first physical copy arrived.*
+
+Sixty-six book names stamped faintly across a dark green cover, Genesis to Revelation. Inside, 1,189 chapters and 31,102 verses sorted into If, Then, and I will, every conditional promise carrying its condition and its recipient. I wrote it on a Wednesday morning. I am holding it on a Tuesday afternoon. Six days.
+
+> “I rejoice at Your word as one who finds great treasure.”
+>
+> Psalm 119:162 (NKJV)
+
+I have launched software. I have shipped apps. I have built companies. I have never once held in my hands a book that did not exist six days earlier.
 
 The book is called *Bible Promises: If, Then, & I Will*. It is on [Amazon](https://amzn.eu/d/08aHNdLX) now — paperback and ebook.
 
