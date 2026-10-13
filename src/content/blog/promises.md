@@ -55,7 +55,9 @@ One more decision. Wherever the context of a passage made it obvious, I labelled
 
 The manuscript came in a morning. The cover design took longer. That is roughly the ratio you would expect.
 
-The book is called *Bible Promises: If, Then, & I Will*. It is on Amazon now.
+The book is called *Bible Promises: If, Then, & I Will*. It is on [Amazon](https://amzn.eu/d/08aHNdLX) now — paperback and ebook.
+
+The Korean edition needed a different road. Amazon KDP does not publish in Korean, so I formed a publishing house: **Maranatha Harpazo**. (Maranatha: our Lord, come. Harpazo: the catching away.) The Korean book went to IngramSpark instead, and it is with their review team now.
 
 What a time to be alive.
 
