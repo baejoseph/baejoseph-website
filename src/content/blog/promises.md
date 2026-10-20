@@ -97,6 +97,38 @@ It is not my first time at this either. [Three etymology volumes](/etymologies) 
 
 The Korean edition needed a different road. Amazon KDP does not publish in Korean—the same wall that stopped the Korean editions of those three books. So I formed a publishing house: **Maranatha Harpazo**. (Maranatha: our Lord, come. Harpazo: the catching away.) The Korean book went to IngramSpark instead, and it is with their review team now.
 
+## Every tongue has an “if”
+
+Four more editions exist now. Same book, same structure, five languages.
+
+**🇯🇵 聖書の約束** — *もし、そうすれば、わたしは必ず行なう*
+
+Paperback `978-1-0654826-2-8` · 🇺🇸 $13.99 · 🇬🇧 £11.99 · 🇯🇵 ¥2,200<br />Kindle · 🇺🇸 $4.99 · 🇬🇧 £3.99 · 🇯🇵 ¥800<br />[🇺🇸 US](https://a.co/d/0f0ux4Dj) · [🇬🇧 UK](https://amzn.eu/d/068OoitI) · [🇯🇵 JP](https://amzn.asia/d/02D9p2fp)
+
+**🇪🇸 Promesas de la Biblia** — *Si, entonces y yo haré*
+
+Paperback `978-1-0654826-5-9` · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br />[🇺🇸 US](https://a.co/d/01IiDkMw) · [🇬🇧 UK](https://amzn.eu/d/000VKIIE) · [🇪🇸 ES](https://amzn.eu/d/01qYVkOt)
+
+**🇩🇪 Bibel-Verheißungen** — *Wenn, dann und ich will*
+
+Paperback `978-1-0654826-4-2` · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br />[🇺🇸 US](https://a.co/d/0b9qfNYn) · [🇬🇧 UK](https://amzn.eu/d/04oPqAUx) · [🇩🇪 DE](https://amzn.eu/d/00wGwFoj)
+
+**🇵🇹 Promessas da Bíblia** — *Se, então e eu farei*
+
+Paperback `978-1-0654826-6-6` · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br />[🇺🇸 US](https://a.co/d/06eI6af7) · [🇬🇧 UK](https://amzn.eu/d/0iYsNvat)
+
+Look at the Japanese subtitle: もし、そうすれば、わたしは必ず行なう. *If, then, I will surely do it.* The whole book is inside that one sentence. Spanish: *Si, entonces y yo haré.* German: *Wenn, dann und ich will.* Portuguese: *Se, então e eu farei.* Four languages, one grammar. The condition first, then the promise.
+
+The “if” crosses every border without losing a syllable. That is not a translation achievement. That is what the word of God does.
+
+> “After these things I looked, and behold, a great multitude which no one could number, of all nations, tribes, peoples, and tongues, standing before the throne and before the Lamb…”
+>
+> Revelation 7:9 (NKJV)
+
+I did not translate these. I could not have—not into Japanese, not into German, not into anything. I had them translated, and then I sat and thanked God, because there is no version of this story in which I reach a reader in São Paulo on my own.
+
+The irony is that the Korean is still the hardest of them all. My own tongue. The one that needed a publishing house of its own. French is next.
+
 What a time to be alive.
 
 Maranatha. Come, Lord Jesus.
