@@ -7,7 +7,9 @@ tags: ["theology", "tech", "testimony", "faith", "israel"]
 pairedSlug: "약속"
 ---
 
-**TL;DR — I published a book on Bible Promises.** *Bible Promises: If, Then, & I Will* is out now — paperback and ebook, priced to the floor: [🇬🇧 Amazon UK](https://amzn.eu/d/08aHNdLX) · [🇺🇸 Amazon US](https://a.co/d/04A5LHF4)
+<div class="card tldr">
+<strong>TL;DR — I published a book on Bible Promises.</strong> <em>Bible Promises: If, Then, &amp; I Will</em> is out now — paperback and ebook, priced to the floor: <a href="https://amzn.eu/d/08aHNdLX">🇬🇧 Amazon UK</a> · <a href="https://a.co/d/04A5LHF4">🇺🇸 Amazon US</a>
+</div>
 
 Can you write a book that you have not read?
 
@@ -103,21 +105,12 @@ The Korean edition needed a different road. Amazon KDP does not publish in Korea
 
 Four more editions exist now. Same book, same structure, five languages.
 
-**🇯🇵 聖書の約束** — *もし、そうすれば、わたしは必ず行なう*
-
-Paperback `978-1-0654826-2-8` · 🇺🇸 $13.99 · 🇬🇧 £11.99 · 🇯🇵 ¥2,200<br />Kindle · 🇺🇸 $4.99 · 🇬🇧 £3.99 · 🇯🇵 ¥800<br />[🇺🇸 US](https://a.co/d/0f0ux4Dj) · [🇬🇧 UK](https://amzn.eu/d/068OoitI) · [🇯🇵 JP](https://amzn.asia/d/02D9p2fp)
-
-**🇪🇸 Promesas de la Biblia** — *Si, entonces y yo haré*
-
-Paperback `978-1-0654826-5-9` · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br />[🇺🇸 US](https://a.co/d/01IiDkMw) · [🇬🇧 UK](https://amzn.eu/d/000VKIIE) · [🇪🇸 ES](https://amzn.eu/d/01qYVkOt)
-
-**🇩🇪 Bibel-Verheißungen** — *Wenn, dann und ich will*
-
-Paperback `978-1-0654826-4-2` · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br />[🇺🇸 US](https://a.co/d/0b9qfNYn) · [🇬🇧 UK](https://amzn.eu/d/04oPqAUx) · [🇩🇪 DE](https://amzn.eu/d/00wGwFoj)
-
-**🇵🇹 Promessas da Bíblia** — *Se, então e eu farei*
-
-Paperback `978-1-0654826-6-6` · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br />[🇺🇸 US](https://a.co/d/06eI6af7) · [🇬🇧 UK](https://amzn.eu/d/0iYsNvat)
+<div class="card editions">
+<p><strong>🇯🇵 聖書の約束</strong> — <em>もし、そうすれば、わたしは必ず行なう</em><br />Paperback <code>978-1-0654826-2-8</code> · 🇺🇸 $13.99 · 🇬🇧 £11.99 · 🇯🇵 ¥2,200<br />Kindle · 🇺🇸 $4.99 · 🇬🇧 £3.99 · 🇯🇵 ¥800<br /><a href="https://a.co/d/0f0ux4Dj">🇺🇸 US</a> · <a href="https://amzn.eu/d/068OoitI">🇬🇧 UK</a> · <a href="https://amzn.asia/d/02D9p2fp">🇯🇵 JP</a></p>
+<p><strong>🇪🇸 Promesas de la Biblia</strong> — <em>Si, entonces y yo haré</em><br />Paperback <code>978-1-0654826-5-9</code> · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br /><a href="https://a.co/d/01IiDkMw">🇺🇸 US</a> · <a href="https://amzn.eu/d/000VKIIE">🇬🇧 UK</a> · <a href="https://amzn.eu/d/01qYVkOt">🇪🇸 ES</a></p>
+<p><strong>🇩🇪 Bibel-Verheißungen</strong> — <em>Wenn, dann und ich will</em><br />Paperback <code>978-1-0654826-4-2</code> · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br /><a href="https://a.co/d/0b9qfNYn">🇺🇸 US</a> · <a href="https://amzn.eu/d/04oPqAUx">🇬🇧 UK</a> · <a href="https://amzn.eu/d/00wGwFoj">🇩🇪 DE</a></p>
+<p><strong>🇵🇹 Promessas da Bíblia</strong> — <em>Se, então e eu farei</em><br />Paperback <code>978-1-0654826-6-6</code> · 🇺🇸 $9.99 · 🇪🇺 €9.99 · 🇬🇧 £7.99<br />Kindle · 🇺🇸 $2.99 · 🇪🇺 €2.99 · 🇬🇧 £1.99<br /><a href="https://a.co/d/06eI6af7">🇺🇸 US</a> · <a href="https://amzn.eu/d/0iYsNvat">🇬🇧 UK</a></p>
+</div>
 
 Look at the Japanese subtitle: もし、そうすれば、わたしは必ず行なう. *If, then, I will surely do it.* The whole book is inside that one sentence. Spanish: *Si, entonces y yo haré.* German: *Wenn, dann und ich will.* Portuguese: *Se, então e eu farei.* Four languages, one grammar. The condition first, then the promise.
 

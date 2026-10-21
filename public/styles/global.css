@@ -304,6 +304,22 @@ article {
   margin: 2.5rem 0;
 }
 
+/* ── Callout cards (TL;DR, editions list) ── */
+.prose .card {
+  margin: 1.75rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+.prose .card.tldr {
+  border-color: rgba(99, 102, 241, 0.28);
+}
+.prose .card p { margin: 0.9rem 0; }
+.prose .card p:first-child { margin-top: 0; }
+.prose .card p:last-child { margin-bottom: 0; }
+
 /* ── Back link ── */
 .back-link {
   display: inline-flex;
