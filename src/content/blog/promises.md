@@ -8,7 +8,7 @@ pairedSlug: "약속"
 ---
 
 <div class="card tldr">
-<strong>TL;DR — I published a book on Bible Promises.</strong> <em>Bible Promises: If, Then, &amp; I Will</em> is out now — paperback and ebook, priced to the floor:<br /><a href="https://amzn.eu/d/08aHNdLX">🇬🇧 Amazon UK</a> · <a href="https://a.co/d/04A5LHF4">🇺🇸 Amazon US</a>
+<strong>TL;DR — I published a book on Bible Promises.</strong> <em>Bible Promises: If, Then, &amp; I Will</em> is out now — paperback and ebook, priced to the floor:<br /><a href="https://amzn.eu/d/08aHNdLX">🇬🇧 Amazon UK</a><br /><a href="https://a.co/d/04A5LHF4">🇺🇸 Amazon US</a>
 </div>
 
 Can you write a book that you have not read?
