@@ -7,6 +7,8 @@ tags: ["theology", "tech", "testimony", "faith", "israel"]
 pairedSlug: "약속"
 ---
 
+**TL;DR — I published a book on Bible Promises.** *Bible Promises: If, Then, & I Will* is out now — paperback and ebook, priced to the floor: [🇬🇧 Amazon UK](https://amzn.eu/d/08aHNdLX) · [🇺🇸 Amazon US](https://a.co/d/04A5LHF4)
+
 Can you write a book that you have not read?
 
 That is not a riddle. It happened to me this month.
