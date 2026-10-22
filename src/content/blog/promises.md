@@ -101,6 +101,10 @@ It is not my first time at this either. [Three etymology volumes](/etymologies) 
 
 The Korean edition needed a different road. Amazon KDP does not publish in Korean—the same wall that stopped the Korean editions of those three books. So I formed a publishing house: **Maranatha Harpazo**. (Maranatha: our Lord, come. Harpazo: the catching away.) The Korean book went to IngramSpark instead. It is out now.
 
+<div class="card editions">
+<p><strong>🇰🇷 The Korean edition</strong> — 『성경의 약속들: 만일, 그리하면, 내가 하리라』<br />From our own press, Maranatha Harpazo — on IngramSpark now:<br /><a href="https://shop.ingramspark.com/b/084?params=dRTcEpwNvwLFPWSH1GKxJuEaHsuK4XcB8KuQFP0yU07">📖 Get it on IngramSpark</a></p>
+</div>
+
 ## Every tongue has an “if”
 
 Four more editions exist now. Same book, same structure, five languages.
@@ -127,12 +131,6 @@ The “if” crosses every border without losing a syllable. That is not a trans
 > Revelation 7:9 (NKJV)
 
 I did not translate these. I could not have—not into Japanese, not into German, not into anything. I had them translated, and then I sat and thanked God, because there is no version of this story in which I reach a reader in São Paulo on my own.
-
-The irony is that the Korean is still the hardest of them all. My own tongue. The one that needed a publishing house of its own. French is next.
-
-<div class="card editions">
-<p><strong>🇰🇷 The Korean edition</strong> — 『성경의 약속들: 만일, 그리하면, 내가 하리라』<br />From our own press, Maranatha Harpazo — on IngramSpark now:<br /><a href="https://shop.ingramspark.com/b/084?params=dRTcEpwNvwLFPWSH1GKxJuEaHsuK4XcB8KuQFP0yU07">📖 Get it on IngramSpark</a></p>
-</div>
 
 What a time to be alive.
 
