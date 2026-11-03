@@ -4,7 +4,7 @@ date: "2026-10-30"
 slug: "gunjasan"
 lang: "en"
 pairedSlug: "군자산"
-featuredImage: ""
+featuredImage: "/assets/gunjasan.jpg"
 tags: ["leftism", "korea"]
 ---
 
