@@ -398,11 +398,11 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
 
     function queueRow(it) {
       const actions = it.status === 'queued'
-        ? `<button class="ghost" data-open="${it.id}">Edit</button>
-           <button class="ghost" data-send="${it.id}">Send</button>
-           <button class="danger" data-del="${it.id}">Remove</button>`
-        : `<button class="ghost" data-open="${it.id}">View</button>
-           <button class="ghost" data-requeue="${it.id}">Put back in queue</button>`;
+        ? `<button type="button" class="ghost" data-open="${it.id}">Edit</button>
+           <button type="button" class="ghost" data-send="${it.id}">Send</button>
+           <button type="button" class="danger" data-del="${it.id}">Remove</button>`
+        : `<button type="button" class="ghost" data-open="${it.id}">View</button>
+           <button type="button" class="ghost" data-requeue="${it.id}">Put back in queue</button>`;
       const pair = it.slug_ko ? `${esc(it.slug)} + ${esc(it.slug_ko)}` : esc(it.slug);
       const likes = Number(it.likes_en || 0) + Number(it.likes_ko || 0);
       const mode = letterMode(it.html, it.html_ko);
@@ -461,7 +461,25 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     function bindQueueButtons() {
       document.querySelectorAll('[data-del]').forEach(btn => {
         btn.addEventListener('click', async () => {
-          await fetch('/api/queue?id=' + btn.getAttribute('data-del'), { method: 'DELETE' });
+          const id = btn.getAttribute('data-del');
+          if (!confirm('Remove this letter from the queue? It will not be sent.')) return;
+          const msg = document.getElementById('queue-msg');
+          btn.disabled = true;
+          // Content-Type has to be set. A DELETE with no content type is refused
+          // on the host: the request is seen as coming from localhost, so Astro
+          // treats it as cross-site. JSON requests are let through, which is why
+          // Queue and Send already work.
+          const res = await fetch('/api/queue?id=' + id, {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+          });
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok) {
+            if (msg) msg.textContent = data.error || 'Could not remove that letter.';
+            btn.disabled = false;
+            return;
+          }
+          if (msg) msg.textContent = 'Removed from the queue.';
           loadQueue();
         });
       });

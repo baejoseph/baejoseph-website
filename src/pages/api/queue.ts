@@ -102,7 +102,17 @@ export const DELETE: APIRoute = async ({ request }) => {
   const id = Number(url.searchParams.get('id'));
   if (!id) return json({ error: 'id required' }, 400);
   const db = await withSchema();
-  await db`DELETE FROM queue_items WHERE id = ${id} AND status = 'queued'`;
+  const existing = await db`SELECT id, status FROM queue_items WHERE id = ${id} LIMIT 1`;
+  if (!existing[0]) return json({ error: 'Not found' }, 404);
+  if (existing[0].status !== 'queued') {
+    return json({ error: 'That letter has already been sent. Put it back in the queue if you want to send it again.' }, 409);
+  }
+  // A send that stopped halfway leaves delivery rows while the item is still
+  // queued. Drop them with the letter. The foreign key only nulls the link,
+  // so they would otherwise stay behind with no letter.
+  await db`DELETE FROM send_log WHERE queue_id = ${id}`;
+  const rows = await db`DELETE FROM queue_items WHERE id = ${id} AND status = 'queued' RETURNING id`;
+  if (!rows[0]) return json({ error: 'Not found' }, 404);
   return json({ ok: true });
 };
 

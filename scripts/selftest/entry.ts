@@ -16,7 +16,7 @@ const { ensureSchema, withSchema } = await import('../../src/lib/db');
 const { sendQueueItem, drainQueueItem, sendDue, isHardBounce } = await import('../../src/lib/send-queue');
 const { POST: subscribe } = await import('../../src/pages/api/subscribe');
 const { POST: unsubscribe } = await import('../../src/pages/api/unsubscribe');
-const { GET: queueGet, PATCH: queuePatch } = await import('../../src/pages/api/queue');
+const { GET: queueGet, PATCH: queuePatch, DELETE: queueDelete } = await import('../../src/pages/api/queue');
 const { POST: login } = await import('../../src/pages/api/auth/login');
 const { mintSession } = await import('../../src/lib/auth');
 
@@ -494,6 +494,41 @@ const darkBody = darkMail ? decodeMail(darkMail.body) : '';
 const lightBody = lightMail ? decodeMail(lightMail.body) : '';
 check('dark reader was sent the stored dark letter', darkBody.includes('#0a0a0a') && !darkBody.includes('#fcfcfd'), darkBody.slice(0, 160));
 check('light reader was sent the light letter', lightBody.includes('#fcfcfd') && !lightBody.includes('#0a0a0a'), lightBody.slice(0, 160));
+
+section('20. a queued letter can be removed, a sent one cannot');
+const doomed = await addItem('doomed', 'tuesday_featured', '2031-04-07');
+await db`INSERT INTO send_log (queue_id, email, status) VALUES (${doomed}, 'half@test.local', 'sent')`;
+const delRes = await queueDelete({
+  request: new Request(`http://x/api/queue?id=${doomed}`, {
+    method: 'DELETE',
+    headers: { 'content-type': 'application/json', cookie },
+  }),
+});
+const delBody = await delRes.json();
+check('a queued letter with a half-finished send can be removed', delRes.status === 200 && delBody.ok === true, JSON.stringify(delBody));
+const removed = await db`SELECT id FROM queue_items WHERE id = ${doomed}`;
+check('the queued row is gone', removed.length === 0, String(removed.length));
+const logGone = await db`SELECT id FROM send_log WHERE queue_id = ${doomed}`;
+check('its delivery rows are gone too', logGone.length === 0, String(logGone.length));
+
+const alreadySent = await addItem('already-sent', 'friday_new', '2031-04-10');
+await db`UPDATE queue_items SET status = 'sent' WHERE id = ${alreadySent}`;
+const refuse = await queueDelete({
+  request: new Request(`http://x/api/queue?id=${alreadySent}`, {
+    method: 'DELETE',
+    headers: { 'content-type': 'application/json', cookie },
+  }),
+});
+check('a letter that already went out is kept', refuse.status === 409, String(refuse.status));
+const still = await db`SELECT id, status FROM queue_items WHERE id = ${alreadySent}`;
+check('the sent row is still there', still.length === 1 && still[0].status === 'sent', JSON.stringify(still[0] ?? null));
+const anon = await queueDelete({
+  request: new Request(`http://x/api/queue?id=${alreadySent}`, {
+    method: 'DELETE',
+    headers: { 'content-type': 'application/json' },
+  }),
+});
+check('remove without a session is refused', anon.status === 401, String(anon.status));
 
 await sinkReal.close();
 
