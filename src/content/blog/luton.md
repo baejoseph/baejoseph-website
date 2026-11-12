@@ -31,6 +31,24 @@ I took annual leave to be there. I had heard about Rev. Song and I wanted to lea
 
 ![Joseph and his father, both holding wooden crosses painted with the gospel](/assets/luton-with-dad.jpg)
 
+### The first thing they did was not set up
+
+Before a single stand was unfolded, the team gathered and prayed together—which goes without saying, except that it was not a formality. It was the engine.
+
+Then every man and woman turned outward, arms held out towards the streets, and proclaimed the name of Jesus over Luton.
+
+Twenty-one people in a ring, hands stretched over a shopping square, naming the King.
+
+It was not a warm-up or a mood-setter. It was a declaration of jurisdiction. We were not asking the town’s permission to be there; we were announcing whose town it is. Over the council and the police and the environment officers, over the shops and the mosque and the pubs, over every ruler, every authority, every power of this dark world and every spiritual force of evil in the heavenly realms—the name that is above every name.
+
+> “For we do not wrestle against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this age, against spiritual hosts of wickedness in the heavenly places.”
+>
+> Ephesians 6:12 (NKJV)
+
+And then we asked for the thing that mattered more than equipment, technique, or courage: the Presence of God. Not a good atmosphere, not a buzz. Him. Powerful and tangible, in the middle of a Bedfordshire shopping precinct, to bless Luton and every soul who walked across that square.
+
+That prayer was answered before we had finished making it. Which is the only explanation for what happened next.
+
 ### The rig did half the preaching
 
 They wasted no time. Within minutes a Bose L1 Pro8 column array and a Jackery Explorer battery were standing in the middle of the precinct, cables taped down, and the gospel was going out over a public square from a system that fits in a car boot. Not a generator, so no drone under the preaching and no fumes—just a battery, and enough of it to last the whole outreach.
@@ -115,10 +133,20 @@ That is what evangelism produces when it is done for years instead of afternoons
 
 Eighty-seven people prayed the salvation prayer in two and a half hours, in a town that is 40% Muslim, in front of the police, on a Tuesday in November, with a portable PA and a battery.
 
+But I will not hand that number to a PA system and twenty-one disciplined evangelists. The equipment carried the sound; it did not open a single heart. The team found the people; they could not unstop a single ear. If you had put the same men, the same crosses, and the same Bose in that square on a Tuesday when the Spirit of God had not gone ahead of them, you would have got a lot of leaflets handed out and nothing else.
+
+What opened the doors that day was the hovering of the Holy Spirit over the minds and hearts of everyone who crossed that square. The same Spirit who hovered over the face of the waters at the beginning, brooding over a formless void, was brooding over Luton on Tuesday. Where He hovers, light comes.
+
+> “The earth was without form, and void; and darkness was on the face of the deep. And the Spirit of God was hovering over the face of the waters.”
+>
+> Genesis 1:2 (NKJV)
+
+Eighty-seven souls is what happens when the Spirit of God hovers over a square and somebody is standing in it with a microphone.
+
 > “The harvest truly is plentiful, but the laborers are few. Therefore pray the Lord of the harvest to send out laborers into His harvest.”
 >
 > Matthew 9:37–38 (NKJV)
 
-That is my prayer out of Tuesday. Not for better equipment, though I am now a convert to the Bose L1 Pro8. Not for more permission, since we had none and did not need it. For labourers. Lord of the harvest, raise up more harvest workers—in Luton, in London, in every town where the field is white and nobody is standing in it.
+That is my prayer out of Tuesday. Not for better equipment, though I am now a convert to the Bose L1 Pro8. Not for more permission, since we had none and did not need it. For labourers—and for the Presence that makes sending them worth it. Lord of the harvest, raise up more harvest workers: in Luton, in London, in every town where the field is white and nobody is standing in it.
 
 Maranatha. Come, Lord Jesus.
