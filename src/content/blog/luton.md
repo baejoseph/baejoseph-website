@@ -33,7 +33,7 @@ I took annual leave to be there. I had heard about Rev. Song and I wanted to lea
 
 ### The rig did half the preaching
 
-They wasted no time. Within minutes a Bose L1 Pro8 column array and a small generator were standing in the middle of the precinct, cables taped down, and the gospel was going out over a public square from a system that fits in a car boot.
+They wasted no time. Within minutes a Bose L1 Pro8 column array and a Jackery Explorer battery were standing in the middle of the precinct, cables taped down, and the gospel was going out over a public square from a system that fits in a car boot. Not a generator, so no drone under the preaching and no fumes—just a battery, and enough of it to last the whole outreach.
 
 I had not appreciated how much difference good equipment makes to this work. The L1 Pro8 throws sound evenly: a man can preach at conversational volume and be heard at the far end of the square, without shouting himself hoarse, and without monitors, feedback, or the tinny distortion that makes street preaching sound like a nuisance. Then, in the last ten minutes, you can turn it to eleven and the whole square knows something is happening.
 
@@ -41,7 +41,7 @@ Here is a clip of me on the mic that afternoon, so you can hear the difference i
 
 [Watch the clip](https://youtube.com/shorts/O45y9Jht4dE)
 
-![The Bose L1 Pro8 column speaker and a small generator set up on the paving beside the team](/assets/luton-rig.jpg)
+![The Bose L1 Pro8 column speaker powered by a Jackery Explorer battery on the paving, the team standing around it](/assets/luton-rig.jpg)
 
 ### How a team works a square
 
@@ -113,7 +113,7 @@ That is what evangelism produces when it is done for years instead of afternoons
 
 ### The tally
 
-Eighty-seven people prayed the salvation prayer in two and a half hours, in a town that is 40% Muslim, in front of the police, on a Tuesday in November, with a portable PA system and a generator.
+Eighty-seven people prayed the salvation prayer in two and a half hours, in a town that is 40% Muslim, in front of the police, on a Tuesday in November, with a portable PA and a battery.
 
 > “The harvest truly is plentiful, but the laborers are few. Therefore pray the Lord of the harvest to send out laborers into His harvest.”
 >
