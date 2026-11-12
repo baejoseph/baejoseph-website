@@ -189,6 +189,12 @@ const nextFri = nextWeekday(today, 5);
         <thead><tr><th>Date</th><th>Slot</th><th>Post</th></tr></thead>
         <tbody id="up-body"><tr><td colspan="3" class="muted">Loading…</td></tr></tbody>
       </table>
+      <h2>Last automatic send</h2>
+      <p class="muted" style="margin-top:-0.35rem">What the server actually did on its own. A missed run is the one failure the queue cannot show you.</p>
+      <table>
+        <thead><tr><th>When (UTC)</th><th>Slot</th><th>Letters</th><th>Sent</th><th>Problem</th></tr></thead>
+        <tbody id="run-body"><tr><td colspan="5" class="muted">Loading…</td></tr></tbody>
+      </table>
       <details>
         <summary>Setup / Hostinger</summary>
         <div class="row" style="margin-top:0.75rem">
@@ -199,7 +205,9 @@ const nextFri = nextWeekday(today, 5);
 2. ADMIN_PASSWORD, ADMIN_SECRET, CRON_SECRET, SMTP_*
 3. Hostinger mailbox newsletter@baejoseph.com + SPF/DKIM/DMARC
 4. Click Create tables
-Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
+Cron: daily 08:00 UTC (/api/cron/daily). Both slots are checked every day, so a
+letter goes out on its own date and anything a failed run left behind is picked
+up the next morning.</pre>
       </details>
     </section>
 
@@ -345,7 +353,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     function slotLabel(s) { return s === 'friday_new' ? 'Friday new' : 'Tuesday featured'; }
 
     async function loadStats() {
-      const res = await fetch('/api/stats');
+      const res = await fetch('/api/stats', { cache: 'no-store' });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
         document.getElementById('n-active').textContent = '—';
@@ -354,10 +362,13 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         document.getElementById('src-body-2').innerHTML = err;
         document.getElementById('sub-body').innerHTML = err;
         document.getElementById('ev-body').innerHTML = err;
+        document.getElementById('run-body').innerHTML = `<tr><td colspan="5" class="muted">${esc(data.error || '—')}</td></tr>`;
         return;
       }
       const subs = data.subscribers || [];
-      const left = subs.filter(s => s.unsubscribed_at).length;
+      // The server counts the whole list; the fallback only exists for a page
+      // loaded against an older deploy.
+      const left = data.unsubscribed ?? subs.filter(s => s.unsubscribed_at).length;
       document.getElementById('n-active').textContent = String(data.active ?? 0);
       document.getElementById('n-left').textContent = String(left);
       document.getElementById('n-likes').textContent = String(data.likeTotal ?? 0);
@@ -366,6 +377,13 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
         <td>${esc(l.lang)}</td>
         <td>${l.n}</td>
       </tr>`).join('') || '<tr><td colspan="3" class="muted">Nothing yet — the button is at the end of every letter.</td></tr>';
+      document.getElementById('run-body').innerHTML = (data.runs || []).map(r => `<tr>
+        <td>${esc(String(r.ran_at).slice(0, 16).replace('T', ' '))}</td>
+        <td>${esc(slotLabel(r.slot))}</td>
+        <td>${Number(r.items || 0)}</td>
+        <td>${Number(r.sent || 0)}</td>
+        <td>${r.error ? `<span class="bad">${esc(r.error)}</span>` : (Number(r.remaining || 0) ? `<span class="muted">${Number(r.remaining)} still to send</span>` : '<span class="ok">ok</span>')}</td>
+      </tr>`).join('') || '<tr><td colspan="5" class="muted">No automatic run recorded yet — it appears here after the next 08:00 UTC cron.</td></tr>';
       const srcRows = (data.sources || []).map(s => `<tr><td>${esc(s.source)}</td><td>${s.n}</td></tr>`).join('')
         || '<tr><td colspan="2" class="muted">None yet</td></tr>';
       document.getElementById('src-body').innerHTML = srcRows;
@@ -397,12 +415,16 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     }
 
     function queueRow(it) {
+      // A failed letter was never delivered to anyone, so it can be removed like
+      // a queued one — and it needs the same Edit/Send path back.
+      const removeBtn = `<button type="button" class="danger" data-del="${it.id}">Remove</button>`;
       const actions = it.status === 'queued'
         ? `<button type="button" class="ghost" data-open="${it.id}">Edit</button>
            <button type="button" class="ghost" data-send="${it.id}">Send</button>
-           <button type="button" class="danger" data-del="${it.id}">Remove</button>`
+           ${removeBtn}`
         : `<button type="button" class="ghost" data-open="${it.id}">View</button>
-           <button type="button" class="ghost" data-requeue="${it.id}">Put back in queue</button>`;
+           <button type="button" class="ghost" data-requeue="${it.id}">Put back in queue</button>
+           ${it.status === 'failed' ? removeBtn : ''}`;
       const pair = it.slug_ko ? `${esc(it.slug)} + ${esc(it.slug_ko)}` : esc(it.slug);
       const likes = Number(it.likes_en || 0) + Number(it.likes_ko || 0);
       const mode = letterMode(it.html, it.html_ko);
@@ -432,7 +454,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     }
 
     async function loadQueue() {
-      const res = await fetch('/api/queue');
+      const res = await fetch('/api/queue', { cache: 'no-store' });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
         const err = `<tr><td colspan="4" class="muted">${esc(data.error || '—')}</td></tr>`;
@@ -583,7 +605,7 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
     });
 
     async function loadTemplates() {
-      const res = await fetch('/api/templates');
+      const res = await fetch('/api/templates', { cache: 'no-store' });
       const data = await res.json().catch(() => ({}));
       const tpls = data.templates || [];
       welcomeTpl = tpls.find(t => t.key === 'welcome') || null;
@@ -935,7 +957,33 @@ Cron: Tue 08:00 UTC featured, Fri 08:00 UTC new.</pre>
       const em = document.getElementById('e-msg');
       if (em) em.textContent = text;
       loadQueue();
+      loadStats();
     }
+
+    /**
+     * The counts used to be whatever the page happened to load: leave the tab
+     * open and likes, subscribers and delivery numbers never moved again.
+     * Refresh on demand (tab click, coming back to the window) and once a minute
+     * while it is open — but never while a field has focus, so a refresh cannot
+     * pull the page out from under an edit.
+     */
+    function editingNow() {
+      const el = document.activeElement;
+      return Boolean(el && /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName));
+    }
+
+    async function refreshVisible() {
+      if (document.hidden || editingNow()) return;
+      await loadStats();
+      await loadQueue();
+    }
+
+    // A tab click only refreshes the counts: reloading the queue here could
+    // replace the letter sitting in the editor. Queue actions refresh it anyway.
+    tabs.forEach(t => t.addEventListener('click', () => { loadStats(); }));
+    window.addEventListener('focus', refreshVisible);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshVisible(); });
+    setInterval(refreshVisible, 60_000);
 
     loadStats();
     loadQueue();

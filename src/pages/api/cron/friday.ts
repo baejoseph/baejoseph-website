@@ -1,26 +1,29 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-import { cronUnauthorized, todayIso, SEND_BUDGET_MS } from '../../../lib/cron-auth';
-import { sendDue } from '../../../lib/send-queue';
+import { cronUnauthorized } from '../../../lib/cron-auth';
+import { runSlots } from '../../../lib/cron-run';
 
+/**
+ * Friday's new-post letter. The schedule now points at /api/cron/daily, which
+ * runs this slot and the Tuesday one; this route stays for a manual or
+ * single-slot trigger and sends the same way.
+ */
 export const GET: APIRoute = async ({ request }) => {
   const denied = cronUnauthorized(request);
   if (denied) return denied;
   try {
-    // Sends in batches, and picks up anything overdue as well as today's, so a
-    // run cut short by the function timeout finishes on the next tick.
-    const results = await sendDue('friday_new', todayIso(), { budgetMs: SEND_BUDGET_MS });
-    return new Response(JSON.stringify({ ok: true, slot: 'friday_new', results }), {
+    const runs = await runSlots(['friday_new']);
+    return new Response(JSON.stringify({ ok: true, runs }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     console.error('[cron/friday] failed:', message);
     return new Response(JSON.stringify({ error: message }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
     });
   }
 };

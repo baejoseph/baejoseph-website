@@ -72,6 +72,6 @@ export const PATCH: APIRoute = async ({ request }) => {
 function json(obj: unknown, status = 200) {
   return new Response(JSON.stringify(obj), {
     status,
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store, max-age=0' },
   });
 }

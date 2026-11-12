@@ -24,8 +24,8 @@ export default defineConfig({
   trailingSlash: 'ignore',
   output: 'static',
   // Newsletter sends run in batches, but they still need a longer leash than the
-  // platform default: the cron routes budget 30s (see lib/cron-auth.ts).
-  adapter: vercel({ maxDuration: 40 }),
+  // platform default: the cron route budgets 45s (see lib/cron-auth.ts).
+  adapter: vercel({ maxDuration: 60 }),
   vite: {
     plugins: [unicodeUrlNormalizer],
   },

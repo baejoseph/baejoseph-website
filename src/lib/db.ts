@@ -15,7 +15,7 @@ export type Db = ReturnType<typeof sql>;
  * start can skip ~20 round trips to Neon and just check one row.
  * /api/setup forces the full run regardless (dashboard → "Create / migrate tables").
  */
-const SCHEMA_VERSION = 'v2026-09-17-reader-theme';
+const SCHEMA_VERSION = 'v2026-11-11-cron-runs';
 
 let schemaReady: Promise<void> | null = null;
 
@@ -171,6 +171,21 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
   // Queued letters learn which letter format they were built with, so anything
   // behind the current one can be rebuilt (see lib/letters.ts).
   await db`ALTER TABLE queue_items ADD COLUMN IF NOT EXISTS letters_version TEXT`;
+
+  // One row per automatic send attempt. Without it, a cron run that never fired
+  // (or fired and refused) looks exactly like a run that sent nothing to nobody,
+  // and the only evidence is a letter that silently did not arrive.
+  await db`CREATE TABLE IF NOT EXISTS cron_runs (
+    id SERIAL PRIMARY KEY,
+    slot TEXT NOT NULL,
+    ran_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    items INTEGER NOT NULL DEFAULT 0,
+    sent INTEGER NOT NULL DEFAULT 0,
+    failed INTEGER NOT NULL DEFAULT 0,
+    remaining INTEGER NOT NULL DEFAULT 0,
+    error TEXT
+  )`;
+  await db`CREATE INDEX IF NOT EXISTS cron_runs_ran_idx ON cron_runs (ran_at DESC)`;
 
   await db`CREATE TABLE IF NOT EXISTS email_templates (
     key TEXT PRIMARY KEY,

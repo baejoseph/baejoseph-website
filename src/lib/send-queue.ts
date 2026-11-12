@@ -1,5 +1,5 @@
 import { withSchema } from './db';
-import { sendMail, smtpConfigured } from './email';
+import { sendMail, smtpConfigured, transporter, type Transport } from './email';
 import { composePair, LIKE_PLACEHOLDER, paintLetter, type Slot } from './newsletter';
 import { identityHash } from './identity';
 
@@ -16,11 +16,25 @@ export const CHUNK = 25;
 /** Transient failures (greylisting, 4xx, timeouts) get retried this many times. */
 export const MAX_ATTEMPTS = 3;
 /**
+ * Consecutive failures that were the *server's* fault (credentials, connection,
+ * 421 too many connections) mean the run is broken, not the addresses. After
+ * this many in a row the batch stops instead of grinding through the list,
+ * leaving the rest of the letter queued for the next run.
+ */
+export const MAX_PLATFORM_FAILURES = 3;
+/**
  * A 'sending' row older than this belongs to an invocation that died mid-send.
  * Young enough that no live run can still own it, old enough that a lost letter
  * is worth one more try (a rare duplicate beats a silent no-show).
  */
 export const STALE_SENDING_MS = 15 * 60 * 1000;
+/**
+ * How late an automatic run will still send a letter that missed its date. The
+ * daily cron picks up anything a failed run left behind, which is the point —
+ * but it must not resurrect a forgotten month of old letters and mail them all
+ * in one morning. Older than this and the letter waits for a human.
+ */
+export const MAX_AUTO_OVERDUE_DAYS = 14;
 
 type Item = Record<string, any>;
 type Letter = { html: string; text: string; subject: string; slug: string };
@@ -34,6 +48,8 @@ export type SendSummary = {
   remaining: number;
   done: boolean;
   status: string;
+  /** the mail host refused the batch; stop draining rather than hammer it */
+  stopped?: boolean;
   test?: boolean;
 };
 
@@ -99,6 +115,32 @@ export function isHardBounce(err: unknown): boolean {
   }
   // No SMTP code at all: not enough evidence to drop someone.
   return false;
+}
+
+/**
+ * A failure that says nothing about the address: the mailbox host refused *us*
+ * (bad credentials, connection dropped, too many connections). Those must not
+ * burn a recipient's retry budget, because three quick retries inside one
+ * invocation used to exhaust everybody during a five-minute SMTP blip and leave
+ * the letter permanently 'failed' with no cron left that would ever try again.
+ */
+export function isPlatformError(err: unknown): boolean {
+  const e = (err ?? {}) as {
+    code?: string; responseCode?: number; command?: string; message?: string;
+  };
+  const code = String(e.code ?? '');
+  const rc = Number(e.responseCode ?? 0);
+
+  if (code === 'EAUTH' || rc === 530 || rc === 534 || rc === 535 || rc === 538) return true;
+  if (code === 'ECONNECTION' || code === 'ETIMEDOUT' || code === 'ESOCKET' || code === 'ECONNRESET') return true;
+  if (code === 'EDNS' || code === 'EPROTOCOL' || code === 'EMESSAGE') return true;
+  // 421 = service not available / too many connections from this host.
+  if (rc === 421) return true;
+  // A 4xx with a real reply is about the recipient (greylisting, quota): retry it.
+  if (rc >= 400 && rc < 500) return false;
+  if (rc >= 500) return false;
+  // No SMTP code and no command: the conversation never happened.
+  return !e.command;
 }
 
 async function composeFor(item: Item): Promise<Pair> {
@@ -202,6 +244,12 @@ export async function sendQueueItem(
     return { sent: 1, failed: 0, skipped: 0, remaining: 0, done: false, status: String(item.status), test: true };
   }
 
+  // A letter with no body mails nothing but failure rows. Say so once, clearly,
+  // instead of grinding through the list marking everyone 'failed'.
+  if (!letterFor(item, 'en').html) {
+    throw new Error('That letter has no body — rebuild it from the post, or paste the HTML in, before sending.');
+  }
+
   const batch = Math.max(1, Math.min(opts?.chunk ?? CHUNK, 200));
   const stale = new Date(Date.now() - STALE_SENDING_MS).toISOString();
   // Eligible: never claimed, or claimed and failed with retries in hand, or
@@ -224,74 +272,112 @@ export async function sendQueueItem(
   let sent = 0;
   let failed = 0;
   let skipped = 0;
+  let refused = 0;
+  /** Why the batch stopped early, when the fault was the mailbox host's. */
+  let stopReason: string | null = null;
 
-  for (const r of due) {
-    const claimed = await db`
-      INSERT INTO send_log (queue_id, email, status, attempts, error, updated_at)
-      VALUES (${id}, ${r.email}, 'sending', 1, NULL, now())
-      ON CONFLICT (queue_id, email) DO UPDATE SET
-        status = 'sending', attempts = send_log.attempts + 1, error = NULL, updated_at = now()
-      WHERE (send_log.status = 'failed' AND send_log.attempts < ${MAX_ATTEMPTS})
-         OR (send_log.status = 'sending' AND send_log.updated_at < ${stale}::timestamptz)
-      RETURNING id
-    `;
-    const claimId = Number(claimed[0]?.id ?? 0);
-    if (!claimId) {
-      // claimed between our SELECT and now — another invocation owns this address
-      skipped += 1;
-      continue;
-    }
+  // One pooled transport for the whole batch. Opening a connection per address
+  // is what made a long list time out half-sent.
+  const transport: Transport = transporter({ pool: true });
 
-    const lang = r.lang === 'ko' ? 'ko' : 'en';
-    const theme = readerTheme(r.theme);
-    const base = lang === 'ko' && koOverride
-      ? { ...koOverride, html: paintLetter(koOverride.html, theme) }
-      : letterFor(item, lang, theme);
-    if (!base.html) {
-      await db`DELETE FROM send_log WHERE id = ${claimId}`;
-      skipped += 1;
-      continue;
-    }
-    const letter = personalize(base, r);
+  try {
+    for (const r of due) {
+      const claimed = await db`
+        INSERT INTO send_log (queue_id, email, status, attempts, error, updated_at)
+        VALUES (${id}, ${r.email}, 'sending', 1, NULL, now())
+        ON CONFLICT (queue_id, email) DO UPDATE SET
+          status = 'sending', attempts = send_log.attempts + 1, error = NULL, updated_at = now()
+        WHERE (send_log.status = 'failed' AND send_log.attempts < ${MAX_ATTEMPTS})
+           OR (send_log.status = 'sending' AND send_log.updated_at < ${stale}::timestamptz)
+        RETURNING id
+      `;
+      const claimId = Number(claimed[0]?.id ?? 0);
+      if (!claimId) {
+        // claimed between our SELECT and now — another invocation owns this address
+        skipped += 1;
+        continue;
+      }
 
-    try {
-      await sendMail({
-        to: r.email,
-        subject: letter.subject,
-        html: letter.html,
-        text: letter.text,
-      });
-      sent += 1;
-      await db`UPDATE send_log SET status = 'sent', updated_at = now() WHERE id = ${claimId}`;
-    } catch (err) {
-      failed += 1;
-      const message = err instanceof Error ? err.message : String(err);
-      await db`UPDATE send_log SET status = 'failed', error = ${message.slice(0, 500)}, updated_at = now() WHERE id = ${claimId}`;
-      if (isHardBounce(err)) {
+      const lang = r.lang === 'ko' ? 'ko' : 'en';
+      const theme = readerTheme(r.theme);
+      const base = lang === 'ko' && koOverride
+        ? { ...koOverride, html: paintLetter(koOverride.html, theme) }
+        : letterFor(item, lang, theme);
+      if (!base.html) {
+        failed += 1;
         await db`
-          UPDATE subscribers
-          SET suppressed_at = now(), suppress_reason = ${message.slice(0, 300)}
-          WHERE email = ${r.email} AND suppressed_at IS NULL
+          UPDATE send_log
+          SET status = 'failed', error = 'letter body is empty', updated_at = now()
+          WHERE id = ${claimId}
         `;
+        continue;
+      }
+      const letter = personalize(base, r);
+
+      try {
+        await sendMail({
+          to: r.email,
+          subject: letter.subject,
+          html: letter.html,
+          text: letter.text,
+        }, transport);
+        sent += 1;
+        refused = 0;
+        await db`UPDATE send_log SET status = 'sent', updated_at = now() WHERE id = ${claimId}`;
+      } catch (err) {
+        failed += 1;
+        const message = err instanceof Error ? err.message : String(err);
+        if (isPlatformError(err)) {
+          // The host refused the connection, not the reader. Give the attempt
+          // back so a blip cannot burn the whole list's retry budget, and stop
+          // after a few in a row: continuing just fails every remaining address.
+          refused += 1;
+          stopReason = message.slice(0, 300);
+          await db`
+            UPDATE send_log
+            SET status = 'failed', error = ${message.slice(0, 500)},
+                attempts = GREATEST(attempts - 1, 0), updated_at = now()
+            WHERE id = ${claimId}
+          `;
+          if (refused >= MAX_PLATFORM_FAILURES) break;
+          continue;
+        }
+        await db`UPDATE send_log SET status = 'failed', error = ${message.slice(0, 500)}, updated_at = now() WHERE id = ${claimId}`;
+        if (isHardBounce(err)) {
+          await db`
+            UPDATE subscribers
+            SET suppressed_at = now(), suppress_reason = ${message.slice(0, 300)}
+            WHERE email = ${r.email} AND suppressed_at IS NULL
+          `;
+        }
       }
     }
+  } finally {
+    transport.close();
   }
 
   const remaining = await remainingCount(id, stale);
+  // SUM(CASE ...) rather than count(*) FILTER (WHERE ...): the filter form is
+  // silently ignored by the pg-mem harness the self-test runs on, so a test could
+  // not tell a working count from a broken one.
   const totals = await db`
     SELECT
-      count(*) FILTER (WHERE status = 'sent')::int AS sent,
-      count(*) FILTER (WHERE status = 'failed')::int AS failed
+      SUM(CASE WHEN status = 'sent' THEN 1 ELSE 0 END)::int AS sent,
+      SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END)::int AS failed
     FROM send_log WHERE queue_id = ${id}
-  ` as { sent: number; failed: number }[];
+  ` as { sent: number | null; failed: number | null }[];
   const totalSent = Number(totals[0]?.sent ?? 0);
   const totalFailed = Number(totals[0]?.failed ?? 0);
   // 'queued' means "there is still work": either recipients left, or failures
   // that have retries in hand. Only a finished item becomes 'sent'.
   const status = remaining > 0 ? 'queued' : (totalSent > 0 ? 'sent' : 'failed');
-  const note = remaining > 0
-    ? `partial: ${totalSent} sent, ${totalFailed} failed, ${remaining} still to send`
-    : (totalFailed > 0 ? `${totalSent} sent, ${totalFailed} could not be delivered` : null);
+  // Why it did not finish beats a raw count when the mailbox host was the cause:
+  // this is the line Joseph reads on the dashboard.
+  const note = stopReason
+    ? `stopped: the mail server refused ${refused} in a row — ${stopReason}`
+    : remaining > 0
+      ? `partial: ${totalSent} sent, ${totalFailed} failed, ${remaining} still to send`
+      : (totalFailed > 0 ? `${totalSent} sent, ${totalFailed} could not be delivered` : null);
   await db`
     UPDATE queue_items SET
       status = ${status},
@@ -300,63 +386,116 @@ export async function sendQueueItem(
     WHERE id = ${id}
   `;
 
-  return { sent, failed, skipped, remaining, done: remaining === 0, status };
+  return { sent, failed, skipped, remaining, done: remaining === 0, status, ...(stopReason ? { stopped: true } : {}) };
 }
 
 /** Keep batching a single item until it is finished or we run out of time. */
 export async function drainQueueItem(
   id: number,
-  opts: { chunk?: number; budgetMs?: number } = {},
+  opts: { chunk?: number; budgetMs?: number; deadline?: number } = {},
 ): Promise<SendSummary> {
-  const deadline = Date.now() + (opts.budgetMs ?? 30_000);
+  const deadline = opts.deadline ?? Date.now() + (opts.budgetMs ?? 30_000);
   let summary = await sendQueueItem(id, { chunk: opts.chunk });
   let sent = summary.sent;
   let failed = summary.failed;
   let skipped = summary.skipped;
-  while (!summary.done && summary.sent + summary.failed > 0 && Date.now() < deadline) {
+  let stopped = Boolean(summary.stopped);
+  while (!stopped && !summary.done && summary.sent + summary.failed > 0 && Date.now() < deadline) {
     summary = await sendQueueItem(id, { chunk: opts.chunk });
     sent += summary.sent;
     failed += summary.failed;
     skipped += summary.skipped;
+    stopped = Boolean(summary.stopped);
   }
-  return { ...summary, sent, failed, skipped };
+  return { ...summary, sent, failed, skipped, ...(stopped ? { stopped: true } : {}) };
 }
 
 export type QueueRun = {
   id: number;
   sent: number;
   failed: number;
-  remaining: number;
+  /** addresses still to send; null when this run ran out of time before it started */
+  remaining: number | null;
+  /** a queue item's status, or 'deferred' / 'error' for this run's own outcome */
   status: string;
+  error?: string;
 };
+
+/** DAYS_LATE uses a plain YYYY-MM-DD in, so the driver's own DATE shape (string
+ *  in Postgres, Date object in the test harness) cannot silently disable it. */
+function isoDay(value: unknown): string {
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  return String(value ?? '').slice(0, 10);
+}
+
+function daysLate(sendOn: unknown, today: string): number {
+  const from = Date.parse(`${isoDay(sendOn)}T00:00:00Z`);
+  const to = Date.parse(`${today}T00:00:00Z`);
+  if (!Number.isFinite(from) || !Number.isFinite(to)) return 0;
+  return Math.floor((to - from) / 86_400_000);
+}
 
 /**
  * Everything due for this slot. `send_on <= date` means a send that ran out of
  * time (or was missed entirely) is picked up by the next run instead of waiting
  * for the same weekday next week.
+ *
+ * Each letter is isolated: a queued letter whose post has been renamed (so its
+ * body cannot be rebuilt) records the reason on itself and the run carries on.
+ * Before that, one broken letter threw out of the loop and stopped every cron
+ * run at the same place, so nothing in the queue ever sent again.
  */
 export async function sendDue(
   slot: Slot,
   dateIso: string,
-  opts: { chunk?: number; budgetMs?: number } = {},
+  opts: { chunk?: number; budgetMs?: number; deadline?: number } = {},
 ): Promise<QueueRun[]> {
   const db = await withSchema();
+  const deadline = opts.deadline ?? Date.now() + (opts.budgetMs ?? 30_000);
   const due = await db`
-    SELECT id FROM queue_items
-    WHERE slot = ${slot} AND send_on <= ${dateIso} AND status = 'queued'
+    SELECT id, status, send_on FROM queue_items
+    WHERE slot = ${slot} AND send_on <= ${dateIso} AND status <> 'sent'
     ORDER BY send_on ASC
-  `;
+  ` as { id: number; status: string; send_on: string }[];
   const results: QueueRun[] = [];
   for (const row of due) {
     const id = Number(row.id);
-    const summary = await drainQueueItem(id, opts);
-    results.push({
-      id,
-      sent: summary.sent,
-      failed: summary.failed,
-      remaining: summary.remaining,
-      status: summary.status,
-    });
+    // An old letter is history, not a backlog: a mis-sent one would be a letter
+    // nobody is waiting for any more.
+    const overdueDays = daysLate(row.send_on, dateIso);
+    if (overdueDays > MAX_AUTO_OVERDUE_DAYS) {
+      await db`
+        UPDATE queue_items
+        SET error = ${`overdue by ${overdueDays} days — nothing sends it automatically now. Send it by hand, or remove it.`}
+        WHERE id = ${id} AND status <> 'sent'
+      `;
+      results.push({ id, sent: 0, failed: 0, remaining: null, status: 'stale' });
+      continue;
+    }
+    if (Date.now() >= deadline) {
+      results.push({ id, sent: 0, failed: 0, remaining: null, status: 'deferred' });
+      continue;
+    }
+    try {
+      const summary = await drainQueueItem(id, { chunk: opts.chunk, deadline });
+      results.push({
+        id,
+        sent: summary.sent,
+        failed: summary.failed,
+        remaining: summary.remaining,
+        status: summary.status,
+      });
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      console.error(`[cron] queue item ${id} could not run: ${message}`);
+      // Leave it queued, with the reason visible on the dashboard, and keep
+      // going: the other letters in the queue have done nothing wrong.
+      await db`
+        UPDATE queue_items SET error = ${`could not run: ${message}`.slice(0, 500)}
+        WHERE id = ${id} AND status <> 'sent'
+      `;
+      results.push({ id, sent: 0, failed: 0, remaining: null, status: 'error', error: message });
+    }
   }
   return results;
 }

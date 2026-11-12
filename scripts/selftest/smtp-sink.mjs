@@ -5,8 +5,10 @@ import net from 'node:net';
 export function startSink({ port = 2525, fail = new Map() } = {}) {
   const deliveries = [];
   const attempts = new Map(); // address -> attempts seen
+  const stat = { connections: 0 };
 
   const server = net.createServer((socket) => {
+    stat.connections += 1;
     let buffer = '';
     let inData = false;
     let data = '';
@@ -86,6 +88,7 @@ export function startSink({ port = 2525, fail = new Map() } = {}) {
       resolve({
         deliveries,
         attempts,
+        stat,
         close: () => new Promise((r) => server.close(r)),
       });
     });

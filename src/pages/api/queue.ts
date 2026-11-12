@@ -104,14 +104,16 @@ export const DELETE: APIRoute = async ({ request }) => {
   const db = await withSchema();
   const existing = await db`SELECT id, status FROM queue_items WHERE id = ${id} LIMIT 1`;
   if (!existing[0]) return json({ error: 'Not found' }, 404);
-  if (existing[0].status !== 'queued') {
+  // 'failed' means nothing was ever delivered (send-queue only uses it when the
+  // whole letter failed), so it is as removable as a queued one. 'sent' is not.
+  if (existing[0].status !== 'queued' && existing[0].status !== 'failed') {
     return json({ error: 'That letter has already been sent. Put it back in the queue if you want to send it again.' }, 409);
   }
   // A send that stopped halfway leaves delivery rows while the item is still
   // queued. Drop them with the letter. The foreign key only nulls the link,
   // so they would otherwise stay behind with no letter.
   await db`DELETE FROM send_log WHERE queue_id = ${id}`;
-  const rows = await db`DELETE FROM queue_items WHERE id = ${id} AND status = 'queued' RETURNING id`;
+  const rows = await db`DELETE FROM queue_items WHERE id = ${id} AND status <> 'sent' RETURNING id`;
   if (!rows[0]) return json({ error: 'Not found' }, 404);
   return json({ ok: true });
 };
@@ -150,7 +152,7 @@ export const PATCH: APIRoute = async ({ request }) => {
       }
       const result = isTest
         ? await sendQueueItem(id, { testTo: String(body.testTo), lang: body.lang === 'ko' ? 'ko' : 'en' })
-        : await drainQueueItem(id, { budgetMs: 30_000 });
+        : await drainQueueItem(id, { budgetMs: 40_000 });
       return json({ ok: true, result });
     } catch (err) {
       return json({ error: err instanceof Error ? err.message : String(err) }, 500);
@@ -280,6 +282,8 @@ export const PATCH: APIRoute = async ({ request }) => {
 function json(obj: unknown, status = 200) {
   return new Response(JSON.stringify(obj), {
     status,
-    headers: { 'Content-Type': 'application/json' },
+    // Admin data: never let a browser or the CDN hand back yesterday's queue,
+    // likes or delivery counts.
+    headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store, max-age=0' },
   });
 }

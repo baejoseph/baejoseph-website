@@ -13,7 +13,7 @@ process.env.SMTP_USER = 'newsletter@test.local';
 process.env.SMTP_PASS = 'hunter2';
 
 const { ensureSchema, withSchema } = await import('../../src/lib/db');
-const { sendQueueItem, drainQueueItem, sendDue, isHardBounce } = await import('../../src/lib/send-queue');
+const { sendQueueItem, drainQueueItem, sendDue, isHardBounce, isPlatformError } = await import('../../src/lib/send-queue');
 const { POST: subscribe } = await import('../../src/pages/api/subscribe');
 const { POST: unsubscribe } = await import('../../src/pages/api/unsubscribe');
 const { GET: queueGet, PATCH: queuePatch, DELETE: queueDelete } = await import('../../src/pages/api/queue');
@@ -215,7 +215,7 @@ check('right password still works from another IP', goodLogin.status === 200, St
 section('8. editing a queued letter survives a dashboard reload');
 const item8 = await addItem('eight', 'tuesday_featured', '2026-09-29');
 const cookie = `bae_session=${mintSession()}`;
-const adminReq = (method, body) => new Request('http://x/api/queue', {
+const adminReq = (method: string, body?: unknown) => new Request('http://x/api/queue', {
   method, headers: { 'content-type': 'application/json', cookie }, body: body ? JSON.stringify(body) : undefined,
 });
 await queuePatch({ request: await adminReq('PATCH', {
@@ -529,6 +529,99 @@ const anon = await queueDelete({
   }),
 });
 check('remove without a session is refused', anon.status === 401, String(anon.status));
+
+const failedItem = await addItem('never-delivered', 'friday_new', '2031-04-17');
+await db`UPDATE queue_items SET status = 'failed', error = 'nobody got it' WHERE id = ${failedItem}`;
+const delFailed = await queueDelete({
+  request: new Request(`http://x/api/queue?id=${failedItem}`, {
+    method: 'DELETE',
+    headers: { 'content-type': 'application/json', cookie },
+  }),
+});
+check('a letter that reached nobody can be removed even when marked failed', delFailed.status === 200, String(delFailed.status));
+const failedGone = await db`SELECT id FROM queue_items WHERE id = ${failedItem}`;
+check('and it is actually gone', failedGone.length === 0, String(failedGone.length));
+
+section('21. a batch reuses the connection instead of opening one per address');
+for (let i = 0; i < 10; i++) await addSub(`pool${i}@test.local`);
+const itemPool = await addItem('pooled', 'tuesday_featured', '2031-05-06');
+resetSink();
+const connectionsBefore = sinkReal.stat.connections;
+const poolRun = await drainQueueItem(itemPool, { chunk: 200, budgetMs: 60000 });
+const connectionsUsed = sinkReal.stat.connections - connectionsBefore;
+check('the whole batch went out', poolRun.remaining === 0, JSON.stringify(poolRun));
+check('every pool address got it', emailsSent().filter((e: string) => e.startsWith('pool')).length === 10, JSON.stringify(emailsSent().slice(0, 5)));
+check('in at most three connections, not one per address', connectionsUsed <= 3, `${connectionsUsed} connections for ${sinkReal.deliveries.length} messages`);
+
+section('22. a refused mail server leaves the letter queued, never dead');
+check('a refused connection is the server\'s fault, not the address\'s', isPlatformError({ code: 'ECONNECTION' }) && isPlatformError({ code: 'EAUTH', responseCode: 535 }));
+check('but greylisting is still the address\'s, and retried', !isPlatformError({ responseCode: 452, code: 'EENVELOPE' }));
+await addSub('outage@test.local');
+const lossy = await addItem('pooled', 'friday_new', '2031-05-09');
+const goodPort = process.env.SMTP_PORT;
+process.env.SMTP_PORT = '2599'; // nothing listens here: a broken mail server
+resetSink();
+const outageRun = await sendQueueItem(lossy, { chunk: 200 });
+const outageRow = await db`SELECT status, error FROM queue_items WHERE id = ${lossy}`;
+check('the letter is still queued, not marked failed', outageRow[0].status === 'queued', JSON.stringify({ status: outageRow[0].status, error: outageRow[0].error }));
+check('and the dashboard is told why', /refused/i.test(String(outageRow[0].error)), String(outageRow[0].error));
+check('the batch stopped instead of failing the whole list', outageRun.failed < 100, JSON.stringify(outageRun));
+const refusedRows = await db`SELECT attempts, status FROM send_log WHERE queue_id = ${lossy}`;
+check('refused attempts were handed back, so a blip cannot exhaust anyone', refusedRows.length > 0 && refusedRows.every((r) => Number(r.attempts) === 0 && r.status === 'failed'), JSON.stringify(refusedRows.slice(0, 4)));
+const suppressedAfterOutage = await db`SELECT count(*)::int AS n FROM subscribers WHERE email = 'outage@test.local' AND suppressed_at IS NOT NULL`;
+check('nobody was suppressed for the host\'s outage', Number(suppressedAfterOutage[0].n) === 0, JSON.stringify(suppressedAfterOutage));
+process.env.SMTP_PORT = goodPort;
+resetSink();
+const recovered = await drainQueueItem(lossy, { chunk: 200, budgetMs: 60000 });
+check('when the mail server comes back the same letter sends', recovered.remaining === 0 && recovered.status === 'sent', JSON.stringify(recovered));
+check('and the reader who was refused gets it', emailsSent().includes('outage@test.local'), JSON.stringify(emailsSent().slice(0, 5)));
+
+section('23. one broken letter no longer blocks the rest of the queue');
+const ghost = await addItem('ghost-post-deleted', 'tuesday_featured', '2031-06-01');
+await db`UPDATE queue_items SET html = NULL, html_ko = NULL, subject = NULL, subject_ko = NULL, text_body = NULL, text_body_ko = NULL WHERE id = ${ghost}`;
+const behind = await addItem('pooled', 'tuesday_featured', '2031-06-03');
+resetSink();
+const isolated = await sendDue('tuesday_featured', '2031-06-03', { chunk: 200, budgetMs: 60000 });
+const ghostRun = isolated.find((r) => r.id === ghost);
+const behindRun = isolated.find((r) => r.id === behind);
+check('the broken letter is reported as an error, not thrown', ghostRun?.status === 'error', JSON.stringify(ghostRun ?? isolated));
+check('the letter queued behind it still went out', behindRun?.status === 'sent', JSON.stringify(behindRun ?? isolated));
+const ghostRow = await db`SELECT status, error FROM queue_items WHERE id = ${ghost}`;
+check('and the reason sits on the item for the dashboard', ghostRow[0].status === 'queued' && /could not run/i.test(String(ghostRow[0].error)), JSON.stringify(ghostRow[0]));
+
+section('24. the daily cron runs both slots, and says so');
+const { GET: dailyCron } = await import('../../src/pages/api/cron/daily');
+// The route handlers are typed for a full APIContext; the harness only needs request.
+const ctx = (request: Request) => ({ request } as any);
+const cronNoAuth = await dailyCron(ctx(new Request('http://x/api/cron/daily')));
+check('a cron call without the secret is refused', cronNoAuth.status === 401, String(cronNoAuth.status));
+const daily = await dailyCron(ctx(new Request('http://x/api/cron/daily', { headers: { authorization: 'Bearer test-cron-secret' } })));
+const dailyBody = await daily.json();
+check('the daily run checks both slots', daily.status === 200 && dailyBody.runs?.length === 2, JSON.stringify(dailyBody).slice(0, 200));
+check('and names them', (dailyBody.runs || []).map((r: { slot: string }) => r.slot).join(',') === 'tuesday_featured,friday_new', JSON.stringify((dailyBody.runs || []).map((r: { slot: string }) => r.slot)));
+const runLog = await db`SELECT slot, items, sent, remaining FROM cron_runs ORDER BY id DESC LIMIT 2`;
+check('each slot leaves a run log row', runLog.length === 2, JSON.stringify(runLog));
+check('so a cron that never fired is visible', runLog.some((r) => r.slot === 'tuesday_featured') && runLog.some((r) => r.slot === 'friday_new'), JSON.stringify(runLog));
+
+const { GET: statsGet } = await import('../../src/pages/api/stats');
+const statsRes = await statsGet(ctx(new Request('http://x/api/stats', { headers: { cookie } })));
+const statsBody = await statsRes.json();
+check('the dashboard can see the automatic runs', Array.isArray(statsBody.runs) && statsBody.runs.length > 0, JSON.stringify(statsBody.runs).slice(0, 160));
+const unsubRow = await db`SELECT count(*)::int AS n FROM subscribers WHERE unsubscribed_at IS NOT NULL`;
+check('unsubscribed is counted across the whole list, not one page', Number(statsBody.unsubscribed) === Number(unsubRow[0].n), `${statsBody.unsubscribed} vs ${unsubRow[0].n}`);
+check('stats are never cached', /no-store/.test(statsRes.headers.get('cache-control') || ''), String(statsRes.headers.get('cache-control')));
+const queueRes = await queueGet(ctx(await adminReq('GET')));
+check('the queue is never cached either', /no-store/.test(queueRes.headers.get('cache-control') || ''), String(queueRes.headers.get('cache-control')));
+
+section('25. a forgotten letter is not resurrected automatically');
+const ancient = await addItem('pooled', 'tuesday_featured', '2026-01-06');
+resetSink();
+const oldRun = await sendDue('tuesday_featured', '2026-11-11', { chunk: 200, budgetMs: 60000 });
+const ancientRun = oldRun.find((r) => r.id === ancient);
+check('a letter months past its date is left alone', ancientRun?.status === 'stale', JSON.stringify(ancientRun ?? oldRun));
+const ancientRow = await db`SELECT status, error FROM queue_items WHERE id = ${ancient}`;
+check('still queued, with the reason on it', ancientRow[0].status === 'queued' && /overdue by/i.test(String(ancientRow[0].error)), JSON.stringify(ancientRow[0]));
+check('and nobody was mailed it', !emailsSent().includes('outage@test.local'), JSON.stringify(emailsSent().slice(0, 3)));
 
 await sinkReal.close();
 
