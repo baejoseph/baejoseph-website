@@ -11,6 +11,10 @@ process.env.SMTP_HOST = '127.0.0.1';
 process.env.SMTP_PORT = '2525';
 process.env.SMTP_USER = 'newsletter@test.local';
 process.env.SMTP_PASS = 'hunter2';
+// Short enough that a silent mailbox is a few seconds, not a hung run. This is
+// what a stalled recipient costs in the self-test.
+process.env.SMTP_SOCKET_TIMEOUT_MS = '1200';
+process.env.SMTP_CONNECTION_TIMEOUT_MS = '3000';
 
 const { ensureSchema, withSchema } = await import('../../src/lib/db');
 const { sendQueueItem, drainQueueItem, sendDue, isHardBounce, isPlatformError } = await import('../../src/lib/send-queue');
@@ -625,6 +629,50 @@ check('a letter months past its date is left alone', ancientRun?.status === 'sta
 const ancientRow = await db`SELECT status, error FROM queue_items WHERE id = ${ancient}`;
 check('still queued, with the reason on it', ancientRow[0].status === 'queued' && /overdue by/i.test(String(ancientRow[0].error)), JSON.stringify(ancientRow[0]));
 check('and nobody was mailed it', !emailsSent().includes('outage@test.local'), JSON.stringify(emailsSent().slice(0, 3)));
+
+section('26. an address that never answers cannot hold up the rest');
+// The real-world case that started all this: a mailbox goes quiet mid-conversation
+// and simply never replies. Nothing is broken, nobody bounced — one address is
+// just not talking. The send has to give up on it and carry on down the list.
+const sinkSilent = await startSink({ port: 2527, stall: new Set(['silent@test.local']) });
+process.env.SMTP_PORT = '2527';
+await addSub('silent@test.local');
+// Send order is oldest signup first, so put the silent address at the very front:
+// that is the worst case, with every other reader standing behind it.
+await db`UPDATE subscribers SET created_at = '2020-01-01' WHERE email = 'silent@test.local'`;
+const itemSilent = await addItem('pooled', 'friday_new', '2031-03-07');
+const silentStarted = Date.now();
+const silentRun = await drainQueueItem(itemSilent, { chunk: 200, budgetMs: 60000 });
+const silentSeconds = (Date.now() - silentStarted) / 1000;
+const silentRow = await db`SELECT status, error FROM queue_items WHERE id = ${itemSilent}`;
+const silentLog = await db`SELECT status, attempts FROM send_log WHERE queue_id = ${itemSilent} AND email = 'silent@test.local'`;
+const activeNow = await db`SELECT count(*)::int AS n FROM subscribers WHERE unsubscribed_at IS NULL AND suppressed_at IS NULL`;
+const reachable = Number(activeNow[0].n) - 1;
+check('the silent address is given up on', silentLog[0]?.status === 'failed', JSON.stringify(silentLog[0]));
+check('after three bounded attempts, not an endless wait', Number(silentLog[0]?.attempts) === 3, JSON.stringify(silentLog[0]));
+check('everyone behind it still got the letter', sinkSilent.deliveries.length === reachable, `${sinkSilent.deliveries.length} of ${reachable}`);
+check('the letter still finished', silentRow[0].status === 'sent', JSON.stringify(silentRow[0]));
+check('and says one reader could not be reached', /could not be delivered/i.test(String(silentRow[0].error)), String(silentRow[0].error));
+check('the whole thing took seconds, not minutes', silentSeconds < 30, `${silentSeconds}s`);
+process.env.SMTP_PORT = '2525';
+await sinkSilent.close();
+
+section('27. a run that runs out of time says where it stopped');
+// The old failure: the platform killed the invocation mid-send and the row kept
+// saying "queued" with no note, because the bookkeeping never ran. We now stop
+// ourselves, before claiming anyone, and write down what happened.
+const itemBudget = await addItem('pooled', 'tuesday_featured', '2031-03-11');
+resetSink();
+const budgetRun = await sendQueueItem(itemBudget, { chunk: 200, deadline: Date.now() - 1000 });
+check('nothing was mailed', budgetRun.sent === 0, JSON.stringify(budgetRun));
+const budgetRow = await db`SELECT status, error FROM queue_items WHERE id = ${itemBudget}`;
+check('the letter is still queued', budgetRow[0].status === 'queued', JSON.stringify(budgetRow[0]));
+check('with a note saying the time ran out', /time limit/i.test(String(budgetRow[0].error)), String(budgetRow[0].error));
+check('and how many are still waiting', /still to send/i.test(String(budgetRow[0].error)), String(budgetRow[0].error));
+const budgetClaims = await db`SELECT count(*)::int AS n FROM send_log WHERE queue_id = ${itemBudget}`;
+check('it claimed nobody it was not going to mail', Number(budgetClaims[0].n) === 0, String(budgetClaims[0].n));
+const resumeRun = await drainQueueItem(itemBudget, { chunk: 200, budgetMs: 60000 });
+check('the next run simply carries on from there', resumeRun.status === 'sent' && resumeRun.sent > 25, JSON.stringify(resumeRun));
 
 await sinkReal.close();
 

@@ -153,8 +153,12 @@ export function isPlatformError(err: unknown): boolean {
   };
   const code = String(e.code ?? '');
   const rc = Number(e.responseCode ?? 0);
+  const command = String(e.command ?? '');
 
   if (code === 'EAUTH' || rc === 530 || rc === 534 || rc === 535 || rc === 538) return true;
+  // A timeout during a command is one address not answering; a timeout with no
+  // command is the host never letting us in. Different owners, different fix.
+  if (code === 'ETIMEDOUT' && command) return false;
   if (code === 'ECONNECTION' || code === 'ETIMEDOUT' || code === 'ESOCKET' || code === 'ECONNRESET') return true;
   if (code === 'EDNS' || code === 'EPROTOCOL' || code === 'EMESSAGE') return true;
   // 421 = service not available / too many connections from this host.
@@ -163,7 +167,7 @@ export function isPlatformError(err: unknown): boolean {
   if (rc >= 400 && rc < 500) return false;
   if (rc >= 500) return false;
   // No SMTP code and no command: the conversation never happened.
-  return !e.command;
+  return !command;
 }
 
 async function composeFor(item: Item): Promise<Pair> {
@@ -243,7 +247,7 @@ async function remainingCount(id: number, stale: string) {
  */
 export async function sendQueueItem(
   id: number,
-  opts?: { testTo?: string; lang?: 'en' | 'ko'; chunk?: number },
+  opts?: { testTo?: string; lang?: 'en' | 'ko'; chunk?: number; deadline?: number },
 ): Promise<SendSummary> {
   if (!smtpConfigured()) throw new Error('SMTP is not configured');
   const db = await withSchema();
@@ -274,6 +278,11 @@ export async function sendQueueItem(
   }
 
   const batch = Math.max(1, Math.min(opts?.chunk ?? CHUNK, 200));
+  // The same deadline the caller is watching. Checking it inside the loop (not
+  // just between batches) is what stops a run being guillotined half-way: we
+  // choose to end it, with a note saying where it got to, instead of the
+  // platform ending it silently.
+  const deadline = opts?.deadline ?? Date.now() + 40_000;
   const stale = new Date(Date.now() - STALE_SENDING_MS).toISOString();
   // Eligible: never claimed, or claimed and failed with retries in hand, or
   // claimed and abandoned by an invocation that died mid-send long enough ago
@@ -298,13 +307,24 @@ export async function sendQueueItem(
   let refused = 0;
   /** Why the batch stopped early, when the fault was the mailbox host's. */
   let stopReason: string | null = null;
+  /** True when we ran out of our own time rather than being cut off. */
+  let timedOut = false;
 
   // One pooled transport for the whole batch. Opening a connection per address
-  // is what made a long list time out half-sent.
-  const transport: Transport = transporter({ pool: true });
+  // is what made a long list time out half-sent. It is rebuilt if the host
+  // drops it, so one dead socket cannot poison everyone after it.
+  let transport: Transport = transporter({ pool: true });
+  const freshTransport = () => {
+    try { transport.close(); } catch { /* already gone */ }
+    transport = transporter({ pool: true });
+  };
 
   try {
     for (const r of due) {
+      // Stop before claiming anyone we are not going to mail: a run we end
+      // ourselves leaves no half-claimed 'sending' rows behind it.
+      if (Date.now() >= deadline) { timedOut = true; break; }
+
       const claimed = await db`
         INSERT INTO send_log (queue_id, email, status, attempts, error, updated_at)
         VALUES (${id}, ${r.email}, 'sending', 1, NULL, now())
@@ -351,6 +371,8 @@ export async function sendQueueItem(
       } catch (err) {
         failed += 1;
         const message = err instanceof Error ? err.message : String(err);
+        const code = String((err as { code?: string } | null)?.code ?? '');
+        const brokenSocket = ['ETIMEDOUT', 'ESOCKET', 'ECONNRESET', 'ECONNECTION', 'EPROTOCOL'].includes(code);
         if (isPlatformError(err)) {
           // The host refused the connection, not the reader. Give the attempt
           // back so a blip cannot burn the whole list's retry budget, and stop
@@ -363,10 +385,14 @@ export async function sendQueueItem(
                 attempts = GREATEST(attempts - 1, 0), updated_at = now()
             WHERE id = ${claimId}
           `;
+          freshTransport();
           if (refused >= MAX_PLATFORM_FAILURES) break;
           continue;
         }
         await db`UPDATE send_log SET status = 'failed', error = ${message.slice(0, 500)}, updated_at = now() WHERE id = ${claimId}`;
+        // An address that timed out may have left the pooled connection out of
+        // step. Start a clean one so the next recipient is not punished for it.
+        if (brokenSocket) freshTransport();
         if (isHardBounce(err)) {
           await db`
             UPDATE subscribers
@@ -399,9 +425,11 @@ export async function sendQueueItem(
   // this is the line Joseph reads on the dashboard.
   const note = stopReason
     ? `stopped: the mail server refused ${refused} in a row — ${stopReason}`
-    : remaining > 0
-      ? `partial: ${totalSent} sent, ${totalFailed} failed, ${remaining} still to send`
-      : (totalFailed > 0 ? `${totalSent} sent, ${totalFailed} could not be delivered` : null);
+    : timedOut
+      ? `stopped at the time limit after ${totalSent} — ${remaining} still to send. The next run carries on from here.`
+      : remaining > 0
+        ? `partial: ${totalSent} sent, ${totalFailed} failed, ${remaining} still to send`
+        : (totalFailed > 0 ? `${totalSent} sent, ${totalFailed} could not be delivered` : null);
   await db`
     UPDATE queue_items SET
       status = ${status},
@@ -419,13 +447,13 @@ export async function drainQueueItem(
   opts: { chunk?: number; budgetMs?: number; deadline?: number } = {},
 ): Promise<SendSummary> {
   const deadline = opts.deadline ?? Date.now() + (opts.budgetMs ?? 30_000);
-  let summary = await sendQueueItem(id, { chunk: opts.chunk });
+  let summary = await sendQueueItem(id, { chunk: opts.chunk, deadline });
   let sent = summary.sent;
   let failed = summary.failed;
   let skipped = summary.skipped;
   let stopped = Boolean(summary.stopped);
   while (!stopped && !summary.done && summary.sent + summary.failed > 0 && Date.now() < deadline) {
-    summary = await sendQueueItem(id, { chunk: opts.chunk });
+    summary = await sendQueueItem(id, { chunk: opts.chunk, deadline });
     sent += summary.sent;
     failed += summary.failed;
     skipped += summary.skipped;

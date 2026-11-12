@@ -2,7 +2,7 @@
 // hooks so a test can make specific addresses bounce.
 import net from 'node:net';
 
-export function startSink({ port = 2525, fail = new Map() } = {}) {
+export function startSink({ port = 2525, fail = new Map(), stall = new Set() } = {}) {
   const deliveries = [];
   const attempts = new Map(); // address -> attempts seen
   const stat = { connections: 0 };
@@ -55,6 +55,9 @@ export function startSink({ port = 2525, fail = new Map() } = {}) {
           send('250 2.1.0 Ok');
         } else if (upper.startsWith('RCPT TO')) {
           const addr = line.slice(line.indexOf('<') + 1, line.lastIndexOf('>'));
+          // An address that never answers, the way a real mailbox can go quiet.
+          // Nothing is sent back, so the client has to time out on its own.
+          if (stall.has(addr)) return;
           const n = (attempts.get(addr) || 0) + 1;
           attempts.set(addr, n);
           const rule = fail.get(addr);
