@@ -943,8 +943,18 @@ up the next morning.</pre>
       const it = queueItems.find(x => x.id === id);
       const title = it?.subject || it?.slug || `letter ${id}`;
       const count = await activeCount();
+      // This button only ever reaches readers who have no delivery record for
+      // this letter. Saying so stops it looking like a second mailout to everyone.
+      const already = Number(it?.delivered || 0);
+      const left = Math.max(0, count - already);
+      const scope = left === 0
+        ? `Everyone on the list (${count}) already has this letter.\n\nSending now just closes it out — nothing is mailed.`
+        : already > 0
+          ? `to the ${left} reader${left === 1 ? '' : 's'} who have not had it yet.\n\n`
+            + `${already} of ${count} already received it, and are not mailed again.`
+          : `to all ${count} active subscriber${count === 1 ? '' : 's'} right now.`;
       const ok = confirm(
-        `Send “${title}”\n\nto all ${count} active subscriber${count === 1 ? '' : 's'} right now?\n\n`
+        `Send “${title}”\n\n${scope}\n\n`
         + 'This is the real list, and it cannot be recalled.\n\n'
         + 'You do not need this button: scheduled letters send themselves on their send date. '
         + 'Use the test send if you only want to see the letter.',
