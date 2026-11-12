@@ -1,4 +1,4 @@
-import { withSchema } from './db';
+import { withSchema, type Db } from './db';
 import { sendMail, smtpConfigured, transporter, type Transport } from './email';
 import { composePair, LIKE_PLACEHOLDER, paintLetter, type Slot } from './newsletter';
 import { identityHash } from './identity';
@@ -35,6 +35,29 @@ export const STALE_SENDING_MS = 15 * 60 * 1000;
  * in one morning. Older than this and the letter waits for a human.
  */
 export const MAX_AUTO_OVERDUE_DAYS = 14;
+
+/**
+ * Write progress onto the queue item every N deliveries. An invocation killed by
+ * the function timeout never reaches the status update at the end, and the row
+ * then sits there saying "queued" with no note at all — half the list holding
+ * the letter, the other half waiting, and nothing on the dashboard saying so.
+ */
+export const PROGRESS_EVERY = 5;
+
+async function markProgress(db: Db, id: number) {
+  try {
+    const rows = await db`
+      SELECT count(*)::int AS n FROM send_log WHERE queue_id = ${id} AND status = 'sent'
+    ` as { n: number }[];
+    const delivered = Number(rows[0]?.n ?? 0);
+    await db`
+      UPDATE queue_items SET error = ${`sending… ${delivered} delivered so far`}
+      WHERE id = ${id} AND status <> 'sent'
+    `;
+  } catch {
+    // A progress line is a nicety; it must never stop a send.
+  }
+}
 
 type Item = Record<string, any>;
 type Letter = { html: string; text: string; subject: string; slug: string };
@@ -324,6 +347,7 @@ export async function sendQueueItem(
         sent += 1;
         refused = 0;
         await db`UPDATE send_log SET status = 'sent', updated_at = now() WHERE id = ${claimId}`;
+        if (sent % PROGRESS_EVERY === 0) await markProgress(db, id);
       } catch (err) {
         failed += 1;
         const message = err instanceof Error ? err.message : String(err);

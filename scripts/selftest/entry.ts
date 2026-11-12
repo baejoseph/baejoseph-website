@@ -612,6 +612,9 @@ check('unsubscribed is counted across the whole list, not one page', Number(stat
 check('stats are never cached', /no-store/.test(statsRes.headers.get('cache-control') || ''), String(statsRes.headers.get('cache-control')));
 const queueRes = await queueGet(ctx(await adminReq('GET')));
 check('the queue is never cached either', /no-store/.test(queueRes.headers.get('cache-control') || ''), String(queueRes.headers.get('cache-control')));
+const queueBody = await queueRes.json();
+const activeRow = await db`SELECT count(*)::int AS n FROM subscribers WHERE unsubscribed_at IS NULL AND suppressed_at IS NULL`;
+check('the queue says how many people a letter should reach', Number(queueBody.active) === Number(activeRow[0].n), `${queueBody.active} vs ${activeRow[0].n}`);
 
 section('25. a forgotten letter is not resurrected automatically');
 const ancient = await addItem('pooled', 'tuesday_featured', '2026-01-06');

@@ -25,6 +25,9 @@ pnpm-debug.log*
 # generated email bodies (large, derived from src/content/blog on every build)
 src/lib/email-bodies.json
 
+# local ops shell with a way in to the production database — never commit this
+scripts/db-local.mjs
+
 # jetbrains setting folder
 .idea/
 .vercel/

@@ -39,7 +39,14 @@ export const GET: APIRoute = async ({ request }) => {
     ORDER BY q.send_on DESC, q.slot ASC
     LIMIT 80
   `;
-  return json({ items });
+  // How many people should receive a letter. Without it the dashboard can only
+  // say "queued", never "13 of 28 got it", which is the difference between a
+  // letter that is waiting and one that half went out.
+  const active = await db`
+    SELECT count(*)::int AS n FROM subscribers
+    WHERE unsubscribed_at IS NULL AND suppressed_at IS NULL
+  ` as { n: number }[];
+  return json({ items, active: Number(active[0]?.n ?? 0) });
 };
 
 export const POST: APIRoute = async ({ request }) => {

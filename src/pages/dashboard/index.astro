@@ -342,6 +342,7 @@ up the next morning.</pre>
     });
 
     let queueItems = [];
+    let activeSubs = 0;
     let welcomeTpl = null;
     let welcomeKo = null;
     let selectedId = 'welcome';
@@ -432,13 +433,18 @@ up the next morning.</pre>
       // For anything already sent, the letter format is history, not a to-do.
       const modePill = mode ? `<span class="pill">${it.status === 'queued' ? mode : `sent as ${mode}`}</span>` : '';
       const sentPill = it.status !== 'queued' && delivered ? `<span class="pill">✓ ${delivered} delivered</span>` : '';
+      // A queued letter that already reached some people is a half-send, not a
+      // waiting one. Say the count, or the row looks untouched when it is not.
+      const halfSent = it.status === 'queued' && activeSubs && delivered > 0 && delivered < activeSubs
+        ? ` <span class="pill">${delivered} of ${activeSubs} sent</span>`
+        : '';
       const progress = it.status === 'queued' && it.error
         ? `<br /><small class="muted">${esc(it.error)}</small>`
         : '';
       return `<tr>
         <td>${esc(String(it.send_on).slice(0,10))}</td>
         <td>${pair}</td>
-        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${modePill}${sentPill}${likes ? ` <span class="pill">♥ ${likes}</span>` : ''}${progress}</td>
+        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${modePill}${sentPill}${halfSent}${likes ? ` <span class="pill">♥ ${likes}</span>` : ''}${progress}</td>
         <td>${actions}</td>
       </tr>`;
     }
@@ -464,6 +470,7 @@ up the next morning.</pre>
         return;
       }
       queueItems = data.items || [];
+      activeSubs = Number(data.active || 0);
       const tue = queueItems.filter(i => i.slot === 'tuesday_featured');
       const fri = queueItems.filter(i => i.slot === 'friday_new');
       const queued = queueItems.filter(i => i.status === 'queued');
