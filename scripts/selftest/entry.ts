@@ -654,6 +654,13 @@ check('everyone behind it still got the letter', sinkSilent.deliveries.length ==
 check('the letter still finished', silentRow[0].status === 'sent', JSON.stringify(silentRow[0]));
 check('and says one reader could not be reached', /could not be delivered/i.test(String(silentRow[0].error)), String(silentRow[0].error));
 check('the whole thing took seconds, not minutes', silentSeconds < 30, `${silentSeconds}s`);
+const qSilent = await (await queueGet(ctx(await adminReq('GET')))).json();
+const rowSilent = (qSilent.items || []).find((i: { id: number }) => Number(i.id) === itemSilent);
+check('the row is told how many arrived and how many did not',
+  Number(rowSilent?.delivered) === reachable && Number(rowSilent?.delivery_failed) === 1,
+  JSON.stringify(rowSilent && { status: rowSilent.status, delivered: rowSilent.delivered, failed: rowSilent.delivery_failed }));
+check('and the note on the row names both numbers',
+  new RegExp(`${reachable} delivered, 1 could not be delivered`).test(String(rowSilent?.error)), String(rowSilent?.error));
 process.env.SMTP_PORT = '2525';
 await sinkSilent.close();
 

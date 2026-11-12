@@ -98,6 +98,7 @@ const nextFri = nextWeekday(today, 5);
     button.danger { background: transparent; border: 1px solid #7f1d1d; color: #fca5a5; }
     .ok { color: #86efac; } .bad { color: #fca5a5; }
     .pill { display: inline-block; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.1rem 0.4rem; border-radius: 4px; border: 1px solid #333; color: #a5b4fc; }
+    .pill.warn { border-color: #7c2d12; color: #fdba74; }
     .qgrid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
     .qcol { background: #111; border: 1px solid #222; border-radius: 12px; padding: 1rem; }
     .qcol h3 { margin: 0 0 0.75rem; font-size: 0.95rem; }
@@ -438,13 +439,17 @@ up the next morning.</pre>
       const halfSent = it.status === 'queued' && activeSubs && delivered > 0 && delivered < activeSubs
         ? ` <span class="pill">${delivered} of ${activeSubs} sent</span>`
         : '';
-      const progress = it.status === 'queued' && it.error
+      // A sent letter that missed someone must say so on its own row. The count
+      // came back from the queue API all along; the row just never showed it.
+      const failedCount = Number(it.delivery_failed || 0);
+      const failPill = failedCount > 0 ? ` <span class="pill warn">⚠ ${failedCount} failed</span>` : '';
+      const progress = it.error
         ? `<br /><small class="muted">${esc(it.error)}</small>`
         : '';
       return `<tr>
         <td>${esc(String(it.send_on).slice(0,10))}</td>
         <td>${pair}</td>
-        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${modePill}${sentPill}${halfSent}${likes ? ` <span class="pill">♥ ${likes}</span>` : ''}${progress}</td>
+        <td><span class="pill">${esc(it.status)}</span>${it.html_ko ? ' <span class="pill">EN+KO</span>' : ''}${modePill}${sentPill}${failPill}${halfSent}${likes ? ` <span class="pill">♥ ${likes}</span>` : ''}${progress}</td>
         <td>${actions}</td>
       </tr>`;
     }

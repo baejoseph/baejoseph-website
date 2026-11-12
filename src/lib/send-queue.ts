@@ -426,10 +426,10 @@ export async function sendQueueItem(
   const note = stopReason
     ? `stopped: the mail server refused ${refused} in a row — ${stopReason}`
     : timedOut
-      ? `stopped at the time limit after ${totalSent} — ${remaining} still to send. The next run carries on from here.`
+      ? `stopped at the time limit: ${totalSent} delivered, ${remaining} still to send. The next run carries on from here.`
       : remaining > 0
-        ? `partial: ${totalSent} sent, ${totalFailed} failed, ${remaining} still to send`
-        : (totalFailed > 0 ? `${totalSent} sent, ${totalFailed} could not be delivered` : null);
+        ? `partial: ${totalSent} delivered, ${totalFailed} failed, ${remaining} still to send`
+        : (totalFailed > 0 ? `${totalSent} delivered, ${totalFailed} could not be delivered` : null);
   await db`
     UPDATE queue_items SET
       status = ${status},
