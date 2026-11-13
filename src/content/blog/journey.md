@@ -49,6 +49,7 @@ What might explain this resurgence? **[Derek Prince](/fasting)** offers what str
 > “Then I will give you the rain for your land in its season, the **early rain** and the **latter rain**, that you may gather in your grain, your new wine, and your oil.”
 > 
 > Deuteronomy 11:14
+
 > “Be glad then, you children of Zion, And rejoice in the Lord your God; For He has given you the **former rain** faithfully, And He will cause the rain to come down for you— The **former rain**, And the **latter rain** in the first month.”
 > 
 > Joel 2:23
@@ -74,10 +75,12 @@ The 1948 rebirth of Israel signals the onset of the “[end of the end times](/e
 > “There will again be the form of **a body politic**; **a state shall be incorporated** and a king shall reign.”
 > 
 > Charles Spurgeon, 1855 sermon
+
 > “The Jews will be **gathered again as a separate nation**, restored to their own land, and converted to Christ.”
 > 
 > J.C. Ryle, _**Coming Events and Present Duties**_
-> “The Jews shall **return to their own land in unbelief**.. then the judgments shall fall, preparing them for the Messiah.”
+
+> “The Jews shall **return to their own land in unbelief**… then the judgments shall fall, preparing them for the Messiah.”
 > 
 > Horatius Bonar, _**Prophetical Landmarks**_
 
