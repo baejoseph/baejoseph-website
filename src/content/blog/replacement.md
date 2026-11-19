@@ -8,13 +8,13 @@ featuredImage: "/assets/replacement.jpg"
 tags: ["eschatology", "leftism", "israel", "theology"]
 ---
 
-In September last year I sat down to trace [the road my theology had taken](/journey), and it came down to two events in the twentieth century.
+There are two events in the twentieth century that I cannot read apart.
 
 The first was rain. From Wales in 1904 to Azusa Street in 1906 to Pyongyang in 1907, the **latter rain** fell on a church that had not seen its like for centuries — tongues, healings, signs, the Book of Acts breaking out again in tin-roofed halls and coal-mining chapels.
 
 The second was a nation. On 14 May 1948, **Israel was born in a day**, exactly as Isaiah said a country would be.
 
-For years I kept those two in separate pockets: revival in one, prophecy in the other. Then I read Norman Grubb’s life of **Rees Howells**, and found they were never separate at all. They were one move of God, seen from two ends.
+These are not two moves of God. They are one move, seen from two ends: the Spirit who fell on Wales and Azusa and Pyongyang is the Spirit who prayed a nation back into its land. That is the argument of [my journey of faith](/journey), and the life of **Rees Howells** is where it stops being an argument and becomes a diary.
 
 ## The bridge
 
@@ -34,7 +34,7 @@ The college called that day **“one of the greatest days for the Holy Ghost in 
 
 Not one of the greatest days for politics. For the Holy Ghost. They knew what they had been praying to.
 
-So the same Spirit who fell in the coal mines of Wales in 1904 and on Azusa Street in 1906 prayed a nation back into existence in 1947. **The revival and the restoration were the same breath.** That is what I missed for years: the outpouring and the fig tree are one move with two halves, and the men carrying the first half were praying for the second.
+So the same Spirit who fell in the coal mines of Wales in 1904 and on Azusa Street in 1906 prayed a nation back into existence in 1947. **The revival and the restoration were the same breath.** The outpouring and the fig tree are one move with two halves, and the men carrying the first half were praying for the second.
 
 ## The other move
 
@@ -95,21 +95,33 @@ So the enemy’s arithmetic writes itself. **No Israel, no welcome. No welcome, 
 
 **_Elimination or erasure — those are his only two doors._** If either one turns the lock, he has won the age. That is why antisemitism is not merely an ethnic prejudice but **a deeply spiritual phenomenon**. It is not hatred of a people; it is an attempt on the return of the King.
 
-> “Therefore rejoice, O heavens, and you who dwell in them! Woe to the inhabitants of the earth and the sea! For the devil has come down to you, having great wrath, because he knows that his time is short.”
->
-> Revelation 12:12, NKJV
+But both of his doors are bolted from the other side, and Paul is the man who shows us the bolts.
 
-He knows. **His days are numbered, and he knows the number.** That is what makes him furious, and it is what makes him careless.
+> “I say then, has God cast away His people? Certainly not! For I also am an Israelite, of the seed of Abraham, of the tribe of Benjamin. God has not cast away His people whom He foreknew.”
+>
+> Romans 11:1–2, NKJV
+
+That one sentence is the funeral of Replacement Theology. If God has not cast away His people, then no council, no reformer and no pulpit has the authority to do it for Him. And Paul does not leave it there:
+
+> “For I do not desire, brethren, that you should be ignorant of this mystery, lest you should be wise in your own opinion, that blindness in part has happened to Israel until the fullness of the Gentiles has come in. And so all Israel will be saved, as it is written: ‘The Deliverer will come out of Zion, and He will turn away ungodliness from Jacob.’”
+>
+> Romans 11:25–26, NKJV
+
+**Until.** That word is a deadline, and the devil reads the same Bible we do. He is not trying to win the argument; he is trying to arrive before the door opens. **His days are numbered, and he knows the number.** That is what makes him furious, and it is what makes him careless.
 
 ## Watch
 
-[The fig tree is in leaf](/end3). The rain is still falling. And **the lock the enemy is trying to break** has been in the land for **seventy-eight years**.
+[The fig tree is in leaf](/end3). The rain is still falling. And **the lock the enemy is trying to break** has been in the land for **seventy-eight years**, with the covenants, the promises and the calling still hanging on it:
 
-> “For the gifts and the calling of God are irrevocable.”
+> “Concerning the gospel they are enemies for your sake, but concerning the election they are beloved for the sake of the fathers. For the gifts and the calling of God are irrevocable.”
 >
-> Romans 11:29, NKJV
+> Romans 11:28–29, NKJV
 
-**We are not spectators in this. We are the watchmen.** The church that prays for the peace of Jerusalem is not being sentimental about a foreign country; it is praying for the return of her King. So stay awake. Read the prophets. Pray for the Jews — not as a policy, but as a people God has not finished with.
+**We are not spectators in this. We are the watchmen.** The church that prays for the peace of Jerusalem is not being sentimental about a foreign country; it is praying for the return of her King. So stay awake. Read the prophets. Pray for the Jews — not as a policy, but as a people God has not finished with. Paul prayed it before us:
+
+> “Brethren, my heart’s desire and prayer to God for Israel is that they may be saved.”
+>
+> Romans 10:1, NKJV
 
 **He is not late. He is not blocked.** He is coming, and He has told us what has to be said first.
 
