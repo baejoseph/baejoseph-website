@@ -129,7 +129,7 @@ That one sentence is the funeral of Replacement Theology. If God has not cast aw
 >
 > Romans 11:25–26, NKJV
 
-**Until.** That word is a deadline, and the devil reads the same Bible we do. He is not trying to win the argument; he is trying to arrive before the door opens. **His days are numbered, and he knows the number.** That is what makes him furious, and it is what makes him careless.
+**Until.** That word is a deadline, and the devil reads the same Bible we do. He is not trying to win the argument; he is trying to arrive before the door opens. **His days are numbered, and that is what makes him furious.**
 
 ## The twist
 
