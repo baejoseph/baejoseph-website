@@ -8,13 +8,13 @@ featuredImage: "/assets/replacement.jpg"
 tags: ["eschatology", "leftism", "israel", "theology"]
 ---
 
-There are two events in the twentieth century that I cannot read apart.
+In [my article on my faith journey so far](/journey), I argued that every Bible-believing Christian must acknowledge the two decisive movements of God in the twentieth century.
 
-The first was rain. From Wales in 1904 to Azusa Street in 1906 to Pyongyang in 1907, the **latter rain** fell on a church that had not seen its like for centuries — tongues, healings, signs, the Book of Acts breaking out again in tin-roofed halls and coal-mining chapels.
+The first was the **outpouring of the Holy Spirit**: not a doctrine but a happening, supernatural and tangible at once. From Wales in 1904 to Azusa Street in 1906 to Pyongyang in 1907, the **latter rain** fell on a church that had not seen its like for centuries — tongues, healings, signs, the Book of Acts breaking out again in tin-roofed halls and coal-mining chapels.
 
 The second was a nation. On 14 May 1948, **Israel was born in a day**, exactly as Isaiah said a country would be.
 
-These are not two moves of God. They are one move, seen from two ends: the Spirit who fell on Wales and Azusa and Pyongyang is the Spirit who prayed a nation back into its land. That is the argument of [my journey of faith](/journey), and the life of **Rees Howells** is where it stops being an argument and becomes a diary.
+These are not two moves of God. They are one move, seen from two ends: the Spirit who fell on Wales and Azusa and Pyongyang is the Spirit who prayed a nation back into its land. That is the argument I made there, and the life of **Rees Howells** is where it stops being an argument and becomes a diary.
 
 ## The bridge
 
@@ -44,13 +44,21 @@ So the same Spirit who fell in the coal mines of Wales in 1904 and on Azusa Stre
 
 ## The other move
 
-Here is the verse I cannot get past:
+Here is a verse many Christians do not even know is in the Bible:
 
 > “We know that we are of God, and that **the whole world lies in the power of the evil one**.”
 >
 > 1 John 5:19, NASB
 
 **The world — not a corner of it.** Thrones, markets, universities, screens, the air people breathe. John does not say it lies under judgement yet. It lies in his power now.
+
+The wilderness proves it. The devil took Jesus up on an exceedingly high mountain, showed Him all the kingdoms of the world and their glory, and put them on the table:
+
+> “All these things I will give You if You will fall down and worship me.”
+>
+> Matthew 4:8–9, NKJV
+
+**He could make that offer because the world was his to give.** No creature offers what he does not hold. Those kingdoms were his by legal right — **Adam’s dominion, forfeited at the Fall and handed over with it**. And Jesus did not argue the claim. **He refused the price.**
 
 So if God moved twice in the last century, ask the obvious question: did the evil one stand still? **If the two moves of God were really one, the two moves of Satan are one as well.** And both of them are aimed at a single target.
 
