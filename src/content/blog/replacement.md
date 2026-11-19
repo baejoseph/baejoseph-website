@@ -18,7 +18,7 @@ These are not two moves of God. They are one move, seen from two ends: the Spiri
 
 ## The bridge
 
-Rees Howells (1879–1950) was a Welsh miner who was caught up in the **Welsh Revival** and never got over it. He learned to pray with persistence, and he learned to pray the way Nehemiah prayed — by reminding God of what God had already promised. It is the most powerful prayer we have: **not a new argument, but God’s own word handed back to Him.**
+Rees Howells (1879–1950) was a Welsh miner. **The fire he received in the Welsh Revival became the flame in the engine room of his prayer for all nations.** He learned to pray with persistence, and he learned to pray the way Nehemiah prayed — by reminding God of what God had already promised. It is the most powerful prayer we have: **not a new argument, but God’s own word handed back to Him.**
 
 > “Remember, I pray, the word that You commanded Your servant Moses, saying, ‘If you are unfaithful, I will scatter you among the nations; but if you return to Me, and keep My commandments and do them, though some of your outcasts are in the uttermost parts of heaven, from there I will gather them and bring them to the place which I have chosen to make My name dwell there.’”
 >
