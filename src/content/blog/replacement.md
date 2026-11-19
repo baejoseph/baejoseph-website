@@ -18,7 +18,7 @@ These are not two moves of God. They are one move, seen from two ends: the Spiri
 
 ## The bridge
 
-Rees Howells (1879–1950) was a Welsh miner. **The fire he received in the Welsh Revival became the flame in the engine room of his prayer for all nations.** He learned to pray with persistence, and he learned to pray the way Nehemiah prayed — by reminding God of what God had already promised. It is the most powerful prayer we have: **not a new argument, but God’s own word handed back to Him.**
+Rees Howells (1879–1950) was a Welsh miner. **The fire he received in the Welsh Revival became the flame in the engine room of his prayer for all nations.** He learned to pray with persistence, and he learned to pray the way Nehemiah prayed — by reminding God of what God had already [promised](/promises). It is the most powerful prayer we have: **not a new argument, but God’s own word handed back to Him.**
 
 > “Remember, I pray, the word that You commanded Your servant Moses, saying, ‘If you are unfaithful, I will scatter you among the nations; but if you return to Me, and keep My commandments and do them, though some of your outcasts are in the uttermost parts of heaven, from there I will gather them and bring them to the place which I have chosen to make My name dwell there.’”
 >
@@ -99,7 +99,15 @@ Jesus tied His second coming to a word spoken by Jerusalem. Not to the church’
 
 So the enemy’s arithmetic writes itself. **No Israel, no welcome. No welcome, no return.** No return, no [throne of David](/throne-of-david), no Millennial Kingdom — and the usurper keeps the world he already holds.
 
-**_Elimination or erasure — those are his only two doors._** If either one breaks the lock, he has won the age. That is why antisemitism is not merely an ethnic prejudice but **a deeply spiritual phenomenon**. It is not hatred of a people; it is an attempt to stop the return of the King.
+Now look at his two moves and ask what they are for. **The sword would take the Jews off the earth; the doctrine would take them out of the story.** **Either way the people of God are gone** — and that is the whole point. **_Satan cannot reach the throne, so he goes for the nation standing in front of it._**
+
+Two things drive him. First, they are the people God has bound His own name to:
+
+> “For thus says the Lord of hosts: ‘He sent Me after glory, to the nations which plunder you; for he who touches you touches the apple of His eye.’”
+>
+> Zechariah 2:8, NKJV
+
+So hurting them is how he gets back at God, by going for the very thing God treasures. Second, they are the lock on the door of Christ’s return: **remove the people and you remove the welcome, and the King has no nation to come back to.** That is why antisemitism is not merely an ethnic prejudice but **a deeply spiritual phenomenon**. It is not hatred of a people for its own sake; it is an attempt to stop the return of the King.
 
 But both of his doors are bolted from the other side, and Paul shows us the bolts.
 
