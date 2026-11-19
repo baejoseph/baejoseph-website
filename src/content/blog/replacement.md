@@ -109,6 +109,30 @@ That one sentence is the funeral of Replacement Theology. If God has not cast aw
 
 **Until.** That word is a deadline, and the devil reads the same Bible we do. He is not trying to win the argument; he is trying to arrive before the door opens. **His days are numbered, and he knows the number.** That is what makes him furious, and it is what makes him careless.
 
+## The twist
+
+Now the part that turns all of this into confidence rather than dread.
+
+**Nothing the enemy does escapes God’s permission, and nothing he wins is outside God’s plan.** Joseph said it to the brothers who had sold him:
+
+> “But as for you, you meant evil against me; but God meant it for good, in order to bring it about as it is this day, to save many people alive.”
+>
+> Genesis 50:20, NKJV
+
+The cross is the pattern. The worst thing men have ever done — the murder of God — was the thing God had determined beforehand to do for us. Wicked hands and a settled purpose, in the same act.
+
+So look at 1948 and tell me the devil was winning. Theodor Herzl had been arguing for a Jewish state since 1896, and for fifty years the world treated him as a crank with a pamphlet. Then came the camps. Six million murdered, and with them the last shred of the world’s confidence in its own civilisation. **Humanly speaking, without the Holocaust there is no vote on 29 November 1947.** The nations that had turned refugee ships away could not afterwards vote no. The state was born out of ashes the enemy made, which means **his masterpiece was the seedbed of the fig tree**. He meant it for evil. God meant it for good, and the good was a nation.
+
+The Red-Green alliance will be the same. It is the clearest precursor we have to **the Man of Sin** and his world government — one system, one authority, one demanded worship, a world already trained to call it peace. And it is also the pressure that will finally do what two thousand years of preaching has not. Zechariah says God will pour on Jerusalem a spirit of grace and supplication, and they will look on Him whom they pierced. **The siege becomes the summons. The noose becomes the door.**
+
+That is why we pray and intercede and cry out to God for His people with not one ounce of despair. **Our God is the God of Romans 8:28**:
+
+> “And we know that all things work together for good to those who love God, to those who are the called according to His purpose.”
+>
+> Romans 8:28, NKJV
+
+**The devil is not the author of this story.** He is a character in it, and he is being written into an ending he did not choose.
+
 ## Watch
 
 [The fig tree is in leaf](/end3). The rain is still falling. And **the lock the enemy is trying to break** has been in the land for **seventy-eight years**, with the covenants, the promises and the calling still hanging on it:
