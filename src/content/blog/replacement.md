@@ -18,13 +18,19 @@ These are not two moves of God. They are one move, seen from two ends: the Spiri
 
 ## The bridge
 
-Rees Howells (1879–1950) was a Welsh miner who was caught up in the **Welsh Revival** and never got over it. He learned to pray as a man under contract — not asking God for things, but standing in the gap until heaven answered. In 1924 he founded the **Bible College of Wales** in Swansea, and the college became **a house of intercession**: Hitler, Mussolini, the Ethiopian emperor, the whole map of the war, prayed over one crisis at a time.
+Rees Howells (1879–1950) was a Welsh miner who was caught up in the **Welsh Revival** and never got over it. He learned to pray with persistence, and he learned to pray the way Nehemiah prayed — by reminding God of what God had already promised. It is the most powerful prayer we have: **not a new argument, but God’s own word handed back to Him.**
+
+> “Remember, I pray, the word that You commanded Your servant Moses, saying, ‘If you are unfaithful, I will scatter you among the nations; but if you return to Me, and keep My commandments and do them, though some of your outcasts are in the uttermost parts of heaven, from there I will gather them and bring them to the place which I have chosen to make My name dwell there.’”
+>
+> Nehemiah 1:8–9, NKJV
+
+In 1924 he founded the **Bible College of Wales** in Swansea, and the college became **a house of prayer**: Hitler, Mussolini, the Ethiopian emperor, the whole map of the war, prayed over one crisis at a time.
 
 Then, in October and November 1947, the burden changed. Students laid down their missionary calls and stayed to pray for one thing: **the return of the Jews to the land**. Howells wrote in his diary:
 
 > “We pleaded that because of His covenant with Abraham 4,000 years ago, God would take His people back to their land.”
 
-They were not praying a sentiment. **They were reminding God of a promise**, in the way a man reminds a judge of a signed document.
+They were not praying a sentiment. **They were reminding God of a promise**, which is the prayer of Nehemiah — **not a new request, but an old word held up before God.**
 
 On the night of the vote, one of the students later recalled, they saw **the angels of God around the UN building** and knew that no delegation could thwart the plan of God for His own people.
 
@@ -50,7 +56,7 @@ So if God moved twice in the last century, ask the obvious question: did the evi
 
 ## First: red and green
 
-The first is the marriage we now call **Red-Green**.
+The first is the alliance we now call **Red-Green**.
 
 The Red is the post-modern liberal neo-Marxism that lost the factory floor and took the faculty instead: **the long march through the institutions**, one at a time — universities, then media, then civil service, then police, then the church. I have written about [why Christians must reject Leftism](/leftism), and about how [multiculturalism](/multiculturalism) became its delivery vehicle. The mechanism matters less than the fact that the march is finished.
 
@@ -58,13 +64,13 @@ The Green is Islam: **fourteen centuries of conquest jihad**, from Arabia into E
 
 The two should despise each other. One is materialist, the other theological; one wants the sexual revolution, the other wants the veil. Yet they march together, and they always have. The prototype came in **Iran in 1979**: the left supplied the strikes, the students, the slogans and the world’s sympathy, and the mosque supplied the crowd. Khomeini let them carry the revolution and then hanged them from the cranes. [I have written about where that regime is heading](/iran).
 
-Why do they cohere? Because they hate the same three things: **the God of Israel, the nation-state, and the family.**
+So why does this alliance hold? Because they hate the same three things: **the God of Israel, the nation-state, and the family.**
 
 ## Second: the replacement
 
 The second move is quieter, and it is inside the house.
 
-**Replacement Theology** — the doctrine that **the church has replaced Israel**, that **the promises to Abraham now belong to us**, that the Jews are a discarded draft of a cancelled plan. It did not arrive last week. Origen allegorised the literal Israel away. Augustine built the city of God on the ruin of the earthly one. Luther, for all his recovery of justification, carried the same eraser into the Reformation and wrote it into a 1543 tract the Nazis would later quote with relish.
+**Replacement Theology** — the doctrine that **the church has replaced Israel**, that **the promises to Abraham now belong to us**, that the Jews are a discarded draft of a cancelled plan. It did not arrive last week. Origen allegorised the literal Israel away. Augustine built the city of God on the ruin of the earthly one. Luther, for all his recovery of justification, carried the same eraser into the Reformation and wrote it into a 1543 tract that the Nazis would later quote.
 
 **From Augustine to Auschwitz.** That is not rhetoric; it is a road. A doctrine that told Europe for **fifteen hundred years** that God was finished with the Jews prepared the ground for a century that decided to finish them. The gas chambers were not built by theologians. They were built by a civilisation the theologians had taught to despise the people of the promise.
 
@@ -93,9 +99,9 @@ Jesus tied His second coming to a word spoken by Jerusalem. Not to the church’
 
 So the enemy’s arithmetic writes itself. **No Israel, no welcome. No welcome, no return.** No return, no [throne of David](/throne-of-david), no Millennial Kingdom — and the usurper keeps the world he already holds.
 
-**_Elimination or erasure — those are his only two doors._** If either one turns the lock, he has won the age. That is why antisemitism is not merely an ethnic prejudice but **a deeply spiritual phenomenon**. It is not hatred of a people; it is an attempt on the return of the King.
+**_Elimination or erasure — those are his only two doors._** If either one breaks the lock, he has won the age. That is why antisemitism is not merely an ethnic prejudice but **a deeply spiritual phenomenon**. It is not hatred of a people; it is an attempt to stop the return of the King.
 
-But both of his doors are bolted from the other side, and Paul is the man who shows us the bolts.
+But both of his doors are bolted from the other side, and Paul shows us the bolts.
 
 > “I say then, has God cast away His people? Certainly not! For I also am an Israelite, of the seed of Abraham, of the tribe of Benjamin. God has not cast away His people whom He foreknew.”
 >
@@ -121,9 +127,9 @@ Now the part that turns all of this into confidence rather than dread.
 
 The cross is the pattern. The worst thing men have ever done — the murder of God — was the thing God had determined beforehand to do for us. Wicked hands and a settled purpose, in the same act.
 
-So look at 1948 and tell me the devil was winning. Theodor Herzl had been arguing for a Jewish state since 1896, and for fifty years the world treated him as a crank with a pamphlet. Then came the camps. Six million murdered, and with them the last shred of the world’s confidence in its own civilisation. **Humanly speaking, without the Holocaust there is no vote on 29 November 1947.** The nations that had turned refugee ships away could not afterwards vote no. The state was born out of ashes the enemy made, which means **his masterpiece was the seedbed of the fig tree**. He meant it for evil. God meant it for good, and the good was a nation.
+So look at 1948 and tell me the devil was winning. Theodor Herzl had been arguing for a Jewish state since 1896, and for fifty years the world treated him as a crank with a pamphlet. Then came the camps. Six million murdered, and with them the last shred of the world’s confidence in its own civilisation. **Humanly speaking, without the Holocaust there is no vote on 29 November 1947.** The nations that had turned refugee ships away could not afterwards vote no. The state was born out of ashes the enemy made. **He meant it for evil; God meant it for good, and the good was a nation.**
 
-The Red-Green alliance will be the same. It is the clearest precursor we have to **the Man of Sin** and his world government — one system, one authority, one demanded worship, a world already trained to call it peace. And it is also the pressure that will finally do what two thousand years of preaching has not. Zechariah says God will pour on Jerusalem a spirit of grace and supplication, and they will look on Him whom they pierced. **The siege becomes the summons. The noose becomes the door.**
+The Red-Green alliance will be the same. It is the clearest precursor we have to **the Man of Sin** and his world government — one system, one authority, one demanded worship, a world already trained to call it peace. And it is also the pressure that will finally do what two thousand years of preaching has not. Zechariah says God will pour on Jerusalem a spirit of grace and supplication, and they will look on Him whom they pierced. **The siege becomes the summons. The pressure becomes the prayer.**
 
 That is why we pray and intercede and cry out to God for His people with not one ounce of despair. **Our God is the God of Romans 8:28**:
 
@@ -135,7 +141,7 @@ That is why we pray and intercede and cry out to God for His people with not one
 
 ## Watch
 
-[The fig tree is in leaf](/end3). The rain is still falling. And **the lock the enemy is trying to break** has been in the land for **seventy-eight years**, with the covenants, the promises and the calling still hanging on it:
+[The fig tree is in leaf](/end3). The rain is still falling. And **the lock the enemy is trying to break** has been in the land for **seventy-eight years**, with the covenants, the promises and the calling still attached to it:
 
 > “Concerning the gospel they are enemies for your sake, but concerning the election they are beloved for the sake of the fathers. For the gifts and the calling of God are irrevocable.”
 >
