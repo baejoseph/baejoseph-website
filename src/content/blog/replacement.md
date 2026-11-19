@@ -26,6 +26,8 @@ Then, in October and November 1947, the burden changed. Students laid down their
 
 They were not praying a sentiment. **They were reminding God of a promise**, in the way a man reminds a judge of a signed document.
 
+On the night of the vote, one of the students later recalled, they saw **the angels of God around the UN building** and knew that no delegation could thwart the plan of God for His own people.
+
 On **29 November 1947** the United Nations voted. **Thirty-three for, thirteen against, ten abstentions** — and among the thirty-three were the United States, the Soviet Union, Poland and Czechoslovakia. It is one of the very few moments in the whole Cold War when Washington and Moscow wanted the same thing.
 
 The college called that day **“one of the greatest days for the Holy Ghost in the history of these 2,000 years.”**
