@@ -67,7 +67,7 @@ In a word, Beethoven lived a truly magnificent life. His life’s testimony is a
 > 
 > Fanny Crosby (1873)
 
-## **Learning the Secret of** **_Conatus_**
+## Learning the Secret of _Conatus_
 
 Pastor Ko, who has mastered the classical Western canon of philosophy and literature, clearly distinguishes between the “human condition in the state of original sin” and the “human condition as a new creation, transformed through the work of the Holy Spirit.” He even brought in German terms like _Das Sein_, _Das Seiende_, and _Da Sein_ to elaborate on these ideas. However, as a “techie nerd” who majored in physics, I must admit that I found this part a bit challenging to grasp. Nonetheless, there was one key insight that I gained from this part of the lecture: it was Spinoza’s concept of _Conatus_.
 
@@ -113,7 +113,7 @@ As I was reflecting on the incredible teachings and love experienced at Jesus Ac
 
 > _“Then Paul dwelt two whole years in his own **mansion** and received all who came to him, preaching the kingdom of God and teaching the things which concern the Lord Jesus Christ with all confidence, no one forbidding him.”_
 > 
-> **Acts 28:30-31**
+> **Acts 28:30–31**
 
 After experiencing Jesus Academia in Pastor Ko’s beautiful home in Long Island, my wife and I were also inspired by a vision. We hope to establish a space like “Jesus Academy London,” where we can welcome all who come to us, preach the Kingdom of God, and boldly teach all things concerning our Lord Jesus Christ while raising disciples.
 
