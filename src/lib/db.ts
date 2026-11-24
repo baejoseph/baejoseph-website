@@ -15,7 +15,7 @@ export type Db = ReturnType<typeof sql>;
  * start can skip ~20 round trips to Neon and just check one row.
  * /api/setup forces the full run regardless (dashboard → "Create / migrate tables").
  */
-const SCHEMA_VERSION = 'v2026-11-24-signup-forensics';
+const SCHEMA_VERSION = 'v2026-11-24-signup-blacklist';
 
 let schemaReady: Promise<void> | null = null;
 
@@ -80,6 +80,31 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
   await db`ALTER TABLE signup_events ADD COLUMN IF NOT EXISTS user_agent TEXT`;
   await db`ALTER TABLE signup_events ADD COLUMN IF NOT EXISTS referer TEXT`;
   await db`ALTER TABLE signup_events ADD COLUMN IF NOT EXISTS ip_hash TEXT`;
+
+  // Addresses that must never join the list again. Checked before the rate
+  // limiter, so a blocked caller is answered exactly like a successful signup
+  // and never learns there is a list of them. `hits` counts the attempts that
+  // were turned away, which is how a dead campaign shows up on the dashboard.
+  await db`CREATE TABLE IF NOT EXISTS signup_blacklist (
+    email TEXT PRIMARY KEY,
+    reason TEXT,
+    hits INTEGER NOT NULL DEFAULT 0,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    last_seen_at TIMESTAMPTZ
+  )`;
+  // Every signup the API refused, with why: blacklisted, or posted without the
+  // page path the site's own form always sends. Kept separate from
+  // signup_events so blocked attempts never inflate the real signup numbers.
+  await db`CREATE TABLE IF NOT EXISTS blocked_signups (
+    id SERIAL PRIMARY KEY,
+    email TEXT NOT NULL,
+    reason TEXT NOT NULL,
+    path TEXT,
+    user_agent TEXT,
+    ip_hash TEXT,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+  )`;
+  await db`CREATE INDEX IF NOT EXISTS blocked_signups_created_idx ON blocked_signups (created_at)`;
   await db`CREATE TABLE IF NOT EXISTS queue_items (
     id SERIAL PRIMARY KEY,
     slot TEXT NOT NULL,

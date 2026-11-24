@@ -12,9 +12,26 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 /** Per address: enough room for a shared connection, not enough to mailbomb the list. */
 const IP_LIMIT = 5;
 const IP_WINDOW = 60 * 60;
-/** Circuit breaker: protects the Hostinger mailbox's reputation if a bot storm arrives. */
-const GLOBAL_LIMIT = 200;
+/**
+ * Circuit breaker: protects the Hostinger mailbox's reputation if a bot storm
+ * arrives. It used to be 200 an hour, which is more than the list has ever
+ * gained in a week — a storm could burn the day's sending reputation before
+ * anyone noticed. 25 an hour is still far above organic traffic.
+ */
+const GLOBAL_LIMIT = 25;
 const GLOBAL_WINDOW = 60 * 60;
+
+/**
+ * Every signup has to carry the two fields the site's own form always fills in:
+ * the page it was made on, and which post or hero it came from. A script posting
+ * straight at this endpoint sends neither (that is exactly how the November
+ * "unknown" campaign arrived), so it is answered like a success and quietly
+ * dropped. Recorded rather than thrown away, so a genuinely broken form would
+ * show up on the dashboard instead of silently losing readers.
+ */
+function looksLikeTheForm(source: string, path: string) {
+  return Boolean(path) && Boolean(source) && source !== 'unknown';
+}
 
 export const POST: APIRoute = async ({ request }) => {
   try {
@@ -41,6 +58,20 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const db = await withSchema();
+
+    // Before the rate limiter, and before any work: a blacklisted address is
+    // answered exactly as if it had joined, so a campaign learns nothing and
+    // stops retrying a list it cannot get onto.
+    const banned = await db`SELECT 1 FROM signup_blacklist WHERE email = ${email} LIMIT 1`;
+    if (banned.length > 0) {
+      await noteBlocked(db, email, 'blacklisted', path, ua, ipHash);
+      return json({ ok: true });
+    }
+    if (!looksLikeTheForm(source, path)) {
+      await noteBlocked(db, email, 'no-page-path', path, ua, ipHash);
+      return json({ ok: true });
+    }
+
     void prune(db);
 
     const perIp = await allow(db, hashKey('subscribe', clientIp(request)), IP_LIMIT, IP_WINDOW);
@@ -123,6 +154,36 @@ export const POST: APIRoute = async ({ request }) => {
     return json({ error: 'Could not save that just now.' }, 500);
   }
 };
+
+/**
+ * Record a refused signup. The caller is told it worked either way, so a
+ * bookkeeping failure here must never turn into a 500 that tells a bot its
+ * address was rejected.
+ */
+async function noteBlocked(
+  db: Db,
+  email: string,
+  reason: string,
+  path: string,
+  ua: string,
+  ipHash: string,
+) {
+  try {
+    await db`INSERT INTO blocked_signups (email, reason, path, user_agent, ip_hash)
+      VALUES (${email}, ${reason}, ${path || null}, ${ua || null}, ${ipHash})`;
+    if (reason === 'blacklisted') {
+      await db`UPDATE signup_blacklist SET hits = hits + 1, last_seen_at = now() WHERE email = ${email}`;
+    }
+    // Housekeeping without a cron of its own; this table only needs a month of
+    // history to show whether a campaign has stopped.
+    if (Math.random() < 0.02) {
+      const cutoff = new Date(Date.now() - 30 * 86_400_000).toISOString();
+      await db`DELETE FROM blocked_signups WHERE created_at < ${cutoff}::timestamptz`;
+    }
+  } catch (err) {
+    console.error('[subscribe] could not record a blocked signup:', err);
+  }
+}
 
 /**
  * The welcome letter used to fail into an empty catch block: a subscriber could

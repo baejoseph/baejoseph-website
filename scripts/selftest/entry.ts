@@ -182,7 +182,7 @@ let lastStatus = 0;
 for (let i = 0; i < 7; i++) {
   const res = await subscribe({ request: new Request('http://x/api/subscribe', {
     method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '7.7.7.7' },
-    body: JSON.stringify({ email: `flood${i}@test.local`, lang: 'en', source: 'home' }),
+    body: JSON.stringify({ email: `flood${i}@test.local`, lang: 'en', source: 'home', path: '/' }),
   }) });
   lastStatus = res.status;
   if (i === 5) check('sixth signup from one IP is refused', res.status === 429, String(res.status));
@@ -701,6 +701,46 @@ check('without mailing the reader who already had it', !emailsSent().includes(fi
 const unstarted = await addItem('pooled', 'tuesday_featured', '2031-08-08');
 const untouched = await sendDue('tuesday_featured', '2031-07-01', { chunk: 200, budgetMs: 60000 });
 check('a future letter nobody has started is still left alone', !untouched.some((r) => r.id === unstarted && r.status === 'sent'), JSON.stringify(untouched.map((r) => ({ id: r.id, status: r.status }))));
+
+section('29. a blocked address is told it worked and never joins the list');
+await db`INSERT INTO signup_blacklist (email, reason) VALUES ('banned@test.local', 'test: round one')`;
+resetSink();
+const bannedRes = await subscribe({ request: new Request('http://x/api/subscribe', {
+  method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '5.5.5.1' },
+  body: JSON.stringify({ email: 'banned@test.local', lang: 'en', source: 'home', path: '/' }),
+}) }).then((r) => r.json());
+check('the caller is told the signup worked', bannedRes.ok === true && !bannedRes.error, JSON.stringify(bannedRes));
+const bannedRow = await db`SELECT count(*)::int AS n FROM subscribers WHERE email = 'banned@test.local'`;
+check('no subscriber row was created', Number(bannedRow[0].n) === 0, JSON.stringify(bannedRow[0]));
+check('and no welcome letter went out', !emailsSent().includes('banned@test.local'), JSON.stringify(emailsSent()));
+const bannedHits = await db`SELECT hits FROM signup_blacklist WHERE email = 'banned@test.local'`;
+check('the attempt is counted on the blocklist', Number(bannedHits[0].hits) === 1, JSON.stringify(bannedHits[0]));
+const bannedEvent = await db`SELECT count(*)::int AS n FROM signup_events WHERE email = 'banned@test.local'`;
+check('and it never reaches the signup numbers', Number(bannedEvent[0].n) === 0, JSON.stringify(bannedEvent[0]));
+
+section('30. a post with no page path is dropped, not counted');
+// The November campaign: a script calling the endpoint directly, sending only an
+// address. The site's own form always sends source and path, so this cannot
+// happen to a real reader.
+resetSink();
+const directRes = await subscribe({ request: new Request('http://x/api/subscribe', {
+  method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '5.5.5.2' },
+  body: JSON.stringify({ email: 'script@test.local', lang: 'en' }),
+}) }).then((r) => r.json());
+check('the script is told the signup worked', directRes.ok === true && !directRes.error, JSON.stringify(directRes));
+const scriptRows = await db`SELECT count(*)::int AS n FROM subscribers WHERE email = 'script@test.local'`;
+check('nothing was stored', Number(scriptRows[0].n) === 0, JSON.stringify(scriptRows[0]));
+const directEvent = await db`SELECT count(*)::int AS n FROM signup_events WHERE email = 'script@test.local'`;
+check('and nothing reached the signup numbers', Number(directEvent[0].n) === 0, JSON.stringify(directEvent[0]));
+const blockedRow = await db`SELECT reason FROM blocked_signups WHERE email = 'script@test.local'`;
+check('the attempt is recorded with a reason', blockedRow[0]?.reason === 'no-page-path', JSON.stringify(blockedRow[0]));
+const stillWorks = await subscribe({ request: new Request('http://x/api/subscribe', {
+  method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '5.5.5.3' },
+  body: JSON.stringify({ email: 'form@test.local', lang: 'en', source: 'post:nkjv', path: '/nkjv/' }),
+}) }).then((r) => r.json());
+check('a real form submission still gets through', stillWorks.ok === true && stillWorks.welcomed === true, JSON.stringify(stillWorks));
+const formRow = await db`SELECT source FROM subscribers WHERE email = 'form@test.local'`;
+check('with its source recorded', formRow[0]?.source === 'post:nkjv', JSON.stringify(formRow[0]));
 
 await sinkReal.close();
 

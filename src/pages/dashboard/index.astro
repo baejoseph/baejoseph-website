@@ -218,6 +218,7 @@ up the next morning.</pre>
         <thead><tr><th>Source</th><th>Count</th></tr></thead>
         <tbody id="src-body-2"><tr><td colspan="2" class="muted">Loading…</td></tr></tbody>
       </table>
+      <p class="muted" id="blocked-line" style="margin-top:0.5rem"></p>
       <h2>People</h2>
       <table>
         <thead><tr><th>Email</th><th>Lang</th><th>Theme</th><th>Signed up via</th><th>When</th></tr></thead>
@@ -390,6 +391,17 @@ up the next morning.</pre>
         || '<tr><td colspan="2" class="muted">None yet</td></tr>';
       document.getElementById('src-body').innerHTML = srcRows;
       document.getElementById('src-body-2').innerHTML = srcRows;
+      // What the endpoint turned away. A broken form would show up here, and so
+      // would a campaign that has not noticed it is getting nowhere.
+      const blockedRows = data.blocked || [];
+      const blockedTotal = blockedRows.reduce((n, b) => n + Number(b.n || 0), 0);
+      const blockedLine = document.getElementById('blocked-line');
+      if (blockedLine) {
+        const parts = blockedRows.map(b => `${Number(b.n)} ${b.reason === 'blacklisted' ? 'blacklisted' : 'no page path'}`);
+        blockedLine.textContent = blockedTotal
+          ? `Blocked in the last 7 days: ${parts.join(', ')}. The blocklist holds ${Number(data.blacklisted || 0)} address${Number(data.blacklisted || 0) === 1 ? '' : 'es'}.`
+          : `Nothing blocked in the last 7 days. The blocklist holds ${Number(data.blacklisted || 0)} address${Number(data.blacklisted || 0) === 1 ? '' : 'es'}.`;
+      }
       document.getElementById('sub-body').innerHTML = subs.map(s => `<tr>
         <td>${esc(s.email)}${s.unsubscribed_at ? ' <span class="pill">left</span>' : ''}${s.suppressed_at ? ' <span class="pill">bounced</span>' : ''}${s.welcome_error ? ' <span class="pill">no welcome</span>' : ''}</td>
         <td>${esc(s.lang)}</td>

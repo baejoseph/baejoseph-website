@@ -47,6 +47,23 @@ export const GET: APIRoute = async ({ request }) => {
       LIMIT 25
     `;
     const likeTotal = await db`SELECT count(*)::int AS n FROM post_likes`;
+    // Signups the API refused, and the size of the blocklist. A campaign should
+    // show up here as a falling line rather than quietly inflating the list.
+    const blockedSince = new Date(Date.now() - 7 * 86_400_000).toISOString();
+    let blocked: { reason: string; n: number }[] = [];
+    let blacklisted = 0;
+    try {
+      blocked = await db`
+        SELECT reason, count(*)::int AS n FROM blocked_signups
+        WHERE created_at >= ${blockedSince}::timestamptz
+        GROUP BY reason ORDER BY n DESC
+      ` as { reason: string; n: number }[];
+      const blockedTotal = await db`SELECT count(*)::int AS n FROM signup_blacklist` as { n: number }[];
+      blacklisted = Number(blockedTotal[0]?.n ?? 0);
+    } catch {
+      blocked = [];
+      blacklisted = 0;
+    }
     // Did the automatic send actually run? A cron that never fired leaves no
     // other trace than a letter that quietly did not arrive.
     let runs: unknown[] = [];
@@ -64,6 +81,8 @@ export const GET: APIRoute = async ({ request }) => {
       bounced: left[0]?.bounced ?? 0,
       likes,
       likeTotal: likeTotal[0]?.n ?? 0,
+      blocked,
+      blacklisted,
       runs,
     }), {
       status: 200,
