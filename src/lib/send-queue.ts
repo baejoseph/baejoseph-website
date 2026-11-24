@@ -11,8 +11,30 @@ import { identityHash } from './identity';
  * claim atomic, so a rerun skips anyone already sent.
  */
 
-/** Addresses per batch: keeps an invocation well inside the function timeout. */
-export const CHUNK = 25;
+/**
+ * Addresses per batch: keeps an invocation well inside the function timeout.
+ * With parallel sends below, a batch of 50 is a few seconds of wall time.
+ */
+export const CHUNK = 50;
+/**
+ * Conversations with the mail server at once. The loop used to send one address
+ * at a time, so a 90-name list spent ~90 seconds waiting and could not finish
+ * inside one invocation — that is why sending took four presses. Each address is
+ * still claimed atomically before it is mailed, so parallelism cannot double-send.
+ */
+export const CONCURRENCY = 4;
+/** Hostinger starts refusing connections above this; more workers is not faster. */
+export const MAX_CONCURRENCY = 6;
+/**
+ * Some mail hosts count simultaneous connections and answer 421 above their
+ * limit. The default suits Hostinger's mailbox; set SMTP_CONCURRENCY=2 on the
+ * deployment if a send ever reports "the mail server refused" instead of sending.
+ */
+function concurrencySetting(): number {
+  const raw = Number(import.meta.env.SMTP_CONCURRENCY || process.env.SMTP_CONCURRENCY);
+  if (!Number.isFinite(raw) || raw <= 0) return CONCURRENCY;
+  return Math.min(Math.max(1, Math.floor(raw)), MAX_CONCURRENCY);
+}
 /** Transient failures (greylisting, 4xx, timeouts) get retried this many times. */
 export const MAX_ATTEMPTS = 3;
 /**
@@ -104,6 +126,35 @@ function letterFor(item: Item, lang: string, theme: 'dark' | 'light' = 'dark'): 
 
 function readerTheme(value: unknown): 'dark' | 'light' {
   return value === 'light' ? 'light' : 'dark';
+}
+
+/**
+ * sendMail, but never longer than `ms`. A command that never answers would
+ * otherwise hold a worker until the socket timeout, and with sends in parallel
+ * several of those can pile up past the function's limit. The timeout is
+ * reported as ETIMEDOUT with no SMTP command, which isPlatformError() reads as
+ * the host's problem: the address keeps its retries and the next run tries again.
+ */
+async function sendWithin(
+  mail: { to: string; subject: string; html: string; text: string },
+  transport: Transport,
+  ms: number,
+): Promise<void> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    await Promise.race([
+      sendMail(mail, transport),
+      new Promise<never>((_, reject) => {
+        timer = setTimeout(() => {
+          const err = new Error(`timed out after ${Math.round(ms / 1000)}s waiting for the mail server`);
+          (err as Error & { code?: string }).code = 'ETIMEDOUT';
+          reject(err);
+        }, ms);
+      }),
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
 }
 
 function hasHangul(value: unknown) {
@@ -247,7 +298,7 @@ async function remainingCount(id: number, stale: string) {
  */
 export async function sendQueueItem(
   id: number,
-  opts?: { testTo?: string; lang?: 'en' | 'ko'; chunk?: number; deadline?: number },
+  opts?: { testTo?: string; lang?: 'en' | 'ko'; chunk?: number; concurrency?: number; deadline?: number },
 ): Promise<SendSummary> {
   if (!smtpConfigured()) throw new Error('SMTP is not configured');
   const db = await withSchema();
@@ -277,12 +328,17 @@ export async function sendQueueItem(
     throw new Error('That letter has no body — rebuild it from the post, or paste the HTML in, before sending.');
   }
 
-  const batch = Math.max(1, Math.min(opts?.chunk ?? CHUNK, 200));
+  const batch = Math.max(1, Math.min(opts?.chunk ?? CHUNK, 500));
   // The same deadline the caller is watching. Checking it inside the loop (not
   // just between batches) is what stops a run being guillotined half-way: we
   // choose to end it, with a note saying where it got to, instead of the
   // platform ending it silently.
   const deadline = opts?.deadline ?? Date.now() + 40_000;
+  // Sending one address at a time was the reason a 90-name list took four
+  // presses: almost all of the budget went on waiting for the mail server. Four
+  // conversations at once turns a 90s letter into a ~25s one; the claims below
+  // keep it safe, because an address is still only ever mailed once.
+  const workers = Math.max(1, Math.min(opts?.concurrency ?? concurrencySetting(), MAX_CONCURRENCY));
   const stale = new Date(Date.now() - STALE_SENDING_MS).toISOString();
   // Eligible: never claimed, or claimed and failed with retries in hand, or
   // claimed and abandoned by an invocation that died mid-send long enough ago
@@ -304,104 +360,124 @@ export async function sendQueueItem(
   let sent = 0;
   let failed = 0;
   let skipped = 0;
-  let refused = 0;
+  /** Files the host refused us, in a row. Reset by the next successful send. */
+  let platformFails = 0;
   /** Why the batch stopped early, when the fault was the mailbox host's. */
   let stopReason: string | null = null;
   /** True when we ran out of our own time rather than being cut off. */
   let timedOut = false;
+  /** Set when the whole run must stop: the mail host, or the deadline. */
+  let stopAll = false;
 
-  // One pooled transport for the whole batch. Opening a connection per address
-  // is what made a long list time out half-sent. It is rebuilt if the host
-  // drops it, so one dead socket cannot poison everyone after it.
-  let transport: Transport = transporter({ pool: true });
-  const freshTransport = () => {
-    try { transport.close(); } catch { /* already gone */ }
-    transport = transporter({ pool: true });
+  // One pooled transport for the whole batch, sized to the number of workers so
+  // each conversation has a connection of its own. Opening a connection per
+  // address is what made a long list time out half-sent; a dead socket is
+  // discarded by the pool itself, so one bad conversation cannot poison the rest.
+  const transport: Transport = transporter({ pool: true, maxConnections: workers });
+
+  /**
+   * One recipient, start to finish. Counts are shared, so no awaits between
+   * check and use. The send itself is raced against the run's deadline: a
+   * mailbox that goes quiet must not hold a worker past the function's limit,
+   * or the platform kills the invocation and nobody learns where it stopped.
+   */
+  const deliver = async (r: { email: string; unsub_token: string; lang: string; theme: string | null }) => {
+    const leftMs = deadline - Date.now();
+    if (leftMs <= 2_000) { timedOut = true; stopAll = true; return; }
+
+    const claimed = await db`
+      INSERT INTO send_log (queue_id, email, status, attempts, error, updated_at)
+      VALUES (${id}, ${r.email}, 'sending', 1, NULL, now())
+      ON CONFLICT (queue_id, email) DO UPDATE SET
+        status = 'sending', attempts = send_log.attempts + 1, error = NULL, updated_at = now()
+      WHERE (send_log.status = 'failed' AND send_log.attempts < ${MAX_ATTEMPTS})
+         OR (send_log.status = 'sending' AND send_log.updated_at < ${stale}::timestamptz)
+      RETURNING id
+    `;
+    const claimId = Number(claimed[0]?.id ?? 0);
+    if (!claimId) {
+      // claimed between our SELECT and now — another invocation owns this address
+      skipped += 1;
+      return;
+    }
+
+    const lang = r.lang === 'ko' ? 'ko' : 'en';
+    const theme = readerTheme(r.theme);
+    const base = lang === 'ko' && koOverride
+      ? { ...koOverride, html: paintLetter(koOverride.html, theme) }
+      : letterFor(item, lang, theme);
+    if (!base.html) {
+      failed += 1;
+      await db`
+        UPDATE send_log
+        SET status = 'failed', error = 'letter body is empty', updated_at = now()
+        WHERE id = ${claimId}
+      `;
+      return;
+    }
+    const letter = personalize(base, r);
+
+    try {
+      await sendWithin({
+        to: r.email,
+        subject: letter.subject,
+        html: letter.html,
+        text: letter.text,
+      }, transport, Math.max(3_000, leftMs));
+      sent += 1;
+      platformFails = 0;
+      await db`UPDATE send_log SET status = 'sent', updated_at = now() WHERE id = ${claimId}`;
+      if (sent % PROGRESS_EVERY === 0) await markProgress(db, id);
+    } catch (err) {
+      failed += 1;
+      const message = err instanceof Error ? err.message : String(err);
+      if (isPlatformError(err)) {
+        // The host refused the connection, not the reader. Give the attempt
+        // back so a blip cannot burn the whole list's retry budget, and stop
+        // the run after a few in a row: continuing just fails everyone left.
+        // The pool drops the broken connection by itself, so the next attempt
+        // starts on a fresh one.
+        platformFails += 1;
+        stopReason = message.slice(0, 300);
+        await db`
+          UPDATE send_log
+          SET status = 'failed', error = ${message.slice(0, 500)},
+              attempts = GREATEST(attempts - 1, 0), updated_at = now()
+          WHERE id = ${claimId}
+        `;
+        if (platformFails >= MAX_PLATFORM_FAILURES) stopAll = true;
+        return;
+      }
+      await db`UPDATE send_log SET status = 'failed', error = ${message.slice(0, 500)}, updated_at = now() WHERE id = ${claimId}`;
+      if (isHardBounce(err)) {
+        await db`
+          UPDATE subscribers
+          SET suppressed_at = now(), suppress_reason = ${message.slice(0, 300)}
+          WHERE email = ${r.email} AND suppressed_at IS NULL
+        `;
+      }
+    }
+  };
+
+  // A small pool of workers over the same eligible list. Each takes the next
+  // address nobody has taken; none of them waits for the others, which is what
+  // turns a list that took four presses into one that fits in one.
+  let cursor = 0;
+  const worker = async () => {
+    for (;;) {
+      if (stopAll) return;
+      const index = cursor;
+      cursor += 1;
+      if (index >= due.length) return;
+      // Stop before claiming anyone we are not going to mail: a run we end
+      // ourselves leaves no half-claimed 'sending' rows behind it.
+      if (Date.now() >= deadline) { timedOut = true; return; }
+      await deliver(due[index]);
+    }
   };
 
   try {
-    for (const r of due) {
-      // Stop before claiming anyone we are not going to mail: a run we end
-      // ourselves leaves no half-claimed 'sending' rows behind it.
-      if (Date.now() >= deadline) { timedOut = true; break; }
-
-      const claimed = await db`
-        INSERT INTO send_log (queue_id, email, status, attempts, error, updated_at)
-        VALUES (${id}, ${r.email}, 'sending', 1, NULL, now())
-        ON CONFLICT (queue_id, email) DO UPDATE SET
-          status = 'sending', attempts = send_log.attempts + 1, error = NULL, updated_at = now()
-        WHERE (send_log.status = 'failed' AND send_log.attempts < ${MAX_ATTEMPTS})
-           OR (send_log.status = 'sending' AND send_log.updated_at < ${stale}::timestamptz)
-        RETURNING id
-      `;
-      const claimId = Number(claimed[0]?.id ?? 0);
-      if (!claimId) {
-        // claimed between our SELECT and now — another invocation owns this address
-        skipped += 1;
-        continue;
-      }
-
-      const lang = r.lang === 'ko' ? 'ko' : 'en';
-      const theme = readerTheme(r.theme);
-      const base = lang === 'ko' && koOverride
-        ? { ...koOverride, html: paintLetter(koOverride.html, theme) }
-        : letterFor(item, lang, theme);
-      if (!base.html) {
-        failed += 1;
-        await db`
-          UPDATE send_log
-          SET status = 'failed', error = 'letter body is empty', updated_at = now()
-          WHERE id = ${claimId}
-        `;
-        continue;
-      }
-      const letter = personalize(base, r);
-
-      try {
-        await sendMail({
-          to: r.email,
-          subject: letter.subject,
-          html: letter.html,
-          text: letter.text,
-        }, transport);
-        sent += 1;
-        refused = 0;
-        await db`UPDATE send_log SET status = 'sent', updated_at = now() WHERE id = ${claimId}`;
-        if (sent % PROGRESS_EVERY === 0) await markProgress(db, id);
-      } catch (err) {
-        failed += 1;
-        const message = err instanceof Error ? err.message : String(err);
-        const code = String((err as { code?: string } | null)?.code ?? '');
-        const brokenSocket = ['ETIMEDOUT', 'ESOCKET', 'ECONNRESET', 'ECONNECTION', 'EPROTOCOL'].includes(code);
-        if (isPlatformError(err)) {
-          // The host refused the connection, not the reader. Give the attempt
-          // back so a blip cannot burn the whole list's retry budget, and stop
-          // after a few in a row: continuing just fails every remaining address.
-          refused += 1;
-          stopReason = message.slice(0, 300);
-          await db`
-            UPDATE send_log
-            SET status = 'failed', error = ${message.slice(0, 500)},
-                attempts = GREATEST(attempts - 1, 0), updated_at = now()
-            WHERE id = ${claimId}
-          `;
-          freshTransport();
-          if (refused >= MAX_PLATFORM_FAILURES) break;
-          continue;
-        }
-        await db`UPDATE send_log SET status = 'failed', error = ${message.slice(0, 500)}, updated_at = now() WHERE id = ${claimId}`;
-        // An address that timed out may have left the pooled connection out of
-        // step. Start a clean one so the next recipient is not punished for it.
-        if (brokenSocket) freshTransport();
-        if (isHardBounce(err)) {
-          await db`
-            UPDATE subscribers
-            SET suppressed_at = now(), suppress_reason = ${message.slice(0, 300)}
-            WHERE email = ${r.email} AND suppressed_at IS NULL
-          `;
-        }
-      }
-    }
+    await Promise.all(Array.from({ length: Math.min(workers, due.length) }, worker));
   } finally {
     transport.close();
   }
@@ -424,7 +500,7 @@ export async function sendQueueItem(
   // Why it did not finish beats a raw count when the mailbox host was the cause:
   // this is the line Joseph reads on the dashboard.
   const note = stopReason
-    ? `stopped: the mail server refused ${refused} in a row — ${stopReason}`
+    ? `stopped: the mail server refused ${Math.max(platformFails, 1)} in a row — ${stopReason}`
     : timedOut
       ? `stopped at the time limit: ${totalSent} delivered, ${remaining} still to send. The next run carries on from here.`
       : remaining > 0
@@ -444,16 +520,16 @@ export async function sendQueueItem(
 /** Keep batching a single item until it is finished or we run out of time. */
 export async function drainQueueItem(
   id: number,
-  opts: { chunk?: number; budgetMs?: number; deadline?: number } = {},
+  opts: { chunk?: number; concurrency?: number; budgetMs?: number; deadline?: number } = {},
 ): Promise<SendSummary> {
   const deadline = opts.deadline ?? Date.now() + (opts.budgetMs ?? 30_000);
-  let summary = await sendQueueItem(id, { chunk: opts.chunk, deadline });
+  let summary = await sendQueueItem(id, { chunk: opts.chunk, concurrency: opts.concurrency, deadline });
   let sent = summary.sent;
   let failed = summary.failed;
   let skipped = summary.skipped;
   let stopped = Boolean(summary.stopped);
   while (!stopped && !summary.done && summary.sent + summary.failed > 0 && Date.now() < deadline) {
-    summary = await sendQueueItem(id, { chunk: opts.chunk, deadline });
+    summary = await sendQueueItem(id, { chunk: opts.chunk, concurrency: opts.concurrency, deadline });
     sent += summary.sent;
     failed += summary.failed;
     skipped += summary.skipped;
@@ -504,9 +580,17 @@ export async function sendDue(
 ): Promise<QueueRun[]> {
   const db = await withSchema();
   const deadline = opts.deadline ?? Date.now() + (opts.budgetMs ?? 30_000);
+  // A letter someone started by hand gets finished whatever its date is: only
+  // items with delivery rows already exist in send_log. Otherwise closing the
+  // dashboard tab halfway through left the rest of the list waiting for a day
+  // the cron would never consider.
   const due = await db`
     SELECT id, status, send_on FROM queue_items
-    WHERE slot = ${slot} AND send_on <= ${dateIso} AND status <> 'sent'
+    WHERE slot = ${slot} AND status <> 'sent'
+      AND (
+        send_on <= ${dateIso}
+        OR id IN (SELECT queue_id FROM send_log WHERE queue_id IS NOT NULL)
+      )
     ORDER BY send_on ASC
   ` as { id: number; status: string; send_on: string }[];
   const results: QueueRun[] = [];

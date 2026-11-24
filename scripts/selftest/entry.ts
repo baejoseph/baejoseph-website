@@ -555,7 +555,8 @@ const poolRun = await drainQueueItem(itemPool, { chunk: 200, budgetMs: 60000 });
 const connectionsUsed = sinkReal.stat.connections - connectionsBefore;
 check('the whole batch went out', poolRun.remaining === 0, JSON.stringify(poolRun));
 check('every pool address got it', emailsSent().filter((e: string) => e.startsWith('pool')).length === 10, JSON.stringify(emailsSent().slice(0, 5)));
-check('in at most three connections, not one per address', connectionsUsed <= 3, `${connectionsUsed} connections for ${sinkReal.deliveries.length} messages`);
+check('in at most one connection per parallel worker, not one per address', connectionsUsed <= 4, `${connectionsUsed} connections for ${sinkReal.deliveries.length} messages`);
+console.log(`  (info) ${connectionsUsed} connections for 10 messages`);
 
 section('22. a refused mail server leaves the letter queued, never dead');
 check('a refused connection is the server\'s fault, not the address\'s', isPlatformError({ code: 'ECONNECTION' }) && isPlatformError({ code: 'EAUTH', responseCode: 535 }));
@@ -680,6 +681,26 @@ const budgetClaims = await db`SELECT count(*)::int AS n FROM send_log WHERE queu
 check('it claimed nobody it was not going to mail', Number(budgetClaims[0].n) === 0, String(budgetClaims[0].n));
 const resumeRun = await drainQueueItem(itemBudget, { chunk: 200, budgetMs: 60000 });
 check('the next run simply carries on from there', resumeRun.status === 'sent' && resumeRun.sent > 25, JSON.stringify(resumeRun));
+
+section('28. a letter already under way is finished even when it is dated later');
+// Sending by hand on a date before the letter is due, then closing the tab, used
+// to leave the rest of the list waiting for a cron run that would never consider
+// the item until its own date. Delivery rows are the evidence that it started.
+const underWay = await addItem('pooled', 'tuesday_featured', '2031-08-01');
+const firstSub = await db`SELECT email, unsub_token FROM subscribers WHERE unsubscribed_at IS NULL AND suppressed_at IS NULL ORDER BY created_at ASC LIMIT 1`;
+await db`
+  INSERT INTO send_log (queue_id, email, status, attempts, updated_at)
+  VALUES (${underWay}, ${firstSub[0].email}, 'sent', 1, now())
+`;
+resetSink();
+const resumed = await sendDue('tuesday_featured', '2031-07-01', { chunk: 200, budgetMs: 60000 });
+const resumedRun = resumed.find((r) => r.id === underWay);
+check('a letter with deliveries already recorded is picked up before its date', Boolean(resumedRun), JSON.stringify(resumed.map((r) => ({ id: r.id, status: r.status }))));
+check('and it finishes the rest of the list', resumedRun?.status === 'sent' && resumedRun?.remaining === 0, JSON.stringify(resumedRun));
+check('without mailing the reader who already had it', !emailsSent().includes(firstSub[0].email), String(firstSub[0].email));
+const unstarted = await addItem('pooled', 'tuesday_featured', '2031-08-08');
+const untouched = await sendDue('tuesday_featured', '2031-07-01', { chunk: 200, budgetMs: 60000 });
+check('a future letter nobody has started is still left alone', !untouched.some((r) => r.id === unstarted && r.status === 'sent'), JSON.stringify(untouched.map((r) => ({ id: r.id, status: r.status }))));
 
 await sinkReal.close();
 

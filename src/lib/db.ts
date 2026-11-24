@@ -15,7 +15,7 @@ export type Db = ReturnType<typeof sql>;
  * start can skip ~20 round trips to Neon and just check one row.
  * /api/setup forces the full run regardless (dashboard → "Create / migrate tables").
  */
-const SCHEMA_VERSION = 'v2026-11-11-cron-runs';
+const SCHEMA_VERSION = 'v2026-11-24-signup-forensics';
 
 let schemaReady: Promise<void> | null = null;
 
@@ -74,6 +74,12 @@ export async function ensureSchema(opts: { force?: boolean } = {}) {
     path TEXT,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
   )`;
+  // Who asked, not just what they claimed. A signup with no path did not come
+  // from the site form (that always sends location.pathname), so the browser
+  // string is the only evidence left of whether it was a person or a script.
+  await db`ALTER TABLE signup_events ADD COLUMN IF NOT EXISTS user_agent TEXT`;
+  await db`ALTER TABLE signup_events ADD COLUMN IF NOT EXISTS referer TEXT`;
+  await db`ALTER TABLE signup_events ADD COLUMN IF NOT EXISTS ip_hash TEXT`;
   await db`CREATE TABLE IF NOT EXISTS queue_items (
     id SERIAL PRIMARY KEY,
     slot TEXT NOT NULL,

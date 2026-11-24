@@ -17,7 +17,7 @@ function num(value: unknown, fallback: number) {
   return Number.isFinite(n) && n > 0 ? n : fallback;
 }
 
-export function transporter(opts: { pool?: boolean } = {}) {
+export function transporter(opts: { pool?: boolean; maxConnections?: number; maxMessages?: number } = {}) {
   const host = import.meta.env.SMTP_HOST || process.env.SMTP_HOST || 'smtp.hostinger.com';
   const port = Number(import.meta.env.SMTP_PORT || process.env.SMTP_PORT || 465);
   const user = import.meta.env.SMTP_USER || process.env.SMTP_USER || '';
@@ -36,9 +36,14 @@ export function transporter(opts: { pool?: boolean } = {}) {
     greetingTimeout: num(import.meta.env.SMTP_GREETING_TIMEOUT_MS || process.env.SMTP_GREETING_TIMEOUT_MS, 10_000),
     socketTimeout: num(import.meta.env.SMTP_SOCKET_TIMEOUT_MS || process.env.SMTP_SOCKET_TIMEOUT_MS, 20_000),
     // A pooled transport keeps a handful of connections open and reuses them,
-    // which is what makes a 25-address batch take seconds instead of a minute.
-    // One-off sends (a welcome letter) leave this off and close after use.
-    ...(opts.pool ? { pool: true, maxConnections: 3, maxMessages: 40 } : {}),
+    // which is what makes a batch take seconds instead of a minute. The sender
+    // picks one connection per parallel worker. One-off sends (a welcome letter)
+    // leave this off and close after use.
+    ...(opts.pool ? {
+      pool: true,
+      maxConnections: num(opts.maxConnections, 3),
+      maxMessages: num(opts.maxMessages, 40),
+    } : {}),
   });
 }
 

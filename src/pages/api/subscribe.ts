@@ -29,6 +29,12 @@ export const POST: APIRoute = async ({ request }) => {
     const lang = body.lang === 'ko' ? 'ko' : 'en';
     const source = String(body.source ?? 'unknown').slice(0, 200);
     const path = String(body.path ?? '').slice(0, 300);
+    // Evidence, kept with the event: a real form always carries a path (see
+    // SignupForm.astro), so an empty one plus no browser string means the
+    // address was posted straight at this endpoint rather than by a reader.
+    const ua = String(request.headers.get('user-agent') ?? '').slice(0, 300);
+    const referer = String(request.headers.get('referer') ?? '').slice(0, 300);
+    const ipHash = hashKey('ip', clientIp(request));
 
     if (!EMAIL_RE.test(email)) {
       return json({ error: 'That does not look like an email address.' }, 400);
@@ -88,7 +94,8 @@ export const POST: APIRoute = async ({ request }) => {
       }
     }
 
-    await db`INSERT INTO signup_events (email, source, path) VALUES (${email}, ${source}, ${path})`;
+    await db`INSERT INTO signup_events (email, source, path, user_agent, referer, ip_hash)
+      VALUES (${email}, ${source}, ${path}, ${ua}, ${referer}, ${ipHash})`;
 
     // An existing, active subscriber is not mailbombed with a second welcome letter.
     if (already) return json({ ok: true, already: true });

@@ -54,10 +54,26 @@ export async function runSlots(
   const deadline = Date.now() + (opts.budgetMs ?? SEND_BUDGET_MS);
   const runs: SlotRun[] = [];
 
+  // How much work each slot actually has. Without this the budget was split
+  // evenly between the two slots no matter what, so a Tuesday with 90 readers
+  // waiting got 22 seconds while the empty Friday slot held 22 seconds it could
+  // never use — and a letter that did not finish needed a second run (or a
+  // human pressing Send) to reach the rest of the list.
+  const db = await withSchema();
+  const hasWork = new Map<Slot, boolean>();
+  for (const slot of slots) {
+    const rows = await db`
+      SELECT count(*)::int AS n FROM queue_items
+      WHERE slot = ${slot} AND send_on <= ${date} AND status <> 'sent'
+    ` as { n: number }[];
+    hasWork.set(slot, Number(rows[0]?.n ?? 0) > 0);
+  }
+
   for (let i = 0; i < slots.length; i += 1) {
     const slot = slots[i];
     const left = Math.max(0, deadline - Date.now());
-    const share = Math.max(5_000, Math.floor(left / (slots.length - i)));
+    const pending = slots.slice(i).filter((s) => hasWork.get(s)).length || 1;
+    const share = Math.max(5_000, Math.floor(left / pending));
     let results: QueueRun[] = [];
     let error: string | undefined;
     try {

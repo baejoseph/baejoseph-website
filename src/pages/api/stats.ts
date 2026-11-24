@@ -24,7 +24,7 @@ export const GET: APIRoute = async ({ request }) => {
       ORDER BY n DESC
     `;
     const events = await db`
-      SELECT email, source, path, created_at
+      SELECT email, source, path, user_agent, created_at
       FROM signup_events
       ORDER BY created_at DESC
       LIMIT 100
