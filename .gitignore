@@ -32,3 +32,6 @@ scripts/db-local.mjs
 .idea/
 .vercel/
 scripts/selftest/.probe.ts
+
+# temp folder inside content
+src/content/temp/
