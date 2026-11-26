@@ -15,12 +15,20 @@
   letter-spacing: .02em;
   color: var(--text-muted, #888);
 }
-.trt-legend .lg { display: inline-flex; align-items: center; gap: .35rem; }
+.trt-legend .lg { display: inline-flex; align-items: center; gap: .38rem; }
+/* Each line is labelled CT or TR in the table, so the key carries the same two
+   labels instead of a dash and an arrow. */
 .trt-legend .lg::before {
-  content: ""; display: inline-block; width: .9rem; height: 0;
-  border-top: 1.5px solid currentColor; opacity: .6;
+  content: "";
+  display: inline-block;
+  width: 1.45rem;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  line-height: 1.4;
 }
-.trt-legend .lg.arrow::before { content: "→"; border: 0; opacity: .9; color: var(--accent, #6366f1); }
+.trt-legend .lg.cr::before { content: "CT"; color: #9d9dab; }
+.trt-legend .lg.tr::before { content: "TR"; color: var(--accent-hover, #818cf8); }
 
 .trt-wrap { margin: 0 0 1rem; }
 
@@ -121,23 +129,27 @@
 .trt .ln {
   position: relative;
   display: block;
-  padding-left: 1.15rem;
+  padding-left: 1.9rem;
   border-radius: 3px;
 }
+/* CT / TR in the gutter, so a reader never has to infer which line they are on
+   from its shade alone. */
 .trt .ln::before {
   position: absolute;
   left: 0;
-  top: 0;
-  width: 1rem;
-  font-size: .82em;
+  top: .14em;
+  width: 1.6rem;
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .07em;
   line-height: inherit;
-  opacity: .5;
+  font-family: var(--font-en, 'Inter', sans-serif);
 }
-.trt .ln.b::before { content: "—"; }
-.trt .ln.a::before { content: "→"; color: var(--accent, #6366f1); opacity: 1; }
-.trt .ln.b { color: #9d9dab; }
-.trt .ln.a { color: var(--text, #e8e8e8); }
-[data-trt-palette='light'] .trt .ln.b { color: #6b6b78; }
+.trt .ln.ct::before { content: "CT"; color: #9d9dab; }
+.trt .ln.tr::before { content: "TR"; color: var(--accent-hover, #818cf8); }
+.trt .ln.ct { color: #9d9dab; }
+.trt .ln.tr { color: var(--text, #e8e8e8); }
+[data-trt-palette='light'] .trt .ln.ct { color: #6b6b78; }
 
 /* The bit that changed: bold + underlined, rose on the old reading and mint on
    the new one, so the direction of the change reads at a glance. */
@@ -149,10 +161,10 @@
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
 }
-.trt .ln.b mark.chg { color: #e9a2aa; background: rgba(233, 162, 170, .1); text-decoration-color: rgba(233, 162, 170, .6); }
-.trt .ln.a mark.chg { color: #8ee6b4; background: rgba(142, 230, 180, .1); text-decoration-color: rgba(142, 230, 180, .6); }
-[data-trt-palette='light'] .trt .ln.b mark.chg { background: rgba(176, 42, 55, .07); }
-[data-trt-palette='light'] .trt .ln.a mark.chg { background: rgba(15, 122, 69, .07); }
+.trt .ln.ct mark.chg { color: #e9a2aa; background: rgba(233, 162, 170, .1); text-decoration-color: rgba(233, 162, 170, .6); }
+.trt .ln.tr mark.chg { color: #8ee6b4; background: rgba(142, 230, 180, .1); text-decoration-color: rgba(142, 230, 180, .6); }
+[data-trt-palette='light'] .trt .ln.ct mark.chg { background: rgba(176, 42, 55, .07); }
+[data-trt-palette='light'] .trt .ln.tr mark.chg { background: rgba(15, 122, 69, .07); }
 
 .trt .gone {
   font-style: italic;
@@ -225,8 +237,8 @@
   border-top: 1px solid rgba(99, 102, 241, .34);
 }
 
-[data-trt-palette='light'] .trt .ln.b mark.chg { color: #b02a37; text-decoration-color: rgba(176, 42, 55, .55); }
-[data-trt-palette='light'] .trt .ln.a mark.chg { color: #0f7a45; text-decoration-color: rgba(15, 122, 69, .55); }
+[data-trt-palette='light'] .trt .ln.ct mark.chg { color: #b02a37; text-decoration-color: rgba(176, 42, 55, .55); }
+[data-trt-palette='light'] .trt .ln.tr mark.chg { color: #0f7a45; text-decoration-color: rgba(15, 122, 69, .55); }
 /* The light reading of the same card. Keyed on the palette that is really on
    screen (set from the script), not on data-theme, so the card can never come
    out white over a dark page again. */
@@ -259,17 +271,17 @@
   .trt .c-ref { grid-area: ref; font-size: .78rem; padding-top: .1rem !important; }
   .trt .c-kind { grid-area: kind; text-align: right; }
   .trt .c-text { grid-area: text; margin-top: .3rem; }
-  .trt .ln { padding-left: 1.05rem; }
-  .trt .ln::before { width: .95rem; }
+  .trt .ln { padding-left: 1.7rem; }
+  .trt .ln::before { width: 1.45rem; }
+  /* A card has no columns, so the repeated column headings step out. */
+  .trt tr.colhead { display: none; }
 }
 
-/* ── The reading-order switch ──────────────────────────────────────────
-   It sits in the legend row as the one control there. The two short names
-   (CT/TR in English, 개역/TR in Korean) come from data attributes and swap
-   places when pressed; the legend chips reorder with them, so the key always
-   reads in the order the rows are printed. */
-.trt-swap {
-  order: 0;
+/* ── The two controls in the legend row ───────────────────────────────
+   The order switch shows which reading is printed first and flips it; the
+   second button collapses or re-expands every book at once. Both carry their
+   words in the markup, so the Korean page needs nothing from this file. */
+.trt-btn {
   display: inline-flex;
   align-items: center;
   gap: .32rem;
@@ -290,22 +302,29 @@
   -webkit-appearance: none;
   transition: background .15s, border-color .15s;
 }
-.trt-swap:hover { background: rgba(99, 102, 241, .16); border-color: var(--accent, #6366f1); }
-.trt-swap:focus-visible { outline: 2px solid var(--accent, #6366f1); outline-offset: 2px; }
+.trt-btn:hover { background: rgba(99, 102, 241, .16); border-color: var(--accent, #6366f1); }
+.trt-btn:focus-visible { outline: 2px solid var(--accent, #6366f1); outline-offset: 2px; }
+.trt-btn[aria-pressed='true'].trt-all { border-color: var(--accent, #6366f1); }
+
+.trt-swap { order: 0; }
 .trt-swap .sw-ico { color: var(--accent-hover, #818cf8); font-size: .95em; line-height: 1; }
 .trt-swap .sw-ico::before { content: "\21C4"; }
 .trt-swap .sw-txt { display: inline-flex; align-items: center; gap: .22rem; }
 .trt-swap .sw-ar { color: var(--accent-hover, #818cf8); }
 .trt-swap .sw-ar::before { content: "\2192"; }
 
-.trt-legend .lg.cr { order: 1; }
-.trt-legend .lg.tr { order: 2; }
-/* The hover hint is a caption under the key rather than a third chip: the
-   switch takes enough width that it would wrap anyway, and left-aligned under
-   the key it reads as a note instead of an orphaned fragment. */
-.trt-legend .lg.hint { order: 3; flex-basis: 100%; margin-left: 0; }
-[data-trt-order='tr'] .trt-legend .lg.cr { order: 2; }
-[data-trt-order='tr'] .trt-legend .lg.tr { order: 1; }
+.trt-all { order: 3; margin-left: auto; }
+
+/* The rows are printed TR first, so the key reads TR first too; flipping the
+   switch reorders both. */
+.trt-legend .lg.tr { order: 1; }
+.trt-legend .lg.cr { order: 2; }
+[data-trt-order='ct'] .trt-legend .lg.tr { order: 2; }
+[data-trt-order='ct'] .trt-legend .lg.cr { order: 1; }
+/* The hover hint is a caption under the key rather than a third chip: with two
+   controls on the row it would wrap anyway, and left-aligned under the key it
+   reads as a note instead of an orphaned fragment. */
+.trt-legend .lg.hint { order: 4; flex-basis: 100%; margin-left: 0; }
 
 /* ── Book headings double as collapse handles ──────────────────────────
    The script turns each heading into a button; without it the table simply
@@ -345,4 +364,24 @@
 
 /* A collapsed book keeps its heading; its verses step out of the flow. */
 .trt tbody.bk.collapsed > tr.tr { display: none; }
+.trt tbody.bk.collapsed > tr.colhead { display: none; }
 .trt tbody.bk.collapsed > tr.book td { padding-bottom: .75rem; }
+
+/* ── Column headings, repeated under every book ────────────────────────
+   The script copies the table's own header into each book and then hides the
+   original. The headings at the top of the page scroll away after the third
+   verse; under a book heading they are always next to the rows they name. */
+.trt.heads-per-book thead { display: none; }
+.trt tr.colhead td {
+  padding: .3rem .55rem .45rem;
+  border-top: 1px solid var(--border, #222);
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: #7b7b89;
+  white-space: nowrap;
+  cursor: default;
+}
+[data-trt-palette='light'] .trt tr.colhead td { border-top-color: rgba(20, 20, 40, .12); color: #6b6b78; }
+.trt tr.colhead td:first-child { padding-left: 0; }
