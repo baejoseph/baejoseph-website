@@ -72,9 +72,9 @@ And it does one thing the separate volumes cannot. The lesson ends not with ques
 
 I priced these the only way I could justify, and the numbers say something worth saying out loud.
 
-Volume 1 is 96 pages and sells at £7.99. Volume 2 is 100 pages at £7.99. The collection is 412 pages at £14.99. **Four times the lessons for less than twice the money**—about 3.6p a page against 8p—because **a thin book still carries a cover, an ISBN and a setup**, and the printing is charged by the page while the price has to carry all of it.
+Volume 1 is 96 pages and sells at £7.99. Volume 2 is 100 pages at £7.99. The collection is 412 pages at £14.99. **Five times the lessons of either Chinese volume, for less than twice the price**—155 lessons against 31, 412 pages against 96, and every appendix in the book besides—because **a thin book still carries a cover, an ISBN and a setup**, and printing is charged by the page while the price has to carry all of it. The two Chinese volumes together cost £15.98. The one volume that holds both of them, and three more courses on top, costs 99p less.
 
-**The Kindle is $5.99 / £3.99 / €4.49, and it is the bargain of the three**, because there is no paper in it at all. If money is tight in your house this month: **buy the Kindle, or buy the one volume and skip the two paperbacks**. The lessons are the same, and the answer keys are not the point of any of it.
+**The Kindle is $5.99 / £3.99 / €4.49, and it is the bargain of the lot**, because there is no paper in it at all. If money is tight in your house this month: **buy the Kindle, or buy the one volume and skip the paperbacks for all five volumes**—Greek, Latin, Hebrew, and the two Chinese ones. The lessons are the same, and the answer keys are not the point of any of it.
 
 The Korean edition, 『어원들』 (978-1-0654826-3-5), cannot go on Amazon at all—**KDP will not print Korean**. It goes through IngramSpark instead, whose printing costs are materially higher than Amazon’s, which is why that one is **£24.99 rather than £14.99**. It is still in review. When the road opens, it will be announced here, the way [Bible Promises did it](/promises).
 
@@ -88,7 +88,7 @@ The Hebrew came out of one summer. **Joshua was seven.** We sat at home in the p
 >
 > Psalm 119:97–100 (NKJV)
 
-I have degrees from **Cambridge and Yale**. **The psalm has made me wiser than all of it.** That is not modesty and it is not a boast. It is the plain report of six years of one chapter, recited in the car and at the table, until it was not a text I knew but a text that knew me.
+**The psalm has made me wiser than all my teachers.** That is not modesty and it is not a boast. It is the plain report of six years of one chapter, recited in the car and at the table, until it was not a text I knew but a text that knew me.
 
 Every day of these books opens on a verse, chosen the way it was in [the first three volumes](/etymologies). **A book about words must not teach a child that words come first.**
 
