@@ -22,11 +22,13 @@ A boat, eight, and a person. That is **船**, the character for ship: 舟 the bo
 
 I did not find that. Pastor **C. H. Kang** did, in a footnote to a missionary’s Mandarin textbook. He set 造 beside Genesis 2:7—**dust, a mouth, and a man on his feet**—and then spent **forty years** asking what the other characters had kept. *Genesis and the Chinese* came out in Hong Kong in 1950. *The Discovery of Genesis*, with Ethel R. Nelson, in 1979.
 
-## The covers were pointing here
+## The watermark at the foot of the page
 
-Three volumes went up in September: Greek, Latin, Hebrew. Look closely at the texture behind those titles. It is **a drift of roots**—and already among them are Chinese characters and Hangul, 天 and 地, 光 and 造. **The Chinese was in the design months before the Chinese books existed.** **A watermark was doing what a watermark is for**: marking a page that had not been written yet.
+[Three volumes went up in September](/etymologies): Greek, Latin, Hebrew. Every one of those lessons ends the same way. At the foot of the last page sits one large, pale character—a Hanja character, the day’s meaning written in Chinese. Nothing taught it. You met the Latin *cord*, or the Hebrew *lev*, and underneath it, faint and enormous, sat 心.
 
-**These two are that page.**
+**The Chinese was on every page before a single Chinese book existed.** It was doing what a watermark is for: marking a page that had not been written yet.
+
+**These two volumes are that page**, filled in.
 
 ## Volume 1 — the door
 
@@ -59,6 +61,8 @@ So the page prints **the traditional form, the one Korea and Taiwan kept**, with
 ## The collection
 
 The third book puts all four languages in one volume. **Five courses of thirty-one days**—Hebrew, Greek, Latin, and the two Chinese parts—**412 pages**, a verse in front of every lesson, published by **Maranatha Harpazo**. It is the **student edition**: no questions, no answer keys, only the lessons and the appendices. Hebrew comes first, because the Bible opens in Hebrew.
+
+And it does one thing the separate volumes cannot. The lesson ends not with questions but with **Related days in other sections**—the day, its title, the page. Meet 心 as the Latin *cord* on day L-17, and the page sends you to the Greek *cardi* day, the Hebrew *lev* day, and the Chinese day where 心 is a card. **One idea, four languages, cross-referenced at the foot of the lesson**—that is what the one volume is for.
 
 ![Inside the collection: the title page, with Hebrew, Greek, Latin and Chinese each on its own line, facing the copyright page](/assets/etymologies-2-spread.jpg)
 
