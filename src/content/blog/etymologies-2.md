@@ -12,12 +12,10 @@ pairedSlug: "어원들"
 <strong>📕 Etymologies — Hebrew, Greek, Latin, and Chinese</strong><br />
 412 pages · five courses of thirty-one days · paperback $20.99 / £14.99 / €19.99<br />
 <a href="https://amzn.eu/d/030dyf8r">🇬🇧 Amazon UK</a> · <a href="https://a.co/d/0aZ28cBs">🇺🇸 Amazon US</a> · 💻 Kindle $5.99 / £3.99 / €4.49<br /><br />
-<strong>📘 Biblical Etymologies — Chinese Edition, Volume 1</strong><br />
-Genesis in easy characters · 155 characters, five a day<br />
-<a href="https://www.amazon.co.uk/dp/B0HS1BPVQS">🇬🇧 Amazon UK</a> · <code>979-8-14357-278-2</code><br /><br />
-<strong>📗 Biblical Etymologies — Chinese Edition, Volume 2</strong><br />
-Genesis 1–11, one character a day, one saying a day<br />
-<a href="https://www.amazon.co.uk/dp/B0HS1HRLTR">🇬🇧 Amazon UK</a> · <code>979-8-14358-190-6</code>
+<strong>📘📗 Also out: the Chinese edition, in two volumes</strong><br />
+Volume 1 — Genesis in easy characters · <code>979-8-14357-278-2</code><br />
+Volume 2 — Genesis 1–11, one character a day · <code>979-8-14358-190-6</code><br />
+Both sit under the collection on Amazon, in the same Word Roots series.
 </div>
 
 A boat, eight, and a person. That is **船**, the character for ship: 舟 the boat, 八 the eight, 口 the mouth that makes a man. **Eight souls went into the ark, and the character still says so** (1 Peter 3:20).
@@ -74,7 +72,7 @@ Volume 1 is 96 pages and sells at £7.99. Volume 2 is 100 pages at £7.99. The c
 
 **The Kindle is $5.99 / £3.99 / €4.49, and it is the bargain of the three**, because there is no paper in it at all. If money is tight in your house this month: **buy the Kindle, or buy the one volume and skip the two paperbacks**. The lessons are the same, and the answer keys are not the point of any of it.
 
-The Korean edition, 『어원들』, cannot go on Amazon at all—**KDP will not print Korean**. It goes through IngramSpark instead, whose printing costs are materially higher than Amazon’s, which is why that one is **£24.99 rather than £14.99**. It is still in review. When the road opens, it will be announced here, the way [Bible Promises did it](/promises).
+The Korean edition, 『어원들』 (978-1-0654826-3-5), cannot go on Amazon at all—**KDP will not print Korean**. It goes through IngramSpark instead, whose printing costs are materially higher than Amazon’s, which is why that one is **£24.99 rather than £14.99**. It is still in review. When the road opens, it will be announced here, the way [Bible Promises did it](/promises).
 
 ## Six years ago
 
