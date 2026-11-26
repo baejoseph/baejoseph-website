@@ -65,3 +65,5 @@ Every day in these books opens with Scripture, and the verses were chosen by a r
 ## One More Thing
 
 The Korean editions of all three volumes are written and typeset, but Amazon's self-publishing arm does not accept Korean as a language, so they are not going up there. I am working out the right way to get them into Korean-speaking homes, and when I do, it will be announced here.
+
+**Update, November 2026.** The Korean editions are typeset and waiting on IngramSpark. Meanwhile the Chinese edition has gone up in two volumes, and all four languages now sit in [one volume](/etymologies-2).

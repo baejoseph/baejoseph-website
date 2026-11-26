@@ -97,7 +97,7 @@ The book is called *Bible Promises: If, Then, & I Will*. It is on [Amazon](https
 
 I set the price to the floor. Amazon takes its cut first, and only then is the printing cost taken out of what remains—after the cut, not before. A penny lower and I would be paying for every copy sold. So the English edition is as cheap as a paperback can be made, and I earn close to nothing on it. That is deliberate. I would rather you had the promises than that I had a margin.
 
-It is not my first time at this either. [Three etymology volumes](/etymologies) went up on Amazon in quick succession in September, so I already knew where the floor was.
+It is not my first time at this either. [Three etymology volumes](/etymologies) went up on Amazon in quick succession in September, so I already knew where the floor was. Since then the Chinese edition has gone up in two volumes, and the whole four-language course in one — [three more books, and the arithmetic of why the big one is the bargain](/etymologies-2).
 
 The Korean edition needed a different road. Amazon KDP does not publish in Korean—the same wall that stopped the Korean editions of those three books. So I formed a publishing house: **Maranatha Harpazo**. (Maranatha: our Lord, come. Harpazo: the catching away.) The Korean book went to IngramSpark instead. It is out now.
 
