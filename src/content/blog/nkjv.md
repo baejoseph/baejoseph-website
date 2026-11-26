@@ -81,4 +81,6 @@ Try reading a **TR-based translation** like the NKJV. You’ll thank me later.
 
 - - -
 
+**Appendix:** I later set the whole comparison out in one place — all 543 verses where a critical-text edition and the Received Text differ, side by side, with the Greek underneath: [Manuscript](/manuscript/).
+
 **Update:** a year later, I built an iOS app using the NKJV — [Daily Bread](/daily-bread/).
