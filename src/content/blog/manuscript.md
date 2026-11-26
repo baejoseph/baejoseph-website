@@ -11,10 +11,11 @@ This is the appendix to [Why Your NT is Missing Some Verses](/nkjv/). Every plac
 
 The grey line is what a critical-text Bible prints; the arrowed line is the Received Text. The **bold, underlined** words are what changed. Hover a reference for the manuscript evidence, Greek and all.
 
-The English follows the NKJV's own idiom: the upper line reads the way an NKJV-style critical text would put it, the lower line the Received Text — which is what the NKJV itself prints.<link rel="stylesheet" href="/styles/manuscript.css"><div class="trt-legend">
-<span class="lg">Critical Text</span>
-<span class="lg arrow">Received Text (NKJV)</span>
-<span class="lg" style="margin-left:auto">hover a verse — or tap on a phone — for the evidence</span>
+The English follows the NKJV’s own idiom: the critical line reads the way an NKJV-style critical text would put it, the received line what the NKJV itself prints.<link rel="stylesheet" href="/styles/manuscript.css"><div class="trt-legend">
+<button type="button" class="trt-swap" data-a="CT" data-b="TR" data-label="Reading order" aria-pressed="false"><span class="sw-ico" aria-hidden="true"></span><span class="sw-txt"><span class="sw-a">CT</span><span class="sw-ar" aria-hidden="true"></span><span class="sw-b">TR</span></span></button>
+<span class="lg cr">Critical Text</span>
+<span class="lg arrow tr">Received Text (NKJV)</span>
+<span class="lg hint">hover a verse — or tap on a phone — for the evidence</span>
 </div>
 
 <div class="trt-wrap">
@@ -621,78 +622,4 @@ The English follows the NKJV's own idiom: the upper line reads the way an NKJV-s
 
 The nine places a critical text still brackets outright (Mark 16:9–20, John 7:53–8:11 and the rest) are a different question, so they are not in this table. Why any of this happened, and why I read an NKJV, is in [the essay](/nkjv/).
 
-<script>
-(function () {
-  var rows = document.querySelectorAll('.trt tr.tr[data-note]');
-  if (!rows.length) return;
-
-  var tip = document.createElement('div');
-  tip.className = 'trt-tip';
-  tip.setAttribute('role', 'tooltip');
-  tip.innerHTML = '<span class="tref"></span><span class="tnote"></span>';
-  document.body.appendChild(tip);
-
-  var refEl = tip.querySelector('.tref');
-  var noteEl = tip.querySelector('.tnote');
-  var current = null;
-  var pinned = false;
-
-  function place(row) {
-    var r = row.getBoundingClientRect();
-    var tw = tip.offsetWidth;
-    var th = tip.offsetHeight;
-    var gap = 11;
-    var above = r.top - th - gap > 8;
-    var y = above ? r.top - th - gap : r.bottom + gap;
-    var x = Math.min(Math.max(8, r.left - 6), window.innerWidth - tw - 8);
-    tip.classList.toggle('below', !above);
-    tip.style.top = Math.round(y) + 'px';
-    tip.style.left = Math.round(x) + 'px';
-    var ax = Math.round(r.left - x + 18);
-    tip.style.setProperty('--ax', Math.max(14, Math.min(tw - 16, ax)) + 'px');
-  }
-
-  function show(row) {
-    current = row;
-    refEl.textContent = row.getAttribute('data-ref') || '';
-    noteEl.textContent = row.getAttribute('data-note') || '';
-    tip.classList.add('on');
-    place(row);
-  }
-
-  function hide() {
-    current = null;
-    pinned = false;
-    tip.classList.remove('on');
-  }
-
-  rows.forEach(function (row) {
-    row.addEventListener('mouseenter', function () { if (!pinned) show(row); });
-    row.addEventListener('mouseleave', function () { if (!pinned) hide(); });
-    row.addEventListener('focusin', function () { show(row); });
-    row.addEventListener('focusout', function () { if (!pinned) hide(); });
-    row.addEventListener('click', function (e) {
-      // Touch devices have no hover: a tap pins the note, a second tap clears it.
-      if (pinned && current === row) { hide(); return; }
-      e.preventDefault();
-      pinned = true;
-      show(row);
-    });
-  });
-
-  // Tap outside a row drops a pinned (touch) note.
-  document.addEventListener('click', function (e) {
-    if (!pinned) return;
-    var row = e.target.closest ? e.target.closest('.trt tr.tr') : null;
-    if (!row) hide();
-  }, true);
-
-  window.addEventListener('scroll', function () {
-    if (!current) return;
-    var r = current.getBoundingClientRect();
-    if (r.bottom < 0 || r.top > window.innerHeight) hide();
-    else place(current);
-  }, { passive: true });
-  window.addEventListener('resize', function () { if (current) hide(); });
-})();
-</script>
+<script src="/scripts/manuscript.js" defer></script>

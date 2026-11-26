@@ -81,7 +81,7 @@
   vertical-align: top;
   border-top: 1px solid rgba(255, 255, 255, .075);
 }
-[data-theme='light'] .trt tr.tr td { border-top: 1px solid rgba(20, 20, 40, .11); }
+[data-trt-palette='light'] .trt tr.tr td { border-top: 1px solid rgba(20, 20, 40, .11); }
 .trt tr.tr td:first-child { padding-left: 0; }
 .trt tr.tr:hover td { background: rgba(99, 102, 241, .055); }
 .trt tr.tr:hover td:first-child { box-shadow: inset 2px 0 0 var(--accent, #6366f1); }
@@ -137,7 +137,7 @@
 .trt .ln.a::before { content: "→"; color: var(--accent, #6366f1); opacity: 1; }
 .trt .ln.b { color: #9d9dab; }
 .trt .ln.a { color: var(--text, #e8e8e8); }
-[data-theme='light'] .trt .ln.b { color: #6b6b78; }
+[data-trt-palette='light'] .trt .ln.b { color: #6b6b78; }
 
 /* The bit that changed: bold + underlined, rose on the old reading and mint on
    the new one, so the direction of the change reads at a glance. */
@@ -151,8 +151,8 @@
 }
 .trt .ln.b mark.chg { color: #e9a2aa; background: rgba(233, 162, 170, .1); text-decoration-color: rgba(233, 162, 170, .6); }
 .trt .ln.a mark.chg { color: #8ee6b4; background: rgba(142, 230, 180, .1); text-decoration-color: rgba(142, 230, 180, .6); }
-[data-theme='light'] .trt .ln.b mark.chg { background: rgba(176, 42, 55, .07); }
-[data-theme='light'] .trt .ln.a mark.chg { background: rgba(15, 122, 69, .07); }
+[data-trt-palette='light'] .trt .ln.b mark.chg { background: rgba(176, 42, 55, .07); }
+[data-trt-palette='light'] .trt .ln.a mark.chg { background: rgba(15, 122, 69, .07); }
 
 .trt .gone {
   font-style: italic;
@@ -171,6 +171,11 @@
 }
 
 /* ── The hover note ──────────────────────────────────────────────────── */
+/* The card is opaque on purpose. A translucent card blurred with
+   backdrop-filter was what painted solid white (and unreadable) in Edge on
+   Windows, and the arrow below can only match the card when the card is a
+   flat colour. The text colour is spelled out rather than inherited, so no
+   half-applied theme can leave light text on a light card. */
 .trt-tip {
   position: fixed;
   top: 0; left: 0;
@@ -179,11 +184,9 @@
   padding: .78rem .95rem .85rem;
   border: 1px solid rgba(99, 102, 241, .34);
   border-radius: 13px;
-  background: rgba(17, 17, 17, .97);
+  background: #14141b;
   box-shadow: 0 16px 44px rgba(0, 0, 0, .6), inset 0 1px 0 rgba(255, 255, 255, .04);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  color: var(--text, #e8e8e8);
+  color: #e8e8e8;
   font-family: var(--font-en, 'Inter', sans-serif);
   font-size: .82rem;
   line-height: 1.6;
@@ -222,14 +225,19 @@
   border-top: 1px solid rgba(99, 102, 241, .34);
 }
 
-[data-theme='light'] .trt .ln.b mark.chg { color: #b02a37; text-decoration-color: rgba(176, 42, 55, .55); }
-[data-theme='light'] .trt .ln.a mark.chg { color: #0f7a45; text-decoration-color: rgba(15, 122, 69, .55); }
-[data-theme='light'] .trt-tip {
-  background: rgba(252, 252, 253, .98);
+[data-trt-palette='light'] .trt .ln.b mark.chg { color: #b02a37; text-decoration-color: rgba(176, 42, 55, .55); }
+[data-trt-palette='light'] .trt .ln.a mark.chg { color: #0f7a45; text-decoration-color: rgba(15, 122, 69, .55); }
+/* The light reading of the same card. Keyed on the palette that is really on
+   screen (set from the script), not on data-theme, so the card can never come
+   out white over a dark page again. */
+[data-trt-palette='light'] .trt-tip {
+  background: #ffffff;
   border-color: rgba(79, 70, 229, .28);
   box-shadow: 0 16px 44px rgba(20, 20, 40, .16);
+  color: #16161d;
 }
-[data-theme='light'] .trt tr.tr:hover td { background: rgba(79, 70, 229, .05); }
+[data-trt-palette='light'] .trt-tip .tref { color: #3730a3; }
+[data-trt-palette='light'] .trt tr.tr:hover td { background: rgba(79, 70, 229, .05); }
 
 /* ── Phones: each row becomes a card, reference and kind on the top line ── */
 @media (max-width: 560px) {
@@ -254,3 +262,87 @@
   .trt .ln { padding-left: 1.05rem; }
   .trt .ln::before { width: .95rem; }
 }
+
+/* ── The reading-order switch ──────────────────────────────────────────
+   It sits in the legend row as the one control there. The two short names
+   (CT/TR in English, 개역/TR in Korean) come from data attributes and swap
+   places when pressed; the legend chips reorder with them, so the key always
+   reads in the order the rows are printed. */
+.trt-swap {
+  order: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: .32rem;
+  margin: 0;
+  padding: .15rem .52rem .17rem .42rem;
+  border: 1px solid rgba(99, 102, 241, .38);
+  border-radius: 999px;
+  background: rgba(99, 102, 241, .08);
+  color: var(--text, #e8e8e8);
+  font-family: inherit;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  line-height: 1.5;
+  white-space: nowrap;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: background .15s, border-color .15s;
+}
+.trt-swap:hover { background: rgba(99, 102, 241, .16); border-color: var(--accent, #6366f1); }
+.trt-swap:focus-visible { outline: 2px solid var(--accent, #6366f1); outline-offset: 2px; }
+.trt-swap .sw-ico { color: var(--accent-hover, #818cf8); font-size: .95em; line-height: 1; }
+.trt-swap .sw-ico::before { content: "\21C4"; }
+.trt-swap .sw-txt { display: inline-flex; align-items: center; gap: .22rem; }
+.trt-swap .sw-ar { color: var(--accent-hover, #818cf8); }
+.trt-swap .sw-ar::before { content: "\2192"; }
+
+.trt-legend .lg.cr { order: 1; }
+.trt-legend .lg.tr { order: 2; }
+/* The hover hint is a caption under the key rather than a third chip: the
+   switch takes enough width that it would wrap anyway, and left-aligned under
+   the key it reads as a note instead of an orphaned fragment. */
+.trt-legend .lg.hint { order: 3; flex-basis: 100%; margin-left: 0; }
+[data-trt-order='tr'] .trt-legend .lg.cr { order: 2; }
+[data-trt-order='tr'] .trt-legend .lg.tr { order: 1; }
+
+/* ── Book headings double as collapse handles ──────────────────────────
+   The script turns each heading into a button; without it the table simply
+   stays expanded, which is the default state anyway. */
+.trt .bkbtn {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .34rem;
+  margin: 0;
+  padding: .1rem .45rem .12rem 0;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: background .15s;
+}
+.trt .bkbtn:hover { background: rgba(99, 102, 241, .09); }
+.trt .bkbtn:hover .bkname { color: var(--accent-hover, #818cf8); }
+.trt .bkbtn:focus-visible { outline: 2px solid var(--accent, #6366f1); outline-offset: 1px; }
+.trt .bkbtn .bkcount { margin-left: 0; }
+
+.trt .bkc {
+  display: inline-block;
+  width: .66rem;
+  font-size: .8em;
+  line-height: 1;
+  color: var(--text-muted, #888);
+  opacity: .9;
+}
+.trt .bkc::before { content: "\25BE"; }
+.trt .bkbtn[aria-expanded='false'] .bkc::before { content: "\25B8"; }
+
+/* A collapsed book keeps its heading; its verses step out of the flow. */
+.trt tbody.bk.collapsed > tr.tr { display: none; }
+.trt tbody.bk.collapsed > tr.book td { padding-bottom: .75rem; }
