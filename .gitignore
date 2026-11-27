@@ -35,3 +35,6 @@ scripts/selftest/.probe.ts
 
 # temp folder inside content
 src/content/temp/
+
+# python bytecode from scripts/
+__pycache__/
