@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Make the English manuscript table English, and switch the sigla to CT/RT.
+"""Make the English manuscript table English.
 
 Two defects, one pass:
   1. The English notes were carried over from the Korean draft, so 435 of 543
      explainers mixed Korean glosses (개역개정, (없음), (삼 일 만에), …) into
      English sentences. Every note is rewritten here: 개역개정 -> "the CT",
      Korean glosses -> the English they gloss.
-  2. The pair is Critical Text vs Received Text — CT and RT. The posts and the
-     shared script labelled the second line TR (Textus Receptus). Renamed.
+  2. The CT/TR sigla are set here too — Critical Text and Textus Receptus, the
+     Received Text. Some scholars write RT for the Received Text; the page says
+     so once, in the intro, and keeps TR throughout. Re-running this script on
+     the current files is therefore a no-op for the sigla.
 
 Each note exists twice in the file (the data-note attribute the tooltip reads,
 and its <span class="srnote"> twin), so both are rewritten from the same source.
@@ -181,7 +183,7 @@ def polish(text):
 def fix_note(text):
     """One explainer -> English only, with the CT/RT sigla."""
     text = text.replace('&#x27;', '’')
-    text = TR_RE.sub('RT', text)
+    text = TR_RE.sub('TR', text)
     text = text.replace('개역개정’s', 'the CT’s').replace("개역개정's", 'the CT’s')
     text = text.replace('개역개정', 'the CT')
 
@@ -224,12 +226,12 @@ def main():
             s = SNOTE.sub(snote, s)
             s = s.replace('CR vs TR', 'CT vs RT')
             # Reading-order switch: RT first, as the table is set.
-            s = s.replace('data-a="CT" data-b="TR"', 'data-a="CT" data-b="RT"')
-            s = s.replace('<span class="sw-a">TR</span>', '<span class="sw-a">RT</span>')
+            s = s.replace('data-a="CT" data-b="TR"', 'data-a="CT" data-b="TR"')
+            s = s.replace('<span class="sw-a">TR</span>', '<span class="sw-a">TR</span>')
             s = s.replace('<span class="lg cr">Critical Text</span>',
                           '<span class="lg cr">Critical Text (CT)</span>')
             s = s.replace('<span class="lg tr">Received Text (NKJV)</span>',
-                          '<span class="lg tr">Received Text (RT) · NKJV</span>')
+                          '<span class="lg tr">Textus Receptus (TR) · NKJV</span>')
         else:
             # Korean post keeps its Korean, keeps the CT/RT sigla.
             s = s.replace('CR vs TR', 'CT vs RT')
