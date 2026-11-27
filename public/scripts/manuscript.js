@@ -11,8 +11,8 @@
   var root = document.documentElement;
   var lang = table.classList.contains('ko') ? 'ko' : 'en';
 
-  /* What a pill says depends on which reading is printed first: a word the TR
-     carries and the CT drops reads as "removed" going TR -> CT, "added" going
+  /* What a pill says depends on which reading is printed first: a word the RT
+     carries and the CT drops reads as "removed" going RT -> CT, "added" going
      the other way. The colour follows the same reading — mint for what the
      second line gains, rose for what it loses. */
   var KINDS = {
@@ -126,9 +126,9 @@
   window.addEventListener('resize', function () { if (current) hide(); });
 
   /* ── Reading order ───────────────────────────────────────────────────────
-     The two lines keep their identity — CT is the critical reading, TR the
+     The two lines keep their identity — CT is the critical reading, RT the
      Received Text — and only which one sits on top changes. The rows are marked
-     up TR first, so the switch starts on TR -> CT. The nodes are moved rather
+     up RT first, so the switch starts on RT -> CT. The nodes are moved rather
      than visually reversed, so selecting a verse copies the lines in the order
      they are read. */
   var cells = table.querySelectorAll('tr.tr > td.c-text');
@@ -163,7 +163,7 @@
   var swap = document.querySelector('.trt-swap');
   if (swap) {
     var nameA = swap.getAttribute('data-a') || 'CT';
-    var nameB = swap.getAttribute('data-b') || 'TR';
+    var nameB = swap.getAttribute('data-b') || 'RT';
     var nameLabel = swap.getAttribute('data-label') || 'Reading order';
     var slotA = swap.querySelector('.sw-a');
     var slotB = swap.querySelector('.sw-b');
@@ -187,7 +187,7 @@
       setOrder(root.getAttribute('data-trt-order') !== 'tr');
     });
 
-    // The rows are marked up TR first, so that is the state to start from.
+    // The rows are marked up RT first, so that is the state to start from.
     setOrder(true);
   } else {
     applyOrder(true);
